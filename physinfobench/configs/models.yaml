@@ -1,0 +1,30 @@
+# P2.04 模型准入（2026-09-24；名单冻结依据=P0.03 候选草案+用户决策委托 decisions.md 2026-09-24 02:34）
+meta:
+  status: verified_local_primary_pending_others
+  verified_at: '2026-09-24'
+  route_note: HF 直连不通（12s 超时实测）；统一走 HF_ENDPOINT=https://hf-mirror.com
+
+models:
+  - id: facebook/esm2_t33_650M_UR50D
+    role: local_primary
+    license: MIT            # model card cardData.license=mit（镜像 API 实测）
+    weights_sha_verified: true   # 本地前向验证通过
+    verification: reports/p204_model_verification.json
+    env: .venv_local（python 3.14.6 / torch 2.14.0 / transformers 5.17.0；见 environment.lock）
+    layers_exported: 34        # embeddings+33 层
+    max_length_note: 1022 有效残基（BOS/EOS 之外）；超长策略在 P2.05 定义
+    structure_input: 不需要（纯序列）
+  - id: westlake-repl/SaProt_650M_AF2
+    role: structure_aware_reference
+    license: MIT            # 镜像 API 实测 license:mit
+    verification: pending   # 待本地前向验证（结构 token 输入来源=AF2/实验结构，P2.05 定义；不得假设与纯序列同输入）
+  - id: facebook/esm2_t48_3B_UR50D
+    role: cluster_scale_candidate
+    license: MIT            # 与 650M 同族同许可
+    verification: pending_cluster   # 归集群任务（sblab 恢复后）；本地不验证
+
+denied_or_deferred: []
+roster_decision_note: >
+  名单冻结时点原定"P2.04 准入核验前"（P0.03）。用户 2026-09-24 消息将后续决策委托
+  （decisions.md 02:34），据此冻结：本地主力=ESM-2 650M（已验证），结构参考=SaProt 650M
+  （许可已核、前向待验），3B 档留集群。不增加未登记候选；变更须差异清单+审核。

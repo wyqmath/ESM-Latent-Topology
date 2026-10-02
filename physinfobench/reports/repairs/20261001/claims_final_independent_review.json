@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "R5.03 fixed predictions, accurate units and explanatory scope; P507 final metadata/output guards. No type fitting rerun.",
+  "p507_n_chains": 89,
+  "p507_n_components": 50,
+  "chain_macro_f1": 0.3974358974358974,
+  "component_macro_f1": 0.3940886699507389,
+  "selection_statistic_exact": 0.8266666666666667,
+  "guard_tests": [
+    "nonempty output rejected before input access",
+    "old incorrect layer layout rejected before fit",
+    "new incorrect layer layout rejected before fit"
+  ],
+  "static_checks": [
+    "best-selection same statistic, renamed field only",
+    "new cache exact mean5/11/17/23/29/33 indices3/4/5",
+    "old cache requires resid23/29/33 indices0/1/2",
+    "chain recall and component recall distinguished",
+    "selected same nonnestedLCO descriptive scope, no family count assertion",
+    "claims report baseline historical105 vs corrected99 H33 separated",
+    "R5.05 corrected main/sensitivity families and seedmean accepted",
+    "CA nonobservation label not upgraded to intrinsic disorder"
+  ],
+  "limitations": [
+    "Source layout guards checked with synthetic rejects; root independently verified actual two P507 cache metadata layouts remotely. No new type performance claim.",
+    "Current P508 direct coefficient-sigmoid score check tracked separately."
+  ],
+  "source_sha256": {
+    "scripts/p507_type_probe_v2.py": "a62c37b137a04026f32a4e0d4082744eb1fed5734b4ab00de75bdecb4f86a063",
+    "reports/repairs/20261001/claims_scope_audit.md": "2b363fc43c565de213a0618aa9328f22eaa8485cc04eab3451a99d15f7e602b2",
+    "results/repairs/20261001/claims/p507_recomputed_scope.json": "6276a9565481334e711b2aee0d10bcd9f197c0cef629893de999f2c1b0e963bf",
+    "reports/repairs/20261001/aggregation_independent_review.json": "8548e404dbd5d85a830029333d60e445840f13289ef1e965d7d579c323a5b8d5"
+  }
+}

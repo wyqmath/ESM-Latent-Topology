@@ -1,0 +1,18 @@
+matched_set_id	positive_uniprot	positive_pair	ratio	control_accession	match_rank	review_status	sp_length	length_ratio	n_pdb	n_independent_studies	mapped_coverage	pna_textual_corroboration	note
+MS_P00573_01	P00573	porter_51_1h38D__1qlnA	1:1_main	O00411	1	pending_manual_fulltext	1230	1.3930	25	9	1.0000	none	
+MS_P00573_02	P00573	porter_51_1h38D__1qlnA	1:3_sensitivity	P13433	2	pending_manual_fulltext	1351	1.5300	9	2	0.9267	none	
+MS_P38505_01	P38505	porter_77_2nxqB__1jfkA	1:1_main	Q8NI22	2	pending_manual_fulltext	146	1.0896	17	6	0.8493	none	
+MS_P38505_02	P38505	porter_77_2nxqB__1jfkA	1:3_sensitivity	P0DP25	7	pending_manual_fulltext	149	1.1119	24	9	1.0000	none	
+MS_P38505_03	P38505	porter_77_2nxqB__1jfkA	1:3_sensitivity	P0DP33	8	pending_manual_fulltext	149	1.1119	24	19	1.0000	none	
+MS_Q08209_01	Q08209	porter_20_5c1vA__5c1vB	1:1_main	P48452	2	pending_manual_fulltext	521	1.0000	3	2	0.7198	none	
+MS_Q08209_02	Q08209	porter_20_5c1vA__5c1vB	1:3_sensitivity	P53041	8	pending_manual_fulltext	499	0.9578	22	10	1.0000	none	
+MS_Q08209_03	Q08209	porter_20_5c1vA__5c1vB	1:3_sensitivity	P07024	10	pending_manual_fulltext	550	1.0557	9	5	1.0000	none	
+MS_Q12931_01	Q12931	porter_80_5f3kA__5f5rB	1:1_main	P08238	3	pending_manual_fulltext	724	1.0284	32	17	1.0000	none	
+MS_Q12931_02	Q12931	porter_80_5f3kA__5f5rB	1:3_sensitivity	P07900	5	pending_manual_fulltext	732	1.0398	450	103	1.0000	none	
+MS_Q12931_03	Q12931	porter_80_5f3kA__5f5rB	1:3_sensitivity	P0A6Z3	7	pending_manual_fulltext	624	0.8864	7	3	1.0000	none	
+MS_Q9RZA4_01	Q9RZA4	porter_62_4o0pA__4o01D	1:1_main	Q9HWR3	5	pending_manual_fulltext	728	0.9642	10	5	1.0000	name_only	
+MS_Q9RZA4_02	Q9RZA4	porter_62_4o0pA__4o01D	1:3_sensitivity	P0AES6	7	pending_manual_fulltext	804	1.0649	67	24	1.0000	none	
+MS_Q9RZA4_03	Q9RZA4	porter_62_4o0pA__4o01D	1:3_sensitivity	P9WG45	13	pending_manual_fulltext	675	0.8940	21	8	1.0000	strong	
+MS_Q9YA14_01	Q9YA14	porter_61_4gqcC__4gqcB	1:1_main	Q8P9V9	1	pending_manual_fulltext	160	0.9938	18	2	1.0000	none	
+MS_Q9YA14_02	Q9YA14	porter_61_4gqcC__4gqcB	1:3_sensitivity	P9WIE3	4	pending_manual_fulltext	153	0.9503	6	4	1.0000	none	
+MS_Q9YA14_03	Q9YA14	porter_61_4gqcC__4gqcB	1:3_sensitivity	P9WIE2	5	pending_manual_fulltext	153	0.9503	1	2	1.0000	none	

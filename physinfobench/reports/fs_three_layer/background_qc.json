@@ -1,0 +1,114 @@
+{
+ "assertions": {
+  "A10_main_subtable_consistency": "pass",
+  "A1_strict_disjoint": "pass",
+  "A2_extension_disjoint": "pass",
+  "A3_no_zero_target": "pass",
+  "A4_pu_label": "pass",
+  "A5_entry_count": {
+   "observed": 575748,
+   "official": 575748
+  },
+  "A6_no_isoform": 0,
+  "A7_traceable": "pass",
+  "A8_deterministic": "fixed sort keys: A/B by accession; subtable by pdb,chain,uniprot; rerun must reproduce output_sha256",
+  "A9_exclusion_recorded": "pass"
+ },
+ "background_a": {
+  "exact_duplicates_removed": 88019,
+  "exclusion_reasons": {
+   "fs_extension": 26,
+   "fs_fragment_evidence": 5,
+   "fs_strict_positive": 8,
+   "length_below_min": 844,
+   "nonstandard_residue_letter": 2667
+  },
+  "exclusions_total": 3550,
+  "fs_exclusion_presence": {
+   "fs_accessions_total": 44,
+   "not_in_sprot_trEMBL_only": [
+    "Q04114",
+    "Q8DLM0",
+    "Q8E473",
+    "Q9HTL4",
+    "Q9YA14"
+   ],
+   "note": "不在 Swiss-Prot 的 FS accession（TrEMBL-only）对宇宙 A 天然不存在，A1/A2 对其平凡成立；B 侧按同 44 全数排除",
+   "present_in_sprot_and_excluded": 39
+  },
+  "max_length_kept": 35213,
+  "nonstandard_letter_accessions": {
+   "B": 112,
+   "O": 29,
+   "U": 255,
+   "X": 2271,
+   "Z": 87
+  },
+  "official_count": 575748,
+  "pending_representation": {
+   "excluded_other_reason": [],
+   "not_in_sprot": [
+    "A0A0M3KL39",
+    "O60989",
+    "P88911",
+    "Q716H0",
+    "Q74FY6"
+   ],
+   "note": "G1 裁决 pending 为阳性时，剔除须以 sequence_sha256 为准（连带代表行），不能只按 accession",
+   "present_directly": 45,
+   "represented_by_other_accession": {
+    "P09391": "A1AGU7",
+    "P60880": "P60877",
+    "P60881": "P60877",
+    "P61769": "P16213",
+    "Q79V61": "Q6L8K0",
+    "Q7A1N5": "A6QES8"
+   }
+  },
+  "rows": 484179
+ },
+ "background_b": {
+  "chain_subtable_rows": 990140,
+  "computational_entries": 0,
+  "entries_total": 259693,
+  "entries_without_uniprot": 15173,
+  "entry_type_distribution": {
+   "EM": 36687,
+   "NMR": 14921,
+   "diffraction": 207603,
+   "other": 482
+  },
+  "experimental_entries": 259693,
+  "fs_excluded_proteins": 44,
+  "keys_with_unparseable_sp_range": 0,
+  "method_fallback_from_entry_type": 0,
+  "multi_segment_alignment_keys": 18629,
+  "proteins": 75593,
+  "proteins_without_sp_length": 35615,
+  "sifts_anomalies": {
+   "keys_all_rows_inverted_dropped_from_subtable": 36,
+   "keys_with_inverted_rows": 69,
+   "mapping_inverted_rows_dropped": 72,
+   "mapping_overlap_keys_union_lt_sum": 227,
+   "note": "覆盖一律按区间并集（重叠去重、相邻不并、缺口不计）；倒置区段（SP_BEG>SP_END）按行丢弃留痕。P1.11 起禁止把 mapped 为空/0 或 observed>mapped 的键当覆盖证据",
+   "observed_gt_mapped_after_union": 59,
+   "observed_inverted_rows_dropped": 0,
+   "observed_overlap_keys_union_lt_sum": 252
+  }
+ },
+ "crosscheck_sifts": {
+  "only_in_chain_mapping": 0,
+  "only_in_uniprot_pdb": 0
+ },
+ "generated": "2026-09-23 08:38",
+ "output_sha256": {
+  "data/curated/fold_switch_unlabeled_sequence.tsv.gz": "78600edef7162afaccb26d05c424bda94a4f80ec15f106068a3cf3caf8398892",
+  "data/curated/fold_switch_unlabeled_sequence_dupes.tsv.gz": "c5242243497d772e9ef3f4446a13d730cd92d23d5ae6095ca03b0251130f64d0",
+  "data/curated/fold_switch_unlabeled_sequence_exclusions.tsv": "bc7a6e9bf83bc17456b87e0916f14fa1ad180b17aff228cbd8b6bd5ab55cc77a",
+  "data/curated/fold_switch_unlabeled_structure.tsv.gz": "5d679a61641ab2230de725ea0bfa56b920bd03c725ca2f095ca2f8621b1c438b",
+  "data/curated/fold_switch_unlabeled_structure_chains.tsv.gz": "4af0ba56fa4e6d7702062636b81e13b91b7109de181357d79631857c01a5baa1",
+  "data/curated/fold_switch_unlabeled_structure_exclusions.tsv": "d3ba871aa06e5a6f22572e541862fc8dfebf6d7d221ef07706e7dad9708f14f5"
+ },
+ "run_id": "p1_10_20260923",
+ "version_skew_note": "SIFTS 构建于 UniProt 2026.04/PDB 37.26；背景 A FASTA 为 2026_03。accession 稳定；覆盖分母取自 2026_03 序列长度并 cap 1.0；n_pdb_entries_crossref 直接来自 SIFTS 聚合视图。"
+}

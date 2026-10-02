@@ -1,0 +1,36 @@
+{
+  "job_id": 814880,
+  "status": "COMPLETED",
+  "elapsed_seconds": 53,
+  "requested_cpus": 4,
+  "reserved_gpu": 1,
+  "gpu_computation": false,
+  "gpu_reservation_reason": "Cluster rejects CPU-only jobs with QOSMinGRES",
+  "remote_workspace": "/lenovofs1/home/jyma/PLM_benchmark/repairs/20261001/statistics_reproduction",
+  "comparisons": [
+    {
+      "local": "results/repairs/20261001/statistics/full_set_final",
+      "remote": "results/repairs/20261001/cluster/remote_full_set",
+      "summaries": 12,
+      "draw_files": 12,
+      "draws": 24000,
+      "max_summary_delta": 0.0,
+      "status": "PASS"
+    },
+    {
+      "local": "results/repairs/20261001/statistics/posthoc_sensitivity",
+      "remote": "results/repairs/20261001/cluster/remote_posthoc",
+      "summaries": 12,
+      "draw_files": 12,
+      "draws": 24000,
+      "max_summary_delta": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "input_sha256_verified": true,
+  "software_remote": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.1"
+  }
+}

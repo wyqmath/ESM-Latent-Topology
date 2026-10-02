@@ -1,0 +1,474 @@
+{
+  "created_at_utc": "2026-10-01T13:57:32.052740+00:00",
+  "kind": "statistical correction of saved predictions; no model rerun",
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.1"
+  },
+  "parameters": {
+    "B": 2000,
+    "confidence": 0.95,
+    "seeds": [
+      13,
+      42,
+      2026
+    ]
+  },
+  "independence_unit": "full binding component; preserves chain-weighted AUROC estimand",
+  "limitations": [
+    "Bootstrap conditions on the frozen trained reader and saved evaluation set.",
+    "Component resampling does not remove historical development exposure.",
+    "Min-TM component binding does not guarantee max-TM or family independence.",
+    "Saved PLM scores have six significant digits; report point precision accordingly.",
+    "Length scores reconstructed from frozen development-only sklearn fit; original per-chain comparator scores were not archived."
+  ],
+  "length_reconstruction": {
+    "development_n": 750,
+    "development_pos": 127,
+    "coef": [
+      [
+        0.9618325568654015
+      ]
+    ],
+    "intercept": [
+      -5.414163243625113
+    ]
+  },
+  "sets": {
+    "confirmation": {
+      "n_chains": 148,
+      "n_pos": 22,
+      "n_neg": 126,
+      "n_components": 66,
+      "original_metrics": {
+        "auroc": 0.94697,
+        "auroc_boot": {
+          "ci95_high": 0.993513,
+          "ci95_low": 0.903611,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "point": 0.94697,
+          "valid_draws": 2000
+        },
+        "conf": {
+          "n": 148,
+          "neg": 126,
+          "no_sequence_dropped": [
+            "knot:1giy_M",
+            "knot:2hfx_A"
+          ],
+          "pos": 22
+        },
+        "dev_fit": {
+          "n": 750,
+          "neg": 623,
+          "pos": 127
+        },
+        "executed_at": {
+          "local": "2026-09-27 14:03",
+          "utc": "2026-09-27T06:03:56Z"
+        },
+        "hypothesis": "H-KNOT-PRESENCE",
+        "length_control_auroc": 0.575577,
+        "permutation_null": {
+          "max": 0.621212,
+          "mean": 0.502294,
+          "min": 0.299964,
+          "n": 100,
+          "sd": 0.063936,
+          "seeds": [
+            2026,
+            2125
+          ]
+        },
+        "reader": {
+          "C": 1,
+          "class_weight": "balanced",
+          "features": "hidden33 全残基均值（knots_resid 同协议；dev/确认同源）",
+          "layer_hidden": 33,
+          "max_iter": 1000,
+          "random_state": 2026,
+          "solver": "liblinear"
+        },
+        "run_id": "CONF-KNOT-PRESENCE-P502-v1",
+        "statistics": {
+          "B": 2000,
+          "ci": "percentile95",
+          "seed": 2026,
+          "units": "chain（蛋白级）"
+        }
+      },
+      "saved_score_auroc": 0.946969696969697,
+      "reconstructed_length_auroc": 0.5755772005772006,
+      "primary_component": {
+        "13": {
+          "point": 0.946969696969697,
+          "ci95_low": 0.8643462732919255,
+          "ci95_high": 0.9958361212489862,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 13,
+          "confidence": 0.95,
+          "n_rows": 148,
+          "n_units": 66,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.3713924963924964,
+            "ci95_low": 0.17423792685130232,
+            "ci95_high": 0.5476059878074341,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.5755772005772006
+        },
+        "42": {
+          "point": 0.946969696969697,
+          "ci95_low": 0.8694011082693948,
+          "ci95_high": 0.9954226618705035,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "n_rows": 148,
+          "n_units": 66,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.3713924963924964,
+            "ci95_low": 0.1772503142745676,
+            "ci95_high": 0.5562639858575008,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.5755772005772006
+        },
+        "2026": {
+          "point": 0.946969696969697,
+          "ci95_low": 0.8648950585018698,
+          "ci95_high": 0.9954226190476191,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 2026,
+          "confidence": 0.95,
+          "n_rows": 148,
+          "n_units": 66,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.3713924963924964,
+            "ci95_low": 0.17525644714407504,
+            "ci95_high": 0.5490515372487189,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.5755772005772006
+        }
+      },
+      "secondary_chain_legacy_comparability": {
+        "13": {
+          "point": 0.946969696969697,
+          "ci95_low": 0.8712842547542878,
+          "ci95_high": 0.9941664412989345,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 13,
+          "confidence": 0.95,
+          "n_rows": 148,
+          "n_units": 148,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.3713924963924964,
+            "ci95_low": 0.23619791666666673,
+            "ci95_high": 0.5135173766322687,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.5755772005772006
+        },
+        "42": {
+          "point": 0.946969696969697,
+          "ci95_low": 0.8704712374796421,
+          "ci95_high": 0.9947863124029453,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "n_rows": 148,
+          "n_units": 148,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.3713924963924964,
+            "ci95_low": 0.23142614877352166,
+            "ci95_high": 0.5134798702116936,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.5755772005772006
+        },
+        "2026": {
+          "point": 0.946969696969697,
+          "ci95_low": 0.866655982905983,
+          "ci95_high": 0.9944392026707797,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 2026,
+          "confidence": 0.95,
+          "n_rows": 148,
+          "n_units": 148,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.3713924963924964,
+            "ci95_low": 0.2305310150375941,
+            "ci95_high": 0.5175077790936115,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.5755772005772006
+        }
+      }
+    },
+    "final_holdout": {
+      "n_chains": 108,
+      "n_pos": 25,
+      "n_neg": 83,
+      "n_components": 59,
+      "original_metrics": {
+        "auroc": 0.967711,
+        "auroc_boot": {
+          "ci95_high": 0.993594,
+          "ci95_low": 0.942852,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "point": 0.967711,
+          "valid_draws": 2000
+        },
+        "dev_fit": {
+          "merge_confirmation": "no（final_lock 冻结：仅 dev 拟合）",
+          "n": 750,
+          "neg": 623,
+          "pos": 127
+        },
+        "executed_at": {
+          "local": "2026-09-30 19:50",
+          "utc": "2026-09-30T11:50:36Z"
+        },
+        "holdout": {
+          "n": 108,
+          "neg": 83,
+          "no_sequence_dropped": [
+            "knot:3pvm_B"
+          ],
+          "pos": 25
+        },
+        "hypothesis": "H-KNOT-PRESENCE",
+        "length_control_auroc": 0.711084,
+        "permutation_null": {
+          "max": 0.728916,
+          "mean": 0.499125,
+          "n": 100,
+          "sd": 0.074081
+        },
+        "reader": {
+          "C": 1,
+          "class_weight": "balanced",
+          "layer_hidden": 33,
+          "max_iter": 1000,
+          "random_state": 2026,
+          "solver": "liblinear"
+        },
+        "run_id": "HOLD-KNOT-PRESENCE-P505-v1",
+        "statistics": {
+          "B": 2000,
+          "ci": "percentile95",
+          "seed": 2026
+        }
+      },
+      "saved_score_auroc": 0.967710843373494,
+      "reconstructed_length_auroc": 0.7110843373493976,
+      "primary_component": {
+        "13": {
+          "point": 0.967710843373494,
+          "ci95_low": 0.930798587580697,
+          "ci95_high": 0.997159492167437,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 13,
+          "confidence": 0.95,
+          "n_rows": 108,
+          "n_units": 59,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.2566265060240964,
+            "ci95_low": 0.10544176859725646,
+            "ci95_high": 0.421157117018452,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.7110843373493976
+        },
+        "42": {
+          "point": 0.967710843373494,
+          "ci95_low": 0.9354828084491479,
+          "ci95_high": 0.9967532467532467,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "n_rows": 108,
+          "n_units": 59,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.2566265060240964,
+            "ci95_low": 0.10355615276001705,
+            "ci95_high": 0.4289994438264737,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.7110843373493976
+        },
+        "2026": {
+          "point": 0.967710843373494,
+          "ci95_low": 0.9321046174814526,
+          "ci95_high": 0.9964180524456386,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 2026,
+          "confidence": 0.95,
+          "n_rows": 108,
+          "n_units": 59,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.2566265060240964,
+            "ci95_low": 0.10411083445174354,
+            "ci95_high": 0.42562402970335933,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.7110843373493976
+        }
+      },
+      "secondary_chain_legacy_comparability": {
+        "13": {
+          "point": 0.967710843373494,
+          "ci95_low": 0.9243681328237978,
+          "ci95_high": 0.9948863636363636,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 13,
+          "confidence": 0.95,
+          "n_rows": 108,
+          "n_units": 108,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.2566265060240964,
+            "ci95_low": 0.1500857044280008,
+            "ci95_high": 0.3735995533397583,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.7110843373493976
+        },
+        "42": {
+          "point": 0.967710843373494,
+          "ci95_low": 0.9260506552271259,
+          "ci95_high": 0.9946782327417297,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "n_rows": 108,
+          "n_units": 108,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.2566265060240964,
+            "ci95_low": 0.14729186154653065,
+            "ci95_high": 0.37103330389957506,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.7110843373493976
+        },
+        "2026": {
+          "point": 0.967710843373494,
+          "ci95_low": 0.9260761850201346,
+          "ci95_high": 0.995040233686067,
+          "valid_draws": 2000,
+          "degenerate_discarded": 0,
+          "no_conclusion_flag": false,
+          "B": 2000,
+          "seed": 2026,
+          "confidence": 0.95,
+          "n_rows": 108,
+          "n_units": 108,
+          "estimand": "chain_weighted_auroc",
+          "resampling": "uniform units with replacement; preserve every member and multiplicity",
+          "paired_difference": {
+            "point": 0.2566265060240964,
+            "ci95_low": 0.14484921425595407,
+            "ci95_high": 0.36840836951194394,
+            "valid_draws": 2000,
+            "degenerate_discarded": 0,
+            "no_conclusion_flag": false
+          },
+          "comparison_auroc": 0.7110843373493976
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "results/repairs/20261001/exposure/component_map.tsv": "ba394396dcf845e1d84df1ee441f378d51eb253ae12cb283d2e63e0008dcf4c1",
+    "data/splits/split_manifest.tsv": "41676fd7af106591094318fb44dd819c5d244a0b13ff6b6196d73eafebf31842",
+    "data/curated/knots.tsv": "40aea42839432f4b7cc1f151a0290c21cb23dab3802ed7ba0fefe999f7c1b499",
+    "data/curated/knots_sequences.tsv": "16dbe333dbcba07162fcca9f590fa8171a455330a5fd66736dd3d888e75e623d",
+    "scripts/recompute_p5_statistics.py": "d0c259d9f9e0d0723ad3a82814b11e6d21fc89e72bc5e665e0ff664ec4be2b08",
+    "scripts/cluster_bootstrap.py": "d40bbd9a54134b3911aa6112e01819205650522211eb3b7493312ecc3b4e3307",
+    "configs/evaluation_protocol.yaml": "5d100b37f5c43273d960a71c8892830b3cfc184b1ea6501218c9682a99a86f3d",
+    "results/confirmation/CONF-KNOT-PRESENCE-P502-v1/scores.tsv": "adcd2a835a9bcd1603ee818206df9a9eee0daf688b4d82e7b8dedee7c48f9f99",
+    "results/confirmation/CONF-KNOT-PRESENCE-P502-v1/metrics.json": "836fef771f950e0dcca3552b041956c891a7ce43de6aa1aacfd4cfe58aa3a839",
+    "results/holdout/HOLD-KNOT-PRESENCE-P505-v1/scores.tsv": "7508c6a9193299ec2d15865ddb2a65989a2b220427ad7f579b75b22d1aa1f19e",
+    "results/holdout/HOLD-KNOT-PRESENCE-P505-v1/metrics.json": "efed330d92218586283b3f310b3cdd2637c8ea28287f5e375ee0d5acb207824a"
+  }
+}

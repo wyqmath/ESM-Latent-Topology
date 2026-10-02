@@ -1,0 +1,363 @@
+{
+ "all_pool_quadrants": {
+  "both": [
+   "porter_20_5c1vA__5c1vB",
+   "porter_61_4gqcC__4gqcB",
+   "porter_62_4o0pA__4o01D"
+  ],
+  "fine_only": [
+   "porter_51_1h38D__1qlnA",
+   "porter_72_4rmbA__4rmbB",
+   "porter_77_2nxqB__1jfkA",
+   "porter_80_5f3kA__5f5rB",
+   "porter_87_2k0qA__2lelA",
+   "porter_9_3j7wB__3j7vG"
+  ],
+  "neither": [
+   "porter_10_2lqwA__2bzyB",
+   "porter_11_5ejbC__1wp8C",
+   "porter_12_2frhA__1fzpD",
+   "porter_13_5hmgB__1htmB",
+   "porter_14_4j3oF__2jmrA",
+   "porter_15_4hddA__2lepA",
+   "porter_16_1miqB__1qs8B",
+   "porter_17_4nc9C__4n9wA",
+   "porter_18_3j97M__1xtgB",
+   "porter_19_2naoF__1iytA",
+   "porter_1_1g2cF__5c6bF",
+   "porter_21_4zt0C__4cmqB",
+   "porter_22_5jytA__2qkeE",
+   "porter_23_2lejA__2lv1A",
+   "porter_24_3jv6A__1zk9A",
+   "porter_25_5k5gA__2kb8A",
+   "porter_26_4uv2D__4q79F",
+   "porter_27_1wyyB__5wrgA",
+   "porter_28_5fhcJ__1eboE",
+   "porter_29_4wsgC__1svfC",
+   "porter_2_5ec5P__3zxgB",
+   "porter_30_1nqdA__1nqjB",
+   "porter_31_5fluE__2uy7D",
+   "porter_32_3qy2A__1qb3A",
+   "porter_33_2ougC__2lclA",
+   "porter_34_1qomB__1nocA",
+   "porter_35_4rr2D__3l9qB",
+   "porter_36_2gedB__1nrjB",
+   "porter_37_5keqF__1dzlA",
+   "porter_38_4y0mJ__4xwsD",
+   "porter_39_2c1uC__2c1vB",
+   "porter_3_1uxmK__2namA",
+   "porter_40_4zrbC__4zrbH",
+   "porter_41_4qhfA__4qhhA",
+   "porter_42_4aanA__4aalA",
+   "porter_43_1x0gA__1x0gD",
+   "porter_44_4ae0A__4ow6B",
+   "porter_45_1mnmC__1mnmD",
+   "porter_46_2nntA__2mwfA",
+   "porter_47_4jphB__5hk5H",
+   "porter_49_3k2sA__2a01C",
+   "porter_4_7ahlE__4yhdG",
+   "porter_50_4fu4C__4g0dZ",
+   "porter_52_5b3zA__5bmyA",
+   "porter_53_1xjtA__1xjuB",
+   "porter_54_3hdeA__3hdfA",
+   "porter_55_4b3oB__3meeA",
+   "porter_56_4twaA__4ydqB",
+   "porter_57_3ejhA__3m7pA",
+   "porter_58_1k0nA__1rk4B",
+   "porter_5_5aoeB__5ly6B",
+   "porter_60_2axzA__2grmB",
+   "porter_63_4dxtA__4dxrA",
+   "porter_64_4rwnA__4rwqB",
+   "porter_65_2hdmA__2n54B",
+   "porter_66_3vo9B__3vpaD",
+   "porter_67_2p3vA__2p3vD",
+   "porter_68_3zwgN__4tsyD",
+   "porter_69_3ewsB__3g0hA",
+   "porter_6_1ovaA__1jtiB",
+   "porter_70_3tp2A__5lj3M",
+   "porter_71_3njqA__2pbkB",
+   "porter_73_2ce7C__3kdsG",
+   "porter_74_4phqA__2wcdX",
+   "porter_75_3t1pA__1kctA",
+   "porter_76_3j9cA__3q8fA",
+   "porter_78_5l35D__5l35G",
+   "porter_79_5i2mA__5i2sA",
+   "porter_7_3gmhL__2vfxL",
+   "porter_81_4qdsA__2qqjA",
+   "porter_82_5jzhA__5jztG",
+   "porter_83_4pyiA__4pyjA",
+   "porter_84_5ineA__3mkoA",
+   "porter_85_1mbyA__4yypA",
+   "porter_86_2a73B__3l5nB",
+   "porter_88_3uyiA__3v0tA",
+   "porter_89_4a5wB__3t5oA",
+   "porter_8_3m1bF__3lowA",
+   "porter_90_1rkpA__2h44A",
+   "porter_91_1ceeB__2k42A",
+   "porter_92_3o44A__1xezA",
+   "porter_93_1repC__2z9oB",
+   "porter_94_3kuyA__5c3iF",
+   "porter_95_2n0aD__2kkwA",
+   "porter_96_4m4rA__4w50B"
+  ],
+  "usable_only": [
+   "porter_48_3ifaA__5et5A",
+   "porter_59_1xntA__3lqcA"
+  ]
+ },
+ "assertion": {
+  "strict_both_pairs == 3 (P1.09 usable 3/10 口径)": true,
+  "strict_fine_pairs == 9": true
+ },
+ "generated": "2026-09-24 00:51",
+ "region_rows_total": 203,
+ "row_issues_count": 37,
+ "row_issues_full": [
+  {
+   "entry_id": "5k5gA",
+   "issues": "未映射残基=7",
+   "pair_id": "porter_25_5k5gA__2kb8A",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4uv2D",
+   "issues": "未映射残基=4",
+   "pair_id": "porter_26_4uv2D__4q79F",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1wyyB",
+   "issues": "未映射残基=16",
+   "pair_id": "porter_27_1wyyB__5wrgA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1nqdA",
+   "issues": "未映射残基=4",
+   "pair_id": "porter_30_1nqdA__1nqjB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "3qy2A",
+   "issues": "未映射残基=12",
+   "pair_id": "porter_32_3qy2A__1qb3A",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2ougC",
+   "issues": "未映射残基=19",
+   "pair_id": "porter_33_2ougC__2lclA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2gedB",
+   "issues": "未映射残基=1",
+   "pair_id": "porter_36_2gedB__1nrjB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1x0gA",
+   "issues": "未映射残基=1",
+   "pair_id": "porter_43_1x0gA__1x0gD",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2nntA",
+   "issues": "未映射残基=7",
+   "pair_id": "porter_46_2nntA__2mwfA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1xjtA",
+   "issues": "内部缺口=1",
+   "pair_id": "porter_53_1xjtA__1xjuB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2axzA",
+   "issues": "内部缺口=1;未映射残基=8",
+   "pair_id": "porter_60_2axzA__2grmB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "3zwgN",
+   "issues": "未映射残基=1",
+   "pair_id": "porter_68_3zwgN__4tsyD",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2nxqB",
+   "issues": "未映射残基=66",
+   "pair_id": "porter_77_2nxqB__1jfkA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "5i2mA",
+   "issues": "未映射残基=12",
+   "pair_id": "porter_79_5i2mA__5i2sA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1mbyA",
+   "issues": "未映射残基=4",
+   "pair_id": "porter_85_1mbyA__4yypA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "5c6bF",
+   "issues": "未映射残基=4",
+   "pair_id": "porter_1_1g2cF__5c6bF",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4yhdG",
+   "issues": "未映射残基=8",
+   "pair_id": "porter_4_7ahlE__4yhdG",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1jtiB",
+   "issues": "未映射残基=3",
+   "pair_id": "porter_6_1ovaA__1jtiB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "3j7vG",
+   "issues": "未映射残基=1",
+   "pair_id": "porter_9_3j7wB__3j7vG",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2bzyB",
+   "issues": "未映射残基=4",
+   "pair_id": "porter_10_2lqwA__2bzyB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1wp8C",
+   "issues": "未映射残基=2",
+   "pair_id": "porter_11_5ejbC__1wp8C",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1fzpD",
+   "issues": "未映射残基=14",
+   "pair_id": "porter_12_2frhA__1fzpD",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1htmB",
+   "issues": "未映射残基=9",
+   "pair_id": "porter_13_5hmgB__1htmB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1qs8B",
+   "issues": "未映射残基=1",
+   "pair_id": "porter_16_1miqB__1qs8B",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4cmqB",
+   "issues": "未映射残基=77",
+   "pair_id": "porter_21_4zt0C__4cmqB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4q79F",
+   "issues": "未映射残基=25",
+   "pair_id": "porter_26_4uv2D__4q79F",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "5wrgA",
+   "issues": "未映射残基=130",
+   "pair_id": "porter_27_1wyyB__5wrgA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2uy7D",
+   "issues": "未映射残基=7",
+   "pair_id": "porter_31_5fluE__2uy7D",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "3l9qB",
+   "issues": "未映射残基=17",
+   "pair_id": "porter_35_4rr2D__3l9qB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4aalA",
+   "issues": "未映射残基=4",
+   "pair_id": "porter_42_4aanA__4aalA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "1xjuB",
+   "issues": "未映射残基=2",
+   "pair_id": "porter_53_1xjtA__1xjuB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4ydqB",
+   "issues": "未映射残基=2",
+   "pair_id": "porter_56_4twaA__4ydqB",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "2n54B",
+   "issues": "未映射残基=5",
+   "pair_id": "porter_65_2hdmA__2n54B",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "4tsyD",
+   "issues": "未映射残基=3",
+   "pair_id": "porter_68_3zwgN__4tsyD",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "3q8fA",
+   "issues": "未映射残基=3",
+   "pair_id": "porter_76_3j9cA__3q8fA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "5i2sA",
+   "issues": "未映射残基=9",
+   "pair_id": "porter_79_5i2mA__5i2sA",
+   "region_index": "1"
+  },
+  {
+   "entry_id": "3mkoA",
+   "issues": "未映射残基=7",
+   "pair_id": "porter_84_5ineA__3mkoA",
+   "region_index": "1"
+  }
+ ],
+ "strict_quadrants": {
+  "both": [
+   "porter_20_5c1vA__5c1vB",
+   "porter_61_4gqcC__4gqcB",
+   "porter_62_4o0pA__4o01D"
+  ],
+  "fine_only": [
+   "porter_51_1h38D__1qlnA",
+   "porter_72_4rmbA__4rmbB",
+   "porter_77_2nxqB__1jfkA",
+   "porter_80_5f3kA__5f5rB",
+   "porter_87_2k0qA__2lelA",
+   "porter_9_3j7wB__3j7vG"
+  ],
+  "neither": [
+   "porter_68_3zwgN__4tsyD"
+  ],
+  "usable_only": []
+ },
+ "strict_rows": {
+  "both": 6,
+  "fine": 16,
+  "usable": 6
+ }
+}

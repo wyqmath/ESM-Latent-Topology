@@ -1,0 +1,66 @@
+saved 20 endpoint records from 10 positive pairs: data/interim/p303/fs_endpoints_20261002.fa
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpcore/_sync/http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 503 Service Unavailable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py", line 289, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py", line 105, in main
+    tok = AutoTokenizer.from_pretrained(MODEL, revision=revision)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 942, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1665, in from_pretrained
+    for template in list_repo_templates(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 148, in list_repo_templates
+    return [
+           ^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 148, in <listcomp>
+    return [
+           ^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 4103, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/huggingface_hub/utils/_pagination.py", line 36, in paginate
+    r = session.get(path, params=params, headers=headers, timeout=timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/lenovofs1/home/jyma/.conda/envs/plm_bench/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 503 Service Unavailable

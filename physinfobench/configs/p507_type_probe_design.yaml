@@ -1,0 +1,66 @@
+# =============================================================================
+# configs/p507_type_probe_design.yaml — P5.07 修复版类型探针设计（预注册）
+# =============================================================================
+# 注册时间：2026-09-30 09:0x Asia/Shanghai（在任何探针运行之前；吸取首轮
+# 未预注册即跑的教训）。范围裁决：补充分析（decisions.md 2026-09-30 08:0x），
+# 不改变 P5.04 final_lock。
+# =============================================================================
+
+meta:
+  task: P5.07-repair
+  registered_at: "2026-09-30 09:0x"
+  status: preregistered
+  supersedes: p507_probe_universe.json（已作废，decisions.md 2026-09-30）
+
+universe:
+  nodes: 冻结新链（支持率规则后 86）+ 旧 dev type-eligible 有序列列（71/76；
+    5 条无序列链登记为覆盖缺口：1S1H_I/3JYW_E/4WKK_A/5XZS_A/6UEV_A）
+  frozen_type_rule: >-
+    c2t200 众数=声明且支持≥0.70 → 冻结；<0.70 → c2t800 复算，众数不变且 ≥0.70
+    → 冻结；否则 low_confidence 剔除；声明≠双闭合判定 → adjudication 表剔除
+    （17 条）；2HKR_D 补拉复核后归入不一致组。
+  units: 连通分量 = 完全相同序列边 ∪ mmseqs(≥30% id, cov≥0.7) 边 ∪ 结构边
+    （US-align min TM≥0.6；新-新边由作业 814558 补齐后并入）。
+  exclusion: 分量与 confirmation/final_holdout 存在序列或结构边 → 整分量剔除。
+
+feasibility_verdict_preregistered:
+  3_1: 122 链/54 分量（待结构边并入后只会 ≤）——多家族，可做组级评价。
+  4_1: 35 链/≤4 分量（1 个 32 链主家族 + ≤3 旧散链）——**独立家族数不足**，
+    任何跨家族泛化主张不可得；降级为案例级。
+  5_2: 5 链/3 分量——案例级。
+  5_1: dev=0（唯一 1 条在 final_holdout，禁触碰）——不可评价边界。
+  6_1: 全库 2 条且 1 条 TMC——不可评价边界。
+  conclusion_bound: >-
+    打结"类型"任务的四解释裁决：在现有全部可得数据内，4_1/5_2 的限制不是
+    链数或平衡（可扩库解决），而是**独立家族数**（扩库不解决：KnotProt 全库
+    62 条 4_1 中本候选已含其主体，均为同超家族）。因此"探针能否读 4_1"只能
+    以案例级呈现；3_1 可做组级。
+
+evaluation_protocol:
+  design: 留分量法（leave-component-out；分量整体进出，杜绝同序列/同源/结构泄漏）。
+  reader: LogisticRegression(C∈{0.01,0.1,1,10}, class_weight=balanced, lbfgs,
+    max_iter=1000, random_state=2026)；特征=hidden 23/29/33 均值（同 P3.03 资源口径）。
+    [2026-09-30 修正：原文本写 liblinear；P3.03 多类 macro_f1 任务实为 lbfgs，
+    sklearn≥1.9 liblinear 不再支持多类。结果产出前修正，登记于报告。]
+  selection: 网格在 3_1-vs-rest 的分量级 balanced accuracy 上选择（只用多家族类，
+    稀有类不参与选择）；全网格结果如实落盘。
+  outputs:
+    - 混淆矩阵（链级 + 分量级双呈现）
+    - 逐类 precision/recall/F1/support（3_1 为主张级；4_1/5_2 标注案例级）
+    - Macro-F1 与 balanced accuracy（**描述性**，不作泛化主张）
+    - 分量级 bootstrap B=2000 seed 2026 CI（3_1 类）
+    - 基线：多数类 + 分量级标签置换 ×100（seed 2026..2125）
+    # [2026-09-30 修正] 原文本"分量内置换"在类型纯分量上零效应（probe6 实测
+    # mean=max=观测值），改为整分量类型重排；更严格保守方向，结果产出前修正。
+    # [注册时刻证据链] 文件 mtime 11:14:56（lbfgs 修正落地）先于全部探针结果
+    # （首个选中打印 11:15:34、交付物 11:28:41）——"先注册后跑"成立（审核 MINOR-1 注记）。
+    - 5_1/6_1 不可评价边界与 5 条旧链覆盖缺口披露
+  forbidden:
+    - 对 4_1/5_2 的任何群体级/泛化性表述
+    - 以 macro-F1 单值总结类型任务
+    - 训练/测试拆分到同分量内部
+
+execution_dependencies:
+  - 集群作业 814558（新-新结构边）完成 → 终版分量
+  - 43 条冻结链补抽嵌入（p507_emb 增量）
+  - 旧 71 链复用 knots_resid 库

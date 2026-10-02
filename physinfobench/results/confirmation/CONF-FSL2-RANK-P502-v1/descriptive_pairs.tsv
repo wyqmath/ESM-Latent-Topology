@@ -1,0 +1,7 @@
+pair_id	score	rank	percentile	pool_n	rank_interval_jitter	percentile_interval_jitter	tier_locked	valid_mask_locked
+porter_15_4hddA__2lepA	1e-06	5506	0.11565769	47606	[1359, 47607]	[0.02854682, 1.00002101]	pending_evidence	0
+porter_18_3j97M__1xtgB	0.0	41813	0.87831366	47606	[1374, 47607]	[0.02886191, 1.00002101]	pending_evidence	0
+porter_25_5k5gA__2kb8A	0.0	33402	0.70163425	47606	[1374, 47607]	[0.02886191, 1.00002101]	pending_evidence	0
+porter_35_4rr2D__3l9qB	0.0	7329	0.15395118	47606	[1367, 47607]	[0.02871487, 1.00002101]	fragment_only	0
+porter_63_4dxtA__4dxrA	0.0	10881	0.22856363	47606	[1374, 47607]	[0.02886191, 1.00002101]	pending_evidence	0
+porter_89_4a5wB__3t5oA	0.0	24318	0.51081796	47606	[1374, 47607]	[0.02886191, 1.00002101]	pending_evidence	0

@@ -1,0 +1,8 @@
+scope	record	kind	reason	created_at
+knots	4bpq_A	excluded	excluded_artifact	2026-09-24 00:51
+knots	5ljqA	excluded	rejected_knotted	2026-09-24 00:51
+fold_switch	porter_26_4uv2D__4q79F	excluded	historical_not_usable	2026-09-24 00:51
+fold_switch	porter_66_3vo9B__3vpaD	excluded	historical_not_usable	2026-09-24 00:51
+rnase_a	EXCL-9R6Q	excluded	引用列表命中假阳性：Local refinement of the N-terminal domain (NTD) an	2026-09-24 00:51
+rnase_a	EXCL-9R6R	excluded	引用列表命中假阳性：Local refinement of the N-terminal domain (NTD) fr	2026-09-24 00:51
+rnase_a	EXCL-9R6P	excluded	引用列表命中假阳性：Porcine hemagglutinating encephalomyelitis virus (	2026-09-24 00:51

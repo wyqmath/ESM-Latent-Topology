@@ -1,0 +1,50 @@
+=== probes 2026-09-25 17:36:46 ===
+[probe] KNOT_PRESENCE done
+[probe] KNOT_TYPE done
+[probe] FS_REGION done
+[probe] FS_L1 done
+[disorder] layer=1 C=0.01 mean=0.865664
+[disorder] layer=1 C=0.1 mean=0.840054
+[disorder] layer=1 C=1 mean=0.82672
+[disorder] layer=1 C=10 mean=0.817214
+[disorder] layer=2 C=0.01 mean=0.525494
+[disorder] layer=2 C=0.1 mean=0.500532
+[disorder] layer=2 C=1 mean=0.45896
+[disorder] layer=2 C=10 mean=0.422142
+[disorder] layer=3 C=0.01 mean=0.904098
+[disorder] layer=3 C=0.1 mean=0.895707
+[disorder] layer=3 C=1 mean=0.865748
+[disorder] layer=3 C=10 mean=0.83455
+[probe] DISORDER done
+[l2A] layer=1 C=0.01 pct=0.000599 recall@10000=1.0
+[l2A] layer=1 C=0.1 pct=0.000589 recall@10000=1.0
+[l2A] layer=1 C=1 pct=0.000559 recall@10000=1.0
+[l2A] layer=1 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=2 C=0.01 pct=0.000689 recall@10000=1.0
+[l2A] layer=2 C=0.1 pct=0.000559 recall@10000=1.0
+[l2A] layer=2 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=2 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=3 C=0.01 pct=0.000579 recall@10000=1.0
+[l2A] layer=3 C=0.1 pct=0.000569 recall@10000=1.0
+[l2A] layer=3 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=3 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=4 C=0.01 pct=0.000569 recall@10000=1.0
+[l2A] layer=4 C=0.1 pct=0.000559 recall@10000=1.0
+[l2A] layer=4 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=4 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=0.01 pct=0.000569 recall@10000=1.0
+[l2A] layer=5 C=0.1 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=6 C=0.01 pct=0.001688 recall@10000=1.0
+[l2A] layer=6 C=0.1 pct=0.000749 recall@10000=1.0
+[l2A] layer=6 C=1 pct=0.000619 recall@10000=1.0
+[l2A] layer=6 C=10 pct=0.000559 recall@10000=1.0
+[probe] FS_L2A done
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_probes_p303.py", line 396, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_probes_p303.py", line 390, in main
+    old_qc["note"] = QC["note"]
+                     ~~^^^^^^^^
+KeyError: 'note'

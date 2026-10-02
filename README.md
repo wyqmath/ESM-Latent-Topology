@@ -24,3 +24,7 @@ Before running the pipeline, download and place the following:
 3. **ESM-2 3B model weights** — auto-downloaded by `esm` package on first run
 
 The integrability error E[n] and related Hasimoto-frame geometry are computed using code from [discrete_hasimoto_protein](https://github.com/wyqmath/discrete_hasimoto_protein).
+
+## PhysInfoBench
+
+The related protein language model benchmark project is documented in [`physinfobench/README.md`](physinfobench/README.md). That subproject includes its curated labels, split manifests, analysis code, reports, and versioned results. Its evidence status and remaining work are described in [`physinfobench/deliverables/Repository_update_plan_20261002.md`](physinfobench/deliverables/Repository_update_plan_20261002.md). The PhysInfoBench snapshot does not change or replace the ESM-Latent-Topology pipeline above.

@@ -1,0 +1,92 @@
+{
+ "accounting": [],
+ "asserts": {
+  "disorder_n": 2279,
+  "knots_n": 750
+ },
+ "config": "configs/aggregation.yaml frozen_2026-09-26_p401",
+ "families": {
+  "aggregation_learned": {
+   "L-ATT-DISORDER vs D-MEAN": {
+    "seed_mean_judged": {
+     "arm": 0.998998,
+     "boot_degenerate": 13,
+     "boot_valid": 1987,
+     "ci99fam": [
+      -0.000401,
+      0.000308
+     ],
+     "delta": -3.8e-05,
+     "ref": 0.999036
+    },
+    "seedwise": [
+     {
+      "arm": 0.998472,
+      "boot_degenerate": 13,
+      "boot_valid": 1987,
+      "ci99fam": null,
+      "delta": -0.000564,
+      "ref": 0.999036
+     },
+     {
+      "arm": 0.998536,
+      "boot_degenerate": 13,
+      "boot_valid": 1987,
+      "ci99fam": null,
+      "delta": -0.0005,
+      "ref": 0.999036
+     },
+     {
+      "arm": 0.999007,
+      "boot_degenerate": 13,
+      "boot_valid": 1987,
+      "ci99fam": null,
+      "delta": -2.9e-05,
+      "ref": 0.999036
+     }
+    ]
+   },
+   "L-ATT-KNOTS vs K-POOLED": {
+    "seed_mean_judged": {
+     "arm": 0.907762,
+     "boot_degenerate": 0,
+     "boot_valid": 2000,
+     "ci99fam": [
+      -0.045461,
+      -0.008263
+     ],
+     "delta": -0.024102,
+     "ref": 0.931864
+    },
+    "seedwise": [
+     {
+      "arm": 0.880841,
+      "boot_degenerate": 0,
+      "boot_valid": 2000,
+      "ci99fam": null,
+      "delta": -0.051023,
+      "ref": 0.931864
+     },
+     {
+      "arm": 0.877517,
+      "boot_degenerate": 0,
+      "boot_valid": 2000,
+      "ci99fam": null,
+      "delta": -0.054347,
+      "ref": 0.931864
+     },
+     {
+      "arm": 0.899357,
+      "boot_degenerate": 0,
+      "boot_valid": 2000,
+      "ci99fam": null,
+      "delta": -0.032507,
+      "ref": 0.931864
+     }
+    ]
+   }
+  }
+ },
+ "run_ts": "2026-09-26 23:13",
+ "sensitivity": {}
+}

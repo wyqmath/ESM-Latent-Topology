@@ -1,0 +1,113 @@
+{
+ "exit_keyword_scan_after_backfill": {
+  "O16305": 43,
+  "O67024": 8,
+  "P06787": 43,
+  "P21589": 1,
+  "P60204": 41,
+  "Q5JF30": 8,
+  "Q9Y9L0": 8
+ },
+ "generated": "2026-09-23 20:38",
+ "papers_basis": {
+  "abstract_endpoints": 76,
+  "fulltext_endpoints": 9,
+  "note": "全候选累计；TSV 行内 n_fulltext/n_abstract 为每候选口径"
+ },
+ "per_positivity_availability": {
+  "P00573": {
+   "backup_slots": 0,
+   "backup_usable": 0,
+   "pn_a_total": 2,
+   "primary_flagged": 0,
+   "primary_slots": 2,
+   "primary_usable": 2,
+   "primary_weak": 0
+  },
+  "P38505": {
+   "backup_slots": 2,
+   "backup_usable": 2,
+   "pn_a_total": 17,
+   "primary_flagged": 1,
+   "primary_slots": 3,
+   "primary_usable": 2,
+   "primary_weak": 0
+  },
+  "Q08209": {
+   "backup_slots": 2,
+   "backup_usable": 2,
+   "pn_a_total": 14,
+   "primary_flagged": 0,
+   "primary_slots": 3,
+   "primary_usable": 3,
+   "primary_weak": 0
+  },
+  "Q12931": {
+   "backup_slots": 1,
+   "backup_usable": 1,
+   "pn_a_total": 4,
+   "primary_flagged": 1,
+   "primary_slots": 3,
+   "primary_usable": 2,
+   "primary_weak": 0
+  },
+  "Q9RZA4": {
+   "backup_slots": 2,
+   "backup_usable": 2,
+   "pn_a_total": 9,
+   "primary_flagged": 1,
+   "primary_slots": 3,
+   "primary_usable": 2,
+   "primary_weak": 0
+  },
+  "Q9YA14": {
+   "backup_slots": 2,
+   "backup_usable": 2,
+   "pn_a_total": 14,
+   "primary_flagged": 0,
+   "primary_slots": 3,
+   "primary_usable": 3,
+   "primary_weak": 0
+  }
+ },
+ "selection_rule": "每阳性 PN-A 按 match_rank 前 3 主选+次 2 备选；每候选核查其映射 PDB 主引文至多 4 篇（预注册）",
+ "semantics": "检索无命中≠可靠阴性；transform_kw 命中仅登记复核，不自动改 PN 层；回补不触碰 P1.11 冻结归档",
+ "truncated_backfill": {
+  "O16305": {
+   "fetched": 725,
+   "hit_count": 797,
+   "status": "frozen_partial"
+  },
+  "O67024": {
+   "fetched": 118,
+   "hit_count": 118,
+   "status": "frozen_replay"
+  },
+  "P06787": {
+   "fetched": 797,
+   "hit_count": 797,
+   "status": "frozen_replay"
+  },
+  "P21589": {
+   "fetched": 52,
+   "hit_count": 52,
+   "status": "frozen_replay"
+  },
+  "P60204": {
+   "fetched": 625,
+   "hit_count": 797,
+   "status": "frozen_partial"
+  },
+  "Q5JF30": {
+   "fetched": 118,
+   "hit_count": 118,
+   "status": "frozen_replay"
+  },
+  "Q9Y9L0": {
+   "fetched": 118,
+   "hit_count": 118,
+   "status": "frozen_replay"
+  }
+ },
+ "unique_candidates": 25
+}

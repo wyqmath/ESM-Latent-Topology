@@ -1,0 +1,131 @@
+{
+ "aligner": "Bio.Align.PairwiseAligner BLOSUM62 open=-11 extend=-1 mode=local (biopython 1.88, old project venv)",
+ "endpoint_rows": 20,
+ "generated": "2026-09-23 18:03",
+ "identical_observed_pairs": [
+  "porter_87_2k0qA__2lelA"
+ ],
+ "inputs": {
+  "canonical_dir": "data/raw/audit_uniprot/2026-09-23",
+  "endpoint_table": "/Users/yuan/Documents/Codex/2026-09-08/jie/benchmark_step1/manifests/fold_pair_endpoint_sequence_structure_summary.tsv",
+  "endpoint_table_sha256": "dee56a9fbfc3e5a814a9a7e0a93d25fcbd6e849282fd91ecb47f5a6aac1629dd",
+  "isoform_check": "UniProt REST 2026-09-23 17:44（r2，修正 isoformIds 解析）：3/10 accession 有非 Displayed isoform（P19726→P19727-1；Q08209→-2/-3/-4/-5；Q12931→Q12931-2），其余 7 个无；isoform 竞争检验逐端点记录于表，canonical 归属由对齐覆盖证据支持"
+ },
+ "interpretation_counts": {
+  "same_protein_construct_explained": 14,
+  "same_protein_exact_span": 6
+ },
+ "pair_confirmed_count": 10,
+ "pair_verdicts": {
+  "porter_20_5c1vA__5c1vB": {
+   "endpoints": {
+    "5c1v_A": "same_protein_construct_explained",
+    "5c1v_B": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "tie_attribution_by_sifts",
+    "tie_attribution_by_sifts"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_51_1h38D__1qlnA": {
+   "endpoints": {
+    "1h38_D": "same_protein_construct_explained",
+    "1qln_A": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_61_4gqcC__4gqcB": {
+   "endpoints": {
+    "4gqc_B": "same_protein_construct_explained",
+    "4gqc_C": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_62_4o0pA__4o01D": {
+   "endpoints": {
+    "4o01_D": "same_protein_construct_explained",
+    "4o0p_A": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_68_3zwgN__4tsyD": {
+   "endpoints": {
+    "3zwg_N": "same_protein_exact_span",
+    "4tsy_D": "same_protein_exact_span"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_72_4rmbA__4rmbB": {
+   "endpoints": {
+    "4rmb_A": "same_protein_construct_explained",
+    "4rmb_B": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_77_2nxqB__1jfkA": {
+   "endpoints": {
+    "1jfk_A": "same_protein_exact_span",
+    "2nxq_B": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_80_5f3kA__5f5rB": {
+   "endpoints": {
+    "5f3k_A": "same_protein_construct_explained",
+    "5f5r_B": "same_protein_construct_explained"
+   },
+   "isoform_status_per_endpoint": [
+    "tie_attribution_by_sifts",
+    "tie_attribution_by_sifts"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_87_2k0qA__2lelA": {
+   "endpoints": {
+    "2k0q_A": "same_protein_exact_span",
+    "2lel_A": "same_protein_exact_span"
+   },
+   "isoform_status_per_endpoint": [
+    "no_isoform_annotated",
+    "no_isoform_annotated"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  },
+  "porter_9_3j7wB__3j7vG": {
+   "endpoints": {
+    "3j7v_G": "same_protein_construct_explained",
+    "3j7w_B": "same_protein_exact_span"
+   },
+   "isoform_status_per_endpoint": [
+    "excluded_by_competition",
+    "excluded_by_competition"
+   ],
+   "verdict": "sequence_identity_confirmed"
+  }
+ }
+}

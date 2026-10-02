@@ -1,0 +1,36 @@
+=== probes 2026-09-26 02:18:28 ===
+[l2A] layer=1 C=0.01 pct=0.000599 recall@10000=1.0
+[l2A] layer=1 C=0.1 pct=0.000589 recall@10000=1.0
+[l2A] layer=1 C=1 pct=0.000559 recall@10000=1.0
+[l2A] layer=1 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=2 C=0.01 pct=0.000689 recall@10000=1.0
+[l2A] layer=2 C=0.1 pct=0.000559 recall@10000=1.0
+[l2A] layer=2 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=2 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=3 C=0.01 pct=0.000579 recall@10000=1.0
+[l2A] layer=3 C=0.1 pct=0.000569 recall@10000=1.0
+[l2A] layer=3 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=3 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=4 C=0.01 pct=0.000569 recall@10000=1.0
+[l2A] layer=4 C=0.1 pct=0.000559 recall@10000=1.0
+[l2A] layer=4 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=4 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=0.01 pct=0.000569 recall@10000=1.0
+[l2A] layer=5 C=0.1 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=6 C=0.01 pct=0.001688 recall@10000=1.0
+[l2A] layer=6 C=0.1 pct=0.000749 recall@10000=1.0
+[l2A] layer=6 C=1 pct=0.000619 recall@10000=1.0
+[l2A] layer=6 C=10 pct=0.000559 recall@10000=1.0
+[probe] FS_L2A done
+[p303probe] DONE
+=== stage-B scoring 2026-09-26 02:19:49 ===
+[stageb] selected layer=5 C=0.1
+[stageb] loaded /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p303/emb/packed_l2_stage_b.npz: (47604, 6, 1280)
+[stageb] loaded /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p303/emb/packed_l2sb_delta.npz: (2462, 6, 1280)
+[stageb] OK {"layer": 5, "C": 0.1, "universe": 342014, "run_ts": "2026-09-26 02:20", "recall@10": 0.8, "enrichment@10": 27361.12, "recall@100": 1.0, "enrichment@100": 3420.14, "recall@1000": 1.0, "enrichment@1000": 342.014, "recall@10000": 1.0, "enrichment@10000": 34.2014, "positive_rank_percentile": 2.7e-05, "universe_bg_expected": 342004}
+=== baselines 2026-09-26 02:20:14 ===
+universe=342014 (bg 342004 + pos 10)
+[p206] baselines=['B0_random', 'B1_length_desc', 'B2_n_pdb_desc', 'B3_logistic_len_pdb'] universe=342014 -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/results/baselines/l2_development.tsv
+=== ALL_PROBES_DONE 2026-09-26 02:20:22 ===

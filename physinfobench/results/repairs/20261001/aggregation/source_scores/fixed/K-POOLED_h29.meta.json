@@ -1,0 +1,23 @@
+{
+ "arm": "POOLED_h29",
+ "best_C": 0.01,
+ "grid": [
+  {
+   "C": 0.01,
+   "pooled_auroc": 0.923914
+  },
+  {
+   "C": 0.1,
+   "pooled_auroc": 0.918517
+  },
+  {
+   "C": 1,
+   "pooled_auroc": 0.914106
+  },
+  {
+   "C": 10,
+   "pooled_auroc": 0.91101
+  }
+ ],
+ "task": "knots"
+}

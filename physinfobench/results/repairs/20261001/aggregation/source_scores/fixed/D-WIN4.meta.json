@@ -1,0 +1,25 @@
+{
+ "arm": "WIN4",
+ "best_C": 0.01,
+ "dual_n": 4,
+ "grid": [
+  {
+   "C": 0.01,
+   "pooled_auprc": 0.999721
+  },
+  {
+   "C": 0.1,
+   "pooled_auprc": 0.999694
+  },
+  {
+   "C": 1,
+   "pooled_auprc": 0.999667
+  },
+  {
+   "C": 10,
+   "pooled_auprc": 0.999663
+  }
+ ],
+ "task": "disorder",
+ "y_prot_positive": 2277
+}

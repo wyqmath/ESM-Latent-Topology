@@ -1,0 +1,9 @@
+宇宙 89 | 类型 {'3_1': 50, '5_2': 5, '4_1': 34}
+选中 {'layer': 'h33', 'C': 1, 'component_balanced_acc_3vR': 0.8267, 'n_pred': 89}
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_type_probe_v2.py", line 195, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_type_probe_v2.py", line 134, in main
+    "precision": round(float(tp / cm[:, i].sum()), 4) if cm_chain[:, i].sum() else None,
+                                  ^^
+NameError: name 'cm' is not defined

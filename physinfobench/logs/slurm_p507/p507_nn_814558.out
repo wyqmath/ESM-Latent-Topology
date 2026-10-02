@@ -1,0 +1,171 @@
+createdb /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/pdb_new /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn 
+
+MMseqs Version:             	941cd33ff0771cd2e3f144e3293e22a2b87e9fda
+Use GPU                     	0
+Path to ProstT5             	
+Chain name mode             	0
+Createdb extraction mode    	0
+Interface distance threshold	8
+Write mapping file          	0
+Mask b-factor threshold     	0
+Coord store mode            	2
+Write lookup file           	1
+Input format                	0
+File Inclusion Regex        	.*
+File Exclusion Regex        	^$
+Threads                     	64
+Verbosity                   	3
+
+Output file: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn
+[=================================================================] 281 0s 131ms
+Time for merging to nn_ss: 0h 0m 0s 35ms
+Time for merging to nn_h: 0h 0m 0s 34ms
+Time for merging to nn_ca: 0h 0m 0s 35ms
+Time for merging to nn: 0h 0m 0s 34ms
+Ignore 0 out of 281.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 0s 401ms
+Create directory /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp
+search /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/aln_nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp -e 0.001 -a 
+
+MMseqs Version:                    	941cd33ff0771cd2e3f144e3293e22a2b87e9fda
+Seq. id. threshold                 	0
+Coverage threshold                 	0
+Coverage mode                      	0
+Max reject                         	2147483647
+Max accept                         	2147483647
+Add backtrace                      	true
+TMscore threshold                  	0
+TMscore threshold mode             	0
+TMalign hit order                  	0
+TMalign fast                       	1
+Preload mode                       	0
+Threads                            	64
+Verbosity                          	3
+LDDT threshold                     	0
+Sort by structure bit score        	1
+Alignment type                     	2
+Exact TMscore                      	0
+Substitution matrix                	aa:3di.out,nucl:3di.out
+Alignment mode                     	3
+Alignment mode                     	0
+E-value threshold                  	0.001
+Min alignment length               	0
+Seq. id. mode                      	0
+Alternative alignments             	0
+Max sequence length                	65535
+Compositional bias                 	1
+Compositional bias                 	1
+Gap open cost                      	aa:10,nucl:10
+Gap extension cost                 	aa:1,nucl:1
+Compressed                         	0
+Seed substitution matrix           	aa:3di.out,nucl:3di.out
+Sensitivity                        	9.5
+k-mer length                       	0
+Target search mode                 	0
+k-score                            	seq:2147483647,prof:2147483647
+Max results per query              	1000
+Split database                     	0
+Split mode                         	2
+Split memory limit                 	0
+Diagonal scoring                   	true
+Exact k-mer matching               	0
+Mask residues                      	0
+Mask residues probability          	0.999995
+Mask lower case residues           	1
+Mask lower letter repeating N times	6
+Minimum diagonal score             	30
+Selected taxa                      	
+Spaced k-mers                      	1
+Spaced k-mer pattern               	
+Local temporary path               	
+Use GPU                            	0
+Use GPU server                     	0
+Wait for GPU server                	600
+Prefilter mode                     	0
+Exhaustive search mode             	false
+Search iterations                  	1
+Remove temporary files             	true
+MPI runner                         	
+Force restart with latest tmp      	false
+Cluster search                     	0
+
+prefilter /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn_ss /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn_ss /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/pref --sub-mat 'aa:3di.out,nucl:3di.out' --seed-sub-mat 'aa:3di.out,nucl:3di.out' -s 9.5 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 1000 --split 0 --split-mode 2 --split-memory-limit 0 -c 0 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 0.15 --diag-score 1 --exact-kmer-matching 0 --mask 0 --mask-prob 0.999995 --mask-lower-case 1 --mask-n-repeat 6 --min-ungapped-score 30 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 64 --compressed 0 -v 3 
+
+Query database size: 281 type: Aminoacid
+Estimated memory consumption: 979M
+Target database size: 281 type: Aminoacid
+Index table k-mer threshold: 78 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 281 0s 2ms
+Index table: Masked residues: 679
+Index table: fill
+[=================================================================] 281 0s 5ms
+Index statistics
+Entries:          73826
+DB size:          488 MB
+Avg k-mer size:   0.001154
+Top 10 k-mers
+    KWFFDP	89
+    IEAEDD	84
+    WKAAWI	83
+    HGMMKT	83
+    KFADAT	79
+    DQADHY	73
+    AQLVLV	68
+    HPSVQS	66
+    DYHVVS	65
+    DDQLVV	64
+Time for index table init: 0h 0m 0s 303ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 78
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 281
+Target db start 1 to 281
+[=================================================================] 281 0s 669ms
+
+8245.586185 k-mers per position
+27122 DB matches per sequence
+0 overflows
+241 sequences passed prefiltering per query sequence
+257 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref: 0h 0m 0s 27ms
+Time for processing: 0h 0m 1s 402ms
+structurealign /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/pref /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/strualn --tmscore-threshold 0 --tmscore-threshold-mode 0 --lddt-threshold 0 --sort-by-structure-bits 1 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 1 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 0.5 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 64 --compressed 0 -v 3 
+
+[=================================================================] 281 0s 741ms
+Time for merging to strualn: 0h 0m 0s 18ms
+Time for processing: 0h 0m 1s 12ms
+mvdb /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/strualn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/aln -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+mvdb /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/aln /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/aln_nn -v 3 
+
+Time for processing: 0h 0m 0s 7ms
+Removing temporary files
+rmdb /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/tmp/10264454799561416035/pref -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+convertalis /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/db_nn/nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/aln_nn /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p507_isolate/nn_hits.tsv --format-output query,target,qtmscore,ttmscore,rmsd 
+
+MMseqs Version:        	941cd33ff0771cd2e3f144e3293e22a2b87e9fda
+Substitution matrix    	aa:3di.out,nucl:3di.out
+Alignment format       	0
+Format alignment output	query,target,qtmscore,ttmscore,rmsd
+Gap open cost          	aa:10,nucl:10
+Gap extension cost     	aa:1,nucl:1
+Database output        	false
+Preload mode           	0
+Threads                	64
+Compressed             	0
+Verbosity              	3
+Exact TMscore          	0
+
+[=================================================================] 281 0s 926ms
+Time for merging to nn_hits.tsv: 0h 0m 0s 33ms
+Time for processing: 0h 0m 0s 988ms
+US-align 待确认 7962
+new-new 边 (min TM>=0.6): 7646
+[p507nn] DONE 2026-09-30T02:39:08Z

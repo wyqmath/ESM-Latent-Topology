@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights:   3%|▎         | 16/534 [00:00<00:24, 20.87it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 685.43it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=43 cache_hits=0 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p507_emb/extract_manifest.tsv
+[p507emb2] DONE 2026-09-30T02:39:35Z

@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-10-01T13:46:45.259724+00:00",
+  "repeated_runs_identical": true,
+  "verified_outputs": 10,
+  "output_sha256": {
+    "component_map.tsv": "ba394396dcf845e1d84df1ee441f378d51eb253ae12cb283d2e63e0008dcf4c1",
+    "background_component_map.tsv.gz": "ec09bfbaa3e72f58635b37663b8fdf88b41724bb49043002496c72371a4b5e10",
+    "evaluated_sample_exposure.tsv": "dbe9f4e0f3a580717c7674fe66a4d0514f1e21772316f9df9f8961a0bb2c3adc",
+    "cohort_summary.tsv": "31c5019d801dad396fc43bd203fa16b42791fba372b5892fb16530605a8bc6c5",
+    "component_future_policy.tsv": "230faabbe26ebc4d306fe52fe39e7a04e1d39bc2e02782ed336ade1dbc276af8",
+    "future_migration_preflight.tsv": "36e238e80b53321c22bca44b3e6c59958db2562be4422b7d26e9c7f00238f8a6",
+    "use_evidence.tsv": "7c764bd0e15622a07fdd9b17fb7113a7e4f0f698bd8628762ec2a75778fec779",
+    "P5_scope_inventory.tsv": "22774f61bf9627858a2015ce1bf1972d731f535d2ab7637cdd96c2f682e54d2c",
+    "qc.json": "dc4b76b5560d6d69de18cf99afd900d2b8d07534f10131421fd208bab42ab1af",
+    "input_checksums.tsv": "cefd741271c053e4f6c0d95dd8a4412db2e214ebc942688ccaf836075cf2c10a"
+  }
+}

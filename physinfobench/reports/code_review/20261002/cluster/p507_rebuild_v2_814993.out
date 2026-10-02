@@ -1,0 +1,52 @@
+节点 157 → 冲突分量剔除后 126（丢弃 31）
+类型分布: {'3_1': 87, '5_2': 5, '4_1': 34}
+独立分量: 53
+  3_1: 链 87 | 分量 46
+  4_1: 链 34 | 分量 4
+  5_2: 链 5 | 分量 3
+saved p507_final_universe_20261002.json
+宇宙 126 | 类型 {'3_1': 87, '5_2': 5, '4_1': 34}
+选中 {'layer': 'h33', 'C': 1, 'component_mean_chain_binary_accuracy': 0.8365, 'n_pred': 126}
+{
+ "selected": {
+  "layer": "h33",
+  "C": 1,
+  "component_mean_chain_binary_accuracy": 0.8365,
+  "n_pred": 126
+ },
+ "macro_f1_descriptive": 0.4346,
+ "permutation_macro_f1": {
+  "mean": 0.3382,
+  "max": 0.6524
+ },
+ "per_type": {
+  "3_1": {
+   "support_chains": 87,
+   "support_components": 46,
+   "recall": 0.9425,
+   "precision": 0.7009,
+   "f1": 0.8039,
+   "component_recall": 0.913,
+   "claim_level": "经选择的开发性分量描述"
+  },
+  "4_1": {
+   "support_chains": 34,
+   "support_components": 4,
+   "recall": 0.0,
+   "precision": 0.0,
+   "f1": 0.0,
+   "component_recall": 0.0,
+   "claim_level": "案例级（绑定分量数量有限）"
+  },
+  "5_2": {
+   "support_chains": 5,
+   "support_components": 3,
+   "recall": 0.6,
+   "precision": 0.4286,
+   "f1": 0.5,
+   "component_recall": 0.3333,
+   "claim_level": "案例级（绑定分量数量有限）"
+  }
+ }
+}
+[p507-rebuild-v2] DONE 2026-10-02T07:40:03Z

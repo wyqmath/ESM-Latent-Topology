@@ -1,0 +1,58 @@
+test_degenerate_draw_accounting (test_cluster_bootstrap.BootstrapTest.test_degenerate_draw_accounting) ... ok
+test_deterministic_paired_sampling (test_cluster_bootstrap.BootstrapTest.test_deterministic_paired_sampling) ... ok
+test_duplicate_selection_changes_auroc (test_cluster_bootstrap.BootstrapTest.test_duplicate_selection_changes_auroc) ... ok
+test_entire_component_repeated (test_cluster_bootstrap.BootstrapTest.test_entire_component_repeated) ... ok
+test_hand_auroc_with_ties (test_cluster_bootstrap.BootstrapTest.test_hand_auroc_with_ties) ... ok
+test_missing_component_fails (test_cluster_bootstrap.BootstrapTest.test_missing_component_fails) ... ok
+test_append_manifest_keeps_disjoint_batches (test_extract_representations.ExtractRepresentationsTests.test_append_manifest_keeps_disjoint_batches) ... ok
+test_invalid_cache_is_quarantined_and_manifest_has_one_terminal_row (test_extract_representations.ExtractRepresentationsTests.test_invalid_cache_is_quarantined_and_manifest_has_one_terminal_row) ... [cache REJECT meta mismatch] sample
+ok
+test_revision_fp32_default_layers_cache_and_device_identity (test_extract_representations.ExtractRepresentationsTests.test_revision_fp32_default_layers_cache_and_device_identity) ... [extract FATAL] 不可合并不同提取配置的清单: sample
+ok
+test_background_binding (test_future_split_guard.FutureSplitGuardTests.test_background_binding) ... ok
+test_changed_universe_fails (test_future_split_guard.FutureSplitGuardTests.test_changed_universe_fails) ... ok
+test_duplicate_identity_fails (test_future_split_guard.FutureSplitGuardTests.test_duplicate_identity_fails) ... ok
+test_false_background_component_fails (test_future_split_guard.FutureSplitGuardTests.test_false_background_component_fails) ... ok
+test_false_native_component_fails (test_future_split_guard.FutureSplitGuardTests.test_false_native_component_fails) ... ok
+test_historical_migration_rejected (test_future_split_guard.FutureSplitGuardTests.test_historical_migration_rejected) ... ok
+test_label_only_is_not_global_approval (test_future_split_guard.FutureSplitGuardTests.test_label_only_is_not_global_approval) ... ok
+test_partial_global_map_fails (test_future_split_guard.FutureSplitGuardTests.test_partial_global_map_fails) ... ok
+test_safe_development (test_future_split_guard.FutureSplitGuardTests.test_safe_development) ... ok
+test_unexposed_component_still_cannot_be_split (test_future_split_guard.FutureSplitGuardTests.test_unexposed_component_still_cannot_be_split) ... ok
+test_exact_current_union_with_old_extras (test_l2_input_union_guard.L2InputUnionTests.test_exact_current_union_with_old_extras) ... ok
+test_missing_current_rep_fails (test_l2_input_union_guard.L2InputUnionTests.test_missing_current_rep_fails) ... ok
+test_overlap_or_delta_extra_fails (test_l2_input_union_guard.L2InputUnionTests.test_overlap_or_delta_extra_fails) ... ok
+test_average_precision_matches_sklearn_for_tied_groups (test_metrics_protocol.MetricProtocolTests.test_average_precision_matches_sklearn_for_tied_groups) ... ok
+test_average_precision_pools_ties_and_is_permutation_invariant (test_metrics_protocol.MetricProtocolTests.test_average_precision_pools_ties_and_is_permutation_invariant) ... ok
+test_rank_percentile_uses_lower_is_better (test_metrics_protocol.MetricProtocolTests.test_rank_percentile_uses_lower_is_better) ... ok
+test_complete_v2_tables_write_a_versioned_universe (test_p507_structure_guard.StructureTableGuardTests.test_complete_v2_tables_write_a_versioned_universe) ... ok
+test_missing_or_wrong_version_tables_fail_closed (test_p507_structure_guard.StructureTableGuardTests.test_missing_or_wrong_version_tables_fail_closed) ... ok
+test_tm_min_must_match_both_directions_before_output (test_p507_structure_guard.StructureTableGuardTests.test_tm_min_must_match_both_directions_before_output) ... ok
+test_db_code_prefix_not_accession (test_p508_accessions.AccessionTests.test_db_code_prefix_not_accession) ... ok
+test_exact_chain_entity_not_last_entry (test_p508_accessions.AccessionTests.test_exact_chain_entity_not_last_entry) ... ok
+test_unknown_and_ambiguous_explicit (test_p508_accessions.AccessionTests.test_unknown_and_ambiguous_explicit) ... ok
+test_array_shape_must_match_metadata (test_p508_layer_selection.ResidualLayerTests.test_array_shape_must_match_metadata) ... ok
+test_h33_dev_slot2_external_slot0 (test_p508_layer_selection.ResidualLayerTests.test_h33_dev_slot2_external_slot0) ... ok
+test_missing_target_and_metadata_conflict_fail (test_p508_layer_selection.ResidualLayerTests.test_missing_target_and_metadata_conflict_fail) ... ok
+test_wrong_model_and_checkpoint_fail (test_p508_layer_selection.ResidualLayerTests.test_wrong_model_and_checkpoint_fail) ... ok
+test_accepts_chain_wording_in_current_output (test_usalign_parser.USAlignParserTests.test_accepts_chain_wording_in_current_output) ... ok
+test_incomplete_or_invalid_output_fails_closed (test_usalign_parser.USAlignParserTests.test_incomplete_or_invalid_output_fails_closed) ... ok
+test_parses_both_normalization_directions (test_usalign_parser.USAlignParserTests.test_parses_both_normalization_directions) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.269s
+
+OK
+[extract] samples=1 cache_hits=0 layer_set=mean_33|domfull -> /var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/tmptzgk70a6/out/extract_manifest.tsv
+[extract] samples=2 cache_hits=0 layer_set=mean_33|domfull -> /var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/tmptzgk70a6/out/extract_manifest.tsv
+[extract] samples=1 cache_hits=0 layer_set=mean_33|domfull -> /var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/tmpvh0uzehx/out/extract_manifest.tsv
+[extract] samples=1 cache_hits=0 layer_set=mean_33|domfull -> /var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/tmpvh0uzehx/out/extract_manifest.tsv
+[extract] samples=1 cache_hits=0 layer_set=mean_all34|domfull -> /var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/tmp_gxv8e0q/out/extract_manifest.tsv
+[extract] samples=1 cache_hits=1 layer_set=mean_all34|domfull -> /var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/tmp_gxv8e0q/out/extract_manifest.tsv
+节点 1 → 冲突分量剔除后 1（丢弃 0）
+类型分布: {'3_1': 1}
+独立分量: 1
+  3_1: 链 1 | 分量 1
+  4_1: 链 0 | 分量 0
+  5_2: 链 0 | 分量 0
+saved p507_final_universe_20261002.json

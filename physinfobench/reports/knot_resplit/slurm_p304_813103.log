@@ -1,0 +1,23 @@
+[skip] KNOT_PRESENCE 已有产物
+[skip] KNOT_TYPE 已有产物
+[FS_REGION] seed13 Δmetric=0.00829 CI95=[0.005132, 0.016468]
+[FS_REGION] seed42 Δmetric=0.008323 CI95=[0.005451, 0.026631]
+[FS_REGION] seed2026 Δmetric=0.008154 CI95=[0.003781, 0.0207]
+[FS_REGION] linear=0.0598(C0.01) Δseedmean=0.008256 env95=[0.003781, 0.026631] sig99=True
+[DISORDER500] seed13 Δmetric=-0.00283 CI95=[-0.01029, 0.000785]
+[DISORDER500] seed42 Δmetric=-0.00214 CI95=[-0.008201, 0.000841]
+[DISORDER500] seed2026 Δmetric=0.000144 CI95=[-0.000501, 0.000822]
+[DISORDER500] linear=0.9983(C0.01) Δseedmean=-0.001609 env95=[-0.01029, 0.000841] sig99=False
+[FS_L2A_rank] seed13 h256d2 OOF-AUROC=0.4989
+[FS_L2A_rank] seed42 h256d2 OOF-AUROC=0.4890
+[FS_L2A_rank] seed2026 h64d2 OOF-AUROC=0.9307
+[FS_L2A_rank] seed13 ΔAUROC=-0.2467 CI95=[-0.355921, -0.137787]
+[FS_L2A_rank] seed42 ΔAUROC=-0.25666 CI95=[-0.361406, -0.145147]
+/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/sklearn/metrics/_ranking.py:469: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/sklearn/metrics/_ranking.py:469: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+[FS_L2A_rank] seed2026 ΔAUROC=0.18509 CI95=[0.068908, 0.304143]
+[FS_L2A_rank] linear=0.7456 Δseedmean=-0.10609
+[p304] DONE
+=== P304_DONE 2026-09-26 01:16:31 ===

@@ -1,0 +1,98 @@
+{
+  "created_at": "2026-10-01 21:09",
+  "timezone": "Asia/Shanghai",
+  "baseline_commit": "18c89ea11491004d01ebbe227dc16c28dc87a67f",
+  "files": [
+    {
+      "path": "TODO.md",
+      "sha256": "79fffe25502b286fc666ca95eebe646f0791942f70bc158e5bc58208b8578699",
+      "bytes": 241197
+    },
+    {
+      "path": "README.md",
+      "sha256": "1a56cf8969a86e981790d6362ace9eb26315e1e7931a7af80df79d2c19bea917",
+      "bytes": 3352
+    },
+    {
+      "path": "configs/final_lock.yaml",
+      "sha256": "309ccb84148efa29d19114a441bfc26343cac5bd1342484a751450adaa151cb7",
+      "bytes": 11397
+    },
+    {
+      "path": "configs/confirmation_lock.yaml",
+      "sha256": "2ac7ff9e18921d075fec3d5fdd8e26bf83bf5401612ccd99ade3d1763028e165",
+      "bytes": 21281
+    },
+    {
+      "path": "configs/split_protocol.yaml",
+      "sha256": "2b3a37066786dd52da281d369f886c052460771592c5949423e64f14431def08",
+      "bytes": 15634
+    },
+    {
+      "path": "scripts/run_p505_holdout.py",
+      "sha256": "4af1e1733d29191a33db079792a29b2dd2786da5032dd51767f864f3b11ec98d",
+      "bytes": 17883
+    },
+    {
+      "path": "scripts/run_p502_confirmation_cluster.py",
+      "sha256": "e0642cba5ccda7f116728da6a3fd1e1567e3007c17c5221c2bd6df3a34004728",
+      "bytes": 20524
+    },
+    {
+      "path": "scripts/knot_resplit_finalize.py",
+      "sha256": "ccc279eaf338f6d00e5e5d7d875c390464f5d7458135c534a61e93f9fb0fb0cb",
+      "bytes": 16122
+    },
+    {
+      "path": "reports/generalization.md",
+      "sha256": "294ee19775b92ccae8171b446406a153990410b1949ab6dfd88fd62bcab373e5",
+      "bytes": 3874
+    },
+    {
+      "path": "reports/confirmation.md",
+      "sha256": "f2ec08828e9eff1837c651cfc0f407f771318bf0f1ea7ef66e19bccd8ce363ed",
+      "bytes": 7616
+    },
+    {
+      "path": "reports/claim_evidence_matrix.md",
+      "sha256": "334c6a97e9b29ce07394f86ebfd07e12e81a319b0eb9d2300491874701d6c444",
+      "bytes": 6202
+    },
+    {
+      "path": "reports/tasks/P5.07.md",
+      "sha256": "3855d900729b7e406ded8ad088be5def13ce2b30e1bd5ba50308db2d340a2fa3",
+      "bytes": 5757
+    },
+    {
+      "path": "reports/tasks/P5.08.md",
+      "sha256": "1333bff16937262b56b2150a9dc72075aa056ff872a0f4b8b76e020cd7131a59",
+      "bytes": 5250
+    },
+    {
+      "path": "reports/knot_resplit/step3_dryrun_report.md",
+      "sha256": "b81f8f059e9b56c4a40a516289b5a84c8522bc8bcf3819259df666a7b1faa20a",
+      "bytes": 2650
+    },
+    {
+      "path": "reports/knot_resplit/step4_report.md",
+      "sha256": "7014c7199f10d1424a62189d8daca70f3bc7908cad4d2029fad385421029d655",
+      "bytes": 4401
+    },
+    {
+      "path": "results/holdout/HOLD-KNOT-PRESENCE-P505-v1/metrics.json",
+      "sha256": "efed330d92218586283b3f310b3cdd2637c8ea28287f5e375ee0d5acb207824a",
+      "bytes": 960
+    },
+    {
+      "path": "results/confirmation/CONF-KNOT-PRESENCE-P502-v1/metrics.json",
+      "sha256": "836fef771f950e0dcca3552b041956c891a7ce43de6aa1aacfd4cfe58aa3a839",
+      "bytes": 1117
+    },
+    {
+      "path": "logs/exposure_log.tsv",
+      "sha256": "7d03f79afae29940ed6256936ad67ab3254231e8764ff9f4812a6dc1b1e9b641",
+      "bytes": 7811
+    }
+  ],
+  "authorization": "User authorized repair and parallel work; no additional compute cap. Statistical corrections reuse saved predictions; historical evaluated cohorts retain exposure."
+}

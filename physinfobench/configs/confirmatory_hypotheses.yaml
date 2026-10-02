@@ -1,0 +1,91 @@
+# =============================================================================
+# configs/confirmatory_hypotheses.yaml — P4.09 确认假设（冻结）
+# 冻结时间：2026-09-27 09:4x Asia/Shanghai（实际写入；确认集结果读取之前；P5.01 将把它转写为
+# confirmation_lock.yaml 并加注册时间戳——本文件只立假设，不触碰确认集）。
+# 授权链：用户委托（decisions.md 2026-09-24 02:34）+ 2026-09-26 指令（推进至 Phase 4 结束）。
+# 纪律：全部假设来自 development 内发现（发现集曝光如实登记 §4）；阈值在确认前冻结；
+#       变更须差异清单+独立审核。
+# =============================================================================
+
+meta:
+  task: P4.09
+  created_at: "2026-09-27 09:4x"
+  status: frozen_2026-09-26_p409
+  inputs:
+    - reports/representation_diagnosis.md（P3.05）
+    - reports/tasks/P3.03.md（六任务探针终版）
+    - reports/aggregation_diagnosis.md（P4.04）
+    - reports/intervention_diagnosis.md（P4.09）
+    - results/interventions/interventions_qc.json
+  confirmation_data_note: 确认集=knots conf 24 阳/126 阴、S1/S2 相关样本（P4.01/P2.03 冻结划分；
+    新版 68,875 组）。FS-L2 确认宇宙=确认集严格阳性 vs dev 拟合打分器在全背景上的排序
+    （Phase 5 冻结语义，P5.01 钉版）。
+
+# -----------------------------------------------------------------------------
+# 确认假设（有限集：3 条主假设；全部预注册方向/指标/阈值/失败判据）
+# -----------------------------------------------------------------------------
+hypotheses:
+  - id: H-FSL2-RANK
+    claim: C-GE1（跨家族泛化）+ BN5
+    statement: 冻结线性打分器（L5=hidden 29、C=0.1，dev 拟合）将确认集 strict 阳性
+      在全背景排序中置于前列（development：percentile 2.7e-05、recall@1000=1.0）。
+    direction: 阳性排名显著前于随机（percentile 越低越强）
+    metric: positive_rank_percentile（主）+ recall@1000/@100（辅）
+    pass: recall@1000 ≥ 0.5（比例语义；确认集 strict 阳性数由 P5.01 钉版落盘，
+      n_strict=0 → 证据不足而非失败）
+    strong_pass: recall@1000 = 1.0 且 percentile ≤ 0.001
+    fail: recall@1000 < 0.2 或 percentile > 0.05（≈随机水平）
+    boundary: 直推排序语义；不构成状态判别或因果主张。
+
+  - id: H-KNOT-PRESENCE
+    claim: C-GE1 + T-KNOT-PRESENCE
+    statement: 打结存在性在确认集可读（development AUROC 0.929，K-POOLED hidden33/C1）。
+    direction: AUROC > 0.5（阳性高于阴性）
+    metric: AUROC（确认集 24 阳/126 阴；同一固定读出，无再拟合）
+    pass: AUROC ≥ 0.80（development 0.929 的保守折扣）
+    strong_pass: AUROC ≥ 0.90
+    fail: 点估计 <0.65 且 95%CI 上界 <0.80；点估计 <0.80 但上界 ≥0.80=证据不足（中间带）
+    boundary: 条件无关全局属性；不外推打结类型。
+
+  - id: H-DISORDER-RES
+    claim: C-GE1 + T-DISORDER-RES
+    statement: 残基级无序可读（development per-protein AUPRC 0.904（n=4 描述）、
+      池化 0.9996；hidden33 逐残基线性，C=0.01=dev 选中，P5.01 lock 钉版）。
+    direction: AUPRC 高于残基正例率基线
+    metric: 确认集分母域残基池化 AUPRC（主）+ 逐蛋白 AUPRC（描述，双类蛋白列数披露）
+    pass: 池化 AUPRC ≥ 0.90
+    strong_pass: 池化 AUPRC ≥ 0.97
+    fail: 池化 AUPRC < 0.75
+    boundary: 池化口径天花板效应在 dev 已示警——确认阈值按池化口径冻结，逐蛋白口径
+      仅描述。
+
+# -----------------------------------------------------------------------------
+# 不进入确认的登记（发现仅供解释，无确认假设）
+# -----------------------------------------------------------------------------
+not_registered:
+  - T-FS-REGION：案例级 6 链（P1.15 边界）——无群体指标可确认；保留案例级描述。
+  - T-FS-L1-PAIRED：几何诊断（池化余弦 0.985–1.000）——描述性，无判别阈值。
+  - T-KNOT-TYPE：dev Macro-F1 0.506 无信号——确认无意义，登记为阴性发现。
+  - 条件干预三系统（PYP/RNase/BPTI）：案例级/证据空缺（P4.06–08）——无确认集样本，
+    不设确认假设；结论保持案例级（见 intervention_diagnosis.md）。
+  - 聚合算子选择（P4.02–04）：设计输入（确认实验统一用均值池化+逐残基线性读出，
+    P5.01 钉版）——非待确认命题。
+
+# -----------------------------------------------------------------------------
+# 确认侧对照（P5.01 lock 注册位预告）
+# -----------------------------------------------------------------------------
+confirmation_controls_note: P5.02 执行内容要求"轻量基线增益、匹配负对照、种子稳定性、
+  覆盖率"一次性计算——本文件只立假设；确认侧基线/负对照臂（如 H-FSL2 的 B0–B3 同宇宙
+  重跑、H-KNOT/H-DISORDER 的基率对照）在 P5.01 lock 中逐条注册位。
+
+# -----------------------------------------------------------------------------
+# 发现集曝光登记（P4.09 TODO 第 5 条）
+# -----------------------------------------------------------------------------
+discovery_exposure:
+  - 上述 3 条假设的阈值均以 development 数字为锚定（0.929/0.904/percentile 2.7e-05），
+    属发现集曝光——已在各 pass 阈值中取保守折扣（0.929→0.80 等），G4 确认后由 P5.01
+    锁定并记录 first_read 时间。
+  - 确认集标签零方法消费（无任何拟合/阈值选择/样本级评价消费确认标签）；
+    确认集**构成统计与口径核算**类读取已登记于 exposure_log（**7 行读取**，另 1 行
+    划分生成登记；均 influenced_method_selection=false）——"零消费"指方法层，非"无读取行"；
+    确认集**结果级**首次读取由 P5.01 登记 first_read。

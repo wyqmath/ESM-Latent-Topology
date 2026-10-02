@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-10-01T22:36+08:00",
+  "role": "claims_audit final provenance consistency review",
+  "checks": [
+    {
+      "name": "original105_inputs",
+      "pass": true,
+      "details": {
+        "count": 109,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "all239_inputs",
+      "pass": true,
+      "details": {
+        "count": 244,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "original105_results_byte_preservation",
+      "pass": true,
+      "details": {
+        "results/p508_disorder_contrast/pooled_metrics.json": "63eaf27466d1c2192f6ba3b038e1ab4fc952b8a2e4717c0242c2faa6113c6a50",
+        "results/p508_disorder_contrast/per_protein.tsv": "23650df1bbe4a88c8df22dd7b6548b37e305de29ea038c93d9f9ef9a6ebd0979",
+        "data/interim/p508_final_set.json": "8348b9c03ed16d54660611bcbaffd38e321fd71a14f5ee422105eef048f1607e"
+      }
+    },
+    {
+      "name": "executed_h33_source_and_inputs",
+      "pass": true,
+      "details": {
+        "count": 8,
+        "mismatches": [],
+        "sha256": {
+          "results/repairs/20261001/p508/correction_set.json": "85ad8c6428ea96c04b0be092e240bc85dce3ec5e6c68a321aee214e6346a2415",
+          "results/repairs/20261001/p508/residue_identity_map.tsv": "5d41bb2f4219427a22c4667e6cafb2023d159189e8846d0df99346086eeee80f",
+          "results/repairs/20261001/p508/h33_exact_metrics/repair_p508_cached_metrics.py": "7671599d5a0bd25b1b7d40acaea19b8d89ef20911c68545c2f2c2ac207f50bcf",
+          "results/repairs/20261001/p508/h33_exact_metrics/p508_cluster_eval.py": "a5d575958707b98482611e3775c2e3a64dbb44f4f101029cb3a9bb66ce0110d7",
+          "data/interim/p508_labels.json": "2fff0b5c10ed225f20b8dfe3fb525c0e19074e28af9f186223b42b6273c85227",
+          "results/repairs/20261001/p508/replay_input_tables/p508_final_ridx.tsv": "d6acc79d9a00e3b434d9f4973da1fcdb8fc4823587f48bf57145e3ee4a9ce491",
+          "data/interim/p303/disorder_resid_idx.tsv": "0e581046404b902ae33c6bf7a9cce5c6e08de428f083983a785a2fa512978610",
+          "data/curated/disorder_masks.tsv": "d0064b5d27a5ab679bbbd6220ce1bbc2c7eb3ab12f77a78c0fc1dd0bee080374"
+        }
+      }
+    },
+    {
+      "name": "independent_review_source_current",
+      "pass": true,
+      "details": {
+        "status": "PASS",
+        "count": 9,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "designated_proposal_source",
+      "pass": true,
+      "details": {
+        "path": "/Users/yuan/Downloads/本科期末复习/大三上学期_2026秋/PLM_Proposal_FInal.docx",
+        "sha256": "fa0293cd323eae0c8189f86b9c17eee2c4eada68fb6a7f1b80fb76d82de81a3e"
+      }
+    },
+    {
+      "name": "reader_coefficient_accessibility",
+      "pass": true,
+      "details": {
+        "sha256": "3d010c83e2115c2f9e7a2d7c72ec88f6094ff4349dbf6273c99783dcd236a0a8",
+        "size_bytes": 11022,
+        "arrays": {
+          "coef": [
+            1,
+            1280
+          ],
+          "intercept": [
+            1
+          ],
+          "classes": [
+            2
+          ]
+        }
+      }
+    }
+  ],
+  "runtime_sources": {
+    "results/repairs/20261001/p508/h33_exact_metrics/p508_cluster_eval.py": "a5d575958707b98482611e3775c2e3a64dbb44f4f101029cb3a9bb66ce0110d7",
+    "results/repairs/20261001/p508/h33_exact_metrics/repair_p508_cached_metrics.py": "7671599d5a0bd25b1b7d40acaea19b8d89ef20911c68545c2f2c2ac207f50bcf"
+  },
+  "current_sources": {
+    "scripts/p508_cluster_eval.py": "13c5db036237663d2046e1ae91f7de5d1a9a95b68cbe16f31316c784bccd6610",
+    "scripts/repair_p508_cached_metrics.py": "d7ff88226e88ffb932a9e150df96aa77012d7abe9126a44bac6e1b80f59d53ea",
+    "scripts/check_p508_cache_layers.py": "aa5f35d540a119611a8a1d0fb30c1f876afb00f8bb51a950bffdba4b2a847983"
+  },
+  "retrieved_metadata_sha256": {
+    "results/repairs/20261001/p508/replay_input_tables/disorder_resid_idx.tsv": "0e581046404b902ae33c6bf7a9cce5c6e08de428f083983a785a2fa512978610",
+    "results/repairs/20261001/p508/replay_input_tables/external_extract_manifest.tsv": "2c60401a2af448fb788ecb9fb766a5e5a6008ff6bae6e68116a0ee97b35d8465",
+    "results/repairs/20261001/p508/replay_input_tables/p508_final_ridx.tsv": "d6acc79d9a00e3b434d9f4973da1fcdb8fc4823587f48bf57145e3ee4a9ce491",
+    "results/repairs/20261001/p508/replay_input_tables/dev_extract_manifest.tsv": "315454e9b576303b0741966c207d42bad439155d637d49e9d56021d3eca6e9b0"
+  },
+  "scope_consistency": {
+    "P5.08_and_matrix": "same 99/22646 H33 metrics; fixed-parameter same-dev replay and posthoc CA proxy scope",
+    "historical_summary_json": "initial identity audit four-decimal diagnostic snapshot, later exact H33 metrics supersede for current reporting"
+  },
+  "status": "PASS"
+}

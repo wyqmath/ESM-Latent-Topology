@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "identity105_isolated_reproduction_directory": "/var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/plm_p508_identity_review_novhugnw/core105",
+  "candidate239_isolated_reproduction_directory": "/var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/plm_p508_identity_review_novhugnw/candidate_workspace/results/repairs/20261001/p508",
+  "byte_identical_outputs": [
+    "accession_audit.tsv",
+    "correction_set.json",
+    "per_protein_identity_verified.tsv",
+    "candidate239_accession_audit.tsv",
+    "residue_identity_map.tsv",
+    "candidate239_qc.json",
+    "candidate239_input_hashes.json",
+    "candidate239_exclusion_reconstruction.tsv",
+    "exclusion_reconstruction_qc.json"
+  ],
+  "original105_results_not_modified": true
+}

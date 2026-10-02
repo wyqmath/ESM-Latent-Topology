@@ -1,0 +1,5 @@
+cohort	n_samples	n_components	n_positive_proteins	n_negative_proteins	direct_prior_dev	direct_old_knot_dev	component_prior_exposed	posthoc_sensitive_n	posthoc_sensitive_components	posthoc_positive_proteins	posthoc_negative_proteins	fresh_preregistered_n	max_component_sample_count
+confirmation_knot	148	66	22	126	107	107	131	17	14	4	13	0	19
+holdout_knot	108	59	25	83	71	71	81	27	18	8	19	0	16
+confirmation_disorder	418	366	417	1	292	0	294	124	104	124	0	0	6
+holdout_disorder	494	413	494	1	322	0	323	171	149	171	0	0	8

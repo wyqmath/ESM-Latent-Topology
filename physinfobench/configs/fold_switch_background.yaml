@@ -1,0 +1,155 @@
+# P1.10 折叠转换未标注背景宇宙——冻结配置
+# 治理：本文件一经提交即为冻结规则；任何修改需新任务+独立审核+单独提交，禁止无记录变更。
+# 语义铁律：背景不是阴性——所有行 biological_target 恒为空、pu_observed_label=0 仅表示"当前未被确认为阳性"。
+
+meta:
+  task_id: P1.10
+  config_status: frozen
+  created: '2026-09-23 07:53'
+  retrieval_record: data/manifests/fold_switch_background_sources.tsv
+  retrieval_script: scripts/fetch_p1_10_raw.sh
+  fs_pair_table: data/curated/fold_switch_global.tsv
+  network_preprobe: '2026-09-23 07:49-07:51 直连可达、无代理；ftp.uniprot.org 22-160 KB/s 波动（Accept-Ranges 支持，FASTA 用 6 路分块并行）；ftp.ebi.ac.uk 70-290 KB/s；files.wwpdb.org 约 0.9 MB/s'
+
+background_a_sequence:
+  task_role: T-FS-L2-PU-RANK 的纯序列 PU 背景宇宙 A
+  source:
+    database: UniProtKB/Swiss-Prot reviewed（仅 canonical 序列）
+    release: '2026_03'
+    official_entry_count: 575748
+    canonical_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+    canonical_bytes: 93801562
+    mirrors:
+      - https://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+      - https://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+    release_notes_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/relnotes.txt
+  row_unit: 一个 Swiss-Prot canonical entry 一行；构建时断言全部 accession 无 isoform 后缀（-2 等）
+  output_table: data/curated/fold_switch_unlabeled_sequence.tsv.gz
+  output_exclusions: data/curated/fold_switch_unlabeled_sequence_exclusions.tsv
+  output_exclusions_columns: [uniprot_accession, reason, detail]
+  fields:
+    - uniprot_accession
+    - entry_name
+    - protein_name
+    - organism
+    - sequence_length
+    - sequence_sha256
+    - n_pdb_entries_crossref
+    - label_epistemic_status
+    - biological_target
+    - pu_observed_label
+    - background_source_version
+    - exposure_status
+  dedup_rule:
+    rule: 按序列 sha256 分组；组内保留 accession 字典序最小者，其余行移出主表
+    sidecar: data/curated/fold_switch_unlabeled_sequence_dupes.tsv.gz
+    sidecar_columns: [uniprot_accession, duplicate_of_accession, sequence_sha256, sequence_length]
+    rationale: 背景宇宙用于 PU 排序与匹配抽样，重复序列会造成加权；样本表层面的 no_sequence_dedup 纪律（同序列多状态各自成样）不适用于背景宇宙，特此声明
+  length_rule:
+    min_length: 10
+    min_length_reason: length_below_min
+    upper_bound: 无硬上限（记录 max；Swiss-Prot 最长约 35k）
+  residue_rule:
+    forbidden_letters: BJOUXZ
+    reason: nonstandard_residue_letter
+    rationale: 非标准字母破坏 PLM tokenizer 输入，且 P1.09 已发现 DisProt 有同类条目；排除并计数
+  pdb_crossref:
+    from: SIFTS uniprot_pdb.csv（SP_PRIMARY 匹配的 PDB 去重计数）
+    note: 仅作背景元数据计数，不改变任何标签语义
+  deferred_fields:
+    - field: annotation_score
+      reason: FASTA 头不含该字段；P2 需要时按子集经 UniProt REST 补齐并另行登记，不回填本表
+
+background_b_structure:
+  task_role: 结构感知模型与推定阴性候选（P1.11）的结构背景宇宙 B
+  sources:
+    entry_type_filter:
+      url: https://files.wwpdb.org/pub/pdb/derived_data/pdb_entry_type.txt
+      role: 全部 PDB 条目的 experimental/computational 判定；仅保留 experimental
+    entry_metadata:
+      url: https://files.wwpdb.org/pub/pdb/derived_data/index/entries.idx
+      role: 每条目实验类型（EXPERIMENT TYPE）与分辨率
+    chain_uniprot_mapping:
+      url: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/csv/pdb_chain_uniprot.csv.gz
+      role: PDB 链到 UniProt 的映射及 SP_BEG/SP_END 对齐区段
+    uniprot_side_mapping:
+      url: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/csv/uniprot_pdb.csv.gz
+      role: UniProt 侧聚合视图，用于与链级映射做双向一致性交叉核对
+    observed_coverage:
+      url: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/csv/uniprot_segments_observed.csv.gz
+      role: 实测解析（有坐标）区段，用于 observed_coverage
+  row_unit: 蛋白级主表（UniProt accession 身份去重）+ 链级子表（gzip，行数约百万级）
+  output_table: data/curated/fold_switch_unlabeled_structure.tsv.gz
+  output_subtable: data/curated/fold_switch_unlabeled_structure_chains.tsv.gz
+  output_exclusions: data/curated/fold_switch_unlabeled_structure_exclusions.tsv
+  subtable_columns: [pdb_id, chain_id, uniprot_accession, n_alignment_segments, sp_beg_min, sp_end_max, mapped_coverage, observed_coverage, experiment_method, resolution]
+  fields:
+    - uniprot_accession
+    - sp_length_max
+    - n_pdb_entries
+    - n_mapped_chains
+    - experiment_methods
+    - best_resolution
+    - mapped_coverage_max
+    - observed_coverage_max
+    - label_epistemic_status
+    - biological_target
+    - pu_observed_label
+    - background_source_version
+  subtable_gzip_rationale: 大于 5 MB 的产物一律 gzip 后入库（确定性 mtime=0；GitHub 单文件 100 MB 硬限制与仓库健康）；SHA256 记入 qc 与 manifest，构建脚本断言可解压且行数一致
+  coverage_definition:
+    key: (pdb_id, chain_id, uniprot_accession)；SIFTS 同键可有多行对齐区段（如 102l/A/P00720 分 1-40 与 42-165 两段），子表一行一键
+    interval_union: 覆盖一律按区间并集计算——重叠区段去重、相邻区段不合（缺口不计）；倒置区段（SP_BEG 大于 SP_END）按行丢弃并计数入 qc（2026-09-23 审核意见 M1 修正，替代初版求和口径）
+    mapped_coverage_per_key: 键内对齐区段并集长度/SP_LENGTH，cap 1.0
+    mapped_coverage_max: 蛋白内所有键的最大值
+    observed_coverage_per_key: uniprot_segments_observed 区段并集长度/SP_LENGTH，cap 1.0
+    observed_coverage_max: 蛋白内所有键的最大值
+    sp_length_missing: TrEMBL-only 蛋白无 FASTA 长度，覆盖为空并在 qc 计数
+    downstream_rule: P1.11 及以后禁止把 mapped 为空/0 或 observed 大于 mapped 的键当覆盖证据（异常计数见 qc 的 sifts_anomalies）
+  entry_filter_rules:
+    computational_entries: 排除，reason=computational_model（de novo 等理论模型）
+    entries_without_uniprot: SIFTS 映射按条目粒度核对——experimental 条目若无任何链映射到 UniProt，计数入 qc（条目级口径）；SIFTS 不提供全链清单，行级排除记录客观不可得，特此声明而非写入 A9 行级记录
+  consistency_checks:
+    - pdb_chain_uniprot 与 uniprot_pdb 的 (PDB,CHAIN,SP_PRIMARY) 集合双向差异计数（只报告不阻断，差异写入 qc）
+
+exclusion_policy:
+  applied_to: [background_a_sequence, background_b_structure]
+  fs_tier_excluded:
+    - strict_state_candidate
+    - extension_construct_difference
+    - extension_condition_or_assembly
+    - fragment_only
+  fs_tier_retained_as_unlabeled:
+    - pending_evidence
+  rationale: pending 为未证实对（未证实不等于阴性）；按 PU 语义未标注池允许含未知比例的隐阳性，不得以"疑似"为由剔除或标注
+  exclusion_reason_values: [fs_strict_positive, fs_extension, fs_fragment_evidence]
+
+semantics:
+  label_epistemic_status: unlabeled
+  biological_target: 恒为空（任何行不得写 0）
+  pu_observed_label: 0
+  exposure_status: none（logs/exposure_log.tsv 当前为空；构建时以该日志实际内容为准）
+
+machine_assertions:
+  - id: A1_strict_disjoint
+    check: strict_state_candidate 的 UniProt 集合与背景 A/B 的 accession 集合交集为 0
+  - id: A2_extension_disjoint
+    check: extension 与 fragment tier 的 UniProt 集合与背景交集为 0
+  - id: A3_no_zero_target
+    check: biological_target 列等于字符串 0 的行数为 0，且全部为空
+  - id: A4_pu_label
+    check: 背景两表所有行 pu_observed_label=0 且 label_epistemic_status=unlabeled
+  - id: A5_entry_count
+    check: FASTA 解析条目数 == 575748（relnotes 官方数）
+  - id: A6_no_isoform
+    check: 全部 accession 不含 isoform 后缀
+  - id: A7_traceable
+    check: 每行 background_source_version 非空，且来源文件 sha256 已登记于 manifest
+  - id: A8_deterministic
+    check: 同输入重跑输出逐字节一致（排序键固定：A 按 accession、B 按 accession、子表按 pdb+chain）
+  - id: A9_exclusion_recorded
+    check: 全部排除（tier/长度/非法字母/去重/computational/无映射）均有行级记录与计数
+  - id: A10_main_subtable_consistency
+    check: 背景 B 主表的 n_pdb_entries/n_mapped_chains/experiment_methods/best_resolution 必须与有效键子表按蛋白重聚合完全一致（独立重推导比对，2026-09-23 复审 R2-1 后新增）
+
+output_summary_json: reports/fs_three_layer/background_qc.json

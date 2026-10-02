@@ -1,0 +1,19 @@
+{
+ "cluster_size_top10": [
+  1019,
+  876,
+  841,
+  840,
+  797,
+  788,
+  725,
+  723,
+  713,
+  707
+ ],
+ "clusters": 47595,
+ "members": 342004,
+ "positives_share_cache_note": "porter_87 两端同序列共享缓存条目（pair 向量=A+B 均值，退化为 A）",
+ "semantics": "rep-frame scoring + propagation；同簇同分为构造性性质，非模型性质",
+ "single_member_clusters": 26174
+}

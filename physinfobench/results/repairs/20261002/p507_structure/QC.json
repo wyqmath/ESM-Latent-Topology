@@ -1,0 +1,48 @@
+{
+  "usalign_edges_v2.tsv": {
+    "rows": 3010,
+    "valid_returncode": 3010,
+    "both_directions_present": 3010,
+    "min_tm_ge_0_6": 2638
+  },
+  "newnew_edges_v2.tsv": {
+    "rows": 7962,
+    "valid_returncode": 7962,
+    "both_directions_present": 7962,
+    "min_tm_ge_0_6": 7226
+  },
+  "universe": {
+    "nodes": 126,
+    "components": 53,
+    "dropped_conflict": 31
+  },
+  "probe": {
+    "layer": "h33",
+    "C": 1,
+    "macro_f1_descriptive": 0.4346,
+    "balanced_accuracy_descriptive": 0.5142,
+    "selection_scope": "Same nonnested LCO used for selection and reporting; descriptive only"
+  },
+  "builder_validation": {
+    "cluster_and_local_json_identical": true,
+    "candidate_coverage_validation": "PASS"
+  },
+  "job_ids": {
+    "newnew": "814986",
+    "p507_fp32": "814987",
+    "isolate": "814989",
+    "rebuild": "814993"
+  },
+  "sha256": {
+    "README.md": "9390f2b105c5edeb4040896aa5a4cbe134a5dbd78fca4bc529fafadc5f275cd7",
+    "foldseek_hits.tsv": "73b827d7734ab95b367b30cae044a6d7adf3915db51159db548f0f477782bf68",
+    "lco_predictions.tsv": "10da9356b9a8b0d370adfc7f8008d94fcb568937045008c30570db37c5aeebb4",
+    "metrics.json": "86e51984d635798c26c2c91d5387c26793a60ab44141c4d4b20c08ba401b66b2",
+    "newnew_edges_v2.tsv": "dac0fdf50fb82b3cab08bb7f11deb216492c82c44c2bdc1545bce67d6063ac72",
+    "nn_hits.tsv": "3e46636a5164cc4e8077df6097103bbaf811ed3ee00e745299248576fb3e772b",
+    "p507_final_universe_20261002.json": "7ccf2e719183b03218fc2408eccab844fc27333ab61197b6d3ca42b56a62af04",
+    "selection_grid.tsv": "2e5114a620a9292b43de3d8396cff3d4ecb1567682af9777379af48d79b7b861",
+    "seq_clusters_rep.tsv": "6d44d067bd207347d56ec8726f6fd47eb153156bfae2720224d2db69c914550c",
+    "usalign_edges_v2.tsv": "0f1de37289fc90303ac3993d6c11eb27fe338a15ae2c123a13328358a28f7f88"
+  }
+}

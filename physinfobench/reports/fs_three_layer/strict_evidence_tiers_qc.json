@@ -1,0 +1,19 @@
+{
+ "isoform_status_dist": {
+  "canonical_strictly_better": 1,
+  "isoform_tie_sifts_attribution": 2,
+  "no_isoform_note": 7
+ },
+ "kw_absent_abstract_endpoints": 5,
+ "pairs": 10,
+ "run_ts": "2026-09-23 21:49:23",
+ "same_observed_only": [
+  "porter_87_2k0qA__2lelA"
+ ],
+ "tier_counts": {
+  "abstract_both": 5,
+  "fulltext_both": 2,
+  "fulltext_one_abstract_one": 1,
+  "historical_fulltext_old_audit": 2
+ }
+}

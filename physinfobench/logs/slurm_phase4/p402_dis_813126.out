@@ -1,0 +1,41 @@
+    [D-ID] C=0.01 pooled_auprc=0.9996
+    [D-ID] C=0.1 pooled_auprc=0.9995
+    [D-ID] C=1 pooled_auprc=0.9994
+    [D-ID] C=10 pooled_auprc=0.9994
+  [saved] D-ID (205263 units)
+    [D-WIN4] C=0.01 pooled_auprc=0.9997
+    [D-WIN4] C=0.1 pooled_auprc=0.9997
+    [D-WIN4] C=1 pooled_auprc=0.9997
+    [D-WIN4] C=10 pooled_auprc=0.9997
+  [saved] D-WIN4 (205263 units)
+    [D-WIN16] C=0.01 pooled_auprc=0.9998
+    [D-WIN16] C=0.1 pooled_auprc=0.9998
+    [D-WIN16] C=1 pooled_auprc=0.9998
+    [D-WIN16] C=10 pooled_auprc=0.9998
+  [saved] D-WIN16 (205263 units)
+    [D-WIN64] C=0.01 pooled_auprc=0.9996
+    [D-WIN64] C=0.1 pooled_auprc=0.9995
+    [D-WIN64] C=1 pooled_auprc=0.9991
+    [D-WIN64] C=10 pooled_auprc=0.9980
+  [saved] D-WIN64 (205263 units)
+    [D-MEAN] C=0.01 pooled_auroc=0.6386
+    [D-MEAN] C=0.1 pooled_auroc=0.6726
+    [D-MEAN] C=1 pooled_auroc=0.7073
+    [D-MEAN] C=10 pooled_auroc=0.7407
+  [saved] D-MEAN (205263 units)
+    [D-LAST] C=0.01 pooled_auroc=0.9460
+    [D-LAST] C=0.1 pooled_auroc=0.9458
+    [D-LAST] C=1 pooled_auroc=0.9363
+    [D-LAST] C=10 pooled_auroc=0.9258
+  [saved] D-LAST (205263 units)
+    [D-ID_h23] C=0.01 pooled_auprc=0.9987
+    [D-ID_h23] C=0.1 pooled_auprc=0.9986
+    [D-ID_h23] C=1 pooled_auprc=0.9982
+    [D-ID_h23] C=10 pooled_auprc=0.9974
+  [saved] D-ID_h23 (205263 units)
+    [D-MEAN_h23] C=0.01 pooled_auroc=0.7049
+    [D-MEAN_h23] C=0.1 pooled_auroc=0.7422
+    [D-MEAN_h23] C=1 pooled_auroc=0.7626
+    [D-MEAN_h23] C=10 pooled_auroc=0.7694
+  [saved] D-MEAN_h23 (205263 units)
+[p402-dis] DONE 2026-09-25T21:30:33Z

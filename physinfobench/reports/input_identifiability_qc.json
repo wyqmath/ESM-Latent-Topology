@@ -1,0 +1,169 @@
+{
+ "bpti": {
+  "ox_and_red_variants": [
+   "BPTI-SD-5-55",
+   "BPTI-SD-14-38",
+   "BPTI-SD-30-51",
+   "BPTI-SD-5-51"
+  ],
+  "variant_functional_rows": 5,
+  "variant_sequence_local": false
+ },
+ "claims_tasks": [
+  "T-FS-GLOBAL",
+  "T-FS-L1-PAIRED",
+  "T-FS-L2-PU-RANK",
+  "T-FS-L3-MATCHED",
+  "T-FS-REGION",
+  "T-KNOT-PRESENCE",
+  "T-KNOT-TYPE",
+  "T-DISORDER-RES",
+  "T-PYP-STATE",
+  "T-RNASE-ASSEMBLY",
+  "T-BPTI-REDOX"
+ ],
+ "disorder": {
+  "mask_state_dist": {
+   "0": 7,
+   "1": 4870,
+   "NA": 104
+  },
+  "masks_rows": 4981,
+  "naive_overlap_opposite_state_premask": 17479,
+  "region_rows": 13983
+ },
+ "fs": {
+  "cross_pair_same_sha_groups": [],
+  "endpoints_with_seq": 192,
+  "same_sha_within_pair_all96": [
+   "porter_19_2naoF__1iytA",
+   "porter_23_2lejA__2lv1A",
+   "porter_45_1mnmC__1mnmD",
+   "porter_49_3k2sA__2a01C",
+   "porter_67_2p3vA__2p3vD",
+   "porter_78_5l35D__5l35G",
+   "porter_87_2k0qA__2lelA",
+   "porter_95_2n0aD__2kkwA"
+  ],
+  "same_sha_within_strict10": [
+   "porter_87_2k0qA__2lelA"
+  ]
+ },
+ "knots": {
+  "chain_sequence_source_local": false,
+  "manifest_rows": 1401,
+  "presence_mask1_usable": 1020,
+  "presence_negative": 832,
+  "presence_positive": 188,
+  "type_eligible": 112
+ },
+ "labeled_units": {
+  "bpti": {
+   "groups": 1,
+   "samples": 9
+  },
+  "disorder": {
+   "groups": 3334,
+   "samples": 3337
+  },
+  "fold_switch": {
+   "groups": 89,
+   "samples": 96
+  },
+  "knot": {
+   "groups": 1039,
+   "samples": 1401
+  },
+  "pyp": {
+   "groups": 1,
+   "samples": 6
+  },
+  "rnase_a": {
+   "groups": 1,
+   "samples": 9
+  }
+ },
+ "pyp": {
+  "condition_pending_rows": [
+   {
+    "condition_type": "illumination_pump",
+    "experiment_id": "EXP-PYP-2014-SFX",
+    "row_kind": "experiment",
+    "sample_id": "-"
+   },
+   {
+    "condition_type": "illumination_pump;delay",
+    "experiment_id": "EXP-PYP-2014-SFX",
+    "row_kind": "pair_member",
+    "sample_id": "PYP-2014-LIGHT-INT"
+   }
+  ],
+  "pair": [
+   "PYP-2014-DARK",
+   "PYP-2014-LIGHT-INT"
+  ],
+  "rows_total": 6,
+  "states": {
+   "PYP-2014-DARK": "dark",
+   "PYP-2014-LIGHT-INT": "light_intermediate"
+  }
+ },
+ "rnase": {
+  "excluded": 3,
+  "labeled_members": 5,
+  "single_uniprot": "P61823",
+  "states": {
+   "dimer_C_swap_major": 1,
+   "dimer_N_swap_minor": 1,
+   "monomer": 2,
+   "trimer_minor": 1
+  }
+ },
+ "run_ts": "2026-09-24 16:59",
+ "verdicts": {
+  "T-BPTI-REDOX": {
+   "ident": "纯序列不可识别（同变体 ox/red 同序列；ox_and_red 变体 4 个）；区分性条件=标签同义（redox 处理本身），无有效 F",
+   "verdict": "阻塞为条件任务；保留为 BN1 信息不足对照"
+  },
+  "T-DISORDER-RES": {
+   "ident": "可识别（歧义位由 P1.05 掩码出分母）",
+   "verdict": "白名单"
+  },
+  "T-FS-GLOBAL": {
+   "ident": "不单独设探针",
+   "verdict": "不适用（引用兼容保留）"
+  },
+  "T-FS-L1-PAIRED": {
+   "ident": "部分可识别：区域/潜能臂可识别；状态判别臂仅 porter_87 同序列双态不可识别",
+   "verdict": "白名单（去掉状态判别臂主张）"
+  },
+  "T-FS-L2-PU-RANK": {
+   "ident": "可识别（潜能语义）",
+   "verdict": "白名单"
+  },
+  "T-FS-L3-MATCHED": {
+   "ident": "设计可识别；确证性证据未闭合",
+   "verdict": "阻塞（非可识别性原因）"
+  },
+  "T-FS-REGION": {
+   "ident": "可识别（区域潜能；porter_87 同序列两端共享同一区域标签，无冲突）",
+   "verdict": "白名单"
+  },
+  "T-KNOT-PRESENCE": {
+   "ident": "可识别（无同输入异真值通道）",
+   "verdict": "白名单（提取前须补序列连接+同序列异标签断言）"
+  },
+  "T-KNOT-TYPE": {
+   "ident": "可识别",
+   "verdict": "白名单（dev 层）"
+  },
+  "T-PYP-STATE": {
+   "ident": "纯序列不可识别（同 WT P16113 序列 dark vs light_intermediate）；条件特征 pending_fulltext",
+   "verdict": "阻塞（条件任务证据未闭合；identity_check_pending）"
+  },
+  "T-RNASE-ASSEMBLY": {
+   "ident": "纯序列不可识别（同 P61823 单体/C-swap/N-swap/trimer 四态）；有效独立组=1；条件定量字段 pending_fulltext",
+   "verdict": "阻塞为性能任务；保留为输入充分性对照（C-IN3 降级语义）"
+  }
+ }
+}

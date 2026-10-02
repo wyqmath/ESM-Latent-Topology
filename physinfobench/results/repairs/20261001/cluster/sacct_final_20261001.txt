@@ -1,0 +1,6 @@
+Read at 2026-10-01 22:43 Asia/Shanghai; ssh sblab sacct; primary job records only.
+814879|plm-r504|FAILED|00:00:02|8|64G|gpu_reservation=1
+814880|P5-statistics-repair|COMPLETED|00:00:53|4|8G|gpu_reservation=1
+814881|plm-r504|COMPLETED|00:01:01|8|64G|gpu_reservation=1
+814885|plm-r504-h33|COMPLETED|00:00:47|8|64G|gpu_reservation=1
+All repairs are CPU calculations; QOSMinGRES requires GPU reservation. No PLM forward or representation extraction.

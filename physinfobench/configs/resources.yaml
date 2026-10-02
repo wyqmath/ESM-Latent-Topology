@@ -1,0 +1,58 @@
+# =============================================================================
+# configs/resources.yaml — P0.03 资源登记（草案：实测字段已填，人员/工期/预算待确认）
+# 规则：只登记实测事实与待确认字段，不编造承诺；远程资源未经用户确认不得视为可用。
+# =============================================================================
+
+meta:
+  task: P0.03
+  created_at: "2026-09-21 08:32"
+  timezone: Asia/Shanghai
+  status: confirmed_partial            # 2026-09-21 08:42 用户确认：集群可用（保守共用）；
+                                       # 模型名单推迟至 P1 审计后、P2.04 准入核验前；
+                                       # 工期/投入留待确认。见 logs/decisions.md。
+  measurement_commands: "sysctl machdep.cpu.brand_string / hw.memsize；df -h；sw_vers；python3 --version"
+
+local_machine:
+  id: macbook_m5_local
+  measured_at: "2026-09-21 08:32"
+  os: "macOS 26.4 (darwin 25.4.0, arm64)"
+  cpu: "Apple M5"
+  memory_gb: 16                       # 统一内存
+  disk_total_gb: 460
+  disk_available_gb: 35               # 数据卷已用 92%——硬约束
+  python: "anaconda3 python 3.14.6（含 PyYAML；torch 等未安装，P2.04 再按需建环境）"
+  gpu: "Apple 集成 GPU（Metal，非 CUDA；大模型推理不现实）"
+  suitability:
+    can_do: 探针/读取器训练（线性与小容量 MLP）、指标计算、数据整理、
+            ≤650M 参数量级模型的 CPU/Metal 小批量表示提取试跑（吞吐量待 P2.05 实测）
+    cannot_do: 3B+ 模型提取全量表示（内存与磁盘不足）；全量 embedding 缓存（磁盘 35GB 余量）
+  constraints:
+    - "磁盘仅剩 ~35GB：模型权重与缓存必须配额管理，超限前停止并清理/外移（先讨论）。"
+    - "16GB 统一内存：单模型推理上限约 650M 参数级（fp32/bf16，待 P2.05 实测更新）。"
+
+remote_compute_candidate:
+  - id: sblab_cluster
+    status: confirmed_conservative_sharing   # 用户 2026-09-21 08:42 确认可用于本项目
+    confirmed_at: "2026-09-21 08:42"
+    basis: "用户在关联项目（PLM 数据清洗/benchmark_step1）已打通的深圳湾实验室集群"
+    access: "ssh sblab（凭据不写入本仓库）"
+    usage_rule: "保守共用：P2.05 实测回填前默认占用 ≤1 节点；全部计算走 sbatch/srun 并申请 --gres=gpu:1（含 CPU 型任务）；不占登录节点算力；结束清理进程。"
+    known_facts: "SLURM；分区 NV_4090D/NV_4090D_H，8 节点 × RTX 4090D（24GB）；已有 conda env plm_bench（gemmi/biopython/topoly，属关联项目环境）；项目盘 /lenovofs1/home/jyma/"
+    open_questions:
+      - 本项目可占用的节点数/时长/存储配额精确值（P2.05 实测前按 ≤1 节点保守估计）
+      - 集群是否可直连 HuggingFace 下载权重（此前确认可直连 RCSB）
+      - 本项目使用独立 conda 环境还是复用 plm_bench（P2.04 建环境时决定，不污染关联项目环境）
+
+unknown_fields:                          # 待用户确认；禁止据此排期
+  deadline: 待确认
+  weekly_hours: 待确认
+  budget: 待确认
+  owner: 用户本人（执行代理为 ZCode）
+  data_access_limits: "旧项目数据在本地 Codex 目录只读复用；公共数据库（RCSB/DisProt/KnotProt）访问无账号限制（下载时逐项登记）；HuggingFace 下载是否需代理待 P2.04 实测。"
+
+storage_policy:
+  local_root: /Users/yuan/Documents/ChatGPT/PLM
+  raw_data: data/raw/<source>/<version>/（不入 Git，SHA256 登记）
+  weights: 默认不落本地仓库盘；如必须本地，置于仓库外目录并登记路径+SHA256（磁盘约束见上）
+  caches: results/<run>/artifacts 按 run 登记；embedding 缓存总量配额待 P2.05 实测后确定
+  big_files_in_git: 禁止；仅登记位置、版本、SHA256、获取方式

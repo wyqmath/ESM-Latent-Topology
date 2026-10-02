@@ -1,0 +1,134 @@
+{
+  "P5_FS_descriptive_read_components": 6,
+  "P5_FS_descriptive_read_pairs": 6,
+  "background_partition_equivalence": true,
+  "cohorts": [
+    {
+      "cohort": "confirmation_knot",
+      "component_prior_exposed": 131,
+      "direct_old_knot_dev": 107,
+      "direct_prior_dev": 107,
+      "fresh_preregistered_n": 0,
+      "max_component_sample_count": 19,
+      "n_components": 66,
+      "n_negative_proteins": 126,
+      "n_positive_proteins": 22,
+      "n_samples": 148,
+      "posthoc_negative_proteins": 13,
+      "posthoc_positive_proteins": 4,
+      "posthoc_sensitive_components": 14,
+      "posthoc_sensitive_n": 17
+    },
+    {
+      "cohort": "holdout_knot",
+      "component_prior_exposed": 81,
+      "direct_old_knot_dev": 71,
+      "direct_prior_dev": 71,
+      "fresh_preregistered_n": 0,
+      "max_component_sample_count": 16,
+      "n_components": 59,
+      "n_negative_proteins": 83,
+      "n_positive_proteins": 25,
+      "n_samples": 108,
+      "posthoc_negative_proteins": 19,
+      "posthoc_positive_proteins": 8,
+      "posthoc_sensitive_components": 18,
+      "posthoc_sensitive_n": 27
+    },
+    {
+      "cohort": "confirmation_disorder",
+      "component_prior_exposed": 294,
+      "direct_old_knot_dev": 0,
+      "direct_prior_dev": 292,
+      "fresh_preregistered_n": 0,
+      "max_component_sample_count": 6,
+      "n_components": 366,
+      "n_negative_proteins": 1,
+      "n_positive_proteins": 417,
+      "n_samples": 418,
+      "posthoc_negative_proteins": 0,
+      "posthoc_positive_proteins": 124,
+      "posthoc_sensitive_components": 104,
+      "posthoc_sensitive_n": 124
+    },
+    {
+      "cohort": "holdout_disorder",
+      "component_prior_exposed": 323,
+      "direct_old_knot_dev": 0,
+      "direct_prior_dev": 322,
+      "fresh_preregistered_n": 0,
+      "max_component_sample_count": 8,
+      "n_components": 413,
+      "n_negative_proteins": 1,
+      "n_positive_proteins": 494,
+      "n_samples": 494,
+      "posthoc_negative_proteins": 0,
+      "posthoc_positive_proteins": 171,
+      "posthoc_sensitive_components": 149,
+      "posthoc_sensitive_n": 171
+    }
+  ],
+  "current_global_development_components": 48224,
+  "graph_components_global": 68875,
+  "graph_components_labeled": 3538,
+  "graph_current_split_binding_violations": 0,
+  "graph_edges_added_by_reason": {
+    "FS_endpoint_exact_sha_background": 4,
+    "FS_endpoint_sequence_cluster": 192,
+    "knot_structural_min06": 2998,
+    "matched_control": 17,
+    "same_uniprot_background": 3686
+  },
+  "graph_nodes": 72431,
+  "graph_zero_cross_component_edge": true,
+  "legacy_FS_direct": 35,
+  "objective_migration_counts": {
+    "bpti|development": 9,
+    "disorder|confirmation": 4,
+    "disorder|development": 3325,
+    "disorder|final_holdout": 8,
+    "fold_switch|development": 96,
+    "knot|confirmation": 19,
+    "knot|development": 1348,
+    "knot|final_holdout": 34,
+    "pyp|development": 6,
+    "rnase_a|development": 9
+  },
+  "objective_migration_remaining_sequence_usable_knot_or_domain_usable_disorder": {},
+  "old_disorder_active_folds": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "old_disorder_fold_class_counts": {
+    "0": {
+      "0": 24,
+      "1": 36301
+    },
+    "1": {
+      "0": 2,
+      "1": 42255
+    },
+    "2": {
+      "0": 42,
+      "1": 41322
+    },
+    "3": {
+      "0": 310,
+      "1": 37813
+    },
+    "4": {
+      "0": 58,
+      "1": 42237
+    }
+  },
+  "old_disorder_inputs": 2278,
+  "old_knot_inputs": 674,
+  "prior_L2_operational_components": 47544,
+  "prior_L2_stageA_components": 9996,
+  "prior_L2_stageB_representatives": 47604,
+  "prior_all_components": 48124,
+  "prior_supervised_components": 2267
+}

@@ -1,0 +1,9 @@
+cohort	source	status	native_component_mapped	future_fresh_claim
+confirmation_knot	results/confirmation/CONF-KNOT-PRESENCE-P502-v1/scores.tsv	P5_result_already_read	yes	no
+holdout_knot	results/holdout/HOLD-KNOT-PRESENCE-P505-v1/scores.tsv	P5_result_already_read	yes	no
+confirmation_disorder	results/confirmation/CONF-DISORDER-RES-P502-v1/residue_scores.tsv.gz	P5_result_already_read	yes	no
+holdout_disorder	results/holdout/HOLD-DISORDER-RES-P505-v1/residue_scores.tsv.gz	P5_result_already_read	yes	no
+confirmation_FS_descriptive	results/confirmation/CONF-FSL2-RANK-P502-v1/descriptive_pairs.tsv	descriptive_scores_and_tier_already_read_no_strict_positive	yes	no
+holdout_FS	results/holdout/first_read_record.json	not_run_no_strict_positive	yes	no
+P507_type_LCO	results/p507_type_probe_v2/lco_predictions.tsv	posthoc_LCO_predictions_already_read	partial_new_sources_need_their_graph	no
+P508_external_disorder	results/p508_disorder_contrast/per_protein.tsv	external_results_already_read_label_scope_and_overlap_need_separate_audit	no_external_graph_not_fabricated	no

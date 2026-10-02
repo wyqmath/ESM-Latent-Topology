@@ -1,0 +1,364 @@
+{
+  "ap_ties": {
+    "observed": [
+      1.0,
+      0.5
+    ],
+    "sklearn_reference": [
+      0.5,
+      0.5
+    ]
+  },
+  "rank_direction": {
+    "baseline_best": 1.0,
+    "plm_formula_best": 0.25
+  },
+  "baseline_rank_conversion": {
+    "N": 342014,
+    "formula": "mean_rank/N = 1 - old_percentile + 1/N",
+    "rows": [
+      {
+        "baseline": "B0_random",
+        "old": 0.4399524580865111,
+        "mean_rank_over_N": 0.5600504657704071
+      },
+      {
+        "baseline": "B1_length_desc",
+        "old": 0.5787973591724315,
+        "mean_rank_over_N": 0.42120556468448667
+      },
+      {
+        "baseline": "B2_n_pdb_desc",
+        "old": 0.3531352517733192,
+        "mean_rank_over_N": 0.6468676720835989
+      },
+      {
+        "baseline": "B3_logistic_len_pdb",
+        "old": 0.6129228628067858,
+        "mean_rank_over_N": 0.3870800610501324
+      }
+    ]
+  },
+  "default_extractor": {
+    "saved_arrays": [
+      "meta",
+      "name"
+    ],
+    "declared_layer_set": "mean_all34|domfull"
+  },
+  "precision_cache_collision": {
+    "cpu_key": "751dbf172417b118b24b307a",
+    "cuda_key": "751dbf172417b118b24b307a",
+    "cuda_cache": "hit",
+    "mock_only": true
+  },
+  "checkpoint_loading": {
+    "requested_revision": "audit-requested-revision",
+    "calls": [
+      {
+        "kind": "tokenizer",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {}
+      },
+      {
+        "kind": "model",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {
+          "output_hidden_states": true,
+          "add_pooling_layer": false
+        }
+      },
+      {
+        "kind": "tokenizer",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {}
+      },
+      {
+        "kind": "model",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {
+          "output_hidden_states": true,
+          "add_pooling_layer": false
+        }
+      },
+      {
+        "kind": "tokenizer",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {}
+      },
+      {
+        "kind": "model",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {
+          "output_hidden_states": true,
+          "add_pooling_layer": false
+        }
+      },
+      {
+        "kind": "tokenizer",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {}
+      },
+      {
+        "kind": "model",
+        "args": [
+          "facebook/esm2_t33_650M_UR50D"
+        ],
+        "kwargs": {
+          "output_hidden_states": true,
+          "add_pooling_layer": false
+        }
+      }
+    ]
+  },
+  "cache_rejection_overwrite": {
+    "manifest_states": [
+      "reject",
+      "miss"
+    ],
+    "same_key_overwritten": true
+  },
+  "missing_structure_files": {
+    "generated_nodes": [
+      "p507:NEW_A"
+    ],
+    "log": "[warn] 缺 usalign_edges.tsv（作业未回采）\n[warn] 缺 newnew_edges.tsv（作业未回采）\n节点 1 → 冲突分量剔除后 1（丢弃 0）\n类型分布: {'3_1': 1}\n独立分量: 1\n  3_1: 链 1 | 分量 1\n  4_1: 链 0 | 分量 0\n  5_2: 链 0 | 分量 0\nsaved p507_final_universe.json\n"
+  },
+  "usalign_parser": {
+    "parsed_Structure_1": 0.82,
+    "true_min": 0.4,
+    "parsed_Chain_format": null
+  },
+  "missing_FS_endpoint": {
+    "missing": "porter_9_B",
+    "reported_cosine": 1.0
+  },
+  "pipeline_exit_masked": {
+    "returncode": 0,
+    "stdout": "[probe] partial\nCONTINUED\n"
+  },
+  "syntax": {
+    "python_count": 78,
+    "shell_count": 22,
+    "files": {
+      "python": [
+        "scripts/audit_background_joins.py",
+        "scripts/audit_claim_scope_20261001.py",
+        "scripts/audit_exposure_scope.py",
+        "scripts/audit_leakage.py",
+        "scripts/audit_p1_v1.py",
+        "scripts/audit_p508_candidate_cif.py",
+        "scripts/audit_p5_historical_exposure.py",
+        "scripts/audit_region_labels_joint.py",
+        "scripts/build_bpti_pairs_v1.py",
+        "scripts/build_fs_feasibility_matrix.py",
+        "scripts/build_fs_putative_negative_candidates.py",
+        "scripts/build_fs_unlabeled_background.py",
+        "scripts/build_l2_stage_b_inputs.py",
+        "scripts/build_p201_step1_feasibility.py",
+        "scripts/build_p201_step2_formal.py",
+        "scripts/build_p202_split_manifest.py",
+        "scripts/build_p303_inputs.py",
+        "scripts/build_p501_confirmation_inputs.py",
+        "scripts/build_p504_holdout_inputs.py",
+        "scripts/build_pyp_pairs_v1.py",
+        "scripts/build_rnase_a_pairs_v1.py",
+        "scripts/build_strict_evidence_tiers.py",
+        "scripts/check_input_identifiability.py",
+        "scripts/check_metrics_examples.py",
+        "scripts/check_p508_cache_layers.py",
+        "scripts/cluster_bootstrap.py",
+        "scripts/extract_p201_chains.py",
+        "scripts/extract_representations.py",
+        "scripts/fetch_single_chain.py",
+        "scripts/future_split_guard.py",
+        "scripts/g2_rev_recompute.py",
+        "scripts/import_disorder_v1.py",
+        "scripts/import_fold_switch_regions_v1.py",
+        "scripts/import_fold_switch_v1.py",
+        "scripts/import_knots_v1.py",
+        "scripts/knot_binding_check.py",
+        "scripts/knot_resplit_dryrun.py",
+        "scripts/knot_resplit_finalize.py",
+        "scripts/metrics.py",
+        "scripts/p303_fetch_knot_sequences.py",
+        "scripts/p507_build_final_universe.py",
+        "scripts/p507_fetch_sequences.py",
+        "scripts/p507_isolate_cluster.py",
+        "scripts/p507_local_topoly.py",
+        "scripts/p507_topoly_verify.py",
+        "scripts/p507_type_probe.py",
+        "scripts/p507_type_probe_v2.py",
+        "scripts/p508_build.py",
+        "scripts/p508_cluster_eval.py",
+        "scripts/p508_fix_exclusions.py",
+        "scripts/recompute_aggregation_statistics.py",
+        "scripts/recompute_p5_statistics.py",
+        "scripts/rehearse_split_constraints.py",
+        "scripts/repair_p508_cached_metrics.py",
+        "scripts/review_dual_state_evidence.py",
+        "scripts/review_pna_evidence.py",
+        "scripts/review_strict_sequence_identity.py",
+        "scripts/run_baselines.py",
+        "scripts/run_l2_stage_b.py",
+        "scripts/run_p304_capacity.py",
+        "scripts/run_p402_aggregation.py",
+        "scripts/run_p403_learned.py",
+        "scripts/run_p406_interventions.py",
+        "scripts/run_p502_confirmation_cluster.py",
+        "scripts/run_p502_confirmation_fsl2.py",
+        "scripts/run_p505_holdout.py",
+        "scripts/run_probes_p303.py",
+        "scripts/seal_repair_delivery.py",
+        "scripts/validate_knot_binding_freeze.py",
+        "scripts/validate_probes_config.py",
+        "scripts/validate_schema_examples.py",
+        "scripts/validate_three_layer_protocol.py",
+        "scripts/verify_correction_lock.py",
+        "scripts/verify_p204_model.py",
+        "tests/test_cluster_bootstrap.py",
+        "tests/test_future_split_guard.py",
+        "tests/test_p508_accessions.py",
+        "tests/test_p508_layer_selection.py"
+      ],
+      "shell": [
+        "scripts/fetch_p1_10_raw.sh",
+        "scripts/run_knot_foldseek.sh",
+        "scripts/run_p201_usalign.sh",
+        "scripts/run_p202_background_cluster.sh",
+        "scripts/run_p303_extraction.sh",
+        "scripts/run_p303_extraction_rest.sh",
+        "scripts/run_p303_pipeline_rest.sh",
+        "scripts/run_p402_arms_disorder.sh",
+        "scripts/run_p402_arms_knots.sh",
+        "scripts/run_p402_compare_learned.sh",
+        "scripts/run_p402_extract_knots.sh",
+        "scripts/run_p402_mil_recompute.sh",
+        "scripts/run_p402_p403_pipeline.sh",
+        "scripts/run_p405_embed.sh",
+        "scripts/sbatch_p502.sh",
+        "scripts/sbatch_p505.sh",
+        "scripts/sbatch_p507_embed.sh",
+        "scripts/sbatch_p507_embed2.sh",
+        "scripts/sbatch_p507_isolate.sh",
+        "scripts/sbatch_p507_newnew.sh",
+        "scripts/sbatch_p507_topoly.sh",
+        "scripts/sbatch_p508.sh"
+      ]
+    }
+  },
+  "environment_lock_missing_sklearn": true,
+  "source_sha256": {
+    "scripts/audit_background_joins.py": "8c086e45d743cca4bea3d90bf1f1181f3d0c4333b589d631ab6469af137f8df3",
+    "scripts/audit_claim_scope_20261001.py": "79dec233ea171e8f96df51796c70f40cbd657ce1da8af8475d871fb049021ab7",
+    "scripts/audit_exposure_scope.py": "34263626ef4fce2646e77a46ac63fac06fc82a1a666c18b10881567204566b70",
+    "scripts/audit_leakage.py": "ff2d6c775793a7b4a2bef8043ec84df260b50f42d318c5cfbbc2dceabdc515fc",
+    "scripts/audit_p1_v1.py": "af037af725fe9385d8e2848c87e45aff1fb1b2192fc0b0e6624c396f7620b76c",
+    "scripts/audit_p508_candidate_cif.py": "527352aed17e4b5c3db7f1353a33c1ae7d187accf2a0fcd2a12cb97fef0831de",
+    "scripts/audit_p5_historical_exposure.py": "b6a8352124e0612421c52fe9fbc9b382da2089aeafd1b8657fd240ab0aa606f7",
+    "scripts/audit_region_labels_joint.py": "529f1432e3410a933decc138b0c6c2bab867a6cac3fce33a691af1fd7a69d7f6",
+    "scripts/build_bpti_pairs_v1.py": "31eba1033d09377c33a808f75f1daefbc77c7d45f153c71150e06ce70f58469d",
+    "scripts/build_fs_feasibility_matrix.py": "ef1b58ef0664bc2ab29f2e44091525c8a10e89c6cd2286b115c465ce4ddb813e",
+    "scripts/build_fs_putative_negative_candidates.py": "46349fd0e1aadbf8b1c7757baa5c0dd91807c3fc71e91dc35e58675eb2f253a0",
+    "scripts/build_fs_unlabeled_background.py": "079a297ee336a98c5aee5bd6613713db721629f381cf9557e52547bd545832ec",
+    "scripts/build_l2_stage_b_inputs.py": "e0e73ee99add030133ce82b53424262f1c1d5ff48e3554b95377821138ab09ba",
+    "scripts/build_p201_step1_feasibility.py": "fea9d32c0446e7424ead18d793912844e2e8d018a34ab93692e3f127db942e52",
+    "scripts/build_p201_step2_formal.py": "feeddb72494c1fe4422f87b69a4e39c12390fddfb11ba3eff95d314e1945b3a3",
+    "scripts/build_p202_split_manifest.py": "68e2fb43c2ab46cbf2669025278f77f70737a3ff3496b24b3b217bfed58ae86a",
+    "scripts/build_p303_inputs.py": "4a32b15ca3b4c41fd1463598eefe43cb05992472a5f4c082430a294316a358ce",
+    "scripts/build_p501_confirmation_inputs.py": "cda7dabb11dbc519534207b64cfc4a68a05461e95fe8d24fa48a377477bd55d8",
+    "scripts/build_p504_holdout_inputs.py": "576d067438a7d20e5c58592a49996f60dee9bd3ee34f0411af4f8104e19fd35a",
+    "scripts/build_pyp_pairs_v1.py": "7086d036a30f83c26f1b2429c45efaa10dbaa6b6ba9b15a1e256a51358ebfcf8",
+    "scripts/build_rnase_a_pairs_v1.py": "899ab72a527e3e023ced3c3beef5c83b3db5b2f0a9682fa07d8aab9ce99d961b",
+    "scripts/build_strict_evidence_tiers.py": "b11eac9db23b7a7d846d3e74327fa8c1b7fe56ae2f1e0c5f12bce490c2d6cf5a",
+    "scripts/check_input_identifiability.py": "176959afcee54d45b07fda37552b05c69044d366490f7b3b47a01f0b8b0ac420",
+    "scripts/check_metrics_examples.py": "54bc9a9e311507eb1d3a50a685e54bc38904b0a25d4749a058143e1452d9b162",
+    "scripts/check_p508_cache_layers.py": "aa5f35d540a119611a8a1d0fb30c1f876afb00f8bb51a950bffdba4b2a847983",
+    "scripts/cluster_bootstrap.py": "d40bbd9a54134b3911aa6112e01819205650522211eb3b7493312ecc3b4e3307",
+    "scripts/extract_p201_chains.py": "754b1c466e2908745cb9809c3d46cdb1a120e453ef31419d37f19a692b0d704f",
+    "scripts/extract_representations.py": "de382828624f7d33ffa8eb4437a5f735c71cca0d21f96d260489f52c504e9fb2",
+    "scripts/fetch_p1_10_raw.sh": "f09f99b9fc7638e32f5003b558ff8d7282d72a8385bd71837530c5bfa04e09f8",
+    "scripts/fetch_single_chain.py": "e978ab319998345f33901d68f4e8215198ae95fc1871b9b14ac21e1c86199f83",
+    "scripts/future_split_guard.py": "f639be87bc39497891c9f8720ea7ebdc5c5e7ed09eb3afbb4c6f6deeaf1220cf",
+    "scripts/g2_rev_recompute.py": "3e76078ea7d95cb05decfd54d8cda9f4f2ecbec6acec3ab76f6c32773029e61f",
+    "scripts/import_disorder_v1.py": "308f9a2dbe98e34d102e565ec93b02cb179921e346158539e8a556ffcd889d0a",
+    "scripts/import_fold_switch_regions_v1.py": "5c08b00e90e0d6323e942944fb1dc03e54e4fdaeaa10ea8a48f146678d7bdb0a",
+    "scripts/import_fold_switch_v1.py": "ad845570440c2be9d20d6f834c724ce9553592c8f51b329207a07d393c99b5d6",
+    "scripts/import_knots_v1.py": "bdf15091c75d36029c864d860f5f72b50646780d873fdef8c1d0a649b185850b",
+    "scripts/knot_binding_check.py": "a30ae1a9c6dbfee3a995af2fa25013287b0224b4e21335517ee3f0c884404e23",
+    "scripts/knot_resplit_dryrun.py": "b186c1c76997312d0715d6b1022439ba4a2ae7e46e254860dc1b1216dae5e9bf",
+    "scripts/knot_resplit_finalize.py": "da25ccd515d94ebb10e08775cf6be02230da7a32fc651ae9ee8dcd038aaa679d",
+    "scripts/metrics.py": "7300eb674be0f53a9db266fcc5e2a0836babf90f8d48478c2b0562a17d9edf11",
+    "scripts/p303_fetch_knot_sequences.py": "151eafc62449d2f310501dc3b473e18f1934a725f6a6c058cbe0ed36d8a720a2",
+    "scripts/p507_build_final_universe.py": "57b50736cd690ba52c7976f4bf7bf74c0a649920d88c4d8adecec3c0d1374605",
+    "scripts/p507_fetch_sequences.py": "dcf49326e8284a34a8301ef2bbb0eef3d9259b83253d3606ea644e56cec51a56",
+    "scripts/p507_isolate_cluster.py": "1f8e7555e991b16471ee6526a55fe3df2be485adc59292a9b85c81c350add3e8",
+    "scripts/p507_local_topoly.py": "9cc77b22f46579c274a051c802db3b67041657ca569be6b449c891a38d999880",
+    "scripts/p507_topoly_verify.py": "6c6f25f8263843cd61de03a0364ee3221ba9518827fb49e0d5857987d0761a94",
+    "scripts/p507_type_probe.py": "d2da7cae4e34189bc8137288e5c2bb0bfa7a5a57f2cb50a53395c125a5b69841",
+    "scripts/p507_type_probe_v2.py": "a62c37b137a04026f32a4e0d4082744eb1fed5734b4ab00de75bdecb4f86a063",
+    "scripts/p508_build.py": "45aea04c509ebf7653b7df447d94ed6819ca9631355ffedda949e6d805947a1a",
+    "scripts/p508_cluster_eval.py": "13c5db036237663d2046e1ae91f7de5d1a9a95b68cbe16f31316c784bccd6610",
+    "scripts/p508_fix_exclusions.py": "b24438739e148513efe4c259f44d9a1b48a66724a28a77a74f98c9c17c922af6",
+    "scripts/recompute_aggregation_statistics.py": "c5ed3e5acd490058c91c27ac5d3518d3596fa70203ef79c4dd9a207ceacefbc5",
+    "scripts/recompute_p5_statistics.py": "d0c259d9f9e0d0723ad3a82814b11e6d21fc89e72bc5e665e0ff664ec4be2b08",
+    "scripts/rehearse_split_constraints.py": "b65deee8fca470975b6e8d98fbade33dcf6a04112de5164cddd8a0e95919e308",
+    "scripts/repair_p508_cached_metrics.py": "d7ff88226e88ffb932a9e150df96aa77012d7abe9126a44bac6e1b80f59d53ea",
+    "scripts/review_dual_state_evidence.py": "52739f568c5b30400b05f0f871aca27f427772f4d57c71adf3ca284fb82de2c9",
+    "scripts/review_pna_evidence.py": "77db21b431903b7ff069d326eb53a19fa2f705ebc2a74bb7ba858117ed278df6",
+    "scripts/review_strict_sequence_identity.py": "4dfef57267a0d41913aaf0edcf3786cc70d1b19b6d0283e4cc8e775f0d39740b",
+    "scripts/run_baselines.py": "9ba10049d40a576d924877afe75fb49c237d9c23e2c83d2c9831d81e17613d5f",
+    "scripts/run_knot_foldseek.sh": "3e606c6fb28da2d0a4fbcecdc2d2e5c33651fed60247f245e3afa94c8e782e8b",
+    "scripts/run_l2_stage_b.py": "f581e3e159fa712c02fe5b60f0855575f633b181c19aeec17b2a1ba5ac4146f8",
+    "scripts/run_p201_usalign.sh": "d13fc90307708c209c77852c65b84e031878461f533684cff00d14f26c996486",
+    "scripts/run_p202_background_cluster.sh": "ce4cf90dd7c3a60e11998698b733b15f5e40bc61667d2f3423780fd2c111490e",
+    "scripts/run_p303_extraction.sh": "e7ef38a8ca961c1a319f13111874b62ca2e5cd6b50d6fc56651f50aaf41ce544",
+    "scripts/run_p303_extraction_rest.sh": "b6541a0f0f15de8e0e39b720bec61534c6fc3c1bd94c6f8ef2740dafb815f17b",
+    "scripts/run_p303_pipeline_rest.sh": "d6763982a2afce195593af56a428ab3e50b12a71700a80019fed28b7c02747ad",
+    "scripts/run_p304_capacity.py": "302256e5107a6ddb216cfb529c9d1e0b4d97ac654051bdea9006ff151d5cccf2",
+    "scripts/run_p402_aggregation.py": "950441fc0ac0566ceaaf234ddb5eeaa9e6e672f24b7f486802bbcab769adfca7",
+    "scripts/run_p402_arms_disorder.sh": "a0f2083dbb3c50b001e0b29e91b003f179629b79493c894ddc6b20f5ce8a0915",
+    "scripts/run_p402_arms_knots.sh": "62170b0fab2b502324b9266cf6574130499dc48bebcbe4dff58b17d97eda90f3",
+    "scripts/run_p402_compare_learned.sh": "ae9f50f8d1f11c80b9712bc7af977b318703986374d6678b4f7291909b9e615d",
+    "scripts/run_p402_extract_knots.sh": "6f1449e5db9a99304dad92b8dd96aeec0a0ee3def2ae4b38b73a6835925aae1a",
+    "scripts/run_p402_mil_recompute.sh": "87b93bf9610b53c3882160be037af164c4d7904012e17b467e65dd8c3d98078e",
+    "scripts/run_p402_p403_pipeline.sh": "8126af9b92ee4ce1a52a29d7d38871368fe35f8fff94fd6fddbe91062b0a1d99",
+    "scripts/run_p403_learned.py": "36daf7c384622cfe90339cb425768c67acbecc38c55f7751e8d31b8e19608a81",
+    "scripts/run_p405_embed.sh": "dda4c5a1076be374ba81c708feb9d2c21b4b2338eb76fd58827f91564278d1d2",
+    "scripts/run_p406_interventions.py": "206bcdf59cc4c7defcfa7b92aefd57205d692c5fe46ba94a039516e0224760db",
+    "scripts/run_p502_confirmation_cluster.py": "0c7ea344e95b72fc978cbeceaa6d9f8b74db58e0604ac819242e7db355ceaa60",
+    "scripts/run_p502_confirmation_fsl2.py": "5497c588a2683ba69379f8ad2fd0532f3e7dac584228bc3e92913b4ad40ba424",
+    "scripts/run_p505_holdout.py": "4ca8f3d27745eeba5f68414311f535c4df762c3adeae88f17e04b0d6c2970ab7",
+    "scripts/run_probes_p303.py": "d1dae8091c29dce6d920d5a8abcef8f86a6ab46561d75dd320873cc2928a544d",
+    "scripts/sbatch_p502.sh": "77747828beb44a4655716a8cb356c2e1c86b4dc7598948127ee554d1a43d1b1f",
+    "scripts/sbatch_p505.sh": "c6bbacc3db6497d20bda0e4b965ebf27b396f443fd898b1a4e6df98c3c64ddd7",
+    "scripts/sbatch_p507_embed.sh": "7efc5bac8af9d1be00c293d56d2544cdcc9c49d749416ea71d99761dd61b4cfb",
+    "scripts/sbatch_p507_embed2.sh": "d96d01e334c43b73c37bc448fb28cf796639902201ea762f3249ef9822cf8b9b",
+    "scripts/sbatch_p507_isolate.sh": "d2297c8b59245570944ceb940d42d61bc03d2db9b543e52029b34c2460d50ae4",
+    "scripts/sbatch_p507_newnew.sh": "9c08929633e93cec6754f41e5c54199f1be8ebbed6afe23c1871eb2e945ca242",
+    "scripts/sbatch_p507_topoly.sh": "b5e011812479482041d65e29f3147bfaefe79226f1f2b84fe4999f57ca71c7af",
+    "scripts/sbatch_p508.sh": "8a0dd437485390082d4cb8a1aa8285350484099d1375ce56e3e36f2c0c24e285",
+    "scripts/seal_repair_delivery.py": "51e54761fae6287853ed7b7bf2c77b3e96957e769e45a4ceee994ac9a3d4979f",
+    "scripts/validate_knot_binding_freeze.py": "38ea7a81667d71f350168c611bcad6c0b9d04ca06368ca9a0611d23fd5fb8a6f",
+    "scripts/validate_probes_config.py": "32f5741f84842d4e42e7693221a597889492cf04caff0b915a315886f5213920",
+    "scripts/validate_schema_examples.py": "658807db50b49fa745541a02bdb3165cd8030cfbc86b3c98cb0e5d64b113fd90",
+    "scripts/validate_three_layer_protocol.py": "54d149e148be815a4865441e13dc3ee2bef0456800df43867c4648a6afa3f89e",
+    "scripts/verify_correction_lock.py": "ec7e2ce4274bcfbe9ddd913adf83b0c596c2344adb5c5c0681579cfb7afcea61",
+    "scripts/verify_p204_model.py": "29a341d9b1379962653713ec1113992241ed4e2d17237cca56b102d91d6037a8"
+  },
+  "head": "8818fcdccea33ebe6b9a49c4575cc2b4f32d9a54"
+}

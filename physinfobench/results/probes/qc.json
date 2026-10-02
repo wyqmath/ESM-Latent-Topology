@@ -1,0 +1,98 @@
+{
+ "note": "全部数字为 development 内 CV 点估计；bootstrap 未运行（后续任务依冻结统计参数执行）；FS-L2 为 stage-A 选择宇宙内直推排序（乐观值，官方指标在 stage-B 全宇宙）。",
+ "run_ts": "2026-09-26 02:18",
+ "tasks": {
+  "T-DISORDER-RES": {
+   "selected": {
+    "C": 0.01,
+    "cv_mean": 0.904098,
+    "cv_std": 0.049322,
+    "layer": 3,
+    "metric": "residue_auprc_per_protein",
+    "n_proteins": 4
+   }
+  },
+  "T-FS-L2-PU-RANK": {
+   "selected": {
+    "C": 0.1,
+    "enrichment@10": 1001.0,
+    "enrichment@100": 100.1,
+    "enrichment@1000": 10.01,
+    "enrichment@10000": 1.001,
+    "layer": 5,
+    "positive_rank_percentile": 0.000549,
+    "recall@10": 1.0,
+    "recall@100": 1.0,
+    "recall@1000": 1.0,
+    "recall@10000": 1.0
+   },
+   "stageA_universe": 10010
+  },
+  "T-FS-L2-PU-RANK.stageA": {
+   "selected": {
+    "C": 0.01,
+    "enrichment@10": 300.3,
+    "enrichment@100": 100.1,
+    "enrichment@1000": 10.01,
+    "enrichment@10000": 1.001,
+    "layer": 6,
+    "positive_rank_percentile": 0.001688,
+    "recall@10": 0.3,
+    "recall@100": 1.0,
+    "recall@1000": 1.0,
+    "recall@10000": 1.0
+   }
+  },
+  "T-FS-REGION": {
+   "selected": {
+    "C": 0.01,
+    "cv_mean": 0.10516,
+    "cv_std": 0.067592,
+    "layer": 3,
+    "metric": "residue_auprc",
+    "per_fold": "{\"1\": {\"4gqcB\": 0.198338, \"4gqcC\": 0.198511, \"4o01D\": 0.044227, \"4o0pA\": 0.036962}, \"2\": {\"5c1vA\": 0.078012, \"5c1vB\": 0.07491}}"
+   }
+  },
+  "T-FS-REGION.sensitivity": {
+   "selected": {
+    "C": 0.01,
+    "cv_mean": 0.21359,
+    "cv_std": 0.21357,
+    "layer": 3,
+    "metric": "residue_auprc",
+    "per_fold": "{\"0\": {\"1jfkA\": 0.678375}, \"1\": {\"4rmbA\": 0.143499, \"4rmbB\": 0.112725}, \"2\": {\"5f3kA\": 0.012658, \"5f5rB\": 0.309231}, \"3\": {\"2k0qA\": 0.400258, \"2lelA\": 0.400258, \"3j7wB\": 0.045707}, \"4\": {\"1h38D\": 0.017516, \"1qlnA\": 0.015673}}"
+   }
+  },
+  "T-KNOT-PRESENCE": {
+   "selected": {
+    "C": 1,
+    "cv_mean": 0.929022,
+    "cv_std": 0.022671,
+    "folds": [
+     0.950434,
+     0.957542,
+     0.904344,
+     0.90279,
+     0.93
+    ],
+    "layer": 6,
+    "metric": "auroc"
+   }
+  },
+  "T-KNOT-TYPE": {
+   "selected": {
+    "C": 0.01,
+    "cv_mean": 0.506354,
+    "cv_std": 0.079111,
+    "folds": [
+     0.64186,
+     0.442529,
+     0.466667,
+     0.474359
+    ],
+    "layer": 6,
+    "metric": "macro_f1"
+   }
+  }
+ }
+}

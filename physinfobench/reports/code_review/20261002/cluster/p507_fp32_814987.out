@@ -1,0 +1,40 @@
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights:   3%|▎         | 16/534 [00:00<00:25, 20.40it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 670.59it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=111 cache_hits=4 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p507_emb_20261002/extract_manifest.tsv
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15390.14it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=154 cache_hits=4 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p507_emb_20261002/extract_manifest.tsv
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15304.96it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=750 cache_hits=2 layer_set=mean_all34+resid_23_29_33|domfull -> data/interim/p507_knots_emb_20261002/extract_manifest.tsv
+[p507-fp32] DONE 2026-10-02T07:31:20Z

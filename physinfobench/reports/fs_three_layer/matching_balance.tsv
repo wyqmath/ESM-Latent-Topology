@@ -1,0 +1,13 @@
+matched_set	side	sp_length	length_ratio	n_pdb	studies	coverage	control_accession
+MS_P00573	case	857	1.0				-
+MS_P00573	control	1230	1.3930	25	9	1.0000	O00411
+MS_P38505	case	64	1.0				-
+MS_P38505	control	146	1.0896	17	6	0.8493	Q8NI22
+MS_Q08209	case	317	1.0				-
+MS_Q08209	control	521	1.0000	3	2	0.7198	P48452
+MS_Q12931	case	205	1.0				-
+MS_Q12931	control	724	1.0284	32	17	1.0000	P08238
+MS_Q9RZA4	case	485	1.0				-
+MS_Q9RZA4	control	728	0.9642	10	5	1.0000	Q9HWR3
+MS_Q9YA14	case	161	1.0				-
+MS_Q9YA14	control	160	0.9938	18	2	1.0000	Q8P9V9

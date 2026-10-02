@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "n_proteins": 99,
+  "n_residues": 22646,
+  "per_protein_metrics_all_recomputed": true,
+  "max_abs_metric_difference": 0,
+  "pooled_metrics_and_100_permutations_recomputed": true,
+  "precise17digit_score_roundtrip": true,
+  "coordinates_labels_exactly_match_cif_map": true,
+  "full_currentguard_preflight_manifest_checked": {
+    "development": 2279,
+    "external": 99
+  },
+  "actual_executed_source_SHA_checked": true,
+  "currentguard_postjob_verification_distinct": true,
+  "coefficient_finite_shape_and_classes_checked": true,
+  "metrics": {
+    "per_protein_auprc_mean": 0.4760740176111495,
+    "per_protein_base_rate_mean": 0.2153464880747274,
+    "per_protein_balanced_acc_mean": 0.5033037899641831,
+    "per_protein_mcc_mean": 0.015448805877999924,
+    "pooled_auprc_secondary": 0.36006089861043145,
+    "pooled_base_rate": 0.21292943566192704
+  },
+  "source_sha256": {
+    "results/repairs/20261001/p508/h33_exact_metrics/residue_scores.tsv.gz": "ed714093edc204e098747e239344362660df75eb4c0ae1fcccdc0be484fb45fb",
+    "results/repairs/20261001/p508/h33_exact_metrics/frozen_reader_coefficients.npz": "3d010c83e2115c2f9e7a2d7c72ec88f6094ff4349dbf6273c99783dcd236a0a8",
+    "results/repairs/20261001/p508/h33_exact_metrics/metrics_exact.json": "3bbf0c884a9f27b4ff44485fb0b7526b008558ec07fba64a432d985c0600b834",
+    "results/repairs/20261001/p508/h33_exact_metrics/replay_provenance.json": "041a7bcd1f0fbfec56685cbe0957015b6bebd61abe169829fea53b755e87a003",
+    "results/repairs/20261001/p508/h33_cache_preflight.json": "e01064ec639017e78f45ed5192d7cd76f7036499984a7e88d5ecc620bdd6bc0e",
+    "scripts/p508_cluster_eval.py": "13c5db036237663d2046e1ae91f7de5d1a9a95b68cbe16f31316c784bccd6610",
+    "scripts/repair_p508_cached_metrics.py": "d7ff88226e88ffb932a9e150df96aa77012d7abe9126a44bac6e1b80f59d53ea",
+    "scripts/check_p508_cache_layers.py": "aa5f35d540a119611a8a1d0fb30c1f876afb00f8bb51a950bffdba4b2a847983",
+    "results/repairs/20261001/p508/p508_independent_coeff_check.py": "d5dc6e3e8159db4bc549f4f3203ec5b6a3bc627dc0c27f5bcb09fc69be84ec3a"
+  },
+  "direct_coefficient_cache_sigmoid_replay": {
+    "status": "PASS",
+    "independent_coefficient_sigmoid_all99_caches": true,
+    "n_residues": 22646,
+    "n_proteins": 99,
+    "max_abs_score_error": 4.440892098500626e-16,
+    "all99_cache_SHA_match_executed_provenance": true,
+    "no_fit_no_representation_extraction": true,
+    "script_sha256": "d5dc6e3e8159db4bc549f4f3203ec5b6a3bc627dc0c27f5bcb09fc69be84ec3a"
+  },
+  "tests": {
+    "accession": 3,
+    "layer_reader": 4,
+    "status": "PASS"
+  },
+  "review_history": [
+    "First FAIL: historical development slot0 is H11, external slot0 is H33.",
+    "814881 retained as historical mixed-layer replay.",
+    "814885 corrected named H33 fit, same dev/C/seed, no selection.",
+    "Postjob latest production guard independently checked full 2279+99 caches.",
+    "Independent saved coefficient score and metrics check PASS."
+  ],
+  "limitations": [
+    "Identity subset is posthoc and historically scored; no new independent external test.",
+    "CA coordinate nonobservation labels lack experimental intrinsic-disorder correspondence.",
+    "No coef byte identity to old missing checkpoint claim; fixed-parameter same-dev fit was explicitly replayed."
+  ]
+}

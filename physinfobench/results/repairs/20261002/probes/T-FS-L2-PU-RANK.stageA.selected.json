@@ -1,0 +1,13 @@
+{
+ "layer": 5,
+ "C": 0.1,
+ "recall@10": 1.0,
+ "recall@100": 1.0,
+ "recall@1000": 1.0,
+ "recall@10000": 1.0,
+ "enrichment@10": 1001.0,
+ "enrichment@100": 100.1,
+ "enrichment@1000": 10.01,
+ "enrichment@10000": 1.001,
+ "positive_rank_percentile": 0.000549
+}

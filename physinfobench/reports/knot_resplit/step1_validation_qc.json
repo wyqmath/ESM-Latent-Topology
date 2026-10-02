@@ -1,0 +1,12 @@
+{
+ "checks": {
+  "F1_inputs_pinned": 9,
+  "F2_pairs": 3854,
+  "F3_covered": 1006,
+  "F3_unverified": 14,
+  "F4_bind_edges": 2998,
+  "F4_cross_set": 679,
+  "F5_split_baseline": "2026-09-24 03:27 (frozen, untouched)"
+ },
+ "coverage_statement": "结构检查覆盖 1,006/1,020 usable 链；其余 14 条无结构链标记为未验证（不计为通过）"
+}

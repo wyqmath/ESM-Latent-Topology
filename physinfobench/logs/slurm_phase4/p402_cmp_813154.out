@@ -1,0 +1,48 @@
+== P4.02 compare ==
+  [cache] D-ID (205263 units)
+  [cache] D-MEAN (205263 units)
+  [cache] D-LAST (205263 units)
+  [cache] D-WIN4 (205263 units)
+  [cache] D-WIN16 (205263 units)
+  [cache] D-WIN64 (205263 units)
+  [cache] D-ID_h23 (205263 units)
+  [cache] D-MEAN_h23 (205263 units)
+  D-MEAN: Δ=-0.000571 CI99fam=[-0.003006, 0.000168]
+  D-LAST: Δ=-0.000279 CI99fam=[-0.001424, 0.000564]
+  D-WIN16: Δ=9.6e-05 CI99fam=[-0.000447, 0.000726]
+  [cache] K-POOLED (750 units)
+  [cache] K-LAST (750 units)
+  [cache] K-WIN4 (750 units)
+  [cache] K-WIN16 (750 units)
+  [cache] K-WIN64 (750 units)
+  [cache] K-MIL_mean (750 units)
+  [cache] K-MIL_max (750 units)
+  [cache] K-POOLED_h29 (750 units)
+  [cache] K-LAST_h29 (750 units)
+  [cache] K-MIL_mean_h29 (750 units)
+  K-MIL_mean: Δ=-0.017783 CI99fam=[-0.040616, 0.002628]
+  K-LAST: Δ=-0.109023 CI99fam=[-0.164486, -0.057611]
+  K-WIN16: Δ=0.000771 CI99fam=[-0.000604, 0.003259]
+[p402-compare] DONE
+== P4.03 learned ==
+== L-ATT-KNOTS ==
+  [ckpt] L-ATT-KNOTS seed13 已缓存
+  [ckpt] L-ATT-KNOTS seed42 已缓存
+  [ckpt] L-ATT-KNOTS seed2026 已缓存
+  seed13: C=1 pooled=0.8808
+  seed42: C=1 pooled=0.8775
+  seed2026: C=1 pooled=0.8994
+== L-ATT-DISORDER ==
+  [ckpt] L-ATT-DISORDER seed13 已缓存
+  [ckpt] L-ATT-DISORDER seed42 已缓存
+  [ckpt] L-ATT-DISORDER seed2026 已缓存
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p403_learned.py", line 421, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p403_learned.py", line 284, in main
+    Z = np.stack([z[n][2] for n in names])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p403_learned.py", line 284, in <listcomp>
+    Z = np.stack([z[n][2] for n in names])
+                  ~~~~^^^
+IndexError: tuple index out of range

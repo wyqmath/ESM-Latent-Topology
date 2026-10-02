@@ -1,0 +1,17 @@
+{
+  "status": "FAIL_pending_layer_correction",
+  "reviewed_at": "2026-10-01T22:06:25+08:00",
+  "finding": {
+    "severity": "BLOCKER",
+    "training_code": "scripts/p508_cluster_eval.py step3_eval dev_store[nm][resid_layers][0]",
+    "evaluation_code": "scripts/p508_cluster_eval.py ext[nm][resid_layers][0]",
+    "dev_layer_manifest": "mean_5_11_17_23_29_33+resid_11_23_33|domidx",
+    "interpretation": "Stored dev index0 is hidden11; external cache index0 is hidden33. Historical replay cannot be called hidden33 frozen reader. Verify remote NPZ metadata; preserve mixed-layer historical reproduction and run separately declared protocol-correction hidden33\u2192hidden33."
+  },
+  "code_sha256": {
+    "scripts/repair_p508_cached_metrics.py": "c6f4aba034b80e5269cfc3e76ee352d9d1859978681e60f64583db35b44a7d06",
+    "scripts/p508_cluster_eval.py": "e7d39ce6242cde122eefd9960c3e0ac1df0b1fef2b5c9cd02f95f16c24ad6c22",
+    "data/interim/p303/emb_disorder_dev/extract_manifest.tsv": "315454e9b576303b0741966c207d42bad439155d637d49e9d56021d3eca6e9b0"
+  },
+  "identity_audit_status": "PASS; independent 239 CIF mapping, original105 subset99, nine reproduced outputs"
+}

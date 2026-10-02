@@ -1,0 +1,124 @@
+{
+ "disorder": {
+  "base_rate_prevalence": 0.999891,
+  "conf": {
+   "dual_class_proteins": 0,
+   "n_proteins": 418,
+   "n_residues": 36589,
+   "pos_rate": 0.999891
+  },
+  "dev_fit": {
+   "n_proteins": 2279,
+   "n_residues": 205263,
+   "pos_rate": 0.998158
+  },
+  "executed_at": {
+   "local": "2026-09-27 14:04",
+   "utc": "2026-09-27T06:04:09Z"
+  },
+  "hypothesis": "H-DISORDER-RES",
+  "per_protein_auprc_descriptive": {},
+  "permutation_null": {
+   "max": 0.999989,
+   "mean": 0.999989,
+   "n": 100,
+   "sd": 0.0,
+   "seeds": [
+    2026,
+    2125
+   ]
+  },
+  "pooled_auprc": 0.999989,
+  "pooled_auprc_boot": {
+   "ci95_high": 1.0,
+   "ci95_low": 0.999962,
+   "degenerate_discarded": 0,
+   "no_conclusion_flag": false,
+   "point": 0.999989,
+   "valid_draws": 2000
+  },
+  "reader": {
+   "C": 0.01,
+   "class_weight": "balanced",
+   "features": "hidden33 逐残基（分母域，resid-index 协议同 dev 抽取）",
+   "layer_hidden": 33,
+   "max_iter": 1000,
+   "random_state": 2026,
+   "solver": "liblinear"
+  },
+  "run_id": "CONF-DISORDER-RES-P502-v1",
+  "statistics": {
+   "B": 2000,
+   "ci": "percentile95",
+   "seed": 2026,
+   "units": "protein（残基池化随蛋白重采样）"
+  }
+ },
+ "executed_at": {
+  "local": "2026-09-27 14:05",
+  "utc": "2026-09-27T06:05:11Z"
+ },
+ "knots": {
+  "auroc": 0.94697,
+  "auroc_boot": {
+   "ci95_high": 0.993513,
+   "ci95_low": 0.903611,
+   "degenerate_discarded": 0,
+   "no_conclusion_flag": false,
+   "point": 0.94697,
+   "valid_draws": 2000
+  },
+  "conf": {
+   "n": 148,
+   "neg": 126,
+   "no_sequence_dropped": [
+    "knot:1giy_M",
+    "knot:2hfx_A"
+   ],
+   "pos": 22
+  },
+  "dev_fit": {
+   "n": 750,
+   "neg": 623,
+   "pos": 127
+  },
+  "executed_at": {
+   "local": "2026-09-27 14:03",
+   "utc": "2026-09-27T06:03:56Z"
+  },
+  "hypothesis": "H-KNOT-PRESENCE",
+  "length_control_auroc": 0.575577,
+  "permutation_null": {
+   "max": 0.621212,
+   "mean": 0.502294,
+   "min": 0.299964,
+   "n": 100,
+   "sd": 0.063936,
+   "seeds": [
+    2026,
+    2125
+   ]
+  },
+  "reader": {
+   "C": 1,
+   "class_weight": "balanced",
+   "features": "hidden33 全残基均值（knots_resid 同协议；dev/确认同源）",
+   "layer_hidden": 33,
+   "max_iter": 1000,
+   "random_state": 2026,
+   "solver": "liblinear"
+  },
+  "run_id": "CONF-KNOT-PRESENCE-P502-v1",
+  "statistics": {
+   "B": 2000,
+   "ci": "percentile95",
+   "seed": 2026,
+   "units": "chain（蛋白级）"
+  }
+ },
+ "one_shot_note": "全部已注册对比同批一次计算；无中途选择、无赢家重跑",
+ "runs": [
+  "CONF-KNOT-PRESENCE-P502-v1",
+  "CONF-DISORDER-RES-P502-v1"
+ ]
+}

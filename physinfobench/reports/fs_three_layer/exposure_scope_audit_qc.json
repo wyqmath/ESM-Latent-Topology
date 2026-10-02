@@ -1,0 +1,43 @@
+{
+ "bytes_scanned": 32580437,
+ "carriers": {
+  "computation_review": 5,
+  "deliverables": 15,
+  "exec_round": 344,
+  "logs_old": 64,
+  "pilot": 22,
+  "references": 362,
+  "registration": 6,
+  "reports_root": 10,
+  "rule_records": 8,
+  "sweep": 1,
+  "v01_release": 81
+ },
+ "classification_counts": {
+  "never_in_split_tables": 61,
+  "v5_split_member": 35
+ },
+ "corrections_pairs": 2,
+ "files_scanned": 918,
+ "formal_model_evaluation": "false（acceptance_report.md 176-177 行）",
+ "legacy_endpoint_covered_pairs": 89,
+ "legacy_exposure_yes": 96,
+ "legacy_sources": [
+  "91_ESM-Latent-Topology_On-Hold/scripts/saprot_control/data/manifest.csv"
+ ],
+ "pairs": 96,
+ "run_ts": "2026-09-23 21:26:54",
+ "split_union_unique": 35,
+ "split_unique_counts": {
+  "v1": 32,
+  "v2": 32,
+  "v3": 34,
+  "v4": 34,
+  "v5": 35
+ },
+ "trial10_pairs": 10,
+ "v01_split_values_dist": {
+  "unassigned_not_frozen": 96
+ },
+ "v01_splits_porter_rows": 96
+}

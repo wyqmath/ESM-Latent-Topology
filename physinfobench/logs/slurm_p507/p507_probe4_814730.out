@@ -1,0 +1,15 @@
+宇宙 89 | 类型 {'3_1': 50, '5_2': 5, '4_1': 34}
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_type_probe_v2.py", line 195, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_type_probe_v2.py", line 94, in main
+    preds = lco_predict(layer, C)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_type_probe_v2.py", line 85, in lco_predict
+    clf.fit(np.stack([X[s][layer] for s in tr]), [y[s] for s in tr])
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/sklearn/base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py", line 1466, in fit
+    raise ValueError(
+ValueError: The 'liblinear' solver does not support multiclass classification (n_classes >= 3). Either use another solver or wrap the estimator in a OneVsRestClassifier to keep applying a one-versus-rest scheme.

@@ -1,0 +1,14 @@
+[disorder] layer=1 C=0.01 mean=0.805699
+[disorder] layer=1 C=0.1 mean=0.787249
+[disorder] layer=1 C=1 mean=0.781034
+[disorder] layer=1 C=10 mean=0.749894
+[disorder] layer=2 C=0.01 mean=0.530864
+[disorder] layer=2 C=0.1 mean=0.514783
+[disorder] layer=2 C=1 mean=0.487536
+[disorder] layer=2 C=10 mean=0.469771
+[disorder] layer=3 C=0.01 mean=0.910547
+[disorder] layer=3 C=0.1 mean=0.87553
+[disorder] layer=3 C=1 mean=0.843957
+[disorder] layer=3 C=10 mean=0.818095
+[probe] DISORDER done
+[p303probe] DONE

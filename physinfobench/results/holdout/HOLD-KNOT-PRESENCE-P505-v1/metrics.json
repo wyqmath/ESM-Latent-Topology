@@ -1,0 +1,51 @@
+{
+ "auroc": 0.967711,
+ "auroc_boot": {
+  "ci95_high": 0.993594,
+  "ci95_low": 0.942852,
+  "degenerate_discarded": 0,
+  "no_conclusion_flag": false,
+  "point": 0.967711,
+  "valid_draws": 2000
+ },
+ "dev_fit": {
+  "merge_confirmation": "no\uff08final_lock \u51bb\u7ed3\uff1a\u4ec5 dev \u62df\u5408\uff09",
+  "n": 750,
+  "neg": 623,
+  "pos": 127
+ },
+ "executed_at": {
+  "local": "2026-09-30 19:50",
+  "utc": "2026-09-30T11:50:36Z"
+ },
+ "holdout": {
+  "n": 108,
+  "neg": 83,
+  "no_sequence_dropped": [
+   "knot:3pvm_B"
+  ],
+  "pos": 25
+ },
+ "hypothesis": "H-KNOT-PRESENCE",
+ "length_control_auroc": 0.711084,
+ "permutation_null": {
+  "max": 0.728916,
+  "mean": 0.499125,
+  "n": 100,
+  "sd": 0.074081
+ },
+ "reader": {
+  "C": 1,
+  "class_weight": "balanced",
+  "layer_hidden": 33,
+  "max_iter": 1000,
+  "random_state": 2026,
+  "solver": "liblinear"
+ },
+ "run_id": "HOLD-KNOT-PRESENCE-P505-v1",
+ "statistics": {
+  "B": 2000,
+  "ci": "percentile95",
+  "seed": 2026
+ }
+}

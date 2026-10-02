@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights:   3%|▎         | 16/534 [00:00<00:25, 20.69it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 680.28it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=131 cache_hits=0 layer_set=mean_all34+resid_33|domidx -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p508_emb/extract_manifest.tsv
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p508_cluster_eval.py", line 234, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p508_cluster_eval.py", line 230, in main
+    step3_eval(kept)
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p508_cluster_eval.py", line 101, in step3_eval
+    man = rd(f"{I}/../p303/emb_disorder_dev/extract_manifest.tsv")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p508_cluster_eval.py", line 37, in rd
+    with open(p, newline="") as f:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/../p303/emb_disorder_dev/extract_manifest.tsv'

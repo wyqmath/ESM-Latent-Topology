@@ -1,0 +1,14 @@
+{
+ "checksums": {
+  "data/curated/knots.tsv": "40aea42839432f4b7cc1f151a0290c21cb23dab3802ed7ba0fefe999f7c1b499",
+  "data/curated/knots_sequences.tsv": "16dbe333dbcba07162fcca9f590fa8171a455330a5fd66736dd3d888e75e623d",
+  "data/curated/knots_sequences_unavailable.tsv": "651bc415b3b8196ee8802f736799f7d669b79ce43962bc1f202eeb47e8cc8f46",
+  "data/interim/p303/knot_chain_list.tsv": "64f2c646a686a9a0877c2e866dddc334906abec5231ca047a88b283eaf8a0095",
+  "data/interim/p303/usalign_confirmed.tsv": "8f481d8bbab3ec3efc2795717b08c235dd1fd5b595e8318ae5e369c3e377f4d5",
+  "data/splits/split_manifest.tsv": "d1b1746eccfda8cd2d3fa3a1324fcbe271bbe886b3ca830838fd8ead8b57d67d",
+  "scripts/fetch_single_chain.py": "e978ab319998345f33901d68f4e8215198ae95fc1871b9b14ac21e1c86199f83",
+  "scripts/knot_binding_check.py": "a30ae1a9c6dbfee3a995af2fa25013287b0224b4e21335517ee3f0c884404e23",
+  "scripts/run_knot_foldseek.sh": "3e606c6fb28da2d0a4fbcecdc2d2e5c33651fed60247f245e3afa94c8e782e8b"
+ },
+ "frozen_at": "2026-09-25 16:54"
+}

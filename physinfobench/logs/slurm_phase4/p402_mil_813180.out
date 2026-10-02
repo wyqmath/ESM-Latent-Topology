@@ -1,0 +1,16 @@
+    [K-MIL_mean] C=0.01 pooled_auroc=0.9127
+    [K-MIL_mean] C=0.1 pooled_auroc=0.9092
+    [K-MIL_mean] C=1 pooled_auroc=0.9084
+    [K-MIL_mean] C=10 pooled_auroc=0.9082
+  [saved] K-MIL_mean (750 units)
+    [K-MIL_max] C=0.01 pooled_auroc=0.9063
+    [K-MIL_max] C=0.1 pooled_auroc=0.8929
+    [K-MIL_max] C=1 pooled_auroc=0.8906
+    [K-MIL_max] C=10 pooled_auroc=0.8901
+  [saved] K-MIL_max (750 units)
+    [K-MIL_mean_h29] C=0.01 pooled_auroc=0.8997
+    [K-MIL_mean_h29] C=0.1 pooled_auroc=0.8996
+    [K-MIL_mean_h29] C=1 pooled_auroc=0.8997
+    [K-MIL_mean_h29] C=10 pooled_auroc=0.8996
+  [saved] K-MIL_mean_h29 (750 units)
+[mil-recompute] DONE

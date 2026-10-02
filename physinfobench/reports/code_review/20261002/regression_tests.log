@@ -1,0 +1,28 @@
+test_degenerate_draw_accounting (test_cluster_bootstrap.BootstrapTest.test_degenerate_draw_accounting) ... ok
+test_deterministic_paired_sampling (test_cluster_bootstrap.BootstrapTest.test_deterministic_paired_sampling) ... ok
+test_duplicate_selection_changes_auroc (test_cluster_bootstrap.BootstrapTest.test_duplicate_selection_changes_auroc) ... ok
+test_entire_component_repeated (test_cluster_bootstrap.BootstrapTest.test_entire_component_repeated) ... ok
+test_hand_auroc_with_ties (test_cluster_bootstrap.BootstrapTest.test_hand_auroc_with_ties) ... ok
+test_missing_component_fails (test_cluster_bootstrap.BootstrapTest.test_missing_component_fails) ... ok
+test_background_binding (test_future_split_guard.FutureSplitGuardTests.test_background_binding) ... ok
+test_changed_universe_fails (test_future_split_guard.FutureSplitGuardTests.test_changed_universe_fails) ... ok
+test_duplicate_identity_fails (test_future_split_guard.FutureSplitGuardTests.test_duplicate_identity_fails) ... ok
+test_false_background_component_fails (test_future_split_guard.FutureSplitGuardTests.test_false_background_component_fails) ... ok
+test_false_native_component_fails (test_future_split_guard.FutureSplitGuardTests.test_false_native_component_fails) ... ok
+test_historical_migration_rejected (test_future_split_guard.FutureSplitGuardTests.test_historical_migration_rejected) ... ok
+test_label_only_is_not_global_approval (test_future_split_guard.FutureSplitGuardTests.test_label_only_is_not_global_approval) ... ok
+test_partial_global_map_fails (test_future_split_guard.FutureSplitGuardTests.test_partial_global_map_fails) ... ok
+test_safe_development (test_future_split_guard.FutureSplitGuardTests.test_safe_development) ... ok
+test_unexposed_component_still_cannot_be_split (test_future_split_guard.FutureSplitGuardTests.test_unexposed_component_still_cannot_be_split) ... ok
+test_db_code_prefix_not_accession (test_p508_accessions.AccessionTests.test_db_code_prefix_not_accession) ... ok
+test_exact_chain_entity_not_last_entry (test_p508_accessions.AccessionTests.test_exact_chain_entity_not_last_entry) ... ok
+test_unknown_and_ambiguous_explicit (test_p508_accessions.AccessionTests.test_unknown_and_ambiguous_explicit) ... ok
+test_array_shape_must_match_metadata (test_p508_layer_selection.ResidualLayerTests.test_array_shape_must_match_metadata) ... ok
+test_h33_dev_slot2_external_slot0 (test_p508_layer_selection.ResidualLayerTests.test_h33_dev_slot2_external_slot0) ... ok
+test_missing_target_and_metadata_conflict_fail (test_p508_layer_selection.ResidualLayerTests.test_missing_target_and_metadata_conflict_fail) ... ok
+test_wrong_model_and_checkpoint_fail (test_p508_layer_selection.ResidualLayerTests.test_wrong_model_and_checkpoint_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.166s
+
+OK

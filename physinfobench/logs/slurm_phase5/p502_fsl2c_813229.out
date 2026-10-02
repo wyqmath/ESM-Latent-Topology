@@ -1,0 +1,16 @@
+[p502] lock 校验通过（28 文件）
+[p502] n_strict=0（lock 钉版 0）→ verdict=insufficient_evidence
+[p502] loaded data/interim/p303/emb/packed_l2_stage_b.npz: (47604, 6, 1280)
+[p502] loaded data/interim/p303/emb/packed_l2sb_delta.npz: (2462, 6, 1280)
+[p502] 重拟合一致性断言通过（47595 代表, max|Δ|=2.28e-05, mean|Δ|=9.81e-09, pearson=0.9999999996, 秩变动 15832 (最大位移 9)）
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p502_confirmation_fsl2.py", line 209, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p502_confirmation_fsl2.py", line 204, in main
+    w.writerows(desc)
+  File "/lenovofs1/home/jyma/.conda/envs/plm_bench/lib/python3.11/csv.py", line 157, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lenovofs1/home/jyma/.conda/envs/plm_bench/lib/python3.11/csv.py", line 149, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'rank_interval_jitter', 'percentile_interval_jitter'

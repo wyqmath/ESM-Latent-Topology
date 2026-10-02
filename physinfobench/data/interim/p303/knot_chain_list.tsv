@@ -1,0 +1,1007 @@
+record_id	pdb	chain	split	presence_target	c2_primary	type_eligible
+1by7_A	1by7	A	development	1	3_1	1
+1eku_A	1eku	A	development	1	3_1	0
+1fug_A	1fug	A	development	1	3_1	0
+1gku_B	1gku	B	development	1	3_1	1
+1gz0_A	1gz0	A	development	1	3_1	1
+1he8_A	1he8	A	development	1	3_1	1
+1j85_A	1j85	A	final_holdout	1	3_1	1
+1k3r_A	1k3r	A	development	1	3_1	0
+1ml5_m	1ml5	m	confirmation	1	3_1	0
+1ns5_A	1ns5	A	development	1	3_1	0
+1nxz_A	1nxz	A	development	1	3_1	1
+1o6l_A	1o6l	A	development	1	4_1	0
+1pv2_A	1pv2	A	final_holdout	1	3_1	1
+1t0h_B	1t0h	B	development	1	3_1	1
+1uak_A	1uak	A	development	1	3_1	1
+1v2x_A	1v2x	A	development	1	3_1	1
+1v6z_A	1v6z	A	development	1	3_1	1
+1w5c_X	1w5c	X	final_holdout	1	3_1	0
+1xi5_A	1xi5	A	development	1	3_1	1
+1zjr_A	1zjr	A	development	1	3_1	1
+1ztu_A	1ztu	A	development	1	4_1	0
+2bm0_A	2bm0	A	development	1	4_1	0
+2cav_A	2cav	A	final_holdout	1	5_2	1
+2d7d_A	2d7d	A	final_holdout	1	4_1	0
+2efv_A	2efv	A	development	1	3_1	0
+2fy5_A	2fy5	A	development	1	3_1	1
+2ha8_A	2ha8	A	development	1	3_1	1
+2k0a_A	2k0a	A	development	1	3_1	1
+2o3a_A	2o3a	A	development	1	3_1	1
+2ofz_A	2ofz	A	development	1	3_1	0
+2pps_F	2pps	F	final_holdout	1	3_1	1
+2qmm_A	2qmm	A	development	1	3_1	1
+2qwv_A	2qwv	A	development	1	3_1	1
+2r6e_A	2r6e	A	development	1	3_1	1
+2v3j_A	2v3j	A	development	1	3_1	1
+2vea_A	2vea	A	development	1	4_1	1
+2w6e_G	2w6e	G	development	1	3_1	1
+2ybb_n	2ybb	n	development	1	3_1	1
+3a7s_A	3a7s	A	development	1	5_2	0
+3ady_A	3ady	A	development	1	3_1	0
+3b1b_A	3b1b	A	confirmation	1	3_1	0
+3bbd_A	3bbd	A	development	1	3_1	1
+3cmi_A	3cmi	A	confirmation	1	3_1	1
+3cwo_X	3cwo	X	development	1	3_1	0
+3dcm_X	3dcm	X	development	1	3_1	1
+3e0j_A	3e0j	A	development	1	3_1	0
+3ed7_A	3ed7	A	development	1	3_1	0
+3eet_A	3eet	A	development	1	3_1	0
+3gbn_L	3gbn	L	development	1	3_1	1
+3gyq_A	3gyq	A	confirmation	1	3_1	1
+3ic6_A	3ic6	A	development	1	3_1	1
+3ihr_A	3ihr	A	development	1	5_2	1
+3ilk_A	3ilk	A	confirmation	1	3_1	1
+3iyk_A	3iyk	A	development	1	3_1	1
+3j7y_5	3j7y	5	development	1	3_1	0
+3j7y_s	3j7y	s	confirmation	1	3_1	0
+3kty_A	3kty	A	development	1	3_1	1
+3l8u_A	3l8u	A	development	1	3_1	1
+3m9c_M	3m9c	M	development	1	3_1	1
+3m9s_M	3m9s	M	confirmation	1	3_1	1
+3mlg_A	3mlg	A	development	1	3_1	0
+3o0p_A	3o0p	A	development	1	3_1	1
+3o7b_A	3o7b	A	development	1	3_1	1
+3oc3_A	3oc3	A	development	1	3_1	1
+3pst_A	3pst	A	confirmation	1	3_1	0
+3qfh_A	3qfh	A	development	1	5_1	1
+3sig_A	3sig	A	development	1	3_1	0
+3v5u_A	3v5u	A	development	1	3_1	0
+3wpc_A	3wpc	A	development	1	3_1	1
+4ce4_z	4ce4	z	development	1	4_1	1
+4chj_A	4chj	A	final_holdout	1	4_1	0
+4cng_A	4cng	A	confirmation	1	3_1	0
+4cru_A	4cru	A	development	1	3_1	1
+4fmw_A	4fmw	A	development	1	3_1	0
+4gw9_A	4gw9	A	development	1	4_1	1
+4h6v_A	4h6v	A	final_holdout	1	3_1	1
+4ig7_A	4ig7	A	confirmation	1	5_2	0
+4j3c_A	4j3c	A	development	1	3_1	1
+4jwh_A	4jwh	A	development	1	3_1	0
+4k1c_A	4k1c	A	development	1	3_1	0
+4kjr_A	4kjr	A	development	1	3_1	0
+4kpp_A	4kpp	A	development	1	3_1	0
+4l69_A	4l69	A	development	1	3_1	1
+4o9y_A	4o9y	A	confirmation	1	3_1	0
+4qrv_A	4qrv	A	development	1	3_1	0
+4ux8_C	4ux8	C	development	1	3_1	1
+4v7h_BE	4v7h	BE	development	1	3_1	1
+4wz7_E	4wz7	E	development	1	3_1	1
+4ye9_A	4ye9	A	development	1	3_1	1
+5a1x_G	5a1x	G	development	1	3_1	1
+5a7y_A	5a7y	A	development	1	3_1	1
+5a7z_A	5a7z	A	development	1	3_1	1
+5aor_A	5aor	A	development	1	3_1	1
+5ap8_A	5ap8	A	development	1	3_1	1
+5apg_A	5apg	A	development	1	3_1	1
+5c77_A	5c77	A	development	1	3_1	1
+5gao_E	5gao	E	development	1	3_1	1
+5gmk_Q	5gmk	Q	development	1	3_1	1
+5if3_A	5if3	A	final_holdout	1	3_1	1
+5l3p_z	5l3p	z	development	1	3_1	1
+5l9u_A	5l9u	A	development	1	3_1	1
+5li4_A	5li4	A	confirmation	1	3_1	1
+5mqn_A	5mqn	A	development	1	3_1	0
+5tj6_A	5tj6	A	final_holdout	1	3_1	0
+5u76_A	5u76	A	development	1	3_1	0
+5vhi_E	5vhi	E	final_holdout	1	3_1	1
+5ylz_W	5ylz	W	development	1	3_1	0
+5zya_D	5zya	D	development	1	3_1	0
+6ac6_A	6ac6	A	development	1	3_1	0
+6bwi_A	6bwi	A	confirmation	1	3_1	1
+6emv_A	6emv	A	development	1	3_1	0
+6f1y_f	6f1y	f	development	1	4_1	1
+6f38_Y	6f38	Y	final_holdout	1	3_1	0
+6ff0_A	6ff0	A	development	1	3_1	0
+6juy_A	6juy	A	confirmation	1	3_1	1
+6k4n_A	6k4n	A	final_holdout	1	3_1	1
+6l7e_A	6l7e	A	confirmation	1	3_1	0
+6m6h_A	6m6h	A	confirmation	1	3_1	0
+6mzd_F	6mzd	F	development	1	3_1	0
+6n8a_A	6n8a	A	development	1	3_1	0
+6nbq_F	6nbq	F	development	1	3_1	1
+6ndo_A	6ndo	A	development	1	4_1	1
+6oaw_A	6oaw	A	development	1	3_1	1
+6qam_A	6qam	A	development	1	3_1	1
+6qqm_A	6qqm	A	development	1	3_1	0
+6qqw_A	6qqw	A	development	1	3_1	1
+6qqz_A	6qqz	A	development	1	3_1	1
+6qx9_BP	6qx9	BP	development	1	3_1	0
+6rao_I	6rao	I	final_holdout	1	3_1	1
+6rwb_A	6rwb	A	development	1	3_1	0
+6s4q_A	6s4q	A	development	1	3_1	0
+6sg9_DH	6sg9	DH	development	1	3_1	1
+6tby_AAA	6tby	AAA	development	1	4_1	0
+6tda_X	6tda	X	development	1	3_1	1
+6ted_V	6ted	V	development	1	3_1	1
+6w1s_A	6w1s	A	development	1	3_1	1
+6w1s_L	6w1s	L	final_holdout	1	3_1	1
+6w8r_A	6w8r	A	development	1	4_1	0
+6wd6_8	6wd6	8	development	1	3_1	0
+6wjv_A	6wjv	A	development	1	3_1	1
+6x0m_P	6x0m	P	confirmation	1	3_1	1
+6x44_A	6x44	A	development	1	4_1	1
+6xp5_Q	6xp5	Q	development	1	3_1	1
+6y5q_q	6y5q	q	development	1	4_1	1
+6y7c_i	6y7c	i	development	1	3_1	1
+6yub_A	6yub	A	development	1	3_1	0
+6yxx_EF	6yxx	EF	development	1	3_1	1
+6yxy_UX	6yxy	UX	development	1	3_1	1
+6zbl_B	6zbl	B	confirmation	1	3_1	1
+6zr9_A	6zr9	A	development	1	3_1	0
+7abg_s	7abg	s	development	1	5_2	1
+7aoi_XO	7aoi	XO	development	1	3_1	1
+7bii_A	7bii	A	development	1	3_1	1
+7bqd_A	7bqd	A	development	1	3_1	1
+7c1x_A	7c1x	A	development	1	3_1	1
+7c1z_A	7c1z	A	development	1	3_1	1
+7cu3_A	7cu3	A	final_holdout	1	4_1	0
+7cww_A	7cww	A	final_holdout	1	3_1	1
+7jmn_E	7jmn	E	development	1	3_1	0
+7k1y_B	7k1y	B	development	1	3_1	1
+7lkf_A	7lkf	A	development	1	4_1	0
+7lxd_F	7lxd	F	development	1	3_1	0
+7nh8_AAA	7nh8	AAA	development	1	3_1	0
+7nt0_AAA	7nt0	AAA	development	1	3_1	0
+7nxg_A	7nxg	A	confirmation	1	3_1	1
+7o2w_B	7o2w	B	confirmation	1	3_1	1
+7o4i_R	7o4i	R	final_holdout	1	3_1	1
+7plf_AAA	7plf	AAA	development	1	3_1	0
+7pri_AAA	7pri	AAA	development	1	3_1	0
+7qi6_5	7qi6	5	development	1	3_1	0
+7s9y_A	7s9y	A	confirmation	1	3_1	1
+7t62_B	7t62	B	development	1	3_1	1
+8axz_A	8axz	A	development	1	3_1	0
+8bor_A	8bor	A	development	1	4_1	0
+13rtA	13rt	A	confirmation	0		0
+1a6gA	1a6g	A	development	0		0
+1a6nA	1a6n	A	development	0		0
+1a7sA	1a7s	A	confirmation	0		0
+1ammA	1amm	A	development	0		0
+1bs9A	1bs9	A	confirmation	0		0
+1bxoA	1bxo	A	development	0		0
+1bzpA	1bzp	A	development	0		0
+1bzrA	1bzr	A	development	0		0
+1c0pA	1c0p	A	development	0		0
+1c5eA	1c5e	A	confirmation	0		0
+1c7kA	1c7k	A	development	0		0
+1cxqA	1cxq	A	final_holdout	0		0
+1czbA	1czb	A	final_holdout	0		0
+1czpA	1czp	A	development	0		0
+1d2uA	1d2u	A	confirmation	0		0
+1e4mM	1e4m	M	final_holdout	0		0
+1ea7A	1ea7	A	final_holdout	0		0
+1ehdA	1ehd	A	development	0		0
+1eytA	1eyt	A	final_holdout	0		0
+1g2yA	1g2y	A	development	0		0
+1g66A	1g66	A	confirmation	0		0
+1g8tA	1g8t	A	final_holdout	0		0
+1g9oA	1g9o	A	development	0		0
+1gkmB	1gkm	B	development	0		0
+1gokA	1gok	A	final_holdout	0		0
+1gpiA	1gpi	A	development	0		0
+1gvtA	1gvt	A	development	0		0
+1gvwA	1gvw	A	development	0		0
+1gxmA	1gxm	A	development	0		0
+1h12A	1h12	A	development	0		0
+1h1nA	1h1n	A	confirmation	0		0
+1h4aX	1h4a	X	development	0		0
+1h4gA	1h4g	A	development	0		0
+1h4xA	1h4x	A	final_holdout	0		0
+1hdoA	1hdo	A	development	0		0
+1hj5A	1hj5	A	development	0		0
+1hj8A	1hj8	A	confirmation	0		0
+1hxkA	1hxk	A	development	0		0
+1i12A	1i12	A	development	0		0
+1i1wA	1i1w	A	final_holdout	0		0
+1i1xA	1i1x	A	final_holdout	0		0
+1i24A	1i24	A	development	0		0
+1ig5A	1ig5	A	final_holdout	0		0
+1inlA	1inl	A	development	0		0
+1is9A	1is9	A	development	0		0
+1itxA	1itx	A	development	0		0
+1iv3A	1iv3	A	confirmation	0		0
+1ixhA	1ixh	A	development	0		0
+1jbeA	1jbe	A	final_holdout	0		0
+1jcjA	1jcj	A	development	0		0
+1jf8A	1jf8	A	development	0		0
+1jfbA	1jfb	A	final_holdout	0		0
+1jfcA	1jfc	A	final_holdout	0		0
+1jgmA	1jgm	A	development	0		0
+1jk3A	1jk3	A	development	0		0
+1jm1A	1jm1	A	development	0		0
+1jseA	1jse	A	confirmation	0		0
+1jsfA	1jsf	A	confirmation	0		0
+1ju2A	1ju2	A	development	0		0
+1k1eA	1k1e	A	final_holdout	0		0
+1k4iA	1k4i	A	development	0		0
+1k4pA	1k4p	A	development	0		0
+1k7cA	1k7c	A	development	0		0
+1kb0A	1kb0	A	development	0		0
+1kccA	1kcc	A	development	0		0
+1kkoA	1kko	A	development	0		0
+1kngA	1kng	A	development	0		0
+1kouA	1kou	A	development	0		0
+1kqpA	1kqp	A	final_holdout	0		0
+1kwfA	1kwf	A	development	0		0
+1luqA	1luq	A	development	0		0
+1m15A	1m15	A	development	0		0
+1m2dA	1m2d	A	development	0		0
+1m5eA	1m5e	A	development	0		0
+1mfmA	1mfm	A	development	0		0
+1mj5A	1mj5	A	development	0		0
+1mn8A	1mn8	A	development	0		0
+1mnzA	1mnz	A	development	0		0
+1mqdA	1mqd	A	development	0		0
+1muwA	1muw	A	development	0		0
+1n3lA	1n3l	A	development	0		0
+1n40A	1n40	A	confirmation	0		0
+1n4vA	1n4v	A	development	0		0
+1n9bA	1n9b	A	confirmation	0		0
+1nlsA	1nls	A	confirmation	0		0
+1nnfA	1nnf	A	development	0		0
+1nqjA	1nqj	A	development	0		0
+1o5xA	1o5x	A	final_holdout	0		0
+1o7qA	1o7q	A	confirmation	0		0
+1o7tA	1o7t	A	development	0		0
+1o8bA	1o8b	A	confirmation	0		0
+1odvA	1odv	A	development	0		0
+1oe1A	1oe1	A	development	0		0
+1oh0A	1oh0	A	final_holdout	0		0
+1ongA	1ong	A	development	0		0
+1oqvA	1oqv	A	final_holdout	0		0
+1ousA	1ous	A	development	0		0
+1oxcA	1oxc	A	development	0		0
+1oxdA	1oxd	A	confirmation	0		0
+1p1xA	1p1x	A	development	0		0
+1pwlA	1pwl	A	development	0		0
+1pwmA	1pwm	A	development	0		0
+1q5mA	1q5m	A	development	0		0
+1q6oA	1q6o	A	development	0		0
+1q6zA	1q6z	A	development	0		0
+1qksA	1qks	A	development	0		0
+1ql0A	1ql0	A	final_holdout	0		0
+1qtwA	1qtw	A	final_holdout	0		0
+1ra0A	1ra0	A	development	0		0
+1rwaA	1rwa	A	confirmation	0		0
+1s0qA	1s0q	A	confirmation	0		0
+1s0rA	1s0r	A	confirmation	0		0
+1s5mA	1s5m	A	development	0		0
+1s5nA	1s5n	A	development	0		0
+1sauA	1sau	A	development	0		0
+1sbyA	1sby	A	development	0		0
+1senA	1sen	A	development	0		0
+1sfsA	1sfs	A	development	0		0
+1sg4A	1sg4	A	development	0		0
+1sjmA	1sjm	A	development	0		0
+1sl9A	1sl9	A	development	0		0
+1soaA	1soa	A	confirmation	0		0
+1su7A	1su7	A	development	0		0
+1swyA	1swy	A	confirmation	0		0
+1swzA	1swz	A	confirmation	0		0
+1sx2A	1sx2	A	confirmation	0		0
+1sxxA	1sxx	A	confirmation	0		0
+1sxyA	1sxy	A	confirmation	0		0
+1sy1A	1sy1	A	confirmation	0		0
+1t1eA	1t1e	A	development	0		0
+1t3rA	1t3r	A	confirmation	0		0
+1t3yA	1t3y	A	confirmation	0		0
+1tjmA	1tjm	A	development	0		0
+1tqgA	1tqg	A	development	0		0
+1twyA	1twy	A	development	0		0
+1u07A	1u07	A	final_holdout	0		0
+1ub3A	1ub3	A	development	0		0
+1ug6A	1ug6	A	development	0		0
+1unqA	1unq	A	development	0		0
+1us0A	1us0	A	development	0		0
+1uzbA	1uzb	A	development	0		0
+1v0kA	1v0k	A	development	0		0
+1v0lA	1v0l	A	development	0		0
+1v0mA	1v0m	A	development	0		0
+1v30A	1v30	A	development	0		0
+1v7tA	1v7t	A	confirmation	0		0
+1v8hA	1v8h	A	confirmation	0		0
+1ve4A	1ve4	A	final_holdout	0		0
+1vjuA	1vju	A	final_holdout	0		0
+1w0nA	1w0n	A	confirmation	0		0
+1w3lA	1w3l	A	development	0		0
+1w66A	1w66	A	development	0		0
+1w7cA	1w7c	A	development	0		0
+1w7rA	1w7r	A	final_holdout	0		0
+1wbiA	1wbi	A	development	0		0
+1wr5A	1wr5	A	development	0		0
+1wtnA	1wtn	A	confirmation	0		0
+1x8nA	1x8n	A	confirmation	0		0
+1x8oA	1x8o	A	confirmation	0		0
+1x8pA	1x8p	A	confirmation	0		0
+1x8qA	1x8q	A	confirmation	0		0
+1xszA	1xsz	A	final_holdout	0		0
+1xt5A	1xt5	A	development	0		0
+1y55X	1y55	X	development	0		0
+1yljA	1ylj	A	development	0		0
+1ylyA	1yly	A	development	0		0
+1ym1A	1ym1	A	development	0		0
+1ynoA	1yno	A	development	0		0
+1yqsA	1yqs	A	development	0		0
+1ywaA	1ywa	A	confirmation	0		0
+1ywdA	1ywd	A	confirmation	0		0
+1z3nA	1z3n	A	development	0		0
+1z8aA	1z8a	A	development	0		0
+1zjyA	1zjy	A	development	0		0
+1zkpA	1zkp	A	development	0		0
+1zmiA	1zmi	A	development	0		0
+1zo4A	1zo4	A	development	0		0
+2abaA	2aba	A	development	0		0
+2abbA	2abb	A	development	0		0
+2agtA	2agt	A	development	0		0
+2ah4X	2ah4	X	confirmation	0		0
+2anvA	2anv	A	development	0		0
+2anxA	2anx	A	development	0		0
+2axwA	2axw	A	development	0		0
+2b82A	2b82	A	confirmation	0		0
+2bjiA	2bji	A	development	0		0
+2blnA	2bln	A	development	0		0
+2brfA	2brf	A	development	0		0
+2bt9A	2bt9	A	development	0		0
+2c1vA	2c1v	A	development	0		0
+2c71A	2c71	A	development	0		0
+2c9vA	2c9v	A	development	0		0
+2ccwA	2ccw	A	development	0		0
+2ci1A	2ci1	A	development	0		0
+2cnqA	2cnq	A	development	0		0
+2cnuA	2cnu	A	development	0		0
+2d4jA	2d4j	A	confirmation	0		0
+2ddxA	2ddx	A	development	0		0
+2dfbA	2dfb	A	development	0		0
+2e6fA	2e6f	A	development	0		0
+2e7zA	2e7z	A	development	0		0
+2eutA	2eut	A	development	0		0
+2f01A	2f01	A	development	0		0
+2fhlA	2fhl	A	development	0		0
+2flhA	2flh	A	development	0		0
+2fvyA	2fvy	A	development	0		0
+2g82O	2g82	O	confirmation	0		0
+2gf3A	2gf3	A	development	0		0
+2gg9A	2gg9	A	development	0		0
+2glkA	2glk	A	development	0		0
+2gudA	2gud	A	final_holdout	0		0
+2gzvA	2gzv	A	development	0		0
+2hbwA	2hbw	A	development	0		0
+2i6vA	2i6v	A	development	0		0
+2j27A	2j27	A	final_holdout	0		0
+2jftA	2jft	A	final_holdout	0		0
+2jjjA	2jjj	A	development	0		0
+2jliA	2jli	A	final_holdout	0		0
+2nrmA	2nrm	A	development	0		0
+2o0bA	2o0b	A	development	0		0
+2o23A	2o23	A	development	0		0
+2of8A	2of8	A	development	0		0
+2ofcA	2ofc	A	development	0		0
+2p86A	2p86	A	development	0		0
+2pevA	2pev	A	development	0		0
+2pgoA	2pgo	A	final_holdout	0		0
+2pveA	2pve	A	development	0		0
+2pznA	2pzn	A	development	0		0
+2qsbA	2qsb	A	confirmation	0		0
+2qt4A	2qt4	A	development	0		0
+2qxwA	2qxw	A	development	0		0
+2r16A	2r16	A	confirmation	0		0
+2racA	2rac	A	final_holdout	0		0
+2uu8A	2uu8	A	confirmation	0		0
+2v06A	2v06	A	final_holdout	0		0
+2v3iA	2v3i	A	development	0		0
+2v8bA	2v8b	A	development	0		0
+2vb8A	2vb8	A	development	0		0
+2vhkA	2vhk	A	development	0		0
+2vi2A	2vi2	A	development	0		0
+2vi3A	2vi3	A	development	0		0
+2vu7A	2vu7	A	development	0		0
+2vwrA	2vwr	A	development	0		0
+2vzcA	2vzc	A	development	0		0
+2vzpA	2vzp	A	development	0		0
+2w13A	2w13	A	development	0		0
+2w14A	2w14	A	development	0		0
+2w1jA	2w1j	A	confirmation	0		0
+2w20A	2w20	A	development	0		0
+2wbpA	2wbp	A	confirmation	0		0
+2wurA	2wur	A	confirmation	0		0
+2x18A	2x18	A	development	0		0
+2xgbA	2xgb	A	development	0		0
+2xhnA	2xhn	A	final_holdout	0		0
+2xmjA	2xmj	A	final_holdout	0		0
+2xu3A	2xu3	A	development	0		0
+2xwvA	2xwv	A	development	0		0
+2y62A	2y62	A	final_holdout	0		0
+2y6hA	2y6h	A	confirmation	0		0
+2y72A	2y72	A	development	0		0
+2yjcA	2yjc	A	development	0		0
+2yl1A	2yl1	A	final_holdout	0		0
+2yr6A	2yr6	A	development	0		0
+2zd8A	2zd8	A	development	0		0
+2zl7A	2zl7	A	development	0		0
+2zq7A	2zq7	A	confirmation	0		0
+3a0mA	3a0m	A	development	0		0
+3a1hA	3a1h	A	confirmation	0		0
+3a2oA	3a2o	A	confirmation	0		0
+3a2vA	3a2v	A	final_holdout	0		0
+3ab5A	3ab5	A	development	0		0
+3admA	3adm	A	development	0		0
+3agoA	3ago	A	final_holdout	0		0
+3ahwA	3ahw	A	final_holdout	0		0
+3aksA	3aks	A	development	0		0
+3aldA	3ald	A	development	0		0
+3aryA	3ary	A	confirmation	0		0
+3aubA	3aub	A	development	0		0
+3b12A	3b12	A	development	0		0
+3b34A	3b34	A	development	0		0
+3b3rA	3b3r	A	development	0		0
+3b4uA	3b4u	A	development	0		0
+3b64A	3b64	A	development	0		0
+3b6dA	3b6d	A	development	0		0
+3bc9A	3bc9	A	confirmation	0		0
+3bcjA	3bcj	A	development	0		0
+3beuA	3beu	A	development	0		0
+3bjeA	3bje	A	confirmation	0		0
+3bmzA	3bmz	A	development	0		0
+3bs2A	3bs2	A	development	0		0
+3c6aA	3c6a	A	development	0		0
+3c6xA	3c6x	A	development	0		0
+3c6zA	3c6z	A	development	0		0
+3c70A	3c70	A	development	0		0
+3c76X	3c76	X	confirmation	0		0
+3c77X	3c77	X	confirmation	0		0
+3cijA	3cij	A	development	0		0
+3d1pA	3d1p	A	development	0		0
+3d9xA	3d9x	A	development	0		0
+3dk1A	3dk1	A	confirmation	0		0
+3dvqX	3dvq	X	development	0		0
+3dw1X	3dw1	X	development	0		0
+3dw3X	3dw3	X	development	0		0
+3dweX	3dwe	X	development	0		0
+3dzeA	3dze	A	development	0		0
+3ea6A	3ea6	A	development	0		0
+3ec0A	3ec0	A	confirmation	0		0
+3ecgA	3ecg	A	confirmation	0		0
+3einA	3ein	A	development	0		0
+3ejrA	3ejr	A	development	0		0
+3eo6A	3eo6	A	development	0		0
+3ezgA	3ezg	A	confirmation	0		0
+3f18A	3f18	A	development	0		0
+3f19A	3f19	A	development	0		0
+3fa0A	3fa0	A	confirmation	0		0
+3fg9A	3fg9	A	development	0		0
+3fsaA	3fsa	A	development	0		0
+3fymA	3fym	A	development	0		0
+3g3jA	3g3j	A	development	0		0
+3g46A	3g46	A	final_holdout	0		0
+3g5sA	3g5s	A	development	0		0
+3g6kA	3g6k	A	development	0		0
+3gahA	3gah	A	development	0		0
+3gmxB	3gmx	B	development	0		0
+3h31A	3h31	A	development	0		0
+3hnbM	3hnb	M	development	0		0
+3hsgA	3hsg	A	development	0		0
+3hsjA	3hsj	A	development	0		0
+3i06A	3i06	A	development	0		0
+3i30X	3i30	X	development	0		0
+3i4gA	3i4g	A	development	0		0
+3i6oA	3i6o	A	confirmation	0		0
+3jq0A	3jq0	A	confirmation	0		0
+3kfaA	3kfa	A	final_holdout	0		0
+3kfhA	3kfh	A	final_holdout	0		0
+3kwdA	3kwd	A	development	0		0
+3kweA	3kwe	A	development	0		0
+3l5lA	3l5l	A	final_holdout	0		0
+3lepA	3lep	A	development	0		0
+3ljmA	3ljm	A	confirmation	0		0
+3lo8A	3lo8	A	development	0		0
+3lqbA	3lqb	A	development	0		0
+3lwxA	3lwx	A	final_holdout	0		0
+3lz3A	3lz3	A	development	0		0
+3m5qA	3m5q	A	development	0		0
+3m6uA	3m6u	A	development	0		0
+3m8mA	3m8m	A	development	0		0
+3m9jA	3m9j	A	development	0		0
+3mcwA	3mcw	A	development	0		0
+3mjvA	3mjv	A	development	0		0
+3mncA	3mnc	A	final_holdout	0		0
+3mtyA	3mty	A	final_holdout	0		0
+3mu4A	3mu4	A	final_holdout	0		0
+3mvsA	3mvs	A	confirmation	0		0
+3mwpA	3mwp	A	development	0		0
+3n8uA	3n8u	A	development	0		0
+3nbcA	3nbc	A	final_holdout	0		0
+3ndwA	3ndw	A	confirmation	0		0
+3ndxA	3ndx	A	confirmation	0		0
+3no0A	3no0	A	development	0		0
+3novA	3nov	A	development	0		0
+3nqfA	3nqf	A	development	0		0
+3nu3A	3nu3	A	confirmation	0		0
+3nu6A	3nu6	A	confirmation	0		0
+3nvsA	3nvs	A	development	0		0
+3nycA	3nyc	A	development	0		0
+3nydA	3nyd	A	final_holdout	0		0
+3nznA	3nzn	A	development	0		0
+3o5pA	3o5p	A	development	0		0
+3oddA	3odd	A	final_holdout	0		0
+3odfA	3odf	A	final_holdout	0		0
+3oqpA	3oqp	A	final_holdout	0		0
+3oruA	3oru	A	development	0		0
+3oxcA	3oxc	A	confirmation	0		0
+3pfzA	3pfz	A	development	0		0
+3qpaA	3qpa	A	development	0		0
+3qzrA	3qzr	A	confirmation	0		0
+3rcgA	3rcg	A	final_holdout	0		0
+3rpcA	3rpc	A	confirmation	0		0
+3rvkA	3rvk	A	final_holdout	0		0
+3rwaA	3rwa	A	development	0		0
+3rznA	3rzn	A	development	0		0
+3s19A	3s19	A	development	0		0
+3s92A	3s92	A	development	0		0
+3sg0A	3sg0	A	final_holdout	0		0
+3sk2A	3sk2	A	development	0		0
+3su0A	3su0	A	development	0		0
+3teuA	3teu	A	confirmation	0		0
+3tg2A	3tg2	A	development	0		0
+3tlaA	3tla	A	development	0		0
+3tohA	3toh	A	confirmation	0		0
+3u3hA	3u3h	A	development	0		0
+3u81A	3u81	A	development	0		0
+3u99A	3u99	A	final_holdout	0		0
+3ur8A	3ur8	A	development	0		0
+3urdA	3urd	A	development	0		0
+3v9kA	3v9k	A	development	0		0
+3vigA	3vig	A	development	0		0
+3vioA	3vio	A	development	0		0
+3vm9A	3vm9	A	development	0		0
+3vsvA	3vsv	A	confirmation	0		0
+3vtoA	3vto	A	final_holdout	0		0
+3vwnX	3vwn	X	confirmation	0		0
+3w42A	3w42	A	confirmation	0		0
+3w4pA	3w4p	A	development	0		0
+3whaA	3wha	A	development	0		0
+3wjdA	3wjd	A	development	0		0
+3wjgA	3wjg	A	development	0		0
+3wl2A	3wl2	A	confirmation	0		0
+3wmvA	3wmv	A	development	0		0
+3wnyA	3wny	A	development	0		0
+3wx7A	3wx7	A	development	0		0
+3wy2A	3wy2	A	development	0		0
+3wypA	3wyp	A	development	0		0
+3x0kA	3x0k	A	final_holdout	0		0
+3x0nA	3x0n	A	final_holdout	0		0
+3x0sA	3x0s	A	final_holdout	0		0
+3x0tA	3x0t	A	development	0		0
+3x1yA	3x1y	A	development	0		0
+3zhoA	3zho	A	development	0		0
+3zitA	3zit	A	confirmation	0		0
+3ziyA	3ziy	A	development	0		0
+3zojA	3zoj	A	confirmation	0		0
+3zqyA	3zqy	A	final_holdout	0		0
+3zy7A	3zy7	A	final_holdout	0		0
+4a7uA	4a7u	A	development	0		0
+4a8nA	4a8n	A	development	0		0
+4ateA	4ate	A	development	0		0
+4avrA	4avr	A	confirmation	0		0
+4aw7A	4aw7	A	final_holdout	0		0
+4awtA	4awt	A	development	0		0
+4b10A	4b10	A	confirmation	0		0
+4b4eA	4b4e	A	confirmation	0		0
+4b5wA	4b5w	A	final_holdout	0		0
+4bdxA	4bdx	A	development	0		0
+4bgbA	4bgb	A	development	0		0
+4bkdA	4bkd	A	development	0		0
+4bs6A	4bs6	A	development	0		0
+4bt2A	4bt2	A	confirmation	0		0
+4bt3A	4bt3	A	confirmation	0		0
+4bt5A	4bt5	A	confirmation	0		0
+4buhA	4buh	A	final_holdout	0		0
+4c1dA	4c1d	A	development	0		0
+4c1hA	4c1h	A	final_holdout	0		0
+4c4rA	4c4r	A	development	0		0
+4c5mA	4c5m	A	development	0		0
+4caeA	4cae	A	confirmation	0		0
+4co3A	4co3	A	development	0		0
+4cpfA	4cpf	A	development	0		0
+4cssA	4css	A	development	0		0
+4cstA	4cst	A	development	0		0
+4cybA	4cyb	A	development	0		0
+4cznA	4czn	A	development	0		0
+4czoA	4czo	A	development	0		0
+4czqA	4czq	A	development	0		0
+4de0A	4de0	A	development	0		0
+4dmtA	4dmt	A	final_holdout	0		0
+4dp9X	4dp9	X	development	0		0
+4dpbX	4dpb	X	development	0		0
+4dwvA	4dwv	A	development	0		0
+4ea9A	4ea9	A	development	0		0
+4eguA	4egu	A	development	0		0
+4ekfA	4ekf	A	development	0		0
+4eusA	4eus	A	confirmation	0		0
+4euzA	4euz	A	development	0		0
+4ey2A	4ey2	A	final_holdout	0		0
+4f18A	4f18	A	development	0		0
+4f19A	4f19	A	development	0		0
+4f1uA	4f1u	A	development	0		0
+4f1vA	4f1v	A	development	0		0
+4fcfA	4fcf	A	development	0		0
+4fegA	4feg	A	development	0		0
+4fh4A	4fh4	A	development	0		0
+4fkbA	4fkb	A	development	0		0
+4fonA	4fon	A	development	0		0
+4g8cA	4g8c	A	development	0		0
+4g9eA	4g9e	A	development	0		0
+4gbuA	4gbu	A	development	0		0
+4gcaA	4gca	A	development	0		0
+4gf6B	4gf6	B	confirmation	0		0
+4gjzA	4gjz	A	final_holdout	0		0
+4gm0A	4gm0	A	development	0		0
+4gnuA	4gnu	A	development	0		0
+4gp9A	4gp9	A	development	0		0
+4gvqA	4gvq	A	development	0		0
+4gvrA	4gvr	A	development	0		0
+4gxwA	4gxw	A	development	0		0
+4gyjA	4gyj	A	development	0		0
+4h6bA	4h6b	A	development	0		0
+4h9mA	4h9m	A	confirmation	0		0
+4hbtA	4hbt	A	development	0		0
+4hcjA	4hcj	A	development	0		0
+4hedA	4hed	A	development	0		0
+4hk8A	4hk8	A	development	0		0
+4hnoA	4hno	A	final_holdout	0		0
+4hqzA	4hqz	A	confirmation	0		0
+4i5uA	4i5u	A	development	0		0
+4i62A	4i62	A	development	0		0
+4i7vA	4i7v	A	final_holdout	0		0
+4i8jA	4i8j	A	confirmation	0		0
+4i8lA	4i8l	A	confirmation	0		0
+4id4A	4id4	A	confirmation	0		0
+4iixA	4iix	A	development	0		0
+4ipuA	4ipu	A	confirmation	0		0
+4j5cX	4j5c	X	final_holdout	0		0
+4j5oA	4j5o	A	development	0		0
+4jccA	4jcc	A	final_holdout	0		0
+4jd5A	4jd5	A	development	0		0
+4jeaA	4jea	A	confirmation	0		0
+4jtrA	4jtr	A	development	0		0
+4jvoA	4jvo	A	final_holdout	0		0
+4k6bA	4k6b	A	final_holdout	0		0
+4k7yA	4k7y	A	development	0		0
+4kefA	4kef	A	confirmation	0		0
+4kemA	4kem	A	development	0		0
+4knkA	4knk	A	development	0		0
+4kqpA	4kqp	A	development	0		0
+4ky2A	4ky2	A	confirmation	0		0
+4l05A	4l05	A	development	0		0
+4l6dA	4l6d	A	development	0		0
+4lbsA	4lbs	A	development	0		0
+4lbuA	4lbu	A	development	0		0
+4lc8A	4lc8	A	development	0		0
+4lhdA	4lhd	A	final_holdout	0		0
+4m51A	4m51	A	development	0		0
+4m5lA	4m5l	A	development	0		0
+4m5mA	4m5m	A	development	0		0
+4mbyA	4mby	A	development	0		0
+4mf5A	4mf5	A	development	0		0
+4my0A	4my0	A	development	0		0
+4o6qA	4o6q	A	development	0		0
+4o6uA	4o6u	A	development	0		0
+4o8hA	4o8h	A	final_holdout	0		0
+4o8oA	4o8o	A	development	0		0
+4o9aA	4o9a	A	development	0		0
+4oneA	4one	A	development	0		0
+4oqiA	4oqi	A	final_holdout	0		0
+4p25A	4p25	A	development	0		0
+4p6aA	4p6a	A	confirmation	0		0
+4pe0X	4pe0	X	final_holdout	0		0
+4pf4A	4pf4	A	final_holdout	0		0
+4prrA	4prr	A	development	0		0
+4pssA	4pss	A	development	0		0
+4psyA	4psy	A	confirmation	0		0
+4q4gX	4q4g	X	development	0		0
+4q9wA	4q9w	A	development	0		0
+4qasA	4qas	A	final_holdout	0		0
+4qbxA	4qbx	A	development	0		0
+4qiuA	4qiu	A	final_holdout	0		0
+4qrnA	4qrn	A	development	0		0
+4qxvA	4qxv	A	confirmation	0		0
+4r9aA	4r9a	A	development	0		0
+4rdcA	4rdc	A	development	0		0
+4ru3A	4ru3	A	development	0		0
+4ru5A	4ru5	A	development	0		0
+4rxvA	4rxv	A	development	0		0
+4tpoA	4tpo	A	final_holdout	0		0
+4tx0A	4tx0	A	development	0		0
+4u2sA	4u2s	A	development	0		0
+4u2tA	4u2t	A	development	0		0
+4ua4A	4ua4	A	development	0		0
+4ue0A	4ue0	A	development	0		0
+4uhcA	4uhc	A	development	0		0
+4uhfA	4uhf	A	development	0		0
+4unuA	4unu	A	development	0		0
+4uqdA	4uqd	A	development	0		0
+4uyrA	4uyr	A	development	0		0
+4uytA	4uyt	A	development	0		0
+4w7nA	4w7n	A	development	0		0
+4wk9A	4wk9	A	development	0		0
+4wkaA	4wka	A	development	0		0
+4wkfA	4wkf	A	development	0		0
+4ws2A	4ws2	A	development	0		0
+4wuiA	4wui	A	confirmation	0		0
+4x06A	4x06	A	final_holdout	0		0
+4x9yA	4x9y	A	confirmation	0		0
+4xkuA	4xku	A	development	0		0
+4xloA	4xlo	A	development	0		0
+4xpxA	4xpx	A	development	0		0
+4xq4A	4xq4	A	development	0		0
+4xqcA	4xqc	A	development	0		0
+4xqeA	4xqe	A	development	0		0
+4xqmA	4xqm	A	confirmation	0		0
+4xrgA	4xrg	A	development	0		0
+4y59A	4y59	A	development	0		0
+4y5lA	4y5l	A	development	0		0
+4yaaA	4yaa	A	final_holdout	0		0
+4yapA	4yap	A	final_holdout	0		0
+4ykiA	4yki	A	confirmation	0		0
+4ytkA	4ytk	A	confirmation	0		0
+4yvbA	4yvb	A	development	0		0
+4ywaA	4ywa	A	development	0		0
+4yzzA	4yzz	A	development	0		0
+4z1sA	4z1s	A	development	0		0
+4z6mA	4z6m	A	development	0		0
+4z6nA	4z6n	A	development	0		0
+4za4A	4za4	A	development	0		0
+4za9A	4za9	A	development	0		0
+4zaaA	4zaa	A	development	0		0
+4zbdA	4zbd	A	development	0		0
+4zc9A	4zc9	A	development	0		0
+4zo2A	4zo2	A	development	0		0
+4zuoA	4zuo	A	development	0		0
+4zuqA	4zuq	A	development	0		0
+5a57A	5a57	A	development	0		0
+5a6mA	5a6m	A	development	0		0
+5a8cA	5a8c	A	development	0		0
+5a92A	5a92	A	confirmation	0		0
+5ae0A	5ae0	A	development	0		0
+5aiiA	5aii	A	confirmation	0		0
+5akrA	5akr	A	development	0		0
+5amxA	5amx	A	development	0		0
+5avdA	5avd	A	final_holdout	0		0
+5avgA	5avg	A	development	0		0
+5b4hA	5b4h	A	development	0		0
+5b4iA	5b4i	A	development	0		0
+5b7yA	5b7y	A	development	0		0
+5c05A	5c05	A	development	0		0
+5c0zA	5c0z	A	development	0		0
+5c5aA	5c5a	A	development	0		0
+5cc9A	5cc9	A	development	0		0
+5ctmA	5ctm	A	final_holdout	0		0
+5dj7A	5dj7	A	development	0		0
+5dkmA	5dkm	A	development	0		0
+5dqlA	5dql	A	final_holdout	0		0
+5drfA	5drf	A	confirmation	0		0
+5drgA	5drg	A	confirmation	0		0
+5eeiA	5eei	A	confirmation	0		0
+5ej3A	5ej3	A	development	0		0
+5emyA	5emy	A	confirmation	0		0
+5eooA	5eoo	A	development	0		0
+5epuA	5epu	A	development	0		0
+5ewoA	5ewo	A	development	0		0
+5f7bA	5f7b	A	development	0		0
+5fbfA	5fbf	A	final_holdout	0		0
+5fleX	5fle	X	development	0		0
+5flkA	5flk	A	development	0		0
+5fyrA	5fyr	A	confirmation	0		0
+5hd6A	5hd6	A	confirmation	0		0
+5hobA	5hob	A	development	0		0
+5hr3A	5hr3	A	development	0		0
+5hwnA	5hwn	A	final_holdout	0		0
+5i7iA	5i7i	A	development	0		0
+5ikdA	5ikd	A	development	0		0
+5ilsA	5ils	A	development	0		0
+5iuqA	5iuq	A	development	0		0
+5j4lA	5j4l	A	final_holdout	0		0
+5j6yA	5j6y	A	development	0		0
+5j80A	5j80	A	development	0		0
+5jg1A	5jg1	A	confirmation	0		0
+5jh8A	5jh8	A	final_holdout	0		0
+5jsvA	5jsv	A	development	0		0
+5k1lA	5k1l	A	development	0		0
+5k6dA	5k6d	A	final_holdout	0		0
+5k9bA	5k9b	A	development	0		0
+5karA	5kar	A	development	0		0
+5kczA	5kcz	A	development	0		0
+5kj6A	5kj6	A	development	0		0
+5kp1A	5kp1	A	final_holdout	0		0
+5kz6A	5kz6	A	development	0		0
+5lgoA	5lgo	A	confirmation	0		0
+5lk9A	5lk9	A	development	0		0
+5lkvA	5lkv	A	development	0		0
+5lnjA	5lnj	A	development	0		0
+5lunA	5lun	A	development	0		0
+5lwsA	5lws	A	development	0		0
+5m10A	5m10	A	development	0		0
+5m17A	5m17	A	development	0		0
+5m4gA	5m4g	A	confirmation	0		0
+5m4zA	5m4z	A	development	0		0
+5m77A	5m77	A	development	0		0
+5majA	5maj	A	development	0		0
+5mb5A	5mb5	A	development	0		0
+5mc0A	5mc0	A	confirmation	0		0
+5mehA	5meh	A	development	0		0
+5mh2A	5mh2	A	development	0		0
+5mh6A	5mh6	A	development	0		0
+5mk9A	5mk9	A	final_holdout	0		0
+5mkaA	5mka	A	final_holdout	0		0
+5mncA	5mnc	A	confirmation	0		0
+5mneA	5mne	A	confirmation	0		0
+5mngA	5mng	A	confirmation	0		0
+5mnhA	5mnh	A	confirmation	0		0
+5mnnA	5mnn	A	confirmation	0		0
+5mnpA	5mnp	A	confirmation	0		0
+5monA	5mon	A	confirmation	0		0
+5mqyA	5mqy	A	development	0		0
+5mtuA	5mtu	A	final_holdout	0		0
+5natA	5nat	A	confirmation	0		0
+5nhmA	5nhm	A	development	0		0
+5nr4A	5nr4	A	development	0		0
+5nrhA	5nrh	A	development	0		0
+5o15A	5o15	A	confirmation	0		0
+5o2xA	5o2x	A	development	0		0
+5oduA	5odu	A	development	0		0
+5odyA	5ody	A	development	0		0
+5ok7A	5ok7	A	development	0		0
+5okbA	5okb	A	development	0		0
+5opfA	5opf	A	development	0		0
+5or3A	5or3	A	development	0		0
+5oukA	5ouk	A	development	0		0
+5ouoA	5ouo	A	final_holdout	0		0
+5p70A	5p70	A	development	0		0
+5p71A	5p71	A	development	0		0
+5p73A	5p73	A	development	0		0
+5p76A	5p76	A	development	0		0
+5p77A	5p77	A	development	0		0
+5p8tA	5p8t	A	development	0		0
+5p9nA	5p9n	A	development	0		0
+5p9pA	5p9p	A	development	0		0
+5p9vA	5p9v	A	development	0		0
+5qu4A	5qu4	A	development	0		0
+5rcdA	5rcd	A	development	0		0
+5rd1A	5rd1	A	development	0		0
+5rdcA	5rdc	A	development	0		0
+5rdiA	5rdi	A	development	0		0
+5re2A	5re2	A	development	0		0
+5roiA	5roi	A	development	0		0
+5rotA	5rot	A	development	0		0
+5royA	5roy	A	development	0		0
+5rp4A	5rp4	A	development	0		0
+5rpvA	5rpv	A	development	0		0
+5rs7A	5rs7	A	confirmation	0		0
+5rsmA	5rsm	A	confirmation	0		0
+5rsqA	5rsq	A	confirmation	0		0
+5rsrA	5rsr	A	confirmation	0		0
+5rssA	5rss	A	confirmation	0		0
+5rstA	5rst	A	confirmation	0		0
+5rszA	5rsz	A	confirmation	0		0
+5rt4A	5rt4	A	confirmation	0		0
+5rtxA	5rtx	A	confirmation	0		0
+5rtyA	5rty	A	confirmation	0		0
+5rtzA	5rtz	A	confirmation	0		0
+5ru0A	5ru0	A	confirmation	0		0
+5ru1A	5ru1	A	confirmation	0		0
+5ru2A	5ru2	A	confirmation	0		0
+5rueA	5rue	A	confirmation	0		0
+5rv3A	5rv3	A	confirmation	0		0
+5rv7A	5rv7	A	confirmation	0		0
+5rv8A	5rv8	A	confirmation	0		0
+5rv9A	5rv9	A	confirmation	0		0
+5rvaA	5rva	A	confirmation	0		0
+5rvbA	5rvb	A	confirmation	0		0
+5saoA	5sao	A	development	0		0
+5sq5A	5sq5	A	confirmation	0		0
+5sq6A	5sq6	A	confirmation	0		0
+5sq7A	5sq7	A	confirmation	0		0
+5sq8A	5sq8	A	confirmation	0		0
+5sqaA	5sqa	A	confirmation	0		0
+5sqbA	5sqb	A	confirmation	0		0
+5sqcA	5sqc	A	confirmation	0		0
+5sqdA	5sqd	A	confirmation	0		0
+5swcA	5swc	A	development	0		0
+5sy4A	5sy4	A	confirmation	0		0
+5sy9A	5sy9	A	confirmation	0		0
+5syaA	5sya	A	confirmation	0		0
+5t39A	5t39	A	final_holdout	0		0
+5tfqA	5tfq	A	development	0		0
+5toyA	5toy	A	development	0		0
+5trqA	5trq	A	development	0		0
+5tvyA	5tvy	A	development	0		0
+5u64B	5u64	B	development	0		0
+5uejA	5uej	A	development	0		0
+5v92A	5v92	A	confirmation	0		0
+5vpqA	5vpq	A	final_holdout	0		0
+5vrkA	5vrk	A	development	0		0
+5vscA	5vsc	A	final_holdout	0		0
+5w3rA	5w3r	A	development	0		0
+5waaA	5waa	A	development	0		0
+5ws7A	5ws7	A	confirmation	0		0
+5wsfA	5wsf	A	final_holdout	0		0
+5x5mA	5x5m	A	development	0		0
+5x9lA	5x9l	A	development	0		0
+5x9mA	5x9m	A	development	0		0
+5xbuA	5xbu	A	development	0		0
+5xp6A	5xp6	A	final_holdout	0		0
+5xqaA	5xqa	A	confirmation	0		0
+5xqpA	5xqp	A	development	0		0
+5y3xA	5y3x	A	development	0		0
+5y9aA	5y9a	A	development	0		0
+5yb6A	5yb6	A	confirmation	0		0
+5ydeA	5yde	A	development	0		0
+5yobA	5yob	A	development	0		0
+5yypA	5yyp	A	development	0		0
+5z02A	5z02	A	development	0		0
+5z0tA	5z0t	A	final_holdout	0		0
+5zj2A	5zj2	A	final_holdout	0		0
+6ao9A	6ao9	A	final_holdout	0		0
+6ar0A	6ar0	A	final_holdout	0		0
+6argA	6arg	A	confirmation	0		0
+6b8gA	6b8g	A	development	0		0
+6balA	6bal	A	development	0		0
+6bevA	6bev	A	development	0		0
+6bxdA	6bxd	A	development	0		0
+6c79A	6c79	A	confirmation	0		0
+6cdjA	6cdj	A	development	0		0
+6cspA	6csp	A	confirmation	0		0
+6d1iA	6d1i	A	final_holdout	0		0
+6d9yA	6d9y	A	development	0		0
+6elxA	6elx	A	confirmation	0		0
+6eqeA	6eqe	A	final_holdout	0		0
+6etpA	6etp	A	development	0		0
+6ev3A	6ev3	A	development	0		0
+6evdA	6evd	A	development	0		0
+6f43A	6f43	A	development	0		0
+6fd1A	6fd1	A	confirmation	0		0
+6fi2A	6fi2	A	final_holdout	0		0
+6fj6A	6fj6	A	development	0		0
+6fm7A	6fm7	A	development	0		0
+6ggpA	6ggp	A	development	0		0
+6hmdA	6hmd	A	development	0		0
+6n3xA	6n3x	A	development	0		0
+6ni4A	6ni4	A	development	0		0
+6qw8A	6qw8	A	confirmation	0		0
+6r1dA	6r1d	A	development	0		0
+6trgXXX	6trg	XXX	confirmation	0		0
+7a3hA	7a3h	A	development	0		0
+7fpyA	7fpy	A	development	0		0
+7fvzA	7fvz	A	development	0		0
+7fw0A	7fw0	A	development	0		0
+7fw2A	7fw2	A	development	0		0
+7hctA	7hct	A	confirmation	0		0
+7hcuA	7hcu	A	confirmation	0		0
+7hd3A	7hd3	A	confirmation	0		0
+7hd5A	7hd5	A	confirmation	0		0
+7heqA	7heq	A	confirmation	0		0
+7hf0A	7hf0	A	confirmation	0		0
+7hf1A	7hf1	A	confirmation	0		0
+7hflA	7hfl	A	confirmation	0		0
+7hpyA	7hpy	A	confirmation	0		0
+8a3hA	8a3h	A	development	0		0

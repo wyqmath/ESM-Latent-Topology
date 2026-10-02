@@ -1,0 +1,53 @@
+{
+ "note": "由 learned 逐种子分数 tsv（%.6g 落盘）对 fixed 参照离线补算；与 aggregation_learned_qc.json 的 seedwise Δ 有 ≤4.3e-05 差（%.6g 重载漂移量级，复审记录）；knots seed2026 CI 上界 −0.000506 为贴 0 的负值。",
+ "seedwise_ci99fam": {
+  "disorder_seed13": {
+   "boot_valid": 1987,
+   "ci99fam": [
+    -0.001911,
+    7.9e-05
+   ],
+   "delta": -0.000521
+  },
+  "disorder_seed2026": {
+   "boot_valid": 1987,
+   "ci99fam": [
+    -0.000375,
+    0.00033
+   ],
+   "delta": -2.9e-05
+  },
+  "disorder_seed42": {
+   "boot_valid": 1987,
+   "ci99fam": [
+    -0.002373,
+    0.000111
+   ],
+   "delta": -0.000502
+  },
+  "knots_seed13": {
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.089674,
+    -0.021941
+   ],
+   "delta": -0.051023
+  },
+  "knots_seed2026": {
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.072739,
+    -0.000506
+   ],
+   "delta": -0.032507
+  },
+  "knots_seed42": {
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.087308,
+    -0.028386
+   ],
+   "delta": -0.054347
+  }
+ }
+}

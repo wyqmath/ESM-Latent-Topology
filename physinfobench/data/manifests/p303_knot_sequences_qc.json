@@ -1,0 +1,18 @@
+{
+ "asserts": [
+  "rows+unavailable=1020",
+  "presence_sha_unique_labels",
+  "type_sha_unique_labels"
+ ],
+ "distinct_sha": 799,
+ "entries": 1018,
+ "len_max": 2516,
+ "len_min": 13,
+ "presence_conflict_sha_groups": {},
+ "run_ts": "2026-09-25 01:10",
+ "type_conflict_sha_groups": {},
+ "unavailable": 14,
+ "unavailable_reason": "pdb_entry_not_in_wwpdb_archive（RCSB REST/GraphQL 404 + wwPDB obsolete FTP 404 + obsolete.dat 无映射，三重核查 2026-09-25）",
+ "usable_chains": 1006,
+ "verdict": "OK_WITH_REGISTERED_UNAVAILABLE"
+}

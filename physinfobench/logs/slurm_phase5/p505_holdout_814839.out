@@ -1,0 +1,35 @@
+[p502] final_lock 校验通过（25 文件）；解锁授权=2026-09-30 19:4x 用户指令式授权『继续推进，直到P5结束』（decisions.md 2026-09-30 19:4x 条目；G3/G4 先例语义；一次性、不回传调参）
+[p502] 抽取: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/bin/python /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py --fasta /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p504/knots_hold.fa --out-dir /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p505/emb_knots_hold --device cuda --batch-max-tokens 49152 --resid-layers 23,29,33
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15325.49it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=108 cache_hits=0 layer_set=mean_all34+resid_23_29_33|domfull -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p505/emb_knots_hold/extract_manifest.tsv
+[p502] 抽取: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/bin/python /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py --fasta /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p504/disorder_hold.fa --out-dir /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p505/emb_disorder_hold --device cuda --batch-max-tokens 49152 --resid-layers 11,23,33 --resid-index-file /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p504/disorder_hold_resid_idx.tsv
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 19033.75it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=494 cache_hits=0 layer_set=mean_all34+resid_11_23_33|domidx -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p505/emb_disorder_hold/extract_manifest.tsv
+[p502] 保留集抽取完成（knots 108 全链 / disorder 494 蛋白分母域）
+[p502] H-KNOT-PRESENCE(holdout): AUROC=0.967711 CI95=[0.942852,0.993594]
+[p502] dev 拟合：n_residues=205263 pos_rate=0.9982
+[p502] H-DISORDER-RES(holdout): pooled AUPRC=0.999943 prev=0.9989 dual=1
+[p502] DONE
+[p505] DONE 2026-09-30T11:51:56Z

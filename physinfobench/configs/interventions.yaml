@@ -1,0 +1,177 @@
+# =============================================================================
+# configs/interventions.yaml — P4.05 条件特征与置换负对照设计（冻结）
+# 冻结时间：2026-09-26 04:4x Asia/Shanghai（实际写入时间；一审 m8 对齐）。
+# 授权链：用户委托（decisions.md 2026-09-24 02:34）+ 用户 2026-09-26 指令（G3 放行+Phase 4）。
+# 服务对象：C-IN3（M+F 增益来源判定）；任务 T-PYP-STATE / T-RNASE-ASSEMBLY / T-BPTI-REDOX。
+# 纪律：全部仅 development 语义（三系统全部样本属 discovery/案例级，无确认/保留消费）；
+#       变更须差异清单+独立审核。
+# =============================================================================
+
+meta:
+  task: P4.05
+  created_at: "2026-09-26 04:2x"
+  status: frozen_2026-09-26_p405
+  claims_served: [C-IN3, C-IN1]   # C-IN1 required_controls 引用 P4.05 定义（claims.yaml 映射）；
+                                  # OD-SYNONYMOUS-F 开放决策在此决议落地（RNase 同义降级）
+  case_level_disclosure: 三系统均为案例级（PYP 1 对 / RNase A 2 对 / BPTI 0 对可评价结构配对）。
+    全部结论为案例级方向性事实+退化披露；不产生跨蛋白置信度、不外推（claims.yaml 单系统边界）。
+
+# -----------------------------------------------------------------------------
+# 1. M 接口（四臂共用的模型表示）
+# -----------------------------------------------------------------------------
+M_interface:
+  encoder: probes.yaml 冻结语义（esm2_t33_650M @ 08e4846e…，fp32 forward/fp16 storage）
+  layer: hidden 33（G3 全局候选层=末层；冻结层集 global_set 第 6 位）
+  pooling: BOS/EOS 剥离后全有效残基均值（截断 1022 内）
+  sequences:
+    source: RCSB PDB REST（/rest/v1/core/polymer_entity/{id}/{entity}——entity 按每样本
+      curated 表登记值，非固定 1）；一次性拉取；每样本记录 pdb_id、entity、chain(s)、sequence、
+      sha256、拉取时间戳于 data/interim/p405/conditional_sequences.tsv
+    entity_registry: 4WL9=entity1、4WLA=entity1、1FS3=entity1、1A2W=entity1、1JS0=entity1、
+      **1F0V=entity2**（curated 表实测；RCSB 实测 entity2=P61823 RNase A，entity1 非 P61823）
+    identity_assertions:            # 拉取后即断言（失败即停）
+      - PYP：4WL9_A 与 4WLA_A 序列完全一致（同构建体光照配对；P1.06 sequence_check 复核）
+      - RNase A：1FS3(entity1)、1F0V(entity2 各聚合物链)、1A2W(entity1)、1JS0(entity1)
+        各链序列完全一致（成熟 124 aa，P61823）
+      - 任一断言失败 → 该系统降级为"序列不一致案例"如实登记，不跑矩阵
+  extraction: 集群 GPU（P4.02 抽取管线同款；--mean-layers 33 池化），输出
+    data/interim/p405/emb_conditional/
+
+# -----------------------------------------------------------------------------
+# 2. F 字段登记（类型/单位/获取时间/与目标关系；实验后才可得字段屏蔽）
+# -----------------------------------------------------------------------------
+F_fields:
+  pyp:                              # T-PYP-STATE（PG-PYP-001，1 对 2 样本）
+    - name: illumination
+      type: binary
+      values: {dark: 0, light_intermediate: 1}
+      acquisition: 实验条件本身（激励状态）——与 y 同源不同字段（y=状态标签；F=物理条件）
+      relation_to_target: 条件-状态因果链上传递（光→状态）；非同义但案例级无法分离
+    - name: pump_delay
+      status: MASKED                # 实验后才可得的测量参数（pending_fulltext）——屏蔽不入 F
+    - name: illumination_intensity_wavelength
+      status: MASKED                # 强度/波长：仅 experiment 行聚合描述（UV-visible transient
+                                    # 380-570nm）、成员级数值缺失（pending_fulltext）→ 屏蔽不入 F
+    - name: temperature
+      status: NOT_RECORDED          # curated 表完全缺失该维度（TODO P4.06 第 2 条核对项如实
+                                    # 登记为"未记录"，不虚构）
+    - name: environment
+      status: CONSTANT_IN_PAIR      # 配对两成员环境一致（微晶体 SFX）；无判别差异，不入 F
+    note_F_y_binding: dark 成员 condition_value='0' 来自条件字段、light 成员 condition_value=
+      pending_fulltext——其 illumination=1 实取自 state 列 → F↔y 按构造双射。**PYP F-only 臂
+      同为输入充分性语义**（与 RNase 同 flag 处理）：只说明输入直接含状态信息（m3）
+  rnase_a:                          # T-RNASE-ASSEMBLY（PG-RNA-001/002，2 对 4 样本）
+    - name: oligomer_state
+      type: binary
+      values: {monomer: 0, dimer_C_swap_major: 1, dimer_N_swap_minor: 1}   # 归并规则：
+                                    # 两种 domain-swapped 二聚体同映射 1（m4）
+      acquisition: 结构测定报告的组装状态
+      relation_to_target: **SYNONYMOUS_WITH_LABEL**——组装状态字段即 y 的镜像
+        （claims.yaml T-RNASE-ASSEMBLY y 注+C-IN3：该系统降级为**输入充分性对照**——
+        只说明"输入直接含状态信息"，不得作为"模型恢复隐含物理知识"的证据（TODO P4.07 验收原文）
+    - name: concentration_mild_acid
+      status: CONSTANT_IN_PAIR      # per_paper=两成员同一浓缩条件；无判别差异，不入 F
+    - name: swapped_segment
+      status: NOT_A_CONDITION       # 构建体描述（C-swap/N-swap），不作为条件协变量——
+                                    # 与 oligomer_state 完全共线，且属结构而非条件
+  bpti:                             # T-BPTI-REDOX
+    - name: oxidation_state
+      type: binary
+      values: {oxidized: 0, reduced: 1}   # 成员级取值经 redox_pair_semantics 派生
+                                    # （表行为 ox_and_red/ox_vs_red 组语义；STOP 下无消费，m4）
+      acquisition: 实验条件（变体制备还原/氧化态）
+      relation_to_target: 条件本身；y=氧化还原状态——**与 y 同义**（该任务 y 即条件标签）
+    - name: pH
+      status: CONSTANT              # 4.0 全表恒定
+    - name: binding_constant        # 功能终点数值
+      status: MASKED                # pending_fulltext（摘要无数值）→ 全部 15 变体无可评价 y
+
+# -----------------------------------------------------------------------------
+# 3. 缩放/编码/缺失（P4.05 第 2 条）
+# -----------------------------------------------------------------------------
+preprocessing:
+  fold_semantics: 案例级无训练/验证折（n≤4 全样本内拟合），无任何数据驱动选择（C 固定
+    §4）→ 不存在跨折泄露面（TODO 第 2/4 条"训练折拟合/不跨折"在案例级退化为全样本拟合，
+    如实预注册）（m1）
+  scaling: 不适用——全部可用 F 均为 0/1 二值（无连续字段；若后续差异清单引入连续字段，
+    须在训练折拟合 MinMax 并在此登记）
+  encoding: 二值直通；缺失规则：MASKED 字段不入 F（不填补）；不存在未知类别问题
+  intersection: 四臂（M/F-only/M+F/M+F_perm）样本交集=各系统全部 pair_member 样本
+    （PYP 2、RNase 4；BPTI 0——见 §6 停止登记）；无样本因条件缺失被排除（MASKED 字段
+    全表级缺失，不产生样本级差异）——覆盖率=100%，逐系统落盘
+
+# -----------------------------------------------------------------------------
+# 4. 四臂接口与头（参数预算可比；P4.05 第 3 条）
+# -----------------------------------------------------------------------------
+arms:
+  head: 逻辑回归 LogisticRegression(class_weight=balanced, solver=liblinear, max_iter=1000,
+    random_state=2026)，C=1.0（案例级 n≤4 下 C 网格选择无意义且必然完全分离——固定 C=1
+    事前冻结，不做网格选择；相对聚合实验的网格协议差异在此登记）
+  param_accounting: logistic 头可训参数（含截距）：M=1281、F-only=2、M+F=1282、
+    M+F_perm=1282——输入维度造成的参数差异照 TODO 第 3 条登记（全远小于预算上限）（m2）
+  degenerate_protocol:             # 案例级核心披露（预注册）
+    - M+F 与 F-only 在全部系统必然完全分离（n=2/4 样本、≤2 维判别特征）→ 拟合系数不辨识
+      （ConvergenceWarning 落盘）；**指标=方向性事实**（拟合方向是否与 y 一致、四臂两两
+      预测差异），不是性能估计、无置信区间
+    - M 臂的 M 状态盲性是构造事实：同序列对（PYP 两成员、RNase 全部成员）池化表示逐位
+      相同 → M 打分平手 → 任何阈值化均为抛硬币；报告为"M 状态盲（构造性）"，不计 AUROC
+  interfaces:
+    M: 池化 hidden33 向量（§1）
+    F_only: §2 可用字段拼接（PYP=[illumination]；RNase=[oligomer_state]；BPTI=无可评价样本）
+    M_F: [M | F] 拼接
+    M_F_perm: [M | F_perm] 拼接（§5 置换语义）
+  stripping_semantics:             # P4.05 第 6 条
+    main_contrast: "剥离 F"=重新训练的 M 臂 vs M+F 臂（两臂各自完整重拟合）
+    inference_time_removal: 不适用/不运行（本设计 F 在推理期天然可得；若未来引入，须单独
+      标注为分布偏移敏感性并配合法缺失处理——此处预注册排除）
+
+# -----------------------------------------------------------------------------
+# 5. 置换负对照（P4.05 第 4/5 条）
+# -----------------------------------------------------------------------------
+permutation:
+  unit: pair_group（PG-PYP-001 / PG-RNA-001 / PG-RNA-002）
+  semantics: 组内交换两成员的 F 向量——破坏 F↔y 关联；保留：配对结构、M（同序列不变）、
+    F 边际分布（2 成员互换=精确保持）
+  joint_vs_column: 联合置换（F 整行交换）；逐列置换回答另一问题（本设计 F 仅 1 可用列，
+    两语义重合——登记重合事实，不重复运行）
+  seeds: [13, 42, 2026]            # 每组非恒等置换空间仅 1 个元素（2 成员对换）→ 三种子
+    产物相同；种子照跑并落盘（实际变化比例=100%/组），披露"种子无增益"事实
+  mapping: results/interventions/{sys}/perm_mapping.tsv（种子、原 sample_id、新 sample_id、
+    变化标志）；分布一致性断言=置换前后 F 边际逐列相等（案例级精确成立）（m7：不新立
+    data/ 顶层子树）
+  interpretation: 判定框按 claims.yaml C-IN3 冻结语义——supports=增益模式落入预注册判定框
+    之一；refutes 仅指对照失效（置换无变化或泄露）：
+    - M+F 优于 M+F_perm 且 M+F≈F-only → **supports（条件主导框）**；边界：只说明条件特征
+      直接编码状态，不写成"模型内部信息被恢复"；
+    - M+F 优于 F-only 与 M+F_perm → **supports（非冗余信息框）**；
+    - 置换后 M+F_perm 行为与 M+F 无异 → **refutes（对照失效）**。
+    **全部为案例级方向判定，不附 p 值/区间**
+
+# -----------------------------------------------------------------------------
+# 6. 逐系统停止/降级决策（预注册；P4.06–P4.08 执行时照此裁决，不临场扩大）
+# -----------------------------------------------------------------------------
+system_decisions:
+  pyp: RUN                          # 1 对可评价：矩阵四臂全跑（案例级）
+  rnase_a: RUN_DEGRADED             # 2 对可评价但 F 与标签同义 → 输入充分性对照语义
+                                    # （M+F vs M 的增益全部记到 F 直接编码，不称恢复）
+  bpti: STOP                        # 0 对可评价。理由链（两种终点均无匹配对照）：
+                                    # ①结构终点——variant 全部 structure_available=no → M 不可
+                                    # 计算；②功能终点——y=氧化态标签每行虽在，但结合常数数值
+                                    # pending_fulltext（仅 4/15 有定性功能描述）→ 无可评价数值
+                                    # 终点。执行=登记停止决策（TODO P4.08 验收"无法形成匹配
+                                    # 对照时停止并登记决策"），产出=失败清单+来源字段审计，
+                                    # 不跑任何拟合
+
+# -----------------------------------------------------------------------------
+# 7. 输出与断言
+# -----------------------------------------------------------------------------
+outputs:
+  pyp: results/interventions/pyp/
+  rnase_a: results/interventions/rnase_a/
+  bpti: results/interventions/bpti/   # 仅失败清单+审计，无拟合产物
+assertions:
+  - 序列一致性断言（§1；失败即降级登记）
+  - 四臂样本交集=系统全部 pair_member（覆盖率 100% 断言）
+  - 置换映射落盘且 F 边际不变断言
+  - 全部拟合的 ConvergenceWarning 计数落盘（完全分离披露）
+  - 输出表区分"方向性事实"与"性能估计"两列语义，后者在案例级恒为空（断言不误填）

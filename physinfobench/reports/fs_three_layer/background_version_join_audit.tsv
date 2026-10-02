@@ -1,0 +1,36 @@
+accession	role	fasta_2026_03_len	rest_current_len	sifts_sp_max_pos	length_join_status	n_pdb_0913	family_missing_pdbs	pubmed_missing_pdbs	wwpdb_idx_missing	entrytype_missing	newer_pdbs_in_0920_family_only	coverage_recheck_vs_B	recomputed_mapped_cov_max	recomputed_observed_cov_max
+B9W5G6	positive	179	179	179	consistent	17	6k2g;9gkl;9gkp	-	-	-	-	n/a(positive,不在B)	1.0000	0.9944
+O00411	pn_candidate	1230		1230	consistent	25	-	-	-	-	-	match	1.0000	0.8683
+P00573	positive	883	883	883	consistent	20	-	-	-	-	-	n/a(positive,不在B)	1.0000	0.9773
+P02829	pn_candidate	709		709	consistent	49	-	1zw9;1zwh;3c0e;3c11	-	-	-	match	0.9549	0.8717
+P07024	pn_candidate	550		550	consistent	9	-	4wwl	-	-	-	match	1.0000	0.9545
+P07900	pn_candidate	732		732	consistent	450	-	3hyy;3hyz;3hz1;3hz5;3t1k;3t2s;3tuh;3wq9;4hy6;4l90;4l93;4ykq;4ykr;4ykt;4yku;4ykw;4ykx;4yky;4ykz;5cf0;5lq9;5lr1;5lr7;5lrz;5ls1;5nyi;5t21;5xqd;5xqe;5xr5;5xr9;5xrb;5xrd;5xre;6b99;6b9a;6fcj;6lsz;6lti;6tn4;6tn5;8jr6;8jr7;8jra;8x2r;9imw;9kmr;9kox;9kqn;9qqu;9yr4	-	-	-	match	1.0000	0.8798
+P08238	pn_candidate	724		724	consistent	32	-	3pry;9d9h;9d9i	-	-	-	match	1.0000	0.8826
+P0A251	pn_candidate	187		187	consistent	15	-	-	-	-	-	match	0.9947	0.9947
+P0A6Z3	pn_candidate	624		624	consistent	7	-	-	-	-	-	match	1.0000	0.9904
+P0AES6	pn_candidate	804		804	consistent	67	-	4kfg;7p2x	-	-	-	match	1.0000	0.9714
+P0DP25	pn_candidate	149		149	consistent	24	-	-	-	-	-	match	1.0000	0.9799
+P0DP26	pn_candidate	149		149	consistent	20	-	4zlk	-	-	-	match	1.0000	1.0000
+P0DP29	pn_candidate	149		149	consistent	44	-	3bxk;3bxl;9w46;9w4g	-	-	3evv	match	1.0000	0.9933
+P0DP33	pn_candidate	149		149	consistent	24	-	5t0x;6ctb	-	-	-	match	1.0000	0.9933
+P13433	pn_candidate	1351		1351	consistent	9	-	-	-	-	-	match	0.9267	0.6839
+P17405	pn_candidate	631		631	consistent	4	-	-	-	-	-	match	0.9239	0.8399
+P19726	positive	345	345	345	consistent	5	-	-	-	-	-	n/a(positive,不在B)	1.0000	0.9942
+P23439	pn_candidate	853		853	consistent	7	-	-	-	-	-	match	1.0000	0.9660
+P35160	pn_candidate	179		179	consistent	10	-	-	-	-	-	match	0.7989	0.7821
+P38505	positive	134	134	134	consistent	11	-	3px1;3qjk	-	-	-	n/a(positive,不在B)	1.0000	1.0000
+P48452	pn_candidate	521		413	consistent	3	-	-	-	-	-	match	0.7198	0.6756
+P53041	pn_candidate	499		499	consistent	22	-	5ui1	-	-	-	match	1.0000	0.9439
+P70158	pn_candidate	445		445	consistent	8	-	-	-	-	-	match	0.9506	0.9506
+P9WG45	pn_candidate	675		675	consistent	21	-	-	-	-	-	match	1.0000	0.9230
+P9WIE2	pn_candidate	153		153	consistent	1	-	-	-	-	-	match	1.0000	1.0000
+P9WIE3	pn_candidate	153		153	consistent	6	-	-	-	-	-	match	1.0000	1.0000
+Q08209	positive	521	521	521	consistent	21	-	2jzi	-	-	-	n/a(positive,不在B)	1.0000	0.7255
+Q12931	positive	704	704	704	consistent	24	7c04;7c7b	7kck;7kcl;7kcm;7klu;7klv	-	-	-	n/a(positive,不在B)	0.9162	0.8722
+Q58AD3	positive	94	94	94	consistent	7	-	3n7d;3n7e	-	-	-	n/a(positive,不在B)	0.7872	0.7872
+Q8E473	positive	MISSING	1310	642	MISSING_IN_FASTA_2026_03(TrEMBL-only)	2	-	-	-	-	-	n/a(positive,不在B)		
+Q8NI22	pn_candidate	146		146	consistent	17	-	-	-	-	-	match	0.8493	0.6918
+Q8P9V9	pn_candidate	160		160	consistent	18	-	-	-	-	-	match	1.0000	0.9938
+Q9HWR3	pn_candidate	728		728	consistent	10	-	-	-	-	-	match	1.0000	1.0000
+Q9RZA4	positive	755	755	755	consistent	60	-	7gqv;7gqw;7gqx;7gqy;7gqz;7gr0;7gr1;7gr2;7gr3;7gr4;7gr5;7gr6;7gr7;7gr8;7gr9;7gra;7grb;7grc;7grd;8c3i;8sgk	-	-	-	n/a(positive,不在B)	1.0000	0.7669
+Q9YA14	positive	MISSING	161	161	MISSING_IN_FASTA_2026_03(TrEMBL-only)	4	-	2cx3;2cx4	-	-	-	n/a(positive,不在B)		

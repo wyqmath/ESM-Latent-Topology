@@ -1,0 +1,920 @@
+{
+ "dropped_conflict": [
+  "1J85_A",
+  "1MXI_A",
+  "1O6D_A",
+  "1TO0_A",
+  "1V2X_A",
+  "1VHK_A",
+  "1X7P_A",
+  "1ZJR_A",
+  "2EGW_A",
+  "2HA8_A",
+  "2O3A_A",
+  "2YBB_N",
+  "2YY8_A",
+  "3DCM_X",
+  "3E5Y_A",
+  "3GBN_L",
+  "3IC6_A",
+  "3ILK_A",
+  "3KTY_A",
+  "3L8U_A",
+  "3N4J_A",
+  "3ONP_A",
+  "4CNE_B",
+  "4E8B_A",
+  "4RG1_A",
+  "5CO4_A",
+  "5GM8_A",
+  "5KZK_A",
+  "5O96_A",
+  "5TWJ_A",
+  "7T62_B"
+ ],
+ "n_components": 53,
+ "nodes": {
+  "knot:1by7_A": {
+   "component": "1BY7_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:1gku_B": {
+   "component": "1GKU_B",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:1he8_A": {
+   "component": "1HE8_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:1t0h_B": {
+   "component": "1T0H_B",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:1uak_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:1xi5_A": {
+   "component": "1XI5_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2cav_A": {
+   "component": "2CAV_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "5_2"
+  },
+  "knot:2fy5_A": {
+   "component": "2FY5_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2k0a_A": {
+   "component": "5IFE_D",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2pps_F": {
+   "component": "2PPS_F",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2qmm_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2qwv_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2r6e_A": {
+   "component": "2R6E_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2v3j_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:2vea_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "4_1"
+  },
+  "knot:2w6e_G": {
+   "component": "2W6E_G",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3bbd_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3ihr_A": {
+   "component": "3IHR_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "5_2"
+  },
+  "knot:3iyk_A": {
+   "component": "3IYK_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3m9s_M": {
+   "component": "3M9S_M",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3o0p_A": {
+   "component": "3O0P_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3o7b_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3oc3_A": {
+   "component": "3OC3_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:3wpc_A": {
+   "component": "3WPC_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:4ce4_z": {
+   "component": "4CE4_Z",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "4_1"
+  },
+  "knot:4cru_A": {
+   "component": "4CRU_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:4gw9_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "4_1"
+  },
+  "knot:4wz7_E": {
+   "component": "4WZ7_E",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:4ye9_A": {
+   "component": "4YE9_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:5aor_A": {
+   "component": "5AOR_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:5c77_A": {
+   "component": "7ONU_F",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:5gao_E": {
+   "component": "5GAO_E",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:5if3_A": {
+   "component": "5IF3_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:5l3p_z": {
+   "component": "5L3P_Z",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6juy_A": {
+   "component": "6JUY_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6k4n_A": {
+   "component": "6K4N_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6nbq_F": {
+   "component": "6NBQ_F",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6ndo_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "4_1"
+  },
+  "knot:6oaw_A": {
+   "component": "6OAW_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6qam_A": {
+   "component": "6QAM_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6qqw_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6qqz_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6rao_I": {
+   "component": "6RAO_I",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6sg9_DH": {
+   "component": "6SG9_DH",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6ted_V": {
+   "component": "6TED_V",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6w1s_L": {
+   "component": "6W1S_L",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6x0m_P": {
+   "component": "6X0M_P",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6x44_A": {
+   "component": "6X44_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "4_1"
+  },
+  "knot:6xp5_Q": {
+   "component": "6XP5_Q",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6y5q_q": {
+   "component": "6Y5Q_Q",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "4_1"
+  },
+  "knot:6y7c_i": {
+   "component": "6Y7C_I",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:6yxy_UX": {
+   "component": "6YXY_UX",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:7abg_s": {
+   "component": "7ABG_S",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "5_2"
+  },
+  "knot:7bii_A": {
+   "component": "7BII_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:7bqd_A": {
+   "component": "7BQD_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:7c1x_A": {
+   "component": "7C1X_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:7c1z_A": {
+   "component": "7C1X_A",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "knot:7o2w_B": {
+   "component": "7O2W_B",
+   "dev_fold": null,
+   "source": "old_dev",
+   "store": "old",
+   "type": "3_1"
+  },
+  "p507:1RG9_A": {
+   "component": "5H9U_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:1UAL_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:1UAM_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:2V3K_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:3AXZ_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:3C2W_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3G6O_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3IBR_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3KNU_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:3NHQ_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3NOP_C": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3NOT_C": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3NOU_C": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:3V5S_A": {
+   "component": "3V5S_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:3ZQ5_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4O01_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4O01_B": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4O01_C": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4O01_D": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4O0P_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4O0P_B": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4Q0J_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4R6L_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:4UF5_A": {
+   "component": "3IHR_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "5_2"
+  },
+  "p507:4WLP_A": {
+   "component": "3IHR_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "5_2"
+  },
+  "p507:4YPX_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:4YQD_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:4YVG_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:4YVH_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:4YVJ_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5C5K_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:5FAI_A": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5H9U_A": {
+   "component": "5H9U_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5HSQ_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:5I5L_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:5IFE_D": {
+   "component": "5IFE_D",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5JIR_A": {
+   "component": "5JIR_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5NFJ_A": {
+   "component": "7ONU_F",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5NM3_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:5NWN_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:5O9Z_y": {
+   "component": "5IFE_D",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5OOM_s": {
+   "component": "5OOM_s",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5OQL_e": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5UGH_A": {
+   "component": "5H9U_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:5WYR_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6AFK_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6BAO_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6BAP_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6BAY_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6EMU_A": {
+   "component": "7ONU_F",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6FHT_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6GAW_Bw": {
+   "component": "5OOM_s",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6JOF_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6PTQ_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6PTX_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6PU2_A": {
+   "component": "6FHT_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "4_1"
+  },
+  "p507:6QOE_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6QOW_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6QQQ_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6QQY_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6QR2_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6QRD_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6QRE_A": {
+   "component": "1UAK_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6RXX_CN": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6RXY_CN": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:6RXZ_CN": {
+   "component": "2V3J_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:7OCK_B": {
+   "component": "5H9U_A",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  },
+  "p507:7ONU_F": {
+   "component": "7ONU_F",
+   "dev_fold": null,
+   "source": "new",
+   "store": "new",
+   "type": "3_1"
+  }
+ }
+}

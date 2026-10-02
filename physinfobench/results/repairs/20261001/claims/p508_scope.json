@@ -1,0 +1,10 @@
+{
+  "n": 105,
+  "n_residues": 23977,
+  "auprc_mean": 0.43831047619047614,
+  "base_rate_mean": 0.21392380952380954,
+  "balanced_acc_mean": 0.5243704761904762,
+  "mcc_mean": 0.07269714285714285,
+  "label_implementation": "No model1/0 CA record for (label_asym_id,label_seq_id) in CIF after filters",
+  "claim_scope": "Supplementary X-ray CA coordinate non-observation discrimination; intrinsic-disorder equivalence unverified"
+}

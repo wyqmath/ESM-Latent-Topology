@@ -1,0 +1,9 @@
+{
+  "current_development_representatives": 47595,
+  "base_fasta_representatives_in_current_split": 45133,
+  "delta_fasta_representatives": 2462,
+  "base_delta_overlap": 0,
+  "missing_current_representatives": 0,
+  "historical_base_representatives_excluded": 2471,
+  "status": "PASS"
+}

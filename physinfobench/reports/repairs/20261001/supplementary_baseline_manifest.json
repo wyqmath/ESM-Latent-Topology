@@ -1,0 +1,50 @@
+{
+  "baseline_commit": "18c89ea",
+  "files": [
+    {
+      "path": "scripts/p507_type_probe_v2.py",
+      "sha256": "62fd62d00442975af773a2dd39ccad23fffb5bfe951b778422162a9eaed60846",
+      "bytes": 9313
+    },
+    {
+      "path": "scripts/p508_fix_exclusions.py",
+      "sha256": "d1da8d6f77b96e3f330d1cc26bd64cdff34b349c6528377dd115459412608de2",
+      "bytes": 2982
+    },
+    {
+      "path": "scripts/p508_cluster_eval.py",
+      "sha256": "e7d39ce6242cde122eefd9960c3e0ac1df0b1fef2b5c9cd02f95f16c24ad6c22",
+      "bytes": 10265
+    },
+    {
+      "path": "configs/p507_type_probe_design.yaml",
+      "sha256": "072dbe7573a6a4324029f7bd6dedb4b63aeabc6bfa1e8bf545cd97af84a025ea",
+      "bytes": 4212
+    },
+    {
+      "path": "configs/p508_disorder_contrast_design.yaml",
+      "sha256": "7cb8ff9aaa5a869acca9ce93eaaae3bfc281cc0bc81e8c0fa4f89fda617f9ac3",
+      "bytes": 2559
+    },
+    {
+      "path": "reports/aggregation_diagnosis.md",
+      "sha256": "cf1cdc86c8aa66683017244a4b71c4ea32a1ed2a6f789d3f08766c1b059ef0a6",
+      "bytes": 5981
+    },
+    {
+      "path": "reports/tasks/P5.05.md",
+      "sha256": "f40ba4e1a6862248570c52a1cf997c248365942d77bb1cad2b48a66a41b57c4b",
+      "bytes": 2282
+    },
+    {
+      "path": "reports/tasks/P5.06.md",
+      "sha256": "f8659b3d7fd412ddff4d4476e445acae1d699ca192dd35a41a38f43c6569f256",
+      "bytes": 1599
+    },
+    {
+      "path": "reports/tasks/P5.02.md",
+      "sha256": "a482fce8cdf29e169bb12a65ba09c5159ad9b7b829f03fd2cbbdcbb5a7830484",
+      "bytes": 3715
+    }
+  ]
+}

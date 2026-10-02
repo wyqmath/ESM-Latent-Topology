@@ -1,0 +1,9 @@
+[s1] 新链 CA-PDB: 281
+[s2] 现有链 1401
+[s2] 现有 CA-PDB 提取成功 608/1401
+[s3] mmseqs 幂等跳过
+[s4] foldseek 幂等跳过
+[s5] US-align 待确认 0
+[s5] US-align 边 (min TM≥0.6): 0
+[p507iso] DONE
+[p507iso] DONE 2026-10-02T07:30:15Z

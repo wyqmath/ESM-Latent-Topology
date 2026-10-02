@@ -1,0 +1,5 @@
+arm	pred_agrees_with_y	n_samples	performance_estimate	directional_fact
+M	False	2		pred=mismatch
+F_only	True	2		pred=match
+M_F	True	2		pred=match
+M_F_perm	True	2		pred=match
