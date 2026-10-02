@@ -1,0 +1,17 @@
+{
+ "endpoints": 18,
+ "evidence_level_counts": {
+  "abstract_self_verified": 12,
+  "fulltext_self_verified": 5,
+  "fulltext_self_verified_no_pdb_mention": 1
+ },
+ "generated": "2026-09-23 18:11",
+ "rcsb_citations_file": "data/raw/evidence_fulltext/2026-09-23/rcsb_primary_citations.json",
+ "rcsb_citations_sha256": "9d206eaf8c4dfb4cb3c9d11ea6af7e44d985cc3611a971f42e6c5b4f7e53c06c",
+ "state_keyword_rule": "预注册关键词表见脚本 STATE_KEYWORDS；程序化共现定位，人工引语仅截取窗口",
+ "unpaywall_cache": {
+  "entries": 112,
+  "path": "/Users/yuan/Documents/Codex/2026-09-08/jie/benchmark_step1/execution_round_2026-09-10/evidence/unpaywall_lookup_2026-09-14.json",
+  "sha256": "7823a703acb6eb00a20ff233fa842feffa04a6f8d730acab644489f7be7ea3a5"
+ }
+}

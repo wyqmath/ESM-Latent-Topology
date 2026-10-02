@@ -1,0 +1,21 @@
+arm	config	metric
+linear	C=0.01	0.998279
+nonlinear	h256d2_seed13	0.995449
+nonlinear	h64d1_seed42	0.99614
+nonlinear	h64d2_seed2026	0.998423
+delta_point_seed13	h256d2	-0.00283
+delta_ci95_seed13	h256d2	[-0.01029, 0.000785]
+delta_ci99_seed13	h256d2	[-0.013539, 0.001004]
+boot_degenerate_seed13	h256d2	17
+delta_point_seed42	h64d1	-0.00214
+delta_ci95_seed42	h64d1	[-0.008201, 0.000841]
+delta_ci99_seed42	h64d1	[-0.010086, 0.001106]
+boot_degenerate_seed42	h64d1	20
+delta_point_seed2026	h64d2	0.000144
+delta_ci95_seed2026	h64d2	[-0.000501, 0.000822]
+delta_ci99_seed2026	h64d2	[-0.000834, 0.001135]
+boot_degenerate_seed2026	h64d2	12
+delta_seedmean	-	-0.001609
+ci95_envelope	-	[-0.01029, 0.000841]
+ci99_envelope	-	[-0.013539, 0.001135]
+sig99_all_seeds	-	False

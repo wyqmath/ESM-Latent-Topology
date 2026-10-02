@@ -1,0 +1,23 @@
+dim	key	metric	value	note
+group_stats	id30cov70	n_groups	93	
+group_stats	id30cov70	max_size	2	top10=2,2,2,1,1,1,1,1,1,1
+group_stats	id30cov70	giant_tiers	"{""pending_evidence"": 1, ""extension_construct_difference"": 1}"	
+group_stats	id30cov70	strict_in_groups_with_others	0	10 个 strict 中与其他池成员同组者
+group_stats	id25cov70	n_groups	92	
+group_stats	id25cov70	max_size	2	top10=2,2,2,2,1,1,1,1,1,1
+group_stats	id25cov70	giant_tiers	"{""pending_evidence"": 1, ""extension_construct_difference"": 1}"	
+group_stats	id25cov70	strict_in_groups_with_others	0	10 个 strict 中与其他池成员同组者
+group_stats	id40cov70	n_groups	95	
+group_stats	id40cov70	max_size	2	top10=2,1,1,1,1,1,1,1,1,1
+group_stats	id40cov70	giant_tiers	"{""pending_evidence"": 2}"	
+group_stats	id40cov70	strict_in_groups_with_others	0	10 个 strict 中与其他池成员同组者
+family_share	B9W5G6	shared_pool_accessions	0	
+family_share	P00573	shared_pool_accessions	0	
+family_share	P19726	shared_pool_accessions	0	
+family_share	P38505	shared_pool_accessions	0	
+family_share	Q08209	shared_pool_accessions	0	
+family_share	Q12931	shared_pool_accessions	0	
+family_share	Q58AD3	shared_pool_accessions	0	
+family_share	Q8E473	shared_pool_accessions	0	
+family_share	Q9RZA4	shared_pool_accessions	1	O76074
+family_share	Q9YA14	shared_pool_accessions	0	

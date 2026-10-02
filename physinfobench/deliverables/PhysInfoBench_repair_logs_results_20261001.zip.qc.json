@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "zip_path": "deliverables/PhysInfoBench_repair_logs_results_20261001.zip",
+  "bytes": 83792181,
+  "sha256": "790e832496f3724a1a4810858f918d1a237accd4e51a5b0288c34d246316573d",
+  "verified_payload_files": 836,
+  "zip_members": 837,
+  "CRC_all_pass": true,
+  "manifest_SHA_all_pass": true,
+  "git_head": "4fdd30cc892c8d487ea57857ff8b8feafc195e4b",
+  "correction_lock_check": {
+    "status": "PASS",
+    "checked_files": 555,
+    "kind": "posthoc_correction_integrity",
+    "gate_approval": false,
+    "errors": []
+  }
+}

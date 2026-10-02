@@ -1,0 +1,8 @@
+task	metric	layer	C	cv_mean	cv_std	n
+T-KNOT-PRESENCE	AUROC	6	1	0.929022	0.022671	750
+T-KNOT-TYPE	Macro-F1	6	0.01	0.506354	0.079111	71
+T-FS-REGION:usable_main	residue AUPRC	3	0.01	0.10516	0.067592	6
+T-FS-REGION:fine_only_sensitivity	residue AUPRC	3	0.01	0.21359	0.21357	10
+T-FS-L1-PAIRED	描述性（逐层余弦，无主张）	-	-	-	-	10
+T-DISORDER-RES	residue AUPRC	3	0.01	0.904098	0.049322	2279
+T-FS-L2-PU-RANK:stageA	rank percentile(选择)	5	0.1	0.000549	-	10010

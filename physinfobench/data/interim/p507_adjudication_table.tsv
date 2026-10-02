@@ -1,0 +1,18 @@
+chain	declared	topoly_c2t200	topoly_c1t200	closures_agree	n_ca	adjudication	rule
+2AGL_D	3_1	0_1	0_1	True	108	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2HJ4_D	3_1	0_1	0_1	True	108	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2IUP_D	3_1	0_1	0_1	True	108	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2AH1_D	3_1	0_1	0_1	True	109	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2BBK_L	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2IAA_B	3_1	0_1	0_1	True	112	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2GC4_B	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2MAD_L	3_1	0_1	0_1	True	123	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+3C75_L	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+3L4O_C	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2AGX_D	3_1	0_1	0_1	True	108	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+1MG2_B	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2J57_K	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+1MG3_B	3_1	0_1	0_1	True	124	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+4I6N_A	5_2	0_1	0_1	True	215	exclude_subchain_conflict	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+3WJ8_A	6_1	TMC	6_1	False	298	exclude_tmc_unresolved	全链双闭合判定≠声明 → 不得沿用声明标签；亚链核心复核列为后续可选
+2HKR_D	3_1	0_1	0_1	True	109	exclude_subchain_conflict	CIF 补拉后复核：双闭合 0_1（94%/100%）≠声明 3_1

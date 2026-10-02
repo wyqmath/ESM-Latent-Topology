@@ -1,0 +1,53 @@
+# =============================================================================
+# configs/knot_annotation.yaml — P1.04 打结拓扑注释协议（自旧项目冻结协议 v2 继承）
+# 来源：$B/deliverables/TOPOLOGY_PROTOCOL_FROZEN_v2_2026-09-14.md（2026-09-13/14 pilot 根因链后冻结；
+#       修改需记录理由并重跑受影响范围）。本项目导入时沿用，重算须按本配置执行。
+# =============================================================================
+
+meta:
+  task: P1.04
+  created_at: "2026-09-21 13:21"
+  timezone: Asia/Shanghai
+  status: inherited_frozen
+  provenance: TOPOLOGY_PROTOCOL_FROZEN_v2_2026-09-14.md + topology 表族 2026-09-14/15
+
+tool_protocol:
+  primary:      {tool: topoly.alexander, version: 1.1.0, closure: 2, tries: 200, cuda: false, run_parallel: false, parallel_workers: 1,
+                 note: 随机双点大球闭合；Alexander 多项式为确定性不变量，长短链均可用}
+  secondary:    {tool: topoly.alexander, version: 1.1.0, closure: 1, tries: 200,
+                 note: 质心闭合，与 KnotProt 方法学同源的闭合族，用于交叉验证}
+  sensitivity:  {tool: topoly.alexander, closure: 2, tries: 800,
+                 note: 仅对 support<70% 或裁定敏感样本加算；用于稳健性审计，不增加独立样本量}
+  retired:      {tool: knotnet, reason: 长链(≳150 残基)算法性输出 -3 跨机器跨闭合稳定复现；仅保留 <140 残基短链作历史对照，不产标签}
+  input_format: xyz（每行 x y z 一个 CA；gemmi 提取、entity 链解析、仅末端截短内部不桥接；内部缺失不桥接补齐）
+
+verdict_schema:
+  K_整链结:   {match: 主+次协议整链均判 knotted, partial_match: 单一闭合判 knotted, not_reproduced: 整链 unknot（进复核）}
+  S_滑动结:   {slipknot_core_verified: 整链 unknot 且 core 或 core±15 子链任一判 knotted,
+               presence_unverified: core 检不出（深滑结/闭合几何不利，如实记录；需 knotoid 级分析时单独立项）,
+               slipknot_anomaly_wholechain_knotted: 整链意外 knotted}
+  阴性池:     整链两闭合均 0_1（verified_negative）
+
+support_semantics:
+  threshold: 0.70
+  meaning: 闭合支持率是闭合协议下的稳定性，不是生物学正确概率
+  rule: <70% 保留 low_support 标记不丢弃；type 任务仅收 match 且 support>=70% 的 K 型与 core-verified 的 S 型
+  sensitivity800: support<70% 或裁定敏感样本的加算复核记录（topology_sensitivity800_2026-09-14.tsv）
+
+task_eligibility:
+  presence_task: 整链结/滑结存在性；eligible=188（旧 v5 presence 实际样本=188 阳性+710 匹配阴性=898）
+  type_task:     结型分类；eligible=112；一链多来源结型的多标签规则仍为开放决策（claims OD-KNOT-MULTILABEL）
+  core_task:     转换/结核心区（candidate=301），本项目暂不纳入标签层
+
+isolation_rules:
+  - 滑动结与整链结分开；S 型异常（整链意外 knotted）隔离并保留 anomaly_resolution 记录
+  - 缺失主链（internal_missing）不桥接补齐；记录 n_ca 与 internal_missing
+  - 数据库注释与重算不一致逐条保留（match/partial_match/not_reproduced + source_pub_flag 注记）
+  - 未闭合或失败结果不记为无结
+
+data_sources:
+  candidates: topology_task_eligibility_2026-09-14.tsv(568) × topology_full674_verdict × topology_support_audit
+              × all_source_annotations_2026-09-14.tsv（来源注记；674 为来源注记口径非独立链数）
+  negatives:  negative_controls_verified_2026-09-14.tsv（833=832 verified_negative+1 rejected_knotted）
+              × negative_selection_2026-09-14.tsv（876 条匹配关系；匹配关系须进 P2.01 分组约束）
+  sensitivity: topology_sensitivity800_2026-09-14.tsv（稳健性审计）

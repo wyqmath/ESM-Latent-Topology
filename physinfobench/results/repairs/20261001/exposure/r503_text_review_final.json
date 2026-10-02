@@ -1,0 +1,55 @@
+{
+  "reviewed_at": "2026-10-01T22:31:48.481331+08:00",
+  "reviewer": "exposure_repair",
+  "round": 2,
+  "status": "PASS",
+  "blockers": 0,
+  "major": 0,
+  "minor": 0,
+  "scope": "Current scientific interpretation and source-to-report numerical consistency; not approval of G5 or new independent validation",
+  "reviewed_files_sha256": {
+    "reports/confirmation.md": "94d9038a56e3f2858a76d6f5ca04735d12b9e9a4a597e811cb9f1207b7dc556f",
+    "reports/generalization.md": "ac542434d9015a040528b7bed36e1a63c9e992674a6637be6b07509a3c571d37",
+    "reports/claim_evidence_matrix.md": "f287ef184bfbd9ed9342175bec70c63f847cfd238e884f34817bf1e763a431e3",
+    "reports/tasks/P5.07.md": "6831289b80264d3199fe74666913fbdedbfad341d1f075266287e0e271fca59c",
+    "reports/tasks/P5.08.md": "cef463c3eca17819a8394a0c765dc3d09ba7bb7cb17d2ca3f75f1c8660d83bd0",
+    "reports/aggregation_diagnosis.md": "715847ee69e35d2fe9c71560f6cdb853eae80c19ebaef29e61ddc3cba24d2c93",
+    "README.md": "09fc802db0154a4f5cb99ab6e78e3e071a1a9e22d7f4ff90cc830c5247a9c9af",
+    "TODO.md": "1f2c4b6320a0916339ebb4d95ff35525e0150dd1ac7fdaeee146153713ca5311"
+  },
+  "evidence_sha256": {
+    "results/repairs/20261001/exposure/cohort_summary.tsv": "31c5019d801dad396fc43bd203fa16b42791fba372b5892fb16530605a8bc6c5",
+    "results/repairs/20261001/exposure/qc.json": "dc4b76b5560d6d69de18cf99afd900d2b8d07534f10131421fd208bab42ab1af",
+    "results/repairs/20261001/statistics/full_set_final/statistics_correction.json": "6f10f923adc5694a77880ebdb59c8ad73bd3d824d65fa329fc8dfff115d5416a",
+    "results/repairs/20261001/statistics/posthoc_sensitivity/statistics_correction.json": "133a5d2f1ff6ae5f99d7896f50941e49af60a4aedaf2fdb6a93798a91160744d",
+    "results/repairs/20261001/claims/p507_recomputed_scope.json": "6276a9565481334e711b2aee0d10bcd9f197c0cef629893de999f2c1b0e963bf",
+    "results/repairs/20261001/p508/h33_exact_metrics/metrics_exact.json": "3bbf0c884a9f27b4ff44485fb0b7526b008558ec07fba64a432d985c0600b834",
+    "results/repairs/20261001/aggregation/component_corrected/summary.tsv": "c93beb479ba038d6f1ed7e2dd4eb0c3d62bd535f25f0de393f2ad6d78e771dc2",
+    "reports/repairs/20261001/aggregation_independent_review.json": "8548e404dbd5d85a830029333d60e445840f13289ef1e965d7d579c323a5b8d5",
+    "reports/repairs/20261001/p508_final_independent_review.json": "2cfa7f9ff1552a9e19ec838418a9f008ec67b15997d4b546bafd9a1e26e0af54"
+  },
+  "checks": [
+    "Confirmation131/148 and holdout81/108 historical development component closure; independent C/F support explicitly withdrawn.",
+    "Remaining17/27 chains explicitly posthoc and already result-read; paired length differences include/touch0 and do not confirm PLM superiority.",
+    "min-graph cross-split zero distinguished from historical independence; max-rule55FS/253knots and14missingstructure restrictions retained.",
+    "P50789chains/50components, chain versus component recall/CI, actual selection statistic, nonnested LCO and fixedprediction permutation scope correct; components not claimed biological families or unique causal diagnosis.",
+    "P508 original0.438 identified H11dev/H33external mixed layer, not H33same-layer; corrected99 identity-set6metric values rounded from exactJSON.",
+    "Full239 source reconstructed108 homology exclusions then26 exactsequence duplicate exclusions;36 accession overlaps already outside historical105; identity-only6chain isolation yields99.",
+    "P508 CA-coordinate non-observation proxy not elevated to experimentally verified intrinsicdisorder; no unseen-family claim; fixedparameter fit reconstruction explicit, no zero-refit claim.",
+    "P4 all8主比较点值和族区间 independently matched summary seed2026 to6decimals;325/1952units,2000draws,1986valid14degenerateDP,trainingseeds separate from bootstrapseeds.",
+    "First-round P4 significance-to-equivalence major resolved with revised prose; independent-unit major resolved with actualR505 recomputation and independent576sklearn draws, rather than disclaimer.",
+    "TODO two obsolete creation-time headers labeled historical snapshots; historical P5 completion statements explicitly superseded by current matrix; README live state consistent.",
+    "Old predictions/locks remain historical;G5 unapproved and Phase6notstarted; priorFAIL record retained."
+  ],
+  "resolved_round1": [
+    "P4 no-extra-benefit/near-lossless language removed, no equivalence claim",
+    "P4 actual completecomponent paired statistical correction delivered R5.05",
+    "TODO creation-state headers labeled historical",
+    "P508 final correctedH33 exactscore source now available"
+  ],
+  "limitations": [
+    "PASS applies to reviewed bytes and report scope; root final timestamps/completion/hashes after integration require mechanical manifest refresh.",
+    "P508 direct coefficient/cache sigmoid replay is under separate independent technical review; this report does not claim that pending check completed.",
+    "Existing OOF conditional intervals do not cover model-selection/training uncertainty or magically remove shared-fit dependence; no new inferential families for sensitivity/seedwise records."
+  ]
+}

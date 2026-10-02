@@ -1,0 +1,29 @@
+{
+ "deterministic": true,
+ "forward_seconds": 0.63,
+ "hidden_shape_last": [
+  1,
+  76,
+  1280
+ ],
+ "load_seconds": 5.2,
+ "mid_layer_shape": [
+  1,
+  76,
+  1280
+ ],
+ "model_card_license": "mit（hf-mirror API 运行时实测）",
+ "n_hidden_layers_exported": 34,
+ "peak_mem_gb": null,
+ "pooled_finite": true,
+ "pooled_sha256_16": "9285fbc33037a0d8",
+ "python": "3.14.6",
+ "sample": {
+  "endpoint": "A",
+  "length": 74,
+  "pair": "porter_87_2k0qA__2lelA"
+ },
+ "token_equivalence": true,
+ "torch": "2.14.0",
+ "transformers": "5.17.0"
+}

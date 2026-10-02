@@ -1,0 +1,843 @@
+candidate_accession	channel	pmid	doi	title	pub_year	classified_category	matched_keywords	is_pubmed_of_mapped_pdb
+A0QNE0	europepmc_primary	39076798	10.1098/rsos.240088	Characterization of viable but nonculturable state of <i>Campylobacter concisus</i>.	2024	other_or_unclear		false
+A0QNE0	europepmc_primary	35847063	10.3389/fmicb.2022.889788	Potential of Meta-Omics to Provide Modern Microbial Indicators for Monitoring Soil Quality and Securing Food Production.	2022	other_or_unclear		false
+A0QNE0	europepmc_primary	30982891	10.1093/molbev/msz086	High-Order Epistasis in Catalytic Power of Dihydrofolate Reductase Gives Rise to a Rugged Fitness Landscape in the Presence of Trimethoprim Selection.	2019	other_or_unclear		false
+A0QNE0	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+A8WFV1	europepmc_primary	37085483	10.1038/s41419-023-05780-6	TRAP1 S-nitrosylation as a model of population-shift mechanism to study the effects of nitric oxide on redox-sensitive oncoproteins.	2023	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+K0J4Q8	europepmc_primary	37046846	10.3390/cancers15072186	Targeting of Tetraspanin CD81 with Monoclonal Antibodies and Small Molecules to Combat Cancers and Viral Diseases.	2023	other_or_unclear		false
+K0J4Q8	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+K0J4Q8	europepmc_primary			Posters	2021	other_or_unclear		false
+O00411	europepmc_primary	40712586	10.1016/j.molcel.2025.07.002	Human mitochondrial RNA polymerase structures reveal transcription start site and slippage mechanism.	2025	other_or_unclear		true
+O00411	europepmc_primary	42167575	10.1016/j.jbc.2026.113174	Higher-order structural organization of mitochondrial metabolism.	2026	other_or_unclear		false
+O08807	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+O08807	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+O08807	europepmc_primary	22090031	10.1074/jbc.m111.303149	Human protein-disulfide isomerase is a redox-regulated chaperone activated by oxidation of domain a'.	2012	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O08807	europepmc_primary	22928053	10.1371/journal.pntd.0001781	The crystal structures of the tryparedoxin-tryparedoxin peroxidase couple unveil the structural determinants of Leishmania detoxification pathway.	2012	domain_swapping	domain[- ]swapp;swapped dimer	false
+O08807	europepmc_primary	23704993	10.1371/journal.pone.0064534	Integrative study of physiological changes associated with bacterial infection in Pacific oyster larvae.	2013	other_or_unclear		false
+O08807	europepmc_primary	22065994	10.1371/journal.pone.0026411	Differential gene expression at coral settlement and metamorphosis--a subtractive hybridization study.	2011	other_or_unclear		false
+O16305	europepmc_primary	40990820	10.1002/prot.70050	Iterative Modeling via Structural Diffusion (IMSD): Exploring Fold-Switching Pathways in Metamorphic Proteins Using AlphaFold2-Based Generative Diffusion Model UFConf.	2026	fold_switching	fold[- ]switch;metamorphic protein	false
+O16305	europepmc_primary	41954434	10.1002/pro.70564	ConforFold recovers alternative protein conformations beyond MSA subsampling.	2026	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	42458866	10.1002/ardp.70299	Mutation-Induced Pocket Deactivation: How Ser353/Pro245 Alters K&lt;sub&gt;Ca&lt;/sub&gt;2.2 vs. K&lt;sub&gt;Ca&lt;/sub&gt;3.1 Ligand Selectivity.	2026	other_or_unclear		false
+O16305	europepmc_primary		10.1101/2025.06.30.662482	Ser500 phosphorylation acts as a conformational switch to prime eEF-2K for activation	2025	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	42413490	10.1016/j.molcel.2026.06.028	Cryo-EM structure of soluble VPS13C suggests its regulation by a conformational switch and by calmodulin.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	41006217	10.1038/s41467-025-63249-w	A domain-swapped CaMKII conformation facilitates linker-mediated allosteric regulation.	2025	domain_swapping	domain[- ]swapp;swapped dimer	false
+O16305	europepmc_primary	41443425	10.1016/j.jbc.2025.111087	Ser500 phosphorylation acts as a conformational switch to prime eEF-2K for activation.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	39791310	10.1002/smll.202408141	Metamorphic Proteins to Achieve Conformationally Selective Material Surface Binding.	2025	fold_switching	metamorphic protein	false
+O16305	europepmc_primary	37774143	10.1002/pro.4790	In silico protein dynamics in the human cytoplasm: Partial folding, misfolding, fold switching, and non-native interactions.	2023	fold_switching	fold[- ]switch	false
+O16305	europepmc_primary	34537489	10.1016/j.sbi.2021.08.004	Design principles of protein switches.	2022	other_or_unclear		false
+O16305	europepmc_primary	42341170	10.1093/plphys/kiag413	The role of MLO in powdery mildew susceptibility depends on a combination of functional specialization and subcellular localization.	2026	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	42398099	10.1111/tpj.70986	Structure-informed engineering of plant-microbe interactions.	2026	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	39883844	10.1073/pnas.2411316122	Design of a light and Ca<sup>2+</sup> switchable organic-peptide hybrid.	2025	domain_swapping	domain[- ]swapp;swapped dimer	false
+O16305	europepmc_primary	42604037	10.1016/j.mrl.2026.200306	Going high-throughput: Dynamic conformations and interactions &lt;i&gt;in vivo&lt;/i&gt;.	2027	other_or_unclear		false
+O16305	europepmc_primary	42737965	10.3390/biology15171533	BA-ARAP-NMA: A Local Geometry Control Nonlinear Normal-Mode Analysis Method.	2026	other_or_unclear		false
+O16305	europepmc_primary	42113690	10.1080/19336950.2026.2672357	Transient receptor potential canonical (TRPC) channels in diabetes and associated complications.	2026	other_or_unclear		false
+O16305	europepmc_primary	41184130	10.1101/cshperspect.a041760	Developing Optogenetic Approaches to Study Ca&lt;sup&gt;2+&lt;/sup&gt; Signaling Processes.	2026	other_or_unclear		false
+O16305	europepmc_primary	42296421	10.1002/cbic.70419	A Constellation of Fluorescent Biosensors to Illuminate the Galaxy of Protein Kinases.	2026	other_or_unclear		false
+O16305	europepmc_primary	40470369	10.3389/fpls.2025.1586375	Recent advances in innovative strategies for plant disease resistance breeding.	2025	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	42307042	10.1002/ps.71019	De novo transcriptome meta-analysis reveals candidate genes involved in life-stage transitions for RNAi-mediated management of the citrus root weevil (Diaprepes abbreviatus).	2026	other_or_unclear		false
+O16305	europepmc_primary	41294816	10.3390/cells14221763	Calmodulin D133H Disrupts Ca&lt;sub&gt;v&lt;/sub&gt;1.2 and K&lt;sub&gt;v&lt;/sub&gt;7.1 Regulation to Prolong Cardiac Action Potentials in Long QT Syndrome.	2025	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	34308370	10.1016/j.crstbi.2021.06.002	"""Protein"" no longer means what it used to."	2021	other_or_unclear		false
+O16305	europepmc_primary	41656275	10.1186/s13041-026-01279-1	Crosstalk of KCNH1 and KCNH5 gain-of-function mutations leading to epilepsy and neurodevelopmental disorders.	2026	other_or_unclear		false
+O16305	europepmc_primary	39627324	10.1038/s42003-024-07331-x	Site-specific incorporation of &lt;sup&gt;19&lt;/sup&gt;F-nulcei at protein C-terminus to probe allosteric conformational transitions of metalloproteins.	2024	ligand_induced	allosteric	false
+O16305	europepmc_primary	41053052	10.1038/s41419-025-08005-0	Stromal cells in normal colon and colon cancers: importance of thyroid hormone signaling.	2025	other_or_unclear		false
+O16305	europepmc_primary	40978460	10.1039/d5cb00149h	Dynamics of single enzymes confined inside a nanopore.	2025	other_or_unclear		false
+O16305	europepmc_primary	37384728	10.1371/journal.pone.0287858	Metamorphic gene regulation programs in Xenopus tropicalis tadpole brain.	2023	other_or_unclear		false
+O16305	europepmc_primary	41626339	10.3389/fpls.2025.1704615	Calcium-dependent protein kinases in plant immunity: from calcium signaling to network integration.	2025	other_or_unclear		false
+O16305	europepmc_primary	40273505	10.1016/j.mam.2025.101362	Frustration in physiology and molecular medicine.	2025	other_or_unclear		false
+O16305	europepmc_primary	40007443	10.1242/jeb.250110	A Cftr-independent, Ano1-rich seawater-adaptive ionocyte in sea lamprey gills.	2025	other_or_unclear		false
+O16305	europepmc_primary	41465667	10.3390/insects16121228	Characterization of Cry4Aa Toxin from &lt;i&gt;Bacillus thuringiensis&lt;/i&gt; JW-1 and Its Insecticidal Activity Against &lt;i&gt;Bradysia difformis&lt;/i&gt;.	2025	other_or_unclear		false
+O16305	europepmc_primary	40916649	10.1111/jnc.70226	Role of CPEBs in Learning and Memory.	2025	other_or_unclear		false
+O16305	europepmc_primary	34506645	10.1002/bit.27939	Control of gene expression in engineered mammalian cells with a programmable shear-stress inducer.	2021	other_or_unclear		false
+O16305	europepmc_primary	42450133	10.3390/ijms27135862	Comparative Interactome Analysis Reveals Architectural Principles Governing K&lt;sup&gt;+&lt;/sup&gt; Channel Function in Cancer.	2026	other_or_unclear		false
+O16305	europepmc_primary	39259196	10.7554/elife.91420	Revealing a hidden conducting state by manipulating the intracellular domains in K<sub>V</sub>10.1 exposes the coupling between two gating mechanisms.	2024	other_or_unclear		false
+O16305	europepmc_primary	38862878	10.1186/s12864-024-10459-z	Transcriptome analysis of the Japanese eel (Anguilla japonica) during larval metamorphosis.	2024	other_or_unclear		false
+O16305	europepmc_primary	42393339	10.1038/s44320-026-00229-2	Paradoxical non-catalytic kinase functions are driven by inhibitor-induced displacement of autoinhibitory domains.	2026	other_or_unclear		false
+O16305	europepmc_primary	36263816	10.1093/nar/gkac910	In vitro structural maturation of an early stage pre-40S particle coupled with U3 snoRNA release and central pseudoknot formation.	2022	other_or_unclear		false
+O16305	europepmc_primary	40806366	10.3390/ijms26157233	Molecular Pathways Potentially Involved in Hallucinatory Experiences During Sleep Paralysis: The Emerging Role of β-Arrestin-2.	2025	other_or_unclear		false
+O16305	europepmc_primary	39209805	10.1038/s41420-024-02123-y	Publisher Correction: Interactomic exploration of LRRC8A in volume-regulated anion channels.	2024	other_or_unclear		false
+O16305	europepmc_primary	42318687	10.1002/advs.76185	Conformational Transduction Amplification in a Biomimetic Polyelectrolyte for Ultrasensitive Imaging of Iron Metabolism.	2026	ligand_induced	allosteric	false
+O16305	europepmc_primary	41876965	10.1186/s12864-026-12764-1	Chromosome-level genome provides new insights into the fatty acid biosynthesis and metabolism of the sea urchin Strongylocentrotus intermedius.	2026	other_or_unclear		false
+O16305	europepmc_primary	39379401	10.1038/s41598-024-72943-6	Polyamine impact on physiology of early stages of reef-building corals-insights from rearing experiments and RNA-Seq analysis.	2024	other_or_unclear		false
+O16305	europepmc_primary	37905307	10.1080/19336950.2023.2273165	Structural basis of properties, mechanisms, and channelopathy of cyclic nucleotide-gated channels.	2023	other_or_unclear		false
+O16305	europepmc_primary	41649707	10.1007/s44297-025-00047-2	G-quadruplex structure in plants and insects and potential applications in pest control.	2025	other_or_unclear		false
+O16305	europepmc_primary	33799183	10.1016/j.plaphy.2021.03.008	Characterization of two group III potato CDPKs, StCDPK22 and StCDPK24, that contain three EF-Hand motifs in their CLDs.	2021	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	41873906	10.1042/bcj20250342	Binding of 14-3-3 stabilises recombinant AMPKγ2-containing complexes.	2026	ligand_induced	allosteric	false
+O16305	europepmc_primary	40070567	10.3389/fphar.2025.1512968	MLKL as an emerging machinery for modulating organelle dynamics: regulatory mechanisms, pathophysiological significance, and targeted therapeutics.	2025	other_or_unclear		false
+O16305	europepmc_primary	41370370	10.1126/sciadv.aea2136	Evolutionarily convergent mechanism of formin regulation coordinates actin polymerization in apicomplexan parasites.	2025	other_or_unclear		false
+O16305	europepmc_primary	38894746	10.3389/fendo.2024.1399274	Differential involvement of cAMP/PKA-, PLC/PKC- and Ca<sup>2+</sup>/calmodulin-dependent pathways in GnRH-induced prolactin secretion and gene expression in grass carp pituitary cells.	2024	other_or_unclear		false
+O16305	europepmc_primary	35886917	10.3390/ijms23147569	The HIV-1 Gag Protein Displays Extensive Functional and Structural Roles in Virus Replication and Infectivity.	2022	other_or_unclear		false
+O16305	europepmc_primary	38501487	10.1002/pro.4955	Calcium mediated static and dynamic allostery in S100A12: Implications for target recognition by S100 proteins.	2024	ligand_induced	allosteric	false
+O16305	europepmc_primary	40531176	10.7554/elife.99825	Stimulatory and inhibitory G-protein signaling relays drive cAMP accumulation for timely metamorphosis in the chordate &lt;i&gt;Ciona&lt;/i&gt;.	2025	other_or_unclear		false
+O16305	europepmc_primary		10.21203/rs.3.rs-1669246/v1	In vitro structural maturation of the primordial pre-40S coupled with U3 snoRNA release and central pseudoknot formation	2022	other_or_unclear		false
+O16305	europepmc_primary	37649557	10.17912/micropub.biology.000919	Expression and cilia associated localization of Histone deacetylases 6 in <i>Xenopus</i>.	2023	other_or_unclear		false
+O16305	europepmc_primary	38354101	10.1080/19336950.2024.2313323	Recent advances on the structure and the function relationships of the TRPV4 ion channel.	2024	other_or_unclear		false
+O16305	europepmc_primary	38991035	10.1371/journal.pcbi.1011953	An integrative approach to protein sequence design through multiobjective optimization.	2024	other_or_unclear		false
+O16305	europepmc_primary	36070238	10.1021/acs.biochem.2c00378	NMR Structures of Calmodulin Bound to Two Separate Regulatory Sites in the Retinal Cyclic Nucleotide-Gated Channel.	2022	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	39702967	10.1016/j.xplc.2024.101225	Stress sensing and response through biomolecular condensates in plants.	2025	other_or_unclear		false
+O16305	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+O16305	europepmc_primary	41683643	10.3390/ijms27031215	Characterization of the Crustacean Methyl Farnesoate Transcriptional Signaling Genes.	2026	other_or_unclear		false
+O16305	europepmc_primary	36777337	10.3389/fendo.2023.1121002	Characterization of a novel corticosterone response gene in <i>Xenopus tropicalis</i> tadpole tails.	2023	other_or_unclear		false
+O16305	europepmc_primary	42064553	10.3389/fphys.2026.1788194	Advances in the study of juvenile hormone signaling.	2026	other_or_unclear		false
+O16305	europepmc_primary	35960653	10.1111/tpj.15944	Temperature modulation of CAMTA3 gene induction activity is mediated through the DNA binding domain.	2022	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	41211723	10.1021/acs.jmedchem.5c01626	FDA Drug Repurposing Uncovers Modulators of Dopamine D<sub>2</sub> Receptor Localization via Disruption of the NCS-1 Interaction.	2025	other_or_unclear		false
+O16305	europepmc_primary	37075164	10.1080/19336950.2023.2191773	"A governance of ion selectivity based on the occupancy of the ""beacon"" in one- and four-domain calcium and sodium channels."	2023	other_or_unclear		false
+O16305	europepmc_primary	36979969	10.3390/biomedicines11030990	Structure-Guided Prediction of the Functional Impact of DCLK1 Mutations on Tumorigenesis.	2023	other_or_unclear		false
+O16305	europepmc_primary	40337642	10.3389/fmolb.2025.1531793	Successful prediction of LC8 binding to intrinsically disordered proteins sheds light on AlphaFold's black box.	2025	other_or_unclear		false
+O16305	europepmc_primary	22688954	10.1002/chem.201200348	Protein conformational switches: from nature to design.	2012	fold_switching	fold[- ]switch	false
+O16305	europepmc_primary	41515949	10.3390/ijms27010069	Neurovascular Signaling at the Gliovascular Interface: From Flow Regulation to Cognitive Energy Coupling.	2025	other_or_unclear		false
+O16305	europepmc_primary	35661757	10.1038/s41598-022-09654-3	Conformational change of Syntaxin-3b in regulating SNARE complex assembly in the ribbon synapses.	2022	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary			Abstracts presented at the 37th Annual Meeting of The Protein Society	2023	other_or_unclear		false
+O16305	europepmc_primary	36873677	10.1021/jacsau.2c00654	Strategies for Conditional Regulation of Proteins.	2023	other_or_unclear		false
+O16305	europepmc_primary	32924766	10.1080/19336950.2020.1816107	Gating and regulation of KCNH (ERG, EAG, and ELK) channels by intracellular domains.	2020	other_or_unclear		false
+O16305	europepmc_primary	42270663	10.1038/s41467-026-74123-8	PIP&lt;sub&gt;2&lt;/sub&gt; activation of the cardiac I&lt;sub&gt;Ks&lt;/sub&gt; potassium channel.	2026	other_or_unclear		false
+O16305	europepmc_primary	41212855	10.1371/journal.pone.0316787	Molecular and evolutionary determinants for protein interaction within a class II aldolase/Adducin domain.	2025	other_or_unclear		false
+O16305	europepmc_primary	32907599	10.1186/s12964-020-00620-y	G protein-coupled receptors function as cell membrane receptors for the steroid hormone 20-hydroxyecdysone.	2020	other_or_unclear		false
+O16305	europepmc_primary	37121260	10.1098/rsob.220350	PK1 from <i>Drosophila</i> obscurin is an inactive pseudokinase with scaffolding properties.	2023	ligand_induced	allosteric	false
+O16305	europepmc_primary	40085503	10.7554/elife.97189	Receptor tyrosine kinases CAD96CA and FGFR1 function as the cell membrane receptors of insect juvenile hormone.	2025	other_or_unclear		false
+O16305	europepmc_primary	42712879	10.17179/excli2026-9572	Mechanisms of T cell activation: Integrating signaling pathways, experimental models, and therapeutic implications.	2026	other_or_unclear		false
+O16305	europepmc_primary	39936942	10.3390/cells14030150	Thyroid Hormones and Brain Development: A Focus on the Role of Mitochondria as Regulators of Developmental Time.	2025	other_or_unclear		false
+O16305	europepmc_primary	34854917	10.1042/bst20210307	Spatiotemporal regulation of store-operated calcium entry in cancer metastasis.	2021	other_or_unclear		false
+O16305	europepmc_primary	36691781	10.1002/pro.4574	Genetic encoding of 3-nitro-tyrosine reveals the impacts of 14-3-3 nitration on client binding and dephosphorylation.	2023	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	38909013	10.1038/s41420-024-02032-0	Interactomic exploration of LRRC8A in volume-regulated anion channels.	2024	other_or_unclear		false
+O16305	europepmc_primary	38601983	10.1080/19336950.2024.2341077	Non-ionotropic voltage-gated calcium channel signaling.	2024	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	31354501	10.3389/fphar.2019.00794	Editorial: Peptidyl-Prolyl Isomerases in Human Pathologies.	2019	other_or_unclear		false
+O16305	europepmc_primary	35574485	10.3389/fphys.2022.905441	<i>Kr-h1</i>, a Cornerstone Gene in Insect Life History.	2022	other_or_unclear		false
+O16305	europepmc_primary	42453394	10.1016/j.apsb.2026.03.047	Drugging non-canonical kinases in cancer therapeutics: Molecular targets, underlying mechanisms and small-molecule inhibitors.	2026	ligand_induced	allosteric	false
+O16305	europepmc_primary	40325293	10.1007/s11356-025-36446-9	Long-term changes in chemical components in the meadow pipit (Anthus pratensis) in the formerly heavily polluted Eastern Sudetes Mountains.	2025	other_or_unclear		false
+O16305	europepmc_primary	37363722	10.3389/fcell.2023.1206147	Evolution and function of calponin and transgelin.	2023	other_or_unclear		false
+O16305	europepmc_primary	36089054	10.1016/j.jmb.2022.167820	Domain-Based Protein Docking with Extremely Large Conformational Changes.	2022	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	39636142	10.1002/pro.5207	Special issue title: The Protein Society 38th Annual Symposium, July 2024, Vancouver, Canada.	2024	other_or_unclear		false
+O16305	europepmc_primary	42423121	10.1002/pro.70714	Decoding the allosteric grammar of protein kinases: A dual-stream framework integrating protein language models and energy landscape frustration analysis.	2026	ligand_induced	allosteric	false
+O16305	europepmc_primary	35573251	10.3389/fbioe.2022.901300	Engineering Light-Control in Biology.	2022	other_or_unclear		false
+O16305	europepmc_primary	34943794	10.3390/cells10123287	Pin1 as Molecular Switch in Vascular Endothelium: Notes on Its Putative Role in Age-Associated Vascular Diseases.	2021	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	35927280	10.1038/s41467-022-32218-y	Subversion of GBP-mediated host defense by E3 ligases acquired during Yersinia pestis evolution.	2022	other_or_unclear		false
+O16305	europepmc_primary	31072926	10.1073/pnas.1818618116	Crystal structures of Ca<sup>2+</sup>-calmodulin bound to Na<sub>V</sub> C-terminal regions suggest role for EF-hand domain in binding and inactivation.	2019	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	34085055	10.1063/5.0041394	Calcium-responsive contrast agents for functional magnetic resonance imaging.	2021	other_or_unclear		false
+O16305	europepmc_primary	42394964	10.3389/fnbeh.2026.1806003	Assessing circuit function in the developing &lt;i&gt;Xenopus&lt;/i&gt; tadpole: a survey of the behavioral toolkit and underlying neural substrates.	2026	other_or_unclear		false
+O16305	europepmc_primary	34800372	10.1016/j.str.2021.10.011	An engineered construct of cFLIP provides insight into DED1 structure and interactions.	2022	other_or_unclear		false
+O16305	europepmc_primary	37431773	10.1042/bst20230122	Structural insights into NMDA receptor pharmacology.	2023	ligand_induced	ligand[- ]induced conformational	false
+O16305	europepmc_primary	40976416	10.1016/j.cstres.2025.100118	Hsp70 and Hsp90 post-translational modifications and translating the chaperone code.	2025	other_or_unclear		false
+O16305	europepmc_primary	38343439	10.3389/fimmu.2023.1324253	An overview of the mechanisms and potential roles of extracellular vesicles in septic shock.	2023	other_or_unclear		false
+O16305	europepmc_primary	34324338	10.1021/acs.jpcb.1c04082	The Next Frontier for Designing Switchable Proteins: Rational Enhancement of Kinetics.	2021	other_or_unclear		false
+O16305	europepmc_primary	33258400	10.1080/19336950.2020.1854986	Late sodium current and calcium homeostasis in arrhythmogenesis.	2021	other_or_unclear		false
+O16305	europepmc_primary	34405992	10.1021/acs.chemrev.1c00308	Protein Assembly by Design.	2021	other_or_unclear		false
+O16305	europepmc_primary	42032145	10.1038/s44385-025-00059-1	Mechanical regulation of metabolism, epigenetics, and their interplay.	2026	other_or_unclear		false
+O16305	europepmc_primary	32025607	10.1002/hep4.1461	TGF-β Signaling Plays a Pivotal Role During Developmental Biliary Atresia in Sea Lamprey (<i>Petromyzon marinus</i>).	2020	other_or_unclear		false
+O16305	europepmc_primary	39595146	10.3390/biomedicines12112580	Sodium Chloride Cotransporter in Hypertension.	2024	other_or_unclear		false
+O16305	europepmc_primary	38390217	10.1117/1.nph.11.2.024204	Recent advances in bioluminescent probes for neurobiology.	2024	other_or_unclear		false
+O16305	europepmc_primary	33236980	10.7554/elife.60603	Structural basis of TRPC4 regulation by calmodulin and pharmacological agents.	2020	other_or_unclear		false
+O16305	europepmc_primary	33825708	10.1107/s2059798321001078	Guest-protein incorporation into solvent channels of a protein host crystal (hostal).	2021	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	36742381	10.3389/fendo.2023.1096365	Functional regulation of syntaxin-1: An underlying mechanism mediating exocytosis in neuroendocrine cells.	2023	other_or_unclear		false
+O16305	europepmc_primary	38609871	10.1186/s12864-024-10248-8	Comparative transcriptomic analysis delineates adaptation strategies of Rana kukunoris toward cold stress on the Qinghai-Tibet Plateau.	2024	other_or_unclear		false
+O16305	europepmc_primary	36743578	10.3389/fpls.2022.1107224	ROS-mediated plasmodesmal regulation requires a network of an Arabidopsis receptor-like kinase, calmodulin-like proteins, and callose synthases.	2022	other_or_unclear		false
+O16305	europepmc_primary	38078096	10.3389/fpls.2023.1307294	Unmasking the invaders: NLR-mal function in plant defense.	2023	other_or_unclear		false
+O16305	europepmc_primary	40847318	10.1186/s40035-025-00504-6	Cell-specific copper dyshomeostasis mechanism in Alzheimer's disease.	2025	other_or_unclear		false
+O16305	europepmc_primary	38565997	10.1186/s12864-024-10232-2	Elucidating the ecophysiology of soybean pod-sucking stinkbug Riptortus pedestris (Hemiptera: Alydidae) based on de novo genome assembly and transcriptome analysis.	2024	other_or_unclear		false
+O16305	europepmc_primary	32993483	10.1186/s12864-020-07066-z	Proteome of larval metamorphosis induced by epinephrine in the Fujian oyster Crassostrea angulata.	2020	other_or_unclear		false
+O16305	europepmc_primary	42520407	10.1093/plcell/koag224	The Spirogyra pratensis genome illuminates the evolution of developmental programs and spiral chloroplast biology.	2026	other_or_unclear		false
+O16305	europepmc_primary	34935159	10.15252/embj.2020106523	Caldendrin and myosin V regulate synaptic spine apparatus localization via ER stabilization in dendritic spines.	2022	other_or_unclear		false
+O16305	europepmc_primary	41031362	10.3389/fnut.2025.1657640	Microbially mediated silicon-based agro-wastes: a possible option in reducing bioaccumulation of arsenic.	2025	other_or_unclear		false
+O16305	europepmc_primary	35585008	10.1016/j.tibs.2022.04.011	Looking lively: emerging principles of pseudokinase signaling.	2022	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	32719660	10.3389/fmicb.2020.01298	Modulation of Plant Defense System in Response to Microbial Interactions.	2020	other_or_unclear		false
+O16305	europepmc_primary	37718000	10.1016/bs.vh.2023.03.002	Juvenile hormone receptor Methoprene tolerant: Functions and applications.	2023	other_or_unclear		false
+O16305	europepmc_primary	34196612	10.1107/s2053230x21006142	Crystal structures of Val58Ile tryptophan repressor in a domain-swapped array in the presence and absence of L-tryptophan.	2021	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	30573469	10.1534/g3.118.200841	A Noisy Analog-to-Digital Converter Connects Cytosolic Calcium Bursts to Transcription Factor Nuclear Localization Pulses in Yeast.	2019	other_or_unclear		false
+O16305	europepmc_primary	35852813	10.1002/anie.202206631	Chemically Driven Rotatory Molecular Machines.	2022	other_or_unclear		false
+O16305	europepmc_primary	36827465	10.1021/acs.jcim.2c01634	Exploring and Learning the Universe of Protein Allostery Using Artificial Intelligence Augmented Biophysical and Computational Approaches.	2023	ligand_induced	allosteric	false
+O16305	europepmc_primary	40155618	10.1038/s41467-025-58247-x	PIP&lt;sub&gt;2&lt;/sub&gt;-mediated oligomerization of the endosomal sodium/proton exchanger NHE9.	2025	other_or_unclear		false
+O16305	europepmc_primary	37949220	10.1016/j.jbc.2023.105441	Interaction between the mitochondrial adaptor MIRO and the motor adaptor TRAK.	2023	other_or_unclear		false
+O16305	europepmc_primary	32696300	10.1007/s12551-020-00736-y	Sarcoplasmic reticulum calcium mishandling: central tenet in heart failure?	2020	other_or_unclear		false
+O16305	europepmc_primary	38028759	10.3389/fphys.2023.1281555	Protein modification regulated autophagy in <i>Bombyx mori</i> and <i>Drosophila melanogaster</i>.	2023	other_or_unclear		false
+O16305	europepmc_primary	30609797	10.3390/ijms20010147	Roco Proteins: GTPases with a Baroque Structure and Mechanism.	2019	other_or_unclear		false
+O16305	europepmc_primary	33655882	10.7554/elife.60889	Dynamic Na<sup>+</sup>/H<sup>+</sup> exchanger 1 (NHE1) - calmodulin complexes of varying stoichiometry and structure regulate Ca<sup>2+</sup>-dependent NHE1 activation.	2021	other_or_unclear		false
+O16305	europepmc_primary	30199756	10.1016/j.ceca.2018.08.007	CRAC channel-based optogenetics.	2018	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	38963838	10.1126/science.adk8946	Unsupervised evolution of protein and antibody complexes with a structure-informed language model.	2024	other_or_unclear		false
+O16305	europepmc_primary	29921816	10.3390/biom8020042	Calcium-Binding Proteins with Disordered Structure and Their Role in Secretion, Storage, and Cellular Signaling.	2018	other_or_unclear		false
+O16305	europepmc_primary	33579933	10.1038/s41467-021-21191-7	Granulovirus PK-1 kinase activity relies on a side-to-side dimerization mode centered on the regulatory αC helix.	2021	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	34120716	10.1016/bs.mie.2021.02.010	Optogenetic control of calcium influx in mammalian cells.	2021	other_or_unclear		false
+O16305	europepmc_primary	33465067	10.1371/journal.pcbi.1008568	Rosetta design with co-evolutionary information retains protein function.	2021	other_or_unclear		false
+O16305	europepmc_primary	40184174	10.1073/pnas.2502277122	DNA bending mediated by ORC is essential for replication licensing in budding yeast.	2025	other_or_unclear		false
+O16305	europepmc_primary	32058267	10.1016/j.ceb.2020.01.007	Recent advances in the use of genetically encodable optical tools to elicit and monitor signaling events.	2020	other_or_unclear		false
+O16305	europepmc_primary	40387259	10.1002/advs.202413817	Genetics-Based Targeting Strategies for Precise Neuromodulation.	2025	other_or_unclear		false
+O16305	europepmc_primary	42535364	10.3892/ijmm.2026.5943	Post‑translational modifications in atherosclerosis: Roles, mechanisms and therapeutic potential (Review).	2026	other_or_unclear		false
+O16305	europepmc_primary	33184610	10.1016/j.cophys.2020.08.004	Optogenetic approaches to control Ca<sup>2+</sup>-modulated physiological processes.	2020	other_or_unclear		false
+O16305	europepmc_primary	39548100	10.1038/s41467-024-54240-y	Over 25 years of decrypting PIN-mediated plant development.	2024	other_or_unclear		false
+O16305	europepmc_primary	41353195	10.1186/s12864-025-12379-y	Microstructure and transcriptomics reveal rapid light-induced visual plasticity in the non-obligate cave dweller Oreolalax rhodostigmatus (Megophryidae, Anura).	2025	other_or_unclear		false
+O16305	europepmc_primary	40849345	10.1038/s42003-025-08720-6	Bacterial regulation of coral larval metamorphosis and settlement in Pocillopora damicornis.	2025	other_or_unclear		false
+O16305	europepmc_primary	38078109	10.3389/fpls.2023.1157455	Comparative gut proteomics study revealing adaptive physiology of Eurasian spruce bark beetle, <i>Ips typographus</i> (Coleoptera: Scolytinae).	2023	other_or_unclear		false
+O16305	europepmc_primary	37624033	10.3390/ncrna9040041	Conservation and Targets of miR-71: A Systematic Review and Meta-Analysis.	2023	other_or_unclear		false
+O16305	europepmc_primary	38172855	10.1186/s12964-023-01448-y	Non-canonical non-genomic morphogen signaling in anucleate platelets: a critical determinant of prothrombotic function in circulation.	2024	other_or_unclear		false
+O16305	europepmc_primary	39594618	10.3390/cells13221870	Structural and Functional Insights into Dishevelled-Mediated Wnt Signaling.	2024	other_or_unclear		false
+O16305	europepmc_primary	33318703	10.1038/s41594-020-00530-0	Structures of radial spokes and associated complexes important for ciliary motility.	2021	other_or_unclear		false
+O16305	europepmc_primary	38291290	10.1007/s12264-023-01174-y	Myosin Va-dependent Transport of NMDA Receptors in Hippocampal Neurons.	2024	other_or_unclear		false
+O16305	europepmc_primary	38893478	10.3390/molecules29112602	Signal Transduction of Transient Receptor Potential TRPM8 Channels: Role of PIP5K, Gq-Proteins, and c-Jun.	2024	other_or_unclear		false
+O16305	europepmc_primary	30634573	10.3390/ijms20020248	New Structures and Gating of Voltage-Dependent Potassium (Kv) Channels and Their Relatives: A Multi-Domain and Dynamic Question.	2019	ligand_induced	allosteric	false
+O16305	europepmc_primary	31460146	10.1021/acsomega.9b01217	Consequences of Hydrophobic Nanotube Binding on the Functional Dynamics of Signaling Protein Calmodulin.	2019	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	24332718	10.1016/j.str.2013.10.018	A self-sequestered calmodulin-like Ca²⁺ sensor of mitochondrial SCaMC carrier and its implication to Ca²⁺-dependent ATP-Mg/P(i) transport.	2014	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	38509368	10.1038/s41586-024-07217-2	Transcription-replication conflicts underlie sensitivity to PARP inhibitors.	2024	other_or_unclear		false
+O16305	europepmc_primary	37435805	10.7554/elife.83868	Conformational regulation and target-myristoyl switch of calcineurin B homologous protein 3.	2023	other_or_unclear		false
+O16305	europepmc_primary	28711156	10.1016/j.tips.2017.06.004	Towards a Structural View of Drug Binding to hERG K<sup>+</sup> Channels.	2017	other_or_unclear		false
+O16305	europepmc_primary	37860244	10.3389/fpls.2023.1276649	Extra- and intranuclear heat perception and triggering mechanisms in plants.	2023	other_or_unclear		false
+O16305	europepmc_primary	33572300	10.3390/jof7020126	New Xerophilic Species of <i>Penicillium</i> from Soil.	2021	other_or_unclear		false
+O16305	europepmc_primary	37404761	10.3389/fonc.2023.1219211	Functional role of MicroRNA/PI3K/AKT axis in osteosarcoma.	2023	other_or_unclear		false
+O16305	europepmc_primary	30703613	10.1016/j.sbi.2018.12.009	Dissecting diverse functions of NMDA receptors by structural biology.	2019	other_or_unclear		false
+O16305	europepmc_primary	41467443	10.4103/nrr.nrr-d-25-00857	Mitochondria-associated endoplasmic reticulum membranes and calcium ion exchange: A novel direction for aging and neurodegenerative diseases.	2026	other_or_unclear		false
+O16305	europepmc_primary	31083406	10.3390/cancers11050647	The Role of AMP-Activated Protein Kinase as a Potential Target of Treatment of Hepatocellular Carcinoma.	2019	other_or_unclear		false
+O16305	europepmc_primary	31897233	10.7150/jca.31640	TRPV6 as A Target for Cancer Therapy.	2020	other_or_unclear		false
+O16305	europepmc_primary	35222061	10.3389/fphys.2021.785320	Juvenile Hormone Studies in <i>Drosophila melanogaster</i>.	2021	other_or_unclear		false
+O16305	europepmc_primary	28746405	10.1371/journal.pone.0181721	Biophysical characterization of the calmodulin-like domain of Plasmodium falciparum calcium dependent protein kinase 3.	2017	other_or_unclear		false
+O16305	europepmc_primary	39905499	10.1186/s12985-025-02622-z	Advances in antiviral strategies targeting mosquito-borne viruses: cellular, viral, and immune-related approaches.	2025	other_or_unclear		false
+O16305	europepmc_primary			Award Winners/Abstracts from the 36th Annual Symposium of The Protein Society, July 7 – 10, 2022	2022	other_or_unclear		false
+O16305	europepmc_primary	36036012	10.3389/fcell.2022.949196	S6 kinase 1 at the central node of cell size and ageing.	2022	other_or_unclear		false
+O16305	europepmc_primary	29363593	10.1073/pnas.1715997115	STAC proteins associate to the IQ domain of Ca&lt;sub&gt;V&lt;/sub&gt;1.2 and inhibit calcium-dependent inactivation.	2018	other_or_unclear		false
+O16305	europepmc_primary	33466526	10.3390/ijms22010471	More Than Just Simple Interaction between STIM and Orai Proteins: CRAC Channel Function Enabled by a Network of Interactions with Regulatory Proteins.	2021	other_or_unclear		false
+O16305	europepmc_primary	27045108	10.4049/jimmunol.1502631	Synthetic Biology Reveals the Uniqueness of the RIP Kinase Domain.	2016	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	26448477	10.1002/pro.2824	Elucidating nitric oxide synthase domain interactions by molecular dynamics.	2016	other_or_unclear		false
+O16305	europepmc_primary	28934144	10.3390/molecules22101584	The Recognition of Calmodulin to the Target Sequence of Calcineurin-A Novel Binding Mode.	2017	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	34077555	10.1111/jnc.15440	Phosphorylation-dependent control of Activity-regulated cytoskeleton-associated protein (Arc) protein by TNIK.	2021	other_or_unclear		false
+O16305	europepmc_primary	38505224	10.1063/5.0080512	Intrinsically disordered proteins: Ensembles at the limits of Anfinsen's dogma.	2022	other_or_unclear		false
+O16305	europepmc_primary	28265091	10.1073/pnas.1612422114	Conserved forkhead dimerization motif controls DNA replication timing and spatial organization of chromosomes in <i>S. cerevisiae</i>.	2017	domain_swapping	domain[- ]swapp;swapped dimer	false
+O16305	europepmc_primary	28516023	10.4161/idp.26412	Transient disorder: Calcineurin as an example.	2013	other_or_unclear		false
+O16305	europepmc_primary	22404528	10.1021/ac300213j	Dynamics of conformational Ca2+-switches in signaling networks detected by a planar plasmonic device.	2012	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	39063015	10.3390/ijms25147775	Analysis of the Skin and Brain Transcriptome of Normally Pigmented and Pseudo-Albino Southern Flounder (<i>Paralichthys lethostigma</i>) Juveniles to Study the Molecular Mechanisms of Hypopigmentation and Its Implications for Species Survival in the Natural Environment.	2024	other_or_unclear		false
+O16305	europepmc_primary		10.1101/2024.05.13.593877	Unveiling Conserved Allosteric Hot Spots in Protein Domains from Sequences	2024	ligand_induced	allosteric	false
+O16305	europepmc_primary	35159231	10.3390/cells11030421	Functional Differences between Proteasome Subtypes.	2022	other_or_unclear		false
+O16305	europepmc_primary	22507549	10.1016/j.cbpb.2012.04.001	Characterization and expression of calmodulin gene during larval settlement and metamorphosis of the polychaete Hydroides elegans.	2012	other_or_unclear		false
+O16305	europepmc_primary	28613457	10.1111/febs.14134	Live-cell imaging of cell signaling using genetically encoded fluorescent reporters.	2018	other_or_unclear		false
+O16305	europepmc_primary	33778000	10.3389/fmolb.2020.620554	Influence of Disease-Causing Mutations on Protein Structural Networks.	2020	other_or_unclear		false
+O16305	europepmc_primary	34313417	10.1021/acs.inorgchem.1c01048	Endogenous Hemoprotein-Dependent Signaling Pathways of Nitric Oxide and Nitrite.	2021	other_or_unclear		false
+O16305	europepmc_primary	31115337	10.7554/elife.44904	Mechanism of completion of peptidyltransferase centre assembly in eukaryotes.	2019	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	30258351	10.3389/fnmol.2018.00317	Structure-Function Relationships of Glycine and GABA<sub>A</sub> Receptors and Their Interplay With the Scaffolding Protein Gephyrin.	2018	other_or_unclear		false
+O16305	europepmc_primary	35699371	10.1128/mbio.01308-22	Re-Examining Rotavirus Innate Immune Evasion: Potential Applications of the Reverse Genetics System.	2022	other_or_unclear		false
+O16305	europepmc_primary	33982589	10.33549/physiolres.934697	Transient receptor potential ankyrin 1 channel: An evolutionarily tuned thermosensor.	2021	other_or_unclear		false
+O16305	europepmc_primary	19404396	10.1371/journal.pone.0005402	Domain swapping and different oligomeric States for the complex between calmodulin and the calmodulin-binding domain of calcineurin a.	2009	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	30348784	10.1073/pnas.1808733115	Arrhythmia mutations in calmodulin cause conformational changes that affect interactions with the cardiac voltage-gated calcium channel.	2018	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	26831757	10.1038/ncomms10336	Sequential domain assembly of ribosomal protein S3 drives 40S subunit maturation.	2016	other_or_unclear		false
+O16305	europepmc_primary		10.1101/2025.10.09.681428	The  <i>Spirogyra</i>  genome: signatures of shared and divergent division and differentiation	2025	other_or_unclear		false
+O16305	europepmc_primary	29156607	10.3390/ijms18112436	Calcium-Dependent Protein Kinases in Phytohormone Signaling Pathways.	2017	other_or_unclear		false
+O16305	europepmc_primary	32823764	10.3390/cells9081897	Involvement of JNK1 in Neuronal Polarization During Brain Development.	2020	other_or_unclear		false
+O16305	europepmc_primary	33256465	10.1177/1759091420974807	Merits and Limitations of Studying Neuronal Depolarization-Dependent Processes Using Elevated External Potassium.	2020	other_or_unclear		false
+O16305	europepmc_primary	35465319	10.3389/fcell.2022.866980	Beyond the Channels: Adhesion Functions of Aquaporin 0 and Connexin 50 in Lens Development.	2022	other_or_unclear		false
+O16305	europepmc_primary	35583973	10.1152/jn.00509.2021	Human &lt;i&gt;KCNQ5&lt;/i&gt; de novo mutations underlie epilepsy and intellectual disability.	2022	other_or_unclear		false
+O16305	europepmc_primary	25600778	10.1038/ncomms7116	The unexpected role of polyubiquitin chains in the formation of fibrillar aggregates.	2015	other_or_unclear		false
+O16305	europepmc_primary	37842082	10.3389/fcell.2023.1246955	Cell death induction and protection by activation of ubiquitously expressed anion/cation channels. Part 3: the roles and properties of TRPM2 and TRPM7.	2023	other_or_unclear		false
+O16305	europepmc_primary	25670853	10.1074/jbc.m114.622696	The steroid hormone 20-hydroxyecdysone via nongenomic pathway activates Ca2+/calmodulin-dependent protein kinase II to regulate gene expression.	2015	other_or_unclear		false
+O16305	europepmc_primary	38095091	10.1017/erm.2023.27	Strategies and rules for tuning TCR-derived therapy.	2023	other_or_unclear		false
+O16305	europepmc_primary	17962398	10.1110/ps.072985007	Protein reconstitution and three-dimensional domain swapping: benefits and constraints of covalency.	2007	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	26203905	10.1371/journal.ppat.1004944	Cross Kingdom Activators of Five Classes of Bacterial Effectors.	2015	other_or_unclear		false
+O16305	europepmc_primary	21064163	10.1002/pro.541	Converting a protein into a switch for biosensing and functional regulation.	2011	ligand_induced	allosteric	false
+O16305	europepmc_primary	30519187	10.3389/fphys.2018.01406	Eukaryotic Voltage-Gated Sodium Channels: On Their Origins, Asymmetries, Losses, Diversification and Adaptations.	2018	other_or_unclear		false
+O16305	europepmc_primary	35883712	10.3390/antiox11071222	The Evolution of Nitric Oxide Function: From Reactivity in the Prebiotic Earth to Examples of Biological Roles and Therapeutic Applications.	2022	other_or_unclear		false
+O16305	europepmc_primary	26387779	10.1002/bies.201500085	How the TRPA1 receptor transmits painful stimuli: Inner workings revealed by electron cryomicroscopy.	2015	ligand_induced	allosteric	false
+O16305	europepmc_primary	29077056	10.3390/ijms18112255	Aquaporin Protein-Protein Interactions.	2017	other_or_unclear		false
+O16305	europepmc_primary	42548903	10.1002/imt2.70152	The plant microbiome: From ecological foundations to precision microbial engineering for sustainable agriculture.	2026	other_or_unclear		false
+O16305	europepmc_primary	27303664	10.3389/fcell.2016.00049	ERK Signals: Scaffolding Scaffolds?	2016	other_or_unclear		false
+O16305	europepmc_primary	33875586	10.1073/pnas.2015689118	Heme-binding protein CYB5D1 is a radial spoke component required for coordinated ciliary beating.	2021	other_or_unclear		false
+O16305	europepmc_primary	35549281	10.1021/acs.nanolett.2c00043	A Single-Molecule Strategy to Capture Non-native Intramolecular and Intermolecular Protein Disulfide Bridges.	2022	other_or_unclear		false
+O16305	europepmc_primary	30716649	10.1016/j.ceb.2018.12.012	Structural features of STIM and Orai underlying store-operated calcium entry.	2019	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	38132346	10.3390/biology12121520	Transcriptomic Responses of a Lightly Calcified Echinoderm to Experimental Seawater Acidification and Warming during Early Development.	2023	other_or_unclear		false
+O16305	europepmc_primary	39711199	10.1107/s2059798324011999	AlphaFold-guided molecular replacement for solving challenging crystal structures.	2025	other_or_unclear		false
+O16305	europepmc_primary	40976557	10.1016/j.preteyeres.2025.101404	Zinc in eye health, retinal biology and disease.	2025	other_or_unclear		false
+O16305	europepmc_primary	31068617	10.1038/s41598-019-42898-0	Calcium binding to a disordered domain of a type III-secreted protein from a coral pathogen promotes secondary structure formation and catalytic activity.	2019	other_or_unclear		false
+O16305	europepmc_primary		10.1101/2023.09.10.557050	PI-(3,5)P2-mediated oligomerization of the endosomal sodium/proton exchanger NHE9	2023	other_or_unclear		false
+O16305	europepmc_primary	28790172	10.1074/jbc.m117.782490	Postsynaptic density 95 (PSD-95) serine 561 phosphorylation regulates a conformational switch and bidirectional dendritic spine structural plasticity.	2017	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	27611602	10.1016/j.sbi.2016.07.021	Optical sensors to gain mechanistic insights into signaling assemblies.	2016	other_or_unclear		false
+O16305	europepmc_primary	38309503	10.1016/j.jbc.2024.105715	NEDD4L intramolecular interactions regulate its auto and substrate Na<sub>V</sub>1.5 ubiquitination.	2024	other_or_unclear		false
+O16305	europepmc_primary	34777762	10.1039/d1sc00193k	Role of rare-earth elements in enhancing bioelectrocatalysis for biosensing with NAD<sup>+</sup>-dependent glutamate dehydrogenase.	2021	other_or_unclear		false
+O16305	europepmc_primary	24576576	10.1016/j.gene.2014.02.030	Rem2 in the bullfrog (Rana catesbeiana): Patterns of expression within the central nervous system and brain expression at different ontogenetic stages.	2014	other_or_unclear		false
+O16305	europepmc_primary	26248042	10.1371/journal.pone.0134569	Calcineurin Undergoes a Conformational Switch Evoked via Peptidyl-Prolyl Isomerization.	2015	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	27739433	10.1038/srep34277	Allosteric communication pathways routed by Ca<sup>2+</sup>/Mg<sup>2+</sup> exchange in GCAP1 selectively switch target regulation modes.	2016	ligand_induced	allosteric	false
+O16305	europepmc_primary	36317799	10.1152/ajpcell.00151.2022	Physiology of chemokines in the cancer microenvironment.	2023	other_or_unclear		false
+O16305	europepmc_primary	35154293	10.1007/s11426-021-1183-x	Genetically engineered materials: Proteins and beyond.	2022	other_or_unclear		false
+O16305	europepmc_primary	33178545	10.2142/biophysico.bsj-2019048	Identification and mapping of central pair proteins by proteomic analysis.	2020	other_or_unclear		false
+O16305	europepmc_primary	19275901	10.1016/j.ygcen.2009.03.001	A model of transcriptional and morphological changes during thyroid hormone-induced metamorphosis of the axolotl.	2009	other_or_unclear		false
+O16305	europepmc_primary	34316509	10.1002/adbi.201800240	Cyclic Stiffness Modulation of Cell-Laden Protein-Polymer Hydrogels in Response to User-Specified Stimuli including Light.	2018	other_or_unclear		false
+O16305	europepmc_primary	32795417	10.1016/j.chembiol.2020.07.022	Seeing (and Using) the Light: Recent Developments in Bioluminescence Technology.	2020	other_or_unclear		false
+O16305	europepmc_primary	33731917	10.1038/s41423-021-00663-2	Protein N-myristoylation: functions and mechanisms in control of innate immunity.	2021	other_or_unclear		false
+O16305	europepmc_primary	30772685	10.1016/j.ceca.2019.01.005	ORAI channels in cellular remodeling of cardiorespiratory disease.	2019	other_or_unclear		false
+O16305	europepmc_primary	33310856	10.1126/sciadv.abd6798	Calmodulin acts as a state-dependent switch to control a cardiac potassium channel opening.	2020	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	34170073	10.1111/cns.13697	A novel frameshift ACTN2 variant causes a rare adult-onset distal myopathy with multi-minicores.	2021	other_or_unclear		false
+O16305	europepmc_primary	27194808	10.1534/g3.116.029314	Transcriptomic Analysis of Differentially Expressed Genes During Larval Development of Rapana venosa by Digital Gene Expression Profiling.	2016	other_or_unclear		false
+O16305	europepmc_primary	38370484	10.3389/fphar.2024.1345281	Revisiting edible insects as sources of therapeutics and drug delivery systems for cancer therapy.	2024	other_or_unclear		false
+O16305	europepmc_primary	28384476	10.1016/j.neuron.2017.03.018	Allosteric Interactions between NMDA Receptor Subunits Shape the Developmental Shift in Channel Properties.	2017	ligand_induced	allosteric	false
+O16305	europepmc_primary	34845372	10.1038/s41587-021-01100-5	Genetically encoded photo-switchable molecular sensors for optoacoustic and super-resolution imaging.	2022	other_or_unclear		false
+O16305	europepmc_primary	38522068	10.1016/j.gim.2024.101125	Homozygous missense variants in YKT6 result in loss of function and are associated with developmental delay, with or without severe infantile liver disease and risk for hepatocellular carcinoma.	2024	other_or_unclear		false
+O16305	europepmc_primary	36567915	10.1007/s43450-022-00342-x	Pharmacological Activities and Pharmacokinetics of Glycycoumarin.	2023	other_or_unclear		false
+O16305	europepmc_primary	31413111	10.1074/jbc.ra119.008484	The steroid hormone 20-hydroxyecdysone induces phosphorylation and aggregation of stromal interacting molecule 1 for store-operated calcium entry.	2019	other_or_unclear		false
+O16305	europepmc_primary	18083707	10.1074/jbc.m704973200	Ubiquitin recognition by the ubiquitin-associated domain of p62 involves a novel conformational switch.	2008	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	32351384	10.3389/fphar.2020.00411	The EAG Voltage-Dependent K<sup>+</sup> Channel Subfamily: Similarities and Differences in Structural Organization and Gating.	2020	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	34169079	10.3389/fcell.2021.691585	AMPK and Pulmonary Hypertension: Crossroads Between Vasoconstriction and Vascular Remodeling.	2021	other_or_unclear		false
+O16305	europepmc_primary	31105874	10.18632/oncotarget.26763	MEF-2 isoforms' (A-D) roles in development and tumorigenesis.	2019	other_or_unclear		false
+O16305	europepmc_primary	23648838	10.1016/j.jmb.2013.04.029	Colocalization of fast and slow timescale dynamics in the allosteric signaling protein CheY.	2013	ligand_induced	allosteric	false
+O16305	europepmc_primary	30833561	10.1038/s41467-019-08938-z	Synthetic energy sensor AMPfret deciphers adenylate-dependent AMPK activation mechanism.	2019	ligand_induced	allosteric	false
+O16305	europepmc_primary	26046527	10.1371/journal.pone.0123637	Quantitative Proteomics of an Amphibian Pathogen, Batrachochytrium dendrobatidis, following Exposure to Thyroid Hormone.	2015	other_or_unclear		false
+O16305	europepmc_primary	32046090	10.3390/plants9020216	The Role of Plasmodesmata-Associated Receptor in Plant Development and Environmental Response.	2020	other_or_unclear		false
+O16305	europepmc_primary	32368008	10.2147/btt.s240715	Galanin Receptors as Drug Target for Novel Antidepressants: Review.	2020	other_or_unclear		false
+O16305	europepmc_primary	31636333	10.1038/s41598-019-51573-3	Oligomeric state, hydrodynamic properties and target recognition of human Calcium and Integrin Binding protein 2 (CIB2).	2019	other_or_unclear		false
+O16305	europepmc_primary	29429937	10.1016/j.neuron.2018.01.035	A Calmodulin C-Lobe Ca<sup>2+</sup>-Dependent Switch Governs Kv7 Channel Function.	2018	other_or_unclear		false
+O16305	europepmc_primary	23178170	10.1016/j.jmb.2012.11.023	Structure of a Ca(2+)/CaM:Kv7.4 (KCNQ4) B-helix complex provides insight into M current modulation.	2013	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	35163420	10.3390/ijms23031496	Repolarization of Unbalanced Macrophages: Unmet Medical Need in Chronic Inflammation and Cancer.	2022	other_or_unclear		false
+O16305	europepmc_primary	12356717	10.1093/emboj/cdf526	The cross-reactive calcium-binding pollen allergen, Phl p 7, reveals a novel dimer assembly.	2002	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	26144231	10.1107/s2053230x15011061	Fusion-protein-assisted protein crystallization.	2015	other_or_unclear		false
+O16305	europepmc_primary		10.1101/2022.07.16.500291	Behavioral rhythms are bad predictors of general organismal rhythmicity	2022	other_or_unclear		false
+O16305	europepmc_primary	26663082	10.1074/jbc.m115.693325	The EF-hand Ca2+ Binding Domain Is Not Required for Cytosolic Ca2+ Activation of the Cardiac Ryanodine Receptor.	2016	other_or_unclear		false
+O16305	europepmc_primary	28104276	10.1016/j.ceca.2017.01.004	Optogenetic toolkit for precise control of calcium signaling.	2017	other_or_unclear		false
+O16305	europepmc_primary	19367367	10.1007/s00018-009-0023-5	Structural determinants of protein folding.	2009	other_or_unclear		false
+O16305	europepmc_primary	31121082	10.1111/apha.13316	Thyroid hormone regulation of neural stem cell fate: From development to ageing.	2020	other_or_unclear		false
+O16305	europepmc_primary	35072525	10.1152/physrev.00021.2021	Optophysiology: Illuminating cell physiology with optogenetics.	2022	other_or_unclear		false
+O16305	europepmc_primary		10.1101/2023.02.24.529959	The cardiac myosin binding protein-C phosphorylation state as a function of multiple protein kinase and phosphatase activities	2023	other_or_unclear		false
+O16305	europepmc_primary	35135883	10.1073/pnas.2121259119	Munc13 structural transitions and oligomers that may choreograph successive stages in vesicle priming for neurotransmitter release.	2022	other_or_unclear		false
+O16305	europepmc_primary	17554780	10.1002/prot.21455	Crystal structure of calcium binding protein-1 from Entamoeba histolytica: a novel arrangement of EF hand motifs.	2007	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	21520322	10.1002/pro.643	The myristoylation of guanylate cyclase-activating protein-2 causes an increase in thermodynamic stability in the presence but not in the absence of Ca²⁺.	2011	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	35186009	10.3389/fgene.2021.795115	Integrated Analysis of Transcriptome and Proteome to Reveal Pupal Color Switch in <i>Papilio xuthus</i> Butterflies.	2021	other_or_unclear		false
+O16305	europepmc_primary	40670355	10.1038/s41467-025-61862-3	Human glycogenins maintain glucose homeostasis by regulating glycogen metabolism.	2025	other_or_unclear		false
+O16305	europepmc_primary	32613009	10.3389/fmolb.2020.00110	Interactions by Disorder - A Matter of Context.	2020	ligand_induced	allosteric	false
+O16305	europepmc_primary	26689644	10.1016/j.ibmb.2015.12.001	Protein kinase C modulates transcriptional activation by the juvenile hormone receptor methoprene-tolerant.	2016	other_or_unclear		false
+O16305	europepmc_primary	36445310	10.1039/d2cc04825f	Myofibroblast specific targeting approaches to improve fibrosis treatment.	2022	other_or_unclear		false
+O16305	europepmc_primary	26912658	10.1074/jbc.m115.693762	Identification of the Isoform-specific Interactions between the Tail and the Head of Class V Myosin.	2016	other_or_unclear		false
+O16305	europepmc_primary	31277491	10.3390/ijms20133292	Conceptual Evolution of Cell Signaling.	2019	other_or_unclear		false
+O16305	europepmc_primary	28527238	10.7554/elife.26111	A widespread family of serine/threonine protein phosphatases shares a common regulatory switch with proteasomal proteases.	2017	other_or_unclear		false
+O16305	europepmc_primary	33401992	10.1098/rsob.200346	Bringing the Ca<sup>2+</sup> sensitivity of myristoylated recoverin into the physiological range.	2021	other_or_unclear		false
+O16305	europepmc_primary	33176563	10.1146/annurev-physiol-030220-113038	Ion Channel Function and Electrical Excitability in the Zona Glomerulosa: A Network Perspective on Aldosterone Regulation.	2021	other_or_unclear		false
+O16305	europepmc_primary	37709905	10.1038/s42003-023-05275-2	The effects of maternal care on the developmental transcriptome and metatranscriptome of a wild bee.	2023	other_or_unclear		false
+O16305	europepmc_primary	42233341	10.1093/toxsci/kfag067	Airborne contaminant exposure and bone development: a systematic review and meta-analysis.	2026	other_or_unclear		false
+O16305	europepmc_primary	15050827	10.1016/j.jmb.2004.02.034	A 3-D reconstruction of smooth muscle alpha-actinin by CryoEm reveals two different conformations at the actin-binding region.	2004	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	33244652	10.1007/s11357-020-00295-w	Towards resolving the enigma of the dichotomy of resveratrol: cis- and trans-resveratrol have opposite effects on TyrRS-regulated PARP1 activation.	2021	other_or_unclear		false
+O16305	europepmc_primary	33420412	10.1038/s41583-020-00415-7	Neurexins: molecular codes for shaping neuronal synapses.	2021	other_or_unclear		false
+O16305	europepmc_primary	22902181	10.1016/j.tcm.2012.07.007	p63RhoGEF: a new switch for G(q)-mediated activation of smooth muscle.	2012	other_or_unclear		false
+O16305	europepmc_primary	15779900	10.1021/bi0474113	Structural uncoupling between opposing domains of oxidized calmodulin underlies the enhanced binding affinity and inhibition of the plasma membrane Ca-ATPase.	2005	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	31900357	10.1073/pnas.1913349117	The rhizobial autotransporter determines the symbiotic nitrogen fixation activity of <i>Lotus japonicus</i> in a host-specific manner.	2020	other_or_unclear		false
+O16305	europepmc_primary	28895797	10.1080/10937404.2017.1370083	Neuroendocrine disruption of organizational and activational hormone programming in poikilothermic vertebrates.	2017	other_or_unclear		false
+O16305	europepmc_primary	32450965	10.1016/bs.ctdb.2020.01.002	The notochord gene regulatory network in chordate evolution: Conservation and divergence from Ciona to vertebrates.	2020	other_or_unclear		false
+O16305	europepmc_primary	17942116	10.1016/j.jmb.2007.09.048	A 1.3-A structure of zinc-bound N-terminal domain of calmodulin elucidates potential early ion-binding step.	2007	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	28431243	10.1016/j.cell.2017.03.048	Cryo-EM Structure of the Open Human Ether-à-go-go-Related K<sup>+</sup> Channel hERG.	2017	other_or_unclear		false
+O16305	europepmc_primary	31139190	10.3389/fimmu.2019.01068	L-selectin: A Major Regulator of Leukocyte Adhesion, Migration and Signaling.	2019	other_or_unclear		false
+O16305	europepmc_primary	30021165	10.1016/j.celrep.2018.06.071	Regulation of KIF1A-Driven Dense Core Vesicle Transport: Ca<sup>2+</sup>/CaM Controls DCV Binding and Liprin-α/TANC2 Recruits DCVs to Postsynaptic Sites.	2018	other_or_unclear		false
+O16305	europepmc_primary	26929345	10.1073/pnas.1524629113	Cyclic nucleotide-gated channel 18 is an essential Ca2+ channel in pollen tube tips for pollen tube guidance to ovules in Arabidopsis.	2016	domain_swapping	domain[- ]swapp	false
+O16305	europepmc_primary	30096758	10.3390/ijms19082319	Pin1 Modulation in Physiological Status and Neurodegeneration. Any Contribution to the Pathogenesis of Type 3 Diabetes?	2018	other_or_unclear		false
+O16305	europepmc_primary	20923661	10.1016/j.bpj.2010.07.044	Activation of the edema factor of Bacillus anthracis by calmodulin: evidence of an interplay between the EF-calmodulin interaction and calcium binding.	2010	other_or_unclear		false
+O16305	europepmc_primary	35006676	10.1021/acssensors.1c02239	Engineering a Fluorescent Protein Color Switch Using Entropy-Driven β-Strand Exchange.	2022	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O16305	europepmc_primary	22331908	10.1073/pnas.1114748109	Crystallographic basis for calcium regulation of sodium channels.	2012	other_or_unclear		false
+O16305	europepmc_primary	19812323	10.1523/jneurosci.2583-09.2009	Vestibular asymmetry as the cause of idiopathic scoliosis: a possible answer from Xenopus.	2009	other_or_unclear		false
+O16305	europepmc_primary	36471254	10.1186/s12864-022-09029-y	Comparative transcriptome and miRNA analysis of skin pigmentation during embryonic development of Chinese soft-shelled turtle (Pelodiscus sinensis).	2022	other_or_unclear		false
+O16305	europepmc_primary	23354415	10.4161/sgtp.23310	The Rac1 hypervariable region in targeting and signaling: a tail of many stories.	2013	other_or_unclear		false
+O16305	europepmc_primary	26464624		Gene expression of IQGAPs and Ras families in an experimental mouse model for hepatocellular carcinoma: a mechanistic study of cancer progression.	2015	other_or_unclear		false
+O16305	europepmc_primary	29674673	10.1038/s41598-018-24645-z	Proteomics Studies on the three Larval Stages of Development and Metamorphosis of Babylonia areolata.	2018	other_or_unclear		false
+O16305	europepmc_primary	24737326	10.1074/jbc.m114.564005	Architecture of the nitric-oxide synthase holoenzyme reveals large conformational changes and a calmodulin-driven release of the FMN domain.	2014	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O16305	europepmc_primary	36829880	10.3390/antiox12020321	NO and Heme Proteins: Cross-Talk between Heme and Cysteine Residues.	2023	other_or_unclear		false
+O16305	europepmc_primary	30899213	10.3389/fnmol.2019.00050	Evolutionary-Conserved Allosteric Properties of Three Neuronal Calcium Sensor Proteins.	2019	ligand_induced	allosteric	false
+O16305	europepmc_primary	38603542	10.1371/journal.pbio.3002572	Molecular circadian rhythms are robust in marine annelids lacking rhythmic behavior.	2024	other_or_unclear		false
+O16305	europepmc_primary	21764850	10.1101/gad.2080411	Nitric oxide directly regulates gene expression during Drosophila development: need some gas to drive into metamorphosis?	2011	other_or_unclear		false
+O16305	europepmc_primary	31268628	10.1002/2211-5463.12695	Effects of acidification on the proteome during early development of Babylonia areolata.	2019	other_or_unclear		false
+O16305	europepmc_primary	23480151	10.1111/ane.12099	AMPA receptors as a molecular target in epilepsy therapy.	2013	other_or_unclear		false
+O16305	europepmc_primary	25330732	10.1186/s12870-014-0271-x	Identification and characterization of cold-responsive microRNAs in tea plant (Camellia sinensis) and their targets using high-throughput sequencing and degradome analysis.	2014	other_or_unclear		false
+O16305	europepmc_primary	32508013	10.1002/ctm2.13	NLRP3 inflammasome, an immune-inflammatory target in pathogenesis and treatment of cardiovascular diseases.	2020	other_or_unclear		false
+O16305	europepmc_primary	15157088	10.1021/bi0497852	Ab initio study of NMR 15N chemical shift differences induced by Ca2+ binding to EF-hand proteins.	2004	local_conformational_change	conformational switch	false
+O16305	europepmc_primary	36979385	10.3390/biom13030450	Actin Bundles Dynamics and Architecture.	2023	other_or_unclear		false
+O16305	europepmc_primary	26991433	10.1371/journal.pone.0151547	Ca-Dependent Folding of Human Calumenin.	2016	other_or_unclear		false
+O16305	europepmc_primary	25822458	10.1371/journal.pone.0121782	Characterization of calmodulin-free murine inducible nitric-oxide synthase.	2015	other_or_unclear		false
+O16305	europepmc_primary	27818176	10.1016/j.cub.2016.09.054	A Putative Biochemical Engram of Long-Term Memory.	2016	other_or_unclear		false
+O16305	europepmc_primary	35646001	10.3389/fpls.2022.866409	Thermo-Priming Mediated Cellular Networks for Abiotic Stress Management in Plants.	2022	other_or_unclear		false
+O16305	europepmc_primary	28679697	10.1242/jcs.196154	Spectraplakin family proteins - cytoskeletal crosslinkers with versatile roles.	2017	other_or_unclear		false
+O16305	europepmc_primary	21220423	10.1074/jbc.m110.187179	Cooperativeness of Orai cytosolic domains tunes subtype-specific gating.	2011	other_or_unclear		false
+O67024	europepmc_primary	41226413	10.3390/ijms262110375	Moonlighting Proteins: Some Hypotheses on the Structural Origin of Their Multifunctionality.	2025	fold_switching	fold[- ]switch	false
+O67024	europepmc_primary	39452701	10.3390/pathogens13100829	Modular Polymerase Synthesis and Internal Protein Domain Swapping via Dual Opposed Frameshifts in the Ebola Virus L Gene.	2024	domain_swapping	domain[- ]swapp	false
+O67024	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+O67024	europepmc_primary	40476714	10.1128/jb.00090-25	&lt;i&gt;Fusobacterium nucleatum&lt;/i&gt;: strategies for adapting to aerobic stress.	2025	other_or_unclear		false
+O67024	europepmc_primary	42707516	10.1155/ijm/5341732	Peptidoglycan as a Bioactive Functional Dietary Supplement Enhances Growth, Improves Nutrient Digestion, Increases Cellular Energy Allocation, and Activates Viral Resistance of Juvenile &lt;i&gt;Penaeus monodon&lt;/i&gt;.	2026	other_or_unclear		false
+O67024	europepmc_primary	41963976	10.1186/s12964-026-02869-1	AlphaFold3-based modeling uncovers the dynamic structural interface between full-length IAP antagonists and DIAP1 for apoptosis regulation in Drosophila.	2026	ligand_induced	allosteric	false
+O67024	europepmc_primary	40273505	10.1016/j.mam.2025.101362	Frustration in physiology and molecular medicine.	2025	other_or_unclear		false
+O67024	europepmc_primary	38192350	10.1007/s12551-023-01172-4	Agglomeration: when folded proteins clump together.	2023	other_or_unclear		false
+O67024	europepmc_primary	37372003	10.3390/antiox12061273	The Arsenal of <i>Leptospira</i> Species against Oxidants.	2023	other_or_unclear		false
+O67024	europepmc_primary	32510464	10.1107/s2053230x20006147	Crystal structures of the GH18 domain of the bifunctional peroxiredoxin-chitinase CotE from Clostridium difficile.	2020	other_or_unclear		false
+O67024	europepmc_primary	32751110	10.3390/molecules25153440	Moonlighting Proteins in the Fuzzy Logic of Cellular Metabolism.	2020	other_or_unclear		false
+O67024	europepmc_primary	41515949	10.3390/ijms27010069	Neurovascular Signaling at the Gliovascular Interface: From Flow Regulation to Cognitive Energy Coupling.	2025	other_or_unclear		false
+O67024	europepmc_primary	42684666	10.1007/s40259-026-00798-6	Targeting MYC-Driven Cancers: From Oncogenic Addiction to Therapeutic Vulnerability.	2026	other_or_unclear		false
+O67024	europepmc_primary	37362943	10.3389/fmicb.2023.1148750	White-rot fungi scavenge reactive oxygen species, which drives pH-dependent exo-enzymatic mechanisms and promotes CO<sub>2</sub> efflux.	2023	other_or_unclear		false
+O67024	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+O67024	europepmc_primary	36389847	10.3389/fimmu.2022.1037739	Comparative transcriptomics reveals the immune dynamics during the molting cycle of swimming crab <i>Portunus trituberculatus</i>.	2022	other_or_unclear		false
+O67024	europepmc_primary	34405992	10.1021/acs.chemrev.1c00308	Protein Assembly by Design.	2021	other_or_unclear		false
+O67024	europepmc_primary	42599123	10.1111/ppl.71069	Hydrogen Peroxide in Cereal Crops Under Abiotic Stress: Mechanistic Modules, Evidence Tiers, and Translational Opportunities.	2026	other_or_unclear		false
+O67024	europepmc_primary	42517695	10.1080/21505594.2026.2697095	Pathogenicity and virulence of &lt;i&gt;Streptococcus suis&lt;/i&gt; serotype 2: Emerging insights and persistent knowledge gaps.	2026	other_or_unclear		false
+O67024	europepmc_primary	40613862	10.1093/mtomcs/mfaf023	The iron metalloproteome of Pseudomonas aeruginosa under oxic and anoxic conditions.	2025	other_or_unclear		false
+O67024	europepmc_primary	41096544	10.3390/ijms26199272	Hypoxia and Tissue Regeneration: Adaptive Mechanisms and Therapeutic Opportunities.	2025	other_or_unclear		false
+O67024	europepmc_primary	26138759	10.1111/pce.12596	Physiological relevance of plant 2-Cys peroxiredoxin overoxidation level and oligomerization status.	2016	local_conformational_change	conformational switch	false
+O67024	europepmc_primary	36937252	10.3389/fmicb.2023.1138016	Progress on innate immune evasion and live attenuated vaccine of pseudorabies virus.	2023	other_or_unclear		false
+O67024	europepmc_primary	26335718	10.1128/mmbr.00036-15	Circadian Rhythms in Cyanobacteria.	2015	other_or_unclear		false
+O67024	europepmc_primary	39091297	10.3389/fmicb.2024.1434987	Bioenzymatic detoxification of mycotoxins.	2024	other_or_unclear		false
+O67024	europepmc_primary	33411522	10.1021/acs.bioconjchem.0c00621	Taking Advantage of the Morpheein Behavior of Peroxiredoxin in Bionanotechnology.	2021	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O67024	europepmc_primary	27314339	10.3390/ijms17060924	Comprehensive and Quantitative Proteomic Analysis of Metamorphosis-Related Proteins in the Veined Rapa Whelk, Rapana venosa.	2016	other_or_unclear		false
+O67024	europepmc_primary	39912667	10.1128/jvi.01471-24	Conformational activation and disulfide exchange in HIV-1 Env induce cell-free lytic/fusogenic transformation and enhance infection.	2025	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O67024	europepmc_primary	25728364	10.1039/c4mb00703d	Reversible redox modifications in the microglial proteome challenged by beta amyloid.	2015	other_or_unclear		false
+O67024	europepmc_primary	40212872	10.3389/fpls.2025.1550131	Impact of methyl Jasmonate on blueberry ripening fruits: assessment of cell wall thermal stability, nutritional parameters and antioxidant enzymatic activity.	2025	other_or_unclear		false
+O67024	europepmc_primary	23454209	10.1016/j.febslet.2013.02.024	Regulated unfolding of proteins in signaling.	2013	other_or_unclear		false
+O67024	europepmc_primary	37046846	10.3390/cancers15072186	Targeting of Tetraspanin CD81 with Monoclonal Antibodies and Small Molecules to Combat Cancers and Viral Diseases.	2023	other_or_unclear		false
+O67024	europepmc_primary	42167575	10.1016/j.jbc.2026.113174	Higher-order structural organization of mitochondrial metabolism.	2026	other_or_unclear		false
+O67024	europepmc_primary	33505379	10.3389/fmicb.2020.613532	CopR, a Global Regulator of Transcription to Maintain Copper Homeostasis in <i>Pyrococcus furiosus</i>.	2020	other_or_unclear		false
+O67024	europepmc_primary	31877355	10.1016/j.freeradbiomed.2019.12.027	Non-redox cycling mechanisms of oxidative stress induced by PM metals.	2020	other_or_unclear		false
+O67024	europepmc_primary	18588855	10.1016/j.bbrc.2008.06.051	Reversible conformational switch revealed by the redox structures of Bacillus subtilis thiol peroxidase.	2008	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+O67024	europepmc_primary	31268628	10.1002/2211-5463.12695	Effects of acidification on the proteome during early development of Babylonia areolata.	2019	other_or_unclear		false
+O67024	europepmc_primary	34206124	10.3390/molecules26113338	Biosynthetic Strategies for Macrocyclic Peptides.	2021	other_or_unclear		false
+O67024	europepmc_primary	34947954	10.3390/life11121424	Pillars and Gaps of S-Nitrosylation-Dependent Epigenetic Regulation in Physiology and Cancer.	2021	other_or_unclear		false
+O67024	europepmc_primary	30443180	10.7150/ijms.27426	Pin1 Is Involved in HDAC6-mediated Cancer Cell Motility.	2018	other_or_unclear		false
+O67024	europepmc_primary	33021995	10.1371/journal.ppat.1008904	The transcriptional response of pathogenic Leptospira to peroxide reveals new defenses against infection-related oxidative stress.	2020	other_or_unclear		false
+O67024	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+O67024	europepmc_primary	22924508	10.4155/fmc.12.110	Current understanding of LRRK2 in Parkinson's disease: biochemical and structural features and inhibitor design.	2012	other_or_unclear		false
+O67024	europepmc_primary	23022727	10.1038/nsmb.2388	Structure of a topoisomerase II-DNA-nucleotide complex reveals a new control mechanism for ATPase activity.	2012	domain_swapping	domain[- ]swapp	false
+O67024	europepmc_primary	33875586	10.1073/pnas.2015689118	Heme-binding protein CYB5D1 is a radial spoke component required for coordinated ciliary beating.	2021	other_or_unclear		false
+O67024	europepmc_primary	23382692	10.1371/journal.pgen.1003230	HIF- and non-HIF-regulated hypoxic responses require the estrogen-related receptor in Drosophila melanogaster.	2013	other_or_unclear		false
+O67024	europepmc_primary	22646746	10.1186/1471-2164-13-209	Transcriptome profiling of the demosponge Amphimedon queenslandica reveals genome-wide events that accompany major life cycle transitions.	2012	other_or_unclear		false
+O67024	europepmc_primary	25805991	10.3389/fphar.2015.00001	Potential role of glutathione in evolution of thiol-based redox signaling sites in proteins.	2015	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O67024	europepmc_primary	31685660	10.1074/jbc.ra119.010917	Regulation of plant ER oxidoreductin 1 (ERO1) activity for efficient oxidative protein folding.	2019	other_or_unclear		false
+O67024	europepmc_primary	12707277	10.1074/jbc.m301526200	Tryparedoxins from Crithidia fasciculata and Trypanosoma brucei: photoreduction of the redox disulfide using synchrotron radiation and evidence for a conformational switch implicated in function.	2003	local_conformational_change	conformational switch	false
+O67024	europepmc_primary	33962851	10.1016/j.tcb.2021.04.002	REV7: Jack of many trades.	2021	other_or_unclear		false
+O67024	europepmc_primary	22928053	10.1371/journal.pntd.0001781	The crystal structures of the tryparedoxin-tryparedoxin peroxidase couple unveil the structural determinants of Leishmania detoxification pathway.	2012	domain_swapping	domain[- ]swapp;swapped dimer	false
+O67024	europepmc_primary	27892488	10.1038/srep37610	Transition steps in peroxide reduction and a molecular switch for peroxide robustness of prokaryotic peroxiredoxins.	2016	other_or_unclear		false
+O67024	europepmc_primary	35646001	10.3389/fpls.2022.866409	Thermo-Priming Mediated Cellular Networks for Abiotic Stress Management in Plants.	2022	other_or_unclear		false
+O67024	europepmc_primary	36015421	10.3390/plants11162118	Relationships within <i>Mcneillia</i> Indicate a Complex Evolutionary History and Reveal a New Species of <i>Minuartiella</i> (Caryophyllaceae, Alsinoideae).	2022	other_or_unclear		false
+O67024	europepmc_primary	36829880	10.3390/antiox12020321	NO and Heme Proteins: Cross-Talk between Heme and Cysteine Residues.	2023	other_or_unclear		false
+O67024	europepmc_primary	33981723	10.3389/fmolb.2021.656440	Regulation of Dynamic Protein S-Acylation.	2021	other_or_unclear		false
+O67024	europepmc_primary	32993483	10.1186/s12864-020-07066-z	Proteome of larval metamorphosis induced by epinephrine in the Fujian oyster Crassostrea angulata.	2020	other_or_unclear		false
+O67024	europepmc_primary	31827713	10.1155/2019/9613090	Role of Catalase in Oxidative Stress- and Age-Associated Degenerative Diseases.	2019	other_or_unclear		false
+O67024	europepmc_primary	26442846	10.1146/annurev-genet-111212-133227	Giving Time Purpose: The Synechococcus elongatus Clock in a Broader Network Context.	2015	other_or_unclear		false
+O67024	europepmc_primary	29263924	10.1038/sigtrans.2017.36	Redox regulation in tumor cell epithelial-mesenchymal transition: molecular basis and therapeutic strategy.	2017	other_or_unclear		false
+O67024	europepmc_primary	24117400	10.1021/cb400067g	Structural basis of the promiscuous inhibitor susceptibility of Escherichia coli LpxC.	2014	local_conformational_change	conformational switch	false
+O67024	europepmc_primary	28044432	10.1002/pmic.201600391	From structure to redox: The diverse functional roles of disulfides and implications in disease.	2017	other_or_unclear		false
+O67024	europepmc_primary	21458983	10.1016/j.sbi.2011.03.007	Topological variation in the evolution of new reactions in functionally diverse enzyme superfamilies.	2011	other_or_unclear		false
+O67024	europepmc_primary	23704993	10.1371/journal.pone.0064534	Integrative study of physiological changes associated with bacterial infection in Pacific oyster larvae.	2013	other_or_unclear		false
+O67024	europepmc_primary	26111016	10.1371/journal.pone.0130500	A de novo Assembly of the Common Frog (Rana temporaria) Transcriptome and Comparison of Transcription Following Exposure to Ranavirus and Batrachochytrium dendrobatidis.	2015	other_or_unclear		false
+O67024	europepmc_primary	23981317	10.1186/1471-2164-14-576	Genes involved in thoracic exoskeleton formation during the pupal-to-adult molt in a social insect model, Apis mellifera.	2013	other_or_unclear		false
+O67024	europepmc_primary	35832233	10.3389/fpls.2022.934523	Genome-Wide Expression Analysis of Glyoxalase I Genes Under Hyperosmotic Stress and Existence of a Stress-Responsive Mitochondrial Glyoxalase I Activity in Durum Wheat (<i>Triticum durum</i> Desf.).	2022	other_or_unclear		false
+O67024	europepmc_primary	21888661	10.1186/1477-5956-9-51	Differential expression of proteins and phosphoproteins during larval metamorphosis of the polychaete Capitella sp. I.	2011	other_or_unclear		false
+O67024	europepmc_primary	21194355	10.1089/ars.2010.3657	Peroxiredoxins in plants and cyanobacteria.	2011	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O67024	europepmc_primary	20181226	10.1186/1478-811x-8-2	Signal transduction, receptors, mediators and genes: younger than ever - the 13th meeting of the Signal Transduction Society focused on aging and immunology.	2010	other_or_unclear		false
+O67024	europepmc_primary	23828546	10.1093/jxb/ert184	The conformational bases for the two functionalities of 2-cysteine peroxiredoxins as peroxidase and chaperone.	2013	other_or_unclear		false
+O67024	europepmc_primary	22090031	10.1074/jbc.m111.303149	Human protein-disulfide isomerase is a redox-regulated chaperone activated by oxidation of domain a'.	2012	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+O67024	europepmc_primary	34855911	10.1371/journal.ppat.1009087	The oxidative stress response of pathogenic Leptospira is controlled by two peroxide stress regulators which putatively cooperate in controlling virulence.	2021	other_or_unclear		false
+O67024	europepmc_primary	28106994	10.1021/acs.chemrev.6b00571	Enzymatic Halogenation and Dehalogenation Reactions: Pervasive and Mechanistically Diverse.	2017	other_or_unclear		false
+O67024	europepmc_primary	24323642	10.1007/s13402-013-0164-2	Loss of NF2/Merlin expression in advanced sporadic colorectal cancer.	2014	other_or_unclear		false
+O67024	europepmc_primary	21595565	10.1089/ars.2011.4029	Protein S-glutathionylation in malaria parasites.	2011	other_or_unclear		false
+O67024	europepmc_primary	29162903	10.1038/s41598-017-16240-5	The LATERAL ORGAN BOUNDARIES Domain gene family in grapevine: genome-wide characterization and expression analyses during developmental processes and stress responses.	2017	other_or_unclear		false
+O67024	europepmc_primary	15121853	10.1128/mcb.24.10.4341-4350.2004	Groucho oligomerization is required for repression in vivo.	2004	other_or_unclear		false
+O67024	europepmc_primary	25757467	10.1186/s12864-015-1320-z	Transcriptome profiling of the dynamic life cycle of the scypohozoan jellyfish Aurelia aurita.	2015	other_or_unclear		false
+O67024	europepmc_primary	20203057	10.1093/dnares/dsq004	Genomic structure of an economically important cyanobacterium, Arthrospira (Spirulina) platensis NIES-39.	2010	other_or_unclear		false
+O67024	europepmc_primary	26932781	10.1038/srep22388	Pharmacoproteomic analysis reveals that metapristone (RU486 metabolite) intervenes E-cadherin and vimentin to realize cancer metastasis chemoprevention.	2016	other_or_unclear		false
+O67024	europepmc_primary	29666285	10.1128/mbio.00528-18	Type II Secretion-Dependent Aminopeptidase LapA and Acyltransferase PlaC Are Redundant for Nutrient Acquisition during &lt;i&gt;Legionella pneumophila&lt;/i&gt; Intracellular Infection of Amoebas.	2018	other_or_unclear		false
+O67024	europepmc_primary	25033462	10.1371/journal.pntd.0003005	Transcriptome sequencing and developmental regulation of gene expression in Anopheles aquasalis.	2014	other_or_unclear		false
+O67024	europepmc_primary			Talks	2025	other_or_unclear		false
+O67024	europepmc_primary	10373555	10.1128/mcb.19.7.5061	Domain swapping used to investigate the mechanism of protein kinase B regulation by 3-phosphoinositide-dependent protein kinase 1 and Ser473 kinase.	1999	domain_swapping	domain[- ]swapp	false
+O67024	europepmc_primary	33724179	10.7554/elife.57843	Increased longevity due to sexual activity in mole-rats is associated with transcriptional changes in the HPA stress axis.	2021	other_or_unclear		false
+O67024	europepmc_primary	22408727	10.1002/ece3.67	Ericoid mycorrhizal root fungi and their multicopper oxidases from a temperate forest shrub.	2012	other_or_unclear		false
+O67024	europepmc_primary	21619484	10.1089/ars.2011.3888	Identification of a redox-modulatory interaction between uncoupling protein 3 and thioredoxin 2 in the mitochondrial intermembrane space.	2011	other_or_unclear		false
+O67024	europepmc_primary			Subject Index	2005	other_or_unclear		false
+O67024	europepmc_primary	16611982	10.1128/mcb.26.9.3378-3389.2006	Cdc37 interacts with the glycine-rich loop of Hsp90 client kinases.	2006	other_or_unclear		false
+O67024	europepmc_primary			20th IUPAB International Congress, 45th SBBf Congress and 50th Annual Meeting of SBBq : Poster Abstracts	2021	other_or_unclear		false
+O67024	europepmc_primary	26452528	10.1002/pro.2823	The 29(th) Annual Symposium of the Protein Society, Barcelona, Spain, July 22-25, 2015.	2015	other_or_unclear		false
+O67024	europepmc_primary	39535501	10.1021/acs.chemrev.4c00293	Molecular Spies in Action: Genetically Encoded Fluorescent Biosensors Light up Cellular Signals.	2024	other_or_unclear		false
+O67024	europepmc_primary	18332220	10.1083/jcb.200708043	"Inhibition of ""self"" engulfment through deactivation of myosin-II at the phagocytic synapse between human cells."	2008	other_or_unclear		false
+O67024	europepmc_primary	22065994	10.1371/journal.pone.0026411	Differential gene expression at coral settlement and metamorphosis--a subtractive hybridization study.	2011	other_or_unclear		false
+O67024	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+O67024	europepmc_primary	33291646	10.3390/polym12122909	Proteasome Biology: Chemistry and Bioengineering Insights.	2020	other_or_unclear		false
+O67024	europepmc_primary	14688414	10.1155/s1110724303209232	Proteomics in Vaccinology and Immunobiology: An Informatics Perspective of the Immunone.	2003	other_or_unclear		false
+O67024	europepmc_primary			Master Subject Index	2004	other_or_unclear		false
+O67024	europepmc_primary			The 26th Annual Symposium of The Protein Society: Abstracts	2012	other_or_unclear		false
+O67024	europepmc_primary			Posters	2024	other_or_unclear		false
+O67024	europepmc_primary			Abstracts of the Fifth International Symposium on Molecular Insect Science : May 20–24, 2006, Tucson, Arizona USA, Organizing Committee	2006	other_or_unclear		false
+O67024	europepmc_primary	25043257	10.1002/pro.2504	Abstracts of the 28th Annual Symposium of The Protein Society, July 27-30, 2014, San Diego, CA, USA.	2014	other_or_unclear		false
+O67024	europepmc_primary	14959886	10.1002/psc.488	An unsaturated peptidomimetic assembly derived from a carbohydrate.	2004	other_or_unclear		false
+O67024	europepmc_primary			Abstractbook of the Joint Conference 2017 of the DGHM & VAAM: Microbiology and Infection	2017	other_or_unclear		false
+O67024	europepmc_primary			Abstracts	2017	other_or_unclear		false
+O67024	europepmc_primary			Master Author Index	2004	other_or_unclear		false
+O67024	europepmc_primary			Poster Presentations	2011	other_or_unclear		false
+O67024	europepmc_primary			Poster Presentation Abstracts P121–P297	2004	other_or_unclear		false
+O67024	europepmc_primary			Poster Sessions	2014	other_or_unclear		false
+P02829	europepmc_primary	29662162	10.1038/s41467-018-03946-x	A switch point in the molecular chaperone Hsp90 responding to client interaction.	2018	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P06787	europepmc_primary	40990820	10.1002/prot.70050	Iterative Modeling via Structural Diffusion (IMSD): Exploring Fold-Switching Pathways in Metamorphic Proteins Using AlphaFold2-Based Generative Diffusion Model UFConf.	2026	fold_switching	fold[- ]switch;metamorphic protein	false
+P06787	europepmc_primary	41954434	10.1002/pro.70564	ConforFold recovers alternative protein conformations beyond MSA subsampling.	2026	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P06787	europepmc_primary	42458866	10.1002/ardp.70299	Mutation-Induced Pocket Deactivation: How Ser353/Pro245 Alters K&lt;sub&gt;Ca&lt;/sub&gt;2.2 vs. K&lt;sub&gt;Ca&lt;/sub&gt;3.1 Ligand Selectivity.	2026	other_or_unclear		false
+P06787	europepmc_primary		10.1101/2025.06.30.662482	Ser500 phosphorylation acts as a conformational switch to prime eEF-2K for activation	2025	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P06787	europepmc_primary	42413490	10.1016/j.molcel.2026.06.028	Cryo-EM structure of soluble VPS13C suggests its regulation by a conformational switch and by calmodulin.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P06787	europepmc_primary	41006217	10.1038/s41467-025-63249-w	A domain-swapped CaMKII conformation facilitates linker-mediated allosteric regulation.	2025	domain_swapping	domain[- ]swapp;swapped dimer	false
+P06787	europepmc_primary	41443425	10.1016/j.jbc.2025.111087	Ser500 phosphorylation acts as a conformational switch to prime eEF-2K for activation.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P06787	europepmc_primary	39791310	10.1002/smll.202408141	Metamorphic Proteins to Achieve Conformationally Selective Material Surface Binding.	2025	fold_switching	metamorphic protein	false
+P06787	europepmc_primary	37774143	10.1002/pro.4790	In silico protein dynamics in the human cytoplasm: Partial folding, misfolding, fold switching, and non-native interactions.	2023	fold_switching	fold[- ]switch	false
+P06787	europepmc_primary	34537489	10.1016/j.sbi.2021.08.004	Design principles of protein switches.	2022	other_or_unclear		false
+P06787	europepmc_primary	42341170	10.1093/plphys/kiag413	The role of MLO in powdery mildew susceptibility depends on a combination of functional specialization and subcellular localization.	2026	domain_swapping	domain[- ]swapp	false
+P06787	europepmc_primary	42398099	10.1111/tpj.70986	Structure-informed engineering of plant-microbe interactions.	2026	domain_swapping	domain[- ]swapp	false
+P06787	europepmc_primary	39883844	10.1073/pnas.2411316122	Design of a light and Ca<sup>2+</sup> switchable organic-peptide hybrid.	2025	domain_swapping	domain[- ]swapp;swapped dimer	false
+P06787	europepmc_primary	42604037	10.1016/j.mrl.2026.200306	Going high-throughput: Dynamic conformations and interactions &lt;i&gt;in vivo&lt;/i&gt;.	2027	other_or_unclear		false
+P06787	europepmc_primary	42737965	10.3390/biology15171533	BA-ARAP-NMA: A Local Geometry Control Nonlinear Normal-Mode Analysis Method.	2026	other_or_unclear		false
+P06787	europepmc_primary	42113690	10.1080/19336950.2026.2672357	Transient receptor potential canonical (TRPC) channels in diabetes and associated complications.	2026	other_or_unclear		false
+P06787	europepmc_primary	41184130	10.1101/cshperspect.a041760	Developing Optogenetic Approaches to Study Ca&lt;sup&gt;2+&lt;/sup&gt; Signaling Processes.	2026	other_or_unclear		false
+P06787	europepmc_primary	42296421	10.1002/cbic.70419	A Constellation of Fluorescent Biosensors to Illuminate the Galaxy of Protein Kinases.	2026	other_or_unclear		false
+P06787	europepmc_primary	40470369	10.3389/fpls.2025.1586375	Recent advances in innovative strategies for plant disease resistance breeding.	2025	domain_swapping	domain[- ]swapp	false
+P06787	europepmc_primary	42307042	10.1002/ps.71019	De novo transcriptome meta-analysis reveals candidate genes involved in life-stage transitions for RNAi-mediated management of the citrus root weevil (Diaprepes abbreviatus).	2026	other_or_unclear		false
+P06787	europepmc_primary	41294816	10.3390/cells14221763	Calmodulin D133H Disrupts Ca&lt;sub&gt;v&lt;/sub&gt;1.2 and K&lt;sub&gt;v&lt;/sub&gt;7.1 Regulation to Prolong Cardiac Action Potentials in Long QT Syndrome.	2025	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P06787	europepmc_primary	34308370	10.1016/j.crstbi.2021.06.002	"""Protein"" no longer means what it used to."	2021	other_or_unclear		false
+P06787	europepmc_primary	41656275	10.1186/s13041-026-01279-1	Crosstalk of KCNH1 and KCNH5 gain-of-function mutations leading to epilepsy and neurodevelopmental disorders.	2026	other_or_unclear		false
+P06787	europepmc_primary	39627324	10.1038/s42003-024-07331-x	Site-specific incorporation of &lt;sup&gt;19&lt;/sup&gt;F-nulcei at protein C-terminus to probe allosteric conformational transitions of metalloproteins.	2024	ligand_induced	allosteric	false
+P06787	europepmc_primary	41053052	10.1038/s41419-025-08005-0	Stromal cells in normal colon and colon cancers: importance of thyroid hormone signaling.	2025	other_or_unclear		false
+P07363	europepmc_primary	41524594	10.1128/jb.00497-25	Functional characterization of the polar organizer protein FimV in &lt;i&gt;Pseudomonas putida&lt;/i&gt;.	2026	domain_swapping	domain[- ]swapp	false
+P07363	europepmc_primary	16104748	10.1021/ja051199o	Dynamic mechanism for the autophosphorylation of CheA histidine kinase: molecular dynamics simulations.	2005	local_conformational_change	conformational switch	false
+P07363	europepmc_primary	11244058	10.1128/jb.183.7.2204-2211.2001	Genetic evidence that the alpha5 helix of the receiver domain of PhoB is involved in interdomain interactions.	2001	domain_swapping	domain[- ]swapp	false
+P07363	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+P07900	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+P07900	europepmc_primary	39433125	10.1016/j.jbc.2024.107907	Targeting chaperone modifications: Innovative approaches to cancer treatment.	2024	other_or_unclear		false
+P07900	europepmc_primary	35643212	10.1016/j.biochi.2022.05.016	Binding of SARS-CoV-2 protein ORF9b to mitochondrial translocase TOM70 prevents its interaction with chaperone HSP90.	2022	other_or_unclear		false
+P07900	europepmc_primary	29481571	10.1371/journal.pone.0191264	17-AAG inhibits vemurafenib-associated MAP kinase activation and is synergistic with cellular immunotherapy in a murine melanoma model.	2018	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P07900	europepmc_primary	39414766	10.1038/s41467-024-53178-5	Phosphorylation-driven epichaperome assembly is a regulator of cellular adaptability and proliferation.	2024	other_or_unclear		false
+P07900	europepmc_primary	21888661	10.1186/1477-5956-9-51	Differential expression of proteins and phosphoproteins during larval metamorphosis of the polychaete Capitella sp. I.	2011	other_or_unclear		false
+P08238	europepmc_primary	39414766	10.1038/s41467-024-53178-5	Phosphorylation-driven epichaperome assembly is a regulator of cellular adaptability and proliferation.	2024	other_or_unclear		false
+P08238	europepmc_primary	29662162	10.1038/s41467-018-03946-x	A switch point in the molecular chaperone Hsp90 responding to client interaction.	2018	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P08238	europepmc_primary	29481571	10.1371/journal.pone.0191264	17-AAG inhibits vemurafenib-associated MAP kinase activation and is synergistic with cellular immunotherapy in a murine melanoma model.	2018	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P0A251	europepmc_primary	37046846	10.3390/cancers15072186	Targeting of Tetraspanin CD81 with Monoclonal Antibodies and Small Molecules to Combat Cancers and Viral Diseases.	2023	other_or_unclear		false
+P0A251	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+P0A251	europepmc_primary			Posters	2021	other_or_unclear		false
+P0A6Z3	europepmc_primary	29662162	10.1038/s41467-018-03946-x	A switch point in the molecular chaperone Hsp90 responding to client interaction.	2018	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P0AES6	europepmc_primary	39076798	10.1098/rsos.240088	Characterization of viable but nonculturable state of <i>Campylobacter concisus</i>.	2024	other_or_unclear		false
+P0AES6	europepmc_primary	35847063	10.3389/fmicb.2022.889788	Potential of Meta-Omics to Provide Modern Microbial Indicators for Monitoring Soil Quality and Securing Food Production.	2022	other_or_unclear		false
+P0AES6	europepmc_primary	30982891	10.1093/molbev/msz086	High-Order Epistasis in Catalytic Power of Dihydrofolate Reductase Gives Rise to a Rugged Fitness Landscape in the Presence of Trimethoprim Selection.	2019	other_or_unclear		false
+P0AES6	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+P0DH95	europepmc_primary	37384728	10.1371/journal.pone.0287858	Metamorphic gene regulation programs in Xenopus tropicalis tadpole brain.	2023	other_or_unclear		false
+P0DH95	europepmc_primary	38963838	10.1126/science.adk8946	Unsupervised evolution of protein and antibody complexes with a structure-informed language model.	2024	other_or_unclear		false
+P0DH95	europepmc_primary	28265091	10.1073/pnas.1612422114	Conserved forkhead dimerization motif controls DNA replication timing and spatial organization of chromosomes in <i>S. cerevisiae</i>.	2017	domain_swapping	domain[- ]swapp;swapped dimer	false
+P0DH95	europepmc_primary	33778000	10.3389/fmolb.2020.620554	Influence of Disease-Causing Mutations on Protein Structural Networks.	2020	other_or_unclear		false
+P0DH95	europepmc_primary	31897233	10.7150/jca.31640	TRPV6 as A Target for Cancer Therapy.	2020	other_or_unclear		false
+P0DH95	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+P0DH95	europepmc_primary	31068617	10.1038/s41598-019-42898-0	Calcium binding to a disordered domain of a type III-secreted protein from a coral pathogen promotes secondary structure formation and catalytic activity.	2019	other_or_unclear		false
+P0DH95	europepmc_primary	34800372	10.1016/j.str.2021.10.011	An engineered construct of cFLIP provides insight into DED1 structure and interactions.	2022	other_or_unclear		false
+P0DH95	europepmc_primary	32993483	10.1186/s12864-020-07066-z	Proteome of larval metamorphosis induced by epinephrine in the Fujian oyster Crassostrea angulata.	2020	other_or_unclear		false
+P0DH95	europepmc_primary			Abstracts : Part II	1995	other_or_unclear		false
+P0DP23	europepmc_primary	42413490	10.1016/j.molcel.2026.06.028	Cryo-EM structure of soluble VPS13C suggests its regulation by a conformational switch and by calmodulin.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	true
+P0DP23	europepmc_primary	37384728	10.1371/journal.pone.0287858	Metamorphic gene regulation programs in Xenopus tropicalis tadpole brain.	2023	other_or_unclear		false
+P0DP23	europepmc_primary	33825708	10.1107/s2059798321001078	Guest-protein incorporation into solvent channels of a protein host crystal (hostal).	2021	domain_swapping	domain[- ]swapp	false
+P0DP23	europepmc_primary	38963838	10.1126/science.adk8946	Unsupervised evolution of protein and antibody complexes with a structure-informed language model.	2024	other_or_unclear		false
+P0DP23	europepmc_primary	28265091	10.1073/pnas.1612422114	Conserved forkhead dimerization motif controls DNA replication timing and spatial organization of chromosomes in <i>S. cerevisiae</i>.	2017	domain_swapping	domain[- ]swapp;swapped dimer	false
+P0DP23	europepmc_primary	33778000	10.3389/fmolb.2020.620554	Influence of Disease-Causing Mutations on Protein Structural Networks.	2020	other_or_unclear		false
+P0DP23	europepmc_primary	31897233	10.7150/jca.31640	TRPV6 as A Target for Cancer Therapy.	2020	other_or_unclear		false
+P0DP23	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+P0DP23	europepmc_primary	31068617	10.1038/s41598-019-42898-0	Calcium binding to a disordered domain of a type III-secreted protein from a coral pathogen promotes secondary structure formation and catalytic activity.	2019	other_or_unclear		false
+P0DP23	europepmc_primary	34800372	10.1016/j.str.2021.10.011	An engineered construct of cFLIP provides insight into DED1 structure and interactions.	2022	other_or_unclear		false
+P0DP23	europepmc_primary	32993483	10.1186/s12864-020-07066-z	Proteome of larval metamorphosis induced by epinephrine in the Fujian oyster Crassostrea angulata.	2020	other_or_unclear		false
+P0DP23	europepmc_primary			Abstracts : Part II	1995	other_or_unclear		false
+P0DP24	europepmc_primary	31068617	10.1038/s41598-019-42898-0	Calcium binding to a disordered domain of a type III-secreted protein from a coral pathogen promotes secondary structure formation and catalytic activity.	2019	other_or_unclear		false
+P11499	europepmc_primary	29662162	10.1038/s41467-018-03946-x	A switch point in the molecular chaperone Hsp90 responding to client interaction.	2018	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P13433	europepmc_primary	42167575	10.1016/j.jbc.2026.113174	Higher-order structural organization of mitochondrial metabolism.	2026	other_or_unclear		false
+P14625	europepmc_primary	42224304	10.1371/journal.pone.0350646	Proteome analysis refines molecular processes underlying metamorphosis in the ascidian Ciona intestinalis.	2026	other_or_unclear		false
+P14625	europepmc_primary	40144950	10.1039/d5cb00010f	Epichaperomes: redefining chaperone biology and therapeutic strategies in complex diseases.	2025	other_or_unclear		false
+P14625	europepmc_primary	30085182	10.1093/jxb/ery287	Maize 16-kD γ-zein forms very unusual disulfide-bonded polymers in the endoplasmic reticulum: implications for prolamin evolution.	2018	domain_swapping	domain[- ]swapp	false
+P14625	europepmc_primary	37524848	10.1038/s41580-023-00640-9	Structural and functional complexity of HSP90 in cellular homeostasis and disease.	2023	other_or_unclear		false
+P14625	europepmc_primary	23084776	10.1016/j.gpb.2012.07.002	Novel adaptors of amyloid precursor protein intracellular domain and their functional implications.	2012	other_or_unclear		false
+P14625	europepmc_primary	32610141	10.1016/j.celrep.2020.107840	Molecular Stressors Engender Protein Connectivity Dysfunction through Aberrant N-Glycosylation of a Chaperone.	2020	other_or_unclear		false
+P14625	europepmc_primary	22134925	10.1074/jbc.m111.318915	Polyglutamine expansion alters the dynamics and molecular architecture of aggregates in dentatorubropallidoluysian atrophy.	2012	other_or_unclear		false
+P14625	europepmc_primary	19786553	10.4049/jimmunol.0900811	Drosophila glycoprotein 93 Is an ortholog of mammalian heat shock protein gp96 (grp94, HSP90b1, HSPC4) and retains disulfide bond-independent chaperone function for TLRs and integrins.	2009	other_or_unclear		false
+P14625	europepmc_primary	29023422	10.3390/toxins9100314	Plant Ribosome-Inactivating Proteins: Progesses, Challenges and Biotechnological Applications (and a Few Digressions).	2017	other_or_unclear		false
+P14625	europepmc_primary	16731965	10.1110/ps.052065106	Identification of novel quaternary domain interactions in the Hsp90 chaperone, GRP94.	2006	other_or_unclear		false
+P14625	europepmc_primary	16032399	10.1007/s00262-005-0020-y	Heat shock proteins HSP70 and GP96: structural insights.	2006	other_or_unclear		false
+P14625	europepmc_primary	25967741	10.3402/jev.v4.27783	The Fourth International Meeting of ISEV, ISEV2015.	2015	other_or_unclear		false
+P14625	europepmc_primary	8183379		German Society for Experimental and Clinical Pharmacology and Toxicology, 35th spring meeting. Mainz, Germany, 15-17 March 1994. Abstracts.	1994	other_or_unclear		false
+P17405	europepmc_primary	41437066	10.1186/s12944-025-02823-z	An update on schistosomicide and tumoricide in the future: arachidonic acid.	2025	other_or_unclear		false
+P17405	europepmc_primary	40849789	10.1002/advs.202511774	PIEZO Force Sensing in Vascular Biology: An Explosion of New Knowledge, Concepts and Opportunity.	2025	other_or_unclear		false
+P17405	europepmc_primary	41009750	10.3390/ijms26189188	An Integrated Transcriptomic and Proteomic Approach Uncovers the Molecular Mechanisms of Hypoosmotic Adaptation in &lt;i&gt;Scylla paramamosain&lt;/i&gt; Megalopa.	2025	other_or_unclear		false
+P17405	europepmc_primary	40598533	10.1186/s12964-025-02317-6	Progress on multifunctional transmembrane protein ATG9A.	2025	other_or_unclear		false
+P17405	europepmc_primary	33738905	10.1111/obr.13248	Neutral sphingomyelinase-2 and cardiometabolic diseases.	2021	other_or_unclear		false
+P17405	europepmc_primary	30890560	10.1074/jbc.ra118.007288	The juxtamembrane linker in neutral sphingomyelinase-2 functions as an intramolecular allosteric switch that activates the enzyme.	2019	ligand_induced	allosteric	false
+P17405	europepmc_primary	30197651	10.3389/fpls.2018.01231	<i>De novo</i> Transcriptome Characterization of <i>Rhodomyrtus tomentosa</i> Leaves and Identification of Genes Involved in α/β-Pinene and β-Caryophyllene Biosynthesis.	2018	other_or_unclear		false
+P17405	europepmc_primary	22555564	10.1007/s11302-012-9309-4	Cellular function and molecular structure of ecto-nucleotidases.	2012	other_or_unclear		false
+P17405	europepmc_primary	29046763	10.1080/20013078.2017.1310414	Abstract Book: ISEV2017.	2017	other_or_unclear		false
+P21589	europepmc_primary	38774441	10.1063/4.0000251	Identifying protein conformational states in the Protein Data Bank: Toward unlocking the potential of integrative dynamics studies.	2024	other_or_unclear		false
+P21589	europepmc_primary	42517695	10.1080/21505594.2026.2697095	Pathogenicity and virulence of &lt;i&gt;Streptococcus suis&lt;/i&gt; serotype 2: Emerging insights and persistent knowledge gaps.	2026	other_or_unclear		false
+P21589	europepmc_primary	37532679	10.1021/acs.jcim.3c01068	Molecular Dynamics Simulations of the Human Ecto-5'-Nucleotidase (h-ecto-5'-NT, CD73): Insights into Protein Flexibility and Binding Site Dynamics.	2023	local_conformational_change	conformational switch	false
+P21589	europepmc_primary	26599519	10.1021/acs.jmedchem.5b01616	Identification of Noncompetitive Inhibitors of Cytosolic 5'-Nucleotidase II Using a Fragment-Based Approach.	2015	domain_swapping	domain[- ]swapp	false
+P21589	europepmc_primary	34961895	10.1007/s11302-021-09832-4	Mono-ADP-ribosylation sites of human CD73 inhibit its adenosine-generating enzymatic activity.	2022	other_or_unclear		false
+P21589	europepmc_primary			Abstracts presented at the 37th Annual Meeting of The Protein Society	2023	other_or_unclear		false
+P21589	europepmc_primary	39738003	10.1038/s41467-024-55207-9	An antibody cocktail targeting two different CD73 epitopes enhances enzyme inhibition and tumor control.	2024	other_or_unclear		true
+P21589	europepmc_primary	23142347	10.1016/j.str.2012.10.001	Crystal structure of the human ecto-5'-nucleotidase (CD73): insights into the regulation of purinergic signaling.	2012	local_conformational_change	conformational switch	true
+P21589	europepmc_primary	32816994	10.1074/jbc.ra120.014643	PGAP6, a GPI-specific phospholipase A2, has narrow substrate specificity against GPI-anchored proteins.	2020	other_or_unclear		false
+P21589	europepmc_primary	32712138	10.1016/j.urolonc.2020.06.026	Pseudouridine as a novel biomarker in prostate cancer.	2021	other_or_unclear		false
+P21589	europepmc_primary	31416831	10.1074/jbc.ac119.010055	The Bateman domain of IMP dehydrogenase is a binding target for dinucleoside polyphosphates.	2019	ligand_induced	allosteric	false
+P21589	europepmc_primary	36628275		Non-canonical approaches to targeting hypoxic tumors.	2022	other_or_unclear		false
+P21589	europepmc_primary	39201399	10.3390/ijms25168712	The Myofibroblast Fate of Therapeutic Mesenchymal Stromal Cells: Regeneration, Repair, or Despair?	2024	other_or_unclear		false
+P21589	europepmc_primary	31529026	10.1093/cvr/cvz244	A novel secreted-cAMP pathway inhibits pulmonary hypertension via a feed-forward mechanism.	2020	other_or_unclear		false
+P21589	europepmc_primary	33244091	10.1038/s41598-020-77201-z	An improved de novo assembling and polishing of Solea senegalensis transcriptome shed light on retinoic acid signalling in larvae.	2020	other_or_unclear		false
+P21589	europepmc_primary	26724996	10.1016/j.str.2015.11.007	Characterization of the Domain Orientations of E. coli 5'-Nucleotidase by Fitting an Ensemble of Conformers to DEER Distance Distributions.	2016	other_or_unclear		false
+P21589	europepmc_primary	26854859	10.1080/19420862.2016.1143182	Inhibition of CD73 AMP hydrolysis by a therapeutic antibody with a dual, non-competitive mechanism of action.	2016	other_or_unclear		false
+P21589	europepmc_primary	37313405	10.3389/fimmu.2023.1199631	Targeting immune checkpoints on tumor-associated macrophages in tumor immunotherapy.	2023	other_or_unclear		false
+P21589	europepmc_primary	27139831	10.1107/s2053230x16005999	Structural and functional insights into the stationary-phase survival protein SurE, an important virulence factor of Brucella abortus.	2016	other_or_unclear		false
+P21589	europepmc_primary	18404476	10.1007/s11302-005-5303-4	Modulation of purinergic signaling by NPP-type ectophosphodiesterases.	2006	other_or_unclear		false
+P21589	europepmc_primary	31541115	10.1038/s41598-019-49501-6	Understanding pseudo-albinism in sole (Solea senegalensis): a transcriptomics and metagenomics approach.	2019	other_or_unclear		false
+P21589	europepmc_primary	33146056	10.1080/19420862.2020.1838036	Fully human anti-CD39 antibody potently inhibits ATPase activity in cancer cells via uncompetitive allosteric mechanism.	2020	ligand_induced	allosteric	false
+P21589	europepmc_primary	22555564	10.1007/s11302-012-9309-4	Cellular function and molecular structure of ecto-nucleotidases.	2012	other_or_unclear		false
+P21589	europepmc_primary	16542158	10.1042/bj20052019	Salivary apyrases of Triatoma infestans are assembled into homo-oligomers.	2006	other_or_unclear		false
+P21589	europepmc_primary	18942157	10.1142/s0219720008003801	Modeling of glycerol-3-phosphate transporter suggests a potential 'tilt' mechanism involved in its function.	2008	local_conformational_change	conformational switch	false
+P30048	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+P30048	europepmc_primary	26932781	10.1038/srep22388	Pharmacoproteomic analysis reveals that metapristone (RU486 metabolite) intervenes E-cadherin and vimentin to realize cancer metastasis chemoprevention.	2016	other_or_unclear		false
+P32119	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+P32119	europepmc_primary	26138759	10.1111/pce.12596	Physiological relevance of plant 2-Cys peroxiredoxin overoxidation level and oligomerization status.	2016	local_conformational_change	conformational switch	false
+P32119	europepmc_primary	27314339	10.3390/ijms17060924	Comprehensive and Quantitative Proteomic Analysis of Metamorphosis-Related Proteins in the Veined Rapa Whelk, Rapana venosa.	2016	other_or_unclear		false
+P32119	europepmc_primary	34947954	10.3390/life11121424	Pillars and Gaps of S-Nitrosylation-Dependent Epigenetic Regulation in Physiology and Cancer.	2021	other_or_unclear		false
+P32119	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+P32119	europepmc_primary	33962851	10.1016/j.tcb.2021.04.002	REV7: Jack of many trades.	2021	other_or_unclear		false
+P32119	europepmc_primary	21194355	10.1089/ars.2010.3657	Peroxiredoxins in plants and cyanobacteria.	2011	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P32119	europepmc_primary			20th IUPAB International Congress, 45th SBBf Congress and 50th Annual Meeting of SBBq : Poster Abstracts	2021	other_or_unclear		false
+P32119	europepmc_primary			Poster Sessions	2014	other_or_unclear		false
+P32119	europepmc_primary			Poster Presentations	2012	other_or_unclear		false
+P32829	europepmc_primary	41370868	10.1016/j.dnarep.2025.103913	How DNA secondary structures drive replication fork instability.	2025	other_or_unclear		false
+P34227	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+P35705	europepmc_primary	26932781	10.1038/srep22388	Pharmacoproteomic analysis reveals that metapristone (RU486 metabolite) intervenes E-cadherin and vimentin to realize cancer metastasis chemoprevention.	2016	other_or_unclear		false
+P40553	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+P41148	europepmc_primary	42224304	10.1371/journal.pone.0350646	Proteome analysis refines molecular processes underlying metamorphosis in the ascidian Ciona intestinalis.	2026	other_or_unclear		false
+P41148	europepmc_primary	40144950	10.1039/d5cb00010f	Epichaperomes: redefining chaperone biology and therapeutic strategies in complex diseases.	2025	other_or_unclear		false
+P41148	europepmc_primary	30085182	10.1093/jxb/ery287	Maize 16-kD γ-zein forms very unusual disulfide-bonded polymers in the endoplasmic reticulum: implications for prolamin evolution.	2018	domain_swapping	domain[- ]swapp	false
+P41148	europepmc_primary	37524848	10.1038/s41580-023-00640-9	Structural and functional complexity of HSP90 in cellular homeostasis and disease.	2023	other_or_unclear		false
+P41148	europepmc_primary	32610141	10.1016/j.celrep.2020.107840	Molecular Stressors Engender Protein Connectivity Dysfunction through Aberrant N-Glycosylation of a Chaperone.	2020	other_or_unclear		false
+P41148	europepmc_primary	22134925	10.1074/jbc.m111.318915	Polyglutamine expansion alters the dynamics and molecular architecture of aggregates in dentatorubropallidoluysian atrophy.	2012	other_or_unclear		false
+P41148	europepmc_primary	19786553	10.4049/jimmunol.0900811	Drosophila glycoprotein 93 Is an ortholog of mammalian heat shock protein gp96 (grp94, HSP90b1, HSPC4) and retains disulfide bond-independent chaperone function for TLRs and integrins.	2009	other_or_unclear		false
+P41148	europepmc_primary	29023422	10.3390/toxins9100314	Plant Ribosome-Inactivating Proteins: Progesses, Challenges and Biotechnological Applications (and a Few Digressions).	2017	other_or_unclear		false
+P41148	europepmc_primary	16731965	10.1110/ps.052065106	Identification of novel quaternary domain interactions in the Hsp90 chaperone, GRP94.	2006	other_or_unclear		false
+P41148	europepmc_primary	16032399	10.1007/s00262-005-0020-y	Heat shock proteins HSP70 and GP96: structural insights.	2006	other_or_unclear		false
+P41148	europepmc_primary	25967741	10.3402/jev.v4.27783	The Fourth International Meeting of ISEV, ISEV2015.	2015	other_or_unclear		false
+P41148	europepmc_primary	8183379		German Society for Experimental and Clinical Pharmacology and Toxicology, 35th spring meeting. Mainz, Germany, 15-17 March 1994. Abstracts.	1994	other_or_unclear		false
+P44569	europepmc_primary			Poster Presentations	2011	other_or_unclear		false
+P49959	europepmc_primary	41370868	10.1016/j.dnarep.2025.103913	How DNA secondary structures drive replication fork instability.	2025	other_or_unclear		false
+P53041	europepmc_primary	34780541	10.1371/journal.ppat.1009595	A conserved guided entry of tail-anchored pathway is involved in the trafficking of a subset of membrane proteins in Plasmodium falciparum.	2021	other_or_unclear		false
+P53042	europepmc_primary	34780541	10.1371/journal.ppat.1009595	A conserved guided entry of tail-anchored pathway is involved in the trafficking of a subset of membrane proteins in Plasmodium falciparum.	2021	other_or_unclear		false
+P60204	europepmc_primary	40990820	10.1002/prot.70050	Iterative Modeling via Structural Diffusion (IMSD): Exploring Fold-Switching Pathways in Metamorphic Proteins Using AlphaFold2-Based Generative Diffusion Model UFConf.	2026	fold_switching	fold[- ]switch;metamorphic protein	false
+P60204	europepmc_primary	41954434	10.1002/pro.70564	ConforFold recovers alternative protein conformations beyond MSA subsampling.	2026	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P60204	europepmc_primary	42458866	10.1002/ardp.70299	Mutation-Induced Pocket Deactivation: How Ser353/Pro245 Alters K&lt;sub&gt;Ca&lt;/sub&gt;2.2 vs. K&lt;sub&gt;Ca&lt;/sub&gt;3.1 Ligand Selectivity.	2026	other_or_unclear		false
+P60204	europepmc_primary		10.1101/2025.06.30.662482	Ser500 phosphorylation acts as a conformational switch to prime eEF-2K for activation	2025	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P60204	europepmc_primary	42413490	10.1016/j.molcel.2026.06.028	Cryo-EM structure of soluble VPS13C suggests its regulation by a conformational switch and by calmodulin.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P60204	europepmc_primary	41006217	10.1038/s41467-025-63249-w	A domain-swapped CaMKII conformation facilitates linker-mediated allosteric regulation.	2025	domain_swapping	domain[- ]swapp;swapped dimer	false
+P60204	europepmc_primary	41443425	10.1016/j.jbc.2025.111087	Ser500 phosphorylation acts as a conformational switch to prime eEF-2K for activation.	2026	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P60204	europepmc_primary	39791310	10.1002/smll.202408141	Metamorphic Proteins to Achieve Conformationally Selective Material Surface Binding.	2025	fold_switching	metamorphic protein	false
+P60204	europepmc_primary	37774143	10.1002/pro.4790	In silico protein dynamics in the human cytoplasm: Partial folding, misfolding, fold switching, and non-native interactions.	2023	fold_switching	fold[- ]switch	false
+P60204	europepmc_primary	34537489	10.1016/j.sbi.2021.08.004	Design principles of protein switches.	2022	other_or_unclear		false
+P60204	europepmc_primary	42341170	10.1093/plphys/kiag413	The role of MLO in powdery mildew susceptibility depends on a combination of functional specialization and subcellular localization.	2026	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	42398099	10.1111/tpj.70986	Structure-informed engineering of plant-microbe interactions.	2026	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	39883844	10.1073/pnas.2411316122	Design of a light and Ca<sup>2+</sup> switchable organic-peptide hybrid.	2025	domain_swapping	domain[- ]swapp;swapped dimer	false
+P60204	europepmc_primary	42604037	10.1016/j.mrl.2026.200306	Going high-throughput: Dynamic conformations and interactions &lt;i&gt;in vivo&lt;/i&gt;.	2027	other_or_unclear		false
+P60204	europepmc_primary	42737965	10.3390/biology15171533	BA-ARAP-NMA: A Local Geometry Control Nonlinear Normal-Mode Analysis Method.	2026	other_or_unclear		false
+P60204	europepmc_primary	42113690	10.1080/19336950.2026.2672357	Transient receptor potential canonical (TRPC) channels in diabetes and associated complications.	2026	other_or_unclear		false
+P60204	europepmc_primary	41184130	10.1101/cshperspect.a041760	Developing Optogenetic Approaches to Study Ca&lt;sup&gt;2+&lt;/sup&gt; Signaling Processes.	2026	other_or_unclear		false
+P60204	europepmc_primary	42296421	10.1002/cbic.70419	A Constellation of Fluorescent Biosensors to Illuminate the Galaxy of Protein Kinases.	2026	other_or_unclear		false
+P60204	europepmc_primary	40470369	10.3389/fpls.2025.1586375	Recent advances in innovative strategies for plant disease resistance breeding.	2025	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	42307042	10.1002/ps.71019	De novo transcriptome meta-analysis reveals candidate genes involved in life-stage transitions for RNAi-mediated management of the citrus root weevil (Diaprepes abbreviatus).	2026	other_or_unclear		false
+P60204	europepmc_primary	41294816	10.3390/cells14221763	Calmodulin D133H Disrupts Ca&lt;sub&gt;v&lt;/sub&gt;1.2 and K&lt;sub&gt;v&lt;/sub&gt;7.1 Regulation to Prolong Cardiac Action Potentials in Long QT Syndrome.	2025	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P60204	europepmc_primary	34308370	10.1016/j.crstbi.2021.06.002	"""Protein"" no longer means what it used to."	2021	other_or_unclear		false
+P60204	europepmc_primary	41656275	10.1186/s13041-026-01279-1	Crosstalk of KCNH1 and KCNH5 gain-of-function mutations leading to epilepsy and neurodevelopmental disorders.	2026	other_or_unclear		false
+P60204	europepmc_primary	39627324	10.1038/s42003-024-07331-x	Site-specific incorporation of &lt;sup&gt;19&lt;/sup&gt;F-nulcei at protein C-terminus to probe allosteric conformational transitions of metalloproteins.	2024	ligand_induced	allosteric	false
+P60204	europepmc_primary	41053052	10.1038/s41419-025-08005-0	Stromal cells in normal colon and colon cancers: importance of thyroid hormone signaling.	2025	other_or_unclear		false
+P60204	europepmc_primary	40978460	10.1039/d5cb00149h	Dynamics of single enzymes confined inside a nanopore.	2025	other_or_unclear		false
+P60204	europepmc_primary	37384728	10.1371/journal.pone.0287858	Metamorphic gene regulation programs in Xenopus tropicalis tadpole brain.	2023	other_or_unclear		false
+P60204	europepmc_primary	41626339	10.3389/fpls.2025.1704615	Calcium-dependent protein kinases in plant immunity: from calcium signaling to network integration.	2025	other_or_unclear		false
+P60204	europepmc_primary	40273505	10.1016/j.mam.2025.101362	Frustration in physiology and molecular medicine.	2025	other_or_unclear		false
+P60204	europepmc_primary	40007443	10.1242/jeb.250110	A Cftr-independent, Ano1-rich seawater-adaptive ionocyte in sea lamprey gills.	2025	other_or_unclear		false
+P60204	europepmc_primary	41465667	10.3390/insects16121228	Characterization of Cry4Aa Toxin from &lt;i&gt;Bacillus thuringiensis&lt;/i&gt; JW-1 and Its Insecticidal Activity Against &lt;i&gt;Bradysia difformis&lt;/i&gt;.	2025	other_or_unclear		false
+P60204	europepmc_primary	40916649	10.1111/jnc.70226	Role of CPEBs in Learning and Memory.	2025	other_or_unclear		false
+P60204	europepmc_primary	34506645	10.1002/bit.27939	Control of gene expression in engineered mammalian cells with a programmable shear-stress inducer.	2021	other_or_unclear		false
+P60204	europepmc_primary	42450133	10.3390/ijms27135862	Comparative Interactome Analysis Reveals Architectural Principles Governing K&lt;sup&gt;+&lt;/sup&gt; Channel Function in Cancer.	2026	other_or_unclear		false
+P60204	europepmc_primary	39259196	10.7554/elife.91420	Revealing a hidden conducting state by manipulating the intracellular domains in K<sub>V</sub>10.1 exposes the coupling between two gating mechanisms.	2024	other_or_unclear		false
+P60204	europepmc_primary	38862878	10.1186/s12864-024-10459-z	Transcriptome analysis of the Japanese eel (Anguilla japonica) during larval metamorphosis.	2024	other_or_unclear		false
+P60204	europepmc_primary	42393339	10.1038/s44320-026-00229-2	Paradoxical non-catalytic kinase functions are driven by inhibitor-induced displacement of autoinhibitory domains.	2026	other_or_unclear		false
+P60204	europepmc_primary	36263816	10.1093/nar/gkac910	In vitro structural maturation of an early stage pre-40S particle coupled with U3 snoRNA release and central pseudoknot formation.	2022	other_or_unclear		false
+P60204	europepmc_primary	40806366	10.3390/ijms26157233	Molecular Pathways Potentially Involved in Hallucinatory Experiences During Sleep Paralysis: The Emerging Role of β-Arrestin-2.	2025	other_or_unclear		false
+P60204	europepmc_primary	39209805	10.1038/s41420-024-02123-y	Publisher Correction: Interactomic exploration of LRRC8A in volume-regulated anion channels.	2024	other_or_unclear		false
+P60204	europepmc_primary	42318687	10.1002/advs.76185	Conformational Transduction Amplification in a Biomimetic Polyelectrolyte for Ultrasensitive Imaging of Iron Metabolism.	2026	ligand_induced	allosteric	false
+P60204	europepmc_primary	41876965	10.1186/s12864-026-12764-1	Chromosome-level genome provides new insights into the fatty acid biosynthesis and metabolism of the sea urchin Strongylocentrotus intermedius.	2026	other_or_unclear		false
+P60204	europepmc_primary	39379401	10.1038/s41598-024-72943-6	Polyamine impact on physiology of early stages of reef-building corals-insights from rearing experiments and RNA-Seq analysis.	2024	other_or_unclear		false
+P60204	europepmc_primary	37905307	10.1080/19336950.2023.2273165	Structural basis of properties, mechanisms, and channelopathy of cyclic nucleotide-gated channels.	2023	other_or_unclear		false
+P60204	europepmc_primary	41649707	10.1007/s44297-025-00047-2	G-quadruplex structure in plants and insects and potential applications in pest control.	2025	other_or_unclear		false
+P60204	europepmc_primary	33799183	10.1016/j.plaphy.2021.03.008	Characterization of two group III potato CDPKs, StCDPK22 and StCDPK24, that contain three EF-Hand motifs in their CLDs.	2021	local_conformational_change	conformational switch	false
+P60204	europepmc_primary	41873906	10.1042/bcj20250342	Binding of 14-3-3 stabilises recombinant AMPKγ2-containing complexes.	2026	ligand_induced	allosteric	false
+P60204	europepmc_primary	40070567	10.3389/fphar.2025.1512968	MLKL as an emerging machinery for modulating organelle dynamics: regulatory mechanisms, pathophysiological significance, and targeted therapeutics.	2025	other_or_unclear		false
+P60204	europepmc_primary	41370370	10.1126/sciadv.aea2136	Evolutionarily convergent mechanism of formin regulation coordinates actin polymerization in apicomplexan parasites.	2025	other_or_unclear		false
+P60204	europepmc_primary	38894746	10.3389/fendo.2024.1399274	Differential involvement of cAMP/PKA-, PLC/PKC- and Ca<sup>2+</sup>/calmodulin-dependent pathways in GnRH-induced prolactin secretion and gene expression in grass carp pituitary cells.	2024	other_or_unclear		false
+P60204	europepmc_primary	35886917	10.3390/ijms23147569	The HIV-1 Gag Protein Displays Extensive Functional and Structural Roles in Virus Replication and Infectivity.	2022	other_or_unclear		false
+P60204	europepmc_primary	38501487	10.1002/pro.4955	Calcium mediated static and dynamic allostery in S100A12: Implications for target recognition by S100 proteins.	2024	ligand_induced	allosteric	false
+P60204	europepmc_primary	40531176	10.7554/elife.99825	Stimulatory and inhibitory G-protein signaling relays drive cAMP accumulation for timely metamorphosis in the chordate &lt;i&gt;Ciona&lt;/i&gt;.	2025	other_or_unclear		false
+P60204	europepmc_primary		10.21203/rs.3.rs-1669246/v1	In vitro structural maturation of the primordial pre-40S coupled with U3 snoRNA release and central pseudoknot formation	2022	other_or_unclear		false
+P60204	europepmc_primary	37649557	10.17912/micropub.biology.000919	Expression and cilia associated localization of Histone deacetylases 6 in <i>Xenopus</i>.	2023	other_or_unclear		false
+P60204	europepmc_primary	38354101	10.1080/19336950.2024.2313323	Recent advances on the structure and the function relationships of the TRPV4 ion channel.	2024	other_or_unclear		false
+P60204	europepmc_primary	38991035	10.1371/journal.pcbi.1011953	An integrative approach to protein sequence design through multiobjective optimization.	2024	other_or_unclear		false
+P60204	europepmc_primary	36070238	10.1021/acs.biochem.2c00378	NMR Structures of Calmodulin Bound to Two Separate Regulatory Sites in the Retinal Cyclic Nucleotide-Gated Channel.	2022	local_conformational_change	conformational switch	false
+P60204	europepmc_primary	39702967	10.1016/j.xplc.2024.101225	Stress sensing and response through biomolecular condensates in plants.	2025	other_or_unclear		false
+P60204	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+P60204	europepmc_primary	41683643	10.3390/ijms27031215	Characterization of the Crustacean Methyl Farnesoate Transcriptional Signaling Genes.	2026	other_or_unclear		false
+P60204	europepmc_primary	36777337	10.3389/fendo.2023.1121002	Characterization of a novel corticosterone response gene in <i>Xenopus tropicalis</i> tadpole tails.	2023	other_or_unclear		false
+P60204	europepmc_primary	42064553	10.3389/fphys.2026.1788194	Advances in the study of juvenile hormone signaling.	2026	other_or_unclear		false
+P60204	europepmc_primary	35960653	10.1111/tpj.15944	Temperature modulation of CAMTA3 gene induction activity is mediated through the DNA binding domain.	2022	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	41211723	10.1021/acs.jmedchem.5c01626	FDA Drug Repurposing Uncovers Modulators of Dopamine D<sub>2</sub> Receptor Localization via Disruption of the NCS-1 Interaction.	2025	other_or_unclear		false
+P60204	europepmc_primary	37075164	10.1080/19336950.2023.2191773	"A governance of ion selectivity based on the occupancy of the ""beacon"" in one- and four-domain calcium and sodium channels."	2023	other_or_unclear		false
+P60204	europepmc_primary	36979969	10.3390/biomedicines11030990	Structure-Guided Prediction of the Functional Impact of DCLK1 Mutations on Tumorigenesis.	2023	other_or_unclear		false
+P60204	europepmc_primary	40337642	10.3389/fmolb.2025.1531793	Successful prediction of LC8 binding to intrinsically disordered proteins sheds light on AlphaFold's black box.	2025	other_or_unclear		false
+P60204	europepmc_primary	22688954	10.1002/chem.201200348	Protein conformational switches: from nature to design.	2012	fold_switching	fold[- ]switch	false
+P60204	europepmc_primary	41515949	10.3390/ijms27010069	Neurovascular Signaling at the Gliovascular Interface: From Flow Regulation to Cognitive Energy Coupling.	2025	other_or_unclear		false
+P60204	europepmc_primary	35661757	10.1038/s41598-022-09654-3	Conformational change of Syntaxin-3b in regulating SNARE complex assembly in the ribbon synapses.	2022	local_conformational_change	conformational (?:change|rearrangement|transition);conformational switch	false
+P60204	europepmc_primary			Abstracts presented at the 37th Annual Meeting of The Protein Society	2023	other_or_unclear		false
+P60204	europepmc_primary	36873677	10.1021/jacsau.2c00654	Strategies for Conditional Regulation of Proteins.	2023	other_or_unclear		false
+P60204	europepmc_primary	32924766	10.1080/19336950.2020.1816107	Gating and regulation of KCNH (ERG, EAG, and ELK) channels by intracellular domains.	2020	other_or_unclear		false
+P60204	europepmc_primary	42270663	10.1038/s41467-026-74123-8	PIP&lt;sub&gt;2&lt;/sub&gt; activation of the cardiac I&lt;sub&gt;Ks&lt;/sub&gt; potassium channel.	2026	other_or_unclear		false
+P60204	europepmc_primary	41212855	10.1371/journal.pone.0316787	Molecular and evolutionary determinants for protein interaction within a class II aldolase/Adducin domain.	2025	other_or_unclear		false
+P60204	europepmc_primary	32907599	10.1186/s12964-020-00620-y	G protein-coupled receptors function as cell membrane receptors for the steroid hormone 20-hydroxyecdysone.	2020	other_or_unclear		false
+P60204	europepmc_primary	37121260	10.1098/rsob.220350	PK1 from <i>Drosophila</i> obscurin is an inactive pseudokinase with scaffolding properties.	2023	ligand_induced	allosteric	false
+P60204	europepmc_primary	40085503	10.7554/elife.97189	Receptor tyrosine kinases CAD96CA and FGFR1 function as the cell membrane receptors of insect juvenile hormone.	2025	other_or_unclear		false
+P60204	europepmc_primary	42712879	10.17179/excli2026-9572	Mechanisms of T cell activation: Integrating signaling pathways, experimental models, and therapeutic implications.	2026	other_or_unclear		false
+P60204	europepmc_primary	39936942	10.3390/cells14030150	Thyroid Hormones and Brain Development: A Focus on the Role of Mitochondria as Regulators of Developmental Time.	2025	other_or_unclear		false
+P60204	europepmc_primary	34854917	10.1042/bst20210307	Spatiotemporal regulation of store-operated calcium entry in cancer metastasis.	2021	other_or_unclear		false
+P60204	europepmc_primary	36691781	10.1002/pro.4574	Genetic encoding of 3-nitro-tyrosine reveals the impacts of 14-3-3 nitration on client binding and dephosphorylation.	2023	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	38909013	10.1038/s41420-024-02032-0	Interactomic exploration of LRRC8A in volume-regulated anion channels.	2024	other_or_unclear		false
+P60204	europepmc_primary	38601983	10.1080/19336950.2024.2341077	Non-ionotropic voltage-gated calcium channel signaling.	2024	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P60204	europepmc_primary	31354501	10.3389/fphar.2019.00794	Editorial: Peptidyl-Prolyl Isomerases in Human Pathologies.	2019	other_or_unclear		false
+P60204	europepmc_primary	35574485	10.3389/fphys.2022.905441	<i>Kr-h1</i>, a Cornerstone Gene in Insect Life History.	2022	other_or_unclear		false
+P60204	europepmc_primary	42453394	10.1016/j.apsb.2026.03.047	Drugging non-canonical kinases in cancer therapeutics: Molecular targets, underlying mechanisms and small-molecule inhibitors.	2026	ligand_induced	allosteric	false
+P60204	europepmc_primary	40325293	10.1007/s11356-025-36446-9	Long-term changes in chemical components in the meadow pipit (Anthus pratensis) in the formerly heavily polluted Eastern Sudetes Mountains.	2025	other_or_unclear		false
+P60204	europepmc_primary	37363722	10.3389/fcell.2023.1206147	Evolution and function of calponin and transgelin.	2023	other_or_unclear		false
+P60204	europepmc_primary	36089054	10.1016/j.jmb.2022.167820	Domain-Based Protein Docking with Extremely Large Conformational Changes.	2022	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P60204	europepmc_primary	39636142	10.1002/pro.5207	Special issue title: The Protein Society 38th Annual Symposium, July 2024, Vancouver, Canada.	2024	other_or_unclear		false
+P60204	europepmc_primary	42423121	10.1002/pro.70714	Decoding the allosteric grammar of protein kinases: A dual-stream framework integrating protein language models and energy landscape frustration analysis.	2026	ligand_induced	allosteric	false
+P60204	europepmc_primary	35573251	10.3389/fbioe.2022.901300	Engineering Light-Control in Biology.	2022	other_or_unclear		false
+P60204	europepmc_primary	34943794	10.3390/cells10123287	Pin1 as Molecular Switch in Vascular Endothelium: Notes on Its Putative Role in Age-Associated Vascular Diseases.	2021	local_conformational_change	conformational switch	false
+P60204	europepmc_primary	35927280	10.1038/s41467-022-32218-y	Subversion of GBP-mediated host defense by E3 ligases acquired during Yersinia pestis evolution.	2022	other_or_unclear		false
+P60204	europepmc_primary	31072926	10.1073/pnas.1818618116	Crystal structures of Ca<sup>2+</sup>-calmodulin bound to Na<sub>V</sub> C-terminal regions suggest role for EF-hand domain in binding and inactivation.	2019	local_conformational_change	conformational switch	false
+P60204	europepmc_primary	34085055	10.1063/5.0041394	Calcium-responsive contrast agents for functional magnetic resonance imaging.	2021	other_or_unclear		false
+P60204	europepmc_primary	42394964	10.3389/fnbeh.2026.1806003	Assessing circuit function in the developing &lt;i&gt;Xenopus&lt;/i&gt; tadpole: a survey of the behavioral toolkit and underlying neural substrates.	2026	other_or_unclear		false
+P60204	europepmc_primary	34800372	10.1016/j.str.2021.10.011	An engineered construct of cFLIP provides insight into DED1 structure and interactions.	2022	other_or_unclear		false
+P60204	europepmc_primary	37431773	10.1042/bst20230122	Structural insights into NMDA receptor pharmacology.	2023	ligand_induced	ligand[- ]induced conformational	false
+P60204	europepmc_primary	40976416	10.1016/j.cstres.2025.100118	Hsp70 and Hsp90 post-translational modifications and translating the chaperone code.	2025	other_or_unclear		false
+P60204	europepmc_primary	38343439	10.3389/fimmu.2023.1324253	An overview of the mechanisms and potential roles of extracellular vesicles in septic shock.	2023	other_or_unclear		false
+P60204	europepmc_primary	34324338	10.1021/acs.jpcb.1c04082	The Next Frontier for Designing Switchable Proteins: Rational Enhancement of Kinetics.	2021	other_or_unclear		false
+P60204	europepmc_primary	33258400	10.1080/19336950.2020.1854986	Late sodium current and calcium homeostasis in arrhythmogenesis.	2021	other_or_unclear		false
+P60204	europepmc_primary	34405992	10.1021/acs.chemrev.1c00308	Protein Assembly by Design.	2021	other_or_unclear		false
+P60204	europepmc_primary	42032145	10.1038/s44385-025-00059-1	Mechanical regulation of metabolism, epigenetics, and their interplay.	2026	other_or_unclear		false
+P60204	europepmc_primary	32025607	10.1002/hep4.1461	TGF-β Signaling Plays a Pivotal Role During Developmental Biliary Atresia in Sea Lamprey (<i>Petromyzon marinus</i>).	2020	other_or_unclear		false
+P60204	europepmc_primary	39595146	10.3390/biomedicines12112580	Sodium Chloride Cotransporter in Hypertension.	2024	other_or_unclear		false
+P60204	europepmc_primary	38390217	10.1117/1.nph.11.2.024204	Recent advances in bioluminescent probes for neurobiology.	2024	other_or_unclear		false
+P60204	europepmc_primary	33236980	10.7554/elife.60603	Structural basis of TRPC4 regulation by calmodulin and pharmacological agents.	2020	other_or_unclear		false
+P60204	europepmc_primary	33825708	10.1107/s2059798321001078	Guest-protein incorporation into solvent channels of a protein host crystal (hostal).	2021	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	36742381	10.3389/fendo.2023.1096365	Functional regulation of syntaxin-1: An underlying mechanism mediating exocytosis in neuroendocrine cells.	2023	other_or_unclear		false
+P60204	europepmc_primary	38609871	10.1186/s12864-024-10248-8	Comparative transcriptomic analysis delineates adaptation strategies of Rana kukunoris toward cold stress on the Qinghai-Tibet Plateau.	2024	other_or_unclear		false
+P60204	europepmc_primary	36743578	10.3389/fpls.2022.1107224	ROS-mediated plasmodesmal regulation requires a network of an Arabidopsis receptor-like kinase, calmodulin-like proteins, and callose synthases.	2022	other_or_unclear		false
+P60204	europepmc_primary	38078096	10.3389/fpls.2023.1307294	Unmasking the invaders: NLR-mal function in plant defense.	2023	other_or_unclear		false
+P60204	europepmc_primary	40847318	10.1186/s40035-025-00504-6	Cell-specific copper dyshomeostasis mechanism in Alzheimer's disease.	2025	other_or_unclear		false
+P60204	europepmc_primary	38565997	10.1186/s12864-024-10232-2	Elucidating the ecophysiology of soybean pod-sucking stinkbug Riptortus pedestris (Hemiptera: Alydidae) based on de novo genome assembly and transcriptome analysis.	2024	other_or_unclear		false
+P60204	europepmc_primary	32993483	10.1186/s12864-020-07066-z	Proteome of larval metamorphosis induced by epinephrine in the Fujian oyster Crassostrea angulata.	2020	other_or_unclear		false
+P60204	europepmc_primary	42520407	10.1093/plcell/koag224	The Spirogyra pratensis genome illuminates the evolution of developmental programs and spiral chloroplast biology.	2026	other_or_unclear		false
+P60204	europepmc_primary	34935159	10.15252/embj.2020106523	Caldendrin and myosin V regulate synaptic spine apparatus localization via ER stabilization in dendritic spines.	2022	other_or_unclear		false
+P60204	europepmc_primary	41031362	10.3389/fnut.2025.1657640	Microbially mediated silicon-based agro-wastes: a possible option in reducing bioaccumulation of arsenic.	2025	other_or_unclear		false
+P60204	europepmc_primary	35585008	10.1016/j.tibs.2022.04.011	Looking lively: emerging principles of pseudokinase signaling.	2022	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+P60204	europepmc_primary	32719660	10.3389/fmicb.2020.01298	Modulation of Plant Defense System in Response to Microbial Interactions.	2020	other_or_unclear		false
+P60204	europepmc_primary	37718000	10.1016/bs.vh.2023.03.002	Juvenile hormone receptor Methoprene tolerant: Functions and applications.	2023	other_or_unclear		false
+P60204	europepmc_primary	34196612	10.1107/s2053230x21006142	Crystal structures of Val58Ile tryptophan repressor in a domain-swapped array in the presence and absence of L-tryptophan.	2021	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	30573469	10.1534/g3.118.200841	A Noisy Analog-to-Digital Converter Connects Cytosolic Calcium Bursts to Transcription Factor Nuclear Localization Pulses in Yeast.	2019	other_or_unclear		false
+P60204	europepmc_primary	35852813	10.1002/anie.202206631	Chemically Driven Rotatory Molecular Machines.	2022	other_or_unclear		false
+P60204	europepmc_primary	36827465	10.1021/acs.jcim.2c01634	Exploring and Learning the Universe of Protein Allostery Using Artificial Intelligence Augmented Biophysical and Computational Approaches.	2023	ligand_induced	allosteric	false
+P60204	europepmc_primary	40155618	10.1038/s41467-025-58247-x	PIP&lt;sub&gt;2&lt;/sub&gt;-mediated oligomerization of the endosomal sodium/proton exchanger NHE9.	2025	other_or_unclear		false
+P60204	europepmc_primary	37949220	10.1016/j.jbc.2023.105441	Interaction between the mitochondrial adaptor MIRO and the motor adaptor TRAK.	2023	other_or_unclear		false
+P60204	europepmc_primary	32696300	10.1007/s12551-020-00736-y	Sarcoplasmic reticulum calcium mishandling: central tenet in heart failure?	2020	other_or_unclear		false
+P60204	europepmc_primary	38028759	10.3389/fphys.2023.1281555	Protein modification regulated autophagy in <i>Bombyx mori</i> and <i>Drosophila melanogaster</i>.	2023	other_or_unclear		false
+P60204	europepmc_primary	30609797	10.3390/ijms20010147	Roco Proteins: GTPases with a Baroque Structure and Mechanism.	2019	other_or_unclear		false
+P60204	europepmc_primary	33655882	10.7554/elife.60889	Dynamic Na<sup>+</sup>/H<sup>+</sup> exchanger 1 (NHE1) - calmodulin complexes of varying stoichiometry and structure regulate Ca<sup>2+</sup>-dependent NHE1 activation.	2021	other_or_unclear		false
+P60204	europepmc_primary	30199756	10.1016/j.ceca.2018.08.007	CRAC channel-based optogenetics.	2018	local_conformational_change	conformational switch	false
+P60204	europepmc_primary	38963838	10.1126/science.adk8946	Unsupervised evolution of protein and antibody complexes with a structure-informed language model.	2024	other_or_unclear		false
+P60204	europepmc_primary	29921816	10.3390/biom8020042	Calcium-Binding Proteins with Disordered Structure and Their Role in Secretion, Storage, and Cellular Signaling.	2018	other_or_unclear		false
+P60204	europepmc_primary	33579933	10.1038/s41467-021-21191-7	Granulovirus PK-1 kinase activity relies on a side-to-side dimerization mode centered on the regulatory αC helix.	2021	domain_swapping	domain[- ]swapp	false
+P60204	europepmc_primary	34120716	10.1016/bs.mie.2021.02.010	Optogenetic control of calcium influx in mammalian cells.	2021	other_or_unclear		false
+P60204	europepmc_primary	33465067	10.1371/journal.pcbi.1008568	Rosetta design with co-evolutionary information retains protein function.	2021	other_or_unclear		false
+P60204	europepmc_primary	40184174	10.1073/pnas.2502277122	DNA bending mediated by ORC is essential for replication licensing in budding yeast.	2025	other_or_unclear		false
+P60204	europepmc_primary	32058267	10.1016/j.ceb.2020.01.007	Recent advances in the use of genetically encodable optical tools to elicit and monitor signaling events.	2020	other_or_unclear		false
+P60204	europepmc_primary	40387259	10.1002/advs.202413817	Genetics-Based Targeting Strategies for Precise Neuromodulation.	2025	other_or_unclear		false
+P60204	europepmc_primary	42535364	10.3892/ijmm.2026.5943	Post‑translational modifications in atherosclerosis: Roles, mechanisms and therapeutic potential (Review).	2026	other_or_unclear		false
+P60204	europepmc_primary	33184610	10.1016/j.cophys.2020.08.004	Optogenetic approaches to control Ca<sup>2+</sup>-modulated physiological processes.	2020	other_or_unclear		false
+P60204	europepmc_primary	39548100	10.1038/s41467-024-54240-y	Over 25 years of decrypting PIN-mediated plant development.	2024	other_or_unclear		false
+P60204	europepmc_primary	41353195	10.1186/s12864-025-12379-y	Microstructure and transcriptomics reveal rapid light-induced visual plasticity in the non-obligate cave dweller Oreolalax rhodostigmatus (Megophryidae, Anura).	2025	other_or_unclear		false
+P60204	europepmc_primary	40849345	10.1038/s42003-025-08720-6	Bacterial regulation of coral larval metamorphosis and settlement in Pocillopora damicornis.	2025	other_or_unclear		false
+P60204	europepmc_primary	38078109	10.3389/fpls.2023.1157455	Comparative gut proteomics study revealing adaptive physiology of Eurasian spruce bark beetle, <i>Ips typographus</i> (Coleoptera: Scolytinae).	2023	other_or_unclear		false
+Q04519	europepmc_primary	41437066	10.1186/s12944-025-02823-z	An update on schistosomicide and tumoricide in the future: arachidonic acid.	2025	other_or_unclear		false
+Q04519	europepmc_primary	40849789	10.1002/advs.202511774	PIEZO Force Sensing in Vascular Biology: An Explosion of New Knowledge, Concepts and Opportunity.	2025	other_or_unclear		false
+Q04519	europepmc_primary	41009750	10.3390/ijms26189188	An Integrated Transcriptomic and Proteomic Approach Uncovers the Molecular Mechanisms of Hypoosmotic Adaptation in &lt;i&gt;Scylla paramamosain&lt;/i&gt; Megalopa.	2025	other_or_unclear		false
+Q04519	europepmc_primary	40598533	10.1186/s12964-025-02317-6	Progress on multifunctional transmembrane protein ATG9A.	2025	other_or_unclear		false
+Q04519	europepmc_primary	33738905	10.1111/obr.13248	Neutral sphingomyelinase-2 and cardiometabolic diseases.	2021	other_or_unclear		false
+Q04519	europepmc_primary	30890560	10.1074/jbc.ra118.007288	The juxtamembrane linker in neutral sphingomyelinase-2 functions as an intramolecular allosteric switch that activates the enzyme.	2019	ligand_induced	allosteric	false
+Q04519	europepmc_primary	30197651	10.3389/fpls.2018.01231	<i>De novo</i> Transcriptome Characterization of <i>Rhodomyrtus tomentosa</i> Leaves and Identification of Genes Involved in α/β-Pinene and β-Caryophyllene Biosynthesis.	2018	other_or_unclear		false
+Q04519	europepmc_primary	22555564	10.1007/s11302-012-9309-4	Cellular function and molecular structure of ecto-nucleotidases.	2012	other_or_unclear		false
+Q04519	europepmc_primary	29046763	10.1080/20013078.2017.1310414	Abstract Book: ISEV2017.	2017	other_or_unclear		false
+Q06830	europepmc_primary	39452701	10.3390/pathogens13100829	Modular Polymerase Synthesis and Internal Protein Domain Swapping via Dual Opposed Frameshifts in the Ebola Virus L Gene.	2024	domain_swapping	domain[- ]swapp	false
+Q06830	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+Q06830	europepmc_primary	36937252	10.3389/fmicb.2023.1138016	Progress on innate immune evasion and live attenuated vaccine of pseudorabies virus.	2023	other_or_unclear		false
+Q06830	europepmc_primary	41096544	10.3390/ijms26199272	Hypoxia and Tissue Regeneration: Adaptive Mechanisms and Therapeutic Opportunities.	2025	other_or_unclear		false
+Q06830	europepmc_primary	34206124	10.3390/molecules26113338	Biosynthetic Strategies for Macrocyclic Peptides.	2021	other_or_unclear		false
+Q06830	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+Q06830	europepmc_primary	29263924	10.1038/sigtrans.2017.36	Redox regulation in tumor cell epithelial-mesenchymal transition: molecular basis and therapeutic strategy.	2017	other_or_unclear		false
+Q06830	europepmc_primary	25757467	10.1186/s12864-015-1320-z	Transcriptome profiling of the dynamic life cycle of the scypohozoan jellyfish Aurelia aurita.	2015	other_or_unclear		false
+Q06830	europepmc_primary	16611982	10.1128/mcb.26.9.3378-3389.2006	Cdc37 interacts with the glycine-rich loop of Hsp90 client kinases.	2006	other_or_unclear		false
+Q06830	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+Q06830	europepmc_primary	21194355	10.1089/ars.2010.3657	Peroxiredoxins in plants and cyanobacteria.	2011	local_conformational_change	conformational (?:change|rearrangement|transition)	false
+Q06830	europepmc_primary	14688414	10.1155/s1110724303209232	Proteomics in Vaccinology and Immunobiology: An Informatics Perspective of the Immunone.	2003	other_or_unclear		false
+Q06830	europepmc_primary			Posters	2024	other_or_unclear		false
+Q06830	europepmc_primary			Poster Presentations	2012	other_or_unclear		false
+Q55168	europepmc_primary	40015976	10.1021/acs.biochem.4c00687	Integrated Study of Fluorescence Enhancement in the Y176H Variant of Cyanobacterial Phytochrome Cph1.	2025	other_or_unclear		true
+Q56310	europepmc_primary	41524594	10.1128/jb.00497-25	Functional characterization of the polar organizer protein FimV in &lt;i&gt;Pseudomonas putida&lt;/i&gt;.	2026	domain_swapping	domain[- ]swapp	false
+Q56310	europepmc_primary	16104748	10.1021/ja051199o	Dynamic mechanism for the autophosphorylation of CheA histidine kinase: molecular dynamics simulations.	2005	local_conformational_change	conformational switch	false
+Q56310	europepmc_primary	11244058	10.1128/jb.183.7.2204-2211.2001	Genetic evidence that the alpha5 helix of the receiver domain of PhoB is involved in interdomain interactions.	2001	domain_swapping	domain[- ]swapp	false
+Q56310	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+Q5JF30	europepmc_primary	41226413	10.3390/ijms262110375	Moonlighting Proteins: Some Hypotheses on the Structural Origin of Their Multifunctionality.	2025	fold_switching	fold[- ]switch	false
+Q5JF30	europepmc_primary	39452701	10.3390/pathogens13100829	Modular Polymerase Synthesis and Internal Protein Domain Swapping via Dual Opposed Frameshifts in the Ebola Virus L Gene.	2024	domain_swapping	domain[- ]swapp	false
+Q5JF30	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+Q5JF30	europepmc_primary	40476714	10.1128/jb.00090-25	&lt;i&gt;Fusobacterium nucleatum&lt;/i&gt;: strategies for adapting to aerobic stress.	2025	other_or_unclear		false
+Q5JF30	europepmc_primary	42707516	10.1155/ijm/5341732	Peptidoglycan as a Bioactive Functional Dietary Supplement Enhances Growth, Improves Nutrient Digestion, Increases Cellular Energy Allocation, and Activates Viral Resistance of Juvenile &lt;i&gt;Penaeus monodon&lt;/i&gt;.	2026	other_or_unclear		false
+Q5JF30	europepmc_primary	41963976	10.1186/s12964-026-02869-1	AlphaFold3-based modeling uncovers the dynamic structural interface between full-length IAP antagonists and DIAP1 for apoptosis regulation in Drosophila.	2026	ligand_induced	allosteric	false
+Q5JF30	europepmc_primary	40273505	10.1016/j.mam.2025.101362	Frustration in physiology and molecular medicine.	2025	other_or_unclear		false
+Q5JF30	europepmc_primary	38192350	10.1007/s12551-023-01172-4	Agglomeration: when folded proteins clump together.	2023	other_or_unclear		false
+Q5JF30	europepmc_primary	37372003	10.3390/antiox12061273	The Arsenal of <i>Leptospira</i> Species against Oxidants.	2023	other_or_unclear		false
+Q5JF30	europepmc_primary	32510464	10.1107/s2053230x20006147	Crystal structures of the GH18 domain of the bifunctional peroxiredoxin-chitinase CotE from Clostridium difficile.	2020	other_or_unclear		false
+Q5JF30	europepmc_primary	32751110	10.3390/molecules25153440	Moonlighting Proteins in the Fuzzy Logic of Cellular Metabolism.	2020	other_or_unclear		false
+Q5JF30	europepmc_primary	41515949	10.3390/ijms27010069	Neurovascular Signaling at the Gliovascular Interface: From Flow Regulation to Cognitive Energy Coupling.	2025	other_or_unclear		false
+Q5JF30	europepmc_primary	42684666	10.1007/s40259-026-00798-6	Targeting MYC-Driven Cancers: From Oncogenic Addiction to Therapeutic Vulnerability.	2026	other_or_unclear		false
+Q5JF30	europepmc_primary	37362943	10.3389/fmicb.2023.1148750	White-rot fungi scavenge reactive oxygen species, which drives pH-dependent exo-enzymatic mechanisms and promotes CO<sub>2</sub> efflux.	2023	other_or_unclear		false
+Q5JF30	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+Q5JF30	europepmc_primary	36389847	10.3389/fimmu.2022.1037739	Comparative transcriptomics reveals the immune dynamics during the molting cycle of swimming crab <i>Portunus trituberculatus</i>.	2022	other_or_unclear		false
+Q5JF30	europepmc_primary	34405992	10.1021/acs.chemrev.1c00308	Protein Assembly by Design.	2021	other_or_unclear		false
+Q5JF30	europepmc_primary	42599123	10.1111/ppl.71069	Hydrogen Peroxide in Cereal Crops Under Abiotic Stress: Mechanistic Modules, Evidence Tiers, and Translational Opportunities.	2026	other_or_unclear		false
+Q5JF30	europepmc_primary	42517695	10.1080/21505594.2026.2697095	Pathogenicity and virulence of &lt;i&gt;Streptococcus suis&lt;/i&gt; serotype 2: Emerging insights and persistent knowledge gaps.	2026	other_or_unclear		false
+Q5JF30	europepmc_primary	40613862	10.1093/mtomcs/mfaf023	The iron metalloproteome of Pseudomonas aeruginosa under oxic and anoxic conditions.	2025	other_or_unclear		false
+Q5JF30	europepmc_primary	41096544	10.3390/ijms26199272	Hypoxia and Tissue Regeneration: Adaptive Mechanisms and Therapeutic Opportunities.	2025	other_or_unclear		false
+Q5JF30	europepmc_primary	26138759	10.1111/pce.12596	Physiological relevance of plant 2-Cys peroxiredoxin overoxidation level and oligomerization status.	2016	local_conformational_change	conformational switch	false
+Q5JF30	europepmc_primary	36937252	10.3389/fmicb.2023.1138016	Progress on innate immune evasion and live attenuated vaccine of pseudorabies virus.	2023	other_or_unclear		false
+Q5JF30	europepmc_primary	26335718	10.1128/mmbr.00036-15	Circadian Rhythms in Cyanobacteria.	2015	other_or_unclear		false
+Q5JF30	europepmc_primary	39091297	10.3389/fmicb.2024.1434987	Bioenzymatic detoxification of mycotoxins.	2024	other_or_unclear		false
+Q839Z1	europepmc_primary	39076798	10.1098/rsos.240088	Characterization of viable but nonculturable state of <i>Campylobacter concisus</i>.	2024	other_or_unclear		false
+Q839Z1	europepmc_primary	35847063	10.3389/fmicb.2022.889788	Potential of Meta-Omics to Provide Modern Microbial Indicators for Monitoring Soil Quality and Securing Food Production.	2022	other_or_unclear		false
+Q839Z1	europepmc_primary	30982891	10.1093/molbev/msz086	High-Order Epistasis in Catalytic Power of Dihydrofolate Reductase Gives Rise to a Rugged Fitness Landscape in the Presence of Trimethoprim Selection.	2019	other_or_unclear		false
+Q839Z1	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+Q84XU2	europepmc_primary	34780541	10.1371/journal.ppat.1009595	A conserved guided entry of tail-anchored pathway is involved in the trafficking of a subset of membrane proteins in Plasmodium falciparum.	2021	other_or_unclear		false
+Q8I5Q6	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+Q96291	europepmc_primary	28594234	10.1089/ars.2017.7164	Peroxiredoxins and Redox Signaling in Plants.	2018	other_or_unclear		false
+Q9I7C2	europepmc_primary	39076798	10.1098/rsos.240088	Characterization of viable but nonculturable state of <i>Campylobacter concisus</i>.	2024	other_or_unclear		false
+Q9I7C2	europepmc_primary	35847063	10.3389/fmicb.2022.889788	Potential of Meta-Omics to Provide Modern Microbial Indicators for Monitoring Soil Quality and Securing Food Production.	2022	other_or_unclear		false
+Q9I7C2	europepmc_primary	30982891	10.1093/molbev/msz086	High-Order Epistasis in Catalytic Power of Dihydrofolate Reductase Gives Rise to a Rugged Fitness Landscape in the Presence of Trimethoprim Selection.	2019	other_or_unclear		false
+Q9I7C2	europepmc_primary	31774265	10.1021/acs.chemrev.9b00450	Chemoenzymatic Semisynthesis of Proteins.	2020	other_or_unclear		false
+Q9Y9L0	europepmc_primary	41226413	10.3390/ijms262110375	Moonlighting Proteins: Some Hypotheses on the Structural Origin of Their Multifunctionality.	2025	fold_switching	fold[- ]switch	false
+Q9Y9L0	europepmc_primary	39452701	10.3390/pathogens13100829	Modular Polymerase Synthesis and Internal Protein Domain Swapping via Dual Opposed Frameshifts in the Ebola Virus L Gene.	2024	domain_swapping	domain[- ]swapp	false
+Q9Y9L0	europepmc_primary	42177837	10.1016/j.redox.2026.104223	Nitration in cancer signaling.	2026	other_or_unclear		false
+Q9Y9L0	europepmc_primary	40476714	10.1128/jb.00090-25	&lt;i&gt;Fusobacterium nucleatum&lt;/i&gt;: strategies for adapting to aerobic stress.	2025	other_or_unclear		false
+Q9Y9L0	europepmc_primary	42707516	10.1155/ijm/5341732	Peptidoglycan as a Bioactive Functional Dietary Supplement Enhances Growth, Improves Nutrient Digestion, Increases Cellular Energy Allocation, and Activates Viral Resistance of Juvenile &lt;i&gt;Penaeus monodon&lt;/i&gt;.	2026	other_or_unclear		false
+Q9Y9L0	europepmc_primary	41963976	10.1186/s12964-026-02869-1	AlphaFold3-based modeling uncovers the dynamic structural interface between full-length IAP antagonists and DIAP1 for apoptosis regulation in Drosophila.	2026	ligand_induced	allosteric	false
+Q9Y9L0	europepmc_primary	40273505	10.1016/j.mam.2025.101362	Frustration in physiology and molecular medicine.	2025	other_or_unclear		false
+Q9Y9L0	europepmc_primary	38192350	10.1007/s12551-023-01172-4	Agglomeration: when folded proteins clump together.	2023	other_or_unclear		false
+Q9Y9L0	europepmc_primary	37372003	10.3390/antiox12061273	The Arsenal of <i>Leptospira</i> Species against Oxidants.	2023	other_or_unclear		false
+Q9Y9L0	europepmc_primary	32510464	10.1107/s2053230x20006147	Crystal structures of the GH18 domain of the bifunctional peroxiredoxin-chitinase CotE from Clostridium difficile.	2020	other_or_unclear		false
+Q9Y9L0	europepmc_primary	32751110	10.3390/molecules25153440	Moonlighting Proteins in the Fuzzy Logic of Cellular Metabolism.	2020	other_or_unclear		false
+Q9Y9L0	europepmc_primary	41515949	10.3390/ijms27010069	Neurovascular Signaling at the Gliovascular Interface: From Flow Regulation to Cognitive Energy Coupling.	2025	other_or_unclear		false
+Q9Y9L0	europepmc_primary	42684666	10.1007/s40259-026-00798-6	Targeting MYC-Driven Cancers: From Oncogenic Addiction to Therapeutic Vulnerability.	2026	other_or_unclear		false
+Q9Y9L0	europepmc_primary	37362943	10.3389/fmicb.2023.1148750	White-rot fungi scavenge reactive oxygen species, which drives pH-dependent exo-enzymatic mechanisms and promotes CO<sub>2</sub> efflux.	2023	other_or_unclear		false
+Q9Y9L0	europepmc_primary	39944909	10.1002/ece3.70953	Transcriptome-To-Phenome Response of Larval Eastern Oysters Under Multiple Drivers of Aragonite Undersaturation.	2025	other_or_unclear		false
+Q9Y9L0	europepmc_primary	36389847	10.3389/fimmu.2022.1037739	Comparative transcriptomics reveals the immune dynamics during the molting cycle of swimming crab <i>Portunus trituberculatus</i>.	2022	other_or_unclear		false
+Q9Y9L0	europepmc_primary	34405992	10.1021/acs.chemrev.1c00308	Protein Assembly by Design.	2021	other_or_unclear		false
+Q9Y9L0	europepmc_primary	42599123	10.1111/ppl.71069	Hydrogen Peroxide in Cereal Crops Under Abiotic Stress: Mechanistic Modules, Evidence Tiers, and Translational Opportunities.	2026	other_or_unclear		false
+Q9Y9L0	europepmc_primary	42517695	10.1080/21505594.2026.2697095	Pathogenicity and virulence of &lt;i&gt;Streptococcus suis&lt;/i&gt; serotype 2: Emerging insights and persistent knowledge gaps.	2026	other_or_unclear		false
+Q9Y9L0	europepmc_primary	40613862	10.1093/mtomcs/mfaf023	The iron metalloproteome of Pseudomonas aeruginosa under oxic and anoxic conditions.	2025	other_or_unclear		false
+Q9Y9L0	europepmc_primary	41096544	10.3390/ijms26199272	Hypoxia and Tissue Regeneration: Adaptive Mechanisms and Therapeutic Opportunities.	2025	other_or_unclear		false
+Q9Y9L0	europepmc_primary	26138759	10.1111/pce.12596	Physiological relevance of plant 2-Cys peroxiredoxin overoxidation level and oligomerization status.	2016	local_conformational_change	conformational switch	false
+Q9Y9L0	europepmc_primary	36937252	10.3389/fmicb.2023.1138016	Progress on innate immune evasion and live attenuated vaccine of pseudorabies virus.	2023	other_or_unclear		false
+Q9Y9L0	europepmc_primary	26335718	10.1128/mmbr.00036-15	Circadian Rhythms in Cyanobacteria.	2015	other_or_unclear		false
+Q9Y9L0	europepmc_primary	39091297	10.3389/fmicb.2024.1434987	Bioenzymatic detoxification of mycotoxins.	2024	other_or_unclear		false

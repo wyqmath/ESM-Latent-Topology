@@ -1,0 +1,120 @@
+{
+ "assertions": {
+  "strict_all_exposed": true,
+  "v5_exposure_35_not_96": true
+ },
+ "exposure": {
+  "exposed_in_current_pool": 35,
+  "exposed_tiers": {
+   "extension_condition_or_assembly": 4,
+   "extension_construct_difference": 21,
+   "strict_state_candidate": 10
+  },
+  "note": "P1.09 曾称 96 对全部曝光——实测 v5 仅 35 对（28 dev+7 test）；本预演修正该声明（P1.09 产物不改动，移交 P1.18/G1）",
+  "strict_all_exposed": true,
+  "unexposed_count": 61,
+  "unexposed_tiers": {
+   "excluded": 2,
+   "extension_condition_or_assembly": 1,
+   "extension_construct_difference": 1,
+   "fragment_only": 4,
+   "pending_evidence": 53
+  },
+  "v5_split_detail": {
+   "both_dev_and_test": 2,
+   "dev_only": 26,
+   "test_only": 7,
+   "test_side_total": 9
+  },
+  "v5_unique_porter_pairs": 35
+ },
+ "family_share_strict": {
+  "B9W5G6": [],
+  "P00573": [],
+  "P19726": [],
+  "P38505": [],
+  "Q08209": [],
+  "Q12931": [],
+  "Q58AD3": [],
+  "Q8E473": [],
+  "Q9RZA4": [
+   "O76074"
+  ],
+  "Q9YA14": []
+ },
+ "generated": "2026-09-23 18:49",
+ "group_stats": {
+  "id25cov70": {
+   "giant_members_tiers": {
+    "extension_construct_difference": 1,
+    "pending_evidence": 1
+   },
+   "max_size": 2,
+   "n_groups": 92,
+   "size_dist_top10": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "strict_in_groups_with_others": 0
+  },
+  "id30cov70": {
+   "giant_members_tiers": {
+    "extension_construct_difference": 1,
+    "pending_evidence": 1
+   },
+   "max_size": 2,
+   "n_groups": 93,
+   "size_dist_top10": [
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "strict_in_groups_with_others": 0
+  },
+  "id40cov70": {
+   "giant_members_tiers": {
+    "pending_evidence": 2
+   },
+   "max_size": 2,
+   "n_groups": 95,
+   "size_dist_top10": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "strict_in_groups_with_others": 0
+  }
+ },
+ "mmseqs": {
+  "binary": "/Users/yuan/Documents/Codex/2026-09-08/jie/benchmark_step1/tools/mmseqs2-18-8cc5c/bin/mmseqs",
+  "main_rule": "easy-cluster min-seq-id 0.3 -c 0.7 cov-mode 0（[待冻结] 候选阈值）",
+  "sensitivity": [
+   "id25cov70",
+   "id40cov70"
+  ],
+  "version": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+ },
+ "structure_edges_missing": "TM>=0.6 结构近邻边无现成数据（P2.01 计算后并入正式分组）；本预演仅序列+pair 边"
+}

@@ -1,0 +1,21 @@
+baseline	k	recall_at_k	enrichment_at_k	positive_rank_percentile
+B0_random	10	0.0	0.0	
+B0_random	100	0.0	0.0	
+B0_random	1000	0.0	0.0	
+B0_random	10000	0.0	0.0	
+B0_random	percentile			0.4399524580865111
+B1_length_desc	10	0.0	0.0	
+B1_length_desc	100	0.0	0.0	
+B1_length_desc	1000	0.0	0.0	
+B1_length_desc	10000	0.1	3.4201400000000004	
+B1_length_desc	percentile			0.5787973591724315
+B2_n_pdb_desc	10	0.0	0.0	
+B2_n_pdb_desc	100	0.0	0.0	
+B2_n_pdb_desc	1000	0.0	0.0	
+B2_n_pdb_desc	10000	0.0	0.0	
+B2_n_pdb_desc	percentile			0.3531352517733192
+B3_logistic_len_pdb	10	0.0	0.0	
+B3_logistic_len_pdb	100	0.0	0.0	
+B3_logistic_len_pdb	1000	0.0	0.0	
+B3_logistic_len_pdb	10000	0.1	3.4201400000000004	
+B3_logistic_len_pdb	percentile			0.6129228628067858

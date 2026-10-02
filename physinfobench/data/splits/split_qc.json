@@ -1,0 +1,76 @@
+{
+ "assignment_counts": {
+  "confirmation": 10327,
+  "development": 48224,
+  "final_holdout": 10324
+ },
+ "background_split": {
+  "confirmation": 68227,
+  "development": 342170,
+  "final_holdout": 73981
+ },
+ "forced_dev_samples_all_development": true,
+ "generated_by": "KNOT-RESPLIT 方案 A（用户 2026-09-25 17:00 裁决）：打结结构近邻边（US-align min>=0.6，2998 对）纳入全局绑定图；mode0 等价性检查 PASS（与 2026-09-24 03:27 版逐行一致）",
+ "groups_total": 68875,
+ "knot_presence_usable_by_split": {
+  "neg": {
+   "confirmation": 126,
+   "development": 623,
+   "final_holdout": 83
+  },
+  "pos": {
+   "confirmation": 24,
+   "development": 138,
+   "final_holdout": 26
+  }
+ },
+ "knot_structural_edges_added": 2998,
+ "knot_type_by_split": {
+  "confirmation": {
+   "3_1": 16
+  },
+  "development": {
+   "3_1": 66,
+   "4_1": 7,
+   "5_2": 3
+  },
+  "final_holdout": {
+   "3_1": 18,
+   "4_1": 1,
+   "5_1": 1
+  }
+ },
+ "labeled_area_split": {
+  "bpti": {
+   "development": 9
+  },
+  "disorder": {
+   "confirmation": 432,
+   "development": 2392,
+   "final_holdout": 513
+  },
+  "fold_switch": {
+   "confirmation": 6,
+   "development": 83,
+   "final_holdout": 7
+  },
+  "knot": {
+   "confirmation": 195,
+   "development": 1039,
+   "final_holdout": 167
+  },
+  "pyp": {
+   "development": 6
+  },
+  "rnase_a": {
+   "development": 9
+  }
+ },
+ "prev_version": {
+  "groups_total": 69084,
+  "run_ts": "2026-09-24 03:27"
+ },
+ "proportions": "70:15:15",
+ "run_ts": "2026-09-25 18:56",
+ "seed": 2026
+}

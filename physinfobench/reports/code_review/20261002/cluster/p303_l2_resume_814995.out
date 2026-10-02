@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "current_development_representatives": 47595,
+  "base_fasta_records": 47604,
+  "base_current_overlap": 45133,
+  "base_extra_historical_representatives": 2471,
+  "delta_fasta_records": 2462,
+  "delta_current_overlap": 2462,
+  "base_delta_overlap": 0,
+  "missing_current_representatives": 0,
+  "delta_extra_representatives": 0,
+  "manifest_sha256": "a4b9fea623f648f2b3f3684a7ddf83ea862112ce1735993082887fd5caa902dc",
+  "base_fasta_sha256": "6dd463f59948d85ea1cbbbd9cf75f42d15eaa8f87779d39ba54210f62173a989",
+  "delta_fasta_sha256": "5401c51dc9b137b8cbc08f6185feb64cbc1a4a716239089e83a5bb1699cb5754"
+}
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights:   3%|▎         | 16/534 [00:00<00:25, 20.32it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 668.38it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=2462 cache_hits=0 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p303/emb_20261002/l2_stage_b_delta/extract_manifest.tsv
+[extract] packed matrix (2462, 6, 1280) -> data/interim/p303/emb_20261002/l2_stage_b_delta/packed.npz
+[stageb] selected layer=5 C=0.1
+[stageb] loaded /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p303/emb_20261002/l2_stage_b/packed.npz: (47604, 6, 1280)
+[stageb] loaded /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p303/emb_20261002/l2_stage_b_delta/packed.npz: (2462, 6, 1280)
+[stageb] OK {"layer": 5, "C": 0.1, "universe": 342014, "run_ts": "2026-10-02 16:10", "recall@10": 0.8, "enrichment@10": 27361.12, "recall@100": 1.0, "enrichment@100": 3420.14, "recall@1000": 1.0, "enrichment@1000": 342.014, "recall@10000": 1.0, "enrichment@10000": 34.2014, "positive_rank_percentile": 2.7e-05, "universe_bg_expected": 342004}
+[p303-l2-fp32-resume] DONE 2026-10-02T08:10:10Z

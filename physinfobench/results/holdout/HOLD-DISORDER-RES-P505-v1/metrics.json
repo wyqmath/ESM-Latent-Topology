@@ -1,0 +1,53 @@
+{
+ "base_rate_prevalence": 0.998944,
+ "degeneracy_note": "\u786e\u8ba4\u4fa7\u5df2\u793a\u8b66\uff1a\u53cc\u7c7b\u86cb\u767d\u8ba1\u6570\u4e3a\u5224\u8bfb\u524d\u7f6e\u91cf\uff0c\u5982\u5b9e\u62a5\u544a",
+ "dev_fit": {
+  "merge_confirmation": "no\uff08final_lock \u51bb\u7ed3\uff1a\u4ec5 dev \u62df\u5408\uff09",
+  "n_proteins": 2279,
+  "n_residues": 205263,
+  "pos_rate": 0.998158
+ },
+ "executed_at": {
+  "local": "2026-09-30 19:50",
+  "utc": "2026-09-30T11:50:48Z"
+ },
+ "holdout": {
+  "dual_class_proteins": 1,
+  "n_proteins": 494,
+  "n_residues": 51134,
+  "pos_rate": 0.998944
+ },
+ "hypothesis": "H-DISORDER-RES",
+ "per_protein_auprc_descriptive": {
+  "DP01351": 0.98425
+ },
+ "permutation_null": {
+  "max": 0.999608,
+  "mean": 0.999384,
+  "n": 100,
+  "sd": 8.6e-05
+ },
+ "pooled_auprc": 0.999943,
+ "pooled_auprc_boot": {
+  "ci95_high": 1.0,
+  "ci95_low": 0.999804,
+  "degenerate_discarded": 0,
+  "no_conclusion_flag": false,
+  "point": 0.999943,
+  "valid_draws": 2000
+ },
+ "reader": {
+  "C": 0.01,
+  "class_weight": "balanced",
+  "layer_hidden": 33,
+  "max_iter": 1000,
+  "random_state": 2026,
+  "solver": "liblinear"
+ },
+ "run_id": "HOLD-DISORDER-RES-P505-v1",
+ "statistics": {
+  "B": 2000,
+  "ci": "percentile95",
+  "seed": 2026
+ }
+}

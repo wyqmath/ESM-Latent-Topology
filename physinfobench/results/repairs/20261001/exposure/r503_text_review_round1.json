@@ -1,0 +1,36 @@
+{
+  "reviewed_at_utc": "2026-10-01T14:01:58.590875+00:00",
+  "round": 1,
+  "status": "FAIL",
+  "blockers": 0,
+  "major": [
+    {
+      "file": "reports/aggregation_diagnosis.md",
+      "locations": "section2.2;section5 candidates1/2",
+      "finding": "未显著差异被写成无额外收益或近无损；范围header不能消除正文等效结论",
+      "requested_change": "改为本次对比未建立收益，报告区间允许的增益/损失，明确未做等效性检验。"
+    },
+    {
+      "file": "reports/aggregation_diagnosis.md",
+      "locations": "tableCI99fam/sig99fam and conclusions",
+      "finding": "P4 bootstrap按chain/protein抽样，当前fullcomponent纠错仅P5；历史sig99fam不可被误读成已通过完整分量统计复核",
+      "requested_change": "表明P4历史链单位区间本轮未重算；当前结论保留点差描述，或另做完整component复算后恢复推断。"
+    }
+  ],
+  "minor": [
+    {
+      "file": "TODO.md",
+      "finding": "头部最近更新与计划产物尚未生成行仍未清楚统为建档历史；liveprogress已有新状态。",
+      "requested_change": "将头部建档状态全部显式标为历史快照，并给当前live更新时间。"
+    }
+  ],
+  "verified_pass": [
+    "confirmation/generalization的148/108,66/59分量,131/81曝光,17/27后验子集及seed2026区间吻合",
+    "全图max残余FS55/knot253及14缺结构与原QC吻合",
+    "P507链/分量指标、选择误名、fixedprediction置换与非nested模型选择限制吻合",
+    "matrix撤回C/F,保留D/X,L3pending,FSstrict缺位,G5待确认"
+  ],
+  "pending": [
+    "P508 99链exactscore复算的最终数字与reader/cache血缘，当前四位汇总版不冻结终稿"
+  ]
+}

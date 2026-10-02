@@ -1,0 +1,8 @@
+accession	source_url	retrieved_at	sha256	n_residues
+P0A6Z3	https://rest.uniprot.org/uniprotkb/P0A6Z3.fasta	2026-09-24	a2f83439d65fa3eef8e09ce983ab392d64cbccd93f256986b8786e5cf48f21a9	624
+P0DP25	https://rest.uniprot.org/uniprotkb/P0DP25.fasta	2026-09-24	96205953017046823391934baf89fce82d8cc40b26948da3c7d3fc5fb6e1a128	149
+P0DP33	https://rest.uniprot.org/uniprotkb/P0DP33.fasta	2026-09-24	31f8cc4403d1414e3bea3a609b8805d755e9a67a1bb7d74ec14f8eb4bf821f83	149
+P9WG45	https://rest.uniprot.org/uniprotkb/P9WG45.fasta	2026-09-24	25d55f9a25330dd44dd492f723b49e102915502ef2a6503731d7ddd3ded6606a	675
+P9WIE2	https://rest.uniprot.org/uniprotkb/P9WIE2.fasta	2026-09-24	415d762c5d091ba09e2ca428fdb2509dfa4bc5ee7b4b7dbdb4e1fa7f62666af5	153
+P9WIE3	https://rest.uniprot.org/uniprotkb/P9WIE3.fasta	2026-09-24	5360b5bc2ecaf55744f43550fe0b52a4af8f0c4eb4d10c2a4287a016d272c70a	153
+Q8NI22	https://rest.uniprot.org/uniprotkb/Q8NI22.fasta	2026-09-24	bd0b77a0a862595eac52d6980d8beca1873ea10053d39fd94cb78794a610bf03	146

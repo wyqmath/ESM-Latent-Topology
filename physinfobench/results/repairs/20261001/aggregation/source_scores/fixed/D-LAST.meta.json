@@ -1,0 +1,25 @@
+{
+ "arm": "LAST",
+ "best_C": 0.01,
+ "dual_n": 4,
+ "grid": [
+  {
+   "C": 0.01,
+   "pooled_auroc": 0.945982
+  },
+  {
+   "C": 0.1,
+   "pooled_auroc": 0.945762
+  },
+  {
+   "C": 1,
+   "pooled_auroc": 0.93632
+  },
+  {
+   "C": 10,
+   "pooled_auroc": 0.92578
+  }
+ ],
+ "task": "disorder",
+ "y_prot_positive": 2277
+}

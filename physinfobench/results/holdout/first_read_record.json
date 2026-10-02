@@ -1,0 +1,27 @@
+{
+ "first_read_record": [
+  {
+   "content": "knots holdout 108（25 阳/83 阴）presence_target + 指标",
+   "first_read": {
+    "local": "2026-09-30 19:50",
+    "utc": "2026-09-30T11:50:36Z"
+   },
+   "run_id": "HOLD-KNOT-PRESENCE-P505-v1"
+  },
+  {
+   "content": "disorder holdout 494 蛋白分母域残基 state + 指标",
+   "first_read": {
+    "local": "2026-09-30 19:50",
+    "utc": "2026-09-30T11:50:48Z"
+   },
+   "run_id": "HOLD-DISORDER-RES-P505-v1"
+  }
+ ],
+ "fsl2_holdout_decision": "HOLD-FSL2-RANK 不运行：保留集 7 对全部 valid_mask=0（n_strict=0，与确认侧同 预注册分支）→ 证据不足如实登记，不设描述性 side-table（避免饱和分数 theater）。",
+ "gate": {
+  "fsl2_holdout_decision": "HOLD-FSL2-RANK 不运行：保留集 7 对全部 valid_mask=0（n_strict=0，与确认侧同 预注册分支）→ 证据不足如实登记，不设描述性 side-table（避免饱和分数 theater）。",
+  "user_authorization_note": "待用户明确授权后由 P5.04 收口提交回填（引用 decisions.md 条目时间戳）； 本字段为空时 run_p505_holdout.py 拒绝运行。",
+  "user_authorization_recorded": "2026-09-30 19:4x 用户指令式授权『继续推进，直到P5结束』（decisions.md 2026-09-30 19:4x 条目；G3/G4 先例语义；一次性、不回传调参）"
+ },
+ "registered_at": "2026-09-27T06:54:00Z"
+}

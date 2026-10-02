@@ -1,0 +1,17 @@
+{
+ "n_proteins": 105,
+ "per_protein_auprc_mean": 0.4383,
+ "per_protein_auprc_median": 0.3964,
+ "per_protein_base_rate_mean": 0.2139,
+ "improvement_over_base": 0.2244,
+ "pooled_auprc_secondary": 0.3489,
+ "pooled_base_rate": 0.2112,
+ "pooled_permutation": {
+  "mean": 0.2116,
+  "max": 0.2171
+ },
+ "balanced_acc_mean": 0.5244,
+ "mcc_mean": 0.0727,
+ "segment_recall_mean": 0.4181,
+ "note": "补充分析；冻结读出零重拟合；主张级=逐蛋白 AUPRC 相对各自基率"
+}

@@ -1,0 +1,22 @@
+{
+  "n_proteins": 99,
+  "n_residues": 22646,
+  "per_protein_auprc_mean": 0.43685474446178996,
+  "per_protein_base_rate_mean": 0.2153464880747274,
+  "per_protein_balanced_acc_mean": 0.5229277605387406,
+  "per_protein_mcc_mean": 0.06934225611267054,
+  "pooled_auprc_secondary": 0.3472566604924683,
+  "pooled_base_rate": 0.21292943566192704,
+  "pooled_fixed_prediction_permutation100": {
+    "mean": 0.21202601078496155,
+    "max": 0.2201027036770944
+  },
+  "kind": "historical mixed-layer H11->H33 replay diagnostic; invalid for intended H33->H33 target",
+  "label_scope": "CA coordinate non-observation; intrinsic-disorder correspondence unverified",
+  "actual_layer_identity": {
+    "development": 11,
+    "external": 33,
+    "status": "Historical mixed-layer bug reproduction only; not intended h33 reader evidence"
+  },
+  "note": "Historical mixed-layer replay; explicit correction required"
+}

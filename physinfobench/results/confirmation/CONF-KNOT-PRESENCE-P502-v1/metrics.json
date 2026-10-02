@@ -1,0 +1,58 @@
+{
+ "auroc": 0.94697,
+ "auroc_boot": {
+  "ci95_high": 0.993513,
+  "ci95_low": 0.903611,
+  "degenerate_discarded": 0,
+  "no_conclusion_flag": false,
+  "point": 0.94697,
+  "valid_draws": 2000
+ },
+ "conf": {
+  "n": 148,
+  "neg": 126,
+  "no_sequence_dropped": [
+   "knot:1giy_M",
+   "knot:2hfx_A"
+  ],
+  "pos": 22
+ },
+ "dev_fit": {
+  "n": 750,
+  "neg": 623,
+  "pos": 127
+ },
+ "executed_at": {
+  "local": "2026-09-27 14:03",
+  "utc": "2026-09-27T06:03:56Z"
+ },
+ "hypothesis": "H-KNOT-PRESENCE",
+ "length_control_auroc": 0.575577,
+ "permutation_null": {
+  "max": 0.621212,
+  "mean": 0.502294,
+  "min": 0.299964,
+  "n": 100,
+  "sd": 0.063936,
+  "seeds": [
+   2026,
+   2125
+  ]
+ },
+ "reader": {
+  "C": 1,
+  "class_weight": "balanced",
+  "features": "hidden33 \u5168\u6b8b\u57fa\u5747\u503c\uff08knots_resid \u540c\u534f\u8bae\uff1bdev/\u786e\u8ba4\u540c\u6e90\uff09",
+  "layer_hidden": 33,
+  "max_iter": 1000,
+  "random_state": 2026,
+  "solver": "liblinear"
+ },
+ "run_id": "CONF-KNOT-PRESENCE-P502-v1",
+ "statistics": {
+  "B": 2000,
+  "ci": "percentile95",
+  "seed": 2026,
+  "units": "chain\uff08\u86cb\u767d\u7ea7\uff09"
+ }
+}

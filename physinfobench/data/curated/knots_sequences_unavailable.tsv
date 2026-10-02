@@ -1,0 +1,15 @@
+record_id	pdb	chain	presence_target	type_eligible	c2_primary	reason
+1giy_M	1giy	M	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+1s1h_I	1s1h	I	1	1	3_1	pdb_entry_not_in_wwpdb_archive
+1vw1_A	1vw1	A	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+1yl3_M	1yl3	M	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+2hfx_A	2hfx	A	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+2hfy_A	2hfy	A	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+3iqk_A	3iqk	A	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+3jyw_E	3jyw	E	1	1	3_1	pdb_entry_not_in_wwpdb_archive
+3pvm_B	3pvm	B	1	1	3_1	pdb_entry_not_in_wwpdb_archive
+4gge_A	4gge	A	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+4wkk_A	4wkk	A	1	1	4_1	pdb_entry_not_in_wwpdb_archive
+5cjl_A	5cjl	A	1	0	3_1	pdb_entry_not_in_wwpdb_archive
+5xzs_A	5xzs	A	1	1	3_1	pdb_entry_not_in_wwpdb_archive
+6uev_A	6uev	A	1	1	3_1	pdb_entry_not_in_wwpdb_archive

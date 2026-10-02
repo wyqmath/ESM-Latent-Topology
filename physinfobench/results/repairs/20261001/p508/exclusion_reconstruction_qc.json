@@ -1,0 +1,14 @@
+{
+  "candidate_n": 239,
+  "homology_excluded_n": 108,
+  "posthomology_n": 131,
+  "exactsequence_excluded_n": 26,
+  "reconstructed_historical_n": 105,
+  "difference_from_historical_105": [],
+  "actual_accession_overlaps_already_homology_excluded": 36,
+  "kind": "Retrospective derivation from retrieved historical cluster table; does not reconstruct original timestamps",
+  "source_sha256": {
+    "results/repairs/20261001/p508/historical_mmseqs_cluster.tsv": "00a4981fa1941e55af3ff0d87fac93cd3dce9d2fc6db0db95ee3e592eedc8d19",
+    "data/interim/p508_seqs.fa": "dde5b3c771967cddf26304b2ca8a59dff19711ad8f89291d0a79139215a41fb6"
+  }
+}

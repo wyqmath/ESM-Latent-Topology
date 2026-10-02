@@ -1,0 +1,35 @@
+{
+ "all_reads_after_registration": true,
+ "jobs": [
+  "813224",
+  "813225",
+  "813226",
+  "813229"
+ ],
+ "lock_registered_at": "2026-09-27T05:31:00Z",
+ "reads": [
+  {
+   "content": "knots conf 148（22 阳/126 阴）presence_target 进入 AUROC 计算",
+   "first_read_local": "2026-09-27 14:03",
+   "first_read_utc": "2026-09-27T06:03:56Z",
+   "job": "813224",
+   "run_id": "CONF-KNOT-PRESENCE-P502-v1"
+  },
+  {
+   "content": "disorder conf 418 蛋白分母域残基 state 标签进入池化 AUPRC 计算",
+   "first_read_local": "2026-09-27 14:04",
+   "first_read_utc": "2026-09-27T06:04:09Z",
+   "job": "813224",
+   "run_id": "CONF-DISORDER-RES-P502-v1"
+  },
+  {
+   "content": "n_strict 复算（构成级，=0）；无标签消费（描述性 side-table 仅用序列分数）",
+   "first_read_local": "2026-09-27 14:19",
+   "first_read_utc": "2026-09-27T06:19:22Z",
+   "job": "813226/813229",
+   "run_id": "CONF-FSL2-RANK-P502-v1"
+  }
+ ],
+ "reconstruction_note": "运行器注册的 first_read_record 写入步骤缺失（执行缺陷，报告披露）；本文件由各 metrics.json 运行时 executed_at 字段与 slurm 作业号忠实重建，无任何编造时间戳。",
+ "registered_at": "2026-09-27T05:31:00Z"
+}

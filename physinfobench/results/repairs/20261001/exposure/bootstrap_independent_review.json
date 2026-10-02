@@ -1,0 +1,224 @@
+{
+  "reviewed_at_utc": "2026-10-01T13:45:54.005511+00:00",
+  "method": "independent literal row expansion for all 24000 draws; exact paired IDs; no import of implementation",
+  "checks": [
+    {
+      "kind": "full_set_final",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "full_set_final",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 20,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 20,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 16,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 21,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 21,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 12,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "draws": 2000,
+      "degenerate": 0,
+      "explicit_expansion_matches_weighted": true
+    },
+    {
+      "kind": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "draws": 2000,
+      "degenerate": 1,
+      "explicit_expansion_matches_weighted": true
+    }
+  ],
+  "status": "PASS",
+  "scope": "bootstrap multiplicity/paired length/degenerate/quantile/input hashes"
+}

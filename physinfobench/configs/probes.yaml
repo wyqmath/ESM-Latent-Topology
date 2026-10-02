@@ -1,0 +1,186 @@
+# =============================================================================
+# configs/probes.yaml — P3.02 开发期探针对比配置（冻结）
+# 冻结时间：2026-09-25 00:25 Asia/Shanghai。
+# 授权链：用户委托（logs/decisions.md 2026-09-24 02:34"后面的你替我抉择"）+ G2 有条件确认
+#         适用范围第 4 项（统计参数须在 P3.02 前冻结，本次一并冻结并回写 evaluation_protocol.yaml）。
+# 纪律：所有层/读取器/超参选择仅用 development（dev_fold 内部 CV）；confirmation/final_holdout
+#       零接触（first_read 登记制未触发）；变更须差异清单+独立审核。
+# =============================================================================
+
+meta:
+  task: P3.02
+  created_at: "2026-09-25 00:25"
+  status: frozen_2026-09-25
+  task_whitelist_source: reports/input_identifiability.md（P3.01，e8b1f02）
+  change_rule: 任何修改=差异清单+影响面+独立审核，不改历史冻结版本语义
+
+# -----------------------------------------------------------------------------
+# 1. 编码器（固定；与 configs/models.yaml local_primary 及 P2.04 验证一致）
+# -----------------------------------------------------------------------------
+encoder:
+  model_id: facebook/esm2_t33_650M_UR50D
+  revision: 08e4846e537177426273712802403f7ba8261b6c
+  revision_authority: models.yaml 记 id+layers_exported（无 revision 字段）；revision 权威来源=
+    reports/p204_model_verification.json（P2.04 验证）+ results/representations_smoke/extract_manifest.tsv
+    revision 列（P2.05）+ HF snapshot 目录名，三者一致（P3.02 审核三方复核实测）
+  exported_layers: 34            # embeddings(0) + hidden(1..33)；P2.04 验证 34 层可导出
+  pooling: mean_over_residues    # BOS/EOS 剥离后逐层残基均值（P2.05 语义）；不使用 CLS
+  forward_precision: fp32
+  storage_precision: fp16
+  truncation: 1022               # 与 P2.05 一致；trunc_coverage 逐样本落盘
+  cache: P2.05 缓存键（revision|seq_sha|layer_set|prep_hash），meta 失配=REJECT
+
+# -----------------------------------------------------------------------------
+# 2. 层集合（冻结；选择仅在 development 内比较）
+# -----------------------------------------------------------------------------
+layers:
+  global_set: [5, 11, 17, 23, 29, 33]   # 6 层均匀深度网格（1-based 隐藏层，33=末层）
+  residue_set: [11, 23, 33]             # 残基任务 3 层（global_set 子集；磁盘预算约束见 resources）
+  residue_storage_domain: 任务分母残基域  # disorder=state∈{0,1} 且 mask=1 的残基（dev 223,660 残基，
+                                         # 提取仅写该域、residue index 对齐全长链）；FS-REGION=全长链（链短 <0.1Gi）
+  rationale: >-
+    均匀覆盖浅/中/深与末层；残基集取子集是为满足残基级存储预算（fp16 3 层、仅分母残基域
+    ≈1.6Gi），属资源约束下的事前冻结而非事后选择；层间比较在同一集合内进行，保证公平。
+
+# -----------------------------------------------------------------------------
+# 3. 任务×读取器矩阵（白名单=P3.01 六项；T-FS-GLOBAL 伞任务不设探针）
+# -----------------------------------------------------------------------------
+tasks:
+  T-KNOT-PRESENCE:
+    kind: global_binary
+    reader_input: M_pooled
+    y_source: data/curated/knots.tsv presence_target（presence_mask=1 入分母）
+    universe: development ∩ presence_mask=1
+    primary_metric: AUROC
+  T-KNOT-TYPE:
+    kind: global_multiclass
+    reader_input: M_pooled
+    y_source: c2_primary（type_task_tier=eligible）
+    universe: development ∩ type_task_tier=eligible（85 行；3_1=75/4_1=7/5_2=2/5_1=1）
+    primary_metric: Macro-F1（仅真值出现类别参与；确认集仅 3_1 的 NA 规则照 P0.05）
+  T-DISORDER-RES:
+    kind: residue_binary
+    reader_input: M_residue
+    y_source: disorder_masks.tsv（state 1/0；NA 出分母）
+    universe: development（2,380 蛋白；X/U/Z 残基按 P1.09 隔离规则不生成样本）
+    storage_domain: 分母残基域（state∈{0,1} 且 mask=1；dev 223,660 残基 ≈1.60Gi fp16×3 层）
+    primary_metric: residue AUPRC（per-protein 平均，P0.05 口径）
+  T-FS-REGION:
+    kind: residue_binary
+    reader_input: M_residue
+    y_source: fold_switch_regions（fine 区段）
+    main_analysis: 双满足（fine∧usable）3 对 6 行（porter_20/61/62，P1.15 冻结口径）
+    sensitivity: fine_only 6 对 10 行
+    conclusion_boundary: 案例级区段定位一致性（P1.15 结论边界）；不支撑群体残基级 AUPRC 主张
+    primary_metric: residue AUPRC
+    aux_metrics: 区段 IoU（P0.05 注册名 segment_overlap，辅助指标层级并报，不入主对比族）
+    storage_domain: 全长链（短链，<0.1Gi）
+  T-FS-L1-PAIRED:
+    kind: within_positive_diagnosis
+    arms: [区域定位（复用 T-FS-REGION）, 多态潜能读出（pair 两端池化表示的几何关系）]
+    excluded_arm: 状态判别（porter_87 同序列双端不可识别，P3.01 判定；不设该臂、不作该主张）
+    primary_metric: 区域定位=residue AUPRC + 区段 IoU（复用 T-FS-REGION 口径）；层级可读性=描述性诊断（非主对比族，不校正不入主结论）
+  T-FS-L2-PU-RANK:
+    kind: ranking
+    reader_input: M_pooled
+    universe: development 背景 343,682 + strict 10（冻结）
+    primary_metrics: [recall_at_k, enrichment_at_k, positive_rank_percentile]  # k=10/100/1000/10000（冻结）
+    baselines: P2.06 四条（B0 随机/B1 长度/B2 结构数/B3 直推 logistic）同宇宙对照
+
+# -----------------------------------------------------------------------------
+# 4. 读取器
+# -----------------------------------------------------------------------------
+readers:
+  linear:
+    global_binary: L2 正则逻辑回归，C ∈ {0.01, 0.1, 1, 10}，class_weight=balanced，solver=liblinear
+    global_multiclass: 多项逻辑回归（线性 softmax），C 网格同上，solver=lbfgs
+    residue_binary: 逐残基逻辑回归，C 网格同上；训练/评估按蛋白分组（残基不独立成折）
+    ranking: 逻辑回归评分（observed-positive vs unlabeled 直推语义，P2.06 双披露口径延续）
+    budget: max_iter=1000，tol=sklearn 默认；不收敛（ConvergenceWarning）记入 qc 并报告占比
+  nonlinear:                       # P3.04 受控容量对照（BN4）；P3.03 不运行
+    arch: MLP in→h[→h2]→out，ReLU，dropout 0.1
+    grid: hidden ∈ {64, 256} × depth ∈ {1, 2}   # 4 配置
+    capacity_cap: >-
+      可训参数 ≤ 400k 绝对上限（受限容量语义：相对编码器 650M=0.06%；最大配置 hidden=256
+      depth=2 核算 ≈1280×256+256×256+256×out_dim ≈393.5k，恰在预算内，grid 全部可执行）。
+      注意 grid 上限本身即容量控制，不再叠加相对线性读取器的倍数条款（P3.02 审核裁定该公式不自洽，废除）。
+    optim: Adam lr 1e-3，batch 256，≤100 epochs，early_stop patience 10（验证折指标）
+    seeds: [13, 42, 2026]          # 非线性训练随机性大，容量对照用全部三种子
+    capacity_universes:            # 容量对照固定宇宙（linear 与 nonlinear 必须同宇宙）
+      T-KNOT-PRESENCE: development ∩ presence_mask=1 全量
+      T-KNOT-TYPE: development 全量（85 行）
+      T-DISORDER-RES: development 内固定种子 500 蛋白子样本（accession 升序后 numpy RandomState(2026) 无放回抽取）
+      T-FS-REGION: 全量（双满足 6 行；敏感性层不跑非线性）
+      T-FS-L1-PAIRED: 全量
+      T-FS-L2-PU-RANK: l2_two_stage.stage_a_selection_universe
+
+# -----------------------------------------------------------------------------
+# 5. 选择纪律（仅 development）
+# -----------------------------------------------------------------------------
+selection:
+  cv: dev_fold 5 折组级轮转（P2.02 冻结：种子 2026+1；折 0–4 见 split_manifest.dev_fold）
+  protocol: 每配置报告 5 折 CV 均值±标准差；主指标 CV 均值最优者选（并列取更小 C/更浅架构）
+  layer_reader_joint: 层与读取器在同一网格上联合选择
+  full_logging: 每配置×每折指标全部落盘（results/probes/），选择过程可复算
+  forbidden: confirmation/final_holdout 数据不参与任何选择；不得以测试表现回调配置
+
+# -----------------------------------------------------------------------------
+# 6. L2 两阶段（选择成本受控，最终指标在全冻结宇宙）
+# -----------------------------------------------------------------------------
+l2_two_stage:
+  stage_a_selection_universe:
+    purpose: 仅用于层/读取器/超参选择
+    sampling:
+      frame: development 非EP_ 背景簇代表（47,604，复数口径=unique cluster_rep）
+      sort_key: accession 升序
+      seed: 2026
+      n: 10000
+      replacement: false
+      tool: numpy.RandomState(2026).choice（确定性、可复现）
+    positives: 10 strict（全量）
+  stage_b_final_universe:
+    background: 全部 dev 背景 343,682（protein 级打分，非簇代表代理）
+    positives: 10 strict
+    storage: 仅写入 stage_a 选中的层（fp16 池化 ≈0.82Gi）
+    output: 官方 L2 指标（recall@k/enrichment@k/rank percentile）+ 与 B0–B3 同表对比
+  disclosure: 两阶段设计、选择宇宙与最终宇宙的差异写入 P3.03 报告
+
+# -----------------------------------------------------------------------------
+# 7. 统计参数（本次冻结；已回写 configs/evaluation_protocol.yaml）
+# -----------------------------------------------------------------------------
+stats:
+  bootstrap_B: 2000
+  ci: {level: 0.95, method: percentile}
+  probe_seed_pool: [13, 42, 2026]  # 种子池（=evaluation_protocol.seeds）；各消费方声明用量：
+  seed_usage:
+    layer_readability: [2026]      # 线性读取器为凸问题、种子敏感性低——主层比较单种子（预算理由，预注册）
+    capacity_gain: [13, 42, 2026]  # 非线性训练随机性大，必须多种子
+    l2_vs_baselines: [2026]
+  multiplicity: Holm–Bonferroni    # 仅作用于预注册主对比族
+  primary_families:                # 预注册主对比族（其余=探索性，标注不校正不入主结论）
+    - family: layer_readability    # 每任务主指标 across 冻结层集（线性读取器，seed 2026）
+    - family: capacity_gain        # linear vs nonlinear（同容量宇宙，配对 bootstrap）
+      caveat: >-
+        capacity_gain 在 stage-A 选择宇宙上评估，该宇宙已用于层/读取器/超参选择——容量差
+        解释为上限乐观值；确认性容量结论不得引用该宇宙（P3.02 审核标注）。
+    - family: l2_vs_baselines      # PLM 评分 vs B0–B3（recall@10000 配对差）
+  paired_bootstrap: 同批重采样索引（同一 bootstrap 种子序列），差值区间报告
+
+# -----------------------------------------------------------------------------
+# 8. 资源估算与执行序（P3.03 按此执行；估算=2026-09-25 00:37 df 实测口径）
+# -----------------------------------------------------------------------------
+resources:
+  disk_available: "≈13Gi（2026-09-25 00:37 df -h / 实测：/dev/disk3s1s1，Avail 13Gi）"
+  plan_peak: "≈4.6Gi：disorder 分母残基域 fp16 3 层 ≈1.60Gi（dev 223,660 残基，dev 标注域口径实算）+ FS-REGION 全长链 <0.1Gi + L2 stage-B 选中层 ≈0.82Gi + stage-A 抽样 ≈0.15Gi + 模型权重/缓存 ~2Gi（峰值复用）"
+  compute_basis: "P2.05 冒烟 CPU 实测（74aa 0.4s / 857aa 2.9s / 482aa 1.22s 前向，batch 1 含固定开销）；批处理吞吐以 P3.03 首小时实测修正并落盘"
+  long_runs: "L2 stage-B 全宇宙提取为后台长跑：分片落盘+manifest 校验+断点续跑；时间不设上限（委托'能运行多久就多久'）"
+  fallback: "df 实测可用 <5Gi 时触发：残基任务 storage 降为 residue_set 去 11（=[23,33]），并登记差异清单重审"
+execution_order:
+  - A: 小任务提取+线性探针（knots presence/type、FS-REGION、FS-L1、disorder）
+  - B: L2 stage-A 提取+层/读取器/超参选择
+  - C: L2 stage-B 全宇宙提取（后台长跑）+官方 L2 指标
+  - D: 非线性读取器容量对照（P3.04 执行）
+preflight:                         # P3.01 登记的提取期前置
+  - knots 链序列获取（RCSB PDB entity/UniProt）+ same-sha×不同标签断言（P3.01 §4）
+  - disorder 蛋白序列获取（DisProt/UniProt）+ X/U/Z 13 条目按隔离规则处理
+  - 提取器扩展：resid 输出支持指定层集（缓存键已含 layer_set，P2.05 语义）

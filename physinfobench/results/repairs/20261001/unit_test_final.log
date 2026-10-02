@@ -1,0 +1,5 @@
+2026-10-01 22:43 Asia/Shanghai
+.venv_local/bin/python -m unittest discover -s tests -v
+Ran 23 tests in 0.211s
+OK
+Detailed test names: test_cluster_bootstrap (6), test_future_split_guard (10), test_p508_accessions (3), test_p508_layer_selection (4).

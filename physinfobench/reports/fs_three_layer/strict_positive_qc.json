@@ -1,0 +1,227 @@
+{
+ "created_at": "2026-09-24 00:51",
+ "checks_ok": [
+  "fold_switch_global: 主键唯一性 OK (96)",
+  "fold_switch_regions: (entry,region) 唯一性 OK (203)",
+  "knots: 主键唯一性 OK (1401)",
+  "disorder(region 级唯一性另行): 主键唯一性 OK (13983)",
+  "disorder: (dp,region,class) 唯一性 OK",
+  "disorder: 区间边界 OK (13983)",
+  "fold_switch_regions: pdf 区间序 OK",
+  "fold_switch_global: target⟺mask OK",
+  "knots: presence⟺mask（仅候选行） OK",
+  "disorder_masks: NA&mask=1 OK",
+  "DisProt 序列字母全量校验: 完成 3337 条目；发现含非标准字母条目 13 个（X 等，序列级事实，隔离供 P2.05 提取策略决策；标签区段位置语义基本不变；唯一反例 DP02886 位置 93 的 Z 残基落在 mask=1 区段内，已单列）",
+  "fold_switch: 同 UniProt 对重复 OK（同蛋白多对按 pair 组绑定，P2.01 处理）",
+  "strict 同序列证据分层: same_uniprot=10 | SIFTS mapping_identity 最小=1.0 | 双端 UniProt 子串=3/10（其余疑为标签/isoform/边界，列 G1 甄别）"
+ ],
+ "problems": [],
+ "strict_positive": {
+  "n": 10,
+  "same_uniprot": 10,
+  "identical_observed_seq": 1,
+  "seq_diff_variants": [
+   "porter_9_3j7wB__3j7vG",
+   "porter_20_5c1vA__5c1vB",
+   "porter_51_1h38D__1qlnA",
+   "porter_61_4gqcC__4gqcB",
+   "porter_62_4o0pA__4o01D",
+   "porter_68_3zwgN__4tsyD",
+   "porter_72_4rmbA__4rmbB",
+   "porter_77_2nxqB__1jfkA",
+   "porter_80_5f3kA__5f5rB"
+  ],
+  "zero_mutation": 10,
+  "traceable_evidence": 10,
+  "old_audit_dependent": 8,
+  "both_uniprot_substring": 3,
+  "a_only_substring": 2,
+  "no_substring": 5,
+  "with_fine_region": 9,
+  "with_usable_region": 3,
+  "porter8_conflict_in_strict": 0,
+  "porter8_conflict_registered": "非 strict 对；G1 2026-09-24 限定2 采纳 extension_condition_or_assembly 并经 P1.24 在 fold_switch_global 落实；完整冲突描述见旧项目 manifests/data_corrections_2026-09-14.json 与 fold_switch_global.correction_note"
+ },
+ "flow": {
+  "T-FS-GLOBAL/L1": {
+   "task": "fold_switch strict 阳性",
+   "raw": 96,
+   "evidence_qualified": 10,
+   "mappable": 10,
+   "evaluable": 10
+  },
+  "T-FS-REGION": {
+   "task": "fold_switch 区段",
+   "raw": 203,
+   "evidence_qualified": 203,
+   "mappable": 167,
+   "evaluable": 16
+  },
+  "T-FS-L2-PU": {
+   "task": "PU 排序（阳=10 + 背景待 P1.10）",
+   "raw": 10,
+   "evidence_qualified": 10,
+   "mappable": 10,
+   "evaluable": 10
+  },
+  "T-FS-L3-MATCHED": {
+   "task": "匹配对照（待 P1.11/P2.01）",
+   "raw": 10,
+   "evidence_qualified": 10,
+   "mappable": 10,
+   "evaluable": 0
+  },
+  "T-KNOT-PRESENCE": {
+   "task": "打结存在性",
+   "raw": 1401,
+   "evidence_qualified": 1401,
+   "mappable": 1020,
+   "evaluable": 1020
+  },
+  "T-KNOT-TYPE": {
+   "task": "结型",
+   "raw": 1401,
+   "evidence_qualified": 112,
+   "mappable": 112,
+   "evaluable": 112
+  },
+  "T-DISORDER-RES": {
+   "task": "无序残基（双类蛋白）",
+   "raw": 3337,
+   "evidence_qualified": 3337,
+   "mappable": 3319,
+   "evaluable": 5
+  },
+  "T-PYP-STATE": {
+   "task": "PYP 状态对",
+   "raw": 2,
+   "evidence_qualified": 2,
+   "mappable": 2,
+   "evaluable": 1
+  },
+  "T-RNASE-ASSEMBLY": {
+   "task": "RNase A 组装对",
+   "raw": 4,
+   "evidence_qualified": 4,
+   "mappable": 4,
+   "evaluable": 2
+  },
+  "T-BPTI-REDOX": {
+   "task": "BPTI 功能样本",
+   "raw": 15,
+   "evidence_qualified": 5,
+   "mappable": 5,
+   "evaluable": "pending_fulltext(ox/red 数值)"
+  }
+ },
+ "independent_units": {
+  "fold_switch_uniprot": 103,
+  "fold_switch_strict_uniprot": 10,
+  "knot_chains": 1401,
+  "knot_presence_positive_chains": 188,
+  "disprot_entries": 3337,
+  "disprot_both_class_entries": 5,
+  "pyp_pair_units": 1,
+  "rnase_units": 1,
+  "bpti_units": 1
+ },
+ "disprot_isolated": {
+  "conditional_transition": 1007,
+  "other_structural_state": 154
+ },
+ "disprot_conflict_entries": 92,
+ "disprot_nonstandard_aa_entries": [
+  {
+   "disprot_id": "DP01026",
+   "letters": [
+    "X"
+   ],
+   "len": 2512
+  },
+  {
+   "disprot_id": "DP01466",
+   "letters": [
+    "X"
+   ],
+   "len": 2474
+  },
+  {
+   "disprot_id": "DP01468",
+   "letters": [
+    "X"
+   ],
+   "len": 2474
+  },
+  {
+   "disprot_id": "DP01469",
+   "letters": [
+    "X"
+   ],
+   "len": 2474
+  },
+  {
+   "disprot_id": "DP01541",
+   "letters": [
+    "X"
+   ],
+   "len": 737
+  },
+  {
+   "disprot_id": "DP02258",
+   "letters": [
+    "U"
+   ],
+   "len": 116
+  },
+  {
+   "disprot_id": "DP02886",
+   "letters": [
+    "Z"
+   ],
+   "len": 263
+  },
+  {
+   "disprot_id": "DP03051",
+   "letters": [
+    "X"
+   ],
+   "len": 1817
+  },
+  {
+   "disprot_id": "DP03592",
+   "letters": [
+    "X"
+   ],
+   "len": 2513
+  },
+  {
+   "disprot_id": "DP03593",
+   "letters": [
+    "X"
+   ],
+   "len": 2480
+  },
+  {
+   "disprot_id": "DP03745",
+   "letters": [
+    "U"
+   ],
+   "len": 145
+  },
+  {
+   "disprot_id": "DP03787",
+   "letters": [
+    "X"
+   ],
+   "len": 3423
+  },
+  {
+   "disprot_id": "DP03789",
+   "letters": [
+    "X"
+   ],
+   "len": 3423
+  }
+ ],
+ "exclusions_n": 7
+}

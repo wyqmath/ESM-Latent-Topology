@@ -1,0 +1,9 @@
+dim	scope	quadrant	n_pairs	pair_ids
+scope	全池	both	3	porter_20_5c1vA__5c1vB;porter_61_4gqcC__4gqcB;porter_62_4o0pA__4o01D
+scope	全池	fine_only	6	porter_51_1h38D__1qlnA;porter_72_4rmbA__4rmbB;porter_77_2nxqB__1jfkA;porter_80_5f3kA__5f5rB;porter_87_2k0qA__2lelA;porter_9_3j7wB__3j7vG
+scope	全池	usable_only	2	porter_48_3ifaA__5et5A;porter_59_1xntA__3lqcA
+scope	全池	neither	85	85 对（详见 qc）
+scope	strict 人群	both	3	porter_20_5c1vA__5c1vB;porter_61_4gqcC__4gqcB;porter_62_4o0pA__4o01D
+scope	strict 人群	fine_only	6	porter_51_1h38D__1qlnA;porter_72_4rmbA__4rmbB;porter_77_2nxqB__1jfkA;porter_80_5f3kA__5f5rB;porter_87_2k0qA__2lelA;porter_9_3j7wB__3j7vG
+scope	strict 人群	usable_only	0	
+scope	strict 人群	neither	1	porter_68_3zwgN__4tsyD

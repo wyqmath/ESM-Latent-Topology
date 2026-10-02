@@ -1,0 +1,70 @@
+saved 20 endpoint records from 10 positive pairs: data/interim/p303/fs_endpoints_20261002.fa
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15001.33it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=10000 cache_hits=0 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p303/emb_20261002/l2_stage_a/extract_manifest.tsv
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15889.77it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=47604 cache_hits=0 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p303/emb_20261002/l2_stage_b/extract_manifest.tsv
+[extract] packed matrix (47604, 6, 1280) -> data/interim/p303/emb_20261002/l2_stage_b/packed.npz
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 16180.89it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=20 cache_hits=1 layer_set=mean_5_11_17_23_29_33|domfull -> data/interim/p303/emb_20261002/fs_endpoints/extract_manifest.tsv
+[l2A] layer=1 C=0.01 pct=0.000599 recall@10000=1.0
+[l2A] layer=1 C=0.1 pct=0.000599 recall@10000=1.0
+[l2A] layer=1 C=1 pct=0.000559 recall@10000=1.0
+[l2A] layer=1 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=2 C=0.01 pct=0.000689 recall@10000=1.0
+[l2A] layer=2 C=0.1 pct=0.000559 recall@10000=1.0
+[l2A] layer=2 C=1 pct=0.000559 recall@10000=1.0
+[l2A] layer=2 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=3 C=0.01 pct=0.000579 recall@10000=1.0
+[l2A] layer=3 C=0.1 pct=0.000569 recall@10000=1.0
+[l2A] layer=3 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=3 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=4 C=0.01 pct=0.000569 recall@10000=1.0
+[l2A] layer=4 C=0.1 pct=0.000559 recall@10000=1.0
+[l2A] layer=4 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=4 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=0.01 pct=0.000569 recall@10000=1.0
+[l2A] layer=5 C=0.1 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=1 pct=0.000549 recall@10000=1.0
+[l2A] layer=5 C=10 pct=0.000549 recall@10000=1.0
+[l2A] layer=6 C=0.01 pct=0.001688 recall@10000=1.0
+[l2A] layer=6 C=0.1 pct=0.000749 recall@10000=1.0
+[l2A] layer=6 C=1 pct=0.000619 recall@10000=1.0
+[l2A] layer=6 C=10 pct=0.000559 recall@10000=1.0
+[probe] FS_L2A done
+[p303probe] DONE
+[stageb FATAL] 新版 dev 代表缺嵌入 2462: ['A0A024SIB3', 'A0A0E3D8M6', 'A0A0H2ZJC1', 'A0A0K8P6T7', 'A0A0U3AP28']
+[stageb] selected layer=5 C=0.1
+[stageb] loaded /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p303/emb_20261002/l2_stage_b/packed.npz: (47604, 6, 1280)

@@ -1,0 +1,221 @@
+{
+ "area_split": {
+  "bpti": {
+   "development": 9
+  },
+  "disorder": {
+   "confirmation": 447,
+   "development": 2380,
+   "final_holdout": 510
+  },
+  "fold_switch": {
+   "confirmation": 7,
+   "development": 81,
+   "final_holdout": 8
+  },
+  "knot": {
+   "confirmation": 247,
+   "development": 970,
+   "final_holdout": 184
+  },
+  "pyp": {
+   "development": 6
+  },
+  "rnase_a": {
+   "development": 9
+  }
+ },
+ "asserts_passed": [
+  "manifest=4858",
+  "area_totals",
+  "type_rows=112",
+  "strict10_all_dev",
+  "bg_proteins",
+  "max_cross==leakage_audit_L4"
+ ],
+ "knot_type_by_split": {
+  "confirmation": {
+   "3_1": 14
+  },
+  "development": {
+   "3_1": 75,
+   "4_1": 7,
+   "5_1": 1,
+   "5_2": 2
+  },
+  "final_holdout": {
+   "3_1": 11,
+   "4_1": 1,
+   "5_2": 1
+  }
+ },
+ "l2_background_ep_rows": {
+  "confirmation": 14,
+  "development": 162,
+  "final_holdout": 16
+ },
+ "l2_background_proteins": {
+  "confirmation": 68654,
+  "development": 343682,
+  "final_holdout": 71850
+ },
+ "max_edge_cross_class": {
+  "confirmation-development": 8,
+  "development-final_holdout": 23
+ },
+ "max_edge_strict_involved": [
+  "porter_61_4gqcC__4gqcB",
+  "porter_62_4o0pA__4o01D",
+  "porter_9_3j7wB__3j7vG"
+ ],
+ "max_edge_unique_pairs": [
+  {
+   "group": "G4301",
+   "pair": "porter_10_2lqwA__2bzyB",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G095",
+   "pair": "porter_19_2naoF__1iytA",
+   "split": "confirmation",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G068",
+   "pair": "porter_1_1g2cF__5c6bF",
+   "split": "development",
+   "tier": "fragment_only"
+  },
+  {
+   "group": "G4306",
+   "pair": "porter_21_4zt0C__4cmqB",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G4307",
+   "pair": "porter_22_5jytA__2qkeE",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G127",
+   "pair": "porter_25_5k5gA__2kb8A",
+   "split": "development",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G139",
+   "pair": "porter_33_2ougC__2lclA",
+   "split": "development",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G4313",
+   "pair": "porter_35_4rr2D__3l9qB",
+   "split": "final_holdout",
+   "tier": "fragment_only"
+  },
+  {
+   "group": "G4315",
+   "pair": "porter_38_4y0mJ__4xwsD",
+   "split": "development",
+   "tier": "extension_construct_difference"
+  },
+  {
+   "group": "G225",
+   "pair": "porter_52_5b3zA__5bmyA",
+   "split": "confirmation",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G4325",
+   "pair": "porter_56_4twaA__4ydqB",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G4327",
+   "pair": "porter_59_1xntA__3lqcA",
+   "split": "development",
+   "tier": "extension_construct_difference"
+  },
+  {
+   "group": "G4330",
+   "pair": "porter_61_4gqcC__4gqcB",
+   "split": "development",
+   "tier": "strict_state_candidate"
+  },
+  {
+   "group": "G058",
+   "pair": "porter_62_4o0pA__4o01D",
+   "split": "development",
+   "tier": "strict_state_candidate"
+  },
+  {
+   "group": "G4331",
+   "pair": "porter_63_4dxtA__4dxrA",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G4338",
+   "pair": "porter_73_2ce7C__3kdsG",
+   "split": "confirmation",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G126",
+   "pair": "porter_78_5l35D__5l35G",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G172",
+   "pair": "porter_7_3gmhL__2vfxL",
+   "split": "final_holdout",
+   "tier": "pending_evidence"
+  },
+  {
+   "group": "G4344",
+   "pair": "porter_81_4qdsA__2qqjA",
+   "split": "development",
+   "tier": "fragment_only"
+  },
+  {
+   "group": "G4349",
+   "pair": "porter_86_2a73B__3l5nB",
+   "split": "development",
+   "tier": "extension_construct_difference"
+  },
+  {
+   "group": "G4353",
+   "pair": "porter_8_3m1bF__3lowA",
+   "split": "confirmation",
+   "tier": "extension_condition_or_assembly"
+  },
+  {
+   "group": "G4357",
+   "pair": "porter_9_3j7wB__3j7vG",
+   "split": "development",
+   "tier": "strict_state_candidate"
+  }
+ ],
+ "max_rule_cross_edges": 31,
+ "run_ts": "2026-09-24 16:30",
+ "strict_all_development": true,
+ "strict_pairs": [
+  "porter_9_3j7wB__3j7vG",
+  "porter_20_5c1vA__5c1vB",
+  "porter_51_1h38D__1qlnA",
+  "porter_61_4gqcC__4gqcB",
+  "porter_62_4o0pA__4o01D",
+  "porter_68_3zwgN__4tsyD",
+  "porter_72_4rmbA__4rmbB",
+  "porter_77_2nxqB__1jfkA",
+  "porter_80_5f3kA__5f5rB",
+  "porter_87_2k0qA__2lelA"
+ ],
+ "type_rows_total": 112
+}

@@ -1,0 +1,107 @@
+{
+ "asserts": {
+  "coverage_registered": true,
+  "identity_asserts": "/Users/yuan/Documents/ChatGPT/PLM/data/interim/p405/identity_asserts.json",
+  "performance_estimate_column_empty": true
+ },
+ "config": "configs/interventions.yaml frozen_2026-09-26_p405",
+ "run_ts": "2026-09-26 05:08",
+ "systems": {
+  "bpti": {
+   "decision": "STOP",
+   "n_fit": 0
+  },
+  "pyp": {
+   "M_state_blind_by_construction": true,
+   "boundary": "案例级方向性事实；不外推",
+   "coverage": {
+    "intersection_fraction": 1.0,
+    "n_samples": 2,
+    "n_universe": 2,
+    "note": "四臂交集=系统全部 pair_member（config §3 预登记）"
+   },
+   "decision": "RUN",
+   "degenerate_protocol": {
+    "arm": [
+     "M",
+     "F_only",
+     "M_F",
+     "M_F_perm"
+    ],
+    "convergence_warning": [
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": []
+   },
+   "degraded_direct_facts": {
+    "F_only_equals_M_F": true,
+    "M_state_blind": true
+   },
+   "f_synonymous_with_label": false,
+   "judgement_case_level": "refutes_control_failed",
+   "judgement_note": "置换对照失效（重拟合语义下 F↔y 反接可被系数变号完全恢复，系数精确反号见 arm_coefficients.tsv）→ 按 config §5 refutes（对照失效）登记；判定量降级为构造事实：M 状态盲（同序列表示逐位相同）+ F_only≡M+F（预测全同）→ 条件主导的构造级支持，不依赖置换对照",
+   "n_pairs": 1,
+   "perm_facts": {
+    "change_fraction": 1.0,
+    "joint_equals_column": "F 仅 1 可用列→两语义重合（config §5 登记重合）",
+    "nonidentity_space": 1,
+    "seed_gain": "无（非恒等置换空间仅 1 元素）",
+    "seeds": [
+     13,
+     42,
+     2026
+    ]
+   },
+   "perm_marginal_preserved": true
+  },
+  "rnase_a": {
+   "M_state_blind_by_construction": true,
+   "boundary": "输入充分性语义；不作为模型恢复物理信息的证据",
+   "coverage": {
+    "intersection_fraction": 1.0,
+    "n_samples": 4,
+    "n_universe": 4,
+    "note": "四臂交集=系统全部 pair_member（config §3 预登记）"
+   },
+   "decision": "RUN_DEGRADED",
+   "degenerate_protocol": {
+    "arm": [
+     "M",
+     "F_only",
+     "M_F",
+     "M_F_perm"
+    ],
+    "convergence_warning": [
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": []
+   },
+   "degraded_direct_facts": {
+    "F_only_equals_M_F": true,
+    "M_state_blind": true
+   },
+   "f_synonymous_with_label": true,
+   "judgement_case_level": "refutes_control_failed",
+   "judgement_note": "置换对照失效（重拟合语义下 F↔y 反接可被系数变号完全恢复，系数精确反号见 arm_coefficients.tsv）→ 按 config §5 refutes（对照失效）登记；判定量降级为构造事实：M 状态盲（同序列表示逐位相同）+ F_only≡M+F（预测全同）→ 输入充分性语义的构造级支持（F 与标签同义），不依赖置换对照",
+   "n_pairs": 2,
+   "perm_facts": {
+    "change_fraction": 1.0,
+    "joint_equals_column": "F 仅 1 可用列→两语义重合（config §5 登记重合）",
+    "nonidentity_space": 1,
+    "seed_gain": "无（非恒等置换空间仅 1 元素）",
+    "seeds": [
+     13,
+     42,
+     2026
+    ]
+   },
+   "perm_marginal_preserved": true
+  }
+ }
+}

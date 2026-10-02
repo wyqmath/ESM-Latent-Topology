@@ -1,0 +1,160 @@
+# =============================================================================
+# configs/evaluation_protocol.yaml — P0.05 预注册指标与统计规则（草案，确认后冻结）
+# 规则：统计规则在看确认/保留集结果之前形成；本文件不预设任何效应方向。
+#       标注 [待讨论] 的字段经用户确认后冻结；冻结前下游任务不得引用其具体数值。
+# =============================================================================
+
+meta:
+  task: P0.05
+  created_at: "2026-09-21 08:57"
+  timezone: Asia/Shanghai
+  status: frozen_2026-09-25_p302             # 公式/规则经审核冻结（2026-09-21 09:16）；
+                                             # 四个统计参数已随 P3.02 冻结（2026-09-25 00:25，
+                                             # 委托授权=logs/decisions.md 2026-09-24 02:34 + G2 适用范围 4）；
+                                             # 本文件全部条款冻结，变更须差异清单+独立审核。
+  inputs: [configs/claims.yaml, configs/sample_schema.yaml, TODO.md 第 3 节任务清单]
+
+# -----------------------------------------------------------------------------
+# 1. 各任务主/辅指标（AUPRC 统一采用 average_precision，见定义；不混用 PR 积分）
+# -----------------------------------------------------------------------------
+metric_definitions:
+
+  AUROC:
+    definition: Mann–Whitney U 统计量等价定义；分数并列按平均秩处理。
+    valid_denominator: 两类均至少各有 1 个可评价单位，否则 NA（原因 INSUFFICIENT_CLASS）。
+
+  AUPRC:
+    definition: average_precision（逐步按分数降序累积 precision 的平均值，即 sklearn average_precision_score 语义）；本项目所有 "AUPRC" 均指此定义，禁止与 PR 曲线梯形积分混名使用。
+    tie_rule: 并列分数按并列组池化（同一并列组共享同一 precision，与 sklearn 一致）；P2.06 正式模块必须按并列组池化实现，公式核对脚本可仅在无并列数据上验证。
+    valid_denominator: 至少 1 个正类可评价单位且总分母>=2，否则 NA（原因 INSUFFICIENT_POSITIVES）。
+
+  calibration_ECE:
+    definition: 期望校准误差 ECE = Σ_b (n_b/N) * |acc_b - conf_b|；等宽 10 分箱（bin=0.1），按可评价单位等权。
+    weighting: 全局任务按蛋白等权；残基任务按蛋白等权（先算每蛋白 ECE 再平均），残基不作独立单位。
+    valid_denominator: 可评价单位>=10 时报告，否则 NA（原因 INSUFFICIENT_CALIBRATION_N）。
+
+  macro_f1:
+    definition: 各类别 F1 的宏平均；阈值规则——二分类默认 0.5，除非该任务在 P3.02/P4.01 冻结配置中预注册其他阈值（阈值只在发现集内部训练/验证折选定）。
+    missing_class: 仅在真值中出现的类别参与平均；某类别无样本则该类不参与并在输出中附 n_per_class 与排除说明；任何类别真值存在但预测恒缺时其 F1=0 计入平均。
+    valid_denominator: ">=2 个类别各有 >=1 个真值样本，否则 NA。"
+
+  residue_auprc_per_protein:
+    definition: 每个可评价蛋白内计算 average_precision，再对蛋白取算术平均（主指标；独立单位=蛋白）。
+    valid_denominator: ">=1 个蛋白满足 AUPRC 的 valid_denominator，否则 NA。"
+
+  residue_auprc_pooled:
+    definition: 同一蛋白集合的全部可评价残基合并后计算 average_precision（辅助指标；不做不确定性声明）。
+
+  segment_overlap:
+    definition: 蛋白 p 内预测区段集合 P 与真值区段集合 G（均限制在 mask=1 域内），
+      IoU(a,b)=|a∩b|/|a∪b|（残基数计）；配对方法=全部 (a∈P, b∈G) 的 IoU 降序贪心一对一匹配
+      （每个真值区段至多匹配一个预测区段，已匹配者退出候选）。
+    score: 蛋白区段重叠度 = Σ(匹配对 IoU) / |G|，未匹配真值贡献 0；同时报告 |P|、|G|、匹配数、未匹配预测数。
+    valid_denominator: "|G|>=1，否则 NA（原因 NO_POSITIVE_SEGMENTS）。"
+
+  coverage:
+    protein_coverage: 分子=有>=1 可评价标签（valid_mask=1）样本/残基区段的蛋白；分母=登记蛋白总数。
+    residue_coverage: 分子=mask=1 残基数；分母=对应蛋白标准序列长度总和（或标签适用域，需注明用哪个分母）。
+    pair_coverage: 分子=两端均可评价的配对组；分母=登记配对组总数。
+    condition_coverage: 分子=condition_value 非空的样本；分母=该体系样本总数。
+    rule: 每个指标输出时必须同时给其有效分母数值；分母变化必须有原因清单。
+
+# -----------------------------------------------------------------------------
+# 1b. task_id → 指标映射（与 claims.yaml tasks 注册表对齐；唯一确定主/辅指标）
+# -----------------------------------------------------------------------------
+task_metric_map:
+  T-FS-GLOBAL:       {primary: AUROC, aux: [AUPRC, calibration_ECE]}
+  T-FS-REGION:       {primary: residue_auprc_per_protein, aux: [residue_auprc_pooled, segment_overlap]}
+  T-KNOT-PRESENCE:   {primary: AUROC, aux: [AUPRC, macro_f1]}
+  T-KNOT-TYPE:       {primary: macro_f1, aux: []}
+  T-DISORDER-RES:    {primary: residue_auprc_per_protein, aux: [residue_auprc_pooled]}
+  T-PYP-STATE:       {primary: 待P1.06回填(AUROC 或 macro_f1), aux: []}
+  T-RNASE-ASSEMBLY:  {primary: AUROC, aux: []}
+  T-BPTI-REDOX:      {primary: AUROC, aux: []}
+  note: 校准 ECE 为全局/条件任务的通用辅助输出；各指标 valid_denominator 见 metric_definitions。
+
+# -----------------------------------------------------------------------------
+# 2. 聚合与不确定性
+# -----------------------------------------------------------------------------
+aggregation_and_uncertainty:
+  report_level: 每个指标同时报告——合并值（供粗看）、按独立单位的均值与区间、有效分母、覆盖率。
+  independence_unit:
+    global_tasks: 蛋白（或配对组，条件状态任务按配对组/独立实验组）
+    residue_tasks: 蛋白（残基聚合为蛋白级统计量后再重采样；残基不作独立重复）
+    condition_tasks: 独立实验/配对组（同一时间序列、重复测量不得拆成独立单位）
+  uncertainty_method: 非参数 bootstrap，按独立单位重采样；CI=percentile 法。
+  paired_comparison: 比较两方法时必须用同一批重采样索引（相同 bootstrap 种子序列）且样本交集一致；
+    差值=方法 A 指标 − 方法 B 指标，报告差值区间而非仅各自区间。
+  resampling_B: 2000            # [已冻结 2026-09-25 00:25 P3.02·委托授权]（此前推荐值即此）
+  confidence_level: 0.95        # [已冻结 2026-09-25 00:25 P3.02·委托授权]（此前推荐值即此）
+  seeds: [13, 42, 2026]         # [已冻结 2026-09-25 00:25 P3.02·委托授权]（此前推荐值即此）
+  multiplicity: Holm–Bonferroni，仅作用于预注册主对比族；探索性分析单独标注、不校正也不入主结论
+                                # [已冻结 2026-09-25 00:25 P3.02·委托授权]（此前推荐值即此；
+                                #   主对比族定义=configs/probes.yaml stats.primary_families）
+  freeze_rule: 上述四项已按死线冻结（P3.02 配置冻结同一动作，2026-09-25 00:25；授权=用户委托
+    logs/decisions.md 2026-09-24 02:34 + G2 有条件确认适用范围第 4 项）。冻结发生在任何科研运行
+    引用之前（P2.06 未用 bootstrap，本轮前无统计参数消费方），无回溯暴露；变更须差异清单+独立审核。
+  minimal_effect: 未定义        # 各确认假设的最小有意义效应在 P4.09 注册时确定，此处不预填
+
+# -----------------------------------------------------------------------------
+# 3. NA 与缺失处理（硬规则）
+# -----------------------------------------------------------------------------
+na_rules:
+  - 单类别、无有效标签、分母不足时输出 NA + 机器可读原因码，禁止以 0 充数。
+  - 原因码枚举：INSUFFICIENT_CLASS / INSUFFICIENT_POSITIVES / INSUFFICIENT_CALIBRATION_N /
+    NO_POSITIVE_SEGMENTS / EMPTY_EVALUABLE_SET / THRESHOLD_UNDEFINED。
+  - 触发条件：EMPTY_EVALUABLE_SET=该对比的有效样本交集为空；THRESHOLD_UNDEFINED=需要阈值而
+    该任务冻结配置未预注册（不得临时取 0.5 充数）。
+  - 任何指标必须与其 valid_denominator、coverage、原因码一起输出；单独裸指标视为无效输出。
+
+# -----------------------------------------------------------------------------
+# 4. 主要对比族（与 claims.yaml 对齐；效应差值公式统一）
+# -----------------------------------------------------------------------------
+primary_contrasts:
+  - contrast_id: CT-M-VS-BASELINE     # C-IN2/C-AC1
+    formula: metric(M) − metric(最优轻量基线)，同一有效样本交集
+  - contrast_id: CT-NL-VS-LINEAR      # C-CA1
+    formula: metric(nonlinear) − metric(linear)，逐种子配对，同重采样索引
+  - contrast_id: CT-MF-VS-M           # C-IN3
+    formula: metric(M+F) − metric(M)
+  - contrast_id: CT-MF-VS-FONLY       # C-IN3
+    formula: metric(M+F) − metric(F-only)
+  - contrast_id: CT-MF-VS-PERM        # C-IN3
+    formula: metric(M+F) − metric(M+F_perm)
+  - contrast_id: CT-AGG-RESIDUE-VS-POOLED   # C-AG1（仅同终点可比较组合）
+    formula: metric(残基参考) − metric(固定聚合)，预注册归约后
+  - contrast_id: CT-AGG-LEARNED-VS-FIXED    # C-AG2
+    formula: metric(可学习聚合) − metric(固定聚合)
+primary_contrast_rule: 以上为预注册主对比族；新对比须先登记再计算；探索性差值一律标注 exploratory。
+
+# -----------------------------------------------------------------------------
+# 4b. 三层任务指标（2026-09-22 治理变更新增；冻结细节归 P1.12+G1）
+# -----------------------------------------------------------------------------
+three_layer_metrics:
+  registered: "2026-09-22 治理变更（三层设计），本节定义指标族；k 列表与分层细节由 P1.12 冻结"
+  L1_T_FS_L1_PAIRED:
+    primary: 层级可读性（同 C-AC1 口径：固定线性读取器跨层 vs 轻量基线，仅限确认阳性内部）
+    aux_metrics: 条件贡献（同 CT-MF-VS-M 口径）、区域定位（同 T-FS-REGION：残基 AUPRC+区段 IoU）
+    claim_boundary: 仅描述确认阳性内部的可读性与条件贡献，不声称对非阳性或背景的区分能力
+  L2_T_FS_L2_PU_RANK:
+    observed_label_semantics: "observed-positive vs unlabeled：AP/AUROC 仅在观测标签语义下解释——已知阳性在固定未标注宇宙中的排序/富集；不得解释为生物学阴阳区分或总体发生率"
+    primary: [recall_at_k, enrichment_at_k, positive_rank_percentile]
+    positive_rank_percentile: "固定宇宙中阳性单元的一基排名均值除以宇宙大小；越小表示排名越靠前。PLM 与元数据基线使用同一方向。"
+    aux_metrics: [family_stratified_enrichment, leave_family_out_enrichment]
+    k_rules: k 取值与家族分层方式在 P1.12 冻结；背景宇宙固定版本后不得更换
+  L3_T_FS_L3_MATCHED:
+    primary: [AUROC, AUPRC, balanced_accuracy, MCC, per_class_precision_recall]
+    calibration: disabled_unless_population_prevalence_correction_is_registered
+    stratification: matched_set 分层分析；类别比例由匹配设计产生，不得解释为总体发生率
+    controls_sensitivity: PN-A 为主对照；PN-B/PN-C 仅作敏感性分析并分列报告
+  generic_rules:
+    - 所有 PLM 相对轻量基线的增益在共同样本交集上计算（P2.06 偏差基线先行）
+    - bootstrap 按独立蛋白/组/matched_set 重采样（同 aggregation_and_uncertainty）
+
+# -----------------------------------------------------------------------------
+# 5. 阈值与选择纪律
+# -----------------------------------------------------------------------------
+threshold_discipline:
+  - 所有阈值（分类阈值、F1 阈值、区段判定阈值）只在发现集内部训练/验证折上选定。
+  - 确认集/保留集不参与任何阈值、层、超参数选择；相关选择行为记入曝光日志（P0.06）。
+  - 阈值选择规则一经冻结不得因结果回看而更改。

@@ -1,0 +1,44 @@
+# =============================================================================
+# configs/p508_disorder_contrast_design.yaml — P5.08 外部无序对比集（预注册）
+# =============================================================================
+# 注册时间：2026-09-30 15:5x Asia/Shanghai（可行性统计与任何评估之前）。
+# 范围：补充分析（decisions.md 2026-09-30 范围裁决），不改变 P5.04 final_lock，
+#       不构成确认集 v2 本体（其构建若启动须另走 P5.01 型锁定）。
+# =============================================================================
+
+meta:
+  task: P5.08
+  registered_at: "2026-09-30 15:5x"
+  status: preregistered
+  source: >-
+    X-ray 未观测残基法（一手 CIF；降级决策见 decisions.md 2026-09-30 15:5x）：
+    检索=exptl.method X-RAY ∧ resolution≤2.5（总体 163,493 entry）；抽样=seed 2026
+    随机 2,200 entry（清单哈希随数据冻结）；标签=poly_seq_scheme 全残基中
+    atom_site CA 观测=有序、无观测=无序（model 1；插入码残基丢弃计数）。
+
+construction_rules:
+  chain_inclusion: >-
+    蛋白链（label_asym）长度 80–1000 且截断 1022 内两类各 ≥15% 且 ≥10 残基；
+    每 entry 取无序残基数最多的一条链（同构多链去重）。
+  exclusions:
+    - UniProt acc 与项目 DisProt 3,337 蛋白（dev+conf+hold 全体）重叠
+    - 与上述 DisProt 序列 mmseqs ≥30% 同一性（cov≥0.7，双向）——集群小作业
+    - 序列 sha256 与已用任何序列重复
+  cap: 排除后按 entry 字典序取前 400（seed 已定，无再选择）。
+
+evaluation_protocol:
+  reader: >-
+    冻结 dev 读取器=hidden33 逐残基 LogisticRegression(C=0.01, balanced, liblinear,
+    max_iter=1000, seed 2026)，仅 development 2,279 蛋白分母域训练（P5.02 同款）；
+    不用外部集任何信息重拟合/校准。
+  primary_metric: 逐蛋白 AUPRC（可评价蛋白=两类齐备；随机基线=各蛋白基率）
+  secondary_descriptive:
+    - 逐蛋白 balanced accuracy / MCC
+    - 池化 AUPRC（次要；必附基率、蛋白数、蛋内置换 ×100 对照）
+    - 区段级 IoU（贪心一对一，P0.05 语义）描述性
+  forbidden:
+    - 以池化 AUPRC 作主张级结论
+    - 用外部集表现反向修改 dev 读取器任何参数
+  claim_level: >-
+    补充分析：检验"dev 读取器在独立实验结构模态、真实双类蛋白上的逐蛋白判读力"；
+    不作为确认级证据（该主张需 P5.01 型锁定与一次性读取）。

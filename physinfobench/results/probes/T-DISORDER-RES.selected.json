@@ -1,0 +1,8 @@
+{
+ "layer": 3,
+ "C": 0.01,
+ "metric": "residue_auprc_per_protein",
+ "cv_mean": 0.904098,
+ "cv_std": 0.049322,
+ "n_proteins": 4
+}

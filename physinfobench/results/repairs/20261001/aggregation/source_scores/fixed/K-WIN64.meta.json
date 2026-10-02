@@ -1,0 +1,23 @@
+{
+ "arm": "WIN64",
+ "best_C": 1,
+ "grid": [
+  {
+   "C": 0.01,
+   "pooled_auroc": 0.878793
+  },
+  {
+   "C": 0.1,
+   "pooled_auroc": 0.921829
+  },
+  {
+   "C": 1,
+   "pooled_auroc": 0.932445
+  },
+  {
+   "C": 10,
+   "pooled_auroc": 0.923598
+  }
+ ],
+ "task": "knots"
+}

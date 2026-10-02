@@ -1,0 +1,5 @@
+[p502] lock 校验通过（28 文件）
+[p502] n_strict=0（lock 钉版 0）→ verdict=insufficient_evidence
+[p502] loaded data/interim/p303/emb/packed_l2_stage_b.npz: (47604, 6, 1280)
+[p502] loaded data/interim/p303/emb/packed_l2sb_delta.npz: (2462, 6, 1280)
+[p502 FATAL] 重拟合与冻结分数排序不一致（max|Δ|=2.28e-05）

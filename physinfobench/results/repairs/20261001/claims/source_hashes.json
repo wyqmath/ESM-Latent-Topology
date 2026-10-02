@@ -1,0 +1,6 @@
+{
+  "results/p507_type_probe_v2/lco_predictions.tsv": "d885b269c19141d1fc975a58d130834fbdd537bbf3d1f25068f79d2f9262e923",
+  "results/p508_disorder_contrast/per_protein.tsv": "23650df1bbe4a88c8df22dd7b6548b37e305de29ea038c93d9f9ef9a6ebd0979",
+  "scripts/p507_type_probe_v2.py": "62fd62d00442975af773a2dd39ccad23fffb5bfe951b778422162a9eaed60846",
+  "scripts/p508_build.py": "45aea04c509ebf7653b7df447d94ed6819ca9631355ffedda949e6d805947a1a"
+}

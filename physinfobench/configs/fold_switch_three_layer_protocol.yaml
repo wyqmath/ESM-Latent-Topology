@@ -1,0 +1,141 @@
+# 折叠转换三层任务合同（P1.12 冻结稿；G1 已于 2026-09-24 有条件确认——选项一+六项限定，
+# 见 meta.g1_confirmation 与 logs/decisions.md 同日条目；限定未列处仍按本合同原文执行）
+# 治理：本文件与 claims/evaluation_protocol/split_protocol 的 ID 与指标名一致（由
+# scripts/validate_three_layer_protocol.py 以 jsonschema+交叉核对强制）。
+# 语义铁律：unlabeled 不是阴性；PU 观测标签仅"当前未被确认为阳性"；L3 类别比例由设计产生，
+# 校准禁用；matched_set_id 不可跨 split。
+# G1 措辞禁令（2026-09-24 用户限定 3）："当前未找到同家族候选"不得写成生物学上不存在同家族
+# 蛋白；未获证据支持的"未见家族""独立确认"或 L3 阴性结论一律保留为未成立。
+
+meta:
+  task_id: P1.12
+  status: g1_confirmed_conditional_option1_2026-09-24
+  created: '2026-09-23 09:54'
+  g1_confirmation:
+    confirmed_by: user
+    confirmed_at: '2026-09-24 00:14'   # 用户消息处理时刻（Asia/Shanghai）
+    decision: option1_with_six_qualifications
+    decision_log: logs/decisions.md（2026-09-24 00:15 条目，含逐条修改对照）
+    modifications_vs_option1:
+      - L1 混杂对照门槛（构建体不等性简单对照通过前不得归因双态机制识别）
+      - D4 强化为全部入选 PN-A 对照逐例人工全文复核（不限关键词标记）
+      - 家族注记缺口随附+"当前未找到同家族候选"措辞禁令
+      - legacy 口径裁决=历史接触记录（S1–S5 分记；53 pending 非可靠备用池）
+      - 快照锁定方案 A 已选；新关键证据另立版本、不静默改写已锁定结果
+      - P2.01 拆两步验收，阈值冻结前新增用户确认 Gate
+    deferred_table_changes: porter_8 表内分层随 P1.24 重建落实（单列差异）；DisProt 降级为
+      分析口径采纳（数据表不动）
+    pending_gate: 划分阈值/最低可评价量/比例/种子冻结仍待 P2.01 步骤一报告经用户确认；该确认前
+      不生成正式 group_map、最终 matched_set、split manifest，不开始模型实验（用户限定 6）
+  upstream_evidence:
+    - P1.09 strict positive 审计（reports/fs_three_layer/strict_positive_audit.tsv + strict_positive_feasibility.md）
+    - P1.10 未标注背景（configs/fold_switch_background.yaml；A=484,179；B=75,593/990,140）
+    - P1.11 PN 候选池（configs/fold_switch_putative_negative.yaml；138 唯一候选）
+  umbrella_task: T-FS-GLOBAL
+  layer_task_ids: {L1: T-FS-L1-PAIRED, L1_residue: T-FS-REGION, L2: T-FS-L2-PU-RANK, L3: T-FS-L3-MATCHED}
+
+L1_paired_mechanism:
+  question: 阳性内部的机制诊断——表征可读性/条件贡献/区域定位（结论限于阳性内部，不受阴性缺失影响）
+  population: strict_state_candidate 10 对（same UniProt 10/10、突变 0/10、primary_full_text 证据 10/10；按证据强度分层的候选——两维度分列报告：序列身份=P1.13/20，双态原文=P1.14/20 四层，porter_9/80 保留旧审计依赖标注）
+  unit: 配对（pair_id；两端永不分离）
+  input: 序列 + 预登记条件元数据（构象状态/条件）
+  observed_label: 状态二分类（pair 内对照）；residue 任务=文献区段（主口径=fine∧usable 3 对 6 行案例级，G1 2026-09-24 采纳；fine_only 6 对仅敏感性）
+  mask: 残基任务用文献区段掩码；无区段对仅入全局层
+  confound_gate:   # G1 限定 1（2026-09-24）：未通过前不得把状态判别表现归因为模型识别双态机制
+    rule: 除 porter_87 外 9 对构建体不等性须进入混杂检查；至少设长度、观测覆盖或链边界三类简单对照
+    until_passed: 结论仅可表述为"与构建体差异共变的可读性"，不得归因双态机制识别
+  primary_contrasts: M vs F-only vs M+F vs permutation（evaluation_protocol.primary_contrasts）
+  metrics: 配对准确率/一致性变化 + 残基级 AUPRC 与区段 IoU（T-FS-REGION）；无校准要求（病例内分析）
+  conclusion_scope: 仅阳性内部机制；禁止外推发生率或家族泛化
+
+L2_pu_ranking:
+  question: 已证折叠转换蛋白在固定未标注序列背景中的排序与富集（PU 语义）
+  population: 阳性=strict 10；背景=宇宙 A 484,179（Swiss-Prot 2026_03，去重/排除规则见背景配置）
+  unit: 蛋白（阳性蛋白与背景蛋白同级排序）
+  input: 纯序列（M 通道）；条件特征 F 不参与本层（无背景条件元数据）
+  observed_label: pu_observed_label——阳性=1（已证实），背景=0（仅"当前未被确认为阳性"，允许含隐阳性）
+  mask: 全体参与排序；无残基掩码
+  metrics: recall_at_k、enrichment_at_k、positive_rank_percentile（主）；family_stratified_enrichment、leave_family_out_enrichment（敏感性）——名称与 evaluation_protocol.three_layer_metrics.L2 逐字一致
+  k_rules_frozen:
+    k_values: [10, 100, 1000, 10000]
+    base_rate_note: 10 阳性/484,179 背景，基准率约 2.06e-5；enrichment@k 以此为分母
+    family_stratification: 蛋白主家族=字典序最小 Pfam ID（SIFTS 2026-09-20），无 Pfam 用 CATH、再无用 SCOP2-FA、均无入 unassigned 桶
+    leave_family_out: 逐正例 leave-one-out——从背景剔除与该正例共享任一家族系统（三系统并集）的蛋白后重算 recall/enrichment/rank
+  statistics_note: 统计参数使用 evaluation_protocol 冻结值（B/CI/种子/多重比较——当前待确认，未经确认不得引用具体数值）
+  conclusion_scope: 排序/富集陈述；禁止解释为总体发生率；背景含隐阳性的方向性偏差写入报告固定段
+  background_version_lock: 背景宇宙固定版本后不得更换（与 evaluation_protocol 4b/split_protocol 3c 同款约束；更换=新任务+全链重建）
+
+L3_matched_case_control:
+  question: 阳性与操作性定义的推定阴性对照的判别（病例-对照设计）
+  population: 病例=strict 10（其中 B9W5G6/Q58AD3/Q8E473 暂不进入主结果——G1 限定 3，结构相似探索后过复核可回补）；对照=PN 池（当前 138 唯一候选：PN-A 59/PN-B 38/PN-C 26；EXITED 15 不入对照；**PN-C 不用于凑足主结果**）
+  unit: 病例-对照匹配集（matched_set_id；由 P2.01 生成，绑定不跨 split）
+  input: 序列 + 预登记样本属性（匹配变量仅用家族/长度/结构数/覆盖/方法/分辨率/独立研究数/组装——禁止模型输出）
+  observed_label: 病例=1；对照=putative（PN 证据覆盖层，非生物学阴性证明）
+  manual_fulltext_gate:   # G1 限定 2（2026-09-24）：适用所有实际入选对照，不限关键词标记候选
+    rule: 确证性主分析仅使用完成逐例人工全文复核的实际入选 PN-A 对照；最终病例数以复核+匹配完成后数字为准
+    pending_cases: P02829/P0DP29（P1.16 标记）及其余入选复核未做者
+  mask: 无
+  metrics: AUROC、AUPRC、balanced_accuracy、MCC、per_class_precision_recall（主，名称与 evaluation_protocol.three_layer_metrics.L3 逐字一致）；校准=disabled_unless_population_prevalence_correction_is_registered；PN-A 为主对照，PN-B/PN-C 仅敏感性并分列
+  conclusion_scope: 判别与匹配平衡陈述；类别比例由设计产生，禁止患病率解释；PN 层敏感性与全文复核状态必须随附
+
+entry_conditions:
+  strict: tier=strict_state_candidate（10 对；序列身份与双态证据分列，见 L1.population）
+  extension: extension_construct_difference/extension_condition_or_assembly 层进入敏感性分析；
+    porter_8 表内分层随 P1.24 重建落实（G1 限定 2 采纳 extension_condition_or_assembly）
+  unlabeled: 背景 A/B 按 P1.10 配置；pending_evidence 53 对保留为未标注（PU 语义）
+  PN-A: completed 检索+无退出类命中+独立研究>=2+mapped 覆盖>=0.70；入选匹配集另须逐例人工全文复核（manual_fulltext_gate）
+  PN-B: completed+无退出类命中+PDB>=2
+  PN-C: 兜底层（弱覆盖/截断/检索未完成）；不得用于凑足 L3 主结果（G1 限定 3）
+  exited: 命中 fold_switching/domain_swapping 者退出，进复核队列，永不入对照
+
+historical_contact:   # G1 限定 4（2026-09-24 用户裁决）：按 P1.19 S1–S5 口径分记
+  S1_v5_split_membership: 35/96（26 dev-only/7 test-only/2 both）
+  S2_any_split_version: 35/96（v1–v5 并集）
+  S3_legacy_registry: 96/96 yes（91_ESM-Latent-Topology SaProt 控制清单；89 对端点可回指+7 对旧包不一致）——用户裁定与旧项目数据构建使用一并视为历史接触记录
+  S4_usage: 96/96 出现于旧项目产物（references 深挖=恰好 10 strict；trial10=10 对）
+  S5_formal_evaluation: 0
+  backup_pool_status: 53 pending 对现不构成可靠未曝光备用确认池；未来新建独立确认池须另交
+    样本来源、补证结果与方法选择曝光审计后经用户决定
+
+background_acceptance:   # G1 限定 5（2026-09-24）：有条件接受
+  decision: conditional_accept_current_version_combination
+  travelling_annotations: [TrEMBL 锚定例外 Q8E473/Q9YA14（REST 锚）, 家族注记缺口（B9W5G6 3+Q12931 2 PDB 无行；P0DP29 3evv 漏计）, PubMed 链接缺失 102 例]
+  scope: 以 P1.21 已审计的连接和用途为准；例外随样本进入下游报告
+  europepmc_snapshot: lock_option_A（冻结当前快照）；发现新关键证据时另立版本并记录影响，
+    不静默改写已锁定结果
+
+downgrade_rules:
+  - id: D1_zero_family_positives
+    condition: B9W5G6/Q58AD3/Q8E473 当前注记下无同家族候选（家族注记缺口随附——B9W5G6=14/17
+      PDB 有注记口径，P1.21）
+    decision: G1 2026-09-24（限定 3）——暂不进入 L3 主结果；P2.01 可探索 Foldseek 结构相似
+      候选，成功且过复核（含 manual_fulltext_gate）可回补；报告须说明家族注记缺口；
+      "当前未找到同家族候选"≠生物学上不存在同家族蛋白
+  - id: D2_thin_pools
+    condition: P00573 候选 3 个、P19726 候选 2 个
+    rule: 仅 1:1 匹配；1:3/1:5 对这两个阳性声明不可行，不强行放宽
+  - id: D3_region_dual_criteria
+    condition: usable 3/10、fine 9/10 双口径
+    decision: G1 2026-09-24（限定 2）——主口径=fine∧usable 3 对 6 行（案例级区段定位）；
+      fine_only 6 对仅敏感性
+  - id: D4_pna_fulltext_gate
+    condition: PN-A 59 的逐例人工全文复核未完成
+    decision: G1 2026-09-24（限定 2，较原建议强化）——L3 确证性主分析仅使用完成逐例人工全文
+      复核的实际入选 PN-A 对照（适用所有入选对照，不限关键词标记候选）；最终病例数以复核+
+      匹配完成后数字为准
+  - id: D5_truncated_search_backfill
+    condition: 4 个复用截断候选（含 P06787，797 命中仅覆盖 top25）
+    rule: P2.01 匹配前补抓全量或按检索覆盖=top25 降权；未处理前不作为 PN-A 使用（当前均 EXITED，不实际影响）
+  - id: D6_fs_split_infeasible
+    condition: FS 独立组数不足以支撑 70:15:15 直拆（P1.09）
+    decision: G1 2026-09-24（建议 5 承接限定 4）——FS 三任务不单独三集合划分；归入全局划分的
+      分组约束（pair/family/matched_set 不可拆），跨家族泛化以 leave-family-out 敏感性陈述
+      （评估口径，不作训练未见家族证据）；历史接触按 historical_contact 节随行
+
+frozen_inputs:
+  strict_table: data/curated/fold_switch_global.tsv
+  background_a: data/curated/fold_switch_unlabeled_sequence.tsv.gz
+  background_b: data/curated/fold_switch_unlabeled_structure.tsv.gz
+  pn_candidates: data/curated/fold_switch_putative_negative_candidates.tsv
+  feasibility_matrix: reports/fs_three_layer/feasibility_matrix.tsv
+  g1_decision_doc: reports/fs_three_layer/G1_fold_switch_decision.md

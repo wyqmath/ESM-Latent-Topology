@@ -1,0 +1,71 @@
+{
+ "frozen_params": {
+  "authority": "user delegation 2026-09-24 (decisions.md 02:34)",
+  "proportions": "70:15:15 group-level",
+  "seed": 2026,
+  "seq": "mmseqs 0.30/0.70 cov-mode 0",
+  "struct": "USalign 20260908 TM>=0.6 min"
+ },
+ "fs_edges": {
+  "E0_same_uniprot": 495,
+  "E2_seq_cross": 3,
+  "E3_tm_min_cross": 19
+ },
+ "group_map": {
+  "by_area": {
+   "bpti": 9,
+   "disorder": 3337,
+   "fold_switch": 96,
+   "knot": 1401,
+   "pyp": 6,
+   "rnase_a": 9
+  },
+  "knot_chains_without_sifts_uniprot": 105,
+  "n_groups": 4357,
+  "samples": 4858,
+  "size_hist": {
+   "1": 4127,
+   "2": 156,
+   "3": 36,
+   "4": 16,
+   "5": 6,
+   "6": 2,
+   "7": 1,
+   "8": 1,
+   "9": 2,
+   "10": 2,
+   "11": 1,
+   "12": 1,
+   "13": 1,
+   "14": 1,
+   "17": 1,
+   "18": 1,
+   "27": 1,
+   "40": 1
+  }
+ },
+ "matching": {
+  "cases": [
+   "P00573",
+   "P38505",
+   "Q08209",
+   "Q12931",
+   "Q9RZA4",
+   "Q9YA14"
+  ],
+  "eligible_counts": {
+   "P00573": 2,
+   "P38505": 4,
+   "Q08209": 5,
+   "Q12931": 3,
+   "Q9RZA4": 4,
+   "Q9YA14": 5
+  },
+  "excluded_pna": 37,
+  "main_1v1": 6,
+  "review_status": "pending_manual_fulltext（全部；G1 限定 2）",
+  "sensitivity_1v3": 11
+ },
+ "no_split_manifest_emitted": true,
+ "run_ts": "2026-09-24 02:59:15"
+}

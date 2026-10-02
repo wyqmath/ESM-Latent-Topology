@@ -1,0 +1,57 @@
+[p502] lock 校验通过（28 文件）
+[p502] 抽取: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/bin/python /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py --fasta /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p501/knots_conf.fa --out-dir /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p502/emb_knots_conf --device cuda --batch-max-tokens 49152 --resid-layers 23,29,33
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights:   3%|▎         | 16/534 [00:00<00:23, 22.01it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 722.92it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=148 cache_hits=0 layer_set=mean_all34+resid_23_29_33|domfull -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p502/emb_knots_conf/extract_manifest.tsv
+[p502] 抽取: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/bin/python /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py --fasta /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p501/disorder_conf.fa --out-dir /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p502/emb_disorder_conf --device cuda --batch-max-tokens 49152 --resid-layers 11,23,33 --resid-index-file /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p501/disorder_conf_resid_idx.tsv
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15451.72it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=418 cache_hits=0 layer_set=mean_all34+resid_11_23_33|domidx -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p502/emb_disorder_conf/extract_manifest.tsv
+[p502] 抽取: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/bin/python /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/extract_representations.py --fasta /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p501/fs_conf_endpoints.fa --out-dir /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p502/emb_fs_conf_endpoints --device cuda --batch-max-tokens 49152 --mean-layers 5,11,17,23,29,33
+Loading weights:   0%|          | 0/534 [00:00<?, ?it/s]Loading weights: 100%|██████████| 534/534 [00:00<00:00, 15041.22it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t33_650M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[extract] samples=12 cache_hits=0 layer_set=mean_5_11_17_23_29_33|domfull -> /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/interim/p502/emb_fs_conf_endpoints/extract_manifest.tsv
+[p502] 确认集抽取完成（knots 148 全链 / disorder 分母域 / FS 端点 12）
+[p502] dev 拟合：n=750 pos=127 dim=1280
+[p502] H-KNOT-PRESENCE: AUROC=0.94697 CI95=[0.903611,0.993513]
+[p502] dev 拟合：n_residues=205263 pos_rate=0.9982 dim=1280
+[p502] H-DISORDER-RES: pooled AUPRC=0.999989 CI95=[0.999962,1.0] prev=0.9999
+[p502] DONE
+[p502] lock 校验通过（28 文件）
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p502_confirmation_fsl2.py", line 180, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p502_confirmation_fsl2.py", line 77, in main
+    if n_strict != int(h["n_strict_locked"]):
+                       ~^^^^^^^^^^^^^^^^^^^
+KeyError: 'n_strict_locked'

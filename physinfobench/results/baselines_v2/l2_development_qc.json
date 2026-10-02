@@ -1,0 +1,18 @@
+{
+ "baselines": [
+  "B0_random",
+  "B1_length_desc",
+  "B2_n_pdb_desc",
+  "B3_logistic_len_pdb"
+ ],
+ "ks": [
+  10,
+  100,
+  1000,
+  10000
+ ],
+ "note": "点估计；bootstrap 待统计参数冻结（P3.02 前）；无模型输出参与",
+ "positives": 10,
+ "seed": 2026,
+ "universe": 342014
+}

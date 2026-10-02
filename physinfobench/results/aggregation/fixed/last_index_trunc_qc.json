@@ -1,0 +1,53 @@
+{
+ "disorder_last_denominator_index": {
+  "at_1022": 32,
+  "max": 1022,
+  "min": 5,
+  "n": 2279,
+  "note": "末端索引=分母域内最大 1-based resid_index（≤1022）；D-LAST 即取该位残基向量"
+ },
+ "disorder_truncation": {
+  "n_truncated": 224,
+  "trunc_coverage_max": 1.0,
+  "trunc_coverage_min": 0.144
+ },
+ "knots_last_valid_index": {
+  "max": 1022,
+  "min": 13,
+  "n": 750,
+  "note": "末端索引=每样本 len_used=min(1022,len_full)，1-based；K-LAST 臂即取该位残基向量"
+ },
+ "knots_truncation": {
+  "n_truncated": 16,
+  "trunc_coverage_max": 1.0,
+  "trunc_coverage_min": 0.4062
+ },
+ "mil_train_stats_per_fold": [
+  {
+   "fold": "0",
+   "train_pos_residue_rate": 0.272994,
+   "train_residues": 154245
+  },
+  {
+   "fold": "1",
+   "train_pos_residue_rate": 0.275029,
+   "train_residues": 161190
+  },
+  {
+   "fold": "2",
+   "train_pos_residue_rate": 0.27081,
+   "train_residues": 170459
+  },
+  {
+   "fold": "3",
+   "train_pos_residue_rate": 0.262362,
+   "train_residues": 176119
+  },
+  {
+   "fold": "4",
+   "train_pos_residue_rate": 0.252005,
+   "train_residues": 180183
+  }
+ ],
+ "note": "P4.02-M2 整改：末端索引与截断披露 + MIL 残基训练集统计（离线补算，纯读取）"
+}

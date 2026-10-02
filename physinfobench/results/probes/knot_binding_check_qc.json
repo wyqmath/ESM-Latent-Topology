@@ -1,0 +1,25 @@
+{
+ "binding_level_pairs": 2998,
+ "cross_set_binding_pairs": 679,
+ "cross_set_by_class": {
+  "confirmation|development": 301,
+  "confirmation|final_holdout": 148,
+  "development|final_holdout": 230
+ },
+ "parse_failures": 0,
+ "positive_chains_involved": 39,
+ "protocol": "US-align 单链 CA min TM>=0.6（与 FS 冻结绑定规则同口径）；候选=Foldseek e<=0.001 预筛",
+ "tm_min_max": 0.70039,
+ "tm_min_median": 0.70039,
+ "unilateral_max06_cross_set_pairs": 264,
+ "unique_chains_by_set": {
+  "confirmation": 100,
+  "development": 176,
+  "final_holdout": 63
+ },
+ "unique_chains_involved": 339,
+ "universe_chains": 1006,
+ "unverified_chains": 14,
+ "usalign_pairs": 3854,
+ "verdict": "STOP_DECISION_POINT — 打结宇宙未通过 min 口径结构近邻绑定检查（用户已裁决方案 A）"
+}

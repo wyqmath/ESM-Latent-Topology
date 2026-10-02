@@ -1,0 +1,55 @@
+{
+ "base_rate_prevalence": 0.999891,
+ "conf": {
+  "dual_class_proteins": 0,
+  "n_proteins": 418,
+  "n_residues": 36589,
+  "pos_rate": 0.999891
+ },
+ "dev_fit": {
+  "n_proteins": 2279,
+  "n_residues": 205263,
+  "pos_rate": 0.998158
+ },
+ "executed_at": {
+  "local": "2026-09-27 14:04",
+  "utc": "2026-09-27T06:04:09Z"
+ },
+ "hypothesis": "H-DISORDER-RES",
+ "per_protein_auprc_descriptive": {},
+ "permutation_null": {
+  "max": 0.999989,
+  "mean": 0.999989,
+  "n": 100,
+  "sd": 0.0,
+  "seeds": [
+   2026,
+   2125
+  ]
+ },
+ "pooled_auprc": 0.999989,
+ "pooled_auprc_boot": {
+  "ci95_high": 1.0,
+  "ci95_low": 0.999962,
+  "degenerate_discarded": 0,
+  "no_conclusion_flag": false,
+  "point": 0.999989,
+  "valid_draws": 2000
+ },
+ "reader": {
+  "C": 0.01,
+  "class_weight": "balanced",
+  "features": "hidden33 \u9010\u6b8b\u57fa\uff08\u5206\u6bcd\u57df\uff0cresid-index \u534f\u8bae\u540c dev \u62bd\u53d6\uff09",
+  "layer_hidden": 33,
+  "max_iter": 1000,
+  "random_state": 2026,
+  "solver": "liblinear"
+ },
+ "run_id": "CONF-DISORDER-RES-P502-v1",
+ "statistics": {
+  "B": 2000,
+  "ci": "percentile95",
+  "seed": 2026,
+  "units": "protein\uff08\u6b8b\u57fa\u6c60\u5316\u968f\u86cb\u767d\u91cd\u91c7\u6837\uff09"
+ }
+}

@@ -1,0 +1,276 @@
+{
+ "config": "configs/aggregation.yaml frozen_2026-09-26_p401",
+ "coverage": {
+  "disorder_units": 205263,
+  "knot_type_note": "T-KNOT-TYPE 同矩阵为描述性（config §2 secondary）；Macro-F1 见 P3.03 registered 结果",
+  "knots_proteins": 750
+ },
+ "families": {
+  "aggregation_fixed_global": [
+   {
+    "auroc": {
+     "arm": 0.912665,
+     "boot_degenerate": 0,
+     "boot_valid": 2000,
+     "ci99fam": [
+      -0.044051,
+      0.00117
+     ],
+     "delta_point": -0.019198,
+     "n_units": 750,
+     "ref": 0.931864,
+     "sig99fam": false
+    },
+    "comparison": "K-MIL_mean vs K-POOLED"
+   },
+   {
+    "auroc": {
+     "arm": 0.822841,
+     "boot_degenerate": 0,
+     "boot_valid": 2000,
+     "ci99fam": [
+      -0.164486,
+      -0.057611
+     ],
+     "delta_point": -0.109023,
+     "n_units": 750,
+     "ref": 0.931864,
+     "sig99fam": true
+    },
+    "comparison": "K-LAST vs K-POOLED"
+   },
+   {
+    "auroc": {
+     "arm": 0.932635,
+     "boot_degenerate": 0,
+     "boot_valid": 2000,
+     "ci99fam": [
+      -0.000604,
+      0.003259
+     ],
+     "delta_point": 0.000771,
+     "n_units": 750,
+     "ref": 0.931864,
+     "sig99fam": false
+    },
+    "comparison": "K-WIN16 vs K-POOLED"
+   }
+  ],
+  "aggregation_fixed_residue": [
+   {
+    "comparison": "D-MEAN vs D-ID",
+    "descriptive_per_protein_dual": {
+     "delta_mean": -0.41285,
+     "n_common": 4,
+     "note": "双类 n=4 描述性不入族"
+    },
+    "pooled_auprc": {
+     "arm": 0.999036,
+     "boot_degenerate": 13,
+     "boot_valid": 1987,
+     "ci99fam": [
+      -0.003006,
+      0.000168
+     ],
+     "delta_point": -0.000571,
+     "n_units": 2279,
+     "ref": 0.999607,
+     "sig99fam": false
+    }
+   },
+   {
+    "comparison": "D-LAST vs D-ID",
+    "descriptive_per_protein_dual": {
+     "delta_mean": -0.41285,
+     "n_common": 4,
+     "note": "双类 n=4 描述性不入族"
+    },
+    "pooled_auprc": {
+     "arm": 0.999328,
+     "boot_degenerate": 13,
+     "boot_valid": 1987,
+     "ci99fam": [
+      -0.001424,
+      0.000564
+     ],
+     "delta_point": -0.000279,
+     "n_units": 2279,
+     "ref": 0.999607,
+     "sig99fam": false
+    }
+   },
+   {
+    "comparison": "D-WIN16 vs D-ID",
+    "descriptive_per_protein_dual": {
+     "delta_mean": -0.013623,
+     "n_common": 4,
+     "note": "双类 n=4 描述性不入族"
+    },
+    "pooled_auprc": {
+     "arm": 0.999703,
+     "boot_degenerate": 13,
+     "boot_valid": 1987,
+     "ci99fam": [
+      -0.000447,
+      0.000726
+     ],
+     "delta_point": 9.6e-05,
+     "n_units": 2279,
+     "ref": 0.999607,
+     "sig99fam": false
+    }
+   }
+  ]
+ },
+ "run_ts": "2026-09-27 00:59",
+ "selection": {
+  "disorder_win": {
+   "metric": {
+    "4": 0.999721,
+    "16": 0.999805,
+    "64": 0.999554
+   },
+   "selected": 16
+  },
+  "knots_win": {
+   "metric": {
+    "4": 0.932407,
+    "16": 0.932635,
+    "64": 0.932445
+   },
+   "selected": 16
+  }
+ },
+ "sensitivity": {
+  "D-WIN4_vs_D-ID": {
+   "arm": 0.999721,
+   "boot_degenerate": 13,
+   "boot_valid": 1987,
+   "ci99fam": [
+    -1e-06,
+    0.000439
+   ],
+   "delta_point": 0.000114,
+   "n_units": 2279,
+   "ref": 0.999607,
+   "sig99fam": false
+  },
+  "D-WIN64_vs_D-ID": {
+   "arm": 0.999554,
+   "boot_degenerate": 13,
+   "boot_valid": 1987,
+   "ci99fam": [
+    -0.000234,
+    3e-05
+   ],
+   "delta_point": -5.3e-05,
+   "n_units": 2279,
+   "ref": 0.999607,
+   "sig99fam": false
+  },
+  "K-LAST_h29_vs_K-POOLED_h33": {
+   "arm": 0.825685,
+   "boot_degenerate": 0,
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.165824,
+    -0.055353
+   ],
+   "delta_point": -0.106179,
+   "n_units": 750,
+   "ref": 0.931864,
+   "sig99fam": true
+  },
+  "K-MIL_max_vs_K-POOLED": {
+   "arm": 0.906346,
+   "boot_degenerate": 0,
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.055618,
+    0.001577
+   ],
+   "delta_point": -0.025518,
+   "n_units": 750,
+   "ref": 0.931864,
+   "sig99fam": false
+  },
+  "K-MIL_mean_h29_vs_K-POOLED_h33": {
+   "arm": 0.899698,
+   "boot_degenerate": 0,
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.074078,
+    0.008052
+   ],
+   "delta_point": -0.032166,
+   "n_units": 750,
+   "ref": 0.931864,
+   "sig99fam": false
+  },
+  "K-POOLED_h29_vs_K-POOLED_h33": {
+   "arm": 0.923914,
+   "boot_degenerate": 0,
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.041266,
+    0.023872
+   ],
+   "delta_point": -0.00795,
+   "n_units": 750,
+   "ref": 0.931864,
+   "sig99fam": false
+  },
+  "K-WIN4_vs_K-POOLED": {
+   "arm": 0.932407,
+   "boot_degenerate": 0,
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.000192,
+    0.002809
+   ],
+   "delta_point": 0.000543,
+   "n_units": 750,
+   "ref": 0.931864,
+   "sig99fam": false
+  },
+  "K-WIN64_vs_K-POOLED": {
+   "arm": 0.932445,
+   "boot_degenerate": 0,
+   "boot_valid": 2000,
+   "ci99fam": [
+    -0.003037,
+    0.00418
+   ],
+   "delta_point": 0.000581,
+   "n_units": 750,
+   "ref": 0.931864,
+   "sig99fam": false
+  },
+  "disorder_h23_ID_vs_ID_h33": {
+   "arm": 0.998318,
+   "boot_degenerate": 13,
+   "boot_valid": 1987,
+   "ci99fam": [
+    -0.005819,
+    -7e-06
+   ],
+   "delta_point": -0.001289,
+   "n_units": 2279,
+   "ref": 0.999607,
+   "sig99fam": true
+  },
+  "disorder_h23_MEAN_vs_MEAN_h33": {
+   "arm": 0.998204,
+   "boot_degenerate": 13,
+   "boot_valid": 1987,
+   "ci99fam": [
+    -0.003572,
+    1.4e-05
+   ],
+   "delta_point": -0.000832,
+   "n_units": 2279,
+   "ref": 0.999036,
+   "sig99fam": false
+  }
+ }
+}

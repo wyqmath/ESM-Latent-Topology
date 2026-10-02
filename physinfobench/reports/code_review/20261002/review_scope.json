@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-02T14:01:08+08:00",
+  "upstream_python_syntax_count": 43,
+  "upstream_head": "0292bdbf7a2e1d7f3dfa5b3b121b966b462f3be6",
+  "scope": "upstream syntax only; semantic review targets current PLM scripts"
+}

@@ -1,0 +1,100 @@
+# P1.11 折叠转换推定阴性（putative negative）候选池——冻结配置
+# 治理：一经提交即冻结；修改需新任务+独立审核+单独提交。
+# 语义铁律：PN 等级=证据覆盖程度，不是生物学阴性证明；候选阶段不写 biological_target=0；
+# "无检索命中"≠"完成全文审查"；命中转换证据者退出候选池并进复核队列。
+
+meta:
+  task_id: P1.11
+  config_status: frozen
+  created: '2026-09-23 08:41'
+  upstream: P1.10（背景 B=data/curated/fold_switch_unlabeled_structure.tsv.gz；链级子表同目录）
+  raw_inputs_manifest: data/manifests/fold_switch_background_sources.tsv
+  version_skew_note: 家族与 PubMed 文件为 SIFTS 2026/09/20 构建（PDB 38.26/UniProt 2026.03），与背景 B 的 09-13 构建存在三方版本偏差；家族/PMID 为稳定标识，accession 一致性在构建时断言（候选均须存在于背景 B）
+
+candidate_source:
+  universe: P1.10 背景 B 蛋白表（75,593 行；已剔除全部 FS strict/extension/fragment 44 accession）
+  per_protein_fields_used: [sp_length_max, n_pdb_entries, n_mapped_chains, mapped_coverage_max, observed_coverage_max, experiment_methods, best_resolution]
+  chain_level_construct_check: 构建体范围以 SIFTS 链级 SP_BEG/SP_END 区间为准（P1.10 子表）；gemmi 逐结构链核查推迟到 P2.01 最终匹配阶段（本阶段只产候选不匹配，避免为数百候选预下结构文件）——此为预注册分工，非省略
+
+strict_positives:
+  source: data/curated/fold_switch_global.tsv 的 strict_state_candidate 对（tier 精确匹配）
+  accession_set: 10 个（与 P1.09 审计表双源一致；其中 Q8E473、Q9YA14 为 TrEMBL-only，家族映射仍从 SIFTS 链级文件直接取）
+  family_assignment: 从 SIFTS 家族文件按 (PDB,CHAIN,SP_PRIMARY) 匹配 accession；三系统各自独立（Pfam ID / CATH ID / SCOP2 FA_DOMID）
+
+family_systems:
+  systems: [pfam_id, cath_id, scop2_fa_domid]
+  union_rule: 任一系统命中即计 shared；shared_family_systems 计 0-3
+
+matching_rules:
+  length_window: 候选长度与对应 strict positive 长度比在 0.5-2.0 区间（sp_length 缺失者该变量不适用并降序位）
+  eligibility: 候选须至少与一个 strict positive 共享 1 个家族系统（shared_family_systems >= 1）；无家族映射的背景蛋白不入选（记数）
+  rank_key: '[shared_family_systems 降序, 长度比接近 1 优先（|log2(ratio)| 升序）, n_pdb_entries 降序, accession 升序]'
+  top_n_per_positive: 30
+  max_total_candidates: 300
+  dedup: 同一候选可匹配多个 strict positive 时保留全部 (candidate, positive) 对行；候选级字段唯一
+  rank_note: 排序仅用预登记样本属性（家族/长度/结构数），不含任何模型输出或文献结果；文献检索在候选选定后进行
+
+literature_search:
+  primary_source: Europe PMC REST (https://www.ebi.ac.uk/europepmc/webservices/rest/search)
+  secondary_source: Crossref REST (https://api.crossref.org/works)——仅当 Europe PMC 请求失败（HTTP>=500/网络错误）时作为该候选的替补通道，状态分列记录
+  query_template: '("<accession>" OR "<protein_name>") AND ("fold switching" OR "fold-switching" OR metamorphic OR "alternative fold" OR "conformational switch" OR "domain swapping")——TrEMBL 候选无本地蛋白名时仅用 accession 自由文本'
+  field_note: 'ACC: 字段实测对常见蛋白零命中（P68871/P02769/Q12931 均 0），改用 accession 自由文本（实测 P68871 命中 485）；自由文本敏感性有限，no_hit 语义弱证据照常分列'
+  query_fields: format=json resultType=core hitsPerPage=25；cursorMark 分页抓全（上限 500 条；超出或分页失败记 fetched_all_hits=false=截断，该候选 PN 层压至 PN-C）。分页实现注意：Europe PMC 返回的 nextPageUrl 含未编码空格/引号，须提取 cursorMark 后重编码重建 URL（2026-09-23 审核根因修复）
+  request_rate: 每请求间隔 >= 0.4s（约 2.5 req/s 上限）
+  recorded_per_query: [candidate_id, channel, query_url, query_date_asia_shanghai, http_status, hit_count, response_sha256_prefix]
+  no_hit_semantics: no_hit 仅表示"该检索式在检索日无命中"；manual_review_status 独立列，默认 pending_fulltext_review，两者禁止混写
+  response_archive: 原始 JSON 响应存 data/raw/europepmc/2026-09-23/<candidate>.json（Crossref 替补为 <candidate>.crossref.json）；manifest 登记
+
+hit_classification:
+  method: 预注册关键词规则（对命中 title+abstracttext 判定；确定性、可复算）
+  categories_rule_semantics: 标题+摘要拼接文本按顺序匹配、先中先归；正则为脚本实现（大小写不敏感，以脚本为准）
+  categories_and_rules:
+    fold_switching: 'fold[- ]switch | metamorphic protein | alternative fold | dual fold | fold plasticity'
+    domain_swapping: 'domain[- ]swapp | swapped dimer | swapped oligomer | 3d domain exchange'
+    ligand_induced: 'ligand[- ]induced conformational | ligand binding (induces|causes|triggers) | allosteric'
+    local_conformational_change: 'conformational (change|rearrangement|transition) | conformational switch'
+    other_or_unclear: 其余（以上皆未命中）
+  exit_categories: [fold_switching, domain_swapping]
+  flag_only_categories: [ligand_induced, local_conformational_change, other_or_unclear]
+  exit_rule: 候选任一命中落入 exit_categories → 退出候选池，exited_to_review_queue=true 并附命中指针；flag 类不退出但登记
+
+pn_tiers:
+  definition_basis: 证据覆盖程度（不是阴性证明）
+  PN-A: 检索完成 AND 无退出类命中 AND n_independent_studies >= 2 AND mapped_coverage_max >= 0.70
+  PN-B: 检索完成 AND 无退出类命中 AND n_pdb_entries >= 2 AND 不满足 PN-A（覆盖或独立研究不足）
+  PN-C: 其余保留候选（弱覆盖：单结构/低覆盖；或检索未完成的兜底层）
+  n_independent_studies: 该蛋白全部 SIFTS 映射 PDB 的去重 PubMed ID 计数（同一研究多 PDB 不重复计；无 PMID 的 PDB 不计独立研究但保留结构计数）
+
+exclusion_and_exit_rules:
+  same_protein_as_strict_positive: 自动排除（背景 B 已保证交集=0；构建时仍断言）
+  same_sequence_as_strict_positive: 已实现——候选 sequence_sha256（背景 A）与 strict positive 的 canonical 序列 sha（P1.09 audit fasta）碰撞检查，碰撞即断言失败；TrEMBL 候选无本地序列计 not_checkable（本次数量记 qc），P2.01 匹配时补核
+  exit_to_review_queue: 见 hit_classification.exit_rule；复核队列登记于候选表 review_queue_pointer 列
+
+machine_assertions:
+  - id: B1_background_provenance
+    check: 全部候选 uniprot_accession 存在于 P1.10 背景 B 且不在 FS 排除集合（背景交集=0 复验）
+  - id: B2_no_target_values
+    check: 候选表无 biological_target 列取值（不设该取值列，仅保留恒空列）且 pu 语义=unlabeled_until_reviewed
+  - id: B3_queries_recorded
+    check: 每个入选候选恰有一条 primary 通道检索记录（成功或替补），query_date 非空，响应存档 sha256 前缀一致
+  - id: B4_no_hit_vs_reviewed_separated
+    check: hit_count=0 的行 manual_review_status 仍可为 pending_fulltext_review；两列无耦合
+  - id: B5_exit_consistency
+    check: exited_to_review_queue=true 的行必存在至少一条 exit 类命中记录；=false 的行不存在 exit 类命中
+  - id: B6_independent_study_counting
+    check: n_independent_studies 为去重 PMID 计数（构建时抽 5 蛋白从 raw 重算比对）
+  - id: B7_tier_rule_determinism
+    check: PN 层完全由 (search_status, exit_flag, n_independent_studies, mapped_coverage_max, n_pdb_entries) 决定；同输入重跑层不变
+  - id: B8_rank_reproducible
+    check: 排序键只含预登记属性；同输入重跑候选集逐字节一致
+
+output_tables:
+  candidates: data/curated/fold_switch_putative_negative_candidates.tsv
+  literature_queries: data/evidence/fold_switch_negative_literature_queries.tsv
+  literature_hits: data/evidence/fold_switch_negative_literature_hits.tsv
+  qc: reports/fs_three_layer/pn_candidates_qc.json
+
+candidates_columns: [candidate_id, uniprot_accession, matched_strict_positive, match_rank, shared_family_systems, shared_pfam, shared_cath, shared_scop2fa, sp_length, length_ratio_to_positive, n_pdb_entries, n_mapped_chains, mapped_coverage_max, observed_coverage_max, experiment_methods, best_resolution, n_independent_studies, search_status, search_channel, hit_count, hit_exit_categories, exited_to_review_queue, review_queue_pointer, manual_review_status, pn_tier, biological_target, background_source_version]
+
+hits_columns: [candidate_accession, channel, pmid, doi, title, pub_year, classified_category, matched_keywords, is_pubmed_of_mapped_pdb]
+hits_columns_note: is_pubmed_of_mapped_pdb=命中 PMID 是否属于该候选映射 PDB 的 PubMed 集（SIFTS 不区分主引文，故不用 primary_citation 命名）

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "full_candidate_guard": {
+    "passed": true,
+    "n_samples": 4858,
+    "violations": [],
+    "scope": "historical-use and binding-component guard; task eligibility checked separately",
+    "background_checked": true,
+    "ready_for_global_split": true
+  },
+  "locked_current_violation_count": 30841,
+  "guards_sha256": {
+    "scripts/future_split_guard.py": "f639be87bc39497891c9f8720ea7ebdc5c5e7ed09eb3afbb4c6f6deeaf1220cf",
+    "tests/test_future_split_guard.py": "d8a34fc4429741e6ef564215764a9bfbf0a735243f288736173a000d150b86f5",
+    "scripts/knot_resplit_finalize.py": "da25ccd515d94ebb10e08775cf6be02230da7a32fc651ae9ee8dcd038aaa679d"
+  }
+}

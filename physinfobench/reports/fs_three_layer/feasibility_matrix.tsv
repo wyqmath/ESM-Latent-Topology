@@ -1,0 +1,27 @@
+task_id	task_name	metric	value	source	note
+T-FS-L1-PAIRED	严格配对机制诊断	strict 对数	10	P1.09 审计	L1 可评估
+T-FS-L1-PAIRED	严格配对机制诊断	fine 区段对数	9	P1.03 regions 复算	残基任务主口径（D3）
+T-FS-L1-PAIRED	严格配对机制诊断	usable 行数（strict 人群内）	6	P1.03 regions 复算（pair∈strict）	残基任务敏感性口径=strict 内 3 对的 6 行；全表 10 行含 fine_extension 2 对 4 行（人群外，不入 L1）
+T-FS-L1-PAIRED	严格配对机制诊断	usable 对数（strict 人群内）	3	P1.03 regions 复算（pair∈strict）	与 P1.09 usable 3/10 口径一致
+T-FS-L2-PU-RANK	PU 排序	阳性数	10	P1.09	L2 可评估
+T-FS-L2-PU-RANK	PU 排序	背景 A 行数	484179	P1.10 qc	排序宇宙
+T-FS-L2-PU-RANK	PU 排序	背景 A 精确去重数	88019	P1.10 qc	已按规则去除
+T-FS-L3-MATCHED	匹配病例-对照	PN 唯一候选	138	P1.11 表复算	对照池
+T-FS-L3-MATCHED	匹配病例-对照	PN 层 PN-A	59	P1.11 表复算	对照池构成
+T-FS-L3-MATCHED	匹配病例-对照	PN 层 PN-B	38	P1.11 表复算	对照池构成
+T-FS-L3-MATCHED	匹配病例-对照	PN 层 PN-C	26	P1.11 表复算	对照池构成
+T-FS-L3-MATCHED	匹配病例-对照	PN 层 EXITED	15	P1.11 表复算	复核队列
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 B9W5G6	PN-A=0;PN-B=0;PN-C=0	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 P00573	PN-A=2;PN-B=1;PN-C=0	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 P19726	PN-A=0;PN-B=0;PN-C=2	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 P38505	PN-A=17;PN-B=1;PN-C=7	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 Q08209	PN-A=14;PN-B=12;PN-C=3	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 Q12931	PN-A=4;PN-B=7;PN-C=1	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 Q58AD3	PN-A=0;PN-B=0;PN-C=0	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 Q8E473	PN-A=0;PN-B=0;PN-C=0	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 Q9RZA4	PN-A=9;PN-B=15;PN-C=4	P1.11 表复算	D1/D2 降级依据
+T-FS-L3-MATCHED	匹配病例-对照	每阳性候选 Q9YA14	PN-A=14;PN-B=2;PN-C=9	P1.11 表复算	D1/D2 降级依据
+T-FS-GLOBAL	全池	全池对数	96	fold_switch_global 复算	96 对
+T-FS-GLOBAL	全池	历史接触对数（S3 legacy 登记）	96	P1.19（96/96 yes；89 对端点可回指+7 对旧包不一致）	G1 2026-09-24 裁决：legacy 登记+数据构建使用=历史接触记录（D6）
+T-FS-GLOBAL	全池	独立 UniProt（全池，本表复算）	103	fold_switch_global 复算	三集合直拆不可行（D6；与 P1.09 审计值核对）
+T-FS-GLOBAL	全池	历史接触口径（S1–S5 分记，P1.19）	S1 旧 v5 划分收录=35/96（26 dev-only/7 test-only/2 both）；S2 v1–v5 并集=35；S3 legacy 登记=96/96 yes；S5 正式评价使用=0	P1.19 exposure_scope_audit；G1 2026-09-24 限定 4 采纳	本行修正原 P1.09「96 对全部在旧 v5 有分配」失实表述（P1.17 发现、P1.25 落实）；53 pending 对不构成可靠未曝光备用池

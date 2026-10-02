@@ -1,0 +1,16 @@
+{
+  "n_proteins": 99,
+  "n_residues": 22646,
+  "per_protein_auprc_mean": 0.4760740176111495,
+  "per_protein_base_rate_mean": 0.2153464880747274,
+  "per_protein_balanced_acc_mean": 0.5033037899641831,
+  "per_protein_mcc_mean": 0.015448805877999924,
+  "pooled_auprc_secondary": 0.36006089861043145,
+  "pooled_base_rate": 0.21292943566192704,
+  "pooled_fixed_prediction_permutation100": {
+    "mean": 0.21085494938339078,
+    "max": 0.21593681616314958
+  },
+  "kind": "posthoc identity-verified supplementary correction; frozen parameter devfit replay",
+  "label_scope": "CA coordinate non-observation; intrinsic-disorder correspondence unverified"
+}

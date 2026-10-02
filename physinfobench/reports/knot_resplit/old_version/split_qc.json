@@ -1,0 +1,66 @@
+{
+ "assignment_counts": {
+  "confirmation": 10359,
+  "development": 48372,
+  "final_holdout": 10353
+ },
+ "background_split": {
+  "confirmation": 10227,
+  "development": 47646,
+  "final_holdout": 10201
+ },
+ "binding_edges": {
+  "endpoint_cluster": 192,
+  "endpoint_sha_to_background": 0,
+  "labeled_uniprot_to_background": 3686,
+  "matched_set": 17
+ },
+ "forced_dev_groups": 38,
+ "groups_total": 69084,
+ "knot_type_by_split": {
+  "confirmation": {
+   "3_1": 14
+  },
+  "development": {
+   "3_1": 75,
+   "4_1": 7,
+   "5_1": 1,
+   "5_2": 2
+  },
+  "final_holdout": {
+   "3_1": 11,
+   "4_1": 1,
+   "5_2": 1
+  }
+ },
+ "labeled_area_split": {
+  "bpti": {
+   "development": 9
+  },
+  "disorder": {
+   "confirmation": 447,
+   "development": 2380,
+   "final_holdout": 510
+  },
+  "fold_switch": {
+   "confirmation": 7,
+   "development": 81,
+   "final_holdout": 8
+  },
+  "knot": {
+   "confirmation": 247,
+   "development": 970,
+   "final_holdout": 184
+  },
+  "pyp": {
+   "development": 6
+  },
+  "rnase_a": {
+   "development": 9
+  }
+ },
+ "matched_sets_checked": 17,
+ "proportions": "70:15:15",
+ "run_ts": "2026-09-24 03:27",
+ "seed": 2026
+}

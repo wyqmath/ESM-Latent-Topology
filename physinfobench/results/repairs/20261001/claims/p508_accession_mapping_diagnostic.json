@@ -1,0 +1,1059 @@
+{
+  "n": 105,
+  "wrong_chain_row": 45,
+  "different_db_code": 3,
+  "nonaccession_prefix": 56,
+  "checks": [
+    {
+      "name": "p508:2PW9_C",
+      "selected_asym": "C",
+      "used_asym": "D",
+      "selected_db_code": "Q6AMB9_DESPS",
+      "used_db_code": "Q6AMB9_DESPS",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2PWN_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "TPPC3_MOUSE",
+      "used_db_code": "TPPC3_MOUSE",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2PZZ_D",
+      "selected_asym": "D",
+      "used_asym": "D",
+      "selected_db_code": "Y1564_METJA",
+      "used_db_code": "Y1564_METJA",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q0O_C",
+      "selected_asym": "C",
+      "used_asym": "D",
+      "selected_db_code": "TRAM_RHISN",
+      "used_db_code": "TRAM_RHISN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q17_D",
+      "selected_asym": "D",
+      "used_asym": "E",
+      "selected_db_code": "Q9F3C7_STRCO",
+      "used_db_code": "Q9F3C7_STRCO",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q2B_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "BACH_MOUSE",
+      "used_db_code": "BACH_MOUSE",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q2C_A",
+      "selected_asym": "A",
+      "used_asym": "D",
+      "selected_db_code": "",
+      "used_db_code": "",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q2F_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "SELS_HUMAN",
+      "used_db_code": "SELS_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q2H_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "Q8UDB9_AGRT5",
+      "used_db_code": "Q8UDB9_AGRT5",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q37_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "TTHL_ARATH",
+      "used_db_code": "TTHL_ARATH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q3T_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Y3268_ARATH",
+      "used_db_code": "Y3268_ARATH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q3V_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Y2416_ARATH",
+      "used_db_code": "Y2416_ARATH",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q3X_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "RIMS1_RAT",
+      "used_db_code": "RIMS1_RAT",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q45_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "TRNH1_ARATH",
+      "used_db_code": "TRNH1_ARATH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q48_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Y5848_ARATH",
+      "used_db_code": "Y5848_ARATH",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q4D_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "Y5195_ARATH",
+      "used_db_code": "Y5195_ARATH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q4M_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Y5175_ARATH",
+      "used_db_code": "Y5175_ARATH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q4O_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Q8L8B8_ARATH",
+      "used_db_code": "Q8L8B8_ARATH",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q4P_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "Q9QY93_MOUSE",
+      "used_db_code": "Q9QY93_MOUSE",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q79_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "VE2_HPV16",
+      "used_db_code": "VE2_HPV16",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2Q7F_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "O34452_BACSU",
+      "used_db_code": "O34452_BACSU",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q86_A",
+      "selected_asym": "A",
+      "used_asym": "D",
+      "selected_db_code": "",
+      "used_db_code": "",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q97_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "Q9NG25_TOXGO",
+      "used_db_code": "Q9NG25_TOXGO",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2Q9P_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "NUDT3_HUMAN",
+      "used_db_code": "NUDT3_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QAI_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "VATF_PYRFU",
+      "used_db_code": "VATF_PYRFU",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QBV_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Y948_MYCTU",
+      "used_db_code": "Y948_MYCTU",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QCB_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "SAV_STRAV",
+      "used_db_code": "SAV_STRAV",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QCX_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "TENA_BACSU",
+      "used_db_code": "TENA_BACSU",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QDB_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "NUC_STAAU",
+      "used_db_code": "NUC_STAAU",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QE3_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q8NFE9_HUMAN",
+      "used_db_code": "Q8NFE9_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QG7_B",
+      "selected_asym": "B",
+      "used_asym": "D",
+      "selected_db_code": "A5K4Q6_PLAVI",
+      "used_db_code": "A5K4Q6_PLAVI",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QG8_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q7RB63_PLAYO",
+      "used_db_code": "Q7RB63_PLAYO",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QGN_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "MIAA_BACHD",
+      "used_db_code": "MIAA_BACHD",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QGO_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q5FLQ3_LACAC",
+      "used_db_code": "Q5FLQ3_LACAC",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QGZ_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q7CFF8_STRP3",
+      "used_db_code": "Q7CFF8_STRP3",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QH5_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "O24884_HELPY",
+      "used_db_code": "O24884_HELPY",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QJC_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q57U41_9TRYP",
+      "used_db_code": "Q57U41_9TRYP",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QKH_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "GIPR_HUMAN",
+      "used_db_code": "GIPR_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QKO_A",
+      "selected_asym": "A",
+      "used_asym": "D",
+      "selected_db_code": "Q0S912_RHOSR",
+      "used_db_code": "Q0S912_RHOSR",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QLW_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Q7BSH1_RHILT",
+      "used_db_code": "Q7BSH1_RHILT",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QN4_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "IAAS_ORYSJ",
+      "used_db_code": "IAAS_ORYSJ",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QRD_A",
+      "selected_asym": "A",
+      "used_asym": "F",
+      "selected_db_code": "SNF1_SCHPO",
+      "used_db_code": "YL28_SCHPO",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": true,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QSD_B",
+      "selected_asym": "B",
+      "used_asym": "H",
+      "selected_db_code": "Q5QU98_IDILO",
+      "used_db_code": "Q5QU98_IDILO",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QSI_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Q6NB62_RHOPA",
+      "used_db_code": "Q6NB62_RHOPA",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QSJ_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Q5LQW4_SILPO",
+      "used_db_code": "Q5LQW4_SILPO",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QSX_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Q87RY9_VIBPA",
+      "used_db_code": "Q87RY9_VIBPA",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QTP_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q5LV76_SILPO",
+      "used_db_code": "Q5LV76_SILPO",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QUH_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "SYWC_HUMAN",
+      "used_db_code": "SYWC_HUMAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QUP_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q9KCU1_BACHD",
+      "used_db_code": "Q9KCU1_BACHD",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QV8_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "GSPH_VIBCH",
+      "used_db_code": "GSPH_VIBCH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QVK_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "NAC1_CANFA",
+      "used_db_code": "NAC1_CANFA",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:2QVT_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "Q1HBK6_MELLI",
+      "used_db_code": "Q1HBK6_MELLI",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:2QW6_C",
+      "selected_asym": "C",
+      "used_asym": "D",
+      "selected_db_code": "Q3XY27_ENTFC",
+      "used_db_code": "Q3XY27_ENTFC",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EF4_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "V5LU01_AMBAR",
+      "used_db_code": "V5LU01_AMBAR",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EFT_B",
+      "selected_asym": "B",
+      "used_asym": "H",
+      "selected_db_code": "B6SCH3_9REOV",
+      "used_db_code": "B6SCH3_9REOV",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EHO_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "TTK_HUMAN",
+      "used_db_code": "TTK_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EII_E",
+      "selected_asym": "E",
+      "used_asym": "E",
+      "selected_db_code": "ASF1_YEAST",
+      "used_db_code": "ASF1_YEAST",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EJ3_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "XYNB_STRLI",
+      "used_db_code": "XYNB_STRLI",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EKZ_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "TACO1_MOUSE",
+      "used_db_code": "TACO1_MOUSE",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EL0_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "A0A0H3AQ75_BRUO2",
+      "used_db_code": "A0A0H3AQ75_BRUO2",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5ELJ_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "",
+      "used_db_code": "SUMO1_HUMAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": true,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5ELU_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "",
+      "used_db_code": "",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EMV_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "TEAD2_HUMAN",
+      "used_db_code": "TEAD2_HUMAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5ENK_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "BACE1_HUMAN",
+      "used_db_code": "BACE1_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EO2_D",
+      "selected_asym": "D",
+      "used_asym": "F",
+      "selected_db_code": "A0A0H3JRH2_STAAN",
+      "used_db_code": "A0A0H3JRH2_STAAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EP9_C",
+      "selected_asym": "C",
+      "used_asym": "D",
+      "selected_db_code": "Q9EYI0_STRNO",
+      "used_db_code": "Q9EYI0_STRNO",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EQN_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "Q0ZQ39_9ACTN",
+      "used_db_code": "Q0ZQ39_9ACTN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5ER8_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "FUSS_PHOAM",
+      "used_db_code": "FUSS_PHOAM",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EUR_C",
+      "selected_asym": "C",
+      "used_asym": "C",
+      "selected_db_code": "A0A0F6M9P9_SHIFL",
+      "used_db_code": "A0A0F6M9P9_SHIFL",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EVJ_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "K0BVM7_CHLRE",
+      "used_db_code": "K0BVM7_CHLRE",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EWK_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "C9Z6T8_STRSW",
+      "used_db_code": "C9Z6T8_STRSW",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EWR_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "M1VFX0_CYAME",
+      "used_db_code": "M1VFX0_CYAME",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5EXI_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "LIPA_MYCTU",
+      "used_db_code": "LIPA_MYCTU",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EY1_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "CODY_STAA1",
+      "used_db_code": "CODY_STAA1",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EYR_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "ETHR_MYCBO",
+      "used_db_code": "ETHR_MYCBO",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EZ1_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Y175_HELPY",
+      "used_db_code": "Y175_HELPY",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EZD_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "SPIT1_HUMAN",
+      "used_db_code": "SPIT1_HUMAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EZU_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "A46_VACCW",
+      "used_db_code": "A46_VACCW",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5EZY_E",
+      "selected_asym": "E",
+      "used_asym": "F",
+      "selected_db_code": "STMN4_RAT",
+      "used_db_code": "E1BQ43_CHICK",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": true,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5F1N_B",
+      "selected_asym": "B",
+      "used_asym": "E",
+      "selected_db_code": "E2RN10_CANFA",
+      "used_db_code": "E2RN10_CANFA",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5F2B_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "SAV_STRAV",
+      "used_db_code": "SAV_STRAV",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5F2T_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "ACYLT_MYCS2",
+      "used_db_code": "ACYLT_MYCS2",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5F5D_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "A0A0J2E248_ECOLX",
+      "used_db_code": "A0A0J2E248_ECOLX",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5F5H_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "RC3H1_MOUSE",
+      "used_db_code": "RC3H1_MOUSE",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5F5S_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "MFAP1_HUMAN",
+      "used_db_code": "MFAP1_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5F73_F",
+      "selected_asym": "F",
+      "used_asym": "F",
+      "selected_db_code": "I0B503_SCHMA",
+      "used_db_code": "I0B503_SCHMA",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5F7R_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "Q8YAF1_LISMO",
+      "used_db_code": "Q8YAF1_LISMO",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5FA5_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "MEP50_HUMAN",
+      "used_db_code": "MEP50_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5FAA_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "C7T9P4_LACRG",
+      "used_db_code": "C7T9P4_LACRG",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5FB4_A",
+      "selected_asym": "A",
+      "used_asym": "C",
+      "selected_db_code": "TUB9_BPPH2",
+      "used_db_code": "TUB9_BPPH2",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5FBK_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "CASR_HUMAN",
+      "used_db_code": "CASR_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5FD3_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "LIN54_HUMAN",
+      "used_db_code": "LIN54_HUMAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5FEJ_A",
+      "selected_asym": "A",
+      "used_asym": "D",
+      "selected_db_code": "A0A0F6QDN6_9SYNC",
+      "used_db_code": "A0A0F6QDN6_9SYNC",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5FEU_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "",
+      "used_db_code": "",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5FEY_A",
+      "selected_asym": "A",
+      "used_asym": "B",
+      "selected_db_code": "TRI32_HUMAN",
+      "used_db_code": "TRI32_HUMAN",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:5FFA_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "A0A0F6QDN6_9SYNC",
+      "used_db_code": "A0A0F6QDN6_9SYNC",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5FFI_E",
+      "selected_asym": "E",
+      "used_asym": "E",
+      "selected_db_code": "Q44501_AZOVI",
+      "used_db_code": "Q44501_AZOVI",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:5FHG_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "D1JM21_9BACE",
+      "used_db_code": "D1JM21_9BACE",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:7LR4_E",
+      "selected_asym": "E",
+      "used_asym": "F",
+      "selected_db_code": "HAP2_PLABA",
+      "used_db_code": "HAP2_PLABA",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:7LT1_B",
+      "selected_asym": "B",
+      "used_asym": "B",
+      "selected_db_code": "M21D2_HUMAN",
+      "used_db_code": "M21D2_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:7LUY_F",
+      "selected_asym": "F",
+      "used_asym": "F",
+      "selected_db_code": "KGUA_BARHE",
+      "used_db_code": "KGUA_BARHE",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:7LVJ_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "CASP8-9_HUMAN",
+      "used_db_code": "CASP8-9_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:7LVP_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "J9VYP5_CRYNH",
+      "used_db_code": "J9VYP5_CRYNH",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": false
+    },
+    {
+      "name": "p508:7LW7_A",
+      "selected_asym": "A",
+      "used_asym": "A",
+      "selected_db_code": "EXO5_HUMAN",
+      "used_db_code": "EXO5_HUMAN",
+      "chain_row_mismatch": false,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    },
+    {
+      "name": "p508:7LWZ_E",
+      "selected_asym": "E",
+      "used_asym": "F",
+      "selected_db_code": "DGT1A_VIBCH",
+      "used_db_code": "DGT1A_VIBCH",
+      "chain_row_mismatch": true,
+      "db_code_mismatch": false,
+      "prefix_nonaccession": true
+    }
+  ],
+  "repair": "Map exact(entry,label_asym)->entity_id->_struct_ref.pdbx_db_accession; recheck exclusions"
+}

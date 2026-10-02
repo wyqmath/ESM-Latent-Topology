@@ -1,0 +1,213 @@
+# =============================================================================
+# configs/aggregation.yaml — P4.01 聚合对比设计（冻结）
+# 冻结时间：2026-09-26 05:3x Asia/Shanghai（一审 4M+8m 整改后定稿）。
+# 授权链：用户委托（logs/decisions.md 2026-09-24 02:34"后面的你替我抉择"）+ 用户 2026-09-26
+#         指令"一直推进，直到 phase4 结束"（G3 放行 + Phase 4 执行授权，decisions.md 同日条目）。
+# 输入依据：G3 候选层/读取器（representation_diagnosis.md §5 终版：主层 hidden 33；
+#           敏感层 hidden 29=FS-L2 开发选中；读取器=线性为主）；P3.02 probes.yaml（冻结）；
+#           新版划分 68,875 组（KNOT-RESPLIT 方案 A）；P3.04 Δmetric 统计语义。
+# 纪律：全部实验仅 development（dev_fold 5 折组级轮转）；confirmation/final_holdout 零接触；
+#       变更须差异清单+独立审核；本配置冻结后不得随结果调整。
+# =============================================================================
+
+meta:
+  task: P4.01
+  created_at: "2026-09-26 05:3x"
+  status: frozen_2026-09-26_p401
+  claims_served: [C-AG1, C-AG2]        # claims.yaml BN3 聚合折损
+  change_rule: 任何修改=差异清单+影响面+独立审核，不改历史冻结版本语义
+
+# -----------------------------------------------------------------------------
+# 1. 固定项（骨干/层/划分/读取器容量——本文件冻结后不得随结果调整）
+# -----------------------------------------------------------------------------
+fixed:
+  encoder: probes.yaml encoder（esm2_t33_650M_UR50D @ 08e4846e…，fp32 forward/fp16 storage，
+    truncation 1022，BOS/EOS 剥离）——照抄冻结语义，不重复定义
+  layers:
+    primary: 33                 # hidden 33=末层（G3 knots 与残基任务开发最优；global_set[6]/residue_set[3]）
+    sensitivity_global: 29      # hidden 29：FS-L2 开发选中层，仅全局任务敏感性（G3 登记范围内）
+    sensitivity_residue: 23     # hidden 23：残基任务敏感性——**G3 登记集合外新增敏感性层**
+                                # （G3/diagnosis §5 明言 23 不入候选；此处仅入 sensitivity_registered
+                                # 非推断族。理由：hidden 29 不在 disorder 既有残基包
+                                # residue_set=[11,23,33] 内，为其新增提取违背磁盘预算冻结；
+                                # 23 为该冻结集内唯一中层。P4.01 审核记录登记在案。）
+  split: data/splits/（新版 68,875 组，KNOT-RESPLIT 方案 A；checksums.txt 校验）；
+    fold=split_manifest.dev_fold（5 折组级）
+  reader_linear: LogisticRegression(class_weight=balanced, solver=liblinear, max_iter=1000,
+    random_state=2026)，C ∈ {0.01, 0.1, 1, 10}（OOF CV 池化指标选优，并列取更小 C）——
+    对齐 P3.04 capacity 池化口径；偏离 probes.yaml §5"CV 均值最优"措辞，偏离在此登记
+  data_paths:                  # 规范路径钉死（P4.01 一审 M1 整改）
+    split_manifest: data/splits/split_manifest.tsv
+    disorder_manifest: data/interim/p303/emb_disorder_dev/extract_manifest.tsv  # 现行（2,279 行）
+    disorder_npz_store: data/interim/p303/emb/disorder_dev/                    # 与上表 key 对应
+      # ⚠ 本地副本为旧版残留（缺现行宇宙 615 个蛋白的 npz）；完整库在集群
+      # /lenovofs1/home/jyma/PLM_benchmark/data/interim/p303/emb/disorder_dev/——
+      # P4.02 在集群运行即满足；本地不得用于正式运行
+    disorder_resid_idx: data/interim/p303/disorder_resid_idx.tsv
+    knots_mean_legacy: data/interim/p303/emb/knots_dev/          # 仅 K-POOLED 一致性断言参照
+    knots_resid: data/interim/p402/emb_knots_resid/              # **待抽取**（P4.02 前置：
+      # 集群 GPU 作业，fasta=data/interim/p303/knots_dev.fa 750 条，--resid-layers 23,29,33
+      # 全链逐残基 fp16；抽取完成前 P4.02 的 knots 半区不得运行）
+    deprecated: data/interim/p303/emb/disorder_dev/ 的旧 manifest 视图与 knots_dev.fa 以外
+      的任何宇宙口径——禁止作为宇宙来源
+  statistics:
+    bootstrap: 配对 bootstrap 按独立单位（蛋白/链）重采样，B=2000，种子 2026；退化（重采样内
+      单类→metric 未定义）弃除并计数 boot_degenerate；**P4 新增规则（非 P3.04 延续）**：
+      有效抽样 <1000 → 该比较判"不结论"（P3.04 原语义为 <50% 即 die 硬停，两种阈值并存登记）
+    multiplicity: 推断族内每比较 99% CI 且按族细分 Bonferroni 水平（尾侧 0.005/族内比较数）。
+      **披露**：P3.04 实现为"每比较 99% CI"（未按族细分）；本配置更严（保守方向）。
+      为避免与 P3 结果混淆，族内判定标签统一写作 **sig99fam**（区别于 P3.04 的 sig99）
+    delta_semantic: Δ = 两臂各自 pooled metric 之差；不使用单位级分数差（P3.04 一审 BLOCKER 语义）
+    no_holm: bootstrap-CI 无 p 值，不适用 Holm（P3.04 已登记偏离的延续）
+
+# -----------------------------------------------------------------------------
+# 2. 实验矩阵（任务×聚合算子）；y 相同性是本设计的首要约束
+# -----------------------------------------------------------------------------
+# 可比性原则（验收条件）：残基终点与全局终点只在同终点内比较；不同定义指标不相减、只并列。
+experiments:
+  T-DISORDER-RES:               # 残基终点主实验
+    kind: residue_binary
+    universe: development ∩ disorder 现行 manifest（2,279 蛋白，断言数；加载器按 manifest 逐行
+      装载，**任一 npz 缺失即 die——禁止静默子集**）；分母=分母域残基
+      （state∈{0,1} 且 mask=1，1-based 全长坐标，与 disorder_resid_idx 同域）
+    endpoint_y: 残基 state（与 P3.03 完全同一 y，同一分母，不新增标注）
+    arms:
+      - id: D-ID                # 参考=逐残基读取（P3.03 语义在本管线内重跑）
+        agg: identity（window w=0）
+        head: 逐残基 logistic
+      - id: D-MEAN              # 均值聚合→全局头→广播
+        agg: 分母域残基均值（padding/BOS/EOS 天然不在分母域；fp32 累加均值）
+        head: 蛋白级 logistic；训练标签 y_prot 的冻结推导=分母域残基 state 均值 ≥0.5 →1 否则 0
+            （同一 curated masks 的确定性派生，非新标注来源；阈值 0.5 事前冻结；
+            实测 4 双类蛋白 y_prot=1/0/1/1，无一落在 0.5 边界——阈值不敏感）
+        broadcast: 蛋白分数广播到该蛋白全部分母域残基
+      - id: D-LAST              # 末端聚合→全局头→广播
+        agg: 分母域末端残基向量。**末端定义（1-based 全长坐标域）**=该蛋白分母域内最大
+            resid_index 且 ≤ min(1022, len_full) 的残基（=截断窗口内最后一个有标签残基）；
+            每样本记录末端索引与 trunc_coverage（截断蛋白披露，不设"<全长"断言）
+        head/broadcast: 同 D-MEAN
+      - id: D-WIN               # 局部窗口聚合（逐残基头，终点不变）
+        agg: 全长 1-based 索引空间窗口 [i−w, i+w] 与分母域交集均值（自残基恒在集内；
+            fp32 累加；窗口不含测试真值）
+        grid: w ∈ {4, 16, 64}（内部 CV 选优——选择指标=池化残基 AUPRC（即 inference_primary 量），
+            tie-break 取更小 w；选择曝光=网格 3 值在同一 OOF 上选优后报告，登记乐观偏差）
+        head: 逐残基 logistic
+    metrics:
+      descriptive_primary: per-protein mean AUPRC 差 vs D-ID——**描述性并列，不入推断族**
+        （冻结时已知双类 n=4：DP00123/DP00333/DP00549/DP02148，重抽 4 单位的配对 CI 无推断力；
+        P3.04 对 6 链 FS_REGION 的"推断脆弱不作独立结论"先例同样适用；两端共同可评价蛋白并列）
+      inference_primary: 池化残基 AUPRC 差 vs D-ID（co-primary 升格为族内唯一推断量；全部可评价
+        蛋白分母域残基合并；配对 bootstrap 按蛋白；覆盖率并列）
+      auxiliary: 蛋白级 AUROC（y_prot 语义，仅描述广播臂，不入族）
+    comparability_note: 广播臂残基分数为蛋白内常数→其 per-protein AUPRC≈基率，正是"仅保留均值
+      向量时残基级分辨力损失"的量化；与 D-ID 的差=同终点同分母的预注册比较。
+
+  T-KNOT-PRESENCE:              # 全局终点主实验
+    kind: global_binary
+    universe: development ∩（split_manifest task_area=knot）∩ knots_sequences.presence_target∈{0,1}
+      ∩ knots_resid 表示可用（**操作定义即此配方，实测 750=127 阳/623 阴，断言**；
+      任一样本表示缺失即 die——禁止静默子集）
+    endpoint_y: presence_target（与 P3.03 完全同一 y）
+    arms:
+      - id: K-POOLED            # 参考=池化全局头（P3.03 语义）
+        agg: 全有效残基均值（fp32 累加；**一致性断言**：残基包重算均值 vs knots_mean_legacy
+            mean_layers fp16 hidden33 逐蛋白 max|Δ|≤1e-2，抽样 ≥200 蛋白，否则中止）
+        head: 蛋白级 logistic
+      - id: K-MIL               # 逐残基读取+预注册归约（TODO P4.01 第 2 条"全局任务可比"臂）
+        agg: 逐残基 logistic，蛋白标签广播到残基训练（MIL-flat 语义，登记）。
+            **训练集=仅训练折蛋白的残基；评估折蛋白的残基零参与训练**（组级分折，残基不独立成折）
+        reduction: 蛋白分数=该测试蛋白截断窗口内全部有效残基分数的均值（**预注册主归约**）
+        sensitivity_reduction: max 归约（同残基集合；单独注册为敏感性，不入族）
+      - id: K-LAST              # 末端向量
+        agg: 截断窗口内最后有效残基（=该蛋白 1-based 最大 resid_index ≤1022；记录末端索引；
+            trunc_coverage 并列披露）
+        head: 蛋白级 logistic
+      - id: K-WIN
+        agg: 窗口 [i−w, i+w]（全长 1-based 连续有效残基序列）均值→池化（残基级窗口均值再取
+            蛋白均值）→蛋白级 logistic；grid w ∈ {4, 16, 64}（内部 CV 选优——选择指标=池化
+            AUROC，tie-break 取更小 w；选择曝光同 D-WIN 登记）
+    metrics:
+      inference_primary: AUROC 差 vs K-POOLED（5 折 OOF 池化，与 P3.04 同机；配对 bootstrap 按蛋白）
+    secondary: T-KNOT-TYPE 同矩阵（Macro-F1，5 折 CV lbfgs 多项；**新版划分 dev
+      type_eligible 且表示可用=71 可评价（断言；knots.tsv 列名 type_task_tier，dev 行 76、可评价 71；probes.yaml 冻结时的"85 行"为 resplit 前旧数，
+      已作废）**；**描述性报告，不入主推断族**）
+
+# -----------------------------------------------------------------------------
+# 3. 排除登记（不在聚合主实验内的白名单任务及理由）
+# -----------------------------------------------------------------------------
+exclusions:
+  T-FS-REGION: 6 链 3 对=案例级宇宙（P1.15/P3.03 结论边界）——聚合 Δ 只能是案例级描述，不入主族
+  T-FS-L2-PU-RANK: ranking 语义；池化打分即其注册语义，无残基 y 可构造 MIL 臂
+  T-FS-L1-PAIRED: 几何诊断，无读取器训练终点
+
+# -----------------------------------------------------------------------------
+# 4. 可学习聚合（P4.03；预注册；C-AG2）
+# -----------------------------------------------------------------------------
+learned:
+  arch: 加性注意力池化（Bahdanau 式单头）：e_i = w_a^T tanh(W_a h_i + b_a)，
+    α = softmax(e over 有效残基)，z = Σ α_i h_i——mask 传递=仅有效残基参与 softmax 与求和
+  params: W_a ∈ R^{1280×64} + b_a ∈ R^{64} + w_a ∈ R^{64} = **82,048**
+    （≤ 注册上限 100k；对照 probes.yaml 非线性 400k 上限更严，因其与固定算子逐点对照；
+    P4.03 运行前以实际实例化模型 count_parameters 对账，不符即 die）
+  heads: 与对应固定臂完全同头（蛋白级 logistic / 广播），训练规则同 §2
+  training: Adam lr 1e-3，batch=256 蛋白，≤100 epochs，早停 patience 10（训练内纯随机 90/10
+    验证，非分层——P3.04 fit_mlp 语义复用）；seeds [13,42,2026]
+  arms_and_universes:           # 一审 M2 整改：推断语义补齐
+    - id: L-ATT-KNOTS
+      universe: =T-KNOT-PRESENCE 宇宙（750，同一集合同一折）
+      y: presence_target；对照臂=K-POOLED（同宇宙同折）
+    - id: L-ATT-DISORDER
+      universe: =T-DISORDER-RES 宇宙（2,279 全量，同一集合同一折；**非** DISORDER500 子样本）
+      y: y_prot（同 D-MEAN 训练标签）；对照臂=D-MEAN（同宇宙重跑口径=§2 D-MEAN 本身）
+  inference:
+    family: aggregation_learned（2 比较：L-ATT-KNOTS vs K-POOLED、L-ATT-DISORDER vs D-MEAN）
+    delta: Δ = 种子 seed-mean 的 OOF 池化 metric（attention 臂各种子独立 OOF 后取均值）
+      − 对照臂 OOF 池化 metric；配对 bootstrap 按蛋白（attention 分数取 seed-mean 后配对）；
+      sig99fam 判定同 §1（族内 2 比较，尾侧 0.005/2）
+    seed_reporting: 三种子逐个 Δ 与 99fam CI 并列；seed-mean 为判定量
+  accounting: 每臂落盘聚合器+读取头参数量、训练 epoch 数、实际计算量（forward 次数×维度）；
+    与固定臂并列
+  attribution_rule: L-ATT 增益若超 sig99fam CI——归因仍附参数/容量账目；容量解释对照=
+    P3.04 MLP-on-pooled（既有产物）**但披露宇宙错配**：disorder 侧 MLP-on-pooled 仅存在于
+    DISORDER500 子样本（P3.04 冻结宇宙），与 L-ATT-DISORDER 的 2,279 全量宇宙不同——
+    因此 disorder 侧的"容量 vs 机制"判定降为**方向性参考**，knots 侧（750 同宇宙）为
+    可执行判定；两者均不宣称机制归因（确认在 Phase 5）
+
+# -----------------------------------------------------------------------------
+# 5. 推断族与差值公式（冻结；§1 statistics 语义）
+# -----------------------------------------------------------------------------
+families:
+  aggregation_fixed_residue:    # 族内 3 比较（推断量=池化残基 AUPRC 差），尾侧 0.005/3
+    comparisons: [D-MEAN vs D-ID, D-LAST vs D-ID, D-WIN(sel) vs D-ID]
+    formula: Δ_pooled = AUPRC_pooled(arm OOF) − AUPRC_pooled(D-ID OOF)
+    descriptive_companions:     # 不入族、只并列描述
+      - per-protein mean AUPRC 差（双类 n=4，见 §2 metrics）
+      - 蛋白级 AUROC（广播臂辅助）
+  aggregation_fixed_global:     # 族内 3 比较（AUROC），尾侧 0.005/3
+    comparisons: [K-MIL(mean) vs K-POOLED, K-LAST vs K-POOLED, K-WIN(sel) vs K-POOLED]
+    formula: Δ = AUROC(arm OOF) − AUROC(K-POOLED OOF)
+  aggregation_learned:          # 族内 2 比较（见 §4.inference），尾侧 0.005/2
+    comparisons: [L-ATT-KNOTS vs K-POOLED, L-ATT-DISORDER vs D-MEAN]
+  sensitivity_registered:       # 不入族、只描述+区间：hidden 29/23 敏感性、max 归约、
+    # 未选中的窗口网格值、T-KNOT-TYPE 矩阵、D-WIN/K-WIN 网格非选中值
+  coverage_rules: 每比较并列报告两端覆盖率与共同分母构成；交集不得掩盖单臂失效样本（TODO 验收原文）
+
+# -----------------------------------------------------------------------------
+# 6. 检查与异常处理（运行时断言；失败即停，不产出半成品结论）
+# -----------------------------------------------------------------------------
+assertions:
+  - disorder 现行 manifest=2,279 且逐行可加载（任一 npz 缺失 die）；双类蛋白=4；
+    knots presence=750；knot type eligible=71（逐项 die-on-mismatch）
+  - **禁止静默子集**：每个宇宙的样本集合=manifest/fa 全集（对账集合差=∅ 才继续）
+  - K-POOLED 重算均值 vs mean_layers fp16 一致性（≥200 蛋白抽样，max|Δ|≤1e-2）
+  - 每样本 fold ∈ dev_fold 0–4 且跨臂一致；无 confirmation/final_holdout ID 出现（集合断言）
+  - D-LAST/K-LAST 末端索引=分母域（或有效残基）内最大 1-based resid_index 且 ≤ min(1022, len_full)；
+    截断蛋白 trunc_coverage 落盘披露
+  - 短序列人工核对：≥3 个 ≤50 残基蛋白 naive 独立实现对照脚本输出（win/mean/last，max|Δ|≤1e-4）
+  - 广播臂覆盖率=100%（分母域）；MIL 臂残基训练集规模与正例率落盘
+  - 可学习聚合实例化参数量 == 82,048（count_parameters 对账，不符即 die）
+
+outputs:
+  fixed: results/aggregation/fixed/（每臂 OOF 逐样本分数+coverage+qc）
+  learned: results/aggregation/learned/（同上+参数账目+选择日志）
+  report: reports/aggregation_diagnosis.md（P4.04）

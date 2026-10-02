@@ -1,0 +1,31 @@
+{
+  "usalign_edges.tsv": {
+    "rows_total": 3010,
+    "numeric_rows": 3010,
+    "blank_rows": 0,
+    "header_or_non_numeric_examples": [],
+    "score_ge_0_6": 2854,
+    "only_one_score_column": true
+  },
+  "newnew_edges.tsv": {
+    "rows_total": 7963,
+    "numeric_rows": 7962,
+    "blank_rows": 0,
+    "header_or_non_numeric_examples": [
+      [
+        "query",
+        "target",
+        "tm_norm_by_q"
+      ]
+    ],
+    "score_ge_0_6": 7646,
+    "only_one_score_column": true
+  },
+  "fs_endpoint_manifest": {
+    "rows": 20,
+    "unique_names": 20,
+    "positive_pairs": 10,
+    "missing_endpoints": []
+  },
+  "local_endpoint_npz_count": 19
+}

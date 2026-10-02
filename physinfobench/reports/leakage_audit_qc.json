@@ -1,0 +1,17 @@
+{
+ "checks": {
+  "L1_labeled_cross_uniprot": 0,
+  "L1_labeled_vs_background_cross_uniprot": 0,
+  "L2_background_sha_cross_split": 0,
+  "L2_endpoint_sha_cross_split_violations": 0,
+  "L3_matched_set_violations": 0,
+  "L4_max_rule_cross_split_edges_fs": 55,
+  "L4b_knot_unilateral_max06_cross_split": 253,
+  "L5_fold_leaks": 0,
+  "L6_knot_chains_unverified_no_structure": 14,
+  "L6_knot_structural_binding_checked": 2998,
+  "L6_knot_structural_binding_cross_split": 0
+ },
+ "problems": [],
+ "run_ts": "2026-09-25 17:09"
+}

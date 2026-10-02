@@ -1,0 +1,45 @@
+{
+ "note": "全部宇宙 development；KNOT_TYPE 为 3_1-vs-other 二值化语义；FS_L2A 为 2-半交叉拟合 OOF ΔAUROC（直配乐观语义）；Δ=两臂 pooled metric 之差的配对 bootstrap（独立单位组重采样 B=2000 种子 2026，退化抽样弃除并计数）；多重性=capacity_gain 族 5 比较→99% CI Bonferroni 水平（bootstrap-CI 无 p 值不适用 Holm——probes.yaml 冻结 Holm 文本的偏离已在 P3.04 报告登记）；显著性=all seeds 99% CI 同号。",
+ "results": [
+  {
+   "ci95_envelope": [
+    0.003781,
+    0.026631
+   ],
+   "ci99_envelope": [
+    0.001741,
+    0.031278
+   ],
+   "delta_seedmean": 0.008256,
+   "linear": 0.059829,
+   "n_units": 1916,
+   "significant_99_all_seeds": true,
+   "tag": "FS_REGION"
+  },
+  {
+   "ci95_envelope": [
+    -0.01029,
+    0.000841
+   ],
+   "ci99_envelope": [
+    -0.013539,
+    0.001135
+   ],
+   "delta_seedmean": -0.001609,
+   "linear": 0.998279,
+   "n_units": 43786,
+   "significant_99_all_seeds": false,
+   "tag": "DISORDER500"
+  },
+  {
+   "ci95_envelope": "2-half cross-fitting OOF（直配乐观）",
+   "ci99_envelope": "同左",
+   "delta_seedmean": -0.10609,
+   "linear": 0.74563,
+   "n_units": 10010,
+   "significant_99_all_seeds": "n/a（直配无 bootstrap）",
+   "tag": "FS_L2A_rank"
+  }
+ ],
+ "run_ts": "2026-09-26 00:41"
+}

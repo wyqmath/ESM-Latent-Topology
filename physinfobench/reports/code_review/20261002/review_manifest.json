@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-10-02T14:05:06+08:00",
+  "status": "REQUIRES_REPAIR_BEFORE_REPRODUCIBLE_RELEASE",
+  "review_type": "self_review",
+  "findings": {
+    "P1": 4,
+    "P2": 6
+  },
+  "regression_tests_passed": 23,
+  "frozen_files_verified": 555,
+  "uploaded": false,
+  "artifacts": {
+    "CODE_REVIEW.md": "95d9dab0c56ef310d2b180182c2615f9b75fb89fabef9c525aa9f723c726ca20",
+    "audit_checks.py": "16cb0115d535a06ccf9741ed64ab182235285cbfd0646b7d55d7db5d4f99d2cf",
+    "audit_evidence.json": "7d2e33f3defc03f4022fb8cf02f941986114406bef53892c2ee7bae2398a2c36",
+    "correction_lock_check.json": "9dfcc571882c387747b4e90d1eb6a557eb64ac803931239b683393156e2a51c4",
+    "current_artifact_observations.json": "91cea5fa08fc4855e81898186a4db3cbbed01bd16c6f871e1d38b3dfc5f1eb94",
+    "regression_tests.log": "0430ee2ace84c84932dcb7ad9419a544416f2c00aabb0fd78aee674895203a14",
+    "review_scope.json": "c49e679c30d373b58e608689a8ff5d61553f5f1b771e83dcece09e78d976f784"
+  }
+}

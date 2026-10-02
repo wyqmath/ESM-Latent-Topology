@@ -1,0 +1,25 @@
+{
+ "arm": "ID_h23",
+ "best_C": 0.01,
+ "dual_n": 4,
+ "grid": [
+  {
+   "C": 0.01,
+   "pooled_auprc": 0.99873
+  },
+  {
+   "C": 0.1,
+   "pooled_auprc": 0.998585
+  },
+  {
+   "C": 1,
+   "pooled_auprc": 0.998161
+  },
+  {
+   "C": 10,
+   "pooled_auprc": 0.997388
+  }
+ ],
+ "task": "disorder",
+ "y_prot_positive": 2277
+}

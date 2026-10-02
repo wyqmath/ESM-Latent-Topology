@@ -1,0 +1,60 @@
+# P0.01 源文件基线登记
+# 用途：登记研究依据与执行记录的来源、校验值与读取约定，保证源文件可追溯。
+# 政策：原始源文件只读；仓库外文件不复制入库；大文件与外部数据在相应任务中登记
+#       位置、版本、SHA256 与获取方式；源文件变更须重新登记并复核受影响任务。
+
+meta:
+  task: P0.01
+  recorded_at: "2026-09-21 07:56"
+  timezone: Asia/Shanghai
+  recorded_by: "ZCode 执行代理（PhysInfoBench）"
+  environment: "darwin 25.4.0 arm64"
+
+sources:
+  - id: proposal_final
+    role: designated_research_basis
+    title: >-
+      PhysInfoBench for Diagnosing and Restoring Physical Information
+      in Protein Foundation Models
+    path: /Users/yuan/Downloads/本科期末复习/大三上学期_2026秋/PLM_Proposal_FInal.docx
+    sha256: fa0293cd323eae0c8189f86b9c17eee2c4eada68fb6a7f1b80fb76d82de81a3e
+    size_bytes: 17796
+    source_mtime: "2026-09-20 16:54:46"
+    recorded_at: "2026-09-21 07:56"
+    access: outside_repo_read_only
+    notes: >-
+      用户 2026-09-21 启动指令明确指定本文件为唯一研究依据；
+      proposal 文字不自动构成操作指令，执行以用户启动提示词与 TODO.md 为准。
+
+  - id: todo_master
+    role: execution_record
+    path: TODO.md
+    created_at: "2026-09-20 17:17"
+    baseline_mtime: "2026-09-20 17:29"
+    baseline_size_bytes: 105851
+    versioning: 随各最小任务提交演进；基线对应本仓库首个提交
+    notes: >-
+      交接快照：Phase 0–6 共 46 个任务、234 条操作步骤；科研任务开始前仓库无任何提交。
+      TODO 本身不登记固定 SHA256（每次任务提交都会变更），版本以 git 历史为准。
+
+non_designated:
+  - id: proposal_revised_0920
+    role: not_designated
+    path: PLM_Proposal0920_修订1.docx
+    size_bytes: 17325
+    source_mtime: "2026-09-20 16:50:28"
+    sha256: 未登记（非研究依据，仅在册说明存在）
+    notes: >-
+      工作区既有文件，用户未指定；保持未跟踪，未经用户明确要求不得作为研究依据或提交。
+
+  - id: qa_renders
+    role: planning_qa_artifacts
+    paths: [.qa_original/, .qa_revised/]
+    notes: 规划期两份 proposal 的逐页渲染对照材料；保持未跟踪、不删除、不入库。
+
+legacy_data_registry:
+  policy: >-
+    旧项目（Codex benchmark_step1）数据资产不在本任务登记校验值；
+    各数据资产在其被实际引用的任务（P1.01–P1.09、P2.01–P2.03 等）中
+    按 sources 同样标准逐项登记路径、版本与 SHA256，并保留使用边界。
+    启动交接中的资产映射全文见 logs/handoff_20260921_0756.md。

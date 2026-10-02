@@ -1,0 +1,137 @@
+{
+ "area_split_new": {
+  "bpti": {
+   "development": 9
+  },
+  "disorder": {
+   "confirmation": 432,
+   "development": 2392,
+   "final_holdout": 513
+  },
+  "fold_switch": {
+   "confirmation": 6,
+   "development": 83,
+   "final_holdout": 7
+  },
+  "knot": {
+   "confirmation": 195,
+   "development": 1039,
+   "final_holdout": 167
+  },
+  "pyp": {
+   "development": 6
+  },
+  "rnase_a": {
+   "development": 9
+  }
+ },
+ "area_split_old": {
+  "bpti": {
+   "development": 9
+  },
+  "disorder": {
+   "confirmation": 447,
+   "development": 2380,
+   "final_holdout": 510
+  },
+  "fold_switch": {
+   "confirmation": 7,
+   "development": 81,
+   "final_holdout": 8
+  },
+  "knot": {
+   "confirmation": 247,
+   "development": 970,
+   "final_holdout": 184
+  },
+  "pyp": {
+   "development": 6
+  },
+  "rnase_a": {
+   "development": 9
+  }
+ },
+ "forced_dev_samples_all_development": true,
+ "forced_dev_samples_checked": 35,
+ "forced_dev_violations": {},
+ "groups_total_mode0": 69084,
+ "groups_total_new": 68875,
+ "groups_total_new_labeled_plus_bg_check": 68875,
+ "knot_edges_added": 2998,
+ "knot_presence_usable_by_split_new": {
+  "neg": {
+   "confirmation": 126,
+   "development": 623,
+   "final_holdout": 83
+  },
+  "pos": {
+   "confirmation": 24,
+   "development": 138,
+   "final_holdout": 26
+  }
+ },
+ "knot_roots_count": 450,
+ "knot_type_by_split_new": {
+  "confirmation": {
+   "3_1": 16
+  },
+  "development": {
+   "3_1": 66,
+   "4_1": 7,
+   "5_2": 3
+  },
+  "final_holdout": {
+   "3_1": 18,
+   "4_1": 1,
+   "5_1": 1
+  }
+ },
+ "max_labeled_root_containing_knot_chains": 41,
+ "max_root_members_bg": 1521,
+ "max_root_members_labeled": 1521,
+ "mode0_reproduction": "PASS (4858 rows identical)",
+ "multi_task_roots": {
+  "G::G039": {
+   "disorder": 2,
+   "fold_switch": 1
+  },
+  "G::G075": {
+   "disorder": 1,
+   "knot": 1
+  },
+  "G::G076": {
+   "disorder": 1,
+   "knot": 1
+  },
+  "G::G1972": {
+   "disorder": 2,
+   "knot": 2
+  },
+  "G::G2185": {
+   "disorder": 2,
+   "fold_switch": 1
+  },
+  "G::G2474": {
+   "disorder": 2,
+   "fold_switch": 1
+  },
+  "G::G3710": {
+   "bpti": 9,
+   "disorder": 1,
+   "knot": 2
+  },
+  "G::G4005": {
+   "disorder": 2,
+   "knot": 1
+  },
+  "G::G4269": {
+   "disorder": 5,
+   "knot": 2
+  },
+  "G::G605": {
+   "disorder": 3,
+   "fold_switch": 1
+  }
+ },
+ "n_multi_task_roots": 149
+}

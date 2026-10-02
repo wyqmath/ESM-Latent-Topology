@@ -1,0 +1,16 @@
+  K-POOLED 一致性断言通过（max|Δ|=0.0037, n=200）
+    [K-POOLED] C=0.01 pooled_auroc=0.8784
+    [K-POOLED] C=0.1 pooled_auroc=0.9213
+    [K-POOLED] C=1 pooled_auroc=0.9319
+    [K-POOLED] C=10 pooled_auroc=0.9235
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p402_aggregation.py", line 523, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p402_aggregation.py", line 517, in main
+    run_knots_arms(arms)
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p402_aggregation.py", line 381, in run_knots_arms
+    save_arm(f"K-{arm}", {u: (y_of[u], s) for u, s in oof.items()},
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/run_p402_aggregation.py", line 156, in save_arm
+    with gzip.open(os.path.join(ARMD, f"{tag}.scores.tsv.gz"), "wt", mtime=0) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: open() got an unexpected keyword argument 'mtime'

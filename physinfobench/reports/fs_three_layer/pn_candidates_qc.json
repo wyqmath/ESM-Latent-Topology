@@ -1,0 +1,51 @@
+{
+ "candidate_rows": 139,
+ "candidates_sha256": "0a9155b0576715b1af876f3ad45e056d74c885a99f0067ca0bbb314cb539307b",
+ "family_pairs_before_ranking": 413,
+ "fetched_classified_rows": 842,
+ "generated": "2026-09-23 09:25",
+ "hit_count_sum": 2953,
+ "hits_sha256": "4d425050853d896d3f57ba6045b04af0a442f0f6b8a2aa2326cfaf6d16571b6d",
+ "length_filtered_pairs": 45,
+ "manual_review_pending_all": true,
+ "no_hit_candidates": 92,
+ "paginated_candidates_with_pages": 3,
+ "positives_without_family": [],
+ "queries_sha256": "15231d7a0b8e22d48ad51146d6d2cdfd830211c509028cf1cba289ebaad91e58",
+ "run_id": "p1_11_20260923_r2",
+ "same_sequence_checkable": 105,
+ "same_sequence_collisions": 0,
+ "same_sequence_not_checkable_trembl": 33,
+ "search_channel_counts": {
+  "europepmc_primary": 138
+ },
+ "search_mode": "cached",
+ "strict_positives": [
+  "B9W5G6",
+  "P00573",
+  "P19726",
+  "P38505",
+  "Q08209",
+  "Q12931",
+  "Q58AD3",
+  "Q8E473",
+  "Q9RZA4",
+  "Q9YA14"
+ ],
+ "tier_counts_rows": {
+  "EXITED": 15,
+  "PN-A": 60,
+  "PN-B": 38,
+  "PN-C": 26
+ },
+ "tier_counts_unique_candidates": {
+  "EXITED": 15,
+  "PN-A": 59,
+  "PN-B": 38,
+  "PN-C": 26
+ },
+ "top_n_per_positive": 30,
+ "truncated_candidates": 7,
+ "unique_candidates": 138,
+ "version_skew_note": "家族与 PubMed 文件为 SIFTS 2026/09/20 构建（PDB 38.26/UniProt 2026.03），与背景 B 的 09-13 构建存在三方版本偏差；家族/PMID 为稳定标识，accession 一致性在构建时断言（候选均须存在于背景 B）"
+}

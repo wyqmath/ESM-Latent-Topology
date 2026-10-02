@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "independent_coefficient_sigmoid_all99_caches": true,
+  "n_residues": 22646,
+  "n_proteins": 99,
+  "max_abs_score_error": 4.440892098500626e-16,
+  "all99_cache_SHA_match_executed_provenance": true,
+  "no_fit_no_representation_extraction": true,
+  "script_sha256": "d5dc6e3e8159db4bc549f4f3203ec5b6a3bc627dc0c27f5bcb09fc69be84ec3a"
+}

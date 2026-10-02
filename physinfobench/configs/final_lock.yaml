@@ -1,0 +1,182 @@
+# =============================================================================
+# configs/final_lock.yaml — P5.04 最终评估流水线冻结
+# =============================================================================
+# 注册时间：2026-09-27 14:54 Asia/Shanghai（保留集标签结果级读取之前）。
+# 授权链：G4 放行 + P5.01–P5.03 闭环（confirmation_lock 441416a；P5.02=015aee3；
+#         P5.03=e3e011c）。
+# 纪律：仅在 final_lock 冻结提交且用户对 final_holdout 解锁给出明确授权后，才允许
+#       P5.05 读取保留标签（gate.user_authorization_recorded）；运行器内部强校验。
+# =============================================================================
+
+meta:
+  task: P5.04
+  registered_at: "2026-09-27T06:54:00Z"
+  registered_at_local: "2026-09-27 14:54 Asia/Shanghai"
+  status: locked_2026-09-27_p504
+  change_rule: >-
+    差异清单 + 影响面 + 独立审核；结果驱动的方法变化不得再用同一保留集当未见测试。
+  confirmation_loop: >-
+    已结束（P5.03 三项裁决均无方法修改、无 P3/P4 任务重开、确认批关闭）。
+
+# -----------------------------------------------------------------------------
+# 门禁（运行器强校验；缺失即 die）
+# -----------------------------------------------------------------------------
+gate:
+  user_authorization_recorded: "2026-09-30 19:41 用户指令式授权『继续推进，直到P5结束』（decisions.md 2026-09-30 19:41 条目；G3/G4 先例语义；一次性、不回传调参）"
+  user_authorization_note: >-
+    待用户明确授权后由 P5.04 收口提交回填（引用 decisions.md 条目时间戳）；
+    本字段为空时 run_p505_holdout.py 拒绝运行。
+  fsl2_holdout_decision: >-
+    HOLD-FSL2-RANK 不运行：保留集 7 对全部 valid_mask=0（n_strict=0，与确认侧同
+    预注册分支）→ 证据不足如实登记，不设描述性 side-table（避免饱和分数 theater）。
+
+# -----------------------------------------------------------------------------
+# first_read（保留集标签结果级首次读取授权）
+# -----------------------------------------------------------------------------
+first_read:
+  authorized_reader: ZCode(P5.05)
+  registered_at: "2026-09-27T06:54:00Z"
+  guard: >-
+    results/holdout/<run_id> 已存在=拒绝运行；run_p505_holdout.py 强制写入
+    first_read_record.json（P5.02 缺陷不再犯）。
+  access_log: >-
+    访问次数=1 次（一次性批读取）；时间/用途由 first_read_record.json 与
+    logs/exposure_log.tsv 记录。
+
+# -----------------------------------------------------------------------------
+# 冻结资源（与确认侧同一冻结文件；本文件不重新定义数值）
+# -----------------------------------------------------------------------------
+frozen_resources:
+  encoder_note: >-
+    configs/probes.yaml §encoder（esm2_t33_650M_UR50D，revision 08e4846e…；
+    BOS/EOS 剥离均值池化；truncation 1022；fp16）。
+  statistics_note: >-
+    configs/evaluation_protocol.yaml（B=2000、seed 2026、percentile 95% CI、
+    退化抽取丢弃、<1000 有效=no_conclusion）。
+  environment_lock:
+    python: "3.11.16"
+    torch: "2.6.0+cu124"
+    sklearn: "1.9.1"
+    numpy: "2.4.6"
+    interpreter: /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/venv/bin/python
+    note: >-
+      跨环境位级可复现不存在（P5.02 change_log #2 实测教训）；重拟合判据=
+      统计等价（排序保持语义 + 抖动上界），已在冻结脚本内实现。
+  training_policy: >-
+    读出仅在 development 拟合（knots 750 / disorder 2,279 蛋白全分母域）；
+    不合并确认集入训练（事先明确：确认集已曝光，合并会破坏与确认证据的可比性，
+    且无任何预注册依据）。
+  exposure_audit: >-
+    final_holdout 结果级读取=0 次（exposure_log 全台账核验，2026-09-27）；曾发生的
+    保留集接触仅=划分生成（标签无关）与聚合构成统计（split_qc，已登记）。
+
+# -----------------------------------------------------------------------------
+# 保留集构成（钉版；2026-09-27 14:54 复算核验）
+# -----------------------------------------------------------------------------
+holdout_sets:
+  knots_presence:
+    declared: {pos: 26, neg: 83}
+    evaluable_locked: {pos: 25, neg: 83, total: 108}
+    no_sequence_dropped: ["knot:3pvm_B"]
+    note: >-
+      构建器强断言缺失集恰为 3pvm_B、计数恰为 25/83；双口径并排披露（同 P5.01）。
+  disorder:
+    derivation: >-
+      split_manifest(disorder ∧ final_holdout) 全 513 行；
+      强断言 513 = 抽取 + 空域 + 全域超界（钉版预期 494 + 5 + 14，实测见
+      inputs_qc.json）；分母域残基 51,134（构建器实测，运行时对齐校验）。
+  fs_strict:
+    n_pairs: 7
+    n_strict_locked: 0
+    note: >-
+      全部 10 个 dev strict 阳性均在 development（强制 dev，结构隔离审计）；保留集
+      无可检验 FS 阳性 → gate.fsl2_holdout_decision。
+
+# -----------------------------------------------------------------------------
+# 运行协议（与确认侧同冻结读出/指标/对照；判据同 confirmatory_hypotheses.yaml）
+# -----------------------------------------------------------------------------
+run_ids:
+  knots: HOLD-KNOT-PRESENCE-P505-v1
+  disorder: HOLD-DISORDER-RES-P505-v1
+  fsl2: 不运行（gate.fsl2_holdout_decision）
+
+run_protocol:
+  knots: >-
+    读出=hidden33 全残基均值 LogisticRegression(C=1, balanced, liblinear,
+    max_iter=1000, seed 2026) 仅 dev 拟合；holdout 108 链评分；AUROC + 蛋白单位
+    bootstrap CI（B=2000）+ 置换零分布（×100，seed 2026..2125）+ log1p(链长) 负对照。
+  disorder: >-
+    读出=hidden33 逐残基（分母域）LogisticRegression(C=0.01, balanced, liblinear,
+    max_iter=1000, seed 2026) 仅 dev 拟合；holdout 494 蛋白池化 AUPRC + CI +
+    蛋白内置换 ×100 + 基率并列 + 双类蛋白计数披露（判读前置量，degeneracy_note）。
+  judgement_note: >-
+    判据阈值沿 confirmatory_hypotheses.yaml（knots strong_pass ≥0.90；disorder 机械
+    阈值仅报告、判读须过双类/基率前置量——P5.03 已确立退化不作为确认证据的先例）；
+    与确认阶段方向不一致时按泛化失败/不确定性报告，不回传调参。
+
+# -----------------------------------------------------------------------------
+# 执行矩阵 / 输出 schema / 资源预算 / 失败重跑规则
+# -----------------------------------------------------------------------------
+execution_matrix:
+  jobs: 1（sbatch scripts/sbatch_p505.sh；GPU 纪律 --gres=gpu:1；预期 ≤1h 墙钟；
+    -t 04:00:00 为 SLURM 队列上限非预期用时）
+  expected_outputs:
+    - results/holdout/HOLD-KNOT-PRESENCE-P505-v1/{scores.tsv(108 行数据), metrics.json}
+    - results/holdout/HOLD-DISORDER-RES-P505-v1/{residue_scores.tsv.gz(51,134 行数据), metrics.json}
+    - results/holdout/holdout_qc.json、first_read_record.json
+  failure_rerun_rule: >-
+    仅运行性失败（节点/网络/抽取中断）可按原配置续跑（抽取幂等、评估受 first_read
+    守卫约束需人工清理后原样重跑并留痕）；结果驱动的模型/阈值修改禁止用同一保留集
+    重测——须回 P5.03/P5.04 走差异清单。
+  output_schema: >-
+    与 results/confirmation/ 同 schema（sample_id,label,score / protein,resid,label,score；
+    metrics.json 固定键集 + executed_at 双时间戳）。
+
+# -----------------------------------------------------------------------------
+# 完整性钉版（sha256；2026-09-27 14:54 实测）
+# -----------------------------------------------------------------------------
+integrity:
+  verify_files:
+    configs/confirmation_lock.yaml: 2ac7ff9e18921d075fec3d5fdd8e26bf83bf5401612ccd99ade3d1763028e165
+    configs/confirmatory_hypotheses.yaml: e2544bb75ac83e621e84aa2cb5bebdaab8b9b7e70b131bb54dc4a2ae9ed17298
+    configs/probes.yaml: b70c5cb0031d95d7f445afe645e5b817a3601cdddd8afcceafe030f8ec0e6c7d
+    configs/evaluation_protocol.yaml: 5d100b37f5c43273d960a71c8892830b3cfc184b1ea6501218c9682a99a86f3d
+    configs/models.yaml: 8ef5fd17766ddbbb3cab25c6582625462d9778ead87f25eb6d4d793d51e8c89c
+    data/splits/split_manifest.tsv: 41676fd7af106591094318fb44dd819c5d244a0b13ff6b6196d73eafebf31842
+    data/splits/split_qc.json: ee5bbcecb07fe9e6ca3ef71998f4bc46642329a5f0a3350c01f3e2540309543c
+    data/curated/knots.tsv: 40aea42839432f4b7cc1f151a0290c21cb23dab3802ed7ba0fefe999f7c1b499
+    data/curated/knots_sequences.tsv: 16dbe333dbcba07162fcca9f590fa8171a455330a5fd66736dd3d888e75e623d
+    data/curated/knots_sequences_unavailable.tsv: 651bc415b3b8196ee8802f736799f7d669b79ce43962bc1f202eeb47e8cc8f46
+    data/curated/fold_switch_global.tsv: d6dd5b9bbf78a95d3d9c2535e7c9ff5b3d758b97cf686109ce3ad942d23582f7
+    data/curated/disorder.tsv: 933c002296f0516a99fa2c898c5b8acbf6308ddc8cc76d213ad0e3c06ab7e63b
+    data/curated/disorder_masks.tsv: d0064b5d27a5ab679bbbd6220ce1bbc2c7eb3ab12f77a78c0fc1dd0bee080374
+    results/probes/T-FS-L2-PU-RANK.stageA.selected.json: 2f50175796df2ab80109c34cc811e1730bd6270d2d38fd2abb64120cbfe45351
+    scripts/extract_representations.py: de382828624f7d33ffa8eb4437a5f735c71cca0d21f96d260489f52c504e9fb2
+    scripts/run_probes_p303.py: d1dae8091c29dce6d920d5a8abcef8f86a6ab46561d75dd320873cc2928a544d
+    scripts/run_l2_stage_b.py: f581e3e159fa712c02fe5b60f0855575f633b181c19aeec17b2a1ba5ac4146f8
+    scripts/build_p303_inputs.py: 4a32b15ca3b4c41fd1463598eefe43cb05992472a5f4c082430a294316a358ce
+    scripts/build_p501_confirmation_inputs.py: cda7dabb11dbc519534207b64cfc4a68a05461e95fe8d24fa48a377477bd55d8
+    scripts/run_p502_confirmation_cluster.py: e0642cba5ccda7f116728da6a3fd1e1567e3007c17c5221c2bd6df3a34004728
+    scripts/run_p502_confirmation_fsl2.py: 5497c588a2683ba69379f8ad2fd0532f3e7dac584228bc3e92913b4ad40ba424
+    scripts/sbatch_p502.sh: 77747828beb44a4655716a8cb356c2e1c86b4dc7598948127ee554d1a43d1b1f
+    scripts/build_p504_holdout_inputs.py: 576d067438a7d20e5c58592a49996f60dee9bd3ee34f0411af4f8104e19fd35a
+    scripts/run_p505_holdout.py: 4af1e1733d29191a33db079792a29b2dd2786da5032dd51767f864f3b11ec98d
+    scripts/sbatch_p505.sh: c6bbacc3db6497d20bda0e4b965ebf27b396f443fd898b1a4e6df98c3c64ddd7
+  not_hash_pinned:
+    - >-
+      dev 表示库（集群 emb_knots_resid / emb_disorder_dev npz 内容）：结构断言承担
+      （750/2,279 行、die-on-missing、层维度），同 confirmation_lock 口径。
+    - >-
+      data/interim/p504/*（输入构建产物）：由 inputs_qc.json 输出哈希承担（构建器
+      已哈希钉版，产物确定性可追溯）。
+    - >-
+      打结 dev 逐链标签一致性（knots.tsv vs knots_sequences.tsv）：运行器逐链断言。
+
+# -----------------------------------------------------------------------------
+# 变更日志（append-only）
+# -----------------------------------------------------------------------------
+change_log:
+  - ts: "2026-09-30 19:41 Asia/Shanghai"
+    event: gate 回填——用户指令式授权 final_holdout 一次性评估（P5.05）。
+    authority: decisions.md 2026-09-30 19:41 条目（原文与语义见该条目）。
+    note: 其余 25 文件哈希不变（本文件 gate 字段与 change_log 为唯一改动）。

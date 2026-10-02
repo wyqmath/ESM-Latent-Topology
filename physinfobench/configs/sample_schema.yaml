@@ -1,0 +1,220 @@
+# =============================================================================
+# configs/sample_schema.yaml — P0.04 样本与证据字段定义（草案，经审核后冻结）
+# 规则：本文件定义表结构与约束；示例记录仅用于验证校验器，不混入科研数据。
+# =============================================================================
+
+meta:
+  task: P0.04
+  created_at: "2026-09-21 08:45"
+  timezone: Asia/Shanghai
+  status: draft_pending_review
+  design_note: "逐列不另设 source 列：来源与版本以表级 source_version 字段（proteins/samples/structures）+ conventions.provenance 承载；这是经审核认可的设计取舍（logs/reviews/P0.04.md 建议背景）。"
+
+# -----------------------------------------------------------------------------
+# 全局约定
+# -----------------------------------------------------------------------------
+conventions:
+  id_rule: "所有 *_id 为非空、全表唯一、不含空白字符的稳定字符串；一经发布不得改写（新版本另立 id 并登记来源版本）。"
+  no_sequence_dedup: "禁止以 sequence_hash 或序列本身作为去重/主键依据：同一序列的多个状态样本必须各自持有 sample_id，状态差异由 state/condition 字段承载。"
+  unknown_vs_negative: "未知=目标值缺失且 valid_mask=0（不入监督损失与评价分母）；真实阴性=目标值 0 且 valid_mask=1，且必须有 evidence_id 支持该阴性判断；两者禁止混写。"
+  unlabeled_semantics: "2026-09-22 三层治理变更：未标注背景行 label_epistemic_status=unlabeled、biological_target 恒为空、pu_observed_label=0 仅表示'当前未被确认为阳性'；任何背景行禁止 biological_target=0；PN-A/B/C 为推定阴性证据覆盖层，不是生物学阴性证明。"
+  na_vs_unknown: "字段值 null 表示'未知或不适用'，具体语义由该列 nullable 说明约束；需要区分时用显式列（如 exclusion_reason），不用魔法值。"
+  coordinates: "standard_index 一律为标准序列坐标、从 1 起闭区间 [start, end]；结构 author 编号、插入码与模型 token 索引只存在于 coordinate_map，转换必须显式调用映射，不得隐式混用索引体系。"
+  provenance: "每条记录必须可追溯到 source_version（来源+版本+访问/提取时间）；后续派生字段允许待填，但保留列。"
+  timestamps: "记录时间一律 YYYY-MM-DD HH:MM（Asia/Shanghai）。"
+
+# -----------------------------------------------------------------------------
+# 表定义
+# -----------------------------------------------------------------------------
+tables:
+
+  proteins:
+    description: 蛋白层登记（序列、UniProt、物种、来源版本）；同蛋白多构建体/多状态共享 protein_id。
+    primary_key: protein_id
+    columns:
+      protein_id:      {type: string, nullable: false, description: 稳定主键，示例格式 p_porter35}
+      sequence_hash:   {type: string, nullable: false, description: 标准序列 SHA256（64 位十六进制）}
+      uniprot_acc:     {type: string, nullable: true,  description: UniProt 登记号；无映射时 null 并注明原因}
+      standard_sequence: {type: string, nullable: false, description: 标准序列（单字母氨基酸），坐标体系基准}
+      source_organism: {type: string, nullable: true,  description: 物种（学名或常用名）}
+      source_version:  {type: string, nullable: false, description: 序列来源+版本+访问时间（如 UniProt/2024_01 accessed 2026-09-21）}
+
+  constructs:
+    description: 实验构建体层（突变、标签肽、构建体序列）；同一蛋白可有多个构建体。
+    primary_key: construct_id
+    foreign_keys: {protein_id: proteins.protein_id}
+    columns:
+      construct_id:      {type: string, nullable: false, description: 稳定主键}
+      protein_id:        {type: string, nullable: false, description: 所属蛋白}
+      mutations:         {type: string, nullable: true,  description: 突变列表（如 A123B;C45S），无突变记 WT}
+      tags:              {type: string, nullable: true,  description: 标签肽/融合蛋白描述}
+      construct_sequence: {type: string, nullable: true,  description: 构建体实际序列；与标准序列的差异必须可用 mutations/tags 解释}
+
+  samples:
+    description: 状态样本层（一次实验观察单位）；state/condition/target/valid_mask 分列，禁止合并。
+    primary_key: sample_id
+    foreign_keys: {protein_id: proteins.protein_id, construct_id: constructs.construct_id}
+    columns:
+      sample_id:        {type: string, nullable: false, description: 稳定主键}
+      protein_id:       {type: string, nullable: false, description: 所属蛋白}
+      construct_id:     {type: string, nullable: true,  description: 构建体；未登记时 null 并在 notes 说明}
+      state:            {type: string, nullable: true,  description: 生物学状态标签（如暗态/光中间态/氧化态/二聚体）；未知→null}
+      condition_type:   {type: string, nullable: true,  description: 条件名（如 illumination/delay/redox/assembly_env）}
+      condition_value:  {type: string, nullable: true,  description: 条件取值；必须与 condition_type 成对出现}
+      condition_unit:   {type: string, nullable: true,  description: 单位；condition_value 为数值时必填（如 s/nm/mV）}
+      assembly_state:   {type: string, nullable: true,  description: 组装状态（单体/二聚体/…）；仅组装相关任务评价}
+      covalent_mod:     {type: string, nullable: true,  description: 共价修饰（二硫键配对模式、氧化还原修饰等）}
+      cofactor:         {type: string, nullable: true,  description: 辅因子/生色团（如 PYP 的 p-coumaric acid）}
+      experimental_system: {type: string, nullable: false, description: 体系（fold_switch/knot/disorder/pyp/rnase_a/bpti）}
+      assay_method:     {type: string, nullable: true,  description: 测定方法（X 射线/冷冻电镜/NMR/CD 等）}
+      target:           {type: string, nullable: true,  description: 该样本的任务目标值（如 0/1/类别）；未知→null 且 valid_mask=0}
+      valid_mask:       {type: int, nullable: false, allowed: [0, 1], description: 1=可评价；0=未知/不可评价}
+      pair_group_id:    {type: string, nullable: true,  description: 配对组；同组样本不得跨数据集合}
+      inclusion_status: {type: string, nullable: false, allowed: [eligible, pending, excluded, isolated], description: 纳入状态}
+      exclusion_reason: {type: string, nullable: true,  description: 排除/隔离原因；inclusion_status 为 excluded/isolated 时必填}
+      source_version:   {type: string, nullable: false, description: 证据来源版本}
+      created_at:       {type: string, nullable: false, description: 登记时间}
+      # ---- 2026-09-22 三层治理变更新增字段（折叠转换背景/PU/匹配；对受控系统多为待填） ----
+      label_epistemic_status: {type: string, nullable: true, allowed: [confirmed_positive, putative_negative, labeled, unlabeled], description: 标签认识状态；unlabeled 的 biological_target 必须为空}
+      biological_target: {type: string, nullable: true, description: 生物学目标真值；背景/unlabeled 恒为 null；与 target（任务目标值）和 pu_observed_label 分列}
+      pu_observed_label: {type: int, nullable: true, allowed: [0, 1], description: PU 观测标签——阳性=1，unlabeled=0 仅表示当前未被确认为阳性；禁止充当 biological_target}
+      positive_evidence_tier: {type: string, nullable: true, description: 阳性证据层（strict/extension_construct_difference/extension_condition_or_assembly/fragment/pending）}
+      negative_evidence_tier: {type: string, nullable: true, allowed: [PN-A, PN-B, PN-C], description: 推定阴性证据覆盖层；表示证据程度，非生物学阴性证明}
+      background_source_version: {type: string, nullable: true, description: 背景来源数据库 release+获取时间（unlabeled 行必填）}
+      literature_search_query: {type: string, nullable: true, description: 文献检索式（推定阴性候选）；无检索时 null 并注明}
+      literature_search_date: {type: string, nullable: true, description: 文献检索日期}
+      structure_count: {type: int, nullable: true, description: 结构记录数量}
+      independent_study_count: {type: int, nullable: true, description: 独立研究/DOI 数量；同一研究多 PDB 不重复计}
+      matched_set_id: {type: string, nullable: true, description: 匹配组 id（P2.01 生成）；同组不可跨数据集合}
+
+  residue_labels:
+    description: 残基级标签（区段表示，1 起闭区间；逐残基展开由消费方按区间与掩码执行）。
+    primary_key: label_id
+    foreign_keys: {sample_id: samples.sample_id, evidence_id: evidence.evidence_id}
+    columns:
+      label_id:       {type: string, nullable: false, description: 稳定主键}
+      sample_id:      {type: string, nullable: false, description: 所属样本}
+      standard_start: {type: int, nullable: false, description: 标准序列起点（1 起，含端点）}
+      standard_end:   {type: int, nullable: false, description: 标准序列终点（含端点，>=start，<=序列长度）}
+      target:         {type: int, nullable: true, allowed: [0, 1], description: 残基标签；未知→null 且 mask=0}
+      mask:           {type: int, nullable: false, allowed: [0, 1], description: 1=可评价}
+      evidence_id:    {type: string, nullable: false, description: 支持本区段标签的证据}
+      mapping_quality: {type: string, nullable: false, allowed: [exact, partial, unmapped], description: 区段映射质量}
+
+  evidence:
+    description: 证据层（原文/结构/数据库支持）；支持等级区分直接支持、提及、单端/双端支持。
+    primary_key: evidence_id
+    columns:
+      evidence_id:      {type: string, nullable: false, description: 稳定主键}
+      subject_kind:     {type: string, nullable: false, allowed: [sample, residue_label, pair], description: 证据对象类型}
+      subject_id:       {type: string, nullable: false, description: 证据对象 id}
+      source_type:      {type: string, nullable: false, allowed: [paper, supplementary, structure, database], description: 来源类型}
+      doi_or_id:        {type: string, nullable: false, description: DOI/数据库条目号/结构号}
+      location:         {type: string, nullable: false, description: 原文定位（图/表/章节/页）}
+      support_level:    {type: string, nullable: false, allowed: [direct_support, mentions, single_end, pair_end, abstract_only], description: 支持等级；abstract_only 不得单独支撑标签}
+      construct_relation: {type: string, nullable: true, description: 证据构建体与样本构建体的关系说明}
+      extracted_at:     {type: string, nullable: false, description: 提取时间}
+      extractor:        {type: string, nullable: false, description: 提取人/代理}
+      notes:            {type: string, nullable: true, description: 备注}
+
+  pairs:
+    description: 配对组（状态配对/条件配对）；分组约束的载体，同组不得跨集合。
+    primary_key: pair_group_id
+    columns:
+      pair_group_id: {type: string, nullable: false, description: 稳定主键}
+      pair_kind:     {type: string, nullable: false, allowed: [state_pair, condition_pair, homology_group], description: 组类型}
+      binding_rule:  {type: string, nullable: false, description: 绑定规则（同序列/同 variant/同构建体）}
+      member_note:   {type: string, nullable: true, description: 成员说明（成员 sample_id 明细由样本表反查，避免双向冗余）}
+
+  structures:
+    description: 结构文件登记（文件级校验与版本）。
+    primary_key: structure_id
+    foreign_keys: {sample_id: samples.sample_id}
+    columns:
+      structure_id:  {type: string, nullable: false, description: 稳定主键}
+      sample_id:     {type: string, nullable: false, description: 所属样本}
+      pdb_or_cif_id: {type: string, nullable: false, description: PDB/mmCIF 条目号}
+      chain:         {type: string, nullable: false, description: 链标识}
+      method:        {type: string, nullable: true, description: 实验方法}
+      resolution_a:  {type: string, nullable: true, description: 分辨率（埃）；非衍射方法 null}
+      file_path:     {type: string, nullable: true, description: 本地/集群文件路径；未下载时 null}
+      file_sha256:   {type: string, nullable: true, description: 文件校验值；有 file_path 时必填}
+      source_version: {type: string, nullable: false, description: 来源+获取时间}
+
+  coordinate_map:
+    description: 标准坐标 ↔ 结构 author 编号/插入码/模型 token 索引的显式映射；禁止隐式换算。
+    primary_key: coord_id
+    foreign_keys: {structure_id: structures.structure_id}
+    columns:
+      coord_id:         {type: string, nullable: false, description: 稳定主键}
+      structure_id:     {type: string, nullable: false, description: 所属结构}
+      standard_index:   {type: int, nullable: false, description: 标准序列位置（1 起）}
+      author_seq_num:   {type: string, nullable: true, description: 结构文件 author 编号（可含字母）；缺失残基 null}
+      ins_code:         {type: string, nullable: true, description: 插入码；无则 null}
+      chain:            {type: string, nullable: false, description: 链标识}
+      model_token_index: {type: string, nullable: true, description: 模型 token 索引（须注明具体模型的 0/1 基准）；未提取时 null}
+      mapping_status:   {type: string, nullable: false, allowed: [exact, gap, unmapped], description: 映射状态}
+
+# -----------------------------------------------------------------------------
+# 校验规则（validate_schema_examples.py 按此检查）
+# -----------------------------------------------------------------------------
+checks:
+  - id: CHK_PK_UNIQUE
+    rule: 任意表内主键不得重复。
+  - id: CHK_FK_EXISTS
+    rule: 外键值必须存在于引用表；未登记引用即错误。
+  - id: CHK_INTERVAL_BOUNDS
+    rule: residue_labels 区段须满足 1 <= standard_start <= standard_end <= 所属蛋白标准序列长度。
+  - id: CHK_UNIT_REQUIRED
+    rule: condition_value 存在且为数值时 condition_unit 必填。
+  - id: CHK_UNKNOWN_MASK
+    rule: target 为 null 时 valid_mask 必须为 0；mask=1 时 target 不得为 null。
+  - id: CHK_NEGATIVE_EVIDENCE
+    rule: 真实阴性（target=0 且 valid_mask=1）必须有可追溯 evidence_id。
+  - id: CHK_EXCLUSION_REASON
+    rule: inclusion_status 为 excluded/isolated 时 exclusion_reason 必填。
+  - id: CHK_PAIR_INTEGRITY
+    rule: sample_id 引用的 pair_group_id 必须存在于 pairs 表。
+
+# -----------------------------------------------------------------------------
+# 示例记录（仅验证校验器用，非科研数据；蛋白/序列均为虚构短序列 DEMO）
+# -----------------------------------------------------------------------------
+examples:
+  valid:
+    - table: proteins
+      row: {protein_id: p_demo1, sequence_hash: "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6a7b8c9d0e1f2a3b4c5d6a7b8c9d0e1f2", uniprot_acc: null, standard_sequence: "MTESTDEMOSEQUENCE", source_organism: "Demo organism", source_version: "demo/1 accessed 2026-09-21 08:45"}
+    - table: samples
+      row: {sample_id: s_demo1, protein_id: p_demo1, construct_id: null, state: dark, condition_type: illumination, condition_value: "0", condition_unit: "boolean", assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: "X-ray", target: "1", valid_mask: 1, pair_group_id: pg_demo1, inclusion_status: eligible, exclusion_reason: null, source_version: "demo/1 accessed 2026-09-21 08:45", created_at: "2026-09-21 08:45"}
+    - table: samples
+      row: {sample_id: s_demo2, protein_id: p_demo1, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: "X-ray", target: null, valid_mask: 0, pair_group_id: null, inclusion_status: pending, exclusion_reason: null, source_version: "demo/1 accessed 2026-09-21 08:45", created_at: "2026-09-21 08:45"}
+    - table: pairs
+      row: {pair_group_id: pg_demo1, pair_kind: state_pair, binding_rule: same_sequence, member_note: "dark vs lit"}
+    - table: residue_labels
+      row: {label_id: rl_demo1, sample_id: s_demo1, standard_start: 2, standard_end: 10, target: 1, mask: 1, evidence_id: ev_demo1, mapping_quality: exact}
+    - table: evidence
+      row: {evidence_id: ev_demo1, subject_kind: residue_label, subject_id: rl_demo1, source_type: paper, doi_or_id: "10.0000/demo", location: "Fig. 1d", support_level: direct_support, construct_relation: null, extracted_at: "2026-09-21 08:45", extractor: demo, notes: null}
+  invalid:   # 每条触发且仅触发所标 rule_id 的错误
+    - table: samples
+      expect_rule: CHK_PK_UNIQUE
+      row: {sample_id: s_demo1, protein_id: p_demo1, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: null, valid_mask: 0, pair_group_id: null, inclusion_status: eligible, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}
+    - table: samples
+      expect_rule: CHK_FK_EXISTS
+      row: {sample_id: s_demo3, protein_id: p_nonexistent, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: null, valid_mask: 0, pair_group_id: null, inclusion_status: pending, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}
+    - table: residue_labels
+      expect_rule: CHK_INTERVAL_BOUNDS
+      row: {label_id: rl_demo2, sample_id: s_demo1, standard_start: 5, standard_end: 99, target: 1, mask: 1, evidence_id: ev_demo1, mapping_quality: exact}
+    - table: samples
+      expect_rule: CHK_UNIT_REQUIRED
+      row: {sample_id: s_demo4, protein_id: p_demo1, construct_id: null, state: null, condition_type: delay, condition_value: "10", condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: null, valid_mask: 0, pair_group_id: null, inclusion_status: pending, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}
+    - table: samples
+      expect_rule: CHK_UNKNOWN_MASK
+      row: {sample_id: s_demo5, protein_id: p_demo1, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: null, valid_mask: 1, pair_group_id: null, inclusion_status: pending, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}
+    - table: samples
+      expect_rule: CHK_NEGATIVE_EVIDENCE
+      row: {sample_id: s_demo6, protein_id: p_demo1, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: "0", valid_mask: 1, pair_group_id: null, inclusion_status: eligible, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}
+    - table: samples
+      expect_rule: CHK_EXCLUSION_REASON
+      row: {sample_id: s_demo7, protein_id: p_demo1, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: null, valid_mask: 0, pair_group_id: null, inclusion_status: excluded, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}
+    - table: samples
+      expect_rule: CHK_PAIR_INTEGRITY
+      row: {sample_id: s_demo8, protein_id: p_demo1, construct_id: null, state: null, condition_type: null, condition_value: null, condition_unit: null, assembly_state: null, covalent_mod: null, cofactor: null, experimental_system: pyp, assay_method: null, target: null, valid_mask: 0, pair_group_id: pg_nonexistent, inclusion_status: pending, exclusion_reason: null, source_version: "demo/1", created_at: "2026-09-21 08:45"}

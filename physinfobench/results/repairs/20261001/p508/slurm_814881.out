@@ -1,0 +1,18 @@
+[p508] dev 读出拟合完成
+{
+ "n_proteins": 99,
+ "per_protein_auprc_mean": 0.4369,
+ "per_protein_auprc_median": 0.3918,
+ "per_protein_base_rate_mean": 0.2153,
+ "improvement_over_base": 0.2215,
+ "pooled_auprc_secondary": 0.3473,
+ "pooled_base_rate": 0.2129,
+ "pooled_permutation": {
+  "mean": 0.212,
+  "max": 0.2201
+ },
+ "balanced_acc_mean": 0.5229,
+ "mcc_mean": 0.0693,
+ "segment_recall_mean": 0.4047,
+ "note": "补充分析；冻结读出零重拟合；主张级=逐蛋白 AUPRC 相对各自基率"
+}

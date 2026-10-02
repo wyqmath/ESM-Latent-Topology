@@ -1,0 +1,240 @@
+name	entity_id	identity_status	accessions	disprot_overlap	identity_action	historically_evaluated
+p508:2PW9_C	1	resolved	Q6AMB9		verified	1
+p508:2PWN_A	1	resolved	O55013		verified	1
+p508:2PWQ_A	1	resolved	Q7RP52		verified	0
+p508:2PX6_A	1	resolved	P49327	P49327	exclude_overlap	0
+p508:2PXB_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXD_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXE_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXF_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXK_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXL_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXP_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXQ_A	1	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXT_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXU_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PXV_B	2	resolved	P0AGD7	P0AGD7	exclude_overlap	0
+p508:2PY8_D	1	resolved	Q55670		verified	0
+p508:2PYO_C	3	resolved	P02299		verified	0
+p508:2PZZ_D	1	resolved	Q58959		verified	1
+p508:2Q0O_C	2	resolved	P55408		verified	1
+p508:2Q17_D	1	resolved	Q9F3C7		verified	1
+p508:2Q1X_B	1	resolved	P64170		verified	0
+p508:2Q1Y_B	1	resolved	P64170		verified	0
+p508:2Q2B_A	1	resolved	Q91V12		verified	1
+p508:2Q2C_A	1	no_uniprot_reference			quarantine	1
+p508:2Q2F_A	1	resolved	Q9BQE4		verified	1
+p508:2Q2H_B	1	resolved	Q8UDB9		verified	1
+p508:2Q32_A	1	resolved	P30519	P30519	exclude_overlap	0
+p508:2Q37_A	1	resolved	Q9LVM5		verified	1
+p508:2Q3T_A	1	resolved	Q9LUJ3		verified	1
+p508:2Q3V_A	1	resolved	O22969		verified	1
+p508:2Q3X_A	1	resolved	Q9JIR4		verified	1
+p508:2Q45_A	1	resolved	Q9ASX2		verified	1
+p508:2Q48_A	1	resolved	Q9LV66		verified	1
+p508:2Q4D_B	1	resolved	Q84MC2		verified	1
+p508:2Q4M_A	1	resolved	Q9LZX1		verified	1
+p508:2Q4O_A	1	resolved	Q8L8B8		verified	1
+p508:2Q4P_B	1	resolved	Q9QY93		verified	1
+p508:2Q5Z_A	1	resolved	Q2F9Z1		verified	0
+p508:2Q73_D	1	resolved	Q2F9Z1		verified	0
+p508:2Q79_A	1	resolved	P03120		verified	1
+p508:2Q7F_A	1	resolved	O34452		verified	1
+p508:2Q86_A	1	no_uniprot_reference			quarantine	1
+p508:2Q97_B	2	resolved	Q9NG25		verified	1
+p508:2Q9L_D	1	resolved	Q2F9Z1		verified	0
+p508:2Q9P_A	1	resolved	O95989		verified	1
+p508:2Q9Q_C	3	resolved	Q14691	Q14691	exclude_overlap	0
+p508:2Q9S_A	1	resolved	P04117		verified	0
+p508:2QAI_A	1	resolved	Q8U4A7		verified	1
+p508:2QBV_A	1	resolved	P64767		verified	1
+p508:2QBX_A	1	resolved	P29323		verified	0
+p508:2QCB_A	1	resolved	P22629		verified	1
+p508:2QCW_A	1	resolved	P22004		verified	0
+p508:2QCX_A	1	resolved	P25052		verified	1
+p508:2QD0_A	1	resolved	Q9NZ45		verified	0
+p508:2QDB_A	1	resolved	P00644		verified	1
+p508:2QE3_A	1	resolved	Q8NFE9		verified	1
+p508:2QE4_B	1	resolved	P03372	P03372	exclude_overlap	0
+p508:2QF0_I	1	resolved	P0AEE3		verified	0
+p508:2QF3_C	1	resolved	P0AEE3		verified	0
+p508:2QG7_B	1	resolved	A5K4Q6		verified	1
+p508:2QG8_A	1	resolved	Q7RB63		verified	1
+p508:2QGN_A	1	resolved	Q9KAC3		verified	1
+p508:2QGO_A	1	resolved	Q5FLQ3		verified	1
+p508:2QGZ_A	1	resolved	Q7CFF8		verified	1
+p508:2QH5_A	1	resolved	O24884		verified	1
+p508:2QHM_A	1	resolved	O14757		verified	0
+p508:2QHN_A	1	resolved	O14757		verified	0
+p508:2QJ9_D	2	resolved	P36894	P36894	exclude_overlap	0
+p508:2QJB_C	2	resolved	P36894	P36894	exclude_overlap	0
+p508:2QJC_A	1	resolved	Q57U41		verified	1
+p508:2QKH_B	2	resolved	P48546		verified	1
+p508:2QKO_A	1	resolved	Q0S912		verified	1
+p508:2QKQ_A	1	resolved	P54760		verified	0
+p508:2QL5_A	1	resolved	P55210	P55210	exclude_overlap	0
+p508:2QL7_A	1	resolved	P55210	P55210	exclude_overlap	0
+p508:2QL9_A	1	resolved	P55210	P55210	exclude_overlap	0
+p508:2QLB_A	1	resolved	P55210	P55210	exclude_overlap	0
+p508:2QLW_A	1	resolved	Q7BSH1		verified	1
+p508:2QN4_A	1	resolved	P29421		verified	1
+p508:2QO2_A	1	resolved	Q6P4R6		verified	0
+p508:2QO7_A	1	resolved	Q6P4R6		verified	0
+p508:2QO9_A	1	resolved	Q6P4R6		verified	0
+p508:2QOB_A	1	resolved	Q6P4R6		verified	0
+p508:2QOC_A	1	resolved	Q6P4R6		verified	0
+p508:2QOD_A	1	resolved	Q6P4R6		verified	0
+p508:2QOF_A	1	resolved	Q6P4R6		verified	0
+p508:2QOI_A	1	resolved	Q6P4R6		verified	0
+p508:2QOK_A	1	resolved	Q6P4R6		verified	0
+p508:2QOL_A	1	resolved	Q6P4R6		verified	0
+p508:2QON_A	1	resolved	Q6P4R6		verified	0
+p508:2QOO_A	1	resolved	Q6P4R6		verified	0
+p508:2QOQ_A	1	resolved	Q6P4R6		verified	0
+p508:2QPO_C	1	resolved	Q9WYN2		verified	0
+p508:2QRA_A	1	resolved	P98170	P98170	exclude_overlap	0
+p508:2QRD_A	1	resolved	O74536		verified	1
+p508:2QSD_B	1	resolved	Q5QU98		verified	1
+p508:2QSF_B	2	resolved	P32628	P32628	exclude_overlap	0
+p508:2QSI_A	1	resolved	Q6NB62		verified	1
+p508:2QSJ_A	1	resolved	Q5LQW4		verified	1
+p508:2QSX_A	1	resolved	Q87RY9		verified	1
+p508:2QTL_A	1	resolved	Q9UBK8	Q9UBK8	exclude_overlap	0
+p508:2QTP_A	1	resolved	Q5LV76		verified	1
+p508:2QTW_A	1	resolved	Q8NBP7	Q8NBP7	exclude_overlap	0
+p508:2QTZ_A	1	resolved	Q9UBK8	Q9UBK8	exclude_overlap	0
+p508:2QU6_B	1	resolved	P35968		verified	0
+p508:2QUH_A	1	resolved	P23381		verified	1
+p508:2QUI_B	1	resolved	P23381		verified	0
+p508:2QUJ_B	1	resolved	P23381		verified	0
+p508:2QUP_A	1	resolved	Q9KCU1		verified	1
+p508:2QV1_A	1	resolved	A1Z094		verified	0
+p508:2QV8_B	1	resolved	P45774		verified	1
+p508:2QVK_A	1	resolved	P23685		verified	1
+p508:2QVL_A	1	resolved	Q6GFF9		verified	0
+p508:2QVM_A	1	resolved	P23685		verified	0
+p508:2QVT_A	1	resolved	Q1HBK6		verified	1
+p508:2QW6_C	1	resolved	Q3XY27		verified	1
+p508:5EF4_B	1	resolved	V5LU01		verified	1
+p508:5EFT_B	2	resolved	B6SCH3		verified	1
+p508:5EGB_C	3	resolved	Q9NQV7		verified	0
+p508:5EH2_F	3	resolved	Q9NQV7		verified	0
+p508:5EHO_A	1	resolved	P33981		verified	1
+p508:5EHY_A	1	resolved	P33981		verified	0
+p508:5EI6_A	1	resolved	P33981		verified	0
+p508:5EI8_A	1	resolved	P33981		verified	0
+p508:5EI9_B	2	resolved	Q9NQV7		verified	0
+p508:5EID_A	1	resolved	Q9SAR5		verified	0
+p508:5EII_E	3	resolved	P32447		verified	1
+p508:5EJ3_A	1	resolved	P26515		verified	1
+p508:5EKF_C	2	resolved	P52293		verified	0
+p508:5EKZ_A	1	resolved	Q8K0Z7		verified	1
+p508:5EL0_A	1	resolved	A0A0H3AQ75		verified	1
+p508:5ELJ_A	1	no_uniprot_reference			quarantine	1
+p508:5ELR_B	2	resolved	O75525		verified	0
+p508:5ELU_A	1	no_uniprot_reference			quarantine	1
+p508:5EMC_B	2	resolved	P04150	P04150	exclude_overlap	0
+p508:5EMP_A	1	resolved	P04150	P04150	exclude_overlap	0
+p508:5EMQ_C	3	resolved	P04150	P04150	exclude_overlap	0
+p508:5EMV_A	1	resolved	Q15562		verified	1
+p508:5ENK_A	1	resolved	P56817		verified	1
+p508:5ENM_A	1	resolved	P56817		verified	0
+p508:5EO2_D	1	resolved	A0A0H3JRH2		verified	1
+p508:5EP9_C	1	ambiguous_multi_accession	Q9EYI0;Q9RN67		quarantine	1
+p508:5EPW_A	1	resolved	Q6Q1R8		verified	0
+p508:5EQJ_A	1	resolved	P41814	P41814	exclude_overlap	0
+p508:5EQL_A	1	no_uniprot_reference			quarantine	0
+p508:5EQN_B	1	resolved	Q0ZQ39		verified	1
+p508:5EQU_A	1	ambiguous_multi_accession	Q9EYI0;Q9RN67		quarantine	0
+p508:5ER8_A	1	resolved	A2PZA5		verified	1
+p508:5ERG_A	1	resolved	P41814	P41814	exclude_overlap	0
+p508:5ERM_A	1	resolved	A2PZA5		verified	0
+p508:5ERN_A	1	resolved	A2PZA5		verified	0
+p508:5ERY_C	1	resolved	P9WK11		verified	0
+p508:5ET5_A	1	resolved	O00757		verified	0
+p508:5ET8_A	1	resolved	O00757		verified	0
+p508:5EUR_C	1	resolved	A0A0F6M9P9		verified	1
+p508:5EVJ_B	1	resolved	K0BVM7		verified	1
+p508:5EW3_B	1	resolved	P35968		verified	0
+p508:5EWK_A	1	resolved	C9Z6T8		verified	1
+p508:5EWR_A	1	resolved	M1VFX0		verified	1
+p508:5EWY_A	1	resolved	C9Z6T8		verified	0
+p508:5EXI_A	1	resolved	P9WK91		verified	1
+p508:5EXJ_A	1	resolved	P9WK91		verified	0
+p508:5EY1_B	1	resolved	A7X1N2		verified	1
+p508:5EYL_A	1	no_uniprot_reference			quarantine	0
+p508:5EYP_C	3	no_uniprot_reference			quarantine	0
+p508:5EYR_A	1	resolved	Q7TVI1		verified	1
+p508:5EYV_B	1	resolved	G4VQX9	G4VQX9	exclude_overlap	0
+p508:5EZ0_A	1	resolved	P29074		verified	0
+p508:5EZ1_A	1	resolved	P56112		verified	1
+p508:5EZD_A	1	resolved	O43278		verified	1
+p508:5EZG_A	1	resolved	P9WMC0		verified	0
+p508:5EZH_A	1	resolved	P9WMC0		verified	0
+p508:5EZU_B	1	resolved	P26672		verified	1
+p508:5EZY_E	3	resolved	P63043		verified	1
+p508:5F04_A	1	resolved	P9WMC0		verified	0
+p508:5F08_A	1	resolved	P9WMC0		verified	0
+p508:5F0C_A	1	resolved	P9WMC0		verified	0
+p508:5F0F_A	1	resolved	P9WMC0		verified	0
+p508:5F0H_A	1	resolved	P9WMC0		verified	0
+p508:5F1B_B	2	resolved	P87666	P87666	exclude_overlap	0
+p508:5F1K_C	2	no_uniprot_reference			quarantine	0
+p508:5F1N_B	2	resolved	E2RN10		verified	1
+p508:5F1O_B	2	no_uniprot_reference			quarantine	0
+p508:5F21_B	2	no_uniprot_reference			quarantine	0
+p508:5F27_A	1	resolved	P9WMC0		verified	0
+p508:5F2B_A	1	resolved	P22629		verified	1
+p508:5F2T_A	1	resolved	A0QWG5		verified	1
+p508:5F31_A	1	resolved	A0QWG5		verified	0
+p508:5F5D_A	1	resolved	A0A0J2E248		verified	1
+p508:5F5H_A	1	resolved	Q4VGL6		verified	1
+p508:5F5K_A	1	resolved	A0A0J2E248		verified	0
+p508:5F5O_A	1	resolved	Q6UY69		verified	0
+p508:5F5S_B	2	resolved	P55081		verified	1
+p508:5F73_F	1	resolved	I0B503		verified	1
+p508:5F7R_A	1	resolved	Q8YAF1		verified	1
+p508:5F9E_B	1	resolved	Q04759		verified	0
+p508:5FA5_B	2	resolved	Q9BQA1		verified	1
+p508:5FAA_A	1	resolved	C7T9P4		verified	1
+p508:5FB4_A	1	resolved	P04331		verified	1
+p508:5FB8_C	3	resolved	Q14005		verified	0
+p508:5FBK_B	1	resolved	P41180		verified	1
+p508:5FBM_A	1	resolved	Q9XB21		verified	0
+p508:5FC8_B	2	resolved	P52293		verified	0
+p508:5FCU_A	1	resolved	A0A0M3KKW9		verified	0
+p508:5FD3_A	1	resolved	Q6MZP7		verified	1
+p508:5FDP_A	1	resolved	Q08345		verified	0
+p508:5FEJ_A	1	resolved	A0A0F6QDN6		verified	1
+p508:5FEU_A	1	no_uniprot_reference			quarantine	1
+p508:5FEY_A	1	resolved	Q13049		verified	1
+p508:5FFA_A	1	resolved	A0A0F6QDN6		verified	1
+p508:5FFB_A	1	resolved	A0A0F6QDN6		verified	0
+p508:5FFC_B	1	resolved	A0A0F6QDN6		verified	0
+p508:5FFD_A	1	resolved	A0A0F6QDN6		verified	0
+p508:5FFE_A	1	resolved	A0A0F6QDN6		verified	0
+p508:5FFI_E	1	resolved	Q44501		verified	1
+p508:5FGB_D	2	no_uniprot_reference			quarantine	0
+p508:5FGC_C	3	no_uniprot_reference			quarantine	0
+p508:5FHG_B	1	resolved	D1JM21		verified	1
+p508:7LR4_E	3	resolved	Q4YCF6		verified	1
+p508:7LSE_C	3	resolved	P07720		verified	0
+p508:7LSF_C	3	resolved	E3UMN9		verified	0
+p508:7LSZ_A	1	resolved	P07900		verified	0
+p508:7LT0_A	1	resolved	P07900		verified	0
+p508:7LT1_B	1	resolved	Q8IYB1		verified	1
+p508:7LU7_C	1	resolved	P48775		verified	0
+p508:7LUY_F	1	resolved	Q6G439		verified	1
+p508:7LVJ_A	1	resolved	Q14790		verified	1
+p508:7LVP_A	1	resolved	J9VYP5		verified	1
+p508:7LVU_A	1	no_uniprot_reference			quarantine	0
+p508:7LVW_I	2	no_uniprot_reference			quarantine	0
+p508:7LW3_B	2	resolved	P0DTD1	P0DTD1	exclude_overlap	0
+p508:7LW4_B	2	resolved	P0DTD1	P0DTD1	exclude_overlap	0
+p508:7LW7_A	1	resolved	Q9H790		verified	1
+p508:7LWZ_E	1	resolved	Q9KQL9		verified	1
+p508:7LXE_A	1	ambiguous_multi_accession	A0A075B6E5;B6VEX4		quarantine	0
+p508:7LYD_A	1	resolved	Q05320	Q05320	exclude_overlap	0
+p508:7LZB_A	1	resolved	Q9BYW2		verified	0
+p508:7M0Q_A	1	no_uniprot_reference			quarantine	0
+p508:7M0X_B	2	resolved	Q02750		verified	0

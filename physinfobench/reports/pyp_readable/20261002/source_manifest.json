@@ -1,0 +1,69 @@
+{
+  "recorded_at": "2026-10-02T13:28:30+08:00",
+  "timezone": "Asia/Shanghai",
+  "git_head_at_read": "8818fcdccea33ebe6b9a49c4575cc2b4f32d9a54",
+  "scope": "Additive source reading and readable interpretation; no new model runs; frozen labels and outputs unchanged",
+  "downloads": [
+    {
+      "path": "/Users/yuan/Documents/ChatGPT/PLM/reports/pyp_readable/20261002/sources/tenboer2014.pdf",
+      "source_url": "https://bpb-us-w2.wpmucdn.com/sites.uwm.edu/dist/3/320/files/2017/04/Tenboer-2014-Science-346-1242-26txy8u.pdf",
+      "sha256": "ae9d9f838ef2068b98ca576dc36a9b0107649e68269b5601cbe256ad376edccd",
+      "bytes": 2207074,
+      "acquired_on": "2026-10-02",
+      "download_time_precision": "day",
+      "historical_source_manifest_overwritten": false
+    },
+    {
+      "path": "/Users/yuan/Documents/ChatGPT/PLM/reports/pyp_readable/20261002/sources/konold2020.pdf",
+      "source_url": "https://www.nature.com/articles/s41467-020-18065-9.pdf",
+      "sha256": "5861952f11c2f26569e4c11ef917bd7ccc516b03ea9df30351cc011d930c752e",
+      "bytes": 1419033,
+      "acquired_on": "2026-10-02",
+      "download_time_precision": "day",
+      "historical_source_manifest_overwritten": false
+    },
+    {
+      "path": "/Users/yuan/Documents/ChatGPT/PLM/reports/pyp_readable/20261002/sources/4WLA.cif",
+      "source_url": "https://files.rcsb.org/download/4WLA.cif",
+      "sha256": "89b67efa349a84b15d7107fcf1e6c223218d67c4047ea65bde7b0d14e6a8d9f5",
+      "bytes": 188026,
+      "acquired_on": "2026-10-02",
+      "download_time_precision": "day",
+      "historical_source_manifest_overwritten": false
+    }
+  ],
+  "project_inputs": [
+    {
+      "path": "reports/tasks/P1.06.md",
+      "sha256": "81a632baffa46fbfa4a0f8140a28858098210d57dcf9f5313e5d22df92366f2d"
+    },
+    {
+      "path": "reports/tasks/P4.06.md",
+      "sha256": "f7abf847122b3c05027d4cd9a2949a0253d4c344b3607cbb63a2fbcc46a52375"
+    },
+    {
+      "path": "configs/interventions.yaml",
+      "sha256": "7415edd3e1046523a56bb5d7b5e95805da3b29819b34c371f9969e4ece1bb746"
+    },
+    {
+      "path": "data/curated/pyp_pairs.tsv",
+      "sha256": "3e561a1244936bafc605b0cbe1fa6194d89c906256bcd0dff189f1b4856f1a6e"
+    },
+    {
+      "path": "data/interim/p405/identity_asserts.json",
+      "sha256": "cf627da3966d1c974844726dfd60e48af71685363dec4d07b98c66ea5ba35c4f"
+    },
+    {
+      "path": "results/interventions/pyp/intervention_matrix.tsv",
+      "sha256": "0ca65cb438bc6e30392e133cd2ca4a759208d40ed2b0e6ef1db7fe1c730ceefb"
+    },
+    {
+      "path": "results/interventions/pyp/per_sample_predictions.tsv",
+      "sha256": "8d50617044f0a36aa6dfe72d4afd13ea9a40935b5444a4d9907aad4149346f90"
+    },
+    {
+      "path": "results/interventions/pyp/arm_coefficients.tsv",
+      "sha256": "23346a94cabd342dccf979fa3c3a5f4b4d87675c726d836d368d07d086b5d8bd"
+    }
+  ]
+}

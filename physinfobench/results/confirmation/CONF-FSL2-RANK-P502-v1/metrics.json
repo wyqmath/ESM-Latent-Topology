@@ -1,0 +1,127 @@
+{
+ "descriptive_pairs": [
+  {
+   "pair_id": "porter_15_4hddA__2lepA",
+   "percentile": 0.11565769,
+   "percentile_interval_jitter": [
+    0.02854682,
+    1.00002101
+   ],
+   "pool_n": 47606,
+   "rank": 5506,
+   "rank_interval_jitter": [
+    1359,
+    47607
+   ],
+   "score": 1e-06,
+   "tier_locked": "pending_evidence",
+   "valid_mask_locked": "0"
+  },
+  {
+   "pair_id": "porter_18_3j97M__1xtgB",
+   "percentile": 0.87831366,
+   "percentile_interval_jitter": [
+    0.02886191,
+    1.00002101
+   ],
+   "pool_n": 47606,
+   "rank": 41813,
+   "rank_interval_jitter": [
+    1374,
+    47607
+   ],
+   "score": 0.0,
+   "tier_locked": "pending_evidence",
+   "valid_mask_locked": "0"
+  },
+  {
+   "pair_id": "porter_25_5k5gA__2kb8A",
+   "percentile": 0.70163425,
+   "percentile_interval_jitter": [
+    0.02886191,
+    1.00002101
+   ],
+   "pool_n": 47606,
+   "rank": 33402,
+   "rank_interval_jitter": [
+    1374,
+    47607
+   ],
+   "score": 0.0,
+   "tier_locked": "pending_evidence",
+   "valid_mask_locked": "0"
+  },
+  {
+   "pair_id": "porter_35_4rr2D__3l9qB",
+   "percentile": 0.15395118,
+   "percentile_interval_jitter": [
+    0.02871487,
+    1.00002101
+   ],
+   "pool_n": 47606,
+   "rank": 7329,
+   "rank_interval_jitter": [
+    1367,
+    47607
+   ],
+   "score": 0.0,
+   "tier_locked": "fragment_only",
+   "valid_mask_locked": "0"
+  },
+  {
+   "pair_id": "porter_63_4dxtA__4dxrA",
+   "percentile": 0.22856363,
+   "percentile_interval_jitter": [
+    0.02886191,
+    1.00002101
+   ],
+   "pool_n": 47606,
+   "rank": 10881,
+   "rank_interval_jitter": [
+    1374,
+    47607
+   ],
+   "score": 0.0,
+   "tier_locked": "pending_evidence",
+   "valid_mask_locked": "0"
+  },
+  {
+   "pair_id": "porter_89_4a5wB__3t5oA",
+   "percentile": 0.51081796,
+   "percentile_interval_jitter": [
+    0.02886191,
+    1.00002101
+   ],
+   "pool_n": 47606,
+   "rank": 24318,
+   "rank_interval_jitter": [
+    1374,
+    47607
+   ],
+   "score": 0.0,
+   "tier_locked": "pending_evidence",
+   "valid_mask_locked": "0"
+  }
+ ],
+ "descriptive_side_table_note": "无阈值无 verdict；仅供 P5.06 裁决上下文",
+ "executed_at": {
+  "local": "2026-09-27 14:19",
+  "utc": "2026-09-27T06:19:22Z"
+ },
+ "hypothesis": "H-FSL2-RANK",
+ "n_strict_locked": 0,
+ "n_strict_recomputed": 0,
+ "primary_metrics": "NA（n_strict=0 → 预注册证据不足分支）",
+ "run_id": "CONF-FSL2-RANK-P502-v1",
+ "scorer_verification": {
+  "criterion": "max<=1e-4 + mean<=1e-6 + pearson>=1-1e-9；秩变动与 percentile ±maxd 区间如实披露（change_log #3）",
+  "max_abs_diff": 2.2795187066104727e-05,
+  "max_rank_shift": 9,
+  "mean_abs_diff": 9.814601010025827e-09,
+  "n_rank_changed": 15832,
+  "pearson": 0.999999999590862,
+  "reps_compared": 47595,
+  "stored_rows": 342004
+ },
+ "verdict": "insufficient_evidence"
+}

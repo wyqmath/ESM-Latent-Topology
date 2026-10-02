@@ -1,0 +1,15 @@
+{
+  "scripts/cluster_bootstrap.py": "d40bbd9a54134b3911aa6112e01819205650522211eb3b7493312ecc3b4e3307",
+  "scripts/recompute_p5_statistics.py": "d0c259d9f9e0d0723ad3a82814b11e6d21fc89e72bc5e665e0ff664ec4be2b08",
+  "tests/test_cluster_bootstrap.py": "eba4ef679a196049754d5500400cdd6876012ed119d36e000597ccc41ee00286",
+  "configs/evaluation_protocol.yaml": "5d100b37f5c43273d960a71c8892830b3cfc184b1ea6501218c9682a99a86f3d",
+  "data/curated/knots.tsv": "40aea42839432f4b7cc1f151a0290c21cb23dab3802ed7ba0fefe999f7c1b499",
+  "data/curated/knots_sequences.tsv": "16dbe333dbcba07162fcca9f590fa8171a455330a5fd66736dd3d888e75e623d",
+  "data/splits/split_manifest.tsv": "41676fd7af106591094318fb44dd819c5d244a0b13ff6b6196d73eafebf31842",
+  "results/repairs/20261001/exposure/component_map.tsv": "ba394396dcf845e1d84df1ee441f378d51eb253ae12cb283d2e63e0008dcf4c1",
+  "results/repairs/20261001/exposure/evaluated_sample_exposure.tsv": "dbe9f4e0f3a580717c7674fe66a4d0514f1e21772316f9df9f8961a0bb2c3adc",
+  "results/confirmation/CONF-KNOT-PRESENCE-P502-v1/scores.tsv": "adcd2a835a9bcd1603ee818206df9a9eee0daf688b4d82e7b8dedee7c48f9f99",
+  "results/confirmation/CONF-KNOT-PRESENCE-P502-v1/metrics.json": "836fef771f950e0dcca3552b041956c891a7ce43de6aa1aacfd4cfe58aa3a839",
+  "results/holdout/HOLD-KNOT-PRESENCE-P505-v1/scores.tsv": "7508c6a9193299ec2d15865ddb2a65989a2b220427ad7f579b75b22d1aa1f19e",
+  "results/holdout/HOLD-KNOT-PRESENCE-P505-v1/metrics.json": "efed330d92218586283b3f310b3cdd2637c8ea28287f5e375ee0d5acb207824a"
+}

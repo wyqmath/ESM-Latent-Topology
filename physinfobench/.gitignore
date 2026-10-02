@@ -1,0 +1,68 @@
+# ===== PhysInfoBench .gitignore（P0.01 建立基线）=====
+# 原则：代码、配置、manifest、结果摘要与预测表入库；
+# 模型权重、缓存与原始大数据不入库，位置与 SHA256 记入相应 manifest。
+
+# --- macOS 系统文件 ---
+.DS_Store
+
+# --- Python 运行产物 ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- 模型权重与大文件二进制（不入库；位置与 SHA256 记入 manifest）---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.h5
+*.pkl
+*.npy
+*.npz
+*.faiss
+*.index
+
+# --- 原始下载数据（不入库；登记 SHA256 与获取方式于 data/manifests/）---
+data/raw/**
+!data/raw/.gitkeep
+
+# --- 表示缓存与运行期大缓存 ---
+cache/
+.cache/
+embeddings/
+
+# --- 规划期 QA 渲染材料：保持未跟踪、不删除 ---
+.qa_original/
+.qa_revised/
+
+# --- 未被指定的 proposal 修订稿（研究依据为 PLM_Proposal_FInal.docx，见 source_manifest）---
+PLM_Proposal0920_修订1.docx
+
+# --- P2.01 步骤一等运行期中间产物（不入库；聚合结果在 reports/）---
+data/interim/**
+!data/interim/.gitkeep
+# Small, source-controlled inputs/provenance required by correction-lock replay.
+!data/interim/p202/
+!data/interim/p202/l2_cluster.tsv
+!data/interim/p303/
+!data/interim/p303/emb/
+!data/interim/p303/emb/disorder_dev/
+!data/interim/p303/emb/disorder_dev/extract_manifest.tsv
+!data/interim/p303/emb/knots_dev/
+!data/interim/p303/emb/knots_dev/extract_manifest.tsv
+!data/interim/p303/emb/l2_stage_a/
+!data/interim/p303/emb/l2_stage_a/extract_manifest.tsv
+!data/interim/p303/knot_chain_list.tsv
+# Versioned P5.07 inputs needed to rebuild the supplemental development probe.
+!data/interim/p507_type_frozen_table.tsv
+!data/interim/p507_adjudication_table.tsv
+!data/interim/p507_probe.fa
+!data/interim/p507_embed_extra.fa
+!data/interim/p507_chains_meta.tsv
+# Frozen reader coefficient matrices are small, derived evaluation artifacts.
+!results/repairs/20261001/p508/exact_metrics/frozen_reader_coefficients.npz
+!results/repairs/20261001/p508/h33_exact_metrics/frozen_reader_coefficients.npz

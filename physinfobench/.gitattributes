@@ -1,0 +1,5 @@
+# Preserve CSV-writer CRLF bytes in audited correction tables.
+results/repairs/20261001/**/*.tsv whitespace=cr-at-eol
+# Empty final TSV fields are required columns; preserve their audited tabs.
+results/repairs/20261001/p508/accession_audit.tsv whitespace=cr-at-eol,-blank-at-eol
+results/repairs/20261001/p508/replay_input_tables/external_extract_manifest.tsv whitespace=cr-at-eol,-blank-at-eol

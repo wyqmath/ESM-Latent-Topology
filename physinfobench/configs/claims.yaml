@@ -1,0 +1,396 @@
+# =============================================================================
+# configs/claims.yaml — P0.02 问题与诊断证据矩阵（预注册草稿，经审核后冻结）
+# 依据：PLM_Proposal_FInal.docx §2.1–2.5（sha256 fa0293cd…de81a3e）；TODO.md P0.02。
+# 规则：本文件只定义"想证明什么、用什么对照检验、如何裁决"，不预设效应方向与显著结果。
+#       所有阈值、种子、统计方法在 P0.05 确定；标签可行性由 Phase 1 审计后回填核对。
+# =============================================================================
+
+meta:
+  task: P0.02
+  created_at: "2026-09-21 08:17"
+  timezone: Asia/Shanghai
+  status: draft_pending_review          # 冻结须待独立审核通过并提交
+  proposal_sha256: fa0293cd323eae0c8189f86b9c17eee2c4eada68fb6a7f1b80fb76d82de81a3e
+  conventions:
+    - "探针/模型失败不直接等同于信息不存在；只表述为'当前设置下未检测到'。"
+    - "M+F 增益必须与 M、F-only、置换对照共同解释；不得单凭 M>F 宣称模型恢复物理信息。"
+    - "单受控系统（PYP/RNase A/BPTI）结果为案例级，不外推为跨蛋白或跨家族结论。"
+    - "各物理属性独立计分，不合并为单一总分。"
+    - "聚合前后性能差限定为'同终点可读性能差'，不称为信息论信息量。"
+
+# -----------------------------------------------------------------------------
+# 1. 任务注册表（task_id：目标类型决定输入与指标；标签可行性由 Phase 1 决定去留）
+# -----------------------------------------------------------------------------
+tasks:
+  - task_id: T-FS-GLOBAL
+    target_type: global_sequence_property
+    description: 折叠转换总任务（伞任务）——自 2026-09-22 三层治理变更起细化为 L1/L2/L3 三个子任务，本 ID 保留以维持既有引用兼容
+    y: 0/1（1=有双态实验证据）；未知（pending/单结构/未报道）不入监督与评价分母
+    experimental_unit: 蛋白（序列级）；同蛋白多状态样本同组不跨集合
+    primary_metric: 由三层子任务各自定义（见 T-FS-L1/L2/L3）
+    aux_metrics: AUPRC、校准误差（公式见 P0.05）
+    data_source: P1.02（阳性需双态证据）；阴性策略见三层设计 OD-NEGATIVE-FS
+
+  - task_id: T-FS-L1-PAIRED
+    target_type: within_positive_mechanism
+    description: 第一层——严格双态阳性内部的机制诊断（多状态潜能读出、条件贡献、残基区域定位）
+    y: 阳性内部的状态/区域标签（层内分析，不需要阴性）
+    experimental_unit: 蛋白或配对状态组
+    primary_metric: 层级可读性+条件贡献+区域定位（残基级归 T-FS-REGION）
+    claim_boundary: 仅限"已确认阳性内部"，不外推为区分能力
+    data_source: P1.02 严格阳性 + P1.03 区段
+
+  - task_id: T-FS-L2-PU-RANK
+    target_type: pu_ranking
+    description: 第二层——严格阳性在固定未标注背景中的 PU/排序分析
+    y: observed label（阳性=1，unlabeled=0 仅表示"当前未被确认为阳性"）；biological_target 对背景恒为空
+    experimental_unit: 蛋白；背景按组分配
+    primary_metric: recall@k、enrichment@k、positive rank percentile
+    aux_metrics: family-stratified enrichment、leave-family-out enrichment
+    claim_boundary: 已知阳性在固定未标注宇宙中的富集，不是阴阳区分、不是发生率
+    data_source: P1.10 背景（P1.12 冻结）
+
+  - task_id: T-FS-L3-MATCHED
+    target_type: matched_case_control
+    description: 第三层——严格阳性与操作性定义匹配推定阴性（PN-A/B/C）的病例-对照比较
+    y: 病例=1（strict positive）、对照=0（操作定义，非生物学证明不转换）
+    experimental_unit: matched_set（病例+其匹配对照，同一 matched_set_id 不跨集合）
+    primary_metric: AUROC、AUPRC、balanced accuracy、MCC、per-class precision/recall
+    claim_boundary: 确认病例与操作性匹配对照之间的区分能力；校准 disabled（除非预注册发生率校正）
+    data_source: P1.11 候选池 + P2.01 匹配（P1.12 冻结）
+
+  - task_id: T-FS-REGION
+    target_type: residue_level
+    description: 折叠转换核心区残基级定位——2026-09-22 登记为第一层（L1）的残基级任务
+    y: 残基 0/1 + 有效掩码（不能唯一映射的位点 mask=0）
+    experimental_unit: 残基（不确定性按蛋白重采样，残基不当独立重复）
+    primary_metric: 残基 AUPRC
+    aux_metrics: 区段重叠度（IoU 配对公式见 P0.05）
+    data_source: P1.03
+
+  - task_id: T-KNOT-PRESENCE
+    target_type: global_chain_property
+    description: 打结存在性——整链是否含真结（滑动结、缺主链、收敛不稳样本隔离）
+    y: 0/1；隔离样本不入评价
+    experimental_unit: 结构链；匹配阴性关系进分组约束
+    primary_metric: AUROC
+    aux_metrics: AUPRC、Macro-F1（阈值规则见 P0.05）
+    data_source: P1.04
+
+  - task_id: T-KNOT-TYPE
+    target_type: global_chain_property_multiclass
+    description: 结拓扑类型分类
+    y: 结型标签；一条链多来源结型的多标签处理规则待定（开放决策，见 open_decisions）
+    experimental_unit: 结构链
+    primary_metric: Macro-F1（含缺失类别处理，见 P0.05）
+    data_source: P1.04
+
+  - task_id: T-DISORDER-RES
+    target_type: residue_level
+    description: 残基级天然无序（DisProt 实验注释；无证据区域 mask，不当阴性）
+    y: 有证据无序=1 / 有证据有序=0 / 未知=mask0
+    experimental_unit: 残基（按蛋白聚合重采样）
+    primary_metric: 残基 AUPRC（需两类均有有效样本，否则输出 NA 及原因）
+    data_source: P1.05；若可靠负例不足，先解决可识别性再评分类
+
+  - task_id: T-PYP-STATE
+    target_type: condition_state
+    description: PYP 同序列光状态判定（暗态 vs 光激活中间态；条件特征=激发参数/延迟/环境）
+    y: 状态标签（由实验定义，不从分类准确率反推动力学）
+    experimental_unit: 独立实验/配对组；同时间序列不拆为独立样本
+    primary_metric: 与 T-FS-GLOBAL 同（二分类/多类按最终标签集定，P1.06 后回填）
+    data_source: P1.06
+
+  - task_id: T-RNASE-ASSEMBLY
+    target_type: condition_state
+    description: RNase A 组装状态（单体 vs 结构域交换二聚体；条件=化学计量/组装环境）
+    y: 组装状态标签；若输入字段与标签同义，该实验降级为输入充分性对照（见 C-IN3）
+    experimental_unit: 独立构建体/实验
+    primary_metric: 二分类 AUROC（终集以 P1.07 为准）
+    data_source: P1.07
+
+  - task_id: T-BPTI-REDOX
+    target_type: condition_state
+    description: BPTI 同变体氧化还原状态（严格同 variant 配对；跨变体只作探索）
+    y: 氧化/还原状态；终点类型（结构/功能）须与标签来源一致，不换名
+    experimental_unit: 独立 variant×条件配对
+    primary_metric: 二分类 AUROC（终集以 P1.08 为准）
+    data_source: P1.08
+
+# -----------------------------------------------------------------------------
+# 2. 表示与条件特征定义（所有 claim 共用）
+# -----------------------------------------------------------------------------
+representations:
+  M: 蛋白基础模型多层逐残基表示（冻结编码器，推断模式；层集合与模型名单由 P0.03/P2.04/P3.02 锁定）
+  M_residue: 逐残基表示（残基任务输入）
+  M_pooled: 指定聚合算子得到的全局向量（全局任务输入；算子定义由 P4.01 冻结）
+  F: 外部条件特征（PYP 光照/延迟/环境；RNase A 化学计量/组装条件；BPTI 氧化还原/配对模式），
+     编码、缺失处理与置换单位由 P4.05 冻结；实验后才可知的字段不得进入 F
+  readers:
+    linear: 线性头/逻辑回归（固定预算，P3.02 冻结）
+    nonlinear: 容量受控非线性读取器（参数上限与搜索预算=linear 同额度，P3.02/P3.04）
+  baselines: 序列长度、氨基酸组成、仅训练样本最近邻（P2.06）
+
+# -----------------------------------------------------------------------------
+# 3. 瓶颈→干预映射（proposal §2.1 四阶段 × 五类瓶颈的检验手段）
+# -----------------------------------------------------------------------------
+bottleneck_to_contrast:
+  BN1_输入信息不足: 输入等价组分析（P3.01）+ M / F-only / M+F / M+F_perm 四臂对比（P4.05–P4.09）
+  BN2_表示可访问性: 固定线性读取器跨层探针 vs 轻量序列基线（P3.03/P3.05）
+  BN3_聚合折损: 同终点下逐残基 vs 均值/末端/局部/可学习聚合的预注册比较（P4.01–P4.04）
+  BN4_读取器容量受限: 同数据同预算 linear vs nonlinear 增益（P3.04/P3.05）
+  BN5_分布偏移与泛化: 确认集复核（P5.02）与未见家族/独立体系保留集评估（P5.05）
+
+# -----------------------------------------------------------------------------
+# 4. 诊断主张（claim）：每条含裁决三条件；不预填方向
+# -----------------------------------------------------------------------------
+claims:
+
+  - claim_id: C-IN1
+    bottleneck: BN1_输入信息不足
+    statement: >
+      对同序列跨条件状态任务（T-PYP-STATE/T-RNASE-ASSEMBLY/T-BPTI-REDOX），具体状态标签
+      不能由纯序列输入识别，状态差异由条件字段解释。
+    input_X: 序列（或其模型表示 M）
+    target_y: 具体状态标签
+    experimental_unit: 独立实验/配对组（同序列样本同组）
+    primary_metric: 同各 task 注册表；关键量=同序列等价组内标签矛盾率、M 与 M+F 的配对表现差
+    required_controls:
+      - 等价组清单（同 sequence_hash 多真值检查，P3.01）
+      - F-only 与 M+F_perm 同预算对照（P4.05 定义）
+      - 条件字段可用时间审计（不得混入实验后才可知字段）
+    alternative_explanations:
+      - 标签噪声或状态定义不一致（非信息缺失）
+      - 条件字段与标签同义（输入充分性对照，非模型能力）
+    adjudication:
+      supports: 等价组内存在多真值且差异对应已记录条件；M 在配对任务接近机会水平而 M+F 显著高于 M 且高于 F-only 与置换
+      refutes: M 在同序列配对任务上稳定高于基线与置换对照（说明状态可由序列区分，任务定义需修正）
+      insufficient: 配对样本/独立组数不足以估计（按 P0.05 有效分母判 NA）
+    boundary: 判"纯序列下不可识别"仅说明该目标不能用于惩罚模型表示，不证明编码器失败。
+
+  - claim_id: C-IN2
+    bottleneck: BN1_输入信息不足
+    statement: >
+      序列的多状态潜能（T-FS-GLOBAL）是序列级可识别属性：M 的表现超过轻量序列基线，
+      且该优势不能被组成/长度/近邻混淆解释。
+    input_X: 序列 / M_pooled
+    target_y: 是否具备实验证实的替代折叠态
+    experimental_unit: 蛋白
+    primary_metric: AUROC（发现集内部折；确认/保留集仅评价）
+    required_controls:
+      - 长度、氨基酸组成、最近邻基线（P2.06）
+      - 类别平衡与组隔离（pair/homology 组不跨折）
+    alternative_explanations:
+      - 阳性库与阴性池的来源/家族分布差异（混杂）
+      - 同源性泄露（若审计发现，结论作废重建）
+    adjudication:
+      supports: M 优于全部轻量基线且区间不重叠，跨内部折种子稳定
+      refutes: M 不优于最优轻量基线（潜能可由浅层特征解释）
+      insufficient: 可信阴性不足或有效组数过少（P1.02 审计触发任务降级讨论）
+    boundary: 不预设 M 一定成功；阴性策略未确认前本主张不可评价。
+
+  - claim_id: C-IN3
+    bottleneck: BN1_输入信息不足
+    statement: >
+      M+F 相对 M 的增益来源可判定：条件特征提供非冗余信息（M+F>F-only 且 M+F>置换）
+      还是条件本身携带几乎全部信号（M+F≈F-only）。
+    input_X: M、F、M+F、M+F_perm 四臂
+    target_y: 三个条件状态任务的 y
+    experimental_unit: 独立实验/配对组
+    primary_metric: 预注册差值（M+F−M、M+F−F-only、M+F−M+F_perm）及按独立组的不确定性
+    required_controls:
+      - 匹配置换负对照（同维度同边际分布，按可交换单位置换）
+      - 同容量读取头与同预算（P4.05）
+      - 剥离 F=重新训练的 M（推理期删 F 只作分布偏移敏感性，单独标注）
+    alternative_explanations:
+      - 条件字段与标签同义（如 RNase A 链数=组装标签）→ 降级为输入充分性对照
+      - 条件缺失导致的样本选择偏差（覆盖率须与效应并列报告）
+    adjudication:
+      supports: 增益模式落入预注册判定框之一（非冗余/条件主导/无增益），且跨种子稳定
+      refutes: 对照失效（置换无变化或泄露）→ 该对照结论禁止引用（P4.05 异常处理）
+      insufficient: 有效配对不足或单一独立系统（结果标案例级）
+    boundary: 即使 M+F>M 且>F-only，也只是"补充条件信息有效"，不写成"模型内部恢复物理知识"。
+
+  - claim_id: C-AC1
+    bottleneck: BN2_表示可访问性
+    statement: >
+      目标相关信息在指定层的表示中以线性可读形式存在：固定线性读取器超过轻量序列基线，
+      且跨层分布可定位信息最可读的层带。
+    input_X: M_residue（残基任务）或 M_pooled（全局任务），逐层
+    target_y: 各任务 y
+    experimental_unit: 全局任务=蛋白；残基任务=残基（按蛋白重采样）
+    primary_metric: 各 task 主指标 × 层曲线；轻量基线差值
+    required_controls:
+      - 同划分、同预算、同种子（P3.02 冻结）
+      - 长度/组成/近邻基线在同一有效样本交集上
+      - 编码器冻结校验（无梯度更新）
+    alternative_explanations:
+      - 层选择带来的多重比较（层集合预选与筛选记录进曝光日志）
+      - 残基任务长蛋白主导（按协议蛋白加权）
+    adjudication:
+      supports: 线性探针显著优于基线且层间趋势可复现（种子/折稳定）
+      refutes: 所有层均不优于基线
+      insufficient: 覆盖率低或单类别 NA
+    boundary: >-
+      所有层未读出只能表述为本设置下未检测到，不证明信息不存在；
+      本主张不区分"表示缺失"与"读取器容量不足"——后者由 C-CA1 专门检验。
+
+  - claim_id: C-CA1
+    bottleneck: BN4_读取器容量受限
+    statement: >
+      在同数据、同预算、同输入层下，容量受控非线性读取器相对线性探针的增益
+      量化"线性可读性"与"存在但非线性"两类可访问性的差距。
+    input_X: 与 C-AC1 相同的冻结表示与层
+    target_y: 与 C-AC1 相同
+    experimental_unit: 与 C-AC1 相同（逐 sample/residue 对齐）
+    primary_metric: 非线性−线性逐种子配对差值及其区间（相同重采样索引）
+    required_controls:
+      - 参数量与搜索预算对齐并记录（P3.04）
+      - 预处理仅 fit 训练折
+      - 失败种子如实报告，不删
+    alternative_explanations:
+      - 增益来自更大有效预算或过拟合少数样本（须检查覆盖一致性）
+      - 非线性头容量未受控（与读取头容量对照缺失时只能并列报告）
+    adjudication:
+      supports: 非线性>线性且增益不能由预算/覆盖/种子方差解释
+      refutes: 增益≈0（信息已线性可读或两层均不可读，结合 C-AC1 区分）
+      insufficient: 种子间方差过大或对齐样本交集过小
+    boundary: 增益只说明"当前线性读取器读不到、容量更大可读到"，不指明信息语义。
+
+  - claim_id: C-AG1
+    bottleneck: BN3_聚合折损
+    statement: >
+      将逐残基表示降维为全局向量的固定聚合算子，在保持同终点的预注册比较中
+      相对逐残基读取存在性能折损；折损大小按任务/层分别量化。
+    input_X: 同一冻结层的 M_residue 与各固定聚合算子输出
+    target_y: 预注册的同终点比较（残基分数归约 vs pooled 全局头，P4.01 定义）
+    experimental_unit: 蛋白（全局终点）
+    primary_metric: 预注册差值公式（P4.01 冻结）；终点不可比的组合并列报告、不相减
+    required_controls:
+      - 骨干、层、样本、标签、训练规则全部固定
+      - 均值池化排除 padding；末端/局部窗口定义明确且不接触测试真值
+      - 覆盖率并列报告（交集不得掩盖失效样本）
+    alternative_explanations:
+      - 读取头容量差异（登记并单列）
+      - 窗口/算子超参在内部验证上的选择曝光
+    adjudication:
+      supports: 逐残基参考稳定优于固定聚合且同终点、同分母、区间不含 0
+      refutes: 折损≈0（聚合对该任务近乎无损）
+      insufficient: 无法构造同终点比较（只并列报告，不称定量折损）
+    boundary: 折损=当前任务可读性能差，不是信息论信息量。
+
+  - claim_id: C-AG2
+    bottleneck: BN3_聚合折损
+    statement: >
+      参数受控的可学习聚合能在相同预算约束下恢复部分 C-AG1 中的折损；
+      未恢复的部分提示折损不（只）来自聚合算子形式。
+    input_X: 同 C-AG1 表示 + 预注册可学习聚合器
+    target_y: 同 C-AG1
+    experimental_unit: 同 C-AG1
+    primary_metric: 可学习−固定聚合差值（同种子同折）+ 新增参数量/计算量并列
+    required_controls:
+      - 参数上限与读取头预算对齐（P4.03）
+      - mask 正确传递；编码器冻结
+    alternative_explanations:
+      - 恢复来自额外容量而非聚合机制（需容量匹配对照提案，未确认前不归因机制）
+    adjudication:
+      supports: 恢复量>0 且容量账目不能解释全部恢复
+      refutes: 可学习聚合无恢复
+      insufficient: 参数预算无法对齐
+    boundary: 不将聚合方式收益与容量收益混写。
+
+  - claim_id: C-GE1
+    bottleneck: BN5_分布偏移与泛化
+    statement: >
+      发现集选出的核心对比（方向与最小效应）在从未参与任何选择的确认集上保持。
+    input_X: 已冻结的注册对比（P5.01）
+    target_y: 确认集对应任务 y
+    experimental_unit: 同源任务单位；确认集与开发集组级隔离
+    primary_metric: 注册指标 + 预设失败判据（P4.09 定，读取前冻结）
+    required_controls:
+      - 一次性计算全部注册对比（含负对照与负结果）
+      - 确认反馈引发修改即降级并换新确认集（P5.03 回路）
+    alternative_explanations:
+      - 覆盖率或独立组数在确认集上系统性不同
+      - 确认集泄漏进开发选择（审计失败则该轮确认作废）
+    adjudication:
+      supports: 方向一致、效应≥预设最小有意义效应、覆盖率达标
+      refutes: 方向反转或效应消失
+      insufficient: 覆盖不足或方法失效比例过高
+    boundary: 不过关不进入保留集；负结果完整报告。
+
+  - claim_id: C-GE2
+    bottleneck: BN5_分布偏移与泛化
+    statement: >
+      通过确认的核心对比在未见家族与可取得的独立实验体系（保留集）上复现；
+      跨家族结论仅在对应子集成立，单系统案例不外推。
+    input_X: final_lock 冻结流水线（P5.04）
+    target_y: 保留集任务 y
+    experimental_unit: 保留集独立组；分别报告未见蛋白/未见家族/独立体系子集
+    primary_metric: 同注册指标；按子集分别给覆盖率与不确定性
+    required_controls:
+      - 保留集零参数回传；一次性运行全部核心对比
+      - 预训练曝光记录为局限（不可审计部分不宣称已排除，P2.03）
+    alternative_explanations:
+      - 保留集子集覆盖率不同导致的表观差异
+      - 预训练数据重叠未知
+    adjudication:
+      supports: 效应方向与量级在各预设子集一致
+      refutes: 核心对比在保留集消失或反转（作为泛化失败如实报告）
+      insufficient: 独立体系缺失（记为证据缺口）或子集有效组数不足
+    boundary: 保留集结果不理想不回传调参；任何事后分析标为探索性。
+
+# -----------------------------------------------------------------------------
+# 5. claim → 证据任务映射（每条主张至少一个后续任务负责生成证据）
+# -----------------------------------------------------------------------------
+claim_to_tasks:
+  C-IN1: [P3.01, P4.05, P4.06, P4.07, P4.08, P4.09]
+  C-IN2: [P1.02, P1.10, P1.11, P1.12, P2.06, P3.03, P3.05]
+  C-IN3: [P4.05, P4.06, P4.07, P4.08, P4.09]
+  C-AC1: [P2.06, P3.02, P3.03, P3.05]
+  C-CA1: [P3.02, P3.04, P3.05]
+  C-AG1: [P4.01, P4.02, P4.04]
+  C-AG2: [P4.03, P4.04]
+  C-GE1: [P4.09, P5.01, P5.02, P5.03]
+  C-GE2: [P5.04, P5.05, P5.06]
+
+three_layer_design:
+  registered: "2026-09-22（治理变更 PLAN register three-layer fold-switch workflow；用户文档为准）"
+  tasks: [T-FS-L1-PAIRED, T-FS-L2-PU-RANK, T-FS-L3-MATCHED]
+  umbrella: T-FS-GLOBAL
+  residue_layer_task: T-FS-REGION
+  evidence_questions: E1 阳性内部可读状态/区域信号；E2 信号在未标注背景富集已知阳性；
+    E3 信号在匹配对照中保持区分；E4 未见蛋白/家族复现（归 P5.06 证据矩阵分列裁决）
+  disciplines:
+    - 背景蛋白 biological_target 恒为空；pu_observed_label=0 仅表示"当前未被确认为阳性"
+    - PN-A/B/C 是证据覆盖程度，不是生物学已证明不转换；候选阶段不写 target=0
+    - 病例-对照类别比例由设计产生，L3 校准与发生概率解释 disabled
+    - matched_set_id 不可跨集合；历史曝光不能通过重新划分恢复未见状态
+
+coverage_check:
+  rule: 每个 claim 至少一个证据任务；每个任务至少服务于一个 claim
+  unmapped_tasks_review: P1.03–P1.09、P2.01–P2.05 为数据/基础设施任务，通过标签质量与
+    隔离有效性间接支撑全部 claim，不单列映射；P6.x 为交付任务。
+
+# -----------------------------------------------------------------------------
+# 6. 开放决策（不得在本文件内预填，逐项挂到解决任务）
+# -----------------------------------------------------------------------------
+open_decisions:
+  - id: OD-KNOT-MULTILABEL
+    desc: T-KNOT-TYPE 一链多结型的多标签→单标签 Macro-F1 规则
+    resolved_by: P0.05/P1.04（须先于该任务任何指标计算）
+  - id: OD-NEGATIVE-FS
+    desc: T-FS-GLOBAL 可信阴性来源或任务降级
+    status: direction_approved__implementation_pending
+    direction: "2026-09-22 用户三层设计批准：阴性问题以 L2（未标注背景 PU 排序）+ L3（PN-A/B/C 匹配推定阴性）路线解决，不再寻找生物学阴性"
+    implementation: P1.10（背景）→P1.11（候选池）→P1.12（三层合同冻结+G1 可行性）；P1.12 与 G1 确认后方可标 resolved
+    resolved_by: P1.12 + G1
+  - id: OD-DISORDER-NEGATIVES
+    desc: T-DISORDER-RES 可靠负例是否充分
+    resolved_by: P1.05
+  - id: OD-METRICS
+    desc: 校准误差分箱、区段重叠度公式、种子列表、重采样单位与次数、多重比较
+    resolved_by: P0.05
+  - id: OD-SYNONYMOUS-F
+    desc: RNase A 链数等字段与标签同义时的对照降级
+    resolved_by: P4.05（基于 P1.07 字段审计）

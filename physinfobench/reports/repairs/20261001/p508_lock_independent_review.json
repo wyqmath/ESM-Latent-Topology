@@ -1,0 +1,53 @@
+{
+  "reviewed_at": "2026-10-01T23:00+08:00",
+  "reviewer": "claims_audit",
+  "active_lock": "configs/p5_correction_lock_20261001.yaml",
+  "lock_sha256": "5724e209711545b736ecdf1990588964286548055a033dee82fe8cd248a3c65e",
+  "byte_integrity_status": "PASS",
+  "checked_files": 555,
+  "unique_paths": true,
+  "bad_hashes": [],
+  "p508_required_entries": 31,
+  "missing_entries": [],
+  "gate_approval": false,
+  "preregistration": false,
+  "new_independent_evaluation": false,
+  "executed_and_current_source_separately_locked": true,
+  "both_npz_json_coefficient_pairs": "PASS",
+  "coefficient_exact_roundtrip": {
+    "exact_metrics": "PASS",
+    "h33_exact_metrics": "PASS"
+  },
+  "repair_summary_scope_and_numbers": "PASS",
+  "review_itself_not_locked": true,
+  "first_review": {
+    "reviewed_at": "2026-10-01T22:57+08:00",
+    "reviewer": "claims_audit",
+    "lock_sha256": "e22e4adf828ae17ef6471dac7d427e1d8c30295c3dba360b7e76cf4bf8aca707",
+    "byte_integrity_status": "PASS",
+    "checked_files": 536,
+    "bad_hashes": [],
+    "p508_required_entries": 31,
+    "missing_entries": [
+      "reports/repairs/20261001/p508_identity_independent_review.json",
+      "reports/repairs/20261001/p508_replay_independent_first_review.json",
+      "reports/repairs/20261001/p508_final_independent_review.json",
+      "reports/repairs/20261001/p508_repair.md"
+    ],
+    "gate_approval": false,
+    "preregistration": false,
+    "new_independent_evaluation": false,
+    "repair_summary_scope_and_numbers": "PASS: 99 chains/22646 residues; H33 same-layer 0.476074/0.215346 BACC0.503304 MCC0.015449 pooled0.360061; posthoc CA proxy, not independent intrinsic-disorder confirmatory data",
+    "status": "FAIL",
+    "issues": [
+      {
+        "severity": "major",
+        "scope": "lock completeness",
+        "description": "Four P508 provenance and independent-review reports required by review task absent from lock; numerical/source artifact integrity itself passes."
+      }
+    ]
+  },
+  "status": "PASS",
+  "issues": [],
+  "scope": "Integrity and provenance completeness review only; scientific gates and independent evaluation remain unapproved."
+}

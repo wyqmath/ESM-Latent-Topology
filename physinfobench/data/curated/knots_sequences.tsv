@@ -1,0 +1,1007 @@
+record_id	pdb	chain	presence_target	type_eligible	c2_primary	len	sha256_16
+1by7_A	1by7	A	1	1	3_1	382	ecd4f0e4159dbbef
+1eku_A	1eku	A	1	0	3_1	265	bb45666bc3af0465
+1fug_A	1fug	A	1	0	3_1	383	ec5d2966ecf1dbff
+1gku_B	1gku	B	1	1	3_1	1054	c369a5a8b6767cdd
+1gz0_A	1gz0	A	1	1	3_1	253	abe39a1d44a05ae9
+1he8_A	1he8	A	1	1	3_1	965	0531176d2fb2efcd
+1j85_A	1j85	A	1	1	3_1	160	1830996cc4377894
+1k3r_A	1k3r	A	1	0	3_1	268	b27b07d52f1840d8
+1ml5_m	1ml5	m	1	0	3_1	145	21305c84c71a9566
+1ns5_A	1ns5	A	1	0	3_1	155	245c4bdd2c6151c9
+1nxz_A	1nxz	A	1	1	3_1	246	9e0e555b9b475fba
+1o6l_A	1o6l	A	1	0	4_1	337	8ac61b13f2e0cbea
+1pv2_A	1pv2	A	1	1	3_1	283	8530645b925a9093
+1t0h_B	1t0h	B	1	1	3_1	224	9247f08478db021d
+1uak_A	1uak	A	1	1	3_1	274	2fcc138e8ee37180
+1v2x_A	1v2x	A	1	1	3_1	194	2e08f8a8690adb73
+1v6z_A	1v6z	A	1	1	3_1	228	62d4392b91242849
+1w5c_X	1w5c	X	1	0	3_1	359	cde87eb755d55a8c
+1xi5_A	1xi5	A	1	1	3_1	1630	46855a8135b98507
+1zjr_A	1zjr	A	1	1	3_1	211	001655d61cff40af
+1ztu_A	1ztu	A	1	0	4_1	341	8c8a4a64d16be55a
+2bm0_A	2bm0	A	1	0	4_1	691	b33cdc5aae6a0f55
+2cav_A	2cav	A	1	1	5_2	445	aab8c360aac109b6
+2d7d_A	2d7d	A	1	0	4_1	661	0b84a960a467a923
+2efv_A	2efv	A	1	0	3_1	92	a3629d4fe78a51a7
+2fy5_A	2fy5	A	1	1	3_1	612	df321246c3dc622d
+2ha8_A	2ha8	A	1	1	3_1	184	f41952e2c0555ce2
+2k0a_A	2k0a	A	1	1	3_1	109	f39c950181f1e6d0
+2o3a_A	2o3a	A	1	1	3_1	178	7134a90f9dbc97f4
+2ofz_A	2ofz	A	1	0	3_1	138	3e07fec25cc6d9e5
+2pps_F	2pps	F	1	1	3_1	130	90802f90557e0ba7
+2qmm_A	2qmm	A	1	1	3_1	197	687418bddde27742
+2qwv_A	2qwv	A	1	1	3_1	208	af241406708253c0
+2r6e_A	2r6e	A	1	1	3_1	454	3d9ff595c4f6d2a0
+2v3j_A	2v3j	A	1	1	3_1	258	53d80b64d8870e55
+2vea_A	2vea	A	1	1	4_1	520	c34a0a0f4d59d9e9
+2w6e_G	2w6e	G	1	1	3_1	298	7d186e134c405e69
+2ybb_n	2ybb	n	1	1	3_1	391	70c822a445816771
+3a7s_A	3a7s	A	1	0	5_2	228	81a11aad333625df
+3ady_A	3ady	A	1	0	3_1	148	933ef9e6c11a8fed
+3b1b_A	3b1b	A	1	0	3_1	377	9c1ecfba56347731
+3bbd_A	3bbd	A	1	1	3_1	205	0ccd86084bfa716f
+3cmi_A	3cmi	A	1	1	3_1	171	fc7b09966742ac56
+3cwo_X	3cwo	X	1	0	3_1	237	ae3c59dc55db7573
+3dcm_X	3dcm	X	1	1	3_1	192	56a16c4598d00c34
+3e0j_A	3e0j	A	1	0	3_1	476	8f2745b57572987e
+3ed7_A	3ed7	A	1	0	3_1	295	d39143cde50901e0
+3eet_A	3eet	A	1	0	3_1	272	1df27ad1480f5df7
+3gbn_L	3gbn	L	1	1	3_1	221	f589c2bd051db1ae
+3gyq_A	3gyq	A	1	1	3_1	272	92403083084b520c
+3ic6_A	3ic6	A	1	1	3_1	223	69c653527df8f2af
+3ihr_A	3ihr	A	1	1	5_2	328	38316f95b295e307
+3ilk_A	3ilk	A	1	1	3_1	244	5bf137b3923c1c86
+3iyk_A	3iyk	A	1	1	3_1	526	3100c0369e733998
+3j7y_5	3j7y	5	1	0	3_1	423	c0ec5fa14b3adbf5
+3j7y_s	3j7y	s	1	0	3_1	439	fec04043948fe942
+3kty_A	3kty	A	1	1	3_1	173	a1853ddf72d4b814
+3l8u_A	3l8u	A	1	1	3_1	182	87bdc0c2ee89bc29
+3m9c_M	3m9c	M	1	1	3_1	391	70c822a445816771
+3m9s_M	3m9s	M	1	1	3_1	392	cc11d1490484a4e9
+3mlg_A	3mlg	A	1	0	3_1	189	07342451fbe59584
+3o0p_A	3o0p	A	1	1	3_1	216	644a0395ec41c898
+3o7b_A	3o7b	A	1	1	3_1	244	c2c82b77e72da184
+3oc3_A	3oc3	A	1	1	3_1	800	d08abd606b99b407
+3pst_A	3pst	A	1	0	3_1	425	4b7bcfdae9e973fe
+3qfh_A	3qfh	A	1	1	5_1	447	aef7649121b4acd8
+3sig_A	3sig	A	1	0	3_1	277	175c80a867708666
+3v5u_A	3v5u	A	1	0	3_1	320	c20791dc614f2488
+3wpc_A	3wpc	A	1	1	3_1	802	c7ff1eebc37f27b7
+4ce4_z	4ce4	z	1	1	4_1	426	b1979c6506aa7c29
+4chj_A	4chj	A	1	0	4_1	164	2131dd34af54eae5
+4cng_A	4cng	A	1	0	3_1	255	d40e10dd6cd5e317
+4cru_A	4cru	A	1	1	3_1	258	a084f06f7d4d3570
+4fmw_A	4fmw	A	1	0	3_1	197	fbfab82f70b8049e
+4gw9_A	4gw9	A	1	1	4_1	655	b1912fe703c04c1f
+4h6v_A	4h6v	A	1	1	3_1	306	a81d7ffb7ef6a7ce
+4ig7_A	4ig7	A	1	0	5_2	343	fcd08ae5e5098a00
+4j3c_A	4j3c	A	1	1	3_1	267	90db19eeea099aaa
+4jwh_A	4jwh	A	1	0	3_1	313	d092c90fa065b674
+4k1c_A	4k1c	A	1	0	3_1	421	310b963baea4c241
+4kjr_A	4kjr	A	1	0	3_1	351	f3a3b2e31d645e90
+4kpp_A	4kpp	A	1	0	3_1	405	b0c7004a8b05e3a6
+4l69_A	4l69	A	1	1	3_1	263	d41cc2ce51857290
+4o9y_A	4o9y	A	1	0	3_1	2516	316eff443e03fd28
+4qrv_A	4qrv	A	1	0	3_1	363	d001ad171a39e72e
+4ux8_C	4ux8	C	1	1	3_1	463	32c31bea2524bf77
+4v7h_BE	4v7h	BE	1	1	3_1	237	a97e79f4d99079b9
+4wz7_E	4wz7	E	1	1	3_1	195	5ad2bf50c28d91ac
+4ye9_A	4ye9	A	1	1	3_1	776	b89339b17d0b5e8c
+5a1x_G	5a1x	G	1	1	3_1	968	50253a37ff396614
+5a7y_A	5a7y	A	1	1	3_1	312	a0b767a65158a8db
+5a7z_A	5a7z	A	1	1	3_1	269	03e79314827c6fe9
+5aor_A	5aor	A	1	1	3_1	1293	3f2180f48c939f7b
+5ap8_A	5ap8	A	1	1	3_1	166	a96631d2b88bd01a
+5apg_A	5apg	A	1	1	3_1	185	997feef408b41c8b
+5c77_A	5c77	A	1	1	3_1	221	18f2d4873c00a933
+5gao_E	5gao	E	1	1	3_1	338	c7d815b6396fb564
+5gmk_Q	5gmk	Q	1	1	3_1	364	9af9c45848063252
+5if3_A	5if3	A	1	1	3_1	262	e200869c9a055b7d
+5l3p_z	5l3p	z	1	1	3_1	819	758f0af2f0c1ffc7
+5l9u_A	5l9u	A	1	1	3_1	1944	a3a92e2cf49d8efa
+5li4_A	5li4	A	1	1	3_1	587	c32afadd72a5a4e8
+5mqn_A	5mqn	A	1	0	3_1	1105	08cf1c35bd526555
+5tj6_A	5tj6	A	1	0	3_1	1070	c2835a3c337cae5b
+5u76_A	5u76	A	1	0	3_1	1201	5a814749c85e16ff
+5vhi_E	5vhi	E	1	1	3_1	379	cd12d86c5918b4b0
+5ylz_W	5ylz	W	1	0	3_1	1145	7c6d3f3f74185c33
+5zya_D	5zya	D	1	0	3_1	85	6a88f0ddbebd8787
+6ac6_A	6ac6	A	1	0	3_1	1235	8491c8e10ce4dad8
+6bwi_A	6bwi	A	1	1	3_1	977	d9a2c357333ee270
+6emv_A	6emv	A	1	0	3_1	197	60016842be7cc3c9
+6f1y_f	6f1y	f	1	1	4_1	328	73fc3ff4fc5eff47
+6f38_Y	6f38	Y	1	0	3_1	264	7fccabb8db15541c
+6ff0_A	6ff0	A	1	0	3_1	275	c8288991f0221944
+6juy_A	6juy	A	1	1	3_1	707	044e4493842fdbe5
+6k4n_A	6k4n	A	1	1	3_1	619	872182fae4cdf143
+6l7e_A	6l7e	A	1	0	3_1	2516	316eff443e03fd28
+6m6h_A	6m6h	A	1	0	3_1	1374	8126d7683eec99d0
+6mzd_F	6mzd	F	1	0	3_1	800	fa4296930bb3d0cb
+6n8a_A	6n8a	A	1	0	3_1	194	3904d7c745cf6a31
+6nbq_F	6nbq	F	1	1	3_1	656	91ab97a0dbb54777
+6ndo_A	6ndo	A	1	1	4_1	640	78cc579b6fd51e56
+6oaw_A	6oaw	A	1	1	3_1	393	cc0ea4cc1309ca30
+6qam_A	6qam	A	1	1	3_1	219	48b8a8266a4efb5a
+6qqm_A	6qqm	A	1	0	3_1	300	f014171f3e6144f7
+6qqw_A	6qqw	A	1	1	3_1	244	518e2724ba70167a
+6qqz_A	6qqz	A	1	1	3_1	244	518e2724ba70167a
+6qx9_BP	6qx9	BP	1	0	3_1	104	ea62928de9408c55
+6rao_I	6rao	I	1	1	3_1	607	0b7ef912a72d5dfd
+6rwb_A	6rwb	A	1	0	3_1	2030	ac4219a03a1c84d7
+6s4q_A	6s4q	A	1	0	3_1	343	324278b3d89e02fa
+6sg9_DH	6sg9	DH	1	1	3_1	581	3865c1e838489f34
+6tby_AAA	6tby	AAA	1	0	4_1	353	764bf57b6481d6ae
+6tda_X	6tda	X	1	1	3_1	383	9ad354f69ecc8b76
+6ted_V	6ted	V	1	1	3_1	531	e0897a8d4de2d5d0
+6w1s_A	6w1s	A	1	1	3_1	382	fcaf2ee785fd3860
+6w1s_L	6w1s	L	1	1	3_1	631	94c3d4af8540533b
+6w8r_A	6w8r	A	1	0	4_1	433	aea9ff0ff5f4b94c
+6wd6_8	6wd6	8	1	0	3_1	400	42a6ac256b803496
+6wjv_A	6wjv	A	1	1	3_1	2222	db814ef7d329bf6f
+6x0m_P	6x0m	P	1	1	3_1	590	8c2b21ac8a3f10df
+6x44_A	6x44	A	1	1	4_1	438	6b5e495df551bfc7
+6xp5_Q	6xp5	Q	1	1	3_1	634	5046253e21853ae5
+6y5q_q	6y5q	q	1	1	4_1	755	52241e111a791a96
+6y7c_i	6y7c	i	1	1	3_1	483	7853bc1aad7c359d
+6yub_A	6yub	A	1	0	3_1	442	e69e01085b76ef8b
+6yxx_EF	6yxx	EF	1	1	3_1	373	e3231f4ac2e56207
+6yxy_UX	6yxy	UX	1	1	3_1	180	ba6877053307df52
+6zbl_B	6zbl	B	1	1	3_1	792	0901758f3fbbfc02
+6zr9_A	6zr9	A	1	0	3_1	274	5d8e548245b8e946
+7abg_s	7abg	s	1	1	5_2	2136	5385e2c408dee1ef
+7aoi_XO	7aoi	XO	1	1	3_1	428	281aa280542afbde
+7bii_A	7bii	A	1	1	3_1	2492	697f8b2fb6b3bbae
+7bqd_A	7bqd	A	1	1	3_1	88	ae0932fe2b000a84
+7c1x_A	7c1x	A	1	1	3_1	378	7fc2c64c1e684c11
+7c1z_A	7c1z	A	1	1	3_1	378	7fc2c64c1e684c11
+7cu3_A	7cu3	A	1	0	4_1	1738	105e2c25ffeadd15
+7cww_A	7cww	A	1	1	3_1	368	17a3b7173ed649b3
+7jmn_E	7jmn	E	1	0	3_1	1099	f7bdc885c04c1f36
+7k1y_B	7k1y	B	1	1	3_1	532	4dbdcf59a5a0f858
+7lkf_A	7lkf	A	1	0	4_1	1344	c0054df43e0edcad
+7lxd_F	7lxd	F	1	0	3_1	489	de0c664d6a18996b
+7nh8_AAA	7nh8	AAA	1	0	3_1	260	e6a24c903c1ef211
+7nt0_AAA	7nt0	AAA	1	0	3_1	217	842c5ef5d1b5977f
+7nxg_A	7nxg	A	1	1	3_1	463	0618d0a4771914aa
+7o2w_B	7o2w	B	1	1	3_1	1206	e6d996c525d73291
+7o4i_R	7o4i	R	1	1	3_1	400	78c8c14c93d13050
+7plf_AAA	7plf	AAA	1	0	3_1	261	5862305c8302b2d7
+7pri_AAA	7pri	AAA	1	0	3_1	280	1ddefa8189575426
+7qi6_5	7qi6	5	1	0	3_1	423	c0ec5fa14b3adbf5
+7s9y_A	7s9y	A	1	1	3_1	942	387e43a9390bba17
+7t62_B	7t62	B	1	1	3_1	433	2cf52531516cb2ec
+8axz_A	8axz	A	1	0	3_1	398	28f42c00ae2ece1e
+8bor_A	8bor	A	1	0	4_1	496	5485defac0c58171
+13rtA	13rt	A	0	0		169	425bbff0dbc5913b
+1a6gA	1a6g	A	0	0		151	f841d6eed0666e49
+1a6nA	1a6n	A	0	0		151	2510a9cf7e381123
+1a7sA	1a7s	A	0	0		225	39f5615216a70340
+1ammA	1amm	A	0	0		174	9d8e30bff767861f
+1bs9A	1bs9	A	0	0		207	3c7b8b8443538f12
+1bxoA	1bxo	A	0	0		323	2aa822863f815ab7
+1bzpA	1bzp	A	0	0		153	4e1e5bdd96abfd0c
+1bzrA	1bzr	A	0	0		153	4e1e5bdd96abfd0c
+1c0pA	1c0p	A	0	0		363	a3d2b35241b1aecf
+1c5eA	1c5e	A	0	0		95	f208bf9176eaf337
+1c7kA	1c7k	A	0	0		132	fb58b040014c0a7a
+1cxqA	1cxq	A	0	0		162	f6c653926b61a5f2
+1czbA	1czb	A	0	0		162	f6c653926b61a5f2
+1czpA	1czp	A	0	0		98	d502164165126c96
+1d2uA	1d2u	A	0	0		184	2c82c0dd37e1c1a0
+1e4mM	1e4m	M	0	0		501	6ddda142c99f49cc
+1ea7A	1ea7	A	0	0		310	e6660536096254cc
+1ehdA	1ehd	A	0	0		89	a3285ba3be37cbf5
+1eytA	1eyt	A	0	0		83	dee70b20a03998ca
+1g2yA	1g2y	A	0	0		32	74c202c4312c57f1
+1g66A	1g66	A	0	0		207	3c7b8b8443538f12
+1g8tA	1g8t	A	0	0		245	edef5aabb604294d
+1g9oA	1g9o	A	0	0		91	7a437c06cd80b09d
+1gkmB	1gkm	B	0	0		509	ae8f813f2710454c
+1gokA	1gok	A	0	0		303	613aa4875afd3b94
+1gpiA	1gpi	A	0	0		431	44696df09efbac39
+1gvtA	1gvt	A	0	0		330	9e7c6fdd16f27613
+1gvwA	1gvw	A	0	0		330	9e7c6fdd16f27613
+1gxmA	1gxm	A	0	0		332	61cc287695dffec5
+1h12A	1h12	A	0	0		405	3c9ff48f7fbfb61e
+1h1nA	1h1n	A	0	0		305	bdbc4c883e926cdd
+1h4aX	1h4a	X	0	0		173	6dbb5438f104a1f2
+1h4gA	1h4g	A	0	0		207	2175ffe493b041e4
+1h4xA	1h4x	A	0	0		117	0c5fe1b23b9ad992
+1hdoA	1hdo	A	0	0		206	eb0bcc4cc33b3b39
+1hj5A	1hj5	A	0	0		567	68b01050d24b5f9e
+1hj8A	1hj8	A	0	0		222	575655ba46df7479
+1hxkA	1hxk	A	0	0		1015	ac00cd87115cce7f
+1i12A	1i12	A	0	0		160	cee35c9615870819
+1i1wA	1i1w	A	0	0		303	261f3fbd1f8c8425
+1i1xA	1i1x	A	0	0		303	261f3fbd1f8c8425
+1i24A	1i24	A	0	0		404	e98516826aebf3e6
+1ig5A	1ig5	A	0	0		75	6a5d8ad7c86094ce
+1inlA	1inl	A	0	0		296	caf3b80054b68090
+1is9A	1is9	A	0	0		363	e7d1e697524de405
+1itxA	1itx	A	0	0		419	589013436fb2aa1b
+1iv3A	1iv3	A	0	0		152	cff33a815c7a41cf
+1ixhA	1ixh	A	0	0		321	58d05663b6eb1d7e
+1jbeA	1jbe	A	0	0		128	bc9b080432752515
+1jcjA	1jcj	A	0	0		260	767195da280747fa
+1jf8A	1jf8	A	0	0		131	f3eb16517bedf1e5
+1jfbA	1jfb	A	0	0		404	2b8ee2eb0d63b7fe
+1jfcA	1jfc	A	0	0		404	2b8ee2eb0d63b7fe
+1jgmA	1jgm	A	0	0		336	455e932198218be1
+1jk3A	1jk3	A	0	0		158	cf63c0ea1e76d17f
+1jm1A	1jm1	A	0	0		204	7503e08c44b177b2
+1jseA	1jse	A	0	0		129	0f1b91436c29b58d
+1jsfA	1jsf	A	0	0		130	e1362da65ded69e3
+1ju2A	1ju2	A	0	0		536	bfd0934dbf86f01d
+1k1eA	1k1e	A	0	0		180	5b84450a676d1582
+1k4iA	1k4i	A	0	0		233	71aa550edf15f78e
+1k4pA	1k4p	A	0	0		233	71aa550edf15f78e
+1k7cA	1k7c	A	0	0		233	04bca2e2ce40dac8
+1kb0A	1kb0	A	0	0		677	c921b1d767de1f5d
+1kccA	1kcc	A	0	0		335	5fde490ed9588358
+1kkoA	1kko	A	0	0		413	e2c239f2f23f63eb
+1kngA	1kng	A	0	0		156	368067d5c1bc2225
+1kouA	1kou	A	0	0		125	4d904dfad1f170cb
+1kqpA	1kqp	A	0	0		271	af76cac5999becd0
+1kwfA	1kwf	A	0	0		363	b94395012750e8fd
+1luqA	1luq	A	0	0		127	fe37a2dbb4bc3d58
+1m15A	1m15	A	0	0		357	727c76a6142a41d2
+1m2dA	1m2d	A	0	0		110	882da9db1b3f4d8a
+1m5eA	1m5e	A	0	0		263	dfbcd373500fb5c0
+1mfmA	1mfm	A	0	0		153	97e11da5c5086570
+1mj5A	1mj5	A	0	0		302	2d48ef827411e208
+1mn8A	1mn8	A	0	0		100	146690af82003ec1
+1mnzA	1mnz	A	0	0		388	4e647b1335664bf7
+1mqdA	1mqd	A	0	0		261	e8e3310e638d0324
+1muwA	1muw	A	0	0		386	92c289ff13c6b181
+1n3lA	1n3l	A	0	0		372	4c7d3aff249119d2
+1n40A	1n40	A	0	0		396	6f4aa0a92e902b75
+1n4vA	1n4v	A	0	0		504	683bf4f73f3a8dac
+1n9bA	1n9b	A	0	0		265	bc402696d58737b8
+1nlsA	1nls	A	0	0		237	6b4cf1471c669df0
+1nnfA	1nnf	A	0	0		309	ab827f97eb632bb5
+1nqjA	1nqj	A	0	0		119	5460fed2372b25a3
+1o5xA	1o5x	A	0	0		248	4e93b9646b2cce98
+1o7qA	1o7q	A	0	0		289	3571e2dacdd6bce2
+1o7tA	1o7t	A	0	0		309	d159dc43f7674607
+1o8bA	1o8b	A	0	0		219	e64f09c4fa54fbdf
+1odvA	1odv	A	0	0		100	ba238934d92a67e2
+1oe1A	1oe1	A	0	0		336	66ff425e9accda33
+1oh0A	1oh0	A	0	0		131	a0e05a1043ddefae
+1ongA	1ong	A	0	0		265	1050137ea1186552
+1oqvA	1oqv	A	0	0		192	c321496f4d58d7d1
+1ousA	1ous	A	0	0		114	6ebe5d080a84e30a
+1oxcA	1oxc	A	0	0		114	6ebe5d080a84e30a
+1oxdA	1oxd	A	0	0		227	57a35a72d3ee25e1
+1p1xA	1p1x	A	0	0		260	9eba5526735617e2
+1pwlA	1pwl	A	0	0		316	4834dba4d3ca1123
+1pwmA	1pwm	A	0	0		316	4834dba4d3ca1123
+1q5mA	1q5m	A	0	0		322	03affacb629ca4fa
+1q6oA	1q6o	A	0	0		216	0720f3f8f3739ea0
+1q6zA	1q6z	A	0	0		528	4a00ebc9dbdb823e
+1qksA	1qks	A	0	0		567	130125fdfa66931a
+1ql0A	1ql0	A	0	0		241	91b30e546aad9c2c
+1qtwA	1qtw	A	0	0		285	58a07bd2933cccc6
+1ra0A	1ra0	A	0	0		430	d47b9919399a974e
+1rwaA	1rwa	A	0	0		757	27690043b729902f
+1s0qA	1s0q	A	0	0		223	fef138107d090c59
+1s0rA	1s0r	A	0	0		223	fef138107d090c59
+1s5mA	1s5m	A	0	0		386	92c289ff13c6b181
+1s5nA	1s5n	A	0	0		386	92c289ff13c6b181
+1sauA	1sau	A	0	0		115	76af93c3b04b9642
+1sbyA	1sby	A	0	0		254	b8a70270bf5d60eb
+1senA	1sen	A	0	0		164	87cdf4db7b367e2a
+1sfsA	1sfs	A	0	0		240	02f6f4eb0f1e379d
+1sg4A	1sg4	A	0	0		260	78217dea981b529e
+1sjmA	1sjm	A	0	0		341	310669a96b07ccd9
+1sl9A	1sl9	A	0	0		195	531737a6608f653b
+1soaA	1soa	A	0	0		189	8c00caffdd00302d
+1su7A	1su7	A	0	0		636	65f7af3174bdf436
+1swyA	1swy	A	0	0		164	51854b57751921f9
+1swzA	1swz	A	0	0		164	51854b57751921f9
+1sx2A	1sx2	A	0	0		164	51854b57751921f9
+1sxxA	1sxx	A	0	0		184	d3524db7d2af11d5
+1sxyA	1sxy	A	0	0		184	0ca8b1e920377711
+1sy1A	1sy1	A	0	0		184	80c8aabf0373eca5
+1t1eA	1t1e	A	0	0		552	277372cf4977fafb
+1t3rA	1t3r	A	0	0		99	775af213c7276d54
+1t3yA	1t3y	A	0	0		141	144f0dedfe9fbd89
+1tjmA	1tjm	A	0	0		159	2a624a535b838f5b
+1tqgA	1tqg	A	0	0		105	048d3bef8dc8120f
+1twyA	1twy	A	0	0		290	9dfc3f8009ab651c
+1u07A	1u07	A	0	0		90	845b7151e1cd70ab
+1ub3A	1ub3	A	0	0		220	6dbd19aea827c1ed
+1ug6A	1ug6	A	0	0		431	cdc1bf2e25754d8e
+1unqA	1unq	A	0	0		125	135aabe20f0ab9c8
+1us0A	1us0	A	0	0		316	4834dba4d3ca1123
+1uzbA	1uzb	A	0	0		516	9d5b17e60cfd0ebe
+1v0kA	1v0k	A	0	0		313	a910dd00921aa1c9
+1v0lA	1v0l	A	0	0		313	a910dd00921aa1c9
+1v0mA	1v0m	A	0	0		313	a910dd00921aa1c9
+1v30A	1v30	A	0	0		124	913089a017267030
+1v7tA	1v7t	A	0	0		129	eaf1f8d7f5bf78bb
+1v8hA	1v8h	A	0	0		107	4368e0c8b01f98e1
+1ve4A	1ve4	A	0	0		206	2942ea1057f9013e
+1vjuA	1vju	A	0	0		309	49571d60ae1fc2ea
+1w0nA	1w0n	A	0	0		131	471d5090685ac57a
+1w3lA	1w3l	A	0	0		303	4c3dc8e6283dfe96
+1w66A	1w66	A	0	0		232	2ea042b6410f744a
+1w7cA	1w7c	A	0	0		747	ceb1857afc4f172a
+1w7rA	1w7r	A	0	0		13	057853c1dc2ccaed
+1wbiA	1wbi	A	0	0		129	a29b00cdb79d5d08
+1wr5A	1wr5	A	0	0		108	4cebb6a325e2b01f
+1wtnA	1wtn	A	0	0		129	eaf1f8d7f5bf78bb
+1x8nA	1x8n	A	0	0		184	2c82c0dd37e1c1a0
+1x8oA	1x8o	A	0	0		184	2c82c0dd37e1c1a0
+1x8pA	1x8p	A	0	0		184	2c82c0dd37e1c1a0
+1x8qA	1x8q	A	0	0		184	2c82c0dd37e1c1a0
+1xszA	1xsz	A	0	0		356	a90d735d80ad961f
+1xt5A	1xt5	A	0	0		135	64a06e88610be45f
+1y55X	1y55	X	0	0		126	609c98ec3214a202
+1yljA	1ylj	A	0	0		263	fb0f3c9ef32b765b
+1ylyA	1yly	A	0	0		263	fb0f3c9ef32b765b
+1ym1A	1ym1	A	0	0		263	fb0f3c9ef32b765b
+1ynoA	1yno	A	0	0		527	5e14480da27020f5
+1yqsA	1yqs	A	0	0		349	e317b35e0b5c1745
+1ywaA	1ywa	A	0	0		184	2c82c0dd37e1c1a0
+1ywdA	1ywd	A	0	0		184	2c82c0dd37e1c1a0
+1z3nA	1z3n	A	0	0		319	123644e468b621aa
+1z8aA	1z8a	A	0	0		316	4834dba4d3ca1123
+1zjyA	1zjy	A	0	0		251	cfe7d480809bf518
+1zkpA	1zkp	A	0	0		268	94cbe3ffcbde8561
+1zmiA	1zmi	A	0	0		29	8f53be4dce7956f6
+1zo4A	1zo4	A	0	0		473	50adfce8f85c0e2a
+2abaA	2aba	A	0	0		364	43d33b516078af7d
+2abbA	2abb	A	0	0		364	bee6f22e31f7f256
+2agtA	2agt	A	0	0		319	1b71634199c81446
+2ah4X	2ah4	X	0	0		223	fef138107d090c59
+2anvA	2anv	A	0	0		146	a4e86fead179c201
+2anxA	2anx	A	0	0		146	a4e86fead179c201
+2axwA	2axw	A	0	0		134	2bb2c5e9a28edc6d
+2b82A	2b82	A	0	0		211	3aa9b879352d5597
+2bjiA	2bji	A	0	0		277	835376cafd645d9f
+2blnA	2bln	A	0	0		305	41bd13f2719ad355
+2brfA	2brf	A	0	0		110	c8838373cd0d07e7
+2bt9A	2bt9	A	0	0		90	29bc0285ca8ae739
+2c1vA	2c1v	A	0	0		338	39a2fff53241d94b
+2c71A	2c71	A	0	0		216	16a86d3041c290d2
+2c9vA	2c9v	A	0	0		153	a08c70277f1286c2
+2ccwA	2ccw	A	0	0		129	fc824325fe1db916
+2ci1A	2ci1	A	0	0		275	ae70ae4b098e944f
+2cnqA	2cnq	A	0	0		306	472399efcc0b86da
+2cnuA	2cnu	A	0	0		306	472399efcc0b86da
+2d4jA	2d4j	A	0	0		129	eaf1f8d7f5bf78bb
+2ddxA	2ddx	A	0	0		333	418a0c83c13e5e12
+2dfbA	2dfb	A	0	0		190	488275131bd7aea1
+2e6fA	2e6f	A	0	0		314	1cdbe163a9494ab9
+2e7zA	2e7z	A	0	0		727	13010d985dfdf812
+2eutA	2eut	A	0	0		294	69d6bee743baef0e
+2f01A	2f01	A	0	0		127	c0b891b3eeb53db6
+2fhlA	2fhl	A	0	0		122	5dc655c1b8816478
+2flhA	2flh	A	0	0		155	2323672ad1de4db7
+2fvyA	2fvy	A	0	0		309	9f3d79338ac9bb24
+2g82O	2g82	O	0	0		331	f1a306f24b1b9d2e
+2gf3A	2gf3	A	0	0		389	d1a7a1b223b3c298
+2gg9A	2gg9	A	0	0		263	78d2ee0cbd06bad5
+2glkA	2glk	A	0	0		388	4e647b1335664bf7
+2gudA	2gud	A	0	0		122	9b6bc74b949465d1
+2gzvA	2gzv	A	0	0		114	3923d0169a8e36e1
+2hbwA	2hbw	A	0	0		235	fe407b59a0239cc5
+2i6vA	2i6v	A	0	0		87	0d4846145d8998bb
+2j27A	2j27	A	0	0		250	286ec8b8b9ef3317
+2jftA	2jft	A	0	0		234	8ddbfaeec105545d
+2jjjA	2jjj	A	0	0		330	9e7c6fdd16f27613
+2jliA	2jli	A	0	0		123	d89b87711ed13a81
+2nrmA	2nrm	A	0	0		147	fc7dcf985fddf5c0
+2o0bA	2o0b	A	0	0		450	1a94cef5a5be5a62
+2o23A	2o23	A	0	0		265	a7c329613aae0dd5
+2of8A	2of8	A	0	0		126	6683feccbe390d61
+2ofcA	2ofc	A	0	0		142	5386b36a16c4e493
+2p86A	2p86	A	0	0		215	9fc5c62e6f633cb1
+2pevA	2pev	A	0	0		316	4834dba4d3ca1123
+2pgoA	2pgo	A	0	0		589	34e0c6dc0fd6a778
+2pveA	2pve	A	0	0		54	c7db6e470bbc0db9
+2pznA	2pzn	A	0	0		316	4834dba4d3ca1123
+2qsbA	2qsb	A	0	0		89	96bd93d9601f7153
+2qt4A	2qt4	A	0	0		95	ef0e3bb89e4b84dd
+2qxwA	2qxw	A	0	0		316	4834dba4d3ca1123
+2r16A	2r16	A	0	0		182	82f38beee6e363f3
+2racA	2rac	A	0	0		105	784cbe6d8ecfdd45
+2uu8A	2uu8	A	0	0		237	6b4cf1471c669df0
+2v06A	2v06	A	0	0		234	8ddbfaeec105545d
+2v3iA	2v3i	A	0	0		434	534be3642c41cfdb
+2v8bA	2v8b	A	0	0		279	b146b2cda1d68dfd
+2vb8A	2vb8	A	0	0		406	f3506f7e41210cb7
+2vhkA	2vhk	A	0	0		206	efbb4be118e1e292
+2vi2A	2vi2	A	0	0		207	6bcad70ff1516c36
+2vi3A	2vi3	A	0	0		207	6bcad70ff1516c36
+2vu7A	2vu7	A	0	0		207	6bcad70ff1516c36
+2vwrA	2vwr	A	0	0		95	2abebe10a0d4252c
+2vzcA	2vzc	A	0	0		131	bdcadebddb608d1b
+2vzpA	2vzp	A	0	0		127	7948a3df0a7bc746
+2w13A	2w13	A	0	0		202	9c5b6143cc6922bf
+2w14A	2w14	A	0	0		202	9c5b6143cc6922bf
+2w1jA	2w1j	A	0	0		212	190352fae4101453
+2w20A	2w20	A	0	0		471	b8aa15862f073b99
+2wbpA	2wbp	A	0	0		358	4a364372d4a3a6bb
+2wurA	2wur	A	0	0		238	d2069cc8c3f602a7
+2x18A	2x18	A	0	0		119	81f992c5e087f431
+2xgbA	2xgb	A	0	0		535	aff37e5f20f875fd
+2xhnA	2xhn	A	0	0		508	a90b957f8ea6f540
+2xmjA	2xmj	A	0	0		64	34dd4f487603b861
+2xu3A	2xu3	A	0	0		220	4c13d72d1741b24c
+2xwvA	2xwv	A	0	0		312	7c4e230d5df64e46
+2y62A	2y62	A	0	0		251	eb82cb29355093b6
+2y6hA	2y6h	A	0	0		167	7cbdceb735fd8893
+2y72A	2y72	A	0	0		85	f534f4eb09dc5e97
+2yjcA	2yjc	A	0	0		220	4c13d72d1741b24c
+2yl1A	2yl1	A	0	0		127	50cd458765253e77
+2yr6A	2yr6	A	0	0		721	3b62574644f0a8cc
+2zd8A	2zd8	A	0	0		265	1050137ea1186552
+2zl7A	2zl7	A	0	0		295	939b9b0fa1610a9b
+2zq7A	2zq7	A	0	0		262	60dd567c8d26e5c7
+3a0mA	3a0m	A	0	0		27	0398308c89b16d18
+3a1hA	3a1h	A	0	0		27	e3f1213eb61f1fcf
+3a2oA	3a2o	A	0	0		99	9f8a1b2e5f29e0be
+3a2vA	3a2v	A	0	0		249	7ec57f9a7428d0d8
+3ab5A	3ab5	A	0	0		97	c50f6840c480787e
+3admA	3adm	A	0	0		27	17896fc39e2d55e9
+3agoA	3ago	A	0	0		114	232a426522f9aa08
+3ahwA	3ahw	A	0	0		114	232a426522f9aa08
+3aksA	3aks	A	0	0		190	488275131bd7aea1
+3aldA	3ald	A	0	0		207	03fb623ab77e1e63
+3aryA	3ary	A	0	0		584	328c615ab6ecddeb
+3aubA	3aub	A	0	0		58	f68ff6ce3a291ebd
+3b12A	3b12	A	0	0		304	27e961b6a15e9d01
+3b34A	3b34	A	0	0		891	71e9b8d1ddaa9905
+3b3rA	3b3r	A	0	0		506	560cbf419cfaecea
+3b4uA	3b4u	A	0	0		294	30ccc4383bc0a5d2
+3b64A	3b64	A	0	0		112	7bccb861c0f6fbac
+3b6dA	3b6d	A	0	0		504	468f8b452c9a66b8
+3bc9A	3bc9	A	0	0		599	4cd793f3372a1a90
+3bcjA	3bcj	A	0	0		316	4834dba4d3ca1123
+3beuA	3beu	A	0	0		224	6d1e580c863f42d9
+3bjeA	3bje	A	0	0		349	80c32820e661619f
+3bmzA	3bmz	A	0	0		199	304c6fd168d087a1
+3bs2A	3bs2	A	0	0		148	e7c28e03b562a3ee
+3c6aA	3c6a	A	0	0		232	0e5a084590fc0486
+3c6xA	3c6x	A	0	0		257	3d240a7e93095799
+3c6zA	3c6z	A	0	0		257	3d240a7e93095799
+3c70A	3c70	A	0	0		257	3d240a7e93095799
+3c76X	3c76	X	0	0		184	d75264d05397b7d8
+3c77X	3c77	X	0	0		184	2c82c0dd37e1c1a0
+3cijA	3cij	A	0	0		295	e14f62e86a292193
+3d1pA	3d1p	A	0	0		139	28636ad9b229e269
+3d9xA	3d9x	A	0	0		163	aff29238327e33e0
+3dk1A	3dk1	A	0	0		99	9f8a1b2e5f29e0be
+3dvqX	3dvq	X	0	0		279	98715c8e0124be9b
+3dw1X	3dw1	X	0	0		279	98715c8e0124be9b
+3dw3X	3dw3	X	0	0		279	98715c8e0124be9b
+3dweX	3dwe	X	0	0		279	98715c8e0124be9b
+3dzeA	3dze	A	0	0		176	689279bc2390dcfc
+3ea6A	3ea6	A	0	0		219	40738c4a6a78c096
+3ec0A	3ec0	A	0	0		99	6dd3d6cb49e27445
+3ecgA	3ecg	A	0	0		99	6dd3d6cb49e27445
+3einA	3ein	A	0	0		209	4c1eeff58b69d960
+3ejrA	3ejr	A	0	0		1045	94e45828c0c9d12d
+3eo6A	3eo6	A	0	0		106	1f326e40b545f993
+3ezgA	3ezg	A	0	0		196	d00d4c7b71347c07
+3f18A	3f18	A	0	0		158	39a4f53e3f1072b5
+3f19A	3f19	A	0	0		158	39a4f53e3f1072b5
+3fa0A	3fa0	A	0	0		162	52e54e6e08502bfd
+3fg9A	3fg9	A	0	0		156	33c64562a1d544e3
+3fsaA	3fsa	A	0	0		125	8c3baa16ab27a7c9
+3fymA	3fym	A	0	0		130	77c270fcb7dbe75e
+3g3jA	3g3j	A	0	0		259	178dce7a38f932ea
+3g46A	3g46	A	0	0		146	71c7f42e32fcd6fc
+3g5sA	3g5s	A	0	0		443	9b053eb5fd7c7995
+3g6kA	3g6k	A	0	0		308	ed5efe2118188e7b
+3gahA	3gah	A	0	0		194	755558cf39335d66
+3gmxB	3gmx	B	0	0		154	ecbfd47126d3600b
+3h31A	3h31	A	0	0		74	dad98142a0d83aa8
+3hnbM	3hnb	M	0	0		159	521fa949fec0b39a
+3hsgA	3hsg	A	0	0		158	83d0b5802070733d
+3hsjA	3hsj	A	0	0		158	d9af1615752a7388
+3i06A	3i06	A	0	0		215	3fa19e1589e246b3
+3i30X	3i30	X	0	0		279	98715c8e0124be9b
+3i4gA	3i4g	A	0	0		528	80fb7ad382171f70
+3i6oA	3i6o	A	0	0		99	9f8a1b2e5f29e0be
+3jq0A	3jq0	A	0	0		493	f02c165e9579625c
+3kfaA	3kfa	A	0	0		288	ccfa82ba0bdd6320
+3kfhA	3kfh	A	0	0		162	2c13796d4e06db12
+3kwdA	3kwd	A	0	0		213	ad04fafb7282755d
+3kweA	3kwe	A	0	0		213	ad04fafb7282755d
+3l5lA	3l5l	A	0	0		363	48a0604b0ef0c2b5
+3lepA	3lep	A	0	0		316	c8a41ca7d1771c68
+3ljmA	3ljm	A	0	0		31	1a385b020445c354
+3lo8A	3lo8	A	0	0		311	34a707609a30f760
+3lqbA	3lqb	A	0	0		199	aa2a36cee83a4130
+3lwxA	3lwx	A	0	0		199	6b04510cf7b665ab
+3lz3A	3lz3	A	0	0		316	1bc634a4a2b45352
+3m5qA	3m5q	A	0	0		357	403bf3f6650f70a7
+3m6uA	3m6u	A	0	0		464	a433863c98f2e5d5
+3m8mA	3m8m	A	0	0		357	403bf3f6650f70a7
+3m9jA	3m9j	A	0	0		105	0c63f796ec45ae29
+3mcwA	3mcw	A	0	0		198	b087f6aa3ac3a1ed
+3mjvA	3mjv	A	0	0		496	d17c9cff88b2f585
+3mncA	3mnc	A	0	0		240	b8ffd2a4ef54c41b
+3mtyA	3mty	A	0	0		240	b8ffd2a4ef54c41b
+3mu4A	3mu4	A	0	0		240	b8ffd2a4ef54c41b
+3mvsA	3mvs	A	0	0		210	a452bdc222477b4e
+3mwpA	3mwp	A	0	0		577	6985118e3c637f77
+3n8uA	3n8u	A	0	0		361	1f35da0b1fc462c1
+3nbcA	3nbc	A	0	0		148	e1cfe1ae8373d907
+3ndwA	3ndw	A	0	0		99	9f8a1b2e5f29e0be
+3ndxA	3ndx	A	0	0		99	9f8a1b2e5f29e0be
+3no0A	3no0	A	0	0		276	4ffe30759846b8dc
+3novA	3nov	A	0	0		231	f191458ee3f72ecd
+3nqfA	3nqf	A	0	0		228	2e4277cb8a917b9a
+3nu3A	3nu3	A	0	0		99	9f8a1b2e5f29e0be
+3nu6A	3nu6	A	0	0		99	f87093d314f8ae90
+3nvsA	3nvs	A	0	0		450	76611580f065f52c
+3nycA	3nyc	A	0	0		381	e4415dbb71f80b3f
+3nydA	3nyd	A	0	0		316	0727513ba6c108c5
+3nznA	3nzn	A	0	0		103	9484940463a53ee3
+3o5pA	3o5p	A	0	0		128	11a90e49a2049234
+3oddA	3odd	A	0	0		240	b8ffd2a4ef54c41b
+3odfA	3odf	A	0	0		240	b8ffd2a4ef54c41b
+3oqpA	3oqp	A	0	0		211	84efad820b8bdf2c
+3oruA	3oru	A	0	0		234	c900fd7f5e5a9e18
+3oxcA	3oxc	A	0	0		99	9f8a1b2e5f29e0be
+3pfzA	3pfz	A	0	0		437	5dffa5cf96542025
+3qpaA	3qpa	A	0	0		197	afc7f4efa8b62d5d
+3qzrA	3qzr	A	0	0		187	e4e6411c98dbe84c
+3rcgA	3rcg	A	0	0		166	59546c5fe0041f47
+3rpcA	3rpc	A	0	0		264	b50c85bcc796ed81
+3rvkA	3rvk	A	0	0		132	dadcc5bf7ed29557
+3rwaA	3rwa	A	0	0		233	f4118a94ed4750b3
+3rznA	3rzn	A	0	0		209	7ade6ae29c3be56c
+3s19A	3s19	A	0	0		290	a5345aedd3571889
+3s92A	3s92	A	0	0		113	4abc7a529bd5fed6
+3sg0A	3sg0	A	0	0		386	70897df46aa122b3
+3sk2A	3sk2	A	0	0		132	56d5885a39ad25ef
+3su0A	3su0	A	0	0		198	1e83fbae8ab173fc
+3teuA	3teu	A	0	0		98	56f6e865f31107e8
+3tg2A	3tg2	A	0	0		223	25fd42cde5758a9a
+3tlaA	3tla	A	0	0		371	7980218b8abf352a
+3tohA	3toh	A	0	0		99	9f8a1b2e5f29e0be
+3u3hA	3u3h	A	0	0		388	4e647b1335664bf7
+3u81A	3u81	A	0	0		221	9b5e79eceb40b852
+3u99A	3u99	A	0	0		148	8adb9f72e7e663e8
+3ur8A	3ur8	A	0	0		323	7cd15ff5bb9fcc68
+3urdA	3urd	A	0	0		198	508f99574e128b95
+3v9kA	3v9k	A	0	0		563	3e347872a6cb7af4
+3vigA	3vig	A	0	0		487	0612e1f975e2b57b
+3vioA	3vio	A	0	0		487	3f669e0798fe6081
+3vm9A	3vm9	A	0	0		153	f10aa7010fcb5e02
+3vsvA	3vsv	A	0	0		638	ce207b15c47b338c
+3vtoA	3vto	A	0	0		115	d5e85bd11f717e43
+3vwnX	3vwn	X	0	0		392	b5fb283f62d3cc98
+3w42A	3w42	A	0	0		199	d622ee28585539d7
+3w4pA	3w4p	A	0	0		266	d9cc59008ae8ad82
+3whaA	3wha	A	0	0		229	37b3e08224673f1c
+3wjdA	3wjd	A	0	0		174	540fb1ecb10c37f9
+3wjgA	3wjg	A	0	0		174	ffa4e4105260204a
+3wl2A	3wl2	A	0	0		129	eaf1f8d7f5bf78bb
+3wmvA	3wmv	A	0	0		153	e0605e9fcfd3793f
+3wnyA	3wny	A	0	0		63	ec0105f1169813db
+3wx7A	3wx7	A	0	0		402	f60565d38f8abacd
+3wy2A	3wy2	A	0	0		538	b653a0daa616fe75
+3wypA	3wyp	A	0	0		127	c0b891b3eeb53db6
+3x0kA	3x0k	A	0	0		170	8aaf66142a6d21de
+3x0nA	3x0n	A	0	0		170	8aaf66142a6d21de
+3x0sA	3x0s	A	0	0		170	8aaf66142a6d21de
+3x0tA	3x0t	A	0	0		119	7ae1a1c12ae2b7cf
+3x1yA	3x1y	A	0	0		167	980f71bd6a177c42
+3zhoA	3zho	A	0	0		197	a69a3aa122c00b3d
+3zitA	3zit	A	0	0		78	016e7a6f195e1430
+3ziyA	3ziy	A	0	0		468	11c72561cc4dd9e3
+3zojA	3zoj	A	0	0		279	ca7b500d9fc29c36
+3zqyA	3zqy	A	0	0		127	50cd458765253e77
+3zy7A	3zy7	A	0	0		122	fd087fe862605181
+4a7uA	4a7u	A	0	0		153	de943f1fdd77becd
+4a8nA	4a8n	A	0	0		388	4e647b1335664bf7
+4ateA	4ate	A	0	0		266	39800685f086a99c
+4avrA	4avr	A	0	0		95	70d80c149ff393ab
+4aw7A	4aw7	A	0	0		591	3aa3c076f8b0dc0b
+4awtA	4awt	A	0	0		365	fedf69fe2474f79d
+4b10A	4b10	A	0	0		385	4932443f768063c3
+4b4eA	4b4e	A	0	0		129	eaf1f8d7f5bf78bb
+4b5wA	4b5w	A	0	0		256	36cc1290e8bf9a7e
+4bdxA	4bdx	A	0	0		85	b2944f056b0b4535
+4bgbA	4bgb	A	0	0		325	5ee4ab1b7615e9a3
+4bkdA	4bkd	A	0	0		159	6652b030f6016f2a
+4bs6A	4bs6	A	0	0		225	47a416ae792eaa7d
+4bt2A	4bt2	A	0	0		257	f930ec18ac3aa60c
+4bt3A	4bt3	A	0	0		257	f930ec18ac3aa60c
+4bt5A	4bt5	A	0	0		257	f930ec18ac3aa60c
+4buhA	4buh	A	0	0		269	bd2a767d02778ec1
+4c1dA	4c1d	A	0	0		242	46379cd2fe905cda
+4c1hA	4c1h	A	0	0		227	05a232ae1cccb0bf
+4c4rA	4c4r	A	0	0		221	ee17a2bd57cb5861
+4c5mA	4c5m	A	0	0		276	4e856c121c871172
+4caeA	4cae	A	0	0		384	9225dde92776e2d8
+4co3A	4co3	A	0	0		112	0abc9a81c024673e
+4cpfA	4cpf	A	0	0		127	c0b891b3eeb53db6
+4cssA	4css	A	0	0		163	6e866c68d4ed1a53
+4cstA	4cst	A	0	0		163	6e866c68d4ed1a53
+4cybA	4cyb	A	0	0		173	91f9134f508be74c
+4cznA	4czn	A	0	0		369	d92265274ee93835
+4czoA	4czo	A	0	0		369	d92265274ee93835
+4czqA	4czq	A	0	0		369	d92265274ee93835
+4de0A	4de0	A	0	0		263	fb0f3c9ef32b765b
+4dmtA	4dmt	A	0	0		32	88e28ba09d15a28a
+4dp9X	4dp9	X	0	0		99	6064cc0c31b3438f
+4dpbX	4dpb	X	0	0		99	6064cc0c31b3438f
+4dwvA	4dwv	A	0	0		374	5d04a6a4323e0462
+4ea9A	4ea9	A	0	0		220	8b197cee9540575a
+4eguA	4egu	A	0	0		119	9d77ea6c4b55c455
+4ekfA	4ekf	A	0	0		204	0225e05635d22492
+4eusA	4eus	A	0	0		301	c51586c61ea48554
+4euzA	4euz	A	0	0		283	a3c7dea9fe5625a0
+4ey2A	4ey2	A	0	0		270	e789dada59f2ab0f
+4f18A	4f18	A	0	0		381	a603bf2708493e28
+4f19A	4f19	A	0	0		381	a603bf2708493e28
+4f1uA	4f1u	A	0	0		381	a603bf2708493e28
+4f1vA	4f1v	A	0	0		381	a603bf2708493e28
+4fcfA	4fcf	A	0	0		265	9d2c258037da57c3
+4fegA	4feg	A	0	0		603	b76163428d5717e4
+4fh4A	4fh4	A	0	0		265	1050137ea1186552
+4fkbA	4fkb	A	0	0		388	5a1dc8e789ef5218
+4fonA	4fon	A	0	0		279	b146b2cda1d68dfd
+4g8cA	4g8c	A	0	0		279	b3c0c7a192b83051
+4g9eA	4g9e	A	0	0		279	c998354eb5a59e82
+4gbuA	4gbu	A	0	0		400	e5c01c825234318e
+4gcaA	4gca	A	0	0		315	64eb732c5b0d7b34
+4gf6B	4gf6	B	0	0		246	b75c909a414720c3
+4gjzA	4gjz	A	0	0		235	637e3b60015c8dc9
+4gm0A	4gm0	A	0	0		536	f50c98bc9d5c39d4
+4gnuA	4gnu	A	0	0		287	e5f31851c93f2481
+4gp9A	4gp9	A	0	0		536	bd96b5a5cf2e24df
+4gvqA	4gvq	A	0	0		316	47da0be8b838beb0
+4gvrA	4gvr	A	0	0		316	4c2f420db6f2556c
+4gxwA	4gxw	A	0	0		380	e18443f8d860f861
+4gyjA	4gyj	A	0	0		648	e95946813370a33e
+4h6bA	4h6b	A	0	0		195	c2de87f96f168907
+4h9mA	4h9m	A	0	0		840	5dcea59fc96b1f9f
+4hbtA	4hbt	A	0	0		263	0d511715f969df6f
+4hcjA	4hcj	A	0	0		177	3747995914401eec
+4hedA	4hed	A	0	0		81	8f983fc84d7a3ce0
+4hk8A	4hk8	A	0	0		189	34f8d14d1ee56456
+4hnoA	4hno	A	0	0		288	db2b6d368268b555
+4hqzA	4hqz	A	0	0		187	acfa649759a98c0f
+4i5uA	4i5u	A	0	0		364	1ae0a59844cc3fb1
+4i62A	4i62	A	0	0		269	226061bdda8f2e96
+4i7vA	4i7v	A	0	0		308	4f7a9140510d53d5
+4i8jA	4i8j	A	0	0		223	fef138107d090c59
+4i8lA	4i8l	A	0	0		223	fef138107d090c59
+4id4A	4id4	A	0	0		263	e12cf079b91039a7
+4iixA	4iix	A	0	0		371	0b7115e581073156
+4ipuA	4ipu	A	0	0		137	fb6c470a09749b95
+4j5cX	4j5c	X	0	0		164	3383a3a89f3ff0b7
+4j5oA	4j5o	A	0	0		114	5ce9cca7e47c9a1c
+4jccA	4jcc	A	0	0		286	ed89c1a787ddba70
+4jd5A	4jd5	A	0	0		536	2e1800ec32b4de2e
+4jeaA	4jea	A	0	0		106	cd4b014fac87bbd6
+4jtrA	4jtr	A	0	0		331	a56a30c279c0b241
+4jvoA	4jvo	A	0	0		336	24cee98084223ef1
+4k6bA	4k6b	A	0	0		161	b1ee439acc815429
+4k7yA	4k7y	A	0	0		400	d0886dd16625f848
+4kefA	4kef	A	0	0		143	239ace6e9167ad2a
+4kemA	4kem	A	0	0		390	83d44192fe21a0f8
+4knkA	4knk	A	0	0		225	91901b45e2b0da1f
+4kqpA	4kqp	A	0	0		232	b24d2d24b678491d
+4ky2A	4ky2	A	0	0		127	1be38543a2db6ca4
+4l05A	4l05	A	0	0		154	0ae679a05de498ca
+4l6dA	4l6d	A	0	0		335	248c8272f4fe0562
+4lbsA	4lbs	A	0	0		316	4834dba4d3ca1123
+4lbuA	4lbu	A	0	0		388	b49ac98cf1dd43c5
+4lc8A	4lc8	A	0	0		228	26db53e4a20b45fb
+4lhdA	4lhd	A	0	0		983	c18cae7adae6c439
+4m51A	4m51	A	0	0		427	ab2c310687a6095a
+4m5lA	4m5l	A	0	0		162	9ae95a04d65c0e55
+4m5mA	4m5m	A	0	0		162	9ae95a04d65c0e55
+4mbyA	4mby	A	0	0		278	6cd7fa9ffe2263d4
+4mf5A	4mf5	A	0	0		256	e4c6b81eab566538
+4my0A	4my0	A	0	0		392	fd8820dead690df4
+4o6qA	4o6q	A	0	0		184	1bd764367084f728
+4o6uA	4o6u	A	0	0		184	bdd70218223917a9
+4o8hA	4o8h	A	0	0		165	e77e3085d56c9fad
+4o8oA	4o8o	A	0	0		384	f5680b27514a1f8c
+4o9aA	4o9a	A	0	0		398	9a809a114c117d10
+4oneA	4one	A	0	0		262	e16e3a2a465b512f
+4oqiA	4oqi	A	0	0		263	3e15143d9a5d2e1b
+4p25A	4p25	A	0	0		302	902e699538aa4ee9
+4p6aA	4p6a	A	0	0		114	f3521fe8fd7c84fa
+4pe0X	4pe0	X	0	0		92	2ad99e6c720ec39b
+4pf4A	4pf4	A	0	0		278	3d66fd08e8abbbda
+4prrA	4prr	A	0	0		315	64eb732c5b0d7b34
+4pssA	4pss	A	0	0		159	e193a4b689d70ba3
+4psyA	4psy	A	0	0		159	e193a4b689d70ba3
+4q4gX	4q4g	X	0	0		472	48135028c35df36a
+4q9wA	4q9w	A	0	0		220	26fa2b13342b7eff
+4qasA	4qas	A	0	0		201	9fd3d2fbbbdffc25
+4qbxA	4qbx	A	0	0		316	4834dba4d3ca1123
+4qiuA	4qiu	A	0	0		356	26ab9f70f1be3c73
+4qrnA	4qrn	A	0	0		373	480d0ebc3c7b9037
+4qxvA	4qxv	A	0	0		127	1be38543a2db6ca4
+4r9aA	4r9a	A	0	0		144	280abe62ef972eed
+4rdcA	4rdc	A	0	0		395	9b44e76242a26f28
+4ru3A	4ru3	A	0	0		221	ba34ba23d3628d8e
+4ru5A	4ru5	A	0	0		605	54d1161fd1b8283c
+4rxvA	4rxv	A	0	0		229	6c61640ab6ee036f
+4tpoA	4tpo	A	0	0		407	453f66b1d73e933b
+4tx0A	4tx0	A	0	0		128	11a90e49a2049234
+4u2sA	4u2s	A	0	0		510	ee7aadf06d643c1f
+4u2tA	4u2t	A	0	0		510	ee7aadf06d643c1f
+4ua4A	4ua4	A	0	0		242	46379cd2fe905cda
+4ue0A	4ue0	A	0	0		122	3603e2171b7ac143
+4uhcA	4uhc	A	0	0		282	f5386bccd50f3f4d
+4uhfA	4uhf	A	0	0		282	f5386bccd50f3f4d
+4unuA	4unu	A	0	0		111	aa42909699f19573
+4uqdA	4uqd	A	0	0		409	dca213ada59ffac2
+4uyrA	4uyr	A	0	0		211	da5ddbe9c061a075
+4uytA	4uyt	A	0	0		182	a64c331403ada3dd
+4w7nA	4w7n	A	0	0		449	cc2faf3e4be43f7c
+4wk9A	4wk9	A	0	0		377	fc034863af2de318
+4wkaA	4wka	A	0	0		377	fc034863af2de318
+4wkfA	4wkf	A	0	0		377	fc034863af2de318
+4ws2A	4ws2	A	0	0		238	75050c78f791c000
+4wuiA	4wui	A	0	0		207	7fe57c6d8885e385
+4x06A	4x06	A	0	0		309	28b29a9132c3aa97
+4x9yA	4x9y	A	0	0		496	0445a7500669f808
+4xkuA	4xku	A	0	0		158	490c0483b24363d6
+4xloA	4xlo	A	0	0		464	c876ac016286e784
+4xpxA	4xpx	A	0	0		130	cd0d50b24fc6c9ef
+4xq4A	4xq4	A	0	0		189	eba7f10d4981d0df
+4xqcA	4xqc	A	0	0		475	b946b2cd56e35209
+4xqeA	4xqe	A	0	0		474	9205786b81880e17
+4xqmA	4xqm	A	0	0		94	4e55fff0bedc181f
+4xrgA	4xrg	A	0	0		474	9205786b81880e17
+4y59A	4y59	A	0	0		121	83cf551beeac84ee
+4y5lA	4y5l	A	0	0		330	9e7c6fdd16f27613
+4yaaA	4yaa	A	0	0		306	e8aacb07a96bbd6b
+4yapA	4yap	A	0	0		265	01daa45c86c78a5b
+4ykiA	4yki	A	0	0		256	aae02f0c2a0c1ce5
+4ytkA	4ytk	A	0	0		130	9e2635015ba0316a
+4yvbA	4yvb	A	0	0		120	63e59964eb599581
+4ywaA	4ywa	A	0	0		121	ac2363267f3bff11
+4yzzA	4yzz	A	0	0		367	81d58accfe75d4a4
+4z1sA	4z1s	A	0	0		126	ded0d68233dd8ca0
+4z6mA	4z6m	A	0	0		365	c1e72b03488349b1
+4z6nA	4z6n	A	0	0		365	e8a5d5a97ce7d633
+4za4A	4za4	A	0	0		508	f1cc4fd14a265baa
+4za9A	4za9	A	0	0		508	f1cc4fd14a265baa
+4zaaA	4zaa	A	0	0		508	f1cc4fd14a265baa
+4zbdA	4zbd	A	0	0		222	bf0dcfd2d03e9a3b
+4zc9A	4zc9	A	0	0		127	fbf3f5c695a3b8c4
+4zo2A	4zo2	A	0	0		294	cd1c11661a7fda44
+4zuoA	4zuo	A	0	0		341	c6175a85a51756c7
+4zuqA	4zuq	A	0	0		341	c6175a85a51756c7
+5a57A	5a57	A	0	0		1117	0f3e3bf733edff99
+5a6mA	5a6m	A	0	0		409	33487dbdd1fc04d7
+5a8cA	5a8c	A	0	0		326	da4345e790f62efe
+5a92A	5a92	A	0	0		262	60dd567c8d26e5c7
+5ae0A	5ae0	A	0	0		221	a04ae396e63f32a2
+5aiiA	5aii	A	0	0		135	cf8a89da738c9f16
+5akrA	5akr	A	0	0		378	624475dc42b85123
+5amxA	5amx	A	0	0		279	98715c8e0124be9b
+5avdA	5avd	A	0	0		240	b8ffd2a4ef54c41b
+5avgA	5avg	A	0	0		206	efbb4be118e1e292
+5b4hA	5b4h	A	0	0		248	eddb7d810ba9df80
+5b4iA	5b4i	A	0	0		248	eddb7d810ba9df80
+5b7yA	5b7y	A	0	0		290	89a646ee169ffd86
+5c05A	5c05	A	0	0		559	92a6105c4214f7ec
+5c0zA	5c0z	A	0	0		105	3f3d713e3792d561
+5c5aA	5c5a	A	0	0		92	5b6ba37e467b9e9a
+5cc9A	5cc9	A	0	0		159	316a55c6e6cb15c8
+5ctmA	5ctm	A	0	0		233	23e452cd9f9b4178
+5dj7A	5dj7	A	0	0		230	ea8c56892d0324a9
+5dkmA	5dkm	A	0	0		230	ea8c56892d0324a9
+5dqlA	5dql	A	0	0		428	d2fc45ff347238e2
+5drfA	5drf	A	0	0		248	154d985879024013
+5drgA	5drg	A	0	0		248	154d985879024013
+5eeiA	5eei	A	0	0		364	c6877a8984097346
+5ej3A	5ej3	A	0	0		234	001aaa388a23c4a6
+5emyA	5emy	A	0	0		496	0445a7500669f808
+5eooA	5eoo	A	0	0		265	7a852425f895faa3
+5epuA	5epu	A	0	0		253	e90625575b8b86d3
+5ewoA	5ewo	A	0	0		228	b56c91da6470419e
+5f7bA	5f7b	A	0	0		342	0ae7b225bf39f3df
+5fbfA	5fbf	A	0	0		267	124f095dcb059853
+5fleX	5fle	X	0	0		636	de4d88eb23928d49
+5flkA	5flk	A	0	0		300	3a2a11f536ce9522
+5fyrA	5fyr	A	0	0		298	5fb71d8637b180c4
+5hd6A	5hd6	A	0	0		175	b48d256c8e5be839
+5hobA	5hob	A	0	0		50	30de1e0844cec371
+5hr3A	5hr3	A	0	0		109	a8a71afd40ef2659
+5hwnA	5hwn	A	0	0		311	52bf797c168e13ba
+5i7iA	5i7i	A	0	0		341	06e5b183002e4f10
+5ikdA	5ikd	A	0	0		446	f7c2ce8774dfdeda
+5ilsA	5ils	A	0	0		101	c6b083257b5d14ba
+5iuqA	5iuq	A	0	0		138	4f6fb808c4a82020
+5j4lA	5j4l	A	0	0		231	4b47cbbb02596db9
+5j6yA	5j6y	A	0	0		188	9f41e5a48aae3aeb
+5j80A	5j80	A	0	0		225	bceceead0d73cd14
+5jg1A	5jg1	A	0	0		99	9f8a1b2e5f29e0be
+5jh8A	5jh8	A	0	0		317	bd4b62b3a35883d9
+5jsvA	5jsv	A	0	0		386	8ee77a4afad1cc81
+5k1lA	5k1l	A	0	0		137	8ceea86f159f127f
+5k6dA	5k6d	A	0	0		78	e8997bb7c6778458
+5k9bA	5k9b	A	0	0		180	d164778eacb3f06f
+5karA	5kar	A	0	0		427	6eebf2df70208a19
+5kczA	5kcz	A	0	0		374	ad2be47c6d88929e
+5kj6A	5kj6	A	0	0		374	74d79e81ed2df3ac
+5kp1A	5kp1	A	0	0		135	e24a0bf15965fb0d
+5kz6A	5kz6	A	0	0		336	0f1d3e06f14e78d0
+5lgoA	5lgo	A	0	0		223	fef138107d090c59
+5lk9A	5lk9	A	0	0		137	8ceea86f159f127f
+5lkvA	5lkv	A	0	0		137	8ceea86f159f127f
+5lnjA	5lnj	A	0	0		360	45209479767bb2fe
+5lunA	5lun	A	0	0		352	3f9fa627c6deaa4b
+5lwsA	5lws	A	0	0		330	9e7c6fdd16f27613
+5m10A	5m10	A	0	0		541	65e161d8f0a97c6c
+5m17A	5m17	A	0	0		385	b6c5f74ac452cdcb
+5m4gA	5m4g	A	0	0		483	afd3f9ba192f82c0
+5m4zA	5m4z	A	0	0		320	50e811cf26ded90c
+5m77A	5m77	A	0	0		589	c4f573c76095b366
+5majA	5maj	A	0	0		220	4c13d72d1741b24c
+5mb5A	5mb5	A	0	0		330	9e7c6fdd16f27613
+5mc0A	5mc0	A	0	0		480	e706a02e3e34727f
+5mehA	5meh	A	0	0		447	be0bd3bc3be2d3e7
+5mh2A	5mh2	A	0	0		143	65f8599b0295216e
+5mh6A	5mh6	A	0	0		308	d60fcba65aedd6d7
+5mk9A	5mk9	A	0	0		379	72f1d3837bc7bfe7
+5mkaA	5mka	A	0	0		379	72f1d3837bc7bfe7
+5mncA	5mnc	A	0	0		223	fef138107d090c59
+5mneA	5mne	A	0	0		223	fef138107d090c59
+5mngA	5mng	A	0	0		223	fef138107d090c59
+5mnhA	5mnh	A	0	0		223	fef138107d090c59
+5mnnA	5mnn	A	0	0		223	fef138107d090c59
+5mnpA	5mnp	A	0	0		223	fef138107d090c59
+5monA	5mon	A	0	0		223	fef138107d090c59
+5mqyA	5mqy	A	0	0		220	4c13d72d1741b24c
+5mtuA	5mtu	A	0	0		379	72f1d3837bc7bfe7
+5natA	5nat	A	0	0		232	d42e073edd056c1e
+5nhmA	5nhm	A	0	0		437	965adacbcee201be
+5nr4A	5nr4	A	0	0		230	b4226ff6de3f3cd2
+5nrhA	5nrh	A	0	0		312	8f73706acbcbde9b
+5o15A	5o15	A	0	0		311	d2552ac15db10781
+5o2xA	5o2x	A	0	0		248	46821da4abf7f63e
+5oduA	5odu	A	0	0		122	3b212929c59bccac
+5odyA	5ody	A	0	0		138	4f6fb808c4a82020
+5ok7A	5ok7	A	0	0		485	edd75c04fb3e2add
+5okbA	5okb	A	0	0		485	263ce3cdf437112d
+5opfA	5opf	A	0	0		194	135b6c3cd67832cd
+5or3A	5or3	A	0	0		383	95ea1a60b12847b8
+5oukA	5ouk	A	0	0		316	4834dba4d3ca1123
+5ouoA	5ouo	A	0	0		277	fd156791fac59766
+5p70A	5p70	A	0	0		330	9e7c6fdd16f27613
+5p71A	5p71	A	0	0		330	9e7c6fdd16f27613
+5p73A	5p73	A	0	0		330	9e7c6fdd16f27613
+5p76A	5p76	A	0	0		330	9e7c6fdd16f27613
+5p77A	5p77	A	0	0		330	9e7c6fdd16f27613
+5p8tA	5p8t	A	0	0		330	9e7c6fdd16f27613
+5p9nA	5p9n	A	0	0		221	9b5e79eceb40b852
+5p9pA	5p9p	A	0	0		221	9b5e79eceb40b852
+5p9vA	5p9v	A	0	0		221	9b5e79eceb40b852
+5qu4A	5qu4	A	0	0		87	c23ad32d9419fc99
+5rcdA	5rcd	A	0	0		419	ff6efabb5a1d099b
+5rd1A	5rd1	A	0	0		419	ff6efabb5a1d099b
+5rdcA	5rdc	A	0	0		419	ff6efabb5a1d099b
+5rdiA	5rdi	A	0	0		419	ff6efabb5a1d099b
+5re2A	5re2	A	0	0		419	ff6efabb5a1d099b
+5roiA	5roi	A	0	0		279	b146b2cda1d68dfd
+5rotA	5rot	A	0	0		279	b146b2cda1d68dfd
+5royA	5roy	A	0	0		279	b146b2cda1d68dfd
+5rp4A	5rp4	A	0	0		279	b146b2cda1d68dfd
+5rpvA	5rpv	A	0	0		279	b146b2cda1d68dfd
+5rs7A	5rs7	A	0	0		169	425bbff0dbc5913b
+5rsmA	5rsm	A	0	0		169	425bbff0dbc5913b
+5rsqA	5rsq	A	0	0		169	425bbff0dbc5913b
+5rsrA	5rsr	A	0	0		169	425bbff0dbc5913b
+5rssA	5rss	A	0	0		169	425bbff0dbc5913b
+5rstA	5rst	A	0	0		169	425bbff0dbc5913b
+5rszA	5rsz	A	0	0		169	425bbff0dbc5913b
+5rt4A	5rt4	A	0	0		169	425bbff0dbc5913b
+5rtxA	5rtx	A	0	0		169	425bbff0dbc5913b
+5rtyA	5rty	A	0	0		169	425bbff0dbc5913b
+5rtzA	5rtz	A	0	0		169	425bbff0dbc5913b
+5ru0A	5ru0	A	0	0		169	425bbff0dbc5913b
+5ru1A	5ru1	A	0	0		169	425bbff0dbc5913b
+5ru2A	5ru2	A	0	0		169	425bbff0dbc5913b
+5rueA	5rue	A	0	0		169	425bbff0dbc5913b
+5rv3A	5rv3	A	0	0		169	425bbff0dbc5913b
+5rv7A	5rv7	A	0	0		169	425bbff0dbc5913b
+5rv8A	5rv8	A	0	0		169	425bbff0dbc5913b
+5rv9A	5rv9	A	0	0		169	425bbff0dbc5913b
+5rvaA	5rva	A	0	0		169	425bbff0dbc5913b
+5rvbA	5rvb	A	0	0		169	425bbff0dbc5913b
+5saoA	5sao	A	0	0		419	ff6efabb5a1d099b
+5sq5A	5sq5	A	0	0		169	425bbff0dbc5913b
+5sq6A	5sq6	A	0	0		169	425bbff0dbc5913b
+5sq7A	5sq7	A	0	0		169	425bbff0dbc5913b
+5sq8A	5sq8	A	0	0		169	425bbff0dbc5913b
+5sqaA	5sqa	A	0	0		169	425bbff0dbc5913b
+5sqbA	5sqb	A	0	0		169	425bbff0dbc5913b
+5sqcA	5sqc	A	0	0		169	425bbff0dbc5913b
+5sqdA	5sqd	A	0	0		169	425bbff0dbc5913b
+5swcA	5swc	A	0	0		239	e2f878569755189c
+5sy4A	5sy4	A	0	0		199	c9244ed28030eb8f
+5sy9A	5sy9	A	0	0		192	d61ebe8d45bede71
+5syaA	5sya	A	0	0		192	c867aec426fea6b9
+5t39A	5t39	A	0	0		254	9e920841a52ae81c
+5tfqA	5tfq	A	0	0		280	4d5023b9ebb36a9f
+5toyA	5toy	A	0	0		263	05415b968fb75003
+5trqA	5trq	A	0	0		291	7ecfeaa2fba32909
+5tvyA	5tvy	A	0	0		188	161d1c6347bfd036
+5u64B	5u64	B	0	0		137	fe0d4cc7a5cc288a
+5uejA	5uej	A	0	0		384	d16fe7d734d3046d
+5v92A	5v92	A	0	0		129	23447d946139feeb
+5vpqA	5vpq	A	0	0		289	b31070e8bc537ff6
+5vrkA	5vrk	A	0	0		314	b331158fd8b167c6
+5vscA	5vsc	A	0	0		275	d542c937250ddc7a
+5w3rA	5w3r	A	0	0		114	ffceb54c96b8c6e8
+5waaA	5waa	A	0	0		129	a56e8fa76b807b18
+5ws7A	5ws7	A	0	0		156	e682a4d0912de597
+5wsfA	5wsf	A	0	0		118	a065f34e034904c6
+5x5mA	5x5m	A	0	0		216	f5cb70a9ccfe8c70
+5x9lA	5x9l	A	0	0		207	03fb623ab77e1e63
+5x9mA	5x9m	A	0	0		207	9d15b639fcce3680
+5xbuA	5xbu	A	0	0		190	8495eb36a6468682
+5xp6A	5xp6	A	0	0		243	fb4f8bb40f1367e1
+5xqaA	5xqa	A	0	0		697	d410912bd7eee7ab
+5xqpA	5xqp	A	0	0		67	279a7251fb40b178
+5y3xA	5y3x	A	0	0		357	d0d9e742aadcd6fd
+5y9aA	5y9a	A	0	0		196	a02b2066e165bce6
+5yb6A	5yb6	A	0	0		580	d50b861086cdc24c
+5ydeA	5yde	A	0	0		112	32631dd9ef78de5f
+5yobA	5yob	A	0	0		148	3ec10df711a37d79
+5yypA	5yyp	A	0	0		207	cfb711e5493fb6ee
+5z02A	5z02	A	0	0		110	055932eba6a26053
+5z0tA	5z0t	A	0	0		637	84fbea340a16d2ef
+5zj2A	5zj2	A	0	0		242	e5a7ef203fa26ad9
+6ao9A	6ao9	A	0	0		192	2b1c00d2828ed919
+6ar0A	6ar0	A	0	0		140	5d65b3a3fa679e1f
+6argA	6arg	A	0	0		399	121184cf533a0ed5
+6b8gA	6b8g	A	0	0		182	11098a68927b3267
+6balA	6bal	A	0	0		335	83505eaf21405c46
+6bevA	6bev	A	0	0		135	fa5a0ca4a0e2faec
+6bxdA	6bxd	A	0	0		209	1d619b50afba7412
+6c79A	6c79	A	0	0		261	917c7916da983191
+6cdjA	6cdj	A	0	0		99	9f8a1b2e5f29e0be
+6cspA	6csp	A	0	0		364	c6877a8984097346
+6d1iA	6d1i	A	0	0		233	e65dc3b3aea9e922
+6d9yA	6d9y	A	0	0		258	d0b0a89f8838d26f
+6elxA	6elx	A	0	0		267	add1cd69a826a329
+6eqeA	6eqe	A	0	0		298	75aa9513e11fbc67
+6etpA	6etp	A	0	0		124	3fdb0ecddf682ea3
+6ev3A	6ev3	A	0	0		508	f1cc4fd14a265baa
+6evdA	6evd	A	0	0		508	60c4c007f301bfb5
+6f43A	6f43	A	0	0		246	c50f788b8b4c3247
+6fd1A	6fd1	A	0	0		106	b26a5c032edcef6f
+6fi2A	6fi2	A	0	0		408	40fd149e1823bff6
+6fj6A	6fj6	A	0	0		207	6bcad70ff1516c36
+6fm7A	6fm7	A	0	0		382	8206618159bbeda9
+6ggpA	6ggp	A	0	0		212	1b4e99e105b999c8
+6hmdA	6hmd	A	0	0		365	73ad25d1f9299dc5
+6n3xA	6n3x	A	0	0		129	4088998217029366
+6ni4A	6ni4	A	0	0		231	e98fed7a6fb55d60
+6qw8A	6qw8	A	0	0		265	4a86f52cae1cd7c5
+6r1dA	6r1d	A	0	0		125	fcc8973a7825f8d7
+6trgXXX	6trg	XXX	0	0		379	aed4cc24673e6d4d
+7a3hA	7a3h	A	0	0		303	4c3dc8e6283dfe96
+7fpyA	7fpy	A	0	0		159	e193a4b689d70ba3
+7fvzA	7fvz	A	0	0		135	11985c156b284022
+7fw0A	7fw0	A	0	0		135	11985c156b284022
+7fw2A	7fw2	A	0	0		135	11985c156b284022
+7hctA	7hct	A	0	0		169	425bbff0dbc5913b
+7hcuA	7hcu	A	0	0		169	425bbff0dbc5913b
+7hd3A	7hd3	A	0	0		169	425bbff0dbc5913b
+7hd5A	7hd5	A	0	0		169	425bbff0dbc5913b
+7heqA	7heq	A	0	0		169	425bbff0dbc5913b
+7hf0A	7hf0	A	0	0		169	425bbff0dbc5913b
+7hf1A	7hf1	A	0	0		169	425bbff0dbc5913b
+7hflA	7hfl	A	0	0		169	425bbff0dbc5913b
+7hpyA	7hpy	A	0	0		169	425bbff0dbc5913b
+8a3hA	8a3h	A	0	0		303	4c3dc8e6283dfe96

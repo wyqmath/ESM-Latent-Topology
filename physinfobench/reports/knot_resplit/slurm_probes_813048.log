@@ -1,0 +1,5 @@
+=== probes 2026-09-25 18:04:38 ===
+[p303probe] DONE
+=== stage-B scoring 2026-09-25 18:04:39 ===
+[stageb FATAL] 新版 dev 代表缺嵌入 47595: ['A0A017SE85', 'A0A017SP50', 'A0A017TC06', 'A0A023GPJ0', 'A0A023PXA5']
+[stageb] selected layer=6 C=0.01

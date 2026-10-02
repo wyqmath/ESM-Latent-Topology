@@ -1,0 +1,17 @@
+{
+ "n_proteins": 99,
+ "per_protein_auprc_mean": 0.4761,
+ "per_protein_auprc_median": 0.4415,
+ "per_protein_base_rate_mean": 0.2153,
+ "improvement_over_base": 0.2607,
+ "pooled_auprc_secondary": 0.3601,
+ "pooled_base_rate": 0.2129,
+ "pooled_permutation": {
+  "mean": 0.2109,
+  "max": 0.2159
+ },
+ "balanced_acc_mean": 0.5033,
+ "mcc_mean": 0.0154,
+ "segment_recall_mean": 0.1236,
+ "note": "Supplementary correction; frozen h33/C=.01 devfit replay; no layer/threshold selection"
+}

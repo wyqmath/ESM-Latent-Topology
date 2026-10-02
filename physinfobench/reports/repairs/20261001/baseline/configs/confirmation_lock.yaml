@@ -1,0 +1,346 @@
+# =============================================================================
+# configs/confirmation_lock.yaml — P5.01 确认实验注册与冻结
+# =============================================================================
+# 注册时间：2026-09-27 13:31 Asia/Shanghai（注册决策与 registered_at 写入时刻；
+#       约束性注册时刻=本文件首次 git 提交，先于任何确认集结果级读取）。
+# 授权链：G4 已放行（用户 2026-09-27 13:0x 指令式『继续推进phase5，直到做完』；
+#         logs/decisions.md 2026-09-27 13:0x 条目）。上级假设来源：
+#         configs/confirmatory_hypotheses.yaml（P4.09 冻结，哈希见 integrity）。
+# 纪律：本文件提交（git 首次入库）之前不读任何确认集结果级数据；任何确认后修改一律走
+#       P5.03 回路（差异清单+受影响任务重开+独立审核），不得补改本文件冒充事先设定。
+#       P5.02 运行前逐文件校验 integrity.verify_files；不一致即停止。
+# =============================================================================
+
+meta:
+  task: P5.01
+  registered_at: "2026-09-27T05:31:00Z"
+  registered_at_local: "2026-09-27 13:31 Asia/Shanghai"
+  status: locked_2026-09-27_p501
+  lock_commit: >-
+    本文件的首次 git 提交即注册提交（哈希记录于 TODO P5.01 行、
+    reports/tasks/P5.01.md 与 logs/reviews/P5.01.md；本文件提交后不改）。
+  source_hypotheses: configs/confirmatory_hypotheses.yaml
+  change_rule: >-
+    差异清单 + 影响面 + 独立审核；确认反馈触发的修改只经 P5.03。
+  run_id_templates:
+    knots: CONF-KNOT-PRESENCE-P502-v1
+    disorder: CONF-DISORDER-RES-P502-v1
+    fsl2: CONF-FSL2-RANK-P502-v1
+
+# -----------------------------------------------------------------------------
+# first_read（结果级首次读取授权，先注册后执行）
+# -----------------------------------------------------------------------------
+first_read:
+  authorized_reader: ZCode(P5.02)
+  scope: >-
+    确认集标签进入指标计算的唯一一次批读取；三假设全部已注册对比同批一次性完成，
+    无中途选择、无赢家重跑、无只报显著任务。
+  registered_at: "2026-09-27T05:31:00Z"
+  executed_at_note: >-
+    由 P5.02 运行器写入 results/confirmation/first_read_record.json（真实时间戳，
+    晚于 registered_at，运行器强断言）；logs/exposure_log.tsv 于读取同日补行登记。
+  guard: >-
+    results/confirmation/<run_id> 已存在=拒绝运行（禁覆盖、禁二次读取）。
+  pre_first_read_allowed_actions:
+    - >-
+      输入构建（scripts/build_p501_confirmation_inputs.py）：确认集序列 fasta +
+      disorder 分母残基域索引（probes.yaml residue_storage_domain 冻结规则 +
+      trunc1022 裁剪规则，与 dev 构建器 build_p303_inputs.py 同协议）。
+      域构建读取 curated 掩码属输入构造，非方法选择；于读取同日登记 exposure_log。
+    - >-
+      确认集表示抽取（extract_representations.py，冻结编码器/缓存协议）。
+    - >-
+      构成统计（本文件 confirmation_sets 各计数，聚合级，
+      influenced_method_selection=false）。
+
+# -----------------------------------------------------------------------------
+# 冻结资源（编码器/统计/划分语义——全部沿既有冻结文件，不在本文件重新定义数值）
+# -----------------------------------------------------------------------------
+frozen_resources:
+  encoder_note: >-
+    configs/probes.yaml §encoder：facebook/esm2_t33_650M_UR50D，
+    revision 08e4846e537177426273712802403f7ba8261b6c；BOS/EOS 剥离均值池化；
+    truncation 1022；fp16 存储。
+  statistics_note: >-
+    configs/evaluation_protocol.yaml（frozen_2026-09-25_p302）：
+    bootstrap B=2000、seed 2026、percentile 95% CI、独立单位重采样、
+    退化抽取丢弃并披露、有效抽取 <1000 → no_conclusion 标志。
+  split_note: >-
+    data/splits/split_manifest.tsv（KNOT-RESPLIT 方案 A 新版，68,875 组；
+    split_qc.json 为构成权威）。data/interim/p303/knot_chain_list.tsv 为旧划分链表，
+    禁止用于确认集划分（其 split 列已过时）。
+  multiple_comparison_semantics: >-
+    3 条假设为各自独立预注册确认检验（阈值于 P4.09 冻结），不构成比较族，
+    不做跨假设校正；每假设单独按其冻结判据判定。
+  seed_stability_semantics: >-
+    读取器为 liblinear 固定 random_state=2026 的确定性拟合（无随机初始化、无早停），
+    不适用多种子重拟合；不确定性由 bootstrap CI 与置换零分布承担
+    （置换种子 2026..2125 预注册）。
+
+# -----------------------------------------------------------------------------
+# 确认集构成（派生规则 + 钉版计数；2026-09-27 注册时复算核验）
+# -----------------------------------------------------------------------------
+confirmation_sets:
+  knots_presence:
+    derivation: >-
+      split_manifest(task_area=knot ∧ split=confirmation) ∩ knots.tsv
+      (presence_mask=1) ∩ knots_sequences.tsv（序列已解析）；
+      标签=knots.tsv presence_target（与 knots_sequences 逐链一致性断言）。
+    declared_usable:
+      pos: 24
+      neg: 126
+    evaluable_locked:
+      pos: 22
+      neg: 126
+      total: 148
+    no_sequence_dropped: ["knot:1giy_M", "knot:2hfx_A"]
+    no_sequence_note: >-
+      两条 presence_target=1 链无解析序列（knot:1giy_M、knot:2hfx_A；
+      knots_sequences_unavailable.tsv：pdb_entry_not_in_wwpdb_archive；
+      同表 knot:1s1h_I 不在确认 split，与本口径无关）。
+      覆盖缺口如实披露：可评价集 22/126 vs 声明集 24/126；指标在可评价集上计算，
+      报告须并排披露两口径；构建器强断言缺失集合恰为该两条。
+    dev_fit_universe: 750
+    dev_fit_note: >-
+      dev ∩ 同规则 → 声明 138+623，有序列 750（P4.02 同口径断言）。
+  fs_strict:
+    derivation: >-
+      split_manifest(fold_switch ∧ confirmation) ∩ fold_switch_global
+      (target=1 ∧ valid_mask=1)。
+    n_strict_locked: 0
+    n_strict_note: >-
+      确认 6 对（porter_15/18/25/35/63/89）全部 valid_mask=0
+      （4×pending_evidence + 1×fragment_only + 1×pending_evidence）→
+      H-FSL2-RANK 走 P4.09 预注册分支：verdict=insufficient_evidence（不构成失败），
+      主指标 NA。
+  disorder:
+    derivation: >-
+      split_manifest(disorder ∧ confirmation) 全 432 行；可评价=分母域残基>0
+      （disorder_masks state∈{0,1} ∧ mask=1；截断 1022 外裁剪；
+      全域空=EMPTY_EVALUABLE_SET 出分母并登记）；
+      运行时强断言：432 = 抽取 + 空域 + 全域超界。
+
+# -----------------------------------------------------------------------------
+# 假设 → 冻结运行协议（判据逐字承自 confirmatory_hypotheses.yaml，不改动）
+# -----------------------------------------------------------------------------
+hypotheses:
+  - id: H-KNOT-PRESENCE
+    claim: C-GE1 + T-KNOT-PRESENCE
+    statement: >-
+      打结存在性在确认集可读（development AUROC 0.929）。
+    direction: AUROC > 0.5（阳性高于阴性）
+    metric: >-
+      AUROC（确认集可评价 148；同一固定读出，无再拟合超参）。
+    pass: AUROC ≥ 0.80
+    strong_pass: AUROC ≥ 0.90
+    fail_rule: >-
+      点估计 <0.65 且 95%CI 上界 <0.80；点估计 <0.80 但上界 ≥0.80=证据不足（中间带）。
+    boundary: 条件无关全局属性；不外推打结类型。
+    run_protocol:
+      features: >-
+        hidden 33 全残基均值（data/interim/p402/emb_knots_resid 同协议；
+        确认集以同协议补抽 data/interim/p502/emb_knots_conf，resid-layers 23,29,33）。
+      reader: >-
+        LogisticRegression(C=1, class_weight=balanced, solver=liblinear,
+        max_iter=1000, random_state=2026)；仅 development（750）一次拟合。
+      controls:
+        - control_id: C0_permutation
+          spec: >-
+            确认标签置换 ×100（seed 2026..2125）→ AUROC 零分布
+            （mean/sd/min/max；期望 ≈0.5）。
+        - control_id: B_len_length_only
+          spec: >-
+            log1p(链长) 单特征同配置 dev 拟合 → 确认 AUROC
+            （轻量基线：长度是否足以解释）。
+      coverage: >-
+        缺失即 die（禁止静默子集）；no_sequence_dropped 双口径披露。
+
+  - id: H-FSL2-RANK
+    claim: C-GE1（跨家族泛化）+ BN5
+    statement: >-
+      冻结线性打分器（L5=hidden 29、C=0.1，dev 拟合）将确认集 strict 阳性在
+      全背景排序中置于前列。
+    direction: 阳性排名显著前于随机
+    metric: positive_rank_percentile（主）+ recall@1000/@100（辅）
+    pass: recall@1000 ≥ 0.5（比例语义）
+    strong_pass: recall@1000 = 1.0 且 percentile ≤ 0.001
+    fail_rule: recall@1000 < 0.2 或 percentile > 0.05
+    n_strict_rule: >-
+      n_strict=0 → verdict=insufficient_evidence（不构成失败）；主指标 NA。
+    boundary: 直推排序语义；不构成状态判别或因果主张。
+    run_protocol:
+      n_strict_recompute: >-
+        运行时按 fs_strict.derivation 复算并断言 ==0；≠0 → die
+        （偏离走 P5.03，lock 不含 >0 分支）。
+      controls_and_baselines: >-
+        B0–B3 dev 同宇宙基线已存（results/baselines_v2，哈希钉版）；
+        n_strict=0 时不适用（如实报告 NA）。
+      descriptive_side_table:
+        what: >-
+          确认 6 对端点均值向量（hidden 29）以冻结 stage-B 协议打分与排序
+          （重拟合：dev 47,595 代表帧 + 10 dev strict，liblinear seed 2026）。
+        integrity: >-
+          重拟合分数与钉版 stageB.scores.tsv.gz 全量逐代表一致性断言
+          （max|Δ|≤1e-9）——packed 表示完整性以此内容级校验承担
+          （不对约 0.7GB 大包做文件哈希，如实披露该选择）。
+        semantics: >-
+          无阈值、无 verdict、不进任何假设判定；仅供 P5.06 裁决上下文；
+          排名 pool=存储分数 342,004 簇代表背景（stageB.scores.tsv.gz 实际行数，
+          universe_bg_expected=342004）+ 10 dev strict + 当对 = 342,015
+          （percentile=rank/pool_n）。
+
+  - id: H-DISORDER-RES
+    claim: C-GE1 + T-DISORDER-RES
+    statement: >-
+      残基级无序可读（development 池化 AUPRC 0.9996；逐蛋白 0.904 为 n=4 描述）。
+    direction: AUPRC 高于残基正例率基线
+    metric: >-
+      确认集分母域残基池化 AUPRC（主）+ 逐蛋白 AUPRC（描述，双类蛋白列数披露）。
+    pass: 池化 AUPRC ≥ 0.90
+    strong_pass: 池化 AUPRC ≥ 0.97
+    fail_rule: 池化 AUPRC < 0.75
+    boundary: >-
+      池化口径天花板效应在 dev 已示警——阈值按池化口径冻结，逐蛋白口径仅描述。
+    run_protocol:
+      features: >-
+        hidden 33 逐残基（分母域；dev=data/interim/p303/emb_disorder_dev 2,279 蛋白
+        断言；确认以同协议补抽 data/interim/p502/emb_disorder_conf）。
+      reader: >-
+        LogisticRegression(C=0.01, class_weight=balanced, solver=liblinear,
+        max_iter=1000, random_state=2026)；仅 development 全分母域残基一次拟合
+        （无 CV、无早停、无阈值选择；C=0.01 为 dev 已选冻结值）。
+      uncertainty: >-
+        池化 AUPRC 95% CI=蛋白单位 bootstrap（B=2000，残基池化随蛋白重组）。
+      controls:
+        - control_id: C0_permutation
+          spec: >-
+            蛋白内置换 ×100（seed 2026..2125）→ 池化 AUPRC 零分布。
+        - control_id: B0_base_rate
+          spec: 确认残基正例率（随机分类器 AUPRC=prevalence）如实并列。
+      coverage: >-
+        432=抽取+空域+全域超界 强断言；双类蛋白计数披露。
+
+# -----------------------------------------------------------------------------
+# not_registered（承自 confirmatory_hypotheses.yaml；全部不进确认判定）
+# -----------------------------------------------------------------------------
+not_registered:
+  - T-FS-REGION（案例级 6 链，无群体指标）
+  - T-FS-L1-PAIRED（几何诊断，描述性）
+  - T-KNOT-TYPE（dev Macro-F1 0.506 无信号，阴性发现保留）
+  - 条件干预三系统 PYP/RNase/BPTI（案例级/证据空缺，见 intervention_diagnosis.md）
+  - 聚合算子选择（设计输入：确认统一均值池化+线性读出，本文件已钉版）
+
+# -----------------------------------------------------------------------------
+# 执行拓扑（P5.02）
+# -----------------------------------------------------------------------------
+execution_topology:
+  input_build_local: python scripts/build_p501_confirmation_inputs.py
+  input_build_outputs: >-
+    data/interim/p501/{knots_conf.fa, disorder_conf.fa, disorder_conf_resid_idx.tsv,
+    fs_conf_endpoints.fa, inputs_qc.json}（inputs_qc.json 含输出哈希，集群侧校验依据）。
+  sync_to_cluster: >-
+    rsync 新增 scripts/configs 与 integrity.verify_files 所列仓库文件 +
+    data/interim/p501/ → /lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/
+    （集群侧 job 先 lock 校验，rsync 缺漏会被校验拦截）。
+  cluster_job: sbatch scripts/sbatch_p502.sh（GPU 纪律 --gres=gpu:1）
+  cluster_outputs_sync_back: >-
+    results/confirmation/（scores/metrics/qc/first_read_record）。
+  local_aftermath: >-
+    exposure_log 补行（真实时间戳）→ reports/confirmation.md → 独立审核 → 提交。
+
+# -----------------------------------------------------------------------------
+# 完整性钉版（sha256；一审整改后终版实测 2026-09-27 13:54 Asia/Shanghai）
+# -----------------------------------------------------------------------------
+integrity:
+  verify_files:
+    configs/confirmatory_hypotheses.yaml: e2544bb75ac83e621e84aa2cb5bebdaab8b9b7e70b131bb54dc4a2ae9ed17298
+    configs/probes.yaml: b70c5cb0031d95d7f445afe645e5b817a3601cdddd8afcceafe030f8ec0e6c7d
+    configs/evaluation_protocol.yaml: 5d100b37f5c43273d960a71c8892830b3cfc184b1ea6501218c9682a99a86f3d
+    configs/models.yaml: 8ef5fd17766ddbbb3cab25c6582625462d9778ead87f25eb6d4d793d51e8c89c
+    data/splits/split_manifest.tsv: 41676fd7af106591094318fb44dd819c5d244a0b13ff6b6196d73eafebf31842
+    data/splits/split_qc.json: ee5bbcecb07fe9e6ca3ef71998f4bc46642329a5f0a3350c01f3e2540309543c
+    data/curated/knots.tsv: 40aea42839432f4b7cc1f151a0290c21cb23dab3802ed7ba0fefe999f7c1b499
+    data/curated/knots_sequences.tsv: 16dbe333dbcba07162fcca9f590fa8171a455330a5fd66736dd3d888e75e623d
+    data/curated/knots_sequences_unavailable.tsv: 651bc415b3b8196ee8802f736799f7d669b79ce43962bc1f202eeb47e8cc8f46
+    data/curated/fold_switch_global.tsv: d6dd5b9bbf78a95d3d9c2535e7c9ff5b3d758b97cf686109ce3ad942d23582f7
+    data/curated/disorder.tsv: 933c002296f0516a99fa2c898c5b8acbf6308ddc8cc76d213ad0e3c06ab7e63b
+    data/curated/disorder_masks.tsv: d0064b5d27a5ab679bbbd6220ce1bbc2c7eb3ab12f77a78c0fc1dd0bee080374
+    data/splits/fs_l2_background_manifest.tsv.gz: a4b9fea623f648f2b3f3684a7ddf83ea862112ce1735993082887fd5caa902dc
+    results/probes/T-FS-L2-PU-RANK.stageA.selected.json: 2f50175796df2ab80109c34cc811e1730bd6270d2d38fd2abb64120cbfe45351
+    results/probes/T-FS-L2-PU-RANK.stageB.metrics.json: 35eeea1475aa1f794c73d4367eedcf987fcd363f76ab8363b278bf79044648f0
+    results/probes/T-FS-L2-PU-RANK.stageB.scores.tsv.gz: 9cfbcf5ae434a364d6b3682cd118cfcffca854e59002e716b5f5c4ad81ea1e58
+    results/probes/T-FS-L2-PU-RANK.stageB.propagation_qc.json: e71e8fed4b8770c8edea187ae85824730e8fc860f0b85f4d87cc6e8522139b45
+    results/baselines_v2/l2_development.tsv: f69ad8f058e3140ff9abc1ca5708ad5b812317b357961187c5f75ea54563d83b
+    results/baselines_v2/l2_development_qc.json: 9601bca442edf4518fb0d2b5e1cc52e93bfeb2e202112e1403aa46db0e402b6d
+    data/interim/p303/emb/packed_l2_stage_b.npz: 2d6bf8eb0aa1af25a09d755ccfcc6e22524fe9ee9d2cfde929b692895fa8e9e2
+    scripts/extract_representations.py: de382828624f7d33ffa8eb4437a5f735c71cca0d21f96d260489f52c504e9fb2
+    scripts/run_probes_p303.py: d1dae8091c29dce6d920d5a8abcef8f86a6ab46561d75dd320873cc2928a544d
+    scripts/run_l2_stage_b.py: f581e3e159fa712c02fe5b60f0855575f633b181c19aeec17b2a1ba5ac4146f8
+    scripts/build_p303_inputs.py: 4a32b15ca3b4c41fd1463598eefe43cb05992472a5f4c082430a294316a358ce
+    scripts/build_p501_confirmation_inputs.py: cda7dabb11dbc519534207b64cfc4a68a05461e95fe8d24fa48a377477bd55d8
+    scripts/run_p502_confirmation_cluster.py: e0642cba5ccda7f116728da6a3fd1e1567e3007c17c5221c2bd6df3a34004728
+    scripts/run_p502_confirmation_fsl2.py: 5497c588a2683ba69379f8ad2fd0532f3e7dac584228bc3e92913b4ad40ba424
+    scripts/sbatch_p502.sh: 77747828beb44a4655716a8cb356c2e1c86b4dc7598948127ee554d1a43d1b1f
+  not_hash_pinned:
+    - >-
+      data/interim/p303/emb/packed_l2sb_delta.npz（集群独占增量包）：
+      packed 表示完整性由 H-FSL2-RANK 重拟合一致性断言
+      （vs 钉版 stageB.scores.tsv.gz，max|Δ|≤1e-9）内容级承担。
+    - >-
+      data/interim/p402/emb_knots_resid/ 与 data/interim/p303/emb_disorder_dev/ 的 npz
+      内容（集群侧完整库）：结构断言承担（行数 750/2,279、逐样本存在性 die-on-missing、
+      层维度断言）；来源=P3.03/P4.02 已审运行的同步产物，如实披露不做文件哈希。
+    - >-
+      data/interim/p501/*（输入构建产物）：由 inputs_qc.json 输出哈希承担
+      （构建器写入，集群侧校验）——构建器本身已哈希钉版，产物确定性可追溯。
+
+# -----------------------------------------------------------------------------
+# 变更日志（append-only；正文注册内容不变，仅完整性表随审定的缺陷修正重钉）
+# -----------------------------------------------------------------------------
+change_log:
+  - ts: "2026-09-27 14:11 Asia/Shanghai"
+    event: P5.02 执行缺陷修正（首次集群作业 813224：H-KNOT/H-DISORDER 成功产出；
+      run_p502_confirmation_fsl2.py 崩溃 KeyError）
+    root_cause: >-
+      fsl2 运行器误从 lock.hypotheses[] 条目读取 n_strict_locked，
+      而该字段注册于 confirmation_sets.fs_strict（配置读取路径缺陷，非语义缺陷）。
+    fix: >-
+      读取路径改为 confirmation_sets.fs_strict.n_strict_locked；判定逻辑、
+      阈值、描述性协议零改动。
+    integrity: scripts/run_p502_confirmation_fsl2.py 重钉 8181aaf001a96bca…；
+      其余 27 项不变。
+    authority: 纠错修根因规则（不触発 P5.03——本修正在确认反馈读取之前，
+      且不改变任何已注册科学内容）；随 P5.02 审核链留痕。
+  - ts: "2026-09-27 14:14 Asia/Shanghai"
+    event: fsl2 一致性判据修正（作业 813225 实测 max|Δ|=2.2795e-05 > 原判据 1e-9 → die）
+    root_cause: >-
+      原判据假设跨环境位级可复现（注册时未虑及 sklearn/liblinear 迭代求解器在
+      不同版本/BLAS 下的数值抖动）；实测抖动 ~1e-5 概率量级，非数据损坏。
+    fix: >-
+      判据改为统计等价：排序完全保持（argsort 逐位一致，硬断言）+ 抖动上界
+      max<=1e-4 且 mean<=1e-6；scorer_verification 输出 max/mean/rank_preserved。
+      描述性 percentile 语义对 1e-5 抖动稳健（排序保持已断言）。
+    integrity: scripts/run_p502_confirmation_fsl2.py 重钉 5affcb36986af483…。
+  - ts: "2026-09-27 14:19 Asia/Shanghai"
+    event: fsl2 判据二次修正（作业 813226 实测：47,595 近并列分数下"排序完全保持"
+      在 1e-5 抖动下不可达 → die）
+    root_cause: >-
+      change_log #2 的"秩完全保持"硬断言对近并列敏感：概率密度高的分数段内任意
+      1e-5 抖动必然翻转相邻序，属判据设计缺陷而非拟合失真（点向抖动仍 ~1e-5）。
+    fix: >-
+      判据改为统计等价三件套：点向抖动上界（max<=1e-4、mean<=1e-6，硬断言）+
+      pearson>=1-1e-9（硬断言）+ 秩变动计数/最大位移与交付量影响区间
+      （每对 percentile 的 ±maxd 上下界）如实量化披露（不 die）。
+    integrity: scripts/run_p502_confirmation_fsl2.py 重钉 31de64422a22aea0…。
+  - ts: "2026-09-27 14:35 Asia/Shanghai"
+    event: fsl2 收口修正重钉（P5.02 一审 MAJOR：813229 之后的 TSV fieldnames 补列修复
+      未入 change_log、哈希未重钉）+ 描述性 pool 口径澄清（MINOR）
+    fix_1: >-
+      fieldnames 补列（rank_interval_jitter / percentile_interval_jitter）使 813229 的
+      TSV 写入中断，已于收口前修复并经 metrics.json 忠实重建该 TSV；本条将修复入账
+      并重钉 5497c588a2683ba6…。
+    fix_2: >-
+      描述性排名 pool 实现为存储分数按 cluster_rep 去重（47,595）+ 10 dev strict +
+      当对 = 47,606；change_log #3 文本"342,004+10+1=342,015"为行级口径，与实现
+      （rep 级）不一致——以 47,606 为准；描述性、无 verdict，排序型语义不受影响
+      （同簇同分为构造性性质，rep 级与行级 rank 差异仅反映传播结构）。

@@ -1,0 +1,224 @@
+{
+  "review": "PASS",
+  "independent_formula": "Explicit repeated row arrays; positive-negative pair concordance with half credit ties, not sklearn weightedAUROC",
+  "checks": [
+    {
+      "cohort": "full_set_final",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "full_set_final",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "primary_component",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "confirmation",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "primary_component",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 13,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 42,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    },
+    {
+      "cohort": "posthoc_sensitivity",
+      "split": "final_holdout",
+      "unit": "secondary_chain_legacy_comparability",
+      "seed": 2026,
+      "independent_expanded_draws_checked": 20,
+      "all2000_quantiles_checked": true,
+      "pass": true
+    }
+  ],
+  "tested_draws": 480,
+  "limitations": "Fixed trainedreader uncertainty only; group resampling does not repair exposure; posthoc cohorts remain descriptive."
+}

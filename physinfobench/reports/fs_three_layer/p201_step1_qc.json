@@ -1,0 +1,74 @@
+{
+ "alignments": 21528,
+ "chains": {
+  "pn_candidates": 16,
+  "strict_endpoints": 192,
+  "total": 208
+ },
+ "groups": {
+  "main_rule": "tm_sym_max>=0.6",
+  "max_group": 35,
+  "n_groups": 48,
+  "sensitivity_groups": {
+   "max_0.5": 14,
+   "max_0.6": 48,
+   "max_0.7": 72,
+   "min_0.5": 80,
+   "min_0.6": 89,
+   "min_0.7": 92
+  },
+  "size_hist": {
+   "1": 37,
+   "2": 9,
+   "6": 1,
+   "35": 1
+  }
+ },
+ "historical_contact": {
+  "classification_dist": {
+   "never_in_split_tables": 61,
+   "v5_split_member": 35
+  },
+  "mixed_contact_groups": 9
+ },
+ "no_group_map_emitted": true,
+ "run_ts": "2026-09-24 02:18:30",
+ "strict": {
+  "co_grouped_pairs": {
+   "G001": [
+    "porter_51_1h38D__1qlnA",
+    "porter_62_4o0pA__4o01D",
+    "porter_68_3zwgN__4tsyD",
+    "porter_77_2nxqB__1jfkA",
+    "porter_80_5f3kA__5f5rB",
+    "porter_9_3j7wB__3j7vG"
+   ]
+  },
+  "groups": 5,
+  "n": 10
+ },
+ "strict_vs_pn": {
+  "own_primary_combos": 17,
+  "own_primary_ge_0.6": 11,
+  "positives_covered": [
+   "P00573",
+   "P38505",
+   "Q08209",
+   "Q12931",
+   "Q9RZA4",
+   "Q9YA14"
+  ]
+ },
+ "tm_edge_counts": {
+  "max": {
+   "0.5": 578,
+   "0.6": 247,
+   "0.7": 133
+  },
+  "min": {
+   "0.5": 128,
+   "0.6": 88,
+   "0.7": 63
+  }
+ }
+}

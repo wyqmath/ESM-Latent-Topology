@@ -1,0 +1,37 @@
+{
+  "TODO.md": {
+    "total": 64,
+    "completed": 59,
+    "remaining": [
+      "P6.01",
+      "P6.02",
+      "P6.03",
+      "P6.04",
+      "P6.05"
+    ]
+  },
+  "TODO_checked_20260930.md": {
+    "total": 64,
+    "completed": 59,
+    "remaining": [
+      "P6.01",
+      "P6.02",
+      "P6.03",
+      "P6.04",
+      "P6.05"
+    ]
+  },
+  "actual_phase5_history_oldest_first": [
+    "441416a P5.01 freeze confirmation experiments: confirmation_lock.yaml (3 hypotheses + pinned protocols + first_read registration + 28-file sha256 integrity); two-round review (4M+3m -> pass); result-level read still gated at P5.02",
+    "4d5f41e P5.01 bookkeeping: record registration commit hash 441416a in TODO/report (lock untouched)",
+    "015aee3 P5.02 confirmation re-eval one-shot executed (jobs 813224/813225/813226/813229): H-KNOT-PRESENCE strong_pass (AUROC 0.947 CI95 0.904-0.994), H-DISORDER-RES mechanical pass but method-degenerate (base-rate artifact, referral to P5.03), H-FSL2-RANK insufficient (n_strict=0 registered branch); two-round review pass; lock change_log #1-#4",
+    "e3e011c P5.03 adjudicate confirmation feedback: no method changes (knots strong_pass confirmed; disorder downgraded to insufficient - base-rate artifact, stays development-level; fsl2 pre-registered branch, exposed pairs cannot be re-used); timestamp discipline remediated (17d9cbd-class defect); two-round review + self-check closure",
+    "de9cc04 P5.04 freeze final evaluation pipeline: final_lock.yaml (25-file pinning, gate=empty blocks runner, holdout sets pinned 25/83 + 494+5+14 + fs n_strict=0 no-run) + final_readiness.md + holdout builder/runner/sbatch (first_read_record enforced by design); review pass first round (3 minors fixed in-commit); HOLDOUT UNLOCK GATE = user authorization",
+    "9a0aef6 P5.07 registered (knot type expansion: KnotProt 2.0 full inventory fetched, 1859 entries = 706 knotted [3_1 x616, 4_1 x62, 5_2 x26, 6_1 x2]; +54 4_1/+23 5_2 expansion headroom, 5_1 has no headroom) + P5.08 (external disorder contrast set) per user directive; FS 96-pair disposition verified (83 dev / 6 conf / 7 holdout, 35 exposure-forced)",
+    "79784d4 P5.07 knot type expansion milestone: Topoly verification complete on 282 KnotProt candidates (cluster jobs 813265-813331); 265 new chains verified dual-closure (3_1 x185, 4_1 x57, 5_2 x22, 6_1 x1), 15 discordant (declared 3_1, whole-chain 0_1, likely subchain knots) excluded+registered, 1 CIF missing; c1/c2 closure concordance 280/281; expanded pools 3_1=285/4_1=65/5_2=25; execution lessons: topoly returns dict/str/int/leading-zero-string, internal stochastic SyntaxError needs retry",
+    "4868bb4 P5.07 repaired per external gap review: 17 discordant chains adjudicated-out (incl 2HKR_D re-verified 0_1), legacy 70% support rule enforced (frozen 86 / low-confidence 179), unified isolation graph incl 7646 new-new structural edges (0 cross-component), preregistered LCO probe v2 on 89-chain/50-component universe: 3_1 group-level recall 0.90 (CI 0.814-0.977), 4_1/5_2 case-level (4/3 independent families - four-explanation verdict: family count, not balance or chain count); review pass first round (5 minors fixed in-commit)",
+    "5ae3867 P5.08 external disorder contrast set (supplementary): X-ray unobserved-residue method after cheZOD/ODiNPred/MobiDB-API all unreachable (degradation registered); 105 unique-sequence two-class proteins (seed-2026 sample of 2200 entries, 4442 chains -> 383 two-class -> 239 -> mmseqs -108 -> sha-dedup -26 -> acc-normalized 0); frozen dev reader per-protein AUPRC 0.438 = 2.0x base (pooled 0.349 >> permutation 0.212) - disorder readability holds on independent modality; two review rounds + self-check closure (M1 sha-dedup enforced, M2 acc-normalization wired)",
+    "7bfd48a P5.05 final_holdout one-shot evaluation executed (job 814839; directive-style authorization registered, gate backfilled): H-KNOT-PRESENCE AUROC 0.968 CI95 0.943-0.994 closes the three-level chain dev 0.929 -> confirmation 0.947 -> holdout 0.968 (first final-generalization-grade claim); H-DISORDER-RES holdout degenerate same as confirmation (dual-class=1/494, data-not-readable verdict, external X-ray set remains supplementary); length control 0.711; review pass first round (3 minors fixed in-commit); holdout consumed, no re-test under same lock",
+    "18c89ea P5.06 five-bottleneck evidence adjudication matrix: supported (knots presence F-grade full chain 0.929->0.947->0.968; C-IN1/IN3 construction-level; C-AC1 domain; C-CA1 minimal gain; C-AG1 partial), refuted (C-AG2 learnable aggregation), insufficient (FS-L2 n_strict=0 both splits), unreadable/undecidable (disorder DisProt splits data-degenerate + external X-ray supplementary 2.0x base; knot types family-count-limited 4/3); four-state split + E1-E4 layering + full traceability; three-round review; PHASE 5 COMPLETE - G5 materials presented for user confirmation"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "review_reproduction_directory": "/var/folders/j5/zz0k1sms7flfspszs6nrnqx40000gn/T/plm_exp_review_final_gidkx5yp",
+  "verified_identical_output_files": [
+    "P5_scope_inventory.tsv",
+    "background_component_map.tsv.gz",
+    "cohort_summary.tsv",
+    "component_future_policy.tsv",
+    "component_map.tsv",
+    "evaluated_sample_exposure.tsv",
+    "future_migration_preflight.tsv",
+    "input_checksums.tsv",
+    "qc.json",
+    "use_evidence.tsv"
+  ],
+  "count": 10,
+  "script_sha256": "b6a8352124e0612421c52fe9fbc9b382da2089aeafd1b8657fd240ab0aa606f7"
+}

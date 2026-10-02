@@ -1,0 +1,15 @@
+[KNOT_PRESENCE] seed13 h64d2 Δmetric=-0.034365 CI95=[-0.058302, -0.011869]
+[KNOT_PRESENCE] seed42 h64d2 Δmetric=-0.030017 CI95=[-0.053275, -0.009132]
+[KNOT_PRESENCE] seed2026 h64d2 Δmetric=-0.023357 CI95=[-0.044739, -0.003896]
+[KNOT_PRESENCE] linear=0.9319 Δmetric_seedmean=-0.029246 ci95_env=[-0.058302, -0.003896] sig99=False
+[KNOT_TYPE_3_1_vs_other] seed13 h256d2 Δmetric=0.051971 CI95=[-0.139785, 0.262121]
+[KNOT_TYPE_3_1_vs_other] seed42 h256d2 Δmetric=-0.039427 CI95=[-0.196429, 0.150794]
+[KNOT_TYPE_3_1_vs_other] seed2026 h256d2 Δmetric=-0.031362 CI95=[-0.168182, 0.115079]
+[KNOT_TYPE_3_1_vs_other] linear=0.5394 Δmetric_seedmean=-0.006273 ci95_env=[-0.196429, 0.262121] sig99=False
+[FS_REGION] seed13 h64d2 Δmetric=0.416369 CI95=[0.020222, 0.069914]
+[FS_REGION] seed42 h64d2 Δmetric=0.405542 CI95=[0.016003, 0.058158]
+[FS_REGION] seed2026 h64d2 Δmetric=0.411343 CI95=[0.012399, 0.074059]
+[FS_REGION] linear=0.0598 Δmetric_seedmean=0.411085 ci95_env=[0.012399, 0.074059] sig99=True
+[skip] DISORDER500 已有产物
+[p304] DONE
+=== P304_DONE 2026-09-25 23:22:21 ===

@@ -1,0 +1,283 @@
+chain	declared	frozen_type	status	c2t200	c2t200_p	c2t800	c2t800_p	reason
+6GOT_A	3_1		low_confidence	3_1	0.5	3_1	0.5112	800-try not confirming (modal=3_1, p=0.5112)
+6RXY_CN	3_1	3_1	frozen	3_1	0.825			support>=0.70
+2VVB_X	3_1		low_confidence	3_1	0.57	3_1	0.5138	800-try not confirming (modal=3_1, p=0.5138)
+3PO6_A	3_1		low_confidence	3_1	0.54	3_1	0.5475	800-try not confirming (modal=3_1, p=0.5475)
+6QOW_A	3_1	3_1	frozen	3_1	0.83			support>=0.70
+1URT_A	3_1		low_confidence	3_1	0.405	3_1	0.4437	800-try not confirming (modal=3_1, p=0.4437)
+3AXZ_A	3_1	3_1	frozen	3_1	0.885			support>=0.70
+4PYX_A	3_1		low_confidence	3_1	0.48	3_1	0.515	800-try not confirming (modal=3_1, p=0.515)
+6HR3_A	3_1		low_confidence	3_1	0.49	3_1	0.4637	800-try not confirming (modal=3_1, p=0.4637)
+2EGW_A	3_1	3_1	frozen	3_1	0.72			support>=0.70
+4E8B_A	3_1	3_1	frozen	3_1	0.855			support>=0.70
+6KM1_A	3_1		low_confidence	3_1	0.455	3_1	0.5138	800-try not confirming (modal=3_1, p=0.5138)
+6UGN_A	3_1		low_confidence	3_1	0.465	3_1	0.5138	800-try not confirming (modal=3_1, p=0.5138)
+4NDN_A	3_1		low_confidence	3_1	0.66	3_1	0.6462	800-try not confirming (modal=3_1, p=0.6462)
+2AGL_D	3_1		excluded_discordant	0_1	0.9			adjudication_table
+2NXT_A	3_1		low_confidence	3_1	0.575	3_1	0.525	800-try not confirming (modal=3_1, p=0.525)
+2ZNC_A	3_1		low_confidence	3_1	0.575	3_1	0.5413	800-try not confirming (modal=3_1, p=0.5413)
+1G0F_A	3_1		low_confidence	3_1	0.48	3_1	0.49	800-try not confirming (modal=3_1, p=0.49)
+2W2J_A	3_1		low_confidence	3_1	0.495	3_1	0.4813	800-try not confirming (modal=3_1, p=0.4813)
+2HJ4_D	3_1		excluded_discordant	0_1	0.9			adjudication_table
+1UAM_A	3_1	3_1	frozen	3_1	0.87			support>=0.70
+2IUP_D	3_1		excluded_discordant	0_1	0.95			adjudication_table
+3IBU_A	3_1		low_confidence	3_1	0.45	3_1	0.53	800-try not confirming (modal=3_1, p=0.53)
+5IFE_D	3_1	3_1	frozen	3_1	0.705			support>=0.70
+6GAW_Ba	3_1		low_confidence	3_1	0.59	3_1	0.5312	800-try not confirming (modal=3_1, p=0.5312)
+2AH1_D	3_1		excluded_discordant	0_1	0.925			adjudication_table
+4YVH_A	3_1	3_1	frozen	3_1	0.875			support>=0.70
+3KKX_A	3_1		low_confidence	3_1	0.53	3_1	0.48	800-try not confirming (modal=3_1, p=0.48)
+5U0F_A	3_1		low_confidence	3_1	0.475	3_1	0.5375	800-try not confirming (modal=3_1, p=0.5375)
+4YGN_A	3_1		low_confidence	3_1	0.525	3_1	0.4913	800-try not confirming (modal=3_1, p=0.4913)
+6GAW_Bw	3_1	3_1	frozen	3_1	0.7			support>=0.70
+5SYB_A	3_1		low_confidence	3_1	0.645	3_1	0.6162	800-try not confirming (modal=3_1, p=0.6162)
+5JIR_A	3_1	3_1	frozen	3_1	0.84			support>=0.70
+6AFK_A	3_1	3_1	frozen	3_1	0.88			support>=0.70
+5L6K_A	3_1		low_confidence	3_1	0.535	3_1	0.5275	800-try not confirming (modal=3_1, p=0.5275)
+4YWP_A	3_1		low_confidence	3_1	0.53	3_1	0.4913	800-try not confirming (modal=3_1, p=0.4913)
+6OTI_A	3_1		low_confidence	3_1	0.475	3_1	0.4913	800-try not confirming (modal=3_1, p=0.4913)
+2BBK_L	3_1		excluded_discordant	0_1	0.945			adjudication_table
+1MXI_A	3_1	3_1	frozen	3_1	0.83			support>=0.70
+4Z1E_A	3_1		low_confidence	3_1	0.515	3_1	0.5138	800-try not confirming (modal=3_1, p=0.5138)
+5O9Z_y	3_1	3_1	frozen	3_1	0.73			support>=0.70
+5ZD5_D	3_1		low_confidence	3_1	0.605	3_1	0.6425	800-try not confirming (modal=3_1, p=0.6425)
+1XRB_A	3_1		low_confidence	3_1	0.695	3_1	0.6575	800-try not confirming (modal=3_1, p=0.6575)
+4R59_A	3_1		low_confidence	3_1	0.52	3_1	0.5188	800-try not confirming (modal=3_1, p=0.5188)
+5NXV_A	3_1		low_confidence	3_1	0.56	3_1	0.5188	800-try not confirming (modal=3_1, p=0.5188)
+4YVJ_A	3_1	3_1	frozen	3_1	0.895			support>=0.70
+5WYR_A	3_1	3_1	frozen	3_1	0.845			support>=0.70
+6EMU_A	3_1	3_1	frozen	3_1	0.69	3_1	0.725	800-try confirms
+1O90_A	3_1		low_confidence	3_1	0.655	3_1	0.635	800-try not confirming (modal=3_1, p=0.635)
+3F7B_A	3_1		low_confidence	3_1	0.415	3_1	0.4713	800-try not confirming (modal=3_1, p=0.4713)
+2IAA_B	3_1		excluded_discordant	0_1	0.91			adjudication_table
+7MU3_A	3_1		low_confidence	3_1	0.495	3_1	0.5175	800-try not confirming (modal=3_1, p=0.5175)
+3M4N_A	3_1		low_confidence	3_1	0.655	3_1	0.6275	800-try not confirming (modal=3_1, p=0.6275)
+5IPZ_A	3_1		low_confidence	3_1	0.485	3_1	0.4512	800-try not confirming (modal=3_1, p=0.4512)
+2YY8_A	3_1	3_1	frozen	3_1	0.865			support>=0.70
+3S76_A	3_1		low_confidence	3_1	0.535	3_1	0.5225	800-try not confirming (modal=3_1, p=0.5225)
+2GC4_B	3_1		excluded_discordant	0_1	0.94			adjudication_table
+2AX2_A	3_1		low_confidence	3_1	0.525	3_1	0.4963	800-try not confirming (modal=3_1, p=0.4963)
+3TDE_A	3_1		low_confidence	3_1	0.625	3_1	0.5962	800-try not confirming (modal=3_1, p=0.5962)
+3M1Q_A	3_1		low_confidence	3_1	0.535	3_1	0.5062	800-try not confirming (modal=3_1, p=0.5062)
+3L05_A	3_1		low_confidence	3_1	0.62	3_1	0.6212	800-try not confirming (modal=3_1, p=0.6212)
+4CNF_B	3_1		low_confidence	3_1	0.695	3_1	0.68	800-try not confirming (modal=3_1, p=0.68)
+2MAD_L	3_1		excluded_discordant	0_1	0.925			adjudication_table
+5OOM_s	3_1	3_1	frozen	3_1	0.71			support>=0.70
+3SAX_A	3_1		low_confidence	3_1	0.515	3_1	0.5325	800-try not confirming (modal=3_1, p=0.5325)
+6QOE_A	3_1	3_1	frozen	3_1	0.91			support>=0.70
+3JXF_A	3_1		low_confidence	3_1	0.465	3_1	0.505	800-try not confirming (modal=3_1, p=0.505)
+6Y74_A	3_1		low_confidence	3_1	0.59	3_1	0.555	800-try not confirming (modal=3_1, p=0.555)
+5H9U_A	3_1	3_1	frozen	3_1	0.715			support>=0.70
+3L06_A	3_1		low_confidence	3_1	0.575	3_1	0.5875	800-try not confirming (modal=3_1, p=0.5875)
+3C75_L	3_1		excluded_discordant	0_1	0.95			adjudication_table
+3RZ5_A	3_1		low_confidence	3_1	0.44	3_1	0.5125	800-try not confirming (modal=3_1, p=0.5125)
+4KTT_C	3_1		low_confidence	3_1	0.685	3_1	0.6412	800-try not confirming (modal=3_1, p=0.6412)
+3MNU_A	3_1		low_confidence	3_1	0.53	3_1	0.53	800-try not confirming (modal=3_1, p=0.53)
+3CZV_A	3_1		low_confidence	3_1	0.515	3_1	0.5288	800-try not confirming (modal=3_1, p=0.5288)
+3ONP_A	3_1	3_1	frozen	3_1	0.68	3_1	0.71	800-try confirms
+5MSA_A	3_1		low_confidence	3_1	0.535	3_1	0.5363	800-try not confirming (modal=3_1, p=0.5363)
+6YJ3_A	3_1		low_confidence	3_1	0.605	3_1	0.55	800-try not confirming (modal=3_1, p=0.55)
+5LLG_A	3_1		low_confidence	3_1	0.505	3_1	0.4875	800-try not confirming (modal=3_1, p=0.4875)
+4QK1_A	3_1		low_confidence	3_1	0.48	3_1	0.4988	800-try not confirming (modal=3_1, p=0.4988)
+5TFX_A	3_1		low_confidence	3_1	0.53	3_1	0.5337	800-try not confirming (modal=3_1, p=0.5337)
+3S82_A	3_1		low_confidence	3_1	0.5	3_1	0.6012	800-try not confirming (modal=3_1, p=0.6012)
+4HPV_A	3_1		low_confidence	3_1	0.445	3_1	0.425	800-try not confirming (modal=3_1, p=0.425)
+5O96_A	3_1	3_1	frozen	3_1	0.755			support>=0.70
+2NNO_A	3_1		low_confidence	3_1	0.515	3_1	0.4975	800-try not confirming (modal=3_1, p=0.4975)
+4R5A_A	3_1		low_confidence	3_1	0.505	3_1	0.535	800-try not confirming (modal=3_1, p=0.535)
+5LLP_A	3_1		low_confidence	3_1	0.465	3_1	0.5212	800-try not confirming (modal=3_1, p=0.5212)
+7LOO_A	3_1		low_confidence	3_1	0.585	3_1	0.6438	800-try not confirming (modal=3_1, p=0.6438)
+1RG9_A	3_1	3_1	frozen	3_1	0.73			support>=0.70
+1MXC_A	3_1		low_confidence	3_1	0.65	3_1	0.6775	800-try not confirming (modal=3_1, p=0.6775)
+5LLE_A	3_1		low_confidence	3_1	0.52	3_1	0.4963	800-try not confirming (modal=3_1, p=0.4963)
+3V5S_A	3_1	3_1	frozen	3_1	0.73			support>=0.70
+5CO4_A	3_1	3_1	frozen	3_1	0.73			support>=0.70
+3IBN_A	3_1		low_confidence	3_1	0.56	3_1	0.55	800-try not confirming (modal=3_1, p=0.55)
+2OBV_A	3_1		low_confidence	3_1	0.685	3_1	0.6875	800-try not confirming (modal=3_1, p=0.6875)
+4MDG_A	3_1		low_confidence	3_1	0.485	3_1	0.5	800-try not confirming (modal=3_1, p=0.5)
+3L4O_C	3_1		excluded_discordant	0_1	0.94			adjudication_table
+5FLO_A	3_1		low_confidence	3_1	0.545	3_1	0.505	800-try not confirming (modal=3_1, p=0.505)
+7OCK_B	3_1	3_1	frozen	3_1	0.7			support>=0.70
+5DOG_A	3_1		low_confidence	3_1	0.52	3_1	0.515	800-try not confirming (modal=3_1, p=0.515)
+3KNU_A	3_1	3_1	frozen	3_1	0.88			support>=0.70
+4YQD_A	3_1	3_1	frozen	3_1	0.84			support>=0.70
+3GZ0_A	3_1		low_confidence	3_1	0.54	3_1	0.5212	800-try not confirming (modal=3_1, p=0.5212)
+6H36_A	3_1		low_confidence	3_1	0.46	3_1	0.4788	800-try not confirming (modal=3_1, p=0.4788)
+6QRD_A	3_1	3_1	frozen	3_1	0.865			support>=0.70
+5FNM_A	3_1		low_confidence	3_1	0.585	3_1	0.465	800-try not confirming (modal=3_1, p=0.465)
+5TV3_A	3_1		low_confidence	3_1	0.425	3_1	0.5088	800-try not confirming (modal=3_1, p=0.5088)
+1ZE8_A	3_1		low_confidence	3_1	0.49	3_1	0.4775	800-try not confirming (modal=3_1, p=0.4775)
+5KZK_A	3_1	3_1	frozen	3_1	0.79			support>=0.70
+2AGX_D	3_1		excluded_discordant	0_1	0.92			adjudication_table
+4RG1_A	3_1	3_1	frozen	3_1	0.83			support>=0.70
+7ONU_F	3_1	3_1	frozen	3_1	0.825			support>=0.70
+5LLN_A	3_1		low_confidence	3_1	0.525	3_1	0.5112	800-try not confirming (modal=3_1, p=0.5112)
+5TH4_A	3_1		low_confidence	3_1	0.53	3_1	0.4913	800-try not confirming (modal=3_1, p=0.4913)
+3MHM_A	3_1		low_confidence	3_1	0.465	3_1	0.4975	800-try not confirming (modal=3_1, p=0.4975)
+1VHK_A	3_1	3_1	frozen	3_1	0.755			support>=0.70
+4KTT_D	3_1		low_confidence	3_1	0.64	3_1	0.6212	800-try not confirming (modal=3_1, p=0.6212)
+4MDM_A	3_1		low_confidence	3_1	0.515	3_1	0.5325	800-try not confirming (modal=3_1, p=0.5325)
+5Y2R_A	3_1		low_confidence	3_1	0.525	3_1	0.5025	800-try not confirming (modal=3_1, p=0.5025)
+5LL9_A	3_1		low_confidence	3_1	0.535	3_1	0.51	800-try not confirming (modal=3_1, p=0.51)
+3RYX_B	3_1		low_confidence	3_1	0.45	3_1	0.495	800-try not confirming (modal=3_1, p=0.495)
+3N4J_A	3_1	3_1	frozen	3_1	0.83			support>=0.70
+5TWJ_A	3_1	3_1	frozen	3_1	0.8			support>=0.70
+3E5Y_A	3_1	3_1	frozen	3_1	0.775			support>=0.70
+3RYJ_B	3_1		low_confidence	3_1	0.5	3_1	0.5162	800-try not confirming (modal=3_1, p=0.5162)
+3M67_A	3_1		low_confidence	3_1	0.44	3_1	0.4925	800-try not confirming (modal=3_1, p=0.4925)
+1O6D_A	3_1	3_1	frozen	3_1	0.705			support>=0.70
+4FL7_A	3_1		low_confidence	3_1	0.5	3_1	0.5188	800-try not confirming (modal=3_1, p=0.5188)
+3KON_A	3_1		low_confidence	3_1	0.555	3_1	0.5387	800-try not confirming (modal=3_1, p=0.5387)
+5NFJ_A	3_1	3_1	frozen	3_1	0.72			support>=0.70
+5GMN_A	3_1		low_confidence	3_1	0.595	3_1	0.55	800-try not confirming (modal=3_1, p=0.55)
+3M96_A	3_1		low_confidence	3_1	0.535	3_1	0.505	800-try not confirming (modal=3_1, p=0.505)
+5DSQ_A	3_1		low_confidence	3_1	0.525	3_1	0.5062	800-try not confirming (modal=3_1, p=0.5062)
+3ML5_A	3_1		low_confidence	3_1	0.43	3_1	0.49	800-try not confirming (modal=3_1, p=0.49)
+7NG1_A	3_1		low_confidence	3_1	0.51	3_1	0.565	800-try not confirming (modal=3_1, p=0.565)
+5NXG_A	3_1		low_confidence	3_1	0.595	3_1	0.4925	800-try not confirming (modal=3_1, p=0.4925)
+5G0B_A	3_1		low_confidence	3_1	0.535	3_1	0.5075	800-try not confirming (modal=3_1, p=0.5075)
+5WLR_A	3_1		low_confidence	3_1	0.495	3_1	0.51	800-try not confirming (modal=3_1, p=0.51)
+5Y2S_A	3_1		low_confidence	3_1	0.52	3_1	0.515	800-try not confirming (modal=3_1, p=0.515)
+6QNL_A	3_1		low_confidence	3_1	0.535	3_1	0.5363	800-try not confirming (modal=3_1, p=0.5363)
+3RZ7_A	3_1		low_confidence	3_1	0.48	3_1	0.4825	800-try not confirming (modal=3_1, p=0.4825)
+5EKM_A	3_1		low_confidence	3_1	0.485	3_1	0.4713	800-try not confirming (modal=3_1, p=0.4713)
+6RG4_A	3_1		low_confidence	3_1	0.585	3_1	0.5175	800-try not confirming (modal=3_1, p=0.5175)
+6RXZ_CN	3_1	3_1	frozen	3_1	0.785			support>=0.70
+5KU6_A	3_1		low_confidence	3_1	0.42	3_1	0.465	800-try not confirming (modal=3_1, p=0.465)
+2EU2_A	3_1		low_confidence	3_1	0.52	3_1	0.5238	800-try not confirming (modal=3_1, p=0.5238)
+5UGH_A	3_1	3_1	frozen	3_1	0.7			support>=0.70
+6RQQ_A	3_1		low_confidence	3_1	0.595	3_1	0.57	800-try not confirming (modal=3_1, p=0.57)
+4KP8_A	3_1		low_confidence	3_1	0.55	3_1	0.525	800-try not confirming (modal=3_1, p=0.525)
+2WD3_A	3_1		low_confidence	3_1	0.58	3_1	0.5038	800-try not confirming (modal=3_1, p=0.5038)
+3BET_A	3_1		low_confidence	3_1	0.52	3_1	0.4963	800-try not confirming (modal=3_1, p=0.4963)
+3ZNC_A	3_1		low_confidence	3_1	0.5	3_1	0.5312	800-try not confirming (modal=3_1, p=0.5312)
+5TY1_A	3_1		low_confidence	3_1	0.54	3_1	0.5425	800-try not confirming (modal=3_1, p=0.5425)
+5THJ_A	3_1		low_confidence	3_1	0.45	3_1	0.4913	800-try not confirming (modal=3_1, p=0.4913)
+1HVA_A	3_1		low_confidence	3_1	0.475	3_1	0.4713	800-try not confirming (modal=3_1, p=0.4713)
+5SZ2_A	3_1		low_confidence	3_1	0.515	3_1	0.51	800-try not confirming (modal=3_1, p=0.51)
+4ITP_A	3_1		low_confidence	3_1	0.53	3_1	0.4863	800-try not confirming (modal=3_1, p=0.4863)
+5TT8_A	3_1		low_confidence	3_1	0.47	3_1	0.5075	800-try not confirming (modal=3_1, p=0.5075)
+4YVG_A	3_1	3_1	frozen	3_1	0.875			support>=0.70
+6D1L_A	3_1		low_confidence	3_1	0.53	3_1	0.5212	800-try not confirming (modal=3_1, p=0.5212)
+5YUJ_A	3_1		low_confidence	3_1	0.48	3_1	0.5138	800-try not confirming (modal=3_1, p=0.5138)
+4YPX_A	3_1	3_1	frozen	3_1	0.905			support>=0.70
+1TO0_A	3_1	3_1	frozen	3_1	0.78			support>=0.70
+5GM8_A	3_1	3_1	frozen	3_1	0.815			support>=0.70
+1FQM_A	3_1		low_confidence	3_1	0.5	3_1	0.5112	800-try not confirming (modal=3_1, p=0.5112)
+2CBE_A	3_1		low_confidence	3_1	0.5	3_1	0.5125	800-try not confirming (modal=3_1, p=0.5125)
+3S73_B	3_1		low_confidence	3_1	0.56	3_1	0.485	800-try not confirming (modal=3_1, p=0.485)
+1MG2_B	3_1		excluded_discordant	0_1	0.945			adjudication_table
+4TWM_A	3_1		low_confidence	3_1	0.59	3_1	0.5687	800-try not confirming (modal=3_1, p=0.5687)
+2V3K_A	3_1	3_1	frozen	3_1	0.705			support>=0.70
+6R6Y_A	3_1		low_confidence	3_1	0.51	3_1	0.5188	800-try not confirming (modal=3_1, p=0.5188)
+6QQY_A	3_1	3_1	frozen	3_1	0.88			support>=0.70
+1CNH_A	3_1		low_confidence	3_1	0.455	3_1	0.51	800-try not confirming (modal=3_1, p=0.51)
+3OIN_A	3_1		low_confidence	3_1	0.67	3_1	0.6963	800-try not confirming (modal=3_1, p=0.6963)
+2EZ7_A	3_1		low_confidence	3_1	0.535	3_1	0.5125	800-try not confirming (modal=3_1, p=0.5125)
+4NDN_D	3_1		low_confidence	3_1	0.635	3_1	0.6775	800-try not confirming (modal=3_1, p=0.6775)
+1X7P_A	3_1	3_1	frozen	3_1	0.77			support>=0.70
+5GMB_A	3_1		low_confidence	3_1	0.535	3_1	0.5413	800-try not confirming (modal=3_1, p=0.5413)
+5M78_A	3_1		low_confidence	3_1	0.53	3_1	0.5325	800-try not confirming (modal=3_1, p=0.5325)
+5SZ5_A	3_1		low_confidence	3_1	0.5	3_1	0.5088	800-try not confirming (modal=3_1, p=0.5088)
+5T8S_A	3_1		low_confidence	3_1	0.69	3_1	0.67	800-try not confirming (modal=3_1, p=0.67)
+4KAP_A	3_1		low_confidence	3_1	0.495	3_1	0.5125	800-try not confirming (modal=3_1, p=0.5125)
+2HKR_D	3_1		compute_failed					/lenovofs1/home/jyma/.conda/envs/plm_ben
+3IBL_A	3_1		low_confidence	3_1	0.545	3_1	0.5088	800-try not confirming (modal=3_1, p=0.5088)
+6JOF_A	3_1	3_1	frozen	3_1	0.86			support>=0.70
+3M5D_A	3_1		low_confidence	3_1	0.65	3_1	0.6162	800-try not confirming (modal=3_1, p=0.6162)
+6RXX_CN	3_1	3_1	frozen	3_1	0.755			support>=0.70
+6QQQ_A	3_1	3_1	frozen	3_1	0.86			support>=0.70
+5OQL_e	3_1	3_1	frozen	3_1	0.74			support>=0.70
+2J57_K	3_1		excluded_discordant	0_1	0.935			adjudication_table
+1MG3_B	3_1		excluded_discordant	0_1	0.94			adjudication_table
+4CNE_B	3_1	3_1	frozen	3_1	0.81			support>=0.70
+1QM4_A	3_1		low_confidence	3_1	0.635	3_1	0.645	800-try not confirming (modal=3_1, p=0.645)
+6QR2_A	3_1	3_1	frozen	3_1	0.825			support>=0.70
+6QRE_A	3_1	3_1	frozen	3_1	0.82			support>=0.70
+5FL5_A	3_1		low_confidence	3_1	0.515	3_1	0.4888	800-try not confirming (modal=3_1, p=0.4888)
+5FAI_A	3_1	3_1	frozen	3_1	0.75			support>=0.70
+6B00_A	3_1		low_confidence	3_1	0.645	3_1	0.6225	800-try not confirming (modal=3_1, p=0.6225)
+1UAL_A	3_1	3_1	frozen	3_1	0.855			support>=0.70
+3V2J_A	3_1		low_confidence	3_1	0.48	3_1	0.4863	800-try not confirming (modal=3_1, p=0.4863)
+2O9B_A	4_1		low_confidence	4_1	0.61	4_1	0.5863	800-try not confirming (modal=4_1, p=0.5863)
+2O9C_A	4_1		low_confidence	4_1	0.6	4_1	0.5787	800-try not confirming (modal=4_1, p=0.5787)
+2OOL_A	4_1		low_confidence	4_1	0.65	4_1	0.6512	800-try not confirming (modal=4_1, p=0.6512)
+3C2W_A	4_1	4_1	frozen	4_1	0.76			support>=0.70
+3G6O_A	4_1	4_1	frozen	4_1	0.795			support>=0.70
+3IBR_A	4_1	4_1	frozen	4_1	0.755			support>=0.70
+3NHQ_A	4_1	4_1	frozen	4_1	0.78			support>=0.70
+3NOP_C	4_1	4_1	frozen	4_1	0.73			support>=0.70
+3NOT_C	4_1	4_1	frozen	4_1	0.705			support>=0.70
+3NOU_C	4_1	4_1	frozen	4_1	0.755			support>=0.70
+3S7N_A	4_1		low_confidence	4_1	0.59	4_1	0.6062	800-try not confirming (modal=4_1, p=0.6062)
+3S7O_A	4_1		low_confidence	4_1	0.64	4_1	0.6275	800-try not confirming (modal=4_1, p=0.6275)
+3S7P_A	4_1		low_confidence	4_1	0.615	4_1	0.645	800-try not confirming (modal=4_1, p=0.645)
+3S7Q_A	4_1		low_confidence	4_1	0.565	4_1	0.61	800-try not confirming (modal=4_1, p=0.61)
+3ZQ5_A	4_1	4_1	frozen	4_1	0.74			support>=0.70
+4CQH_A	4_1		low_confidence	4_1	0.615	4_1	0.5663	800-try not confirming (modal=4_1, p=0.5663)
+4E04_A	4_1		low_confidence	4_1	0.64	4_1	0.6412	800-try not confirming (modal=4_1, p=0.6412)
+4IJG_A	4_1		low_confidence	4_1	0.62	4_1	0.6162	800-try not confirming (modal=4_1, p=0.6162)
+4O01_A	4_1	4_1	frozen	4_1	0.745			support>=0.70
+4O01_B	4_1	4_1	frozen	4_1	0.775			support>=0.70
+4O01_C	4_1	4_1	frozen	4_1	0.83			support>=0.70
+4O01_D	4_1	4_1	frozen	4_1	0.81			support>=0.70
+4O0P_A	4_1	4_1	frozen	4_1	0.775			support>=0.70
+4O0P_B	4_1	4_1	frozen	4_1	0.77			support>=0.70
+4O8G_A	4_1		low_confidence	4_1	0.55	4_1	0.6312	800-try not confirming (modal=4_1, p=0.6312)
+4Q0H_A	4_1		low_confidence	4_1	0.57	4_1	0.5713	800-try not confirming (modal=4_1, p=0.5713)
+4Q0I_A	4_1		low_confidence	4_1	0.66	4_1	0.62	800-try not confirming (modal=4_1, p=0.62)
+4Q0J_A	4_1	4_1	frozen	4_1	0.76			support>=0.70
+4R6L_A	4_1	4_1	frozen	4_1	0.77			support>=0.70
+4RQ9_A	4_1		low_confidence	4_1	0.57	4_1	0.5413	800-try not confirming (modal=4_1, p=0.5413)
+4XTQ_A	4_1		low_confidence	4_1	0.655	4_1	0.6825	800-try not confirming (modal=4_1, p=0.6825)
+4Y3I_A	4_1		low_confidence	4_1	0.53	4_1	0.5988	800-try not confirming (modal=4_1, p=0.5988)
+4Y5F_A	4_1		low_confidence	4_1	0.605	4_1	0.5962	800-try not confirming (modal=4_1, p=0.5962)
+4Z1W_A	4_1		low_confidence	4_1	0.57	4_1	0.58	800-try not confirming (modal=4_1, p=0.58)
+4ZRR_A	4_1		low_confidence	4_1	0.605	4_1	0.5913	800-try not confirming (modal=4_1, p=0.5913)
+5C5K_A	4_1	4_1	frozen	4_1	0.785			support>=0.70
+5HSQ_A	4_1	4_1	frozen	4_1	0.835			support>=0.70
+5I5L_A	4_1	4_1	frozen	4_1	0.79			support>=0.70
+5K5B_A	4_1		low_confidence	4_1	0.615	4_1	0.6138	800-try not confirming (modal=4_1, p=0.6138)
+5L8M_A	4_1		low_confidence	4_1	0.64	4_1	0.6388	800-try not confirming (modal=4_1, p=0.6388)
+5LBR_A	4_1		low_confidence	4_1	0.66	4_1	0.5938	800-try not confirming (modal=4_1, p=0.5938)
+5MG0_A	4_1		low_confidence	4_1	0.68	4_1	0.6637	800-try not confirming (modal=4_1, p=0.6637)
+5NFX_A	4_1		low_confidence	4_1	0.59	4_1	0.6388	800-try not confirming (modal=4_1, p=0.6388)
+5NM3_A	4_1	4_1	frozen	4_1	0.815			support>=0.70
+5NWN_A	4_1	4_1	frozen	4_1	0.82			support>=0.70
+5VIK_A	4_1		low_confidence	4_1	0.555	4_1	0.56	800-try not confirming (modal=4_1, p=0.56)
+5VIQ_A	4_1		low_confidence	4_1	0.605	4_1	0.5587	800-try not confirming (modal=4_1, p=0.5587)
+5VIV_A	4_1		low_confidence	4_1	0.69	4_1	0.675	800-try not confirming (modal=4_1, p=0.675)
+6BAF_A	4_1		low_confidence	4_1	0.585	4_1	0.5563	800-try not confirming (modal=4_1, p=0.5563)
+6BAK_A	4_1		low_confidence	4_1	0.51	4_1	0.5887	800-try not confirming (modal=4_1, p=0.5887)
+6BAO_A	4_1	4_1	frozen	4_1	0.785			support>=0.70
+6BAP_A	4_1	4_1	frozen	4_1	0.785			support>=0.70
+6BAY_A	4_1	4_1	frozen	4_1	0.82			support>=0.70
+6FHT_A	4_1	4_1	frozen	4_1	0.8			support>=0.70
+6PTQ_A	4_1	4_1	frozen	4_1	0.84			support>=0.70
+6PTX_A	4_1	4_1	frozen	4_1	0.835			support>=0.70
+6PU2_A	4_1	4_1	frozen	4_1	0.755			support>=0.70
+1UCH_A	5_2		low_confidence	5_2	0.425	5_2	0.3987	800-try not confirming (modal=5_2, p=0.3987)
+1XD3_A	5_2		low_confidence	5_2	0.435	5_2	0.4225	800-try not confirming (modal=5_2, p=0.4225)
+2ETL_A	5_2		low_confidence	5_2	0.48	5_2	0.4325	800-try not confirming (modal=5_2, p=0.4325)
+2LEN_A	5_2		low_confidence	5_2	0.575	5_2	0.5875	800-try not confirming (modal=5_2, p=0.5875)
+2WDT_A	5_2		low_confidence	5_2	0.47	5_2	0.4338	800-try not confirming (modal=5_2, p=0.4338)
+2WE6_A	5_2		low_confidence	5_2	0.485	5_2	0.5038	800-try not confirming (modal=5_2, p=0.5038)
+3IFW_A	5_2		low_confidence	5_2	0.425	5_2	0.4338	800-try not confirming (modal=5_2, p=0.4338)
+3IRT_A	5_2		low_confidence	5_2	0.37	5_2	0.3275	800-try not confirming (modal=5_2, p=0.3275)
+3KVF_A	5_2		low_confidence	5_2	0.44	5_2	0.4662	800-try not confirming (modal=5_2, p=0.4662)
+3KW5_A	5_2		low_confidence	5_2	0.495	5_2	0.4688	800-try not confirming (modal=5_2, p=0.4688)
+3RII_A	5_2		low_confidence	5_2	0.455	5_2	0.4288	800-try not confirming (modal=5_2, p=0.4288)
+3RIS_A	5_2		low_confidence	5_2	0.54	5_2	0.6088	800-try not confirming (modal=5_2, p=0.6088)
+4DM9_A	5_2		low_confidence	5_2	0.48	5_2	0.3787	800-try not confirming (modal=5_2, p=0.3787)
+4I6N_A	5_2		excluded_discordant	0_1	0.645			adjudication_table
+4JKJ_A	5_2		low_confidence	5_2	0.365	5_2	0.4288	800-try not confirming (modal=5_2, p=0.4288)
+4JKJ_B	5_2		low_confidence	5_2	0.435	5_2	0.3875	800-try not confirming (modal=5_2, p=0.3875)
+4UEL_A	5_2		low_confidence	5_2	0.55	5_2	0.4963	800-try not confirming (modal=5_2, p=0.4963)
+4UEM_A	5_2		low_confidence	5_2	0.62	5_2	0.635	800-try not confirming (modal=5_2, p=0.635)
+4UF5_A	5_2	5_2	frozen	5_2	0.695	5_2	0.7288	800-try confirms
+4UF6_A	5_2		low_confidence	5_2	0.59	5_2	0.5475	800-try not confirming (modal=5_2, p=0.5475)
+4WLP_A	5_2	5_2	frozen	5_2	0.735			support>=0.70
+4WLQ_A	5_2		low_confidence	5_2	0.66	5_2	0.6562	800-try not confirming (modal=5_2, p=0.6562)
+4WLR_A	5_2		low_confidence	5_2	0.575	5_2	0.6112	800-try not confirming (modal=5_2, p=0.6112)
+3WJ8_A	6_1		excluded_discordant	TMC	0.58			adjudication_table
+4N2X_A	6_1		low_confidence	6_1	0.39	6_1	0.3887	800-try not confirming (modal=6_1, p=0.3887)

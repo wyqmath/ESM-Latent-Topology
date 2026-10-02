@@ -1,0 +1,43 @@
+All 13 transferred inputs verified
+test_degenerate_draw_accounting (test_cluster_bootstrap.BootstrapTest.test_degenerate_draw_accounting) ... ok
+test_deterministic_paired_sampling (test_cluster_bootstrap.BootstrapTest.test_deterministic_paired_sampling) ... ok
+test_duplicate_selection_changes_auroc (test_cluster_bootstrap.BootstrapTest.test_duplicate_selection_changes_auroc) ... ok
+test_entire_component_repeated (test_cluster_bootstrap.BootstrapTest.test_entire_component_repeated) ... ok
+test_hand_auroc_with_ties (test_cluster_bootstrap.BootstrapTest.test_hand_auroc_with_ties) ... ok
+test_missing_component_fails (test_cluster_bootstrap.BootstrapTest.test_missing_component_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.397s
+
+OK
+{
+  "output": "remote_posthoc",
+  "sets": {
+    "confirmation": {
+      "n": 17,
+      "components": 14,
+      "auroc": 0.9807692307692307
+    },
+    "final_holdout": {
+      "n": 27,
+      "components": 18,
+      "auroc": 0.986842105263158
+    }
+  }
+}
+{
+  "output": "remote_full_set",
+  "sets": {
+    "confirmation": {
+      "n": 148,
+      "components": 66,
+      "auroc": 0.946969696969697
+    },
+    "final_holdout": {
+      "n": 108,
+      "components": 59,
+      "auroc": 0.967710843373494
+    }
+  }
+}
+Both statistical reproductions completed

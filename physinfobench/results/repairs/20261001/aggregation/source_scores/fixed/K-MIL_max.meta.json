@@ -1,0 +1,38 @@
+{
+ "arm": "MIL_max",
+ "best_C": 0.01,
+ "grid": [
+  {
+   "C": 0.01,
+   "pooled_auroc": 0.906346
+  },
+  {
+   "C": 0.1,
+   "pooled_auroc": 0.892911
+  },
+  {
+   "C": 1,
+   "pooled_auroc": 0.89056
+  },
+  {
+   "C": 10,
+   "pooled_auroc": 0.890067
+  }
+ ],
+ "mil_train_pos_rate_per_fold": [
+  0.272994,
+  0.275029,
+  0.27081,
+  0.262362,
+  0.252005
+ ],
+ "mil_train_residues_per_fold": [
+  154245,
+  161190,
+  170459,
+  176119,
+  180183
+ ],
+ "reduction": "max",
+ "task": "knots"
+}

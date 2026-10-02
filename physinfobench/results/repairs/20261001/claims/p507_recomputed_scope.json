@@ -1,0 +1,105 @@
+{
+  "chains": {
+    "confusion": [
+      [
+        45,
+        2,
+        3
+      ],
+      [
+        33,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        3
+      ]
+    ],
+    "per_type": {
+      "3_1": {
+        "n": 50,
+        "recall": 0.9,
+        "precision": 0.5625,
+        "f1": 0.6923076923076923
+      },
+      "4_1": {
+        "n": 34,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      },
+      "5_2": {
+        "n": 5,
+        "recall": 0.6,
+        "precision": 0.42857142857142855,
+        "f1": 0.5
+      }
+    },
+    "macro_f1": 0.3974358974358974,
+    "balanced_accuracy": 0.5
+  },
+  "components_majority_vote": {
+    "confusion": [
+      [
+        39,
+        2,
+        2
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "per_type": {
+      "3_1": {
+        "n": 43,
+        "recall": 0.9069767441860465,
+        "precision": 0.8863636363636364,
+        "f1": 0.896551724137931
+      },
+      "4_1": {
+        "n": 4,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      },
+      "5_2": {
+        "n": 3,
+        "recall": 0.3333333333333333,
+        "precision": 0.25,
+        "f1": 0.2857142857142857
+      }
+    },
+    "macro_f1": 0.3940886699507389,
+    "balanced_accuracy": 0.4134366925064599
+  },
+  "component_binary_balanced_accuracy": 0.5963455149501661,
+  "selected_score_actual_definition": "mean of within-component chain binary accuracy",
+  "selected_score_recomputed": 0.8266666666666667,
+  "all_3_1_baseline_same_selection_score": 0.86,
+  "component_recall_boot95": [
+    0.813953488372093,
+    0.9767441860465116
+  ],
+  "fixed_prediction_component_permutation": {
+    "n": 100,
+    "mean": 0.33219350985334545,
+    "max": 0.5154007418158362,
+    "n_at_least_observed": 23,
+    "plus_one_p": 0.2376237623762376,
+    "scope": "Fixed selected predictions; no retraining or model-selection correction; diagnostic only"
+  },
+  "issues": [
+    "same nonnested LCO results used for layer/C selection and reporting",
+    "graph components do not establish biological-family counts",
+    "chain recall0.90 paired with component recall CI"
+  ]
+}

@@ -1,0 +1,12 @@
+[s1] 新链 CA-PDB: 281
+[s2] 现有链 1401
+[s2] 现有 CA-PDB 提取成功 0/1401
+Traceback (most recent call last):
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_isolate_cluster.py", line 230, in <module>
+    main()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_isolate_cluster.py", line 223, in main
+    stage3_mmseqs()
+  File "/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/scripts/p507_isolate_cluster.py", line 130, in stage3_mmseqs
+    j1 = json.load(open(f"{ROOT}/data/raw/rcsb/2026-09-28/knot_entry_sequences_p507.json"))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lenovofs1/home/jyma/PLM_benchmark/p303_resplit/proj/data/raw/rcsb/2026-09-28/knot_entry_sequences_p507.json'
