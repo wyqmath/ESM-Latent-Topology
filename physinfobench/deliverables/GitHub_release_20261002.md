@@ -1,5 +1,7 @@
 # GitHub 发布附件说明（2026-10-02）
 
+当前项目快照与修复报告见[审阅 PR #1](https://github.com/wyqmath/ESM-Latent-Topology/pull/1)；此预发布只附带以下两份历史归档。
+
 随仓库快照一并上传以下两个历史归档。它们保持原文件字节不变；本轮新修复代码、P5.07 结果和 fp32 FS-L2 复算结果以 `physinfobench/` 当前版本为准。
 
 | 文件 | 大小 | SHA-256 | 内容说明 |

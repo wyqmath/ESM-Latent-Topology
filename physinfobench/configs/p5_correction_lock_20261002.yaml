@@ -244,8 +244,8 @@ files:
   bytes: 1511
   sha256: ee5bbcecb07fe9e6ca3ef71998f4bc46642329a5f0a3350c01f3e2540309543c
 - path: deliverables/GitHub_release_20261002.md
-  bytes: 1191
-  sha256: 599cb027d4fe544594692faf854a06ceb7e6b4a72e2e2f7e3f411ab52730fd1d
+  bytes: 1349
+  sha256: b3d850e5bb5f04eca124b1245b59d60ab3faccdb16a6b116bc0db9ec0acc654b
 - path: deliverables/GitHub_release_20261002.sha256
   bytes: 219
   sha256: d706e3b1fc7d999e3c56d1d60045023a9fbf8dd2f64915ff13ff409e055f1e5d
@@ -265,8 +265,8 @@ files:
   bytes: 113
   sha256: b7c95b28279b4c402cdacbd8afb4ed4f39b67fda0c5f9f8815cf6423ec2b7c62
 - path: deliverables/Repository_update_plan_20261002.md
-  bytes: 5481
-  sha256: e25aa5768cc6c9adb43d3b4489978c258ed58559222c40ba576ac052e1cf9354
+  bytes: 5845
+  sha256: 0787ebea8a29c70853c7c2e47b13adf9c4e763e5b8fb1d4a2b86b9ee86143eff
 - path: deliverables/TODO_checked_20261001_latest.md
   bytes: 245275
   sha256: 5d137668c53ced1e51b077c8130dafec43e2f7d7eda008f40406b49ebd06c6e2
